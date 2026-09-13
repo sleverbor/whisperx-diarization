@@ -67,3 +67,24 @@ git switch -c retry-from-baseline baseline-30s-all-references
 
 Keep credentials out of tracked files. Legacy scripts remain on disk but are ignored.
 This repository is local; no remote upload is configured.
+
+## Short-answer tuning
+
+On `tuning-short-answers`, audio crops for very short replies can extend into neighboring timing
+gaps, but never into the preceding or following transcript utterance. Voice strength stays low
+for these short crops. A direct yes/no question followed immediately by a brief answer can supply
+a separate conversational hypothesis when the questioner's assignment is strong and only one
+other diarization track is present. This is a low-strength inferred assignment (at most 0.25),
+not acoustic verification. Three or more detected speakers leave the answer unresolved.
+The question could still be self-answered or addressed to an untracked person; the weak strength
+and explicit evidence record reflect that limitation. No police role or specific clip timing is required.
+
+Run behavior checks in the existing environment with `python -m unittest test_short_answers.py`.
+
+The fresh short-answer run attributed "No" to the target with strength 0.20 (context only).
+"Yeah, I do" obtained a safe 0.44-second crop, but the voice comparison was weak and
+conflicting; all replies shorter than 0.40 seconds now have strength capped at 0.30.
+Replaying the fixed baseline evidence changed only "No" and "Yeah, I do" from uncertain
+to weak contextual target assignments. A fresh ASR pass produced 23 segments rather than
+the baseline's 24, with variation near "OK / All right"; this variation is separate from
+the attribution tuning. Three longer baseline conflicts remain uncertain.

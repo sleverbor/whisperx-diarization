@@ -21,3 +21,5 @@ separated/
 # Older experimental scripts are not part of this checkpoint
 *.py
 !chainofrules.py
+
+!test_short_answers.py

@@ -8,6 +8,7 @@ Confidence values are heuristic evidence strengths, not calibrated probabilities
 import os
 import argparse
 import json
+import re
 from dataclasses import dataclass, field, asdict
 import cv2
 import numpy as np
@@ -53,6 +54,53 @@ def normalize_vector(value):
     return value / norm
 
 
+def short_voice_crop(segment, previous=None, following=None, media_duration=None):
+    """Recover small timing gaps without including neighboring utterances."""
+    start, end = segment.start, segment.end
+    if end - start < 0.4:
+        lower = previous.end if previous is not None else 0.0
+        upper = following.start if following is not None else media_duration
+        start = max(lower, start - 0.15)
+        end = min(end + 0.15, upper) if upper is not None else end
+        # Overlapping transcript boundaries are not safe padding opportunities.
+        if start > segment.start or end < segment.end:
+            return segment.start, segment.end
+    return start, end
+
+
+def add_question_response_evidence(segment, previous, tracks, target_track, mapping_confidence):
+    """A conversational hypothesis, never a police-specific identity rule."""
+    if previous is None or segment.end - segment.start > 1.0:
+        return
+    gap = segment.start - previous.end
+    if not 0.0 <= gap <= 0.6 or mapping_confidence < 0.75:
+        return
+    if previous.final_speaker in ("Uncertain", "NonTarget_Unknown", "Unknown_Speaker"):
+        return
+    if previous.final_confidence < 0.65:
+        return
+    question = previous.text.strip().lower()
+    # Narrow to addressed yes/no questions; punctuation alone is insufficient.
+    direct_question = re.match(
+        r"^(?:(?:ok|okay|all right)[.,]?\s+)?"
+        r"(?:do you|did you|have you|are you|were you|can you|could you|"
+        r"would you|will you|don't you|didn't you|haven't you|aren't you)\b", question)
+    if not question.endswith("?") or direct_question is None:
+        return
+    answer = re.sub(r"[^a-z' ]", " ", segment.text.lower()).split()
+    if not answer or len(answer) > 4 or answer[0] not in ("yes", "no", "yeah", "yep", "nope", "nah"):
+        return
+    question_track = target_track if previous.final_speaker == "Target_Speaker" else previous.final_speaker
+    if question_track not in tracks:
+        return
+    candidates = sorted(track for track in tracks if track != question_track)
+    candidate = candidates[0] if len(candidates) == 1 else None
+    segment.evidence.append(Evidence("question_response", 0.0, 0.20,
+        {"question_start": previous.start, "question_track": question_track,
+         "candidate_tracks": candidates, "candidate_track": candidate,
+         "gap": gap, "assumption": "Immediate brief answer may be a different speaker; not voice-verified."}))
+
+
 def resolve_segment(segment, target_track, mapping_confidence):
     """Only the resolver assigns final identity; visibility alone cannot flip it."""
     raw = segment.baseline.raw_speaker_track
@@ -62,9 +110,13 @@ def resolve_segment(segment, target_track, mapping_confidence):
     score, weight = prior * prior_weight, prior_weight
     reasons = [f"baseline={raw}; mapping strength={mapping_confidence:.3f}"]
     voice = None
+    response = None
     for item in segment.evidence:
         # Presence/context describes the scene, not the active speaker.
         if item.source in ("target_face_visible", "visual_context"):
+            continue
+        if item.source == "question_response":
+            response = item
             continue
         contribution = item.target_score * item.confidence
         score += contribution
@@ -89,7 +141,13 @@ def resolve_segment(segment, target_track, mapping_confidence):
                                or (voice.target_score < 0 and matched_track != target_track)))
     insufficient_short_audio = (segment.end - segment.start < 0.4
                                 and (voice is None or voice.confidence == 0))
-    if verified_correction:
+    response_track = response.details.get("candidate_track") if response is not None else None
+    response_inference = (insufficient_short_audio and response_track is not None
+                          and response.confidence > 0)
+    if response_inference:
+        final = "Target_Speaker" if response_track == target_track else response_track
+        reasons.append(f"weak question/answer inference to {response_track}; not voice-verified")
+    elif verified_correction:
         final = "Target_Speaker" if matched_track == target_track else matched_track
         reasons.append(f"independent voice profile supports correction to {matched_track}")
     elif insufficient_short_audio or not acoustic_support or abs(normalized) <= 0.18 or strong_conflict:
@@ -105,9 +163,13 @@ def resolve_segment(segment, target_track, mapping_confidence):
     if verified_correction:
         segment.final_confidence = float(min(voice.confidence, abs(voice.target_score),
                                              details["track_margin"] / 0.20))
-    if insufficient_short_audio:
+    if response_inference:
+        segment.final_confidence = min(0.25, response.confidence)
+    elif insufficient_short_audio:
         segment.final_confidence = 0.0
         reasons.append("short utterance has no usable local voice evidence")
+    if segment.end - segment.start < 0.4:
+        segment.final_confidence = min(segment.final_confidence, 0.30)
     segment.reasons = reasons
 
 
@@ -241,10 +303,13 @@ def main():
         timeline.append(TimelineSegment(float(source["start"]), float(source["end"]),
                         source["text"].strip(), Baseline(raw, base), source.get("words", [])))
 
-    def collect_voice(segment):
-        emb = audio_embedding(segment.start, segment.end)
+    def collect_voice(segment, previous=None, following=None):
+        crop_start, crop_end = short_voice_crop(segment, previous, following, total_samples / 16000)
+        emb = audio_embedding(crop_start, crop_end)
         similarity = float(np.dot(target_voice_vector, emb)) if emb is not None else None
         strength = min(1.0, max(0.0, (segment.end - segment.start) / 1.2)) * mapping_confidence
+        if segment.end - segment.start < 0.4:
+            strength = min(strength, 0.30)
         target_score = 0.0
         if similarity is not None and separation >= 0.03:
             target_score = float(np.clip((similarity - (target_mean + other_mean) / 2) / separation, -1, 1))
@@ -256,7 +321,7 @@ def main():
         if emb is not None:
             for track, samples in cluster_embeddings.items():
                 independent = [vector for start, end, vector in samples
-                               if end <= segment.start or start >= segment.end]
+                               if end <= crop_start or start >= crop_end]
                 if len(independent) < 2:
                     continue
                 centroid = normalize_vector(np.mean(independent, axis=0))
@@ -267,7 +332,8 @@ def main():
         margin = (track_similarities[candidates[0]] - track_similarities[candidates[1]]
                   if len(candidates) >= 2 else 0.0)
         segment.evidence.append(Evidence("local_voice", target_score, strength,
-            {"similarity": similarity, "target_mean": target_mean, "competitor_mean": other_mean,
+            {"similarity": similarity, "crop_start": crop_start, "crop_end": crop_end,
+             "target_mean": target_mean, "competitor_mean": other_mean,
              "track_similarities": track_similarities, "independent_profile_counts": profile_counts,
              "best_track": best_track, "track_margin": margin}))
 
@@ -318,9 +384,14 @@ def main():
              "note": "No role or phrase is assumed to identify the supplied target."}))
 
     try:
-        for segment in timeline:
-            for collector in (collect_voice, collect_visual, collect_semantic):
-                collector(segment)
+        all_tracks = {str(track) for track in diarize_segments["speaker"].dropna().unique()}
+        for index, segment in enumerate(timeline):
+            previous = timeline[index - 1] if index else None
+            following = timeline[index + 1] if index + 1 < len(timeline) else None
+            collect_voice(segment, previous, following)
+            collect_visual(segment)
+            collect_semantic(segment)
+            add_question_response_evidence(segment, previous, all_tracks, target_track, mapping_confidence)
             resolve_segment(segment, target_track, mapping_confidence)
         print("\n--- Evidence-Based Speaker Resolution ---")
         for segment in timeline:
