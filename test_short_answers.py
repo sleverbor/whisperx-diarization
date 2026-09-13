@@ -2,7 +2,7 @@
 import unittest
 import numpy as np
 from chainofrules import (Baseline, Evidence, TimelineSegment, short_voice_crop,
-                          add_question_response_evidence, add_echo_question_evidence, resolve_segment, collect_visual_evidence)
+                          add_question_response_evidence, add_echo_question_evidence, add_brief_exchange_evidence, resolve_segment, collect_visual_evidence)
 
 
 class ShortAnswerTests(unittest.TestCase):
@@ -174,6 +174,42 @@ class ShortAnswerTests(unittest.TestCase):
         self.infer(reply, self.question())
         self.assertEqual(reply.final_speaker, "Target_Speaker")
         self.assertEqual(reply.final_confidence, .20)
+
+
+    def test_acknowledgement_requires_independent_agreement(self):
+        previous = self.question("Your request has been accepted.")
+        reply = self.reply(text="Oh, okay.")
+        reply.evidence = [Evidence("local_voice", -.7, .28,
+            {"best_track": "SPEAKER_01", "track_similarities": {"SPEAKER_00": 0, "SPEAKER_01": .1}})]
+        add_brief_exchange_evidence(reply, previous, {"SPEAKER_00", "SPEAKER_01"}, "SPEAKER_01", 1)
+        resolve_segment(reply, "SPEAKER_01", 1)
+        self.assertEqual(reply.final_speaker, "Target_Speaker")
+        self.assertEqual(reply.final_confidence, .2)
+        for strength, best, tracks in ((.6, "SPEAKER_01", {"SPEAKER_00", "SPEAKER_01"}),
+                                      (.28, "SPEAKER_00", {"SPEAKER_00", "SPEAKER_01"}),
+                                      (.28, "SPEAKER_01", {"SPEAKER_00", "SPEAKER_01", "SPEAKER_02"})):
+            reply.evidence = [Evidence("local_voice", -.7, strength,
+                {"best_track": best, "track_similarities": {"SPEAKER_00": 0, "SPEAKER_01": .1}})]
+            add_brief_exchange_evidence(reply, previous, tracks, "SPEAKER_01", 1)
+            self.assertEqual(len(reply.evidence), 1)
+
+    def test_confirmation_requires_face_baseline_and_no_inference_chain(self):
+        previous = self.question("Really?", .30, "SPEAKER_01")
+        previous.final_speaker = "Target_Speaker"
+        previous.evidence = [Evidence("target_face_visible", 0, 0, {"target_visible_hint": True})]
+        reply = self.reply(text="Yeah.", raw="SPEAKER_01")
+        voice = Evidence("local_voice", -1, .15,
+            {"best_track": "SPEAKER_00", "track_similarities": {"SPEAKER_00": .06, "SPEAKER_01": .02}})
+        reply.evidence = [voice]
+        add_brief_exchange_evidence(reply, previous, {"SPEAKER_00", "SPEAKER_01"}, "SPEAKER_01", 1)
+        resolve_segment(reply, "SPEAKER_01", 1)
+        self.assertEqual(reply.final_speaker, "SPEAKER_00")
+        self.assertEqual(reply.final_confidence, .20)
+        for face, reasons in (([], []), (previous.evidence, ["weak question/answer inference"])):
+            previous.evidence, previous.reasons = face, reasons
+            reply.evidence = [voice]
+            add_brief_exchange_evidence(reply, previous, {"SPEAKER_00", "SPEAKER_01"}, "SPEAKER_01", 1)
+            self.assertEqual(len(reply.evidence), 1)
 
 
 if __name__ == "__main__":

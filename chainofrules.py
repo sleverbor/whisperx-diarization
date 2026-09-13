@@ -102,6 +102,45 @@ def add_question_response_evidence(segment, previous, tracks, target_track, mapp
 
 
 
+
+def add_brief_exchange_evidence(segment, previous, tracks, target_track, mapping_confidence):
+    """Tentative acknowledgement or confirmation, with independent voice agreement."""
+    if previous is None or mapping_confidence < .75 or segment.end - segment.start >= .4:
+        return
+    if not 0 <= segment.start - previous.end <= .6:
+        return
+    words = re.findall(r"[a-z']+", segment.text.lower())
+    preceding = re.findall(r"[a-z']+", previous.text.lower())
+    acknowledgement = words in (["okay"], ["ok"], ["oh", "okay"], ["oh", "ok"])
+    confirmation = (preceding in (["really"], ["seriously"]) and previous.text.strip().endswith("?")
+                    and words in (["yes"], ["yeah"], ["yep"], ["no"], ["nope"]))
+    if not acknowledgement and not confirmation:
+        return
+    previous_track = target_track if previous.final_speaker == "Target_Speaker" else previous.final_speaker
+    candidates = sorted(set(tracks) - {previous_track})
+    if previous_track not in tracks or len(candidates) != 1:
+        return
+    if acknowledgement and (previous.final_confidence < .65 or previous.text.strip().endswith("?")):
+        return
+    if confirmation:
+        # A weak question is usable only when its baseline agrees, a target face is
+        # tracked, and it was not itself attributed through conversational inference.
+        face = next((e for e in previous.evidence if e.source == "target_face_visible"), None)
+        if (previous.final_confidence < .25 or previous.baseline.raw_speaker_track != previous_track
+            or previous_track != target_track or face is None
+            or not face.details.get("target_visible_hint", False)
+            or any("inference" in reason for reason in previous.reasons)):
+            return
+    voice = next((e for e in segment.evidence if e.source == "local_voice"), None)
+    profiles = voice.details.get("track_similarities", {}) if voice is not None else {}
+    if (voice is None or voice.confidence > .30 or len(profiles) < 2
+        or max(profiles.values()) >= .30 or voice.details.get("best_track") != candidates[0]):
+        return
+    segment.evidence.append(Evidence("question_response", 0, .20,
+        {"candidate_track": candidates[0], "previous_track": previous_track,
+         "assumption": "Brief acknowledgement or confirmation may change speaker; weak voice agrees, not verified."}))
+
+
 def add_echo_question_evidence(segment, previous, tracks, target_track, mapping_confidence):
     """A brief quoted question can suggest another speaker, never establish one."""
     if previous is None or not segment.text.strip().endswith("?"):
@@ -501,6 +540,7 @@ def main():
             collect_visual(segment)
             collect_semantic(segment)
             add_question_response_evidence(segment, previous, all_tracks, target_track, mapping_confidence)
+            add_brief_exchange_evidence(segment, previous, all_tracks, target_track, mapping_confidence)
             add_echo_question_evidence(segment, previous, all_tracks, target_track, mapping_confidence)
             resolve_segment(segment, target_track, mapping_confidence)
         print("\n--- Evidence-Based Speaker Resolution ---")
