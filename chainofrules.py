@@ -9,6 +9,12 @@ import os
 import argparse
 import json
 import re
+import gc
+from pathlib import Path
+from importlib.metadata import version
+import pandas as pd
+import onnxruntime as ort
+from cloud_runtime import StageCache, file_digest, create_face_analyzer
 from dataclasses import dataclass, field, asdict
 import cv2
 import numpy as np
@@ -363,7 +369,11 @@ def main():
     parser.add_argument("--voice-priors", default="voice_embeddings.npy")
     parser.add_argument("--face-priors", default="face_embeddings.npy")
     parser.add_argument("--output", default="diarization_evidence.json")
+    parser.add_argument("--batch-size", type=int, default=16)
+    parser.add_argument("--cache-dir", help="Reuse completed stages for matching inputs/code/runtime")
     args = parser.parse_args()
+    if args.batch_size < 1:
+        parser.error("--batch-size must be positive")
     HF_TOKEN = os.environ.get("HF_TOKEN") or os.environ.get("HUGGINGFACE_TOKEN")
     if not HF_TOKEN:
         raise RuntimeError("Set HF_TOKEN (or HUGGINGFACE_TOKEN) before running.")
@@ -374,13 +384,20 @@ def main():
     # 1. CORE PIPELINE INITIALIZATION
     # =====================================================================
     print("⏳ Initializing Core Tracking Engines...")
-    whisper_model = whisperx.load_model("large-v2", device, compute_type=compute_type)
-    diarize_model = DiarizationPipeline(token=HF_TOKEN, device=device)
-    embedding_model = SpeakerRecognition.from_hparams(
-        source="speechbrain/spkrec-ecapa-voxceleb", savedir="pretrained_models/spkrec-ecapa-voxceleb"
-    )
-    face_analyzer = FaceAnalysis(name="buffalo_l", providers=["CPUExecutionProvider"])
-    face_analyzer.prepare(ctx_id=0, det_size=(640, 640))
+    def release_gpu():
+        gc.collect()
+        if device == "cuda":
+            torch.cuda.empty_cache()
+
+    fingerprint = {"inputs": {name: file_digest(path) for name, path in
+        (("video", args.video), ("voice", args.voice_priors), ("face", args.face_priors))},
+        "code": file_digest(__file__), "runtime_helper": file_digest(Path(__file__).with_name("cloud_runtime.py")),
+        "device": device, "batch_size": args.batch_size,
+        "versions": {name: version(name) for name in
+            ("torch", "torchaudio", "whisperx", "speechbrain", "insightface", "numpy")},
+        "onnxruntime": ort.__version__, "providers": ort.get_available_providers()}
+    cache = StageCache(args.cache_dir, fingerprint)
+    print(f"WhisperX/SpeechBrain device: {device}")
 
     # Load Priors Matrix
     voice_priors = np.load(args.voice_priors, allow_pickle=False)
@@ -422,13 +439,42 @@ def main():
     # 3. GENERAL TRANSCRIPTION & LAYERING
     # =====================================================================
     print("⏳ Processing WhisperX Text Script...")
-    asr_result = whisper_model.transcribe(audio_loaded, batch_size=16)
-    alignment_model, metadata = whisperx.load_align_model(language_code=asr_result["language"], device=device)
-    aligned_result = whisperx.align(asr_result["segments"], alignment_model, metadata, audio_loaded, device, return_char_alignments=False)
+    def transcribe():
+        model = whisperx.load_model("large-v2", device, compute_type=compute_type)
+        try:
+            return model.transcribe(audio_loaded, batch_size=args.batch_size)
+        finally:
+            del model
+            release_gpu()
 
+    asr_result = cache.get("transcription", transcribe)
+
+    def align():
+        model, metadata = whisperx.load_align_model(language_code=asr_result["language"], device=device)
+        try:
+            return whisperx.align(asr_result["segments"], model, metadata, audio_loaded,
+                                  device, return_char_alignments=False)
+        finally:
+            del model
+            release_gpu()
+
+    aligned_result = cache.get("alignment", align)
     print("⏳ Generating Unsupervised Voice Tracks...")
-    diarize_segments = diarize_model(audio_loaded)
 
+    def diarize():
+        model = DiarizationPipeline(token=HF_TOKEN, device=device)
+        try:
+            # Preserve original whole-video track IDs; no independent chunk clustering.
+            return model(audio_loaded)[["start", "end", "speaker"]].to_dict(orient="records")
+        finally:
+            del model
+            release_gpu()
+
+    diarize_segments = pd.DataFrame(cache.get("diarization", diarize))
+    embedding_model = SpeakerRecognition.from_hparams(
+        source="speechbrain/spkrec-ecapa-voxceleb", savedir="pretrained_models/spkrec-ecapa-voxceleb",
+        run_opts={"device": device})
+    face_analyzer, face_providers = create_face_analyzer(device, ort, FaceAnalysis)
 
     target_voice_vector = normalize_vector(target_voice_vector)
     target_face_centroid = normalize_vector(target_face_centroid)
@@ -440,18 +486,26 @@ def main():
             return embedding_cache[key]
         left = max(0, int(start * 16000))
         right = min(total_samples, int(end * 16000))
+        checkpoint_name = f"voice_{left}_{right}"
+        saved = cache.read(checkpoint_name)
+        if saved is not None:
+            result = np.asarray(saved, dtype=np.float32)
+            embedding_cache[key] = result
+            return result
         result = None
         if right - left >= 6400:
             try:
                 with torch.no_grad():
                     result = normalize_vector(embedding_model.encode_batch(
-                        waveform[:, left:right]).flatten().cpu().numpy())
+                        waveform[:, left:right].to(device)).flatten().cpu().numpy())
                 if result.shape != target_voice_vector.shape:
                     raise ValueError("Voice prior dimensions do not match ECAPA output")
             except ValueError:
                 raise
             except Exception as exc:
                 print(f"Voice embedding unavailable at {start:.2f}-{end:.2f}: {exc}")
+        if result is not None:
+            cache.write(checkpoint_name, result.tolist())
         embedding_cache[key] = result
         return result
 
@@ -522,7 +576,14 @@ def main():
              "best_track": best_track, "track_margin": margin}))
 
     def collect_visual(segment):
+        name = f"visual_{segment.start:.6f}_{segment.end:.6f}"
+        saved = cache.read(name)
+        if saved is not None:
+            segment.evidence.extend(Evidence(**item) for item in saved)
+            return
+        offset = len(segment.evidence)
         collect_visual_evidence(segment, cap, fps, face_analyzer, target_face_centroid)
+        cache.write(name, [asdict(item) for item in segment.evidence[offset:]])
 
     def collect_semantic(segment):
         # Without an explicit role-to-identity mapping, words cannot identify a person.
@@ -543,6 +604,7 @@ def main():
             add_brief_exchange_evidence(segment, previous, all_tracks, target_track, mapping_confidence)
             add_echo_question_evidence(segment, previous, all_tracks, target_track, mapping_confidence)
             resolve_segment(segment, target_track, mapping_confidence)
+            print(f"Resolved segment {index + 1}/{len(timeline)} at {segment.end:.1f}s", flush=True)
         print("\n--- Evidence-Based Speaker Resolution ---")
         for segment in timeline:
             print(f"[{segment.start:.2f}s - {segment.end:.2f}s] {segment.final_speaker} "
@@ -553,6 +615,7 @@ def main():
         with open(args.output, "w", encoding="utf-8") as output:
             json.dump({"target_candidate": target_track, "cluster_voice_means": means,
                        "mapping_strength": mapping_confidence,
+                       "runtime": {"device": device, "face_providers": face_providers},
                        "confidence_is_calibrated": False,
                        "segments": [asdict(segment) for segment in timeline]}, output, indent=2, ensure_ascii=False)
     finally:

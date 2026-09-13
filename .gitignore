@@ -29,3 +29,9 @@ separated/
 
 # Recorded two-minute evaluation trace
 !longer_2min_evidence.json
+
+# Cloud runner sources and local stage checkpoints
+!cloud_runtime.py
+!test_cloud_runtime.py
+.cloud-cache/
+!prepare_kaggle_bundle.py

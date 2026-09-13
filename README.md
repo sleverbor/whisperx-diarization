@@ -110,3 +110,7 @@ The user identified that final speaker as the target. There were four direct tar
 in the visual lead-in/utterance and five tracked mouth measurements during the utterance.
 No automatic police role is inferred: SPEAKER_00 is the officer identified in this particular test.
 The transcript wording still needs audio verification, and general accuracy remains unproven.
+
+## Full-video cloud test
+
+See [KAGGLE.md](KAGGLE.md) and `kaggle_full_video.ipynb` for the private GPU runner.
