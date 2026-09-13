@@ -1,0 +1,24 @@
+[0.26-0.92] Uncertain: What you out of here doing man?
+[2.06-2.96] SPEAKER_00: Come over here and talk to me.
+[2.98-3.84] Target_Speaker: Whoa, whoa, whoa.
+[3.90-5.18] Target_Speaker: Why are you going to touch me?
+[5.22-5.92] Target_Speaker: What's going on?
+[5.94-6.76] Uncertain: Come over here and talk.
+[6.79-7.83] Uncertain: You are on private property.
+[7.87-8.53] Target_Speaker: I'm not going to go in there.
+[8.55-9.43] SPEAKER_00: You are on private property.
+[9.57-11.03] SPEAKER_00: OK. Do not tell me what you're not going to do.
+[11.05-11.25] Uncertain: All right.
+[11.27-12.83] SPEAKER_00: Do you have any weapons on you?
+[12.89-12.99] Uncertain: No.
+[13.01-15.60] SPEAKER_00: Do you mind if I pat you down to shake?
+[15.68-16.02] Uncertain: Yeah, I do.
+[16.04-17.20] SPEAKER_00: OK. Why are you out here?
+[17.22-18.28] Target_Speaker: This is an illegal search and seizure.
+[18.46-19.18] SPEAKER_00: Why are you out here?
+[19.28-20.58] Target_Speaker: I'm invoking my Fifth Amendment rights, sir.
+[20.92-22.25] SPEAKER_00: You want to give me a reason why you're here?
+[22.83-24.45] Target_Speaker: Where you took me from was public property.
+[24.59-26.21] Target_Speaker: I'm going to invoke my Fifth Amendment rights to pass out.
+[26.25-28.17] SPEAKER_00: You're being arrested for criminal loitering.
+[28.75-29.59] SPEAKER_00: Criminal loitering.

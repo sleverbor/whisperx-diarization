@@ -1,0 +1,23 @@
+# Credentials and local environments
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Downloaded models and generated results
+pretrained_models/
+separated/
+*.json
+*.log
+
+# Retain only the small reproducible test media
+*.mp4
+!short.mp4
+*.wav
+
+# Older experimental scripts are not part of this checkpoint
+*.py
+!chainofrules.py

@@ -1,0 +1,342 @@
+"""Evidence-based refactor of the recovered runnable chainofrules.py.
+Run from the existing project directory with HF_TOKEN set in the environment.
+Accepts any video and matching target embedding files.
+All rows in each embedding file are reference samples of the same target.
+Defaults retain short.mp4, large-v2, ECAPA and buffalo_l.
+Confidence values are heuristic evidence strengths, not calibrated probabilities.
+"""
+import os
+import argparse
+import json
+from dataclasses import dataclass, field, asdict
+import cv2
+import numpy as np
+import torch
+import torchaudio
+import whisperx
+from whisperx.diarize import DiarizationPipeline
+from speechbrain.inference.speaker import SpeakerRecognition
+from insightface.app import FaceAnalysis
+from collections import defaultdict
+
+
+@dataclass(frozen=True)
+class Baseline:
+    raw_speaker_track: str
+    speaker: str
+
+@dataclass(frozen=True)
+class Evidence:
+    source: str
+    target_score: float
+    confidence: float
+    details: dict = field(default_factory=dict)
+
+@dataclass
+class TimelineSegment:
+    start: float
+    end: float
+    text: str
+    baseline: Baseline
+    words: list = field(default_factory=list)
+    evidence: list = field(default_factory=list)
+    final_speaker: str = "Uncertain"
+    final_confidence: float = 0.0
+    reasons: list = field(default_factory=list)
+
+
+def normalize_vector(value):
+    value = np.asarray(value, dtype=np.float32).reshape(-1)
+    norm = np.linalg.norm(value)
+    if not np.all(np.isfinite(value)) or norm <= 0:
+        raise ValueError("Embedding must be finite and nonzero")
+    return value / norm
+
+
+def resolve_segment(segment, target_track, mapping_confidence):
+    """Only the resolver assigns final identity; visibility alone cannot flip it."""
+    raw = segment.baseline.raw_speaker_track
+    known = raw != "Unknown_Speaker"
+    prior_weight = 0.55 * mapping_confidence if known else 0.0
+    prior = 1.0 if raw == target_track else -1.0
+    score, weight = prior * prior_weight, prior_weight
+    reasons = [f"baseline={raw}; mapping strength={mapping_confidence:.3f}"]
+    voice = None
+    for item in segment.evidence:
+        # Presence/context describes the scene, not the active speaker.
+        if item.source in ("target_face_visible", "visual_context"):
+            continue
+        contribution = item.target_score * item.confidence
+        score += contribution
+        weight += item.confidence
+        if item.source == "local_voice":
+            voice = item
+        if item.confidence:
+            reasons.append(f"{item.source}: {contribution:+.3f}")
+    normalized = score / max(weight, 1e-9)
+    # Role phrases cannot establish or contradict identity without acoustic support.
+    acoustic_support = prior_weight > 0.08 or (voice is not None and voice.confidence > 0.2)
+    strong_conflict = (voice is not None and voice.confidence >= 0.5
+                      and voice.target_score * prior < -0.4 and known)
+    # A strong reference match plus an independent track match can correct diarization.
+    details = voice.details if voice is not None else {}
+    matched_track = details.get("best_track")
+    verified_correction = (strong_conflict and voice.confidence >= 0.8
+                          and abs(voice.target_score) >= 0.8
+                          and details.get("track_margin", 0.0) >= 0.10
+                          and matched_track is not None
+                          and ((voice.target_score > 0 and matched_track == target_track)
+                               or (voice.target_score < 0 and matched_track != target_track)))
+    insufficient_short_audio = (segment.end - segment.start < 0.4
+                                and (voice is None or voice.confidence == 0))
+    if verified_correction:
+        final = "Target_Speaker" if matched_track == target_track else matched_track
+        reasons.append(f"independent voice profile supports correction to {matched_track}")
+    elif insufficient_short_audio or not acoustic_support or abs(normalized) <= 0.18 or strong_conflict:
+        final = "Uncertain"
+        reasons.append("weak, balanced, or conflicting acoustic evidence")
+    elif normalized > 0:
+        final = "Target_Speaker"
+    else:
+        final = raw if known and raw != target_track else "NonTarget_Unknown"
+    segment.final_speaker = final
+    # Avoid baseline-only certainty and account for weak global separation.
+    segment.final_confidence = float(min(abs(normalized), weight / 1.55))
+    if verified_correction:
+        segment.final_confidence = float(min(voice.confidence, abs(voice.target_score),
+                                             details["track_margin"] / 0.20))
+    if insufficient_short_audio:
+        segment.final_confidence = 0.0
+        reasons.append("short utterance has no usable local voice evidence")
+    segment.reasons = reasons
+
+
+def main():
+    parser = argparse.ArgumentParser(description="Resolve a supplied target voice in any video.")
+    parser.add_argument("video", nargs="?", default="short.mp4")
+    parser.add_argument("--voice-priors", default="voice_embeddings.npy")
+    parser.add_argument("--face-priors", default="face_embeddings.npy")
+    parser.add_argument("--output", default="diarization_evidence.json")
+    args = parser.parse_args()
+    HF_TOKEN = os.environ.get("HF_TOKEN") or os.environ.get("HUGGINGFACE_TOKEN")
+    if not HF_TOKEN:
+        raise RuntimeError("Set HF_TOKEN (or HUGGINGFACE_TOKEN) before running.")
+    device = "cuda" if torch.cuda.is_available() else "cpu"
+    compute_type = "float16" if torch.cuda.is_available() else "int8"
+
+    # =====================================================================
+    # 1. CORE PIPELINE INITIALIZATION
+    # =====================================================================
+    print("⏳ Initializing Core Tracking Engines...")
+    whisper_model = whisperx.load_model("large-v2", device, compute_type=compute_type)
+    diarize_model = DiarizationPipeline(token=HF_TOKEN, device=device)
+    embedding_model = SpeakerRecognition.from_hparams(
+        source="speechbrain/spkrec-ecapa-voxceleb", savedir="pretrained_models/spkrec-ecapa-voxceleb"
+    )
+    face_analyzer = FaceAnalysis(name="buffalo_l", providers=["CPUExecutionProvider"])
+    face_analyzer.prepare(ctx_id=0, det_size=(640, 640))
+
+    # Load Priors Matrix
+    voice_priors = np.load(args.voice_priors, allow_pickle=False)
+    face_priors = np.load(args.face_priors, allow_pickle=False)
+    if voice_priors.ndim == 1: voice_priors = np.expand_dims(voice_priors, axis=0)
+    if face_priors.ndim == 1: face_priors = np.expand_dims(face_priors, axis=0)
+
+    def reference_centroid(samples, label):
+        if samples.ndim != 2:
+            raise ValueError(f"{label}: expected a vector or matrix of target samples")
+        norms = np.linalg.norm(samples, axis=1)
+        valid = np.all(np.isfinite(samples), axis=1) & (norms > 0)
+        if not np.any(valid):
+            raise ValueError(f"{label}: no valid target samples")
+        normalized = samples[valid] / norms[valid, None]
+        print(f"{label}: using {len(normalized)} of {len(samples)} target reference samples")
+        return normalize_vector(np.mean(normalized, axis=0))
+
+    target_voice_vector = reference_centroid(voice_priors, "Voice references")
+    target_face_centroid = reference_centroid(face_priors, "Face references")
+
+    # =====================================================================
+    # 2. AUDIO & VIDEO DATA PREP
+    # =====================================================================
+    print("⏳ Preparing media data tracks...")
+    video_path = args.video
+    audio_loaded = whisperx.load_audio(video_path)
+    cap = cv2.VideoCapture(video_path)
+    fps = cap.get(cv2.CAP_PROP_FPS)
+
+    waveform, sample_rate = torchaudio.load(video_path)
+    if sample_rate != 16000:
+        resampler = torchaudio.transforms.Resample(orig_freq=sample_rate, new_freq=16000)
+        waveform = resampler(waveform)
+    waveform = torch.mean(waveform, dim=0, keepdim=True)
+    total_samples = waveform.shape[1]
+
+    # =====================================================================
+    # 3. GENERAL TRANSCRIPTION & LAYERING
+    # =====================================================================
+    print("⏳ Processing WhisperX Text Script...")
+    asr_result = whisper_model.transcribe(audio_loaded, batch_size=16)
+    alignment_model, metadata = whisperx.load_align_model(language_code=asr_result["language"], device=device)
+    aligned_result = whisperx.align(asr_result["segments"], alignment_model, metadata, audio_loaded, device, return_char_alignments=False)
+
+    print("⏳ Generating Unsupervised Voice Tracks...")
+    diarize_segments = diarize_model(audio_loaded)
+
+
+    target_voice_vector = normalize_vector(target_voice_vector)
+    target_face_centroid = normalize_vector(target_face_centroid)
+    embedding_cache = {}
+
+    def audio_embedding(start, end):
+        key = (float(start), float(end))
+        if key in embedding_cache:
+            return embedding_cache[key]
+        left = max(0, int(start * 16000))
+        right = min(total_samples, int(end * 16000))
+        result = None
+        if right - left >= 6400:
+            try:
+                with torch.no_grad():
+                    result = normalize_vector(embedding_model.encode_batch(
+                        waveform[:, left:right]).flatten().cpu().numpy())
+                if result.shape != target_voice_vector.shape:
+                    raise ValueError("Voice prior dimensions do not match ECAPA output")
+            except ValueError:
+                raise
+            except Exception as exc:
+                print(f"Voice embedding unavailable at {start:.2f}-{end:.2f}: {exc}")
+        embedding_cache[key] = result
+        return result
+
+    cluster_scores = defaultdict(list)
+    cluster_embeddings = defaultdict(list)
+    for _, row in diarize_segments.iterrows():
+        start, end = float(row["start"]), float(row["end"])
+        if end - start < 0.6:
+            continue
+        emb = audio_embedding(start, end)
+        if emb is not None:
+            track = str(row["speaker"])
+            cluster_scores[track].append(float(np.dot(target_voice_vector, emb)))
+            cluster_embeddings[track].append((start, end, emb))
+    means = {track: float(np.mean(scores)) for track, scores in cluster_scores.items()}
+    ranked = sorted(means, key=means.get, reverse=True)
+    target_track = ranked[0] if ranked else None
+    target_mean = means[target_track] if ranked else 0.0
+    # No invented competitor when only one cluster has usable speech.
+    other_mean = means[ranked[1]] if len(ranked) > 1 else None
+    separation = target_mean - other_mean if other_mean is not None else 0.0
+    mapping_confidence = min(1.0, max(0.0, separation / 0.15))
+    print("\n--- Baseline voice affinity ---")
+    for track in ranked:
+        print(f"{track}: {means[track]:.3f} ({len(cluster_scores[track])} samples)")
+    print(f"Target candidate: {target_track}; mapping strength={mapping_confidence:.3f}")
+
+    assigned = whisperx.assign_word_speakers(diarize_segments, aligned_result)
+    timeline = []
+    for source in assigned["segments"]:
+        raw = str(source.get("speaker") or "Unknown_Speaker")
+        base = "Target_Speaker" if raw == target_track else ("Unknown" if raw == "Unknown_Speaker" else raw)
+        timeline.append(TimelineSegment(float(source["start"]), float(source["end"]),
+                        source["text"].strip(), Baseline(raw, base), source.get("words", [])))
+
+    def collect_voice(segment):
+        emb = audio_embedding(segment.start, segment.end)
+        similarity = float(np.dot(target_voice_vector, emb)) if emb is not None else None
+        strength = min(1.0, max(0.0, (segment.end - segment.start) / 1.2)) * mapping_confidence
+        target_score = 0.0
+        if similarity is not None and separation >= 0.03:
+            target_score = float(np.clip((similarity - (target_mean + other_mean) / 2) / separation, -1, 1))
+        else:
+            strength = 0.0
+        # Exclude intersecting speech from profiles so a segment cannot validate itself.
+        track_similarities = {}
+        profile_counts = {}
+        if emb is not None:
+            for track, samples in cluster_embeddings.items():
+                independent = [vector for start, end, vector in samples
+                               if end <= segment.start or start >= segment.end]
+                if len(independent) < 2:
+                    continue
+                centroid = normalize_vector(np.mean(independent, axis=0))
+                track_similarities[track] = float(np.dot(emb, centroid))
+                profile_counts[track] = len(independent)
+        candidates = sorted(track_similarities, key=track_similarities.get, reverse=True)
+        best_track = candidates[0] if len(candidates) >= 2 else None
+        margin = (track_similarities[candidates[0]] - track_similarities[candidates[1]]
+                  if len(candidates) >= 2 else 0.0)
+        segment.evidence.append(Evidence("local_voice", target_score, strength,
+            {"similarity": similarity, "target_mean": target_mean, "competitor_mean": other_mean,
+             "track_similarities": track_similarities, "independent_profile_counts": profile_counts,
+             "best_track": best_track, "track_margin": margin}))
+
+    def collect_visual(segment):
+        best, observations, frames_read = None, [], 0
+        if not np.isfinite(fps) or fps <= 0:
+            segment.evidence.append(Evidence("visual_context", 0, 0, {"reason": "invalid_fps"}))
+            return
+        frame_count = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
+        indices = np.unique(np.linspace(int(segment.start * fps),
+                    max(int(segment.start * fps), int(segment.end * fps) - 1), 5, dtype=int))
+        for index in indices:
+            if frame_count > 0 and index >= frame_count:
+                continue
+            cap.set(cv2.CAP_PROP_POS_FRAMES, int(index))
+            ok, frame = cap.read()
+            if not ok:
+                continue
+            frames_read += 1
+            for face in face_analyzer.get(frame):
+                emb = getattr(face, "embedding", None)
+                if emb is not None:
+                    similarity = float(np.dot(target_face_centroid, normalize_vector(emb)))
+                    best = similarity if best is None else max(best, similarity)
+                x1, y1, x2, y2 = map(float, face.bbox[:4])
+                h, w = frame.shape[:2]
+                fw, fh = max(1, x2-x1), max(1, y2-y1)
+                left, right = max(0, min(w, int(x1-fw*.1))), max(0, min(w, int(x2+fw*.1)))
+                top, bottom = max(0, min(h, int(y2+fh*.2))), max(0, min(h, int(y2+fh*.5)))
+                dark_fraction = None
+                if bottom-top > 5 and right-left > 5:
+                    hsv = cv2.cvtColor(frame[top:bottom, left:right], cv2.COLOR_BGR2HSV)
+                    dark_fraction = float(np.mean((hsv[:, :, 2] < 75) & (hsv[:, :, 1] < 60)))
+                observations.append({"frame": int(index), "bbox": [x1,y1,x2,y2],
+                                     "dark_clothing_fraction": dark_fraction})
+        segment.evidence.append(Evidence("target_face_visible", 0, 0,
+            {"best_similarity": best, "target_visible_hint": best is not None and best >= 0.4,
+             "active_speaker_verified": False}))
+        segment.evidence.append(Evidence("visual_context", 0, 0,
+            {"frames_read": frames_read, "observations": observations,
+             "note": "Dark clothing is not a police detector; no speaking identity inferred."}))
+
+    def collect_semantic(segment):
+        # Without an explicit role-to-identity mapping, words cannot identify a person.
+        # Keep semantic/context observations neutral for arbitrary videos and targets.
+        segment.evidence.append(Evidence("semantic_context", 0.0, 0.0,
+            {"identity_mapping": None,
+             "note": "No role or phrase is assumed to identify the supplied target."}))
+
+    try:
+        for segment in timeline:
+            for collector in (collect_voice, collect_visual, collect_semantic):
+                collector(segment)
+            resolve_segment(segment, target_track, mapping_confidence)
+        print("\n--- Evidence-Based Speaker Resolution ---")
+        for segment in timeline:
+            print(f"[{segment.start:.2f}s - {segment.end:.2f}s] {segment.final_speaker} "
+                  f"(strength={segment.final_confidence:.2f}): {segment.text}")
+            print(f"    baseline={segment.baseline.speaker}; raw={segment.baseline.raw_speaker_track}")
+            for item in segment.evidence:
+                print(f"    {item.source}: score={item.target_score:+.2f}, strength={item.confidence:.2f}, {item.details}")
+        with open(args.output, "w", encoding="utf-8") as output:
+            json.dump({"target_candidate": target_track, "cluster_voice_means": means,
+                       "mapping_strength": mapping_confidence,
+                       "confidence_is_calibrated": False,
+                       "segments": [asdict(segment) for segment in timeline]}, output, indent=2, ensure_ascii=False)
+    finally:
+        cap.release()
+
+
+if __name__ == "__main__":
+    main()
