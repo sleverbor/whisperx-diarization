@@ -23,3 +23,9 @@ separated/
 !chainofrules.py
 
 !test_short_answers.py
+
+# Longer evaluation input
+!longer_2min.mp4
+
+# Recorded two-minute evaluation trace
+!longer_2min_evidence.json

@@ -1,0 +1,316 @@
+1
+00:00:00,257 --> 00:00:00,937
+[SPEAKER_00 | 0.72]
+What you out of here doing man?
+
+2
+00:00:02,058 --> 00:00:02,959
+[SPEAKER_00 | 0.84]
+Come over here and talk to me.
+
+3
+00:00:02,979 --> 00:00:03,839
+[Target_Speaker | 0.36]
+Whoa, whoa, whoa.
+
+4
+00:00:03,899 --> 00:00:05,180
+[Target_Speaker | 0.35]
+Why are you going to touch me?
+
+5
+00:00:05,220 --> 00:00:05,920
+[Target_Speaker | weak 0.30]
+What's going on?
+
+6
+00:00:05,940 --> 00:00:06,761
+[SPEAKER_00 | 0.68]
+Come over here and talk to me.
+
+7
+00:00:06,781 --> 00:00:07,821
+[SPEAKER_00 | 0.47]
+You are on private property.
+
+8
+00:00:07,861 --> 00:00:08,522
+[Target_Speaker | 0.67]
+I'm not going to go in there.
+
+9
+00:00:08,542 --> 00:00:09,422
+[SPEAKER_00 | 0.74]
+You are on private property.
+
+10
+00:00:09,802 --> 00:00:11,143
+[SPEAKER_00 | 0.67]
+Do not tell me what you're not going to do.
+
+11
+00:00:11,203 --> 00:00:12,884
+[SPEAKER_00 | 1.00]
+Do you have any weapons on you?
+
+12
+00:00:12,904 --> 00:00:13,164
+[Target_Speaker | weak 0.20]
+Nope.
+
+13
+00:00:13,204 --> 00:00:15,586
+[SPEAKER_00 | 0.91]
+Do you mind if I pat you down to shake?
+
+14
+00:00:15,666 --> 00:00:16,006
+[Target_Speaker | weak 0.30]
+Yeah, I do.
+
+15
+00:00:16,026 --> 00:00:17,187
+[SPEAKER_00 | 0.61]
+Okay, why are you out here?
+
+16
+00:00:17,207 --> 00:00:18,267
+[Target_Speaker | 0.55]
+This is an illegal search and seizure.
+
+17
+00:00:18,447 --> 00:00:19,168
+[SPEAKER_00 | 0.74]
+Why are you out here?
+
+18
+00:00:19,268 --> 00:00:20,589
+[Target_Speaker | 0.79]
+I'm invoking my 5th Amendment rights.
+
+19
+00:00:20,909 --> 00:00:22,230
+[SPEAKER_00 | 0.57]
+You want to give me a reason why you're here?
+
+20
+00:00:22,810 --> 00:00:24,451
+[Target_Speaker | 0.68]
+Where you took me from was public property.
+
+21
+00:00:24,551 --> 00:00:26,352
+[Target_Speaker | 0.36]
+I'm going to invoke my 5th Amendment rights to pass out.
+
+22
+00:00:26,795 --> 00:00:28,136
+[SPEAKER_00 | 0.89]
+You're being arrested for criminal loitering.
+
+23
+00:00:28,697 --> 00:00:29,277
+[SPEAKER_00 | 0.67]
+Criminal loitering?
+
+24
+00:00:29,517 --> 00:00:31,219
+[SPEAKER_00 | 0.41]
+You can't give me a reason why you're out here.
+
+25
+00:00:31,459 --> 00:00:33,400
+[Target_Speaker | 0.71]
+Am I being arrested or detained?
+
+26
+00:00:33,621 --> 00:00:34,321
+[SPEAKER_00 | 0.73]
+You're being arrested.
+
+27
+00:00:34,341 --> 00:00:34,681
+[SPEAKER_00 | weak 0.30]
+Oh, okay.
+
+28
+00:00:34,982 --> 00:00:36,383
+[SPEAKER_00 | 0.76]
+He's gotta write the videos.
+
+29
+00:00:36,443 --> 00:00:39,085
+[SPEAKER_00 | 0.63]
+He's gotta write the videos.
+
+30
+00:00:39,265 --> 00:00:40,966
+[SPEAKER_00 | 0.72]
+He said you refused to answer any questions.
+
+31
+00:00:41,467 --> 00:00:45,410
+[Target_Speaker | 0.94]
+Do you actually believe I have to give you a reason why
+I'm standing on a public
+
+32
+00:00:45,430 --> 00:00:46,231
+[Target_Speaker | 0.94]
+sidewalk?
+
+33
+00:00:46,271 --> 00:00:46,791
+[SPEAKER_00 | 0.63]
+Oh, 100%.
+
+34
+00:00:47,392 --> 00:00:47,632
+[Target_Speaker | weak 0.30]
+Really?
+
+35
+00:00:48,052 --> 00:00:48,232
+[Target_Speaker | weak 0.30]
+Yeah.
+
+36
+00:00:48,513 --> 00:00:49,734
+[Target_Speaker | 0.75]
+Looks like the guys need some training.
+
+37
+00:00:50,054 --> 00:00:52,576
+[SPEAKER_00 | 1.00]
+If you get out and do the same thing over again, the same
+thing's gonna happen.
+
+38
+00:00:53,036 --> 00:00:53,417
+[Target_Speaker | weak 0.30]
+We'll see.
+
+39
+00:00:53,857 --> 00:00:54,397
+[Target_Speaker | weak 0.25]
+We'll see you later.
+
+40
+00:00:54,417 --> 00:00:54,738
+[Target_Speaker | weak 0.30]
+Take care.
+
+41
+00:00:56,130 --> 00:00:57,591
+[Target_Speaker | weak 0.25]
+What's going on today, everybody?
+
+42
+00:00:57,651 --> 00:01:01,955
+[Target_Speaker | 1.00]
+As you may know, earlier this year, I was arrested in
+Tupelo, Mississippi
+
+43
+00:01:02,395 --> 00:01:04,777
+[Target_Speaker | 1.00]
+on charges that did not even exist.
+
+44
+00:01:05,138 --> 00:01:09,181
+[Target_Speaker | 1.00]
+This is going to be the story behind how the arresting
+officer explained and
+
+45
+00:01:09,221 --> 00:01:13,625
+[Target_Speaker | 1.00]
+demonstrated his own downfall in this situation and how he
+explained he
+
+46
+00:01:13,685 --> 00:01:15,086
+[Target_Speaker | 1.00]
+even knew he was incorrect.
+
+47
+00:01:15,226 --> 00:01:16,888
+[Target_Speaker | 0.87]
+And that's not even the craziest part.
+
+48
+00:01:17,088 --> 00:01:20,810
+[Target_Speaker | 1.00]
+But now that my lawyer has gotten the case dismissed and
+all the charges are
+
+49
+00:01:20,850 --> 00:01:25,312
+[Target_Speaker | 1.00]
+dismissed, I am free to talk about the entire situation
+and show all of the
+
+50
+00:01:25,392 --> 00:01:29,134
+[Target_Speaker | 1.00]
+evidence that I have gotten through the discovery period
+in this case.
+
+51
+00:01:29,414 --> 00:01:33,296
+[Target_Speaker | 1.00]
+But as you guys know, with this false arrest and the rest
+of the process coming up
+
+52
+00:01:33,496 --> 00:01:34,897
+[Target_Speaker | 1.00]
+afterwards, it is a long,
+
+53
+00:01:35,197 --> 00:01:36,881
+[Target_Speaker | 1.00]
+and arduous road ahead of me.
+
+54
+00:01:36,981 --> 00:01:41,310
+[Target_Speaker | 1.00]
+And with YouTube demonetizing 99% of First Amendment
+auditors
+
+55
+00:01:41,450 --> 00:01:45,118
+[Target_Speaker | 1.00]
+out there, it would be a fantastic time to go and find me
+on my other
+
+56
+00:01:45,158 --> 00:01:45,980
+[Target_Speaker | 1.00]
+platforms.
+
+57
+00:01:46,080 --> 00:01:49,447
+[Target_Speaker | 1.00]
+I am on Rumble, I am on Patreon, I am on Locals.
+
+58
+00:01:49,627 --> 00:01:51,912
+[Target_Speaker | 0.78]
+All of those will be linked in the description.
+
+59
+00:01:52,032 --> 00:01:54,818
+[Target_Speaker | 1.00]
+And just a watch and a follow is greatly appreciated.
+
+60
+00:01:54,878 --> 00:01:59,247
+[Target_Speaker | 1.00]
+But if you are in the position to do so, my Venmo and my
+PayPal and my
+
+61
+00:01:59,307 --> 00:01:59,989
+[Target_Speaker | 1.00]
+other donation
