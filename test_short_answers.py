@@ -1,7 +1,8 @@
 """Behavior checks for conversational attribution, independent of model downloads."""
 import unittest
+import numpy as np
 from chainofrules import (Baseline, Evidence, TimelineSegment, short_voice_crop,
-                          add_question_response_evidence, resolve_segment)
+                          add_question_response_evidence, resolve_segment, collect_visual_evidence)
 
 
 class ShortAnswerTests(unittest.TestCase):
@@ -78,6 +79,50 @@ class ShortAnswerTests(unittest.TestCase):
              "track_similarities": {"SPEAKER_00": 0.20, "SPEAKER_01": 0.05}})]
         resolve_segment(reply, "SPEAKER_01", 1.0)
         self.assertEqual(reply.final_speaker, "Uncertain")
+
+    def test_face_presence_alone_does_not_override_voice(self):
+        reply = self.reply(start=28.0, end=29.0)
+        reply.evidence = [Evidence("local_voice", -0.8, 0.7,
+            {"track_margin": 0.03, "track_similarities": {"SPEAKER_00": 0.23, "SPEAKER_01": 0.20}}),
+            Evidence("target_face_visible", 1.0, 1.0)]
+        resolve_segment(reply, "SPEAKER_01", 1.0)
+        self.assertEqual(reply.final_speaker, "SPEAKER_00")
+
+    def test_mouth_hint_is_tentative_only_with_ambiguous_profiles(self):
+        for margin, expected in ((0.03, "Target_Speaker"), (0.20, "SPEAKER_00")):
+            reply = self.reply(start=28.0, end=29.0)
+            reply.evidence = [Evidence("local_voice", -0.8, 0.7,
+                {"track_margin": margin, "track_similarities": {"SPEAKER_00": 0.23, "SPEAKER_01": 0.20}}),
+                Evidence("target_mouth_motion", 1.0, 0.2)]
+            resolve_segment(reply, "SPEAKER_01", 1.0)
+            self.assertEqual(reply.final_speaker, expected)
+            if margin < 0.05:
+                self.assertLessEqual(reply.final_confidence, 0.25)
+
+    def test_face_identity_continues_through_head_turn_but_not_bbox_jump(self):
+        class Capture:
+            index = 0
+            def get(self, prop): return 20
+            def set(self, prop, value): self.index = int(value)
+            def read(self): return True, np.zeros((200, 200, 3), dtype=np.uint8)
+        class Face:
+            pass
+        for jump in (False, True):
+            capture = Capture()
+            class Analyzer:
+                def get(self, frame):
+                    face = Face()
+                    face.embedding = np.array([0.7, np.sqrt(1-0.7**2)]) if capture.index < 2 else np.array([0.3, np.sqrt(1-0.3**2)])
+                    face.bbox = np.array([10,10,80,100]) if not jump or capture.index < 2 else np.array([120,120,190,200])
+                    points = np.zeros((68,3))
+                    points[64,0] = 10
+                    points[66,1] = 0.4 if capture.index % 2 else 1.2
+                    face.landmark_3d_68 = points
+                    return [face]
+            reply = self.reply(start=0.5, end=1.4)
+            collect_visual_evidence(reply, capture, 8.0, Analyzer(), np.array([1.0, 0.0]))
+            motion = next(item for item in reply.evidence if item.source == "target_mouth_motion")
+            self.assertEqual(motion.confidence > 0, not jump)
 
     def test_crop_respects_both_neighbors(self):
         following = TimelineSegment(13.01, 15.6, "Next", Baseline("SPEAKER_00", "SPEAKER_00"))

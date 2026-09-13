@@ -101,6 +101,93 @@ def add_question_response_evidence(segment, previous, tracks, target_track, mapp
          "gap": gap, "assumption": "Immediate brief answer may be a different speaker; not voice-verified."}))
 
 
+def bbox_iou(left, right):
+    x1, y1 = max(left[0], right[0]), max(left[1], right[1])
+    x2, y2 = min(left[2], right[2]), min(left[3], right[3])
+    intersection = max(0.0, x2-x1) * max(0.0, y2-y1)
+    left_area = max(0.0, left[2]-left[0]) * max(0.0, left[3]-left[1])
+    right_area = max(0.0, right[2]-right[0]) * max(0.0, right[3]-right[1])
+    return intersection / max(left_area + right_area - intersection, 1e-9)
+
+
+def collect_visual_evidence(segment, cap, fps, face_analyzer, target_face_centroid):
+    """Track a recently recognized face through head turns; mouth motion is only a hint."""
+    if not np.isfinite(fps) or fps <= 0:
+        segment.evidence.append(Evidence("visual_context", 0, 0, {"reason": "invalid_fps"}))
+        return
+    frame_count = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
+    # Lead-in frames establish identity; only frames inside speech measure mouth motion.
+    times = np.arange(max(0.0, segment.start - 0.5), segment.end, 0.125)
+    indices = np.unique(np.rint(times * fps).astype(int))
+    best, anchor_best, direct_matches, frames_read = None, None, 0, 0
+    anchor = None
+    observations, apertures, target_frames = [], [], []
+    for index in indices:
+        if frame_count > 0 and index >= frame_count:
+            continue
+        cap.set(cv2.CAP_PROP_POS_FRAMES, int(index))
+        ok, frame = cap.read()
+        if not ok:
+            continue
+        frames_read += 1
+        time = index / fps
+        candidates = []
+        for face in face_analyzer.get(frame):
+            embedding = getattr(face, "embedding", None)
+            if embedding is None:
+                continue
+            embedding = normalize_vector(embedding)
+            similarity = float(np.dot(target_face_centroid, embedding))
+            if segment.start <= time <= segment.end:
+                best = similarity if best is None else max(best, similarity)
+            candidates.append((similarity, face, embedding))
+        recognized = [item for item in candidates if item[0] >= 0.40]
+        selected, identity_source = None, None
+        if recognized:
+            selected = max(recognized, key=lambda item: item[0])
+            direct_matches += 1
+            anchor_best = selected[0] if anchor_best is None else max(anchor_best, selected[0])
+            identity_source = "reference_match"
+        elif anchor is not None and time - anchor[2] <= 0.30:
+            linked = [item for item in candidates
+                      if bbox_iou(item[1].bbox, anchor[0]) >= 0.20
+                      and float(np.dot(item[2], anchor[1])) >= 0.45]
+            if linked:
+                selected = max(linked, key=lambda item: float(np.dot(item[2], anchor[1])))
+                identity_source = "face_continuity"
+        for similarity, face, embedding in candidates:
+            observations.append({"frame": int(index), "similarity": similarity,
+                                 "bbox": face.bbox.tolist()})
+        if selected is None:
+            continue
+        similarity, face, embedding = selected
+        anchor = (face.bbox.copy(), embedding, time)
+        if not segment.start <= time <= segment.end:
+            continue
+        target_frames.append({"frame": int(index), "identity_source": identity_source,
+                              "similarity": similarity})
+        landmarks = getattr(face, "landmark_3d_68", None)
+        if landmarks is not None and np.all(np.isfinite(landmarks)):
+            # Standard 68-point inner mouth: aperture / width in 3D landmark coordinates.
+            width = float(np.linalg.norm(landmarks[60] - landmarks[64]))
+            if width > 1e-6:
+                apertures.append(float(np.linalg.norm(landmarks[62] - landmarks[66]) / width))
+    spread = float(np.percentile(apertures, 90) - np.percentile(apertures, 10)) if len(apertures) >= 5 else 0.0
+    motion_hint = direct_matches >= 2 and len(apertures) >= 5 and spread >= 0.03
+    segment.evidence.append(Evidence("target_face_visible", 0, 0,
+        {"best_similarity": best, "identity_anchor_similarity": anchor_best,
+         "target_visible_hint": bool(target_frames), "tracked_target_frames": target_frames,
+         "active_speaker_verified": False}))
+    segment.evidence.append(Evidence("visual_context", 0, 0,
+        {"frames_read": frames_read, "observations": observations,
+         "note": "Face identity and visibility do not identify police or prove speech."}))
+    segment.evidence.append(Evidence("target_mouth_motion", 1.0 if motion_hint else 0.0,
+        0.20 if motion_hint else 0.0,
+        {"direct_identity_matches": direct_matches, "mouth_samples": len(apertures),
+         "aperture_spread": spread, "active_speaker_verified": False,
+         "note": "Weak landmark motion hint; no lipreading or audio-visual synchronization model."}))
+
+
 def resolve_segment(segment, target_track, mapping_confidence):
     """Only the resolver assigns final identity; visibility alone cannot flip it."""
     raw = segment.baseline.raw_speaker_track
@@ -111,9 +198,13 @@ def resolve_segment(segment, target_track, mapping_confidence):
     reasons = [f"baseline={raw}; mapping strength={mapping_confidence:.3f}"]
     voice = None
     response = None
+    mouth_motion = None
     for item in segment.evidence:
         # Presence/context describes the scene, not the active speaker.
         if item.source in ("target_face_visible", "visual_context"):
+            continue
+        if item.source == "target_mouth_motion":
+            mouth_motion = item
             continue
         if item.source == "question_response":
             response = item
@@ -145,7 +236,16 @@ def resolve_segment(segment, target_track, mapping_confidence):
     response_track = response.details.get("candidate_track") if response is not None else None
     response_inference = (insufficient_short_audio and response_track is not None
                           and response.confidence > 0)
-    if response_inference:
+    visual_inference = (mouth_motion is not None and mouth_motion.confidence > 0
+                        and voice is not None and voice.confidence > 0
+                        and mapping_confidence >= 0.75
+                        and len(details.get("track_similarities", {})) >= 2
+                        and details.get("track_margin", 1.0) < 0.05
+                        and max(details["track_similarities"].values()) < 0.35)
+    if visual_inference:
+        final = "Target_Speaker"
+        reasons.append("weak visible-target mouth-motion inference; independent voice profiles are ambiguous")
+    elif response_inference:
         final = "Target_Speaker" if response_track == target_track else response_track
         reasons.append(f"weak question/answer inference to {response_track}; not voice-verified")
     elif verified_correction:
@@ -164,7 +264,9 @@ def resolve_segment(segment, target_track, mapping_confidence):
     if verified_correction:
         segment.final_confidence = float(min(voice.confidence, abs(voice.target_score),
                                              details["track_margin"] / 0.20))
-    if response_inference:
+    if visual_inference:
+        segment.final_confidence = 0.25
+    elif response_inference:
         segment.final_confidence = min(0.25, response.confidence)
     elif insufficient_short_audio:
         segment.final_confidence = 0.0
@@ -339,43 +441,7 @@ def main():
              "best_track": best_track, "track_margin": margin}))
 
     def collect_visual(segment):
-        best, observations, frames_read = None, [], 0
-        if not np.isfinite(fps) or fps <= 0:
-            segment.evidence.append(Evidence("visual_context", 0, 0, {"reason": "invalid_fps"}))
-            return
-        frame_count = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
-        indices = np.unique(np.linspace(int(segment.start * fps),
-                    max(int(segment.start * fps), int(segment.end * fps) - 1), 5, dtype=int))
-        for index in indices:
-            if frame_count > 0 and index >= frame_count:
-                continue
-            cap.set(cv2.CAP_PROP_POS_FRAMES, int(index))
-            ok, frame = cap.read()
-            if not ok:
-                continue
-            frames_read += 1
-            for face in face_analyzer.get(frame):
-                emb = getattr(face, "embedding", None)
-                if emb is not None:
-                    similarity = float(np.dot(target_face_centroid, normalize_vector(emb)))
-                    best = similarity if best is None else max(best, similarity)
-                x1, y1, x2, y2 = map(float, face.bbox[:4])
-                h, w = frame.shape[:2]
-                fw, fh = max(1, x2-x1), max(1, y2-y1)
-                left, right = max(0, min(w, int(x1-fw*.1))), max(0, min(w, int(x2+fw*.1)))
-                top, bottom = max(0, min(h, int(y2+fh*.2))), max(0, min(h, int(y2+fh*.5)))
-                dark_fraction = None
-                if bottom-top > 5 and right-left > 5:
-                    hsv = cv2.cvtColor(frame[top:bottom, left:right], cv2.COLOR_BGR2HSV)
-                    dark_fraction = float(np.mean((hsv[:, :, 2] < 75) & (hsv[:, :, 1] < 60)))
-                observations.append({"frame": int(index), "bbox": [x1,y1,x2,y2],
-                                     "dark_clothing_fraction": dark_fraction})
-        segment.evidence.append(Evidence("target_face_visible", 0, 0,
-            {"best_similarity": best, "target_visible_hint": best is not None and best >= 0.4,
-             "active_speaker_verified": False}))
-        segment.evidence.append(Evidence("visual_context", 0, 0,
-            {"frames_read": frames_read, "observations": observations,
-             "note": "Dark clothing is not a police detector; no speaking identity inferred."}))
+        collect_visual_evidence(segment, cap, fps, face_analyzer, target_face_centroid)
 
     def collect_semantic(segment):
         # Without an explicit role-to-identity mapping, words cannot identify a person.

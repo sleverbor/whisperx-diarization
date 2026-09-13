@@ -45,8 +45,8 @@ were attributed to the target. "No" remained uncertain because its aligned inter
 Other short replies and three conflicts also remained uncertain.
 Text such as "pat you down to shake" still needs checking against the actual audio.
 Confidence values are heuristic strengths, not calibrated probabilities.
-The script records face presence and dark clothing context. It does **not** implement police recognition,
-lipreading, audio-synchronized active speaker detection, or persistent visual person tracking.
+The script records face presence and short-term target face continuity. It does **not** implement
+police recognition, lipreading, or a learned audio-synchronized active speaker detector.
 
 ## Safe tuning workflow
 
@@ -88,3 +88,25 @@ Replaying the fixed baseline evidence changed only "No" and "Yeah, I do" from un
 to weak contextual target assignments. A fresh ASR pass produced 23 segments rather than
 the baseline's 24, with variation near "OK / All right"; this variation is separate from
 the attribution tuning. Three longer baseline conflicts remain uncertain.
+
+## Visual continuity tuning
+
+On `tuning-face-continuity`, the voice correction was committed separately from the visual change.
+Independent voice profiles now resolve three previous baseline conflicts to SPEAKER_00.
+The visual check uses a half-second identity lead-in, appearance similarity, bounding-box overlap,
+and a maximum detection gap to continue a recently recognized target face through a head turn.
+Lead-in frames only establish identity; mouth measurements use frames within the utterance.
+
+Normalized 3D mouth-landmark motion is a weak speaking hint, not lipreading or audio-visual synchronization.
+It can suggest the target at strength 0.25 only when independent voice profiles are both weak and
+closely matched. Face presence alone cannot change identity, and stronger voice profiles are retained.
+This heuristic can still mistake expression changes or landmark noise for speech.
+
+The actual video was reanalyzed with the saved 23-utterance transcript and voice evidence, so the
+comparison isolates this tuning from fresh-ASR variation. `visual_tuning_transcript.txt` records it.
+Three unresolved officer lines changed to SPEAKER_00; the final "Criminal loitering" changed to
+a tentative Target_Speaker (0.25). All other speaker labels remained unchanged.
+The user identified that final speaker as the target. There were four direct target identity matches
+in the visual lead-in/utterance and five tracked mouth measurements during the utterance.
+No automatic police role is inferred: SPEAKER_00 is the officer identified in this particular test.
+The transcript wording still needs audio verification, and general accuracy remains unproven.
