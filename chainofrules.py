@@ -101,6 +101,28 @@ def add_question_response_evidence(segment, previous, tracks, target_track, mapp
          "gap": gap, "assumption": "Immediate brief answer may be a different speaker; not voice-verified."}))
 
 
+
+def add_echo_question_evidence(segment, previous, tracks, target_track, mapping_confidence):
+    """A brief quoted question can suggest another speaker, never establish one."""
+    if previous is None or not segment.text.strip().endswith("?"):
+        return
+    tokens = lambda text: re.findall(r"[a-z']+", text.lower())
+    phrase, statement = tokens(segment.text), tokens(previous.text)
+    if not 2 <= len(phrase) <= 5 or statement[-len(phrase):] != phrase:
+        return
+    if not 0 <= segment.start - previous.end <= 0.8 or segment.end - segment.start > 1.2:
+        return
+    if previous.final_confidence < 0.65 or mapping_confidence < 0.75:
+        return
+    previous_track = target_track if previous.final_speaker == "Target_Speaker" else previous.final_speaker
+    candidates = sorted(set(tracks) - {previous_track})
+    if previous_track not in tracks or len(candidates) != 1:
+        return
+    segment.evidence.append(Evidence("echo_question", 0, 0.20,
+        {"candidate_track": candidates[0], "previous_track": previous_track,
+         "assumption": "Brief repeated question may come from the listener; not voice-verified."}))
+
+
 def bbox_iou(left, right):
     x1, y1 = max(left[0], right[0]), max(left[1], right[1])
     x2, y2 = min(left[2], right[2]), min(left[3], right[3])
@@ -199,9 +221,16 @@ def resolve_segment(segment, target_track, mapping_confidence):
     voice = None
     response = None
     mouth_motion = None
+    echo = None
+    visible = None
     for item in segment.evidence:
         # Presence/context describes the scene, not the active speaker.
         if item.source in ("target_face_visible", "visual_context"):
+            if item.source == "target_face_visible":
+                visible = item
+            continue
+        if item.source == "echo_question":
+            echo = item
             continue
         if item.source == "target_mouth_motion":
             mouth_motion = item
@@ -234,7 +263,11 @@ def resolve_segment(segment, target_track, mapping_confidence):
     insufficient_short_audio = (segment.end - segment.start < 0.4
                                 and (voice is None or voice.confidence == 0))
     response_track = response.details.get("candidate_track") if response is not None else None
-    response_inference = (insufficient_short_audio and response_track is not None
+    profiles = details.get("track_similarities", {})
+    weak_padded_voice = (segment.end - segment.start < 0.4 and voice is not None
+                         and voice.confidence <= 0.30 and len(profiles) >= 2
+                         and max(profiles.values()) < 0.30)
+    response_inference = ((insufficient_short_audio or weak_padded_voice) and response_track is not None
                           and response.confidence > 0)
     visual_inference = (mouth_motion is not None and mouth_motion.confidence > 0
                         and voice is not None and voice.confidence > 0
@@ -242,7 +275,14 @@ def resolve_segment(segment, target_track, mapping_confidence):
                         and len(details.get("track_similarities", {})) >= 2
                         and details.get("track_margin", 1.0) < 0.05
                         and max(details["track_similarities"].values()) < 0.35)
-    if visual_inference:
+    echo_inference = (echo is not None and echo.details["candidate_track"] == target_track
+                      and visible is not None and visible.details.get("target_visible_hint", False)
+                      and len(profiles) >= 2 and max(profiles.values()) < 0.30
+                      and matched_track == target_track and voice.confidence < 0.5)
+    if echo_inference:
+        final = "Target_Speaker"
+        reasons.append("weak repeated-question inference with face continuity and weak supporting voice profile; not voice-verified")
+    elif visual_inference:
         final = "Target_Speaker"
         reasons.append("weak visible-target mouth-motion inference; independent voice profiles are ambiguous")
     elif response_inference:
@@ -264,7 +304,9 @@ def resolve_segment(segment, target_track, mapping_confidence):
     if verified_correction:
         segment.final_confidence = float(min(voice.confidence, abs(voice.target_score),
                                              details["track_margin"] / 0.20))
-    if visual_inference:
+    if echo_inference:
+        segment.final_confidence = 0.20
+    elif visual_inference:
         segment.final_confidence = 0.25
     elif response_inference:
         segment.final_confidence = min(0.25, response.confidence)
@@ -459,6 +501,7 @@ def main():
             collect_visual(segment)
             collect_semantic(segment)
             add_question_response_evidence(segment, previous, all_tracks, target_track, mapping_confidence)
+            add_echo_question_evidence(segment, previous, all_tracks, target_track, mapping_confidence)
             resolve_segment(segment, target_track, mapping_confidence)
         print("\n--- Evidence-Based Speaker Resolution ---")
         for segment in timeline:

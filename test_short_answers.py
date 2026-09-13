@@ -2,7 +2,7 @@
 import unittest
 import numpy as np
 from chainofrules import (Baseline, Evidence, TimelineSegment, short_voice_crop,
-                          add_question_response_evidence, resolve_segment, collect_visual_evidence)
+                          add_question_response_evidence, add_echo_question_evidence, resolve_segment, collect_visual_evidence)
 
 
 class ShortAnswerTests(unittest.TestCase):
@@ -136,6 +136,44 @@ class ShortAnswerTests(unittest.TestCase):
         preceding.end = 12.92
         reply = self.reply()
         self.assertEqual(short_voice_crop(reply, preceding, None, 30.0), (reply.start, reply.end))
+
+
+    def test_echo_requires_weak_supporting_voice_and_visible_target(self):
+        previous = self.question("You are being arrested for criminal loitering.")
+        reply = self.reply(start=13.3, end=13.88, text="Criminal loitering?")
+        reply.evidence = [Evidence("local_voice", -.8, .48,
+            {"best_track": "SPEAKER_01", "track_margin": .07,
+             "track_similarities": {"SPEAKER_00": .05, "SPEAKER_01": .12}}),
+            Evidence("target_face_visible", 0, 0, {"target_visible_hint": True})]
+        add_echo_question_evidence(reply, previous, {"SPEAKER_00", "SPEAKER_01"}, "SPEAKER_01", 1)
+        resolve_segment(reply, "SPEAKER_01", 1)
+        self.assertEqual(reply.final_speaker, "Target_Speaker")
+        self.assertEqual(reply.final_confidence, .20)
+        reply.evidence = [e for e in reply.evidence if e.source != "target_face_visible"]
+        resolve_segment(reply, "SPEAKER_01", 1)
+        self.assertNotEqual(reply.final_speaker, "Target_Speaker")
+
+    def test_echo_does_not_override_clear_voice_or_choose_among_three_people(self):
+        previous = self.question("You are being arrested for criminal loitering.")
+        reply = self.reply(start=13.3, end=13.88, text="Criminal loitering?")
+        reply.evidence = [Evidence("local_voice", -1, .6,
+            {"best_track": "SPEAKER_00", "track_margin": .4,
+             "track_similarities": {"SPEAKER_00": .5, "SPEAKER_01": .1}}),
+            Evidence("target_face_visible", 0, 0, {"target_visible_hint": True})]
+        add_echo_question_evidence(reply, previous, {"SPEAKER_00", "SPEAKER_01"}, "SPEAKER_01", 1)
+        resolve_segment(reply, "SPEAKER_01", 1)
+        self.assertEqual(reply.final_speaker, "SPEAKER_00")
+        reply.evidence = []
+        add_echo_question_evidence(reply, previous, {"SPEAKER_00", "SPEAKER_01", "SPEAKER_02"}, "SPEAKER_01", 1)
+        self.assertEqual(reply.evidence, [])
+
+    def test_padded_but_weak_voice_allows_tentative_answer(self):
+        reply = self.reply()
+        reply.evidence = [Evidence("local_voice", -1, .28,
+            {"best_track": "SPEAKER_00", "track_similarities": {"SPEAKER_00": .23, "SPEAKER_01": .08}})]
+        self.infer(reply, self.question())
+        self.assertEqual(reply.final_speaker, "Target_Speaker")
+        self.assertEqual(reply.final_confidence, .20)
 
 
 if __name__ == "__main__":
