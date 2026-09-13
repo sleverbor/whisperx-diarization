@@ -63,6 +63,22 @@ class ShortAnswerTests(unittest.TestCase):
         resolve_segment(reply, "SPEAKER_01", 1.0)
         self.assertLessEqual(reply.final_confidence, 0.30)
 
+    def test_independent_voice_corrects_short_baseline_conflict(self):
+        reply = self.reply(start=0.25, end=0.92, raw="SPEAKER_01", text="Question")
+        reply.evidence = [Evidence("local_voice", -0.57, 0.55,
+            {"best_track": "SPEAKER_00", "track_margin": 0.15,
+             "track_similarities": {"SPEAKER_00": 0.31, "SPEAKER_01": 0.16}})]
+        resolve_segment(reply, "SPEAKER_01", 1.0)
+        self.assertEqual(reply.final_speaker, "SPEAKER_00")
+
+    def test_poor_profile_match_cannot_correct_identity(self):
+        reply = self.reply(start=0.25, end=0.92, raw="SPEAKER_01", text="Question")
+        reply.evidence = [Evidence("local_voice", -0.8, 0.55,
+            {"best_track": "SPEAKER_00", "track_margin": 0.15,
+             "track_similarities": {"SPEAKER_00": 0.20, "SPEAKER_01": 0.05}})]
+        resolve_segment(reply, "SPEAKER_01", 1.0)
+        self.assertEqual(reply.final_speaker, "Uncertain")
+
     def test_crop_respects_both_neighbors(self):
         following = TimelineSegment(13.01, 15.6, "Next", Baseline("SPEAKER_00", "SPEAKER_00"))
         start, end = short_voice_crop(self.reply(), self.question(), following, 30.0)

@@ -133,10 +133,11 @@ def resolve_segment(segment, target_track, mapping_confidence):
     # A strong reference match plus an independent track match can correct diarization.
     details = voice.details if voice is not None else {}
     matched_track = details.get("best_track")
-    verified_correction = (strong_conflict and voice.confidence >= 0.8
-                          and abs(voice.target_score) >= 0.8
+    verified_correction = (strong_conflict and voice.confidence >= 0.5
+                          and abs(voice.target_score) >= 0.4
                           and details.get("track_margin", 0.0) >= 0.10
                           and matched_track is not None
+                          and details.get("track_similarities", {}).get(matched_track, -1.0) >= 0.30
                           and ((voice.target_score > 0 and matched_track == target_track)
                                or (voice.target_score < 0 and matched_track != target_track)))
     insufficient_short_audio = (segment.end - segment.start < 0.4
