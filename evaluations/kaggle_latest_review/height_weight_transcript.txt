@@ -1,0 +1,10 @@
+[0.21-6.34] SPEAKER_00 (strength=0.98): and loitering around businesses causing concern and suspicion against the law.
+[8.74-9.56] SPEAKER_00 (strength=0.80): What's your date of birth, John?
+[9.94-10.66] SPEAKER_00 (strength=0.38): March 17, 2002.
+[11.36-14.86] SPEAKER_00 (strength=0.69): You got tattoos on both arms?
+[14.92-15.38] SPEAKER_00 (strength=0.60): Anywhere else?
+[15.74-16.52] SPEAKER_00 (strength=0.77): Yeah, on my chest.
+[40.24-42.24] SPEAKER_00 (strength=0.88): I don't get found guilty of anything.
+[42.32-43.48] SPEAKER_00 (strength=0.98): I do have a driver's license.
+[45.70-47.71] SPEAKER_00 (strength=0.90): I have a driver's license.
+[47.73-51.59] SPEAKER_00 (strength=1.00): I didn't give you any fake information.

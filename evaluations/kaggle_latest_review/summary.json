@@ -1,0 +1,52 @@
+{
+  "original_segments": 445,
+  "recovery_candidates": 32,
+  "uncovered_intervals_tested": 18,
+  "baseline_preserved": true,
+  "full_video_text_and_boundaries_unchanged_from_previous": true,
+  "full_video_label_changes": [
+    {
+      "start": 408.036,
+      "text": "I'm going to invoke my Fifth Amendment right to stay silent.",
+      "old": "Target_Speaker",
+      "new": "Uncertain"
+    },
+    {
+      "start": 1205.405,
+      "text": "The Tiger website?",
+      "old": "Target_Speaker",
+      "new": "Uncertain"
+    },
+    {
+      "start": 1265.253,
+      "text": "Here's a pair of slides.",
+      "old": "SPEAKER_06",
+      "new": "Target_Speaker"
+    }
+  ],
+  "reference_hashes_match": true,
+  "clip_counts": {
+    "opening": {
+      "SPEAKER_01": 12,
+      "Target_Speaker": 11,
+      "Uncertain": 1
+    },
+    "height_weight": {
+      "SPEAKER_00": 10
+    },
+    "full_video": {
+      "SPEAKER_07": 98,
+      "SPEAKER_08": 66,
+      "Target_Speaker": 149,
+      "Uncertain": 25,
+      "SPEAKER_04": 15,
+      "SPEAKER_00": 20,
+      "SPEAKER_02": 9,
+      "SPEAKER_03": 13,
+      "NonTarget_Unknown": 2,
+      "SPEAKER_01": 12,
+      "SPEAKER_06": 35,
+      "SPEAKER_09": 1
+    }
+  }
+}

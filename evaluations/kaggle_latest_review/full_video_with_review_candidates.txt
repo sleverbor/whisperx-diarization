@@ -1,0 +1,477 @@
+[0.26-0.94] SPEAKER_07: What you out of here doing, man?
+[2.06-2.96] SPEAKER_08: Come over here and talk to me.
+[2.98-3.84] Target_Speaker: Whoa, whoa, whoa.
+[3.90-5.18] Target_Speaker: Why are you going to touch me?
+[5.22-5.92] Uncertain: What's going on?
+[5.94-6.76] SPEAKER_08: Come over here and talk.
+[6.78-7.82] SPEAKER_08: You are on private property.
+[7.86-8.52] SPEAKER_08: I'm not going to go in there.
+[8.54-9.42] SPEAKER_08: You are on private property.
+[9.56-11.02] SPEAKER_08: OK. Do not tell me what you're not going to do.
+[11.04-11.24] Uncertain: All right.
+[11.88-12.86] SPEAKER_08: Do you have any weapons on you?
+[12.90-13.04] Uncertain: No.
+[13.10-15.58] SPEAKER_08: Do you mind if I pat you down to check?
+[15.66-16.02] Target_Speaker: Yeah, I do.
+[16.04-17.18] SPEAKER_08: OK. Why are you out here?
+[17.20-18.25] Target_Speaker: This is an illegal search and seizure.
+[18.45-19.17] SPEAKER_08: Why are you out here?
+[19.27-20.57] Target_Speaker: I'm invoking my Fifth Amendment rights, sir.
+[20.91-22.23] SPEAKER_08: You want to give me a reason why you're here?
+[22.81-24.45] Target_Speaker: Where you took me from was public property.
+[24.57-26.33] Target_Speaker: I'm going to invoke my Fifth Amendment rights to pass out.
+[26.80-28.14] SPEAKER_08: You're being arrested for criminal loitering.
+[28.72-29.28] SPEAKER_08: Criminal loitering?
+[29.52-31.56] SPEAKER_08: You can't give me a reason why you're out here.
+[32.16-33.40] Target_Speaker: Am I being arrested or detained?
+[33.62-34.32] SPEAKER_08: You're being arrested.
+[34.34-34.68] SPEAKER_08: Oh, okay.
+[34.98-36.38] SPEAKER_08: He's gotta write the videos.
+[36.44-38.26] SPEAKER_08: He's gotta write the videos.
+[38.30-40.97] SPEAKER_07: You said you would refuse to answer any questions?
+[41.47-46.23] Target_Speaker: Do you actually believe I have to give you a reason why I'm standing on a public sidewalk?
+[46.27-46.57] Target_Speaker: Oh, 100%.
+[46.63-46.79] Uncertain: Really?
+[47.37-48.23] Target_Speaker: Yeah.
+[48.51-50.03] Target_Speaker: Looks like you guys need some training.
+[50.05-52.58] SPEAKER_07: If you get out and do the same thing over again, the same thing's gonna happen.
+[53.04-53.42] Target_Speaker: We'll see.
+[53.84-54.38] Target_Speaker: We'll see you later.
+[54.40-54.74] Target_Speaker: Take care.
+[56.13-57.59] Target_Speaker: What's going on today, everybody?
+[57.65-64.76] Target_Speaker: As you may know, earlier this year, I was arrested in Tupelo, Mississippi on charges that did not even exist.
+[64.78-75.07] Target_Speaker: This is going to be the story behind how the arresting officer explained and demonstrated his own downfall in this situation and how he explained he even knew he was incorrect.
+[75.23-76.93] Target_Speaker: And that's not even the craziest part.
+[77.09-89.14] Target_Speaker: But now that my lawyer has gotten the case dismissed and all the charges are dismissed, I am free to talk about the entire situation and show all of the evidence that I have gotten through the discovery period in this case.
+[89.42-94.90] Target_Speaker: But as you guys know, with this false arrest and the rest of the process coming up afterwards, it is a long,
+[95.18-96.88] Target_Speaker: and arduous road ahead of me.
+[96.98-105.97] Target_Speaker: And with YouTube demonetizing 99% of First Amendment auditors out there, it would be a fantastic time to go and find me on my other platforms.
+[106.05-109.43] Target_Speaker: I am on Rumble, I am on Patreon, I am on Locals.
+[109.61-111.86] Target_Speaker: All of those will be linked in the description.
+[112.02-114.80] Target_Speaker: And just a watch and a follow is greatly appreciated.
+[114.86-124.56] Target_Speaker: But if you are in the position to do so, my Venmo and my PayPal and my other donation platforms are always linked as well if you want to make a donation to keep me out there.
+[124.94-129.07] Target_Speaker: But without further ado and without any more e-begging, let's get right into the video.
+[129.89-133.66] SPEAKER_04: My owners called me because they saw you in the security camera, just wanted to know what was up.
+[133.98-135.34] SPEAKER_04: We don't really have people video us.
+[136.18-136.92] SPEAKER_04: could you not video me?
+[136.96-137.82] SPEAKER_04: Not much, what's going on?
+[138.40-139.74] SPEAKER_04: Nothing, just wondering why you're videoing us.
+[139.82-141.06] Target_Speaker: Wondering why I'm videoing?
+[141.18-141.36] Target_Speaker: Yeah.
+[141.56-143.50] Target_Speaker: Well let me ask you a question, do you support the Constitution?
+[143.94-144.36] SPEAKER_04: Absolutely.
+[144.54-152.67] Target_Speaker: Alright, well what I do is I go around and I try to look for more people like you that support our rights and I exercise the First Amendment rights to report in public and I see how people react and respect our rights.
+[152.85-154.79] SPEAKER_04: Well I do, but I'm just curious as to why.
+[155.78-156.36] SPEAKER_04: Can you tell me that?
+[156.92-157.72] Target_Speaker: I just explained it to you.
+[158.00-161.83] Target_Speaker: Just so we're on the same page, I'll explain it nice and clear one last time, just nice and slow for you.
+[161.95-162.21] SPEAKER_04: Okay.
+[162.35-165.27] Target_Speaker: So I exercise and stress test the First Amendment.
+[165.29-165.73] Target_Speaker: I understand that.
+[165.75-166.17] Target_Speaker: But it's weird.
+[166.19-167.45] Target_Speaker: No, you just told me you didn't understand it.
+[167.61-168.72] SPEAKER_04: I do, but it's weird.
+[168.75-169.68] SPEAKER_04: And you're taping people.
+[170.56-172.90] SPEAKER_04: This is HIPAA required.
+[172.98-174.50] SPEAKER_00: That's what I'm telling you.
+[174.64-176.66] Uncertain: Oh, it's HIPAA required?
+[176.68-177.70] Uncertain: HIPAA related.
+[177.84-179.34] Target_Speaker: Can you tell me what HIPAA stands for?
+[180.15-181.13] SPEAKER_04: Yes, I can.
+[181.19-181.67] Target_Speaker: Go ahead.
+[183.02-184.94] SPEAKER_04: But he won't even come here if he's a page.
+[185.41-186.61] SPEAKER_04: I'm calling the law.
+[186.63-190.29] SPEAKER_02: Let me take that damn thing away from you, you stompin' goddamn brookie that break it up.
+[190.97-192.49] SPEAKER_02: You better get your ass outta here.
+[192.53-193.61] SPEAKER_02: You don't belong here.
+[194.53-197.50] SPEAKER_02: The damn balls on the way to run your ass off anyway.
+[197.78-198.00] Target_Speaker: Alright.
+[198.25-199.10] SPEAKER_02: Well go then!
+[199.46-201.88] SPEAKER_02: Would you go before they get here and get you then?
+[202.08-202.28] Target_Speaker: No.
+[203.38-204.98] SPEAKER_02: Oh, you wanna go to jail then, do you?
+[205.16-206.30] Target_Speaker: You think I'm gonna go to jail?
+[206.92-207.16] Target_Speaker: What?
+[207.38-209.34] Target_Speaker: After you threatened to stomp my camera?
+[209.36-211.03] Target_Speaker: What are you talking about right now, dude?
+[212.40-216.52] SPEAKER_03: Lee County 9-1-1, what's the address of your emergency?
+[217.04-218.70] SPEAKER_00: It's 715 Garfield Street.
+[219.20-221.94] SPEAKER_00: I'm not sure that this is an emergency, but I didn't know who to call.
+[222.59-224.83] SPEAKER_00: We have a person on our property filming.
+[225.17-226.41] SPEAKER_03: What's the phone number you can be reached at?
+[226.43-227.45] SPEAKER_03: Because we get disconnected.
+[228.85-233.51] SPEAKER_00: Okay, 662-372-5962, sir.
+[233.53-236.37] SPEAKER_00: My name is Lori, and I'm at DABS at 3 in Tupelo.
+[236.43-238.29] SPEAKER_03: Okay, tell me exactly what happened.
+[240.13-242.65] SPEAKER_00: Okay, we have a guy out front videotaping.
+[242.73-244.39] SPEAKER_00: This is a medical facility.
+[245.05-253.52] SPEAKER_00: It's kind of HIPAA compliant, and he is threatening patients and videoing, and I just need him gone, sir.
+[254.42-256.10] SPEAKER_00: I don't want to cause any trouble.
+[256.18-258.86] SPEAKER_07: I just need him gone.
+[260.46-260.92] SPEAKER_03: Just a second.
+[260.94-262.82] SPEAKER_03: All my officers are screaming at me at the same time.
+[263.99-264.95] SPEAKER_00: Oh, you're fine, sir.
+[264.97-267.03] SPEAKER_00: I'm sorry to even have to call you at this mess.
+[268.25-270.25] SPEAKER_03: You said he's recording and harassing customers?
+[271.53-272.05] SPEAKER_00: Yes, sir.
+[272.63-274.18] SPEAKER_00: And I've asked him to leave and he won't leave.
+[274.19-274.84] SPEAKER_03: What race is he?
+[275.10-275.48] SPEAKER_03: He keeps...
+[276.58-278.28] SPEAKER_00: He is a Caucasian male.
+[279.20-281.70] SPEAKER_00: I'm 185, 10, 185.
+[281.74-283.78] SPEAKER_03: What kind of clothing is he wearing?
+[285.16-290.70] SPEAKER_00: A black t-shirt with his own face on it and a pair of grey joggers and white tennis shoes.
+[293.55-295.23] SPEAKER_00: He's videotaping patients.
+[295.31-296.41] SPEAKER_00: I mean, this is just HIPAA.
+[296.45-297.45] SPEAKER_00: You can't do that.
+[297.65-297.75] Uncertain: OK.
+[297.77-300.71] SPEAKER_03: I'll have somebody there as quick as possible.
+[300.75-301.65] SPEAKER_03: Thank you, sir.
+[304.55-305.61] NonTarget_Unknown: Yes, ma'am.
+[305.99-311.21] Target_Speaker: So obviously, that's the 911 call that brought this call for service here in Tupelo, Mississippi.
+[312.01-312.44] Target_Speaker: How's it going?
+[312.86-313.10] SPEAKER_08: Good.
+[313.31-314.10] SPEAKER_08: What you guys out here doing?
+[314.86-315.12] Target_Speaker: What's up?
+[315.38-316.70] SPEAKER_07: What you doing?
+[316.72-319.24] SPEAKER_07: This gentleman can't even get in the store because he won't leave him alone.
+[320.42-321.10] SPEAKER_08: What you out here doing, man?
+[321.38-322.00] Target_Speaker: What am I doing?
+[322.02-322.20] Uncertain: Yeah.
+[322.22-322.98] SPEAKER_08: Come over here and talk to me.
+[324.09-324.97] SPEAKER_08: Come over here and talk to me.
+[325.01-325.85] SPEAKER_08: Whoa, whoa, whoa.
+[325.93-327.21] SPEAKER_08: Why are you going to touch me?
+[327.25-327.97] SPEAKER_07: What's going on?
+[327.99-328.77] SPEAKER_08: Come over here and talk.
+[328.79-329.85] SPEAKER_08: You are on private property.
+[329.89-330.69] SPEAKER_08: I'm not going to go on your property.
+[330.71-331.45] SPEAKER_08: You are on private property.
+[331.73-333.07] SPEAKER_08: OK. Do not tell me what you're not going to do.
+[333.09-333.29] Uncertain: All right.
+[337.85-339.35] Target_Speaker: Apparently, I'm on private property.
+[340.05-340.57] SPEAKER_08: Put this down.
+[340.69-340.91] SPEAKER_08: Yeah.
+[341.27-341.79] SPEAKER_08: Put your hands down.
+[342.35-343.65] SPEAKER_08: Do you have any weapons on you?
+[343.69-343.89] Uncertain: No.
+[343.91-346.39] SPEAKER_08: Do you mind if I pat you down to check?
+[346.47-346.89] Target_Speaker: Yeah, I do.
+[347.41-348.27] SPEAKER_08: OK. Why are you out here?
+[348.29-350.61] Target_Speaker: This is an illegal search and seizure.
+[350.83-351.57] SPEAKER_08: Why are you out here?
+[351.65-352.91] Target_Speaker: I'm invoking my Fifth Amendment rights, sir.
+[355.59-357.65] SPEAKER_08: Do you realize that you've been asked to leave this property?
+[366.36-367.70] SPEAKER_08: You want to give me a reason why you're here?
+[368.28-369.92] Target_Speaker: Where you took me from was public property.
+[370.04-373.86] Target_Speaker: I'm going to invoke my Fifth Amendment rights to pass out.
+[373.90-377.24] SPEAKER_08: OK. You're being arrested for criminal loitering.
+[377.78-379.56] Target_Speaker: Criminal loitering.
+[379.72-381.34] SPEAKER_07: You can't give me a reason why you're out here?
+[381.36-383.38] SPEAKER_02: Sir, can I say something?
+[384.02-384.94] SPEAKER_07: Give me just one second.
+[387.26-393.11] Target_Speaker: I would check the GIS and make sure that I was on their property, because what I was saying was on public property before you do this.
+[394.29-395.53] Target_Speaker: Am I being arrested or detained?
+[395.77-396.47] SPEAKER_08: You're being arrested.
+[396.59-407.38] SPEAKER_08: Oh, OK. You want to identify yourself?
+[408.04-409.76] Uncertain: I'm going to invoke my Fifth Amendment right to stay silent.
+[409.78-409.88] Uncertain: OK.
+[410.76-412.38] SPEAKER_07: When we get to the jail, you'll be booked in.
+[412.60-415.46] SPEAKER_07: And if you refuse to identify yourself, you'll be held at the jail until you do.
+[415.62-415.94] SPEAKER_07: Sounds good.
+[418.17-418.61] SPEAKER_01: What you got?
+[421.25-425.13] SPEAKER_01: All of that stuff he's got on that phone of me, I want it took off.
+[425.17-426.67] SPEAKER_01: That's invading my privacy.
+[428.21-429.33] SPEAKER_01: He's got to write the videos.
+[429.39-436.01] SPEAKER_01: I was coming right up through here and I turned my signal on and he turned and he filmed me from all the way up till you got here.
+[436.91-440.37] SPEAKER_01: And he's done a bunch of smart remarks and stuff.
+[440.77-443.77] SPEAKER_01: And I told him quit filming me and he said, I do what I want to do.
+[443.81-445.13] SPEAKER_01: You don't tell me what I do.
+[445.21-446.29] SPEAKER_01: I do what I want to do.
+[447.30-449.34] SPEAKER_01: He's a smart aleck.
+[449.36-449.98] SPEAKER_01: You heard him.
+[450.00-451.90] SPEAKER_01: He's a real smart aleck to you too.
+[452.94-455.30] SPEAKER_08: Can you take that off of there?
+[455.32-455.82] SPEAKER_08: Let me have it.
+[455.84-456.56] SPEAKER_08: I can't.
+[457.57-458.03] SPEAKER_08: I can't do.
+[458.07-458.65] SPEAKER_08: I don't know how.
+[458.81-463.27] REVIEW (overlap support 1/19 words; speaker unknown): I can't do anything. Let me have it. I can't. No sir. I can't do. I don't know how.
+[479.96-481.66] Target_Speaker: I appreciate you being professional with my stuff.
+[481.74-483.20] Target_Speaker: Just wish you were a little more educated.
+[483.22-484.98] Target_Speaker: Wish you did a little bit more of an investigation.
+[486.04-490.86] SPEAKER_08: Well, when you invoke your fifth amendment right, there is no way to do an investigation, buddy, because you're not talking.
+[491.74-495.08] Target_Speaker: Well, you should have done your investigation and see which property I was on, because I already did.
+[495.22-497.04] Target_Speaker: I already checked the GIS before I got here.
+[497.44-498.18] SPEAKER_07: I'm glad you did.
+[498.68-499.02] SPEAKER_07: Yes, sir.
+[499.06-500.66] SPEAKER_07: I just need my 10-time credit check.
+[501.44-503.14] SPEAKER_07: I don't care if you're on public, private property.
+[503.48-505.64] SPEAKER_07: If you can't give me a reason for you to be there,
+[506.49-507.29] SPEAKER_07: then you're loitering.
+[507.47-507.89] Target_Speaker: Really?
+[508.11-509.17] Target_Speaker: On public property?
+[509.21-514.59] Target_Speaker: I have to have a reason to exist on public property?
+[514.71-517.19] Target_Speaker: I have to have a reason to exist on public property?
+[517.23-519.97] Target_Speaker: Is that what you're saying?
+[520.07-520.63] SPEAKER_07: Ah, okay.
+[520.69-522.20] Target_Speaker: I'm not, no, no.
+[522.25-523.53] Target_Speaker: You gave the reason yourself.
+[523.70-524.89] Target_Speaker: I didn't give you a reason for anything.
+[524.93-525.70] Target_Speaker: I invoked my rights.
+[525.76-527.36] Target_Speaker: So we'll see how this one plays out.
+[531.16-532.08] Target_Speaker: Can you not vape in here?
+[532.12-533.16] Target_Speaker: I'm allergic to tobacco.
+[539.64-540.08] REVIEW (single decode; speaker unknown): Nice.
+[542.05-544.23] Target_Speaker: There's the respect level from these guys right there.
+[572.32-573.30] SPEAKER_06: Have a seat right here on the bench.
+[573.44-582.92] Target_Speaker: Can I just get your name and badge number for the record?
+[583.68-585.92] SPEAKER_07: It'll be on your race report.
+[586.46-588.22] SPEAKER_07: Are you still going to refuse to identify yourself?
+[588.38-589.48] Target_Speaker: No, I'll identify.
+[590.48-592.04] SPEAKER_07: OK. What's your name?
+[592.47-593.23] Target_Speaker: John Medaglia.
+[593.87-595.30] Target_Speaker: I'll spell the last name for you.
+[595.37-596.47] Target_Speaker: It's M-E-D-A-G-L-I-A.
+[596.59-601.57] REVIEW (single decode; speaker unknown): -D-A-G-L-I-N-E,
+[602.04-604.40] Uncertain: John spelled it traditionally, J-O-H-I.
+[604.42-606.64] SPEAKER_07: M-E-D-A-G-L-I-A.
+[608.20-608.46] Target_Speaker: Sup?
+[608.64-609.38] Target_Speaker: How's it going?
+[609.84-617.49] SPEAKER_02: Trying to make it.
+[617.61-618.91] SPEAKER_07: Some of us just try to resist.
+[620.85-629.86] SPEAKER_07: Well, you can't do that while disturbing the peace and loitering around businesses, causing concern and suspicion.
+[630.68-631.28] SPEAKER_07: It's against the law.
+[633.74-634.57] SPEAKER_07: What's your date of birth, son?
+[634.90-635.66] SPEAKER_07: March 17, 2002.
+[636.35-639.85] SPEAKER_07: You got tattoos on both arms?
+[639.91-640.39] SPEAKER_07: Anywhere else?
+[640.73-641.53] SPEAKER_07: Yeah, on my chest.
+[642.81-645.05] SPEAKER_07: On my ribs.
+[645.61-646.75] SPEAKER_07: Nothing gang, anything?
+[648.17-649.36] NonTarget_Unknown: That's all of you.
+[651.56-657.24] REVIEW (single decode; speaker unknown): How tall are you? 5'10.5. 5'11. Tall girls 5'11. 5'10.
+[661.00-664.30] REVIEW (single decode; speaker unknown): How much do you weigh? I'm sorry? How much do you weigh? 160.
+[665.29-670.88] SPEAKER_07: Number 11, no record from Mississippi or Massachusetts.
+[671.00-671.44] SPEAKER_08: Number 8.
+[672.42-673.28] SPEAKER_07: So is that a fake name?
+[674.14-674.32] SPEAKER_07: No.
+[675.78-676.92] SPEAKER_07: You're just not in the system anywhere?
+[677.50-679.19] Target_Speaker: I don't get found guilty of anything.
+[679.55-680.63] SPEAKER_07: Do you have a driver's license?
+[680.75-681.79] Target_Speaker: I do have a driver's license.
+[681.81-682.89] SPEAKER_07: Then you should be in the system.
+[684.77-685.67] Target_Speaker: I have a driver's license.
+[685.73-687.23] Target_Speaker: I didn't give you any fake information.
+[689.91-698.95] Target_Speaker: If you'd like me to have my driver's license dropped off here at the entrance of the jail, I could have that done if that makes it easier to identify myself.
+[699.05-704.17] Target_Speaker: But I don't see, there's going to be no different information on my driver's license.
+[705.53-706.45] SPEAKER_07: No, that's fine.
+[706.47-709.27] SPEAKER_07: That'll be up to the jail once you get in.
+[709.31-712.25] Uncertain: No, I don't give anything to you.
+[717.64-721.24] Target_Speaker: We're already in too deep here, both of us, my friend, so no turning back now.
+[722.58-723.62] SPEAKER_07: Oh, we're not going back anywhere.
+[724.52-728.19] Target_Speaker: You have a watch on?
+[728.61-729.41] Target_Speaker: No.
+[729.49-731.63] SPEAKER_07: Anything other than the necklace and the earring?
+[731.65-732.39] SPEAKER_07: My earrings, no.
+[732.67-735.85] Target_Speaker: I have one more necklace, that's it.
+[737.36-738.60] SPEAKER_07: Is your vehicle secured?
+[738.78-741.46] SPEAKER_07: Did you get dropped off over there or is it somewhere over there nearby?
+[741.48-743.22] Target_Speaker: I'm not going to answer any questions.
+[743.28-745.66] Target_Speaker: What's the statute for criminal loitering?
+[746.34-748.50] Target_Speaker: Being anywhere that you can't get.
+[748.52-749.36] Target_Speaker: Like the statute number.
+[750.48-752.14] Uncertain: I don't have it with me right now.
+[752.54-755.29] Target_Speaker: You left that part blank on the arrest sheet?
+[756.39-758.01] Target_Speaker: You left that part blank?
+[758.03-759.29] Target_Speaker: The statute number?
+[759.53-760.67] SPEAKER_07: There's not a place for it on there.
+[761.23-763.50] Target_Speaker: There isn't a statute number for a criminal lawyer.
+[764.10-765.26] SPEAKER_07: There is a statute number.
+[766.00-766.54] Target_Speaker: So what is it?
+[766.64-767.62] SPEAKER_07: It'll be in my affidavit.
+[773.02-775.18] REVIEW (single decode; speaker unknown): There's not a place on this arrest form for it.
+[775.92-776.90] REVIEW (single decode; speaker unknown): Really? Yeah.
+[781.17-784.10] SPEAKER_07: Criminal ordering and disorderly conduct are the two things you're being charged with.
+[786.00-786.84] SPEAKER_07: Disorderly conduct.
+[787.04-789.20] Uncertain: What's the statute for disorderly conduct?
+[790.22-792.02] SPEAKER_07: It'll be in that you'll have an affidavit.
+[792.16-793.14] SPEAKER_07: You don't have it written right there?
+[793.94-796.56] SPEAKER_07: I just told you there's not a place for statutes on this report.
+[797.68-797.84] SPEAKER_08: Okay.
+[800.08-802.83] SPEAKER_07: You want a lot of information but you don't want to give any information.
+[802.88-803.97] SPEAKER_07: I gave you all my information.
+[805.05-806.35] SPEAKER_07: Except for anything about
+[807.09-810.03] SPEAKER_07: Other than your personal information, you said you would refuse to answer any questions.
+[810.51-814.79] Target_Speaker: Do you actually believe I have to give you a reason why I'm standing on a public sidewalk?
+[815.17-815.59] SPEAKER_07: Oh, 100%.
+[815.63-815.85] SPEAKER_07: Really?
+[816.39-816.83] Target_Speaker: Yeah.
+[817.09-819.45] Target_Speaker: Looks like you guys needed this.
+[820.21-821.47] Target_Speaker: Looks like you guys need some training.
+[822.99-825.89] SPEAKER_07: I'm glad you're here to train us.
+[826.53-830.63] REVIEW (single decode; speaker unknown): We'll see how real that statement is. Are
+[834.69-840.20] Target_Speaker: Are you going to check the GIS map now to see how many feet of public easement I have to see if you were even close to being right?
+[840.22-840.42] Uncertain: No.
+[840.44-840.60] Uncertain: No.
+[840.62-841.30] SPEAKER_03: Come on, Fenton.
+[841.32-842.44] Target_Speaker: You're right, man.
+[842.54-843.04] SPEAKER_06: It's on.
+[843.30-844.58] SPEAKER_06: Shooting everyone.
+[844.60-849.50] SPEAKER_07: So SB 2203, 2330-2025 prohibits lingering, prowling in public places
+[849.62-850.58] REVIEW (single decode; speaker unknown): receive like this.
+[851.50-854.06] REVIEW (single decode; speaker unknown): Shooting everyone. That's very important.
+[855.60-860.52] REVIEW (single decode; speaker unknown): So SB 2203, 2330-2025,
+[861.20-864.24] REVIEW (single decode; speaker unknown): prohibits lingering, prowling in public places
+[864.83-877.90] SPEAKER_07: Under circumstances that warrant law requires police to give a chance to explain presence or contact before arrest, which I did and you refused.
+[879.08-889.56] SPEAKER_07: Cities can have specific rules, such as banning lingering in business parking lots or creating disturbances, which is what the disorderly conduct was, creating a disturbance for business.
+[891.20-892.14] REVIEW (single decode; speaker unknown): Sounds good.
+[897.15-898.95] SPEAKER_07: And that's public places, not private places.
+[900.45-902.50] SPEAKER_07: So regardless of what GIS shows you.
+[905.66-907.52] Target_Speaker: Do you remember how the conversation actually went?
+[908.22-909.50] SPEAKER_07: Yeah, it's all video and audio recording.
+[909.58-910.18] SPEAKER_07: Oh, I know that.
+[910.20-911.04] SPEAKER_07: But do you remember?
+[911.34-911.56] SPEAKER_07: I have.
+[911.78-912.12] SPEAKER_07: You do?
+[912.58-913.94] Target_Speaker: How did you start it when you came up to me?
+[914.44-917.32] SPEAKER_07: I told you who I was and asked you why you were there, what you were doing.
+[917.35-917.54] Uncertain: Yeah.
+[917.75-919.45] SPEAKER_07: And then what?
+[919.61-920.87] SPEAKER_07: I'm evoking you.
+[920.93-922.09] SPEAKER_07: And then you started grabbing for me.
+[922.11-922.51] SPEAKER_07: Don't touch me.
+[922.75-924.63] Target_Speaker: And then you started grabbing for me instantly.
+[925.63-927.67] Target_Speaker: You didn't give anybody a chance to explain themselves.
+[928.59-929.87] SPEAKER_07: It's clear on me as you said.
+[929.89-931.78] SPEAKER_07: I'm going to vote my picture on the right.
+[931.80-932.76] SPEAKER_07: I'm not going to answer any questions.
+[932.78-934.14] Target_Speaker: Because you said I was already under arrest?
+[934.50-935.68] SPEAKER_07: No, I didn't put you under arrest.
+[935.70-935.98] Uncertain: You did?
+[936.00-938.18] SPEAKER_08: OK. What you out of here doing, man?
+[938.48-939.08] Target_Speaker: What am I doing?
+[939.10-941.12] SPEAKER_08: Yeah, come over here and talk to me.
+[941.16-942.06] SPEAKER_08: Come over here and talk to me.
+[942.10-942.90] Target_Speaker: Whoa, whoa, whoa.
+[942.96-944.30] SPEAKER_07: Why are you going to touch me?
+[944.35-944.97] Target_Speaker: What's going on?
+[944.99-945.89] SPEAKER_08: Come over here and talk to me.
+[945.91-946.97] SPEAKER_08: You are on private property.
+[947.01-947.65] SPEAKER_08: I'm not going to go on there.
+[947.67-948.55] SPEAKER_08: You are on private property.
+[948.71-950.15] SPEAKER_08: OK. Do not tell me what you're not going to do.
+[950.17-950.37] Uncertain: All right.
+[952.27-953.33] SPEAKER_08: Do you have any weapons on you?
+[953.37-953.63] SPEAKER_08: Nope.
+[954.86-956.04] SPEAKER_08: You mind if I pat you down to shake?
+[956.14-956.54] Target_Speaker: Yeah, I do.
+[956.56-957.92] SPEAKER_08: Okay, why are you out here?
+[957.94-960.26] Target_Speaker: This is an illegal search and seizure.
+[960.50-961.22] SPEAKER_08: Why are you out here?
+[961.32-964.24] Target_Speaker: I'm invoking my 5th Amendment rights, sir.
+[964.26-965.62] SPEAKER_08: You want to give me a reason why you're here?
+[966.18-967.84] Target_Speaker: Where you took me from was public property.
+[967.94-971.64] Target_Speaker: I'm going to invoke my 5th Amendment rights to pass out.
+[971.66-971.82] Uncertain: Okay.
+[973.70-975.14] SPEAKER_08: You're being arrested for criminal loitering.
+[975.70-976.30] SPEAKER_08: Criminal loitering.
+[978.98-984.75] Target_Speaker: I was either under arrest or I was detained by your hands and being brought to your car onto private property.
+[985.24-986.40] Target_Speaker: Because that's where you were trying to bring me.
+[987.73-989.59] Target_Speaker: So it's either an arrest or a detainment.
+[991.57-993.61] SPEAKER_07: You were detained.
+[993.77-995.19] SPEAKER_07: There you go.
+[995.21-995.55] SPEAKER_07: Bingo.
+[998.57-999.05] SPEAKER_07: There it is.
+[1001.99-1003.83] SPEAKER_07: No purpose or mission statement or anything?
+[1004.59-1005.67] Target_Speaker: You didn't even ask for one.
+[1005.77-1010.40] Target_Speaker: That's the funniest part because I'm the single person in this industry.
+[1010.44-1013.66] Target_Speaker: In this industry, I'm the only person that actually gives a real reason.
+[1014.39-1015.13] Target_Speaker: I'm the only person.
+[1015.57-1017.05] SPEAKER_07: And you didn't ask for it.
+[1017.07-1019.55] Uncertain: Because you grabbed for it.
+[1020.45-1022.69] Target_Speaker: You did not.
+[1022.77-1027.30] Target_Speaker: Like you would say, I'm not going to argue and go back and forth here and argue semantics here.
+[1027.68-1029.44] Target_Speaker: You can go argue it in front of us.
+[1029.46-1033.08] SPEAKER_07: So when I walked up to you and said, I'm Officer Dean, what are you doing out here?
+[1033.12-1034.44] SPEAKER_07: I'm not going to discuss the situation.
+[1034.50-1036.28] SPEAKER_07: And you said, I invoke my Fifth Amendment.
+[1036.30-1038.22] SPEAKER_07: So you don't have any visions to say that.
+[1038.24-1041.93] SPEAKER_07: You just wander around with a video camera.
+[1042.09-1042.93] SPEAKER_07: You have no purpose.
+[1042.97-1045.57] REVIEW (single decode; speaker unknown): in what you do as a fishmonger.
+[1046.25-1047.41] REVIEW (single decode; speaker unknown): I didn't say that, that's what you're saying.
+[1053.59-1054.45] SPEAKER_06: Sorry, it took a minute.
+[1054.49-1056.81] SPEAKER_06: I was walking that other fellow back to the back there.
+[1056.83-1059.37] SPEAKER_06: Go ahead and stand up for him, please.
+[1059.63-1060.75] SPEAKER_06: Turn around, face the wall.
+[1061.63-1065.61] SPEAKER_06: I know he probably already had you down, but we got to do it coming in here, too.
+[1065.63-1071.68] SPEAKER_06: You're a pretty good guy.
+[1071.70-1072.90] SPEAKER_06: I'm not going to try anything.
+[1072.92-1073.66] SPEAKER_06: Don't worry.
+[1073.74-1076.36] SPEAKER_06: Well, I go through the same school with everybody.
+[1076.52-1081.08] Uncertain: One, it keeps me in good practice, and two, it lets them know kind of what to
+[1081.28-1089.94] REVIEW (single decode; speaker unknown): expect so I appreciate people oh yeah well I can tell everybody else that comes in here
+[1090.59-1094.28] SPEAKER_06: My behavior is kind of a reflection of theirs, so I wouldn't agree more.
+[1094.58-1095.54] REVIEW (single decode; speaker unknown): I couldn't agree more.
+[1097.88-1099.48] REVIEW (single decode; speaker unknown): Couldn't agree a syllable more.
+[1102.36-1103.12] REVIEW (single decode; speaker unknown): That's fun.
+[1104.42-1109.40] REVIEW (overlap support 10/17 words; speaker unknown): You're fun to get on my... No, that's not the problem. The key, it just got stuck.
+[1112.04-1118.80] REVIEW (overlap support 19/19 words; speaker unknown): I don't want to mess with your cuffs or mess them up or anything, but let's have a look.
+[1122.67-1126.77] REVIEW (overlap support 19/20 words; speaker unknown): I don't got much space. We're not trying to tie someone, we're trying to get a key out of them.
+[1127.88-1128.40] REVIEW (overlap support 1/2 words; speaker unknown): Oh, alright.
+[1130.49-1135.95] REVIEW (overlap support 27/27 words; speaker unknown): I might need to get a new key, there might be something off with this one. I just had an issue with that fella I got in.
+[1136.77-1139.83] REVIEW (overlap support 12/15 words; speaker unknown): Put this arm on the wall in front of you when that cup comes off.
+[1140.67-1146.66] SPEAKER_06: That guy I just searched in that had the shackles, it had a little bit of difficulty opening up one of the shackles.
+[1146.78-1148.50] SPEAKER_06: I think I got to get a new key then.
+[1148.52-1150.66] SPEAKER_06: Alright, you're good.
+[1150.68-1151.60] SPEAKER_06: Go ahead and have a seat.
+[1151.68-1153.06] SPEAKER_06: Take off your shoes for me.
+[1154.12-1155.65] SPEAKER_06: What size shoe do you wear?
+[1155.69-1155.97] SPEAKER_06: That.
+[1156.95-1157.25] SPEAKER_06: Okay.
+[1157.79-1158.93] SPEAKER_06: Take off your necklace.
+[1160.49-1163.33] SPEAKER_06: Take off your earrings and your wristband there.
+[1171.33-1174.17] REVIEW (overlap support 6/9 words; speaker unknown): I can wait. I'm under no pressure right now.
+[1178.05-1179.75] REVIEW (single decode; speaker unknown): Do you guys have other questions?
+[1183.55-1184.15] REVIEW (single decode; speaker unknown): No.
+[1189.98-1190.42] REVIEW (single decode; speaker unknown): Do
+[1190.29-1190.35] REVIEW (single decode; speaker unknown): No.
+[1190.74-1196.00] Target_Speaker: Do you guys have an immediate public record of who inmates are?
+[1197.32-1205.38] SPEAKER_06: When we get you booked in, it'll show up on the Tiger website, on the Sheriff's Department's webpage.
+[1205.40-1206.79] Uncertain: The Tiger website?
+[1206.81-1207.21] SPEAKER_06: What is that?
+[1207.27-1209.01] SPEAKER_06: Tiger is the system we use.
+[1209.53-1211.59] SPEAKER_06: So it'll be on the what?
+[1211.61-1213.57] SPEAKER_06: The two below Sheriff's Department website?
+[1213.97-1215.05] SPEAKER_06: Lee County Sheriff's Department.
+[1215.07-1216.19] SPEAKER_06: Lee County Sheriff's Department.
+[1216.21-1219.43] SPEAKER_06: It's two below Police Department, but we house inmates for them.
+[1219.83-1219.91] REVIEW (single decode; speaker unknown): Yeah.
+[1220.57-1225.21] REVIEW (single decode; speaker unknown): Let me just spin these back together. Look, and when you all get a chance, can you get me a size 10 to
+[1225.48-1246.17] SPEAKER_07: I know you probably don't want to hear this and you probably heard it before, but something like that from an officer standpoint, when we're getting multiple calls about you and I come out there and try to make contact with you and you're immediately standoffish.
+[1247.35-1250.41] SPEAKER_07: If you just say, hey, this is my name, this is why I'm here.
+[1250.47-1251.83] Target_Speaker: Just mill it over in your head.
+[1252.13-1255.67] Target_Speaker: If I came up to you and just acted like you did, you'd be defensive too.
+[1256.41-1258.37] SPEAKER_07: OK. Again, I'm trying to help you out.
+[1259.75-1262.65] SPEAKER_07: Because if you get out and do the same thing over again, the same thing's going to happen.
+[1263.09-1265.15] Target_Speaker: All right.
+[1265.25-1266.57] Target_Speaker: Here's a pair of slides.
+[1266.73-1267.51] SPEAKER_06: Step that way.
+[1269.43-1271.05] SPEAKER_06: And then come on, step in this way.
+[1271.25-1271.91] SPEAKER_06: All right, Mr. Dean.
+[1272.21-1272.71] SPEAKER_06: We'll see you later.
+[1272.73-1273.10] SPEAKER_07: Take care.
+[1282.27-1288.39] Target_Speaker: So overall guys, there is still a lot to do, there is still a lot to cover, there is still a lot to accomplish.
+[1288.55-1295.41] Target_Speaker: But just like I did for the criminal side, I am now going to be hiring a lawyer to handle all of my business from here on out.
+[1295.45-1303.38] Target_Speaker: So if you would like to help keep me on the road and keep me producing the best of the best content for you guys, you guys are more than welcome to go and visit my Venmo and PayPal.
+[1303.46-1305.52] Target_Speaker: It's always linked in the description below.
+[1305.76-1309.34] Target_Speaker: But all I really need is a watch and a follow and a comment here.
+[1309.40-1317.88] Target_Speaker: And make sure you go check out my other social media platforms that are always going to be linked in the description below from now on, because that also helps me out tremendously.
+[1317.98-1328.57] Target_Speaker: That way the masses that watch FAPA can overpower YouTube and overpower the demonetization that they tried to put forth to try to affect all of us in a way that would get us to stop.
+[1328.59-1330.21] Target_Speaker: But either way, I'm not stopping.
+[1330.31-1331.93] Target_Speaker: but it would be greatly appreciated.
+[1331.97-1334.67] Target_Speaker: But overall, let me know what your favorite part was today in the comments.
+[1334.71-1342.48] Target_Speaker: And if you are not already subscribed, make sure you go subscribe and turn on those bell notifications to never miss the latest and the greatest from the best of the best.
+[1342.98-1343.90] Target_Speaker: Catch you guys in the next one.
+[1343.92-1344.32] SPEAKER_09: Peace out.
