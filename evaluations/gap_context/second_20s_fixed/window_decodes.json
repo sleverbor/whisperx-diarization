@@ -1,0 +1,911 @@
+[
+  {
+    "gap_index": 0,
+    "window_index": 0,
+    "window_start": 14.523,
+    "window_end": 34.522999999999996,
+    "segments": [
+      {
+        "start": 14.523,
+        "end": 15.463,
+        "text": " Arms anywhere else?",
+        "avg_logprob": -0.621862642308499,
+        "no_speech_prob": 0.04858669638633728,
+        "compression_ratio": 1.3548387096774193,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 14.523,
+            "end": 14.823,
+            "word": " Arms",
+            "probability": 0.04567382484674454,
+            "window_index": 0,
+            "low_confidence": true
+          },
+          {
+            "start": 14.823,
+            "end": 15.062999999999999,
+            "word": " anywhere",
+            "probability": 0.6758506298065186,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 15.062999999999999,
+            "end": 15.463,
+            "word": " else?",
+            "probability": 0.8059332966804504,
+            "window_index": 0,
+            "low_confidence": false
+          }
+        ]
+      },
+      {
+        "start": 15.743,
+        "end": 16.483,
+        "text": " Yeah, on my chest.",
+        "avg_logprob": -0.621862642308499,
+        "no_speech_prob": 0.04858669638633728,
+        "compression_ratio": 1.3548387096774193,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 15.743,
+            "end": 15.943,
+            "word": " Yeah,",
+            "probability": 0.7085161209106445,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 16.043,
+            "end": 16.103,
+            "word": " on",
+            "probability": 0.22258013486862183,
+            "window_index": 0,
+            "low_confidence": true
+          },
+          {
+            "start": 16.103,
+            "end": 16.183,
+            "word": " my",
+            "probability": 0.9010027050971985,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 16.183,
+            "end": 16.483,
+            "word": " chest.",
+            "probability": 0.8499446511268616,
+            "window_index": 0,
+            "low_confidence": false
+          }
+        ]
+      },
+      {
+        "start": 17.863,
+        "end": 18.123,
+        "text": " On my ribs.",
+        "avg_logprob": -0.621862642308499,
+        "no_speech_prob": 0.04858669638633728,
+        "compression_ratio": 1.3548387096774193,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 17.863,
+            "end": 17.903,
+            "word": " On",
+            "probability": 0.02660217322409153,
+            "window_index": 0,
+            "low_confidence": true
+          },
+          {
+            "start": 17.903,
+            "end": 18.003,
+            "word": " my",
+            "probability": 0.8777567744255066,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 18.003,
+            "end": 18.123,
+            "word": " ribs.",
+            "probability": 0.6806687116622925,
+            "window_index": 0,
+            "low_confidence": false
+          }
+        ]
+      },
+      {
+        "start": 18.123,
+        "end": 19.923000000000002,
+        "text": " Caller 11, do you need me to text 9 the number?",
+        "avg_logprob": -0.621862642308499,
+        "no_speech_prob": 0.04858669638633728,
+        "compression_ratio": 1.3548387096774193,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 18.123,
+            "end": 18.243,
+            "word": " Caller",
+            "probability": 0.07826225971803069,
+            "window_index": 0,
+            "low_confidence": true
+          },
+          {
+            "start": 18.243,
+            "end": 18.622999999999998,
+            "word": " 11,",
+            "probability": 0.6629002094268799,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 18.803,
+            "end": 18.823,
+            "word": " do",
+            "probability": 0.4862705171108246,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 18.823,
+            "end": 18.823,
+            "word": " you",
+            "probability": 0.8818039298057556,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 18.823,
+            "end": 18.923000000000002,
+            "word": " need",
+            "probability": 0.7719079852104187,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 18.923000000000002,
+            "end": 19.043,
+            "word": " me",
+            "probability": 0.7091098427772522,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 19.043,
+            "end": 19.163,
+            "word": " to",
+            "probability": 0.8846396803855896,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 19.163,
+            "end": 19.343,
+            "word": " text",
+            "probability": 0.06353375315666199,
+            "window_index": 0,
+            "low_confidence": true
+          },
+          {
+            "start": 19.343,
+            "end": 19.583,
+            "word": " 9",
+            "probability": 0.5898311734199524,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 19.583,
+            "end": 19.683,
+            "word": " the",
+            "probability": 0.4383045732975006,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 19.683,
+            "end": 19.923000000000002,
+            "word": " number?",
+            "probability": 0.8600782155990601,
+            "window_index": 0,
+            "low_confidence": false
+          }
+        ]
+      },
+      {
+        "start": 20.523,
+        "end": 21.503,
+        "text": " Nothing, gang, anything.",
+        "avg_logprob": -0.621862642308499,
+        "no_speech_prob": 0.04858669638633728,
+        "compression_ratio": 1.3548387096774193,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 20.523,
+            "end": 20.783,
+            "word": " Nothing,",
+            "probability": 0.5620253086090088,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 20.903,
+            "end": 21.163,
+            "word": " gang,",
+            "probability": 0.8889387249946594,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 21.262999999999998,
+            "end": 21.503,
+            "word": " anything.",
+            "probability": 0.8149538636207581,
+            "window_index": 0,
+            "low_confidence": false
+          }
+        ]
+      },
+      {
+        "start": 26.683,
+        "end": 27.543,
+        "text": " How tall are you?",
+        "avg_logprob": -0.621862642308499,
+        "no_speech_prob": 0.04858669638633728,
+        "compression_ratio": 1.3548387096774193,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 26.683,
+            "end": 27.103,
+            "word": " How",
+            "probability": 0.4481741487979889,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 27.103,
+            "end": 27.323,
+            "word": " tall",
+            "probability": 0.822985827922821,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 27.323,
+            "end": 27.423000000000002,
+            "word": " are",
+            "probability": 0.9037808179855347,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 27.423000000000002,
+            "end": 27.543,
+            "word": " you?",
+            "probability": 0.8934288620948792,
+            "window_index": 0,
+            "low_confidence": false
+          }
+        ]
+      },
+      {
+        "start": 27.883,
+        "end": 28.703,
+        "text": " 5'10 and a half.",
+        "avg_logprob": -0.621862642308499,
+        "no_speech_prob": 0.04858669638633728,
+        "compression_ratio": 1.3548387096774193,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 27.883,
+            "end": 28.183,
+            "word": " 5",
+            "probability": 0.8953261375427246,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 28.183,
+            "end": 28.383,
+            "word": "'10",
+            "probability": 0.7483361661434174,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 28.383,
+            "end": 28.503,
+            "word": " and",
+            "probability": 0.25113531947135925,
+            "window_index": 0,
+            "low_confidence": true
+          },
+          {
+            "start": 28.503,
+            "end": 28.563,
+            "word": " a",
+            "probability": 0.7667226195335388,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 28.563,
+            "end": 28.703,
+            "word": " half.",
+            "probability": 0.8213067054748535,
+            "window_index": 0,
+            "low_confidence": false
+          }
+        ]
+      },
+      {
+        "start": 29.103,
+        "end": 29.643,
+        "text": " 5'11.",
+        "avg_logprob": -0.621862642308499,
+        "no_speech_prob": 0.04858669638633728,
+        "compression_ratio": 1.3548387096774193,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 29.103,
+            "end": 29.363,
+            "word": " 5",
+            "probability": 0.9019405245780945,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 29.363,
+            "end": 29.643,
+            "word": "'11.",
+            "probability": 0.9791776239871979,
+            "window_index": 0,
+            "low_confidence": false
+          }
+        ]
+      },
+      {
+        "start": 30.023,
+        "end": 30.423000000000002,
+        "text": " Caller 13.",
+        "avg_logprob": -0.621862642308499,
+        "no_speech_prob": 0.04858669638633728,
+        "compression_ratio": 1.3548387096774193,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 30.023,
+            "end": 30.203,
+            "word": " Caller",
+            "probability": 0.4780133254826069,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 30.203,
+            "end": 30.423000000000002,
+            "word": " 13.",
+            "probability": 0.601566731929779,
+            "window_index": 0,
+            "low_confidence": false
+          }
+        ]
+      },
+      {
+        "start": 30.442999999999998,
+        "end": 31.463,
+        "text": " Tall girls, 5'11.",
+        "avg_logprob": -0.621862642308499,
+        "no_speech_prob": 0.04858669638633728,
+        "compression_ratio": 1.3548387096774193,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 30.442999999999998,
+            "end": 30.623,
+            "word": " Tall",
+            "probability": 0.20526449382305145,
+            "window_index": 0,
+            "low_confidence": true
+          },
+          {
+            "start": 30.623,
+            "end": 30.883,
+            "word": " girls,",
+            "probability": 0.5626551508903503,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 30.943,
+            "end": 31.143,
+            "word": " 5",
+            "probability": 0.989534318447113,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 31.143,
+            "end": 31.463,
+            "word": "'11.",
+            "probability": 0.9450544714927673,
+            "window_index": 0,
+            "low_confidence": false
+          }
+        ]
+      },
+      {
+        "start": 31.743,
+        "end": 32.143,
+        "text": " 5'10.",
+        "avg_logprob": -0.621862642308499,
+        "no_speech_prob": 0.04858669638633728,
+        "compression_ratio": 1.3548387096774193,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 31.743,
+            "end": 31.983,
+            "word": " 5",
+            "probability": 0.7729138731956482,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 31.983,
+            "end": 32.143,
+            "word": "'10.",
+            "probability": 0.9884605407714844,
+            "window_index": 0,
+            "low_confidence": false
+          }
+        ]
+      },
+      {
+        "start": 33.742999999999995,
+        "end": 34.423,
+        "text": " Caller 13.",
+        "avg_logprob": -0.621862642308499,
+        "no_speech_prob": 0.04858669638633728,
+        "compression_ratio": 1.3548387096774193,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 33.742999999999995,
+            "end": 34.163,
+            "word": " Caller",
+            "probability": 0.7240412086248398,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 34.163,
+            "end": 34.423,
+            "word": " 13.",
+            "probability": 0.9199500679969788,
+            "window_index": 0,
+            "low_confidence": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "gap_index": 0,
+    "window_index": 1,
+    "window_start": 22.192999999999998,
+    "window_end": 42.193,
+    "segments": [
+      {
+        "start": 26.572999999999997,
+        "end": 27.592999999999996,
+        "text": " How tall are you?",
+        "avg_logprob": -0.4966145708591123,
+        "no_speech_prob": 0.11559329926967621,
+        "compression_ratio": 1.3565217391304347,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 26.572999999999997,
+            "end": 27.072999999999997,
+            "word": " How",
+            "probability": 0.2607713732868433,
+            "window_index": 1,
+            "low_confidence": true
+          },
+          {
+            "start": 27.072999999999997,
+            "end": 27.313,
+            "word": " tall",
+            "probability": 0.7711895108222961,
+            "window_index": 1,
+            "low_confidence": false
+          },
+          {
+            "start": 27.313,
+            "end": 27.412999999999997,
+            "word": " are",
+            "probability": 0.8928783535957336,
+            "window_index": 1,
+            "low_confidence": false
+          },
+          {
+            "start": 27.412999999999997,
+            "end": 27.592999999999996,
+            "word": " you?",
+            "probability": 0.8455047607421875,
+            "window_index": 1,
+            "low_confidence": false
+          }
+        ]
+      },
+      {
+        "start": 27.872999999999998,
+        "end": 28.732999999999997,
+        "text": " 5'10 1'5.",
+        "avg_logprob": -0.4966145708591123,
+        "no_speech_prob": 0.11559329926967621,
+        "compression_ratio": 1.3565217391304347,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 27.872999999999998,
+            "end": 28.173,
+            "word": " 5",
+            "probability": 0.7749467492103577,
+            "window_index": 1,
+            "low_confidence": false
+          },
+          {
+            "start": 28.173,
+            "end": 28.372999999999998,
+            "word": "'10",
+            "probability": 0.7701206803321838,
+            "window_index": 1,
+            "low_confidence": false
+          },
+          {
+            "start": 28.372999999999998,
+            "end": 28.552999999999997,
+            "word": " 1",
+            "probability": 0.16819506883621216,
+            "window_index": 1,
+            "low_confidence": true
+          },
+          {
+            "start": 28.552999999999997,
+            "end": 28.732999999999997,
+            "word": "'5.",
+            "probability": 0.17125511658377945,
+            "window_index": 1,
+            "low_confidence": true
+          }
+        ]
+      },
+      {
+        "start": 28.973,
+        "end": 29.653,
+        "text": " 5'11?",
+        "avg_logprob": -0.4966145708591123,
+        "no_speech_prob": 0.11559329926967621,
+        "compression_ratio": 1.3565217391304347,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 28.973,
+            "end": 29.352999999999998,
+            "word": " 5",
+            "probability": 0.532739520072937,
+            "window_index": 1,
+            "low_confidence": false
+          },
+          {
+            "start": 29.352999999999998,
+            "end": 29.653,
+            "word": "'11?",
+            "probability": 0.9515123665332794,
+            "window_index": 1,
+            "low_confidence": false
+          }
+        ]
+      },
+      {
+        "start": 30.113,
+        "end": 31.433,
+        "text": " Tall girls 5'11.",
+        "avg_logprob": -0.4966145708591123,
+        "no_speech_prob": 0.11559329926967621,
+        "compression_ratio": 1.3565217391304347,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 30.113,
+            "end": 30.613,
+            "word": " Tall",
+            "probability": 0.16969867050647736,
+            "window_index": 1,
+            "low_confidence": true
+          },
+          {
+            "start": 30.613,
+            "end": 30.872999999999998,
+            "word": " girls",
+            "probability": 0.7363799214363098,
+            "window_index": 1,
+            "low_confidence": false
+          },
+          {
+            "start": 30.872999999999998,
+            "end": 31.153,
+            "word": " 5",
+            "probability": 0.6227695941925049,
+            "window_index": 1,
+            "low_confidence": false
+          },
+          {
+            "start": 31.153,
+            "end": 31.433,
+            "word": "'11.",
+            "probability": 0.9703218042850494,
+            "window_index": 1,
+            "low_confidence": false
+          }
+        ]
+      },
+      {
+        "start": 31.753,
+        "end": 32.233,
+        "text": " 5'10.",
+        "avg_logprob": -0.4966145708591123,
+        "no_speech_prob": 0.11559329926967621,
+        "compression_ratio": 1.3565217391304347,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 31.753,
+            "end": 31.973,
+            "word": " 5",
+            "probability": 0.7488399147987366,
+            "window_index": 1,
+            "low_confidence": false
+          },
+          {
+            "start": 31.973,
+            "end": 32.233,
+            "word": "'10.",
+            "probability": 0.9887515306472778,
+            "window_index": 1,
+            "low_confidence": false
+          }
+        ]
+      },
+      {
+        "start": 33.833,
+        "end": 34.413,
+        "text": " Tower 13.",
+        "avg_logprob": -0.4966145708591123,
+        "no_speech_prob": 0.11559329926967621,
+        "compression_ratio": 1.3565217391304347,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 33.833,
+            "end": 34.073,
+            "word": " Tower",
+            "probability": 0.10276102274656296,
+            "window_index": 1,
+            "low_confidence": true
+          },
+          {
+            "start": 34.073,
+            "end": 34.413,
+            "word": " 13.",
+            "probability": 0.851209819316864,
+            "window_index": 1,
+            "low_confidence": false
+          }
+        ]
+      },
+      {
+        "start": 36.352999999999994,
+        "end": 37.352999999999994,
+        "text": " How much do you weigh?",
+        "avg_logprob": -0.4966145708591123,
+        "no_speech_prob": 0.11559329926967621,
+        "compression_ratio": 1.3565217391304347,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 36.352999999999994,
+            "end": 36.852999999999994,
+            "word": " How",
+            "probability": 0.7197664380073547,
+            "window_index": 1,
+            "low_confidence": false
+          },
+          {
+            "start": 36.852999999999994,
+            "end": 37.053,
+            "word": " much",
+            "probability": 0.7862890362739563,
+            "window_index": 1,
+            "low_confidence": false
+          },
+          {
+            "start": 37.053,
+            "end": 37.193,
+            "word": " do",
+            "probability": 0.8032497763633728,
+            "window_index": 1,
+            "low_confidence": false
+          },
+          {
+            "start": 37.193,
+            "end": 37.352999999999994,
+            "word": " you",
+            "probability": 0.8700987100601196,
+            "window_index": 1,
+            "low_confidence": false
+          },
+          {
+            "start": 37.352999999999994,
+            "end": 37.352999999999994,
+            "word": " weigh?",
+            "probability": 0.9182429909706116,
+            "window_index": 1,
+            "low_confidence": false
+          }
+        ]
+      },
+      {
+        "start": 37.852999999999994,
+        "end": 38.092999999999996,
+        "text": " Sorry?",
+        "avg_logprob": -0.4966145708591123,
+        "no_speech_prob": 0.11559329926967621,
+        "compression_ratio": 1.3565217391304347,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 37.852999999999994,
+            "end": 38.092999999999996,
+            "word": " Sorry?",
+            "probability": 0.40976741909980774,
+            "window_index": 1,
+            "low_confidence": false
+          }
+        ]
+      },
+      {
+        "start": 38.233,
+        "end": 38.733,
+        "text": " How much do you weigh?",
+        "avg_logprob": -0.4966145708591123,
+        "no_speech_prob": 0.11559329926967621,
+        "compression_ratio": 1.3565217391304347,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 38.233,
+            "end": 38.333,
+            "word": " How",
+            "probability": 0.7728681564331055,
+            "window_index": 1,
+            "low_confidence": false
+          },
+          {
+            "start": 38.333,
+            "end": 38.492999999999995,
+            "word": " much",
+            "probability": 0.8264515995979309,
+            "window_index": 1,
+            "low_confidence": false
+          },
+          {
+            "start": 38.492999999999995,
+            "end": 38.592999999999996,
+            "word": " do",
+            "probability": 0.8882415294647217,
+            "window_index": 1,
+            "low_confidence": false
+          },
+          {
+            "start": 38.592999999999996,
+            "end": 38.653,
+            "word": " you",
+            "probability": 0.904040515422821,
+            "window_index": 1,
+            "low_confidence": false
+          },
+          {
+            "start": 38.653,
+            "end": 38.733,
+            "word": " weigh?",
+            "probability": 0.8471572399139404,
+            "window_index": 1,
+            "low_confidence": false
+          }
+        ]
+      },
+      {
+        "start": 38.852999999999994,
+        "end": 39.313,
+        "text": " 160.",
+        "avg_logprob": -0.4966145708591123,
+        "no_speech_prob": 0.11559329926967621,
+        "compression_ratio": 1.3565217391304347,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 38.852999999999994,
+            "end": 39.313,
+            "word": " 160.",
+            "probability": 0.7814789414405823,
+            "window_index": 1,
+            "low_confidence": false
+          }
+        ]
+      },
+      {
+        "start": 40.013,
+        "end": 42.173,
+        "text": " Tower 11. No record. Resisting.",
+        "avg_logprob": -0.4966145708591123,
+        "no_speech_prob": 0.11559329926967621,
+        "compression_ratio": 1.3565217391304347,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 40.013,
+            "end": 40.333,
+            "word": " Tower",
+            "probability": 0.8889790177345276,
+            "window_index": 1,
+            "low_confidence": false
+          },
+          {
+            "start": 40.333,
+            "end": 40.753,
+            "word": " 11.",
+            "probability": 0.8940743803977966,
+            "window_index": 1,
+            "low_confidence": false
+          },
+          {
+            "start": 41.173,
+            "end": 41.413,
+            "word": " No",
+            "probability": 0.7742952108383179,
+            "window_index": 1,
+            "low_confidence": false
+          },
+          {
+            "start": 41.413,
+            "end": 41.753,
+            "word": " record.",
+            "probability": 0.8325977325439453,
+            "window_index": 1,
+            "low_confidence": false
+          },
+          {
+            "start": 41.953,
+            "end": 42.173,
+            "word": " Resisting.",
+            "probability": 0.3891913890838623,
+            "window_index": 1,
+            "low_confidence": true
+          }
+        ]
+      }
+    ]
+  }
+]
