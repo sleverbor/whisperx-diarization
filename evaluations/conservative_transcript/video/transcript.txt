@@ -1,0 +1,467 @@
+Conservative transcript — provisional screening thresholds
+Doubtful text is omitted. Speaker uncertain means wording was retained but identity was withheld.
+Alignment scores and speaker strengths are not calibrated accuracy probabilities. Gaps may be silence or missed speech.
+Speaker track IDs are model labels; separate IDs may belong to the same person.
+
+[00:00–00:01] [Doubtful material omitted]
+[00:02–00:03] SPEAKER_08: Come over here and talk to me.
+[00:03–00:04] Speaker uncertain: Whoa, whoa, whoa.
+[00:04–00:05] Speaker uncertain: Why are you going to touch me?
+[00:05–00:06] Speaker uncertain: What's going on?
+[00:06–00:07] SPEAKER_08: Come over here and talk.
+[00:07–00:08] SPEAKER_08: You are on private property.
+[00:08–00:09] Speaker uncertain: I'm not going to go in there.
+[00:09–00:09] SPEAKER_08: You are on private property.
+[00:10–00:11] SPEAKER_08: OK. Do not tell me what you're not going to do.
+[00:11–00:11] [Doubtful material omitted]
+[00:12–00:13] SPEAKER_08: Do you have any weapons on you?
+[00:13–00:13] Speaker uncertain: No.
+[00:13–00:16] SPEAKER_08: Do you mind if I pat you down to check?
+[00:16–00:16] Speaker uncertain: Yeah, I do.
+[00:16–00:17] [Doubtful material omitted]
+[00:17–00:18] [Doubtful material omitted]
+[00:18–00:19] SPEAKER_08: Why are you out here?
+[00:19–00:21] [Doubtful material omitted]
+[00:21–00:22] SPEAKER_08: You want to give me a reason why you're here?
+[00:23–00:24] Target_Speaker: Where you took me from was public property.
+[00:25–00:26] [Doubtful material omitted]
+[00:27–00:28] [Doubtful material omitted]
+[00:29–00:29] [Doubtful material omitted]
+[00:30–00:32] SPEAKER_08: You can't give me a reason why you're out here.
+[00:32–00:33] Target_Speaker: Am I being arrested or detained?
+[00:34–00:34] SPEAKER_08: You're being arrested.
+[00:34–00:35] Speaker uncertain: Oh, okay.
+[00:35–00:36] SPEAKER_08: He's gotta write the videos.
+[00:36–00:38] SPEAKER_08: He's gotta write the videos.
+[00:38–00:41] SPEAKER_07: You said you would refuse to answer any questions?
+[00:41–00:46] Target_Speaker: Do you actually believe I have to give you a reason why I'm standing on a public sidewalk?
+[00:46–00:47] Speaker uncertain: Oh, 100%.
+[00:47–00:47] [Doubtful material omitted]
+[00:47–00:48] Speaker uncertain: Yeah.
+[00:49–00:50] [Doubtful material omitted]
+[00:50–00:53] SPEAKER_07: If you get out and do the same thing over again, the same thing's gonna happen.
+[00:53–00:53] Speaker uncertain: We'll see.
+[00:54–00:54] [Doubtful material omitted]
+[00:54–00:55] Speaker uncertain: Take care.
+[00:56–00:58] Speaker uncertain: What's going on today, everybody?
+[00:58–01:05] Target_Speaker: As you may know, earlier this year, I was arrested in Tupelo, Mississippi on charges that did not even exist.
+[01:05–01:15] Target_Speaker: This is going to be the story behind how the arresting officer explained and demonstrated his own downfall in this situation and how he explained he even knew he was incorrect.
+[01:15–01:17] Target_Speaker: And that's not even the craziest part.
+[01:17–01:29] Target_Speaker: But now that my lawyer has gotten the case dismissed and all the charges are dismissed, I am free to talk about the entire situation and show all of the evidence that I have gotten through the discovery period in this case.
+[01:29–01:35] Target_Speaker: But as you guys know, with this false arrest and the rest of the process coming up afterwards, it is a long,
+[01:35–01:37] Target_Speaker: and arduous road ahead of me.
+[01:37–01:46] Target_Speaker: And with YouTube demonetizing 99% of First Amendment auditors out there, it would be a fantastic time to go and find me on my other platforms.
+[01:46–01:49] Target_Speaker: I am on Rumble, I am on Patreon, I am on Locals.
+[01:50–01:52] Target_Speaker: All of those will be linked in the description.
+[01:52–01:55] Target_Speaker: And just a watch and a follow is greatly appreciated.
+[01:55–02:05] Target_Speaker: But if you are in the position to do so, my Venmo and my PayPal and my other donation platforms are always linked as well if you want to make a donation to keep me out there.
+[02:05–02:09] Target_Speaker: But without further ado and without any more e-begging, let's get right into the video.
+[02:10–02:14] SPEAKER_04: My owners called me because they saw you in the security camera, just wanted to know what was up.
+[02:14–02:15] SPEAKER_04: We don't really have people video us.
+[02:16–02:17] SPEAKER_04: could you not video me?
+[02:17–02:18] [Doubtful material omitted]
+[02:18–02:20] [Doubtful material omitted]
+[02:20–02:21] Target_Speaker: Wondering why I'm videoing?
+[02:21–02:21] Speaker uncertain: Yeah.
+[02:22–02:24] Target_Speaker: Well let me ask you a question, do you support the Constitution?
+[02:24–02:24] Speaker uncertain: Absolutely.
+[02:25–02:33] Target_Speaker: Alright, well what I do is I go around and I try to look for more people like you that support our rights and I exercise the First Amendment rights to report in public and I see how people react and respect our rights.
+[02:33–02:35] SPEAKER_04: Well I do, but I'm just curious as to why.
+[02:36–02:36] SPEAKER_04: Can you tell me that?
+[02:37–02:38] Speaker uncertain: I just explained it to you.
+[02:38–02:42] Speaker uncertain: Just so we're on the same page, I'll explain it nice and clear one last time, just nice and slow for you.
+[02:42–02:42] Speaker uncertain: Okay.
+[02:42–02:45] Target_Speaker: So I exercise and stress test the First Amendment.
+[02:45–02:46] [Doubtful material omitted]
+[02:46–02:46] [Doubtful material omitted]
+[02:46–02:47] Speaker uncertain: No, you just told me you didn't understand it.
+[02:48–02:49] SPEAKER_04: I do, but it's weird.
+[02:49–02:50] SPEAKER_04: And you're taping people.
+[02:51–02:53] SPEAKER_04: This is HIPAA required.
+[02:53–02:54] SPEAKER_00: That's what I'm telling you.
+[02:55–02:57] Speaker uncertain: Oh, it's HIPAA required?
+[02:57–02:58] Speaker uncertain: HIPAA related.
+[02:58–02:59] Target_Speaker: Can you tell me what HIPAA stands for?
+[03:00–03:01] SPEAKER_04: Yes, I can.
+[03:01–03:02] [Doubtful material omitted]
+[03:03–03:05] SPEAKER_04: But he won't even come here if he's a page.
+[03:05–03:07] SPEAKER_04: I'm calling the law.
+[03:07–03:10] [Doubtful material omitted]
+[03:11–03:12] SPEAKER_02: You better get your ass outta here.
+[03:13–03:14] SPEAKER_02: You don't belong here.
+[03:15–03:17] SPEAKER_02: The damn balls on the way to run your ass off anyway.
+[03:18–03:18] [Doubtful material omitted]
+[03:18–03:19] SPEAKER_02: Well go then!
+[03:19–03:22] SPEAKER_02: Would you go before they get here and get you then?
+[03:22–03:22] Speaker uncertain: No.
+[03:23–03:25] SPEAKER_02: Oh, you wanna go to jail then, do you?
+[03:25–03:26] Target_Speaker: You think I'm gonna go to jail?
+[03:27–03:27] Speaker uncertain: What?
+[03:27–03:29] Target_Speaker: After you threatened to stomp my camera?
+[03:29–03:31] Speaker uncertain: What are you talking about right now, dude?
+[03:32–03:37] SPEAKER_03: Lee County 9-1-1, what's the address of your emergency?
+[03:37–03:39] SPEAKER_00: It's 715 Garfield Street.
+[03:39–03:42] SPEAKER_00: I'm not sure that this is an emergency, but I didn't know who to call.
+[03:43–03:45] SPEAKER_00: We have a person on our property filming.
+[03:45–03:46] SPEAKER_03: What's the phone number you can be reached at?
+[03:46–03:47] SPEAKER_03: Because we get disconnected.
+[03:49–03:54] SPEAKER_00: Okay, 662-372-5962, sir.
+[03:54–03:56] SPEAKER_00: My name is Lori, and I'm at DABS at 3 in Tupelo.
+[03:56–03:58] SPEAKER_03: Okay, tell me exactly what happened.
+[04:00–04:03] SPEAKER_00: Okay, we have a guy out front videotaping.
+[04:03–04:04] SPEAKER_00: This is a medical facility.
+[04:05–04:14] SPEAKER_00: It's kind of HIPAA compliant, and he is threatening patients and videoing, and I just need him gone, sir.
+[04:14–04:16] SPEAKER_00: I don't want to cause any trouble.
+[04:16–04:19] SPEAKER_07: I just need him gone.
+[04:20–04:21] [Doubtful material omitted]
+[04:21–04:23] [Doubtful material omitted]
+[04:24–04:25] SPEAKER_00: Oh, you're fine, sir.
+[04:25–04:27] SPEAKER_00: I'm sorry to even have to call you at this mess.
+[04:28–04:30] SPEAKER_03: You said he's recording and harassing customers?
+[04:32–04:32] SPEAKER_00: Yes, sir.
+[04:33–04:34] SPEAKER_00: And I've asked him to leave and he won't leave.
+[04:34–04:35] SPEAKER_03: What race is he?
+[04:35–04:35] Speaker uncertain: He keeps...
+[04:37–04:38] SPEAKER_00: He is a Caucasian male.
+[04:39–04:42] SPEAKER_00: I'm 185, 10, 185.
+[04:42–04:44] [Doubtful material omitted]
+[04:45–04:51] SPEAKER_00: A black t-shirt with his own face on it and a pair of grey joggers and white tennis shoes.
+[04:54–04:55] [Doubtful material omitted]
+[04:55–04:56] [Doubtful material omitted]
+[04:56–04:57] SPEAKER_00: You can't do that.
+[04:58–04:58] [Doubtful material omitted]
+[04:58–05:01] [Doubtful material omitted]
+[05:01–05:02] SPEAKER_03: Thank you, sir.
+[05:05–05:06] Speaker uncertain: Yes, ma'am.
+[05:06–05:11] Target_Speaker: So obviously, that's the 911 call that brought this call for service here in Tupelo, Mississippi.
+[05:12–05:12] Speaker uncertain: How's it going?
+[05:13–05:13] Speaker uncertain: Good.
+[05:13–05:14] [Doubtful material omitted]
+[05:15–05:15] Speaker uncertain: What's up?
+[05:15–05:17] SPEAKER_07: What you doing?
+[05:17–05:19] [Doubtful material omitted]
+[05:20–05:21] [Doubtful material omitted]
+[05:21–05:22] Speaker uncertain: What am I doing?
+[05:22–05:22] Speaker uncertain: Yeah.
+[05:22–05:23] [Doubtful material omitted]
+[05:24–05:25] SPEAKER_08: Come over here and talk to me.
+[05:25–05:26] SPEAKER_08: Whoa, whoa, whoa.
+[05:26–05:27] Speaker uncertain: Why are you going to touch me?
+[05:27–05:28] SPEAKER_07: What's going on?
+[05:28–05:29] SPEAKER_08: Come over here and talk.
+[05:29–05:30] SPEAKER_08: You are on private property.
+[05:30–05:31] [Doubtful material omitted]
+[05:31–05:31] [Doubtful material omitted]
+[05:32–05:33] SPEAKER_08: OK. Do not tell me what you're not going to do.
+[05:33–05:33] [Doubtful material omitted]
+[05:38–05:39] Speaker uncertain: Apparently, I'm on private property.
+[05:40–05:41] SPEAKER_08: Put this down.
+[05:41–05:41] Speaker uncertain: Yeah.
+[05:41–05:42] [Doubtful material omitted]
+[05:42–05:44] SPEAKER_08: Do you have any weapons on you?
+[05:44–05:44] Speaker uncertain: No.
+[05:44–05:46] SPEAKER_08: Do you mind if I pat you down to check?
+[05:46–05:47] Speaker uncertain: Yeah, I do.
+[05:47–05:48] SPEAKER_08: OK. Why are you out here?
+[05:48–05:51] [Doubtful material omitted]
+[05:51–05:52] SPEAKER_08: Why are you out here?
+[05:52–05:53] [Doubtful material omitted]
+[05:56–05:58] SPEAKER_08: Do you realize that you've been asked to leave this property?
+[05:58–06:06] [No transcript available; not reviewed]
+[06:06–06:08] SPEAKER_08: You want to give me a reason why you're here?
+[06:08–06:10] Speaker uncertain: Where you took me from was public property.
+[06:10–06:14] [Doubtful material omitted]
+[06:14–06:17] SPEAKER_08: OK. You're being arrested for criminal loitering.
+[06:18–06:20] [Doubtful material omitted]
+[06:20–06:21] SPEAKER_07: You can't give me a reason why you're out here?
+[06:21–06:23] SPEAKER_02: Sir, can I say something?
+[06:24–06:25] SPEAKER_07: Give me just one second.
+[06:27–06:33] [Doubtful material omitted]
+[06:34–06:36] Target_Speaker: Am I being arrested or detained?
+[06:36–06:36] SPEAKER_08: You're being arrested.
+[06:37–06:47] SPEAKER_08: Oh, OK. You want to identify yourself?
+[06:48–06:50] [Doubtful material omitted]
+[06:50–06:50] [Doubtful material omitted]
+[06:51–06:52] SPEAKER_07: When we get to the jail, you'll be booked in.
+[06:53–06:55] SPEAKER_07: And if you refuse to identify yourself, you'll be held at the jail until you do.
+[06:56–06:56] [Doubtful material omitted]
+[06:58–06:59] Speaker uncertain: What you got?
+[07:01–07:05] SPEAKER_01: All of that stuff he's got on that phone of me, I want it took off.
+[07:05–07:07] SPEAKER_01: That's invading my privacy.
+[07:08–07:09] SPEAKER_01: He's got to write the videos.
+[07:09–07:16] SPEAKER_01: I was coming right up through here and I turned my signal on and he turned and he filmed me from all the way up till you got here.
+[07:17–07:20] SPEAKER_01: And he's done a bunch of smart remarks and stuff.
+[07:21–07:24] SPEAKER_01: And I told him quit filming me and he said, I do what I want to do.
+[07:24–07:25] SPEAKER_01: You don't tell me what I do.
+[07:25–07:26] SPEAKER_01: I do what I want to do.
+[07:27–07:29] SPEAKER_01: He's a smart aleck.
+[07:29–07:30] SPEAKER_01: You heard him.
+[07:30–07:32] SPEAKER_01: He's a real smart aleck to you too.
+[07:33–07:35] [Doubtful material omitted]
+[07:35–07:36] [Doubtful material omitted]
+[07:36–07:37] [Doubtful material omitted]
+[07:38–07:38] SPEAKER_08: I can't do.
+[07:38–07:39] [Doubtful material omitted]
+[07:39–08:00] [No transcript available; not reviewed]
+[08:00–08:02] Target_Speaker: I appreciate you being professional with my stuff.
+[08:02–08:03] Target_Speaker: Just wish you were a little more educated.
+[08:03–08:05] Speaker uncertain: Wish you did a little bit more of an investigation.
+[08:06–08:11] SPEAKER_08: Well, when you invoke your fifth amendment right, there is no way to do an investigation, buddy, because you're not talking.
+[08:12–08:15] Target_Speaker: Well, you should have done your investigation and see which property I was on, because I already did.
+[08:15–08:17] Target_Speaker: I already checked the GIS before I got here.
+[08:17–08:18] SPEAKER_07: I'm glad you did.
+[08:19–08:19] Speaker uncertain: Yes, sir.
+[08:19–08:21] [Doubtful material omitted]
+[08:21–08:23] SPEAKER_07: I don't care if you're on public, private property.
+[08:23–08:26] SPEAKER_07: If you can't give me a reason for you to be there,
+[08:26–08:27] SPEAKER_07: then you're loitering.
+[08:27–08:28] Speaker uncertain: Really?
+[08:28–08:29] Speaker uncertain: On public property?
+[08:29–08:35] Target_Speaker: I have to have a reason to exist on public property?
+[08:35–08:37] Target_Speaker: I have to have a reason to exist on public property?
+[08:37–08:40] Target_Speaker: Is that what you're saying?
+[08:40–08:41] SPEAKER_07: Ah, okay.
+[08:41–08:42] Target_Speaker: I'm not, no, no.
+[08:42–08:44] Target_Speaker: You gave the reason yourself.
+[08:44–08:45] Target_Speaker: I didn't give you a reason for anything.
+[08:45–08:46] Target_Speaker: I invoked my rights.
+[08:46–08:47] Target_Speaker: So we'll see how this one plays out.
+[08:51–08:52] Target_Speaker: Can you not vape in here?
+[08:52–08:53] Speaker uncertain: I'm allergic to tobacco.
+[08:53–09:02] [No transcript available; not reviewed]
+[09:02–09:04] Target_Speaker: There's the respect level from these guys right there.
+[09:04–09:32] [No transcript available; not reviewed]
+[09:32–09:33] [Doubtful material omitted]
+[09:33–09:43] Speaker uncertain: Can I just get your name and badge number for the record?
+[09:44–09:46] SPEAKER_07: It'll be on your race report.
+[09:46–09:48] SPEAKER_07: Are you still going to refuse to identify yourself?
+[09:48–09:49] Speaker uncertain: No, I'll identify.
+[09:50–09:52] [Doubtful material omitted]
+[09:52–09:53] Speaker uncertain: John Medaglia.
+[09:54–09:55] Target_Speaker: I'll spell the last name for you.
+[09:55–09:56] [Doubtful material omitted]
+[09:56–10:02] [No transcript available; not reviewed]
+[10:02–10:04] Speaker uncertain: John spelled it traditionally, J-O-H-I.
+[10:04–10:07] Speaker uncertain: M-E-D-A-G-L-I-A.
+[10:08–10:08] Speaker uncertain: Sup?
+[10:09–10:09] Speaker uncertain: How's it going?
+[10:10–10:17] SPEAKER_02: Trying to make it.
+[10:18–10:19] Speaker uncertain: Some of us just try to resist.
+[10:21–10:30] SPEAKER_07: Well, you can't do that while disturbing the peace and loitering around businesses, causing concern and suspicion.
+[10:31–10:31] SPEAKER_07: It's against the law.
+[10:34–10:35] [Doubtful material omitted]
+[10:35–10:36] Speaker uncertain: March 17, 2002.
+[10:36–10:40] SPEAKER_07: You got tattoos on both arms?
+[10:40–10:40] SPEAKER_07: Anywhere else?
+[10:41–10:42] SPEAKER_07: Yeah, on my chest.
+[10:43–10:45] SPEAKER_07: On my ribs.
+[10:46–10:47] Speaker uncertain: Nothing gang, anything?
+[10:48–10:49] [Doubtful material omitted]
+[10:49–11:05] [No transcript available; not reviewed]
+[11:05–11:11] SPEAKER_07: Number 11, no record from Mississippi or Massachusetts.
+[11:11–11:11] Speaker uncertain: Number 8.
+[11:12–11:13] SPEAKER_07: So is that a fake name?
+[11:14–11:14] Speaker uncertain: No.
+[11:16–11:17] [Doubtful material omitted]
+[11:18–11:19] Speaker uncertain: I don't get found guilty of anything.
+[11:20–11:21] SPEAKER_07: Do you have a driver's license?
+[11:21–11:22] Target_Speaker: I do have a driver's license.
+[11:22–11:23] SPEAKER_07: Then you should be in the system.
+[11:25–11:26] Speaker uncertain: I have a driver's license.
+[11:26–11:27] [Doubtful material omitted]
+[11:30–11:39] Target_Speaker: If you'd like me to have my driver's license dropped off here at the entrance of the jail, I could have that done if that makes it easier to identify myself.
+[11:39–11:44] Target_Speaker: But I don't see, there's going to be no different information on my driver's license.
+[11:46–11:46] SPEAKER_07: No, that's fine.
+[11:46–11:49] SPEAKER_07: That'll be up to the jail once you get in.
+[11:49–11:52] Speaker uncertain: No, I don't give anything to you.
+[11:52–11:58] [No transcript available; not reviewed]
+[11:58–12:01] Target_Speaker: We're already in too deep here, both of us, my friend, so no turning back now.
+[12:03–12:04] SPEAKER_07: Oh, we're not going back anywhere.
+[12:05–12:08] Speaker uncertain: You have a watch on?
+[12:09–12:09] Speaker uncertain: No.
+[12:09–12:12] SPEAKER_07: Anything other than the necklace and the earring?
+[12:12–12:12] SPEAKER_07: My earrings, no.
+[12:13–12:16] Speaker uncertain: I have one more necklace, that's it.
+[12:17–12:19] SPEAKER_07: Is your vehicle secured?
+[12:19–12:21] SPEAKER_07: Did you get dropped off over there or is it somewhere over there nearby?
+[12:21–12:23] [Doubtful material omitted]
+[12:23–12:26] Target_Speaker: What's the statute for criminal loitering?
+[12:26–12:28] Speaker uncertain: Being anywhere that you can't get.
+[12:29–12:29] Speaker uncertain: Like the statute number.
+[12:30–12:32] [Doubtful material omitted]
+[12:33–12:35] Target_Speaker: You left that part blank on the arrest sheet?
+[12:36–12:38] Speaker uncertain: You left that part blank?
+[12:38–12:39] Target_Speaker: The statute number?
+[12:40–12:41] [Doubtful material omitted]
+[12:41–12:43] Target_Speaker: There isn't a statute number for a criminal lawyer.
+[12:44–12:45] SPEAKER_07: There is a statute number.
+[12:46–12:47] Speaker uncertain: So what is it?
+[12:47–12:48] SPEAKER_07: It'll be in my affidavit.
+[12:48–13:01] [No transcript available; not reviewed]
+[13:01–13:04] SPEAKER_07: Criminal ordering and disorderly conduct are the two things you're being charged with.
+[13:06–13:07] SPEAKER_07: Disorderly conduct.
+[13:07–13:09] Speaker uncertain: What's the statute for disorderly conduct?
+[13:10–13:12] SPEAKER_07: It'll be in that you'll have an affidavit.
+[13:12–13:13] [Doubtful material omitted]
+[13:14–13:17] SPEAKER_07: I just told you there's not a place for statutes on this report.
+[13:18–13:18] [Doubtful material omitted]
+[13:20–13:23] SPEAKER_07: You want a lot of information but you don't want to give any information.
+[13:23–13:24] [Doubtful material omitted]
+[13:25–13:26] Speaker uncertain: Except for anything about
+[13:27–13:30] SPEAKER_07: Other than your personal information, you said you would refuse to answer any questions.
+[13:31–13:35] Target_Speaker: Do you actually believe I have to give you a reason why I'm standing on a public sidewalk?
+[13:35–13:36] Speaker uncertain: Oh, 100%.
+[13:36–13:36] [Doubtful material omitted]
+[13:36–13:37] Speaker uncertain: Yeah.
+[13:37–13:39] Speaker uncertain: Looks like you guys needed this.
+[13:40–13:41] [Doubtful material omitted]
+[13:43–13:46] SPEAKER_07: I'm glad you're here to train us.
+[13:46–13:55] [No transcript available; not reviewed]
+[13:55–14:00] Target_Speaker: Are you going to check the GIS map now to see how many feet of public easement I have to see if you were even close to being right?
+[14:00–14:00] Speaker uncertain: No.
+[14:00–14:01] Speaker uncertain: No.
+[14:01–14:01] Speaker uncertain: Come on, Fenton.
+[14:01–14:02] Speaker uncertain: You're right, man.
+[14:03–14:03] SPEAKER_06: It's on.
+[14:03–14:05] SPEAKER_06: Shooting everyone.
+[14:05–14:10] SPEAKER_07: So SB 2203, 2330-2025 prohibits lingering, prowling in public places
+[14:10–14:25] [No transcript available; not reviewed]
+[14:25–14:38] SPEAKER_07: Under circumstances that warrant law requires police to give a chance to explain presence or contact before arrest, which I did and you refused.
+[14:39–14:50] SPEAKER_07: Cities can have specific rules, such as banning lingering in business parking lots or creating disturbances, which is what the disorderly conduct was, creating a disturbance for business.
+[14:50–14:57] [No transcript available; not reviewed]
+[14:57–14:59] SPEAKER_07: And that's public places, not private places.
+[15:00–15:02] SPEAKER_07: So regardless of what GIS shows you.
+[15:06–15:08] Target_Speaker: Do you remember how the conversation actually went?
+[15:08–15:10] [Doubtful material omitted]
+[15:10–15:10] Speaker uncertain: Oh, I know that.
+[15:10–15:11] SPEAKER_07: But do you remember?
+[15:11–15:12] Speaker uncertain: I have.
+[15:12–15:12] Speaker uncertain: You do?
+[15:13–15:14] Target_Speaker: How did you start it when you came up to me?
+[15:14–15:17] SPEAKER_07: I told you who I was and asked you why you were there, what you were doing.
+[15:17–15:18] Speaker uncertain: Yeah.
+[15:18–15:19] SPEAKER_07: And then what?
+[15:20–15:21] Speaker uncertain: I'm evoking you.
+[15:21–15:22] Speaker uncertain: And then you started grabbing for me.
+[15:22–15:23] [Doubtful material omitted]
+[15:23–15:25] Target_Speaker: And then you started grabbing for me instantly.
+[15:26–15:28] Speaker uncertain: You didn't give anybody a chance to explain themselves.
+[15:29–15:30] SPEAKER_07: It's clear on me as you said.
+[15:30–15:32] [Doubtful material omitted]
+[15:32–15:33] [Doubtful material omitted]
+[15:33–15:34] [Doubtful material omitted]
+[15:34–15:36] [Doubtful material omitted]
+[15:36–15:36] Speaker uncertain: You did?
+[15:36–15:38] [Doubtful material omitted]
+[15:38–15:39] Speaker uncertain: What am I doing?
+[15:39–15:41] SPEAKER_08: Yeah, come over here and talk to me.
+[15:41–15:42] [Doubtful material omitted]
+[15:42–15:43] [Doubtful material omitted]
+[15:43–15:44] [Doubtful material omitted]
+[15:44–15:45] Speaker uncertain: What's going on?
+[15:45–15:46] [Doubtful material omitted]
+[15:46–15:47] SPEAKER_08: You are on private property.
+[15:47–15:48] Speaker uncertain: I'm not going to go on there.
+[15:48–15:49] SPEAKER_08: You are on private property.
+[15:49–15:50] SPEAKER_08: OK. Do not tell me what you're not going to do.
+[15:50–15:50] [Doubtful material omitted]
+[15:52–15:53] SPEAKER_08: Do you have any weapons on you?
+[15:53–15:54] Speaker uncertain: Nope.
+[15:55–15:56] SPEAKER_08: You mind if I pat you down to shake?
+[15:56–15:57] Speaker uncertain: Yeah, I do.
+[15:57–15:58] SPEAKER_08: Okay, why are you out here?
+[15:58–16:00] [Doubtful material omitted]
+[16:00–16:01] SPEAKER_08: Why are you out here?
+[16:01–16:04] Speaker uncertain: I'm invoking my 5th Amendment rights, sir.
+[16:04–16:06] SPEAKER_08: You want to give me a reason why you're here?
+[16:06–16:08] Speaker uncertain: Where you took me from was public property.
+[16:08–16:12] Target_Speaker: I'm going to invoke my 5th Amendment rights to pass out.
+[16:12–16:12] [Doubtful material omitted]
+[16:14–16:15] SPEAKER_08: You're being arrested for criminal loitering.
+[16:16–16:16] [Doubtful material omitted]
+[16:19–16:25] Target_Speaker: I was either under arrest or I was detained by your hands and being brought to your car onto private property.
+[16:25–16:26] [Doubtful material omitted]
+[16:28–16:30] Target_Speaker: So it's either an arrest or a detainment.
+[16:32–16:34] SPEAKER_07: You were detained.
+[16:34–16:35] SPEAKER_07: There you go.
+[16:35–16:36] Speaker uncertain: Bingo.
+[16:39–16:39] SPEAKER_07: There it is.
+[16:42–16:44] SPEAKER_07: No purpose or mission statement or anything?
+[16:45–16:46] Target_Speaker: You didn't even ask for one.
+[16:46–16:50] Target_Speaker: That's the funniest part because I'm the single person in this industry.
+[16:50–16:54] Target_Speaker: In this industry, I'm the only person that actually gives a real reason.
+[16:54–16:55] [Doubtful material omitted]
+[16:56–16:57] SPEAKER_07: And you didn't ask for it.
+[16:57–17:00] Speaker uncertain: Because you grabbed for it.
+[17:00–17:03] Target_Speaker: You did not.
+[17:03–17:07] Target_Speaker: Like you would say, I'm not going to argue and go back and forth here and argue semantics here.
+[17:08–17:09] Speaker uncertain: You can go argue it in front of us.
+[17:09–17:13] SPEAKER_07: So when I walked up to you and said, I'm Officer Dean, what are you doing out here?
+[17:13–17:14] [Doubtful material omitted]
+[17:15–17:16] SPEAKER_07: And you said, I invoke my Fifth Amendment.
+[17:16–17:18] SPEAKER_07: So you don't have any visions to say that.
+[17:18–17:22] SPEAKER_07: You just wander around with a video camera.
+[17:22–17:23] SPEAKER_07: You have no purpose.
+[17:23–17:34] [No transcript available; not reviewed]
+[17:34–17:34] [Doubtful material omitted]
+[17:34–17:37] SPEAKER_06: I was walking that other fellow back to the back there.
+[17:37–17:39] [Doubtful material omitted]
+[17:40–17:41] SPEAKER_06: Turn around, face the wall.
+[17:42–17:46] Speaker uncertain: I know he probably already had you down, but we got to do it coming in here, too.
+[17:46–17:52] [Doubtful material omitted]
+[17:52–17:53] [Doubtful material omitted]
+[17:53–17:54] Speaker uncertain: Don't worry.
+[17:54–17:56] [Doubtful material omitted]
+[17:57–18:01] Speaker uncertain: One, it keeps me in good practice, and two, it lets them know kind of what to
+[18:01–18:11] [No transcript available; not reviewed]
+[18:11–18:14] Speaker uncertain: My behavior is kind of a reflection of theirs, so I wouldn't agree more.
+[18:14–19:01] [No transcript available; not reviewed]
+[19:01–19:07] Speaker uncertain: That guy I just searched in that had the shackles, it had a little bit of difficulty opening up one of the shackles.
+[19:07–19:08] SPEAKER_06: I think I got to get a new key then.
+[19:09–19:11] SPEAKER_06: Alright, you're good.
+[19:11–19:12] [Doubtful material omitted]
+[19:12–19:13] SPEAKER_06: Take off your shoes for me.
+[19:14–19:16] SPEAKER_06: What size shoe do you wear?
+[19:16–19:16] Speaker uncertain: That.
+[19:17–19:17] Speaker uncertain: Okay.
+[19:18–19:19] SPEAKER_06: Take off your necklace.
+[19:20–19:23] SPEAKER_06: Take off your earrings and your wristband there.
+[19:23–19:51] [No transcript available; not reviewed]
+[19:51–19:56] Target_Speaker: Do you guys have an immediate public record of who inmates are?
+[19:57–20:05] Speaker uncertain: When we get you booked in, it'll show up on the Tiger website, on the Sheriff's Department's webpage.
+[20:05–20:07] Speaker uncertain: The Tiger website?
+[20:07–20:07] [Doubtful material omitted]
+[20:07–20:09] SPEAKER_06: Tiger is the system we use.
+[20:10–20:12] Speaker uncertain: So it'll be on the what?
+[20:12–20:14] Speaker uncertain: The two below Sheriff's Department website?
+[20:14–20:15] SPEAKER_06: Lee County Sheriff's Department.
+[20:15–20:16] [Doubtful material omitted]
+[20:16–20:19] SPEAKER_06: It's two below Police Department, but we house inmates for them.
+[20:19–20:25] [No transcript available; not reviewed]
+[20:25–20:46] SPEAKER_07: I know you probably don't want to hear this and you probably heard it before, but something like that from an officer standpoint, when we're getting multiple calls about you and I come out there and try to make contact with you and you're immediately standoffish.
+[20:47–20:50] SPEAKER_07: If you just say, hey, this is my name, this is why I'm here.
+[20:50–20:52] Target_Speaker: Just mill it over in your head.
+[20:52–20:56] Target_Speaker: If I came up to you and just acted like you did, you'd be defensive too.
+[20:56–20:58] SPEAKER_07: OK. Again, I'm trying to help you out.
+[21:00–21:03] SPEAKER_07: Because if you get out and do the same thing over again, the same thing's going to happen.
+[21:03–21:05] Speaker uncertain: All right.
+[21:05–21:07] [Doubtful material omitted]
+[21:07–21:08] SPEAKER_06: Step that way.
+[21:09–21:11] SPEAKER_06: And then come on, step in this way.
+[21:11–21:12] [Doubtful material omitted]
+[21:12–21:13] [Doubtful material omitted]
+[21:13–21:13] [Doubtful material omitted]
+[21:13–21:22] [No transcript available; not reviewed]
+[21:22–21:28] Target_Speaker: So overall guys, there is still a lot to do, there is still a lot to cover, there is still a lot to accomplish.
+[21:29–21:35] Target_Speaker: But just like I did for the criminal side, I am now going to be hiring a lawyer to handle all of my business from here on out.
+[21:35–21:43] Target_Speaker: So if you would like to help keep me on the road and keep me producing the best of the best content for you guys, you guys are more than welcome to go and visit my Venmo and PayPal.
+[21:43–21:46] Target_Speaker: It's always linked in the description below.
+[21:46–21:49] Target_Speaker: But all I really need is a watch and a follow and a comment here.
+[21:49–21:58] Target_Speaker: And make sure you go check out my other social media platforms that are always going to be linked in the description below from now on, because that also helps me out tremendously.
+[21:58–22:09] Target_Speaker: That way the masses that watch FAPA can overpower YouTube and overpower the demonetization that they tried to put forth to try to affect all of us in a way that would get us to stop.
+[22:09–22:10] Target_Speaker: But either way, I'm not stopping.
+[22:10–22:12] Target_Speaker: but it would be greatly appreciated.
+[22:12–22:15] Target_Speaker: But overall, let me know what your favorite part was today in the comments.
+[22:15–22:22] Target_Speaker: And if you are not already subscribed, make sure you go subscribe and turn on those bell notifications to never miss the latest and the greatest from the best of the best.
+[22:23–22:24] [Doubtful material omitted]
+[22:24–22:24] Speaker uncertain: Peace out.
