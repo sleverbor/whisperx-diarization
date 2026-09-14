@@ -1,0 +1,194 @@
+[
+  {
+    "start": 20.925,
+    "text": "You want to give me a reason why you're here?",
+    "fresh_original_visual": [
+      {
+        "source": "target_face_visible",
+        "target_score": 0,
+        "confidence": 0,
+        "details": {
+          "best_similarity": null,
+          "identity_anchor_similarity": null,
+          "target_visible_hint": false,
+          "tracked_target_frames": [],
+          "active_speaker_verified": false
+        }
+      },
+      {
+        "source": "visual_context",
+        "target_score": 0,
+        "confidence": 0,
+        "details": {
+          "frames_read": 15,
+          "observations": [],
+          "note": "Face identity and visibility do not identify police or prove speech."
+        }
+      },
+      {
+        "source": "target_mouth_motion",
+        "target_score": 0.0,
+        "confidence": 0.0,
+        "details": {
+          "direct_identity_matches": 0,
+          "mouth_samples": 0,
+          "aperture_spread": 0.0,
+          "active_speaker_verified": false,
+          "note": "Weak landmark motion hint; no lipreading or audio-visual synchronization model."
+        }
+      }
+    ]
+  },
+  {
+    "start": 28.756,
+    "text": "Criminal loitering.",
+    "fresh_original_visual": [
+      {
+        "source": "target_face_visible",
+        "target_score": 0,
+        "confidence": 0,
+        "details": {
+          "best_similarity": 0.33095064759254456,
+          "identity_anchor_similarity": 0.49819234013557434,
+          "target_visible_hint": true,
+          "tracked_target_frames": [
+            {
+              "frame": 610,
+              "identity_source": "face_continuity",
+              "similarity": 0.14489680528640747
+            },
+            {
+              "frame": 612,
+              "identity_source": "face_continuity",
+              "similarity": 0.18273526430130005
+            },
+            {
+              "frame": 615,
+              "identity_source": "face_continuity",
+              "similarity": 0.14971855282783508
+            },
+            {
+              "frame": 618,
+              "identity_source": "face_continuity",
+              "similarity": 0.33095064759254456
+            }
+          ],
+          "active_speaker_verified": false
+        }
+      },
+      {
+        "source": "visual_context",
+        "target_score": 0,
+        "confidence": 0,
+        "details": {
+          "frames_read": 9,
+          "observations": [
+            {
+              "frame": 596,
+              "similarity": 0.49819234013557434,
+              "bbox": [
+                1649.9466552734375,
+                111.12843322753906,
+                1869.728759765625,
+                389.8478698730469
+              ]
+            },
+            {
+              "frame": 599,
+              "similarity": 0.47350332140922546,
+              "bbox": [
+                1499.310791015625,
+                69.13009643554688,
+                1720.195068359375,
+                354.5320129394531
+              ]
+            },
+            {
+              "frame": 602,
+              "similarity": 0.418298602104187,
+              "bbox": [
+                1447.342041015625,
+                60.71245193481445,
+                1663.91796875,
+                367.09552001953125
+              ]
+            },
+            {
+              "frame": 604,
+              "similarity": 0.49316298961639404,
+              "bbox": [
+                1427.446044921875,
+                65.53520965576172,
+                1620.7518310546875,
+                387.5788879394531
+              ]
+            },
+            {
+              "frame": 607,
+              "similarity": 0.30747324228286743,
+              "bbox": [
+                1442.9053955078125,
+                97.11632537841797,
+                1596.2388916015625,
+                404.07330322265625
+              ]
+            },
+            {
+              "frame": 610,
+              "similarity": 0.14489680528640747,
+              "bbox": [
+                1495.823486328125,
+                150.14144897460938,
+                1618.546142578125,
+                448.81787109375
+              ]
+            },
+            {
+              "frame": 612,
+              "similarity": 0.18273526430130005,
+              "bbox": [
+                1524.9581298828125,
+                188.0069580078125,
+                1643.0240478515625,
+                438.8605041503906
+              ]
+            },
+            {
+              "frame": 615,
+              "similarity": 0.14971855282783508,
+              "bbox": [
+                1521.8905029296875,
+                194.9124755859375,
+                1643.8743896484375,
+                452.06207275390625
+              ]
+            },
+            {
+              "frame": 618,
+              "similarity": 0.33095064759254456,
+              "bbox": [
+                1486.2740478515625,
+                146.11257934570312,
+                1621.3414306640625,
+                423.3013916015625
+              ]
+            }
+          ],
+          "note": "Face identity and visibility do not identify police or prove speech."
+        }
+      },
+      {
+        "source": "target_mouth_motion",
+        "target_score": 0.0,
+        "confidence": 0.0,
+        "details": {
+          "direct_identity_matches": 4,
+          "mouth_samples": 4,
+          "aperture_spread": 0.0,
+          "active_speaker_verified": false,
+          "note": "Weak landmark motion hint; no lipreading or audio-visual synchronization model."
+        }
+      }
+    ]
+  }
+]

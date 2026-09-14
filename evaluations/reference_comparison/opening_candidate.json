@@ -1,0 +1,5091 @@
+{
+  "target_candidate": "SPEAKER_00",
+  "cluster_voice_means": {
+    "SPEAKER_00": 0.25681569303075474,
+    "SPEAKER_01": 0.07764442492690352
+  },
+  "mapping_strength": 1.0,
+  "runtime": {
+    "device": "cpu",
+    "face_providers": {
+      "landmark_3d_68": [
+        "CPUExecutionProvider"
+      ],
+      "landmark_2d_106": [
+        "CPUExecutionProvider"
+      ],
+      "detection": [
+        "CPUExecutionProvider"
+      ],
+      "genderage": [
+        "CPUExecutionProvider"
+      ],
+      "recognition": [
+        "CPUExecutionProvider"
+      ]
+    },
+    "transcription_coverage": "vad"
+  },
+  "confidence_is_calibrated": false,
+  "segments": [
+    {
+      "start": 0.257,
+      "end": 2.04,
+      "text": "What you out of here doing, man?",
+      "baseline": {
+        "raw_speaker_track": "SPEAKER_00",
+        "speaker": "Target_Speaker"
+      },
+      "words": [
+        {
+          "word": "What",
+          "start": 0.257,
+          "end": 0.377,
+          "score": 0.732,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "you",
+          "start": 0.397,
+          "end": 0.457,
+          "score": 0.54,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "out",
+          "start": 0.477,
+          "end": 0.537,
+          "score": 0.157,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "of",
+          "start": 0.577,
+          "end": 0.658,
+          "score": 0.281,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "here",
+          "start": 0.678,
+          "end": 0.778,
+          "score": 0.126,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "doing,",
+          "start": 0.798,
+          "end": 0.918,
+          "score": 0.391,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "man?",
+          "start": 0.938,
+          "end": 2.04,
+          "score": 0.899,
+          "speaker": "SPEAKER_00"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "local_voice",
+          "target_score": -1.0,
+          "confidence": 1.0,
+          "details": {
+            "similarity": -0.07612498104572296,
+            "crop_start": 0.257,
+            "crop_end": 2.04,
+            "target_mean": 0.25681569303075474,
+            "competitor_mean": 0.07764442492690352,
+            "track_similarities": {
+              "SPEAKER_00": 0.15563681721687317,
+              "SPEAKER_01": 0.4059792757034302
+            },
+            "independent_profile_counts": {
+              "SPEAKER_00": 5,
+              "SPEAKER_01": 9
+            },
+            "best_track": "SPEAKER_01",
+            "track_margin": 0.250342458486557
+          }
+        },
+        {
+          "source": "target_face_visible",
+          "target_score": 0,
+          "confidence": 0,
+          "details": {
+            "best_similarity": 0.008046051487326622,
+            "identity_anchor_similarity": null,
+            "target_visible_hint": false,
+            "tracked_target_frames": [],
+            "active_speaker_verified": false
+          }
+        },
+        {
+          "source": "visual_context",
+          "target_score": 0,
+          "confidence": 0,
+          "details": {
+            "frames_read": 17,
+            "observations": [
+              {
+                "frame": 8,
+                "similarity": 0.008046051487326622,
+                "bbox": [
+                  -33.06135177612305,
+                  154.0258026123047,
+                  197.9657745361328,
+                  424.3695373535156
+                ]
+              },
+              {
+                "frame": 11,
+                "similarity": -0.004658079240471125,
+                "bbox": [
+                  63.75522994995117,
+                  118.53378295898438,
+                  309.51776123046875,
+                  387.1085205078125
+                ]
+              },
+              {
+                "frame": 13,
+                "similarity": -0.009069139137864113,
+                "bbox": [
+                  138.46646118164062,
+                  96.52519226074219,
+                  383.18658447265625,
+                  372.6744689941406
+                ]
+              },
+              {
+                "frame": 16,
+                "similarity": -0.04544315114617348,
+                "bbox": [
+                  242.5590362548828,
+                  70.09375762939453,
+                  489.3563232421875,
+                  363.3432312011719
+                ]
+              },
+              {
+                "frame": 18,
+                "similarity": -0.02349448762834072,
+                "bbox": [
+                  324.563232421875,
+                  58.062252044677734,
+                  570.747314453125,
+                  347.7837829589844
+                ]
+              },
+              {
+                "frame": 21,
+                "similarity": 0.0013789338991045952,
+                "bbox": [
+                  456.98089599609375,
+                  36.92819595336914,
+                  705.0997314453125,
+                  340.3514099121094
+                ]
+              },
+              {
+                "frame": 24,
+                "similarity": -0.08596836030483246,
+                "bbox": [
+                  900.607421875,
+                  -79.24536895751953,
+                  1194.2713623046875,
+                  317.4654541015625
+                ]
+              },
+              {
+                "frame": 26,
+                "similarity": -0.07788543403148651,
+                "bbox": [
+                  922.7587890625,
+                  -78.03545379638672,
+                  1225.946044921875,
+                  331.170166015625
+                ]
+              },
+              {
+                "frame": 29,
+                "similarity": -0.03653559461236,
+                "bbox": [
+                  989.42138671875,
+                  -54.4423828125,
+                  1267.748779296875,
+                  316.5942687988281
+                ]
+              },
+              {
+                "frame": 32,
+                "similarity": -0.057053521275520325,
+                "bbox": [
+                  1012.520751953125,
+                  65.35528564453125,
+                  1231.5040283203125,
+                  347.836669921875
+                ]
+              },
+              {
+                "frame": 34,
+                "similarity": -0.07566091418266296,
+                "bbox": [
+                  1010.9068603515625,
+                  120.91156768798828,
+                  1206.645263671875,
+                  365.190673828125
+                ]
+              },
+              {
+                "frame": 37,
+                "similarity": -0.050691474229097366,
+                "bbox": [
+                  997.08984375,
+                  131.0570068359375,
+                  1183.12451171875,
+                  370.5892028808594
+                ]
+              },
+              {
+                "frame": 40,
+                "similarity": -0.019488390535116196,
+                "bbox": [
+                  981.4700317382812,
+                  137.94725036621094,
+                  1164.1158447265625,
+                  366.5990295410156
+                ]
+              },
+              {
+                "frame": 42,
+                "similarity": -0.023106340318918228,
+                "bbox": [
+                  971.1090087890625,
+                  136.27098083496094,
+                  1153.3392333984375,
+                  369.5333251953125
+                ]
+              }
+            ],
+            "note": "Face identity and visibility do not identify police or prove speech."
+          }
+        },
+        {
+          "source": "target_mouth_motion",
+          "target_score": 0.0,
+          "confidence": 0.0,
+          "details": {
+            "direct_identity_matches": 0,
+            "mouth_samples": 0,
+            "aperture_spread": 0.0,
+            "active_speaker_verified": false,
+            "note": "Weak landmark motion hint; no lipreading or audio-visual synchronization model."
+          }
+        },
+        {
+          "source": "semantic_context",
+          "target_score": 0.0,
+          "confidence": 0.0,
+          "details": {
+            "identity_mapping": null,
+            "note": "No role or phrase is assumed to identify the supplied target."
+          }
+        }
+      ],
+      "final_speaker": "SPEAKER_01",
+      "final_confidence": 1.0,
+      "reasons": [
+        "baseline=SPEAKER_00; mapping strength=1.000",
+        "local_voice: -1.000",
+        "independent voice profile supports correction to SPEAKER_01"
+      ]
+    },
+    {
+      "start": 2.06,
+      "end": 2.961,
+      "text": "Come over here and talk to me.",
+      "baseline": {
+        "raw_speaker_track": "SPEAKER_01",
+        "speaker": "SPEAKER_01"
+      },
+      "words": [
+        {
+          "word": "Come",
+          "start": 2.06,
+          "end": 2.16,
+          "score": 0.985,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "over",
+          "start": 2.2,
+          "end": 2.32,
+          "score": 0.552,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "here",
+          "start": 2.34,
+          "end": 2.42,
+          "score": 0.478,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "and",
+          "start": 2.44,
+          "end": 2.5,
+          "score": 0.52,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "talk",
+          "start": 2.52,
+          "end": 2.68,
+          "score": 0.743,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "to",
+          "start": 2.7,
+          "end": 2.841,
+          "score": 0.414,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "me.",
+          "start": 2.861,
+          "end": 2.961,
+          "score": 0.829,
+          "speaker": "SPEAKER_01"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "local_voice",
+          "target_score": -1.0,
+          "confidence": 0.7508333333333332,
+          "details": {
+            "similarity": -0.10056361556053162,
+            "crop_start": 2.06,
+            "crop_end": 2.961,
+            "target_mean": 0.25681569303075474,
+            "competitor_mean": 0.07764442492690352,
+            "track_similarities": {
+              "SPEAKER_00": 0.17150653898715973,
+              "SPEAKER_01": 0.4512128531932831
+            },
+            "independent_profile_counts": {
+              "SPEAKER_00": 6,
+              "SPEAKER_01": 8
+            },
+            "best_track": "SPEAKER_01",
+            "track_margin": 0.27970631420612335
+          }
+        },
+        {
+          "source": "target_face_visible",
+          "target_score": 0,
+          "confidence": 0,
+          "details": {
+            "best_similarity": -0.009711087681353092,
+            "identity_anchor_similarity": null,
+            "target_visible_hint": false,
+            "tracked_target_frames": [],
+            "active_speaker_verified": false
+          }
+        },
+        {
+          "source": "visual_context",
+          "target_score": 0,
+          "confidence": 0,
+          "details": {
+            "frames_read": 12,
+            "observations": [
+              {
+                "frame": 33,
+                "similarity": -0.052095551043748856,
+                "bbox": [
+                  1011.7619018554688,
+                  98.45356750488281,
+                  1216.1026611328125,
+                  356.6867980957031
+                ]
+              },
+              {
+                "frame": 36,
+                "similarity": -0.07613536715507507,
+                "bbox": [
+                  1002.3751831054688,
+                  131.5492401123047,
+                  1188.7652587890625,
+                  370.3224182128906
+                ]
+              },
+              {
+                "frame": 38,
+                "similarity": -0.0694425031542778,
+                "bbox": [
+                  993.7443237304688,
+                  130.96241760253906,
+                  1179.0076904296875,
+                  370.1693420410156
+                ]
+              },
+              {
+                "frame": 41,
+                "similarity": -0.017162002623081207,
+                "bbox": [
+                  975.9097290039062,
+                  136.71810913085938,
+                  1158.8712158203125,
+                  367.79974365234375
+                ]
+              },
+              {
+                "frame": 43,
+                "similarity": -0.020117029547691345,
+                "bbox": [
+                  968.0118408203125,
+                  136.3336944580078,
+                  1150.25732421875,
+                  372.0975646972656
+                ]
+              },
+              {
+                "frame": 46,
+                "similarity": -0.07674973458051682,
+                "bbox": [
+                  964.916259765625,
+                  143.5172882080078,
+                  1148.006103515625,
+                  380.59783935546875
+                ]
+              },
+              {
+                "frame": 49,
+                "similarity": -0.06735242903232574,
+                "bbox": [
+                  971.401611328125,
+                  144.41024780273438,
+                  1165.11181640625,
+                  391.3656005859375
+                ]
+              },
+              {
+                "frame": 51,
+                "similarity": -0.05242779850959778,
+                "bbox": [
+                  989.2196655273438,
+                  149.64210510253906,
+                  1185.8963623046875,
+                  390.189453125
+                ]
+              },
+              {
+                "frame": 54,
+                "similarity": -0.009711087681353092,
+                "bbox": [
+                  1022.042724609375,
+                  202.84808349609375,
+                  1222.2685546875,
+                  459.47198486328125
+                ]
+              },
+              {
+                "frame": 57,
+                "similarity": -0.01585734263062477,
+                "bbox": [
+                  1056.2928466796875,
+                  258.6985778808594,
+                  1252.213623046875,
+                  509.1883850097656
+                ]
+              },
+              {
+                "frame": 59,
+                "similarity": -0.028420930728316307,
+                "bbox": [
+                  1070.0697021484375,
+                  274.6250305175781,
+                  1263.15234375,
+                  513.3495483398438
+                ]
+              },
+              {
+                "frame": 62,
+                "similarity": -0.038150086998939514,
+                "bbox": [
+                  1034.0196533203125,
+                  246.2874755859375,
+                  1218.3358154296875,
+                  481.41302490234375
+                ]
+              }
+            ],
+            "note": "Face identity and visibility do not identify police or prove speech."
+          }
+        },
+        {
+          "source": "target_mouth_motion",
+          "target_score": 0.0,
+          "confidence": 0.0,
+          "details": {
+            "direct_identity_matches": 0,
+            "mouth_samples": 0,
+            "aperture_spread": 0.0,
+            "active_speaker_verified": false,
+            "note": "Weak landmark motion hint; no lipreading or audio-visual synchronization model."
+          }
+        },
+        {
+          "source": "semantic_context",
+          "target_score": 0.0,
+          "confidence": 0.0,
+          "details": {
+            "identity_mapping": null,
+            "note": "No role or phrase is assumed to identify the supplied target."
+          }
+        }
+      ],
+      "final_speaker": "SPEAKER_01",
+      "final_confidence": 0.839247311827957,
+      "reasons": [
+        "baseline=SPEAKER_01; mapping strength=1.000",
+        "local_voice: -0.751"
+      ]
+    },
+    {
+      "start": 2.981,
+      "end": 3.842,
+      "text": "Whoa, whoa, whoa.",
+      "baseline": {
+        "raw_speaker_track": "SPEAKER_00",
+        "speaker": "Target_Speaker"
+      },
+      "words": [
+        {
+          "word": "Whoa,",
+          "start": 2.981,
+          "end": 3.201,
+          "score": 0.572,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "whoa,",
+          "start": 3.221,
+          "end": 3.461,
+          "score": 0.703,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "whoa.",
+          "start": 3.502,
+          "end": 3.842,
+          "score": 0.566,
+          "speaker": "SPEAKER_00"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "local_voice",
+          "target_score": 0.16329224368193954,
+          "confidence": 0.7175000000000002,
+          "details": {
+            "similarity": 0.19648733735084534,
+            "crop_start": 2.981,
+            "crop_end": 3.842,
+            "target_mean": 0.25681569303075474,
+            "competitor_mean": 0.07764442492690352,
+            "track_similarities": {
+              "SPEAKER_00": 0.07065539062023163,
+              "SPEAKER_01": 0.06753531098365784
+            },
+            "independent_profile_counts": {
+              "SPEAKER_00": 5,
+              "SPEAKER_01": 8
+            },
+            "best_track": "SPEAKER_00",
+            "track_margin": 0.0031200796365737915
+          }
+        },
+        {
+          "source": "target_face_visible",
+          "target_score": 0,
+          "confidence": 0,
+          "details": {
+            "best_similarity": 0.01101268082857132,
+            "identity_anchor_similarity": null,
+            "target_visible_hint": false,
+            "tracked_target_frames": [],
+            "active_speaker_verified": false
+          }
+        },
+        {
+          "source": "visual_context",
+          "target_score": 0,
+          "confidence": 0,
+          "details": {
+            "frames_read": 11,
+            "observations": [
+              {
+                "frame": 52,
+                "similarity": -0.035844676196575165,
+                "bbox": [
+                  998.4181518554688,
+                  156.22096252441406,
+                  1200.8619384765625,
+                  409.4670715332031
+                ]
+              },
+              {
+                "frame": 55,
+                "similarity": -0.008995912969112396,
+                "bbox": [
+                  1031.0694580078125,
+                  231.58969116210938,
+                  1228.992431640625,
+                  480.0575866699219
+                ]
+              },
+              {
+                "frame": 58,
+                "similarity": -0.011588994413614273,
+                "bbox": [
+                  1063.175537109375,
+                  273.1109924316406,
+                  1261.6614990234375,
+                  514.6774291992188
+                ]
+              },
+              {
+                "frame": 60,
+                "similarity": -0.017524631693959236,
+                "bbox": [
+                  1062.2261962890625,
+                  267.2279052734375,
+                  1257.13134765625,
+                  509.9703369140625
+                ]
+              },
+              {
+                "frame": 63,
+                "similarity": -0.007957649417221546,
+                "bbox": [
+                  1017.7223510742188,
+                  236.95614624023438,
+                  1201.19189453125,
+                  467.2347412109375
+                ]
+              },
+              {
+                "frame": 66,
+                "similarity": 0.01101268082857132,
+                "bbox": [
+                  986.5487060546875,
+                  217.5153045654297,
+                  1164.6837158203125,
+                  437.8228454589844
+                ]
+              },
+              {
+                "frame": 68,
+                "similarity": 0.005182799883186817,
+                "bbox": [
+                  973.7078247070312,
+                  211.21343994140625,
+                  1149.4376220703125,
+                  426.42242431640625
+                ]
+              },
+              {
+                "frame": 71,
+                "similarity": -0.015533925965428352,
+                "bbox": [
+                  969.1651611328125,
+                  192.6115264892578,
+                  1142.841064453125,
+                  404.8260498046875
+                ]
+              },
+              {
+                "frame": 71,
+                "similarity": -0.03803759813308716,
+                "bbox": [
+                  1882.40478515625,
+                  511.75775146484375,
+                  1919.265869140625,
+                  556.0975952148438
+                ]
+              },
+              {
+                "frame": 73,
+                "similarity": 0.0024447962641716003,
+                "bbox": [
+                  972.9071655273438,
+                  189.0050811767578,
+                  1144.77392578125,
+                  389.895263671875
+                ]
+              },
+              {
+                "frame": 76,
+                "similarity": 0.004412892274558544,
+                "bbox": [
+                  973.6962890625,
+                  186.99063110351562,
+                  1147.1448974609375,
+                  395.76849365234375
+                ]
+              },
+              {
+                "frame": 79,
+                "similarity": -0.0006366763263940811,
+                "bbox": [
+                  970.0291137695312,
+                  187.1014404296875,
+                  1139.362060546875,
+                  398.2660217285156
+                ]
+              },
+              {
+                "frame": 79,
+                "similarity": -0.04528549313545227,
+                "bbox": [
+                  1878.9429931640625,
+                  498.1425476074219,
+                  1920.9134521484375,
+                  543.3385009765625
+                ]
+              }
+            ],
+            "note": "Face identity and visibility do not identify police or prove speech."
+          }
+        },
+        {
+          "source": "target_mouth_motion",
+          "target_score": 0.0,
+          "confidence": 0.0,
+          "details": {
+            "direct_identity_matches": 0,
+            "mouth_samples": 0,
+            "aperture_spread": 0.0,
+            "active_speaker_verified": false,
+            "note": "Weak landmark motion hint; no lipreading or audio-visual synchronization model."
+          }
+        },
+        {
+          "source": "semantic_context",
+          "target_score": 0.0,
+          "confidence": 0.0,
+          "details": {
+            "identity_mapping": null,
+            "note": "No role or phrase is assumed to identify the supplied target."
+          }
+        }
+      ],
+      "final_speaker": "Target_Speaker",
+      "final_confidence": 0.5263606981000327,
+      "reasons": [
+        "baseline=SPEAKER_00; mapping strength=1.000",
+        "local_voice: +0.117"
+      ]
+    },
+    {
+      "start": 3.902,
+      "end": 5.184,
+      "text": "Why are you going to touch me?",
+      "baseline": {
+        "raw_speaker_track": "SPEAKER_00",
+        "speaker": "Target_Speaker"
+      },
+      "words": [
+        {
+          "word": "Why",
+          "start": 3.902,
+          "end": 3.982,
+          "score": 0.497,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "are",
+          "start": 4.002,
+          "end": 4.062,
+          "score": 0.174,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "you",
+          "start": 4.082,
+          "end": 4.162,
+          "score": 0.878,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "going",
+          "start": 4.202,
+          "end": 4.363,
+          "score": 0.572,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "to",
+          "start": 4.383,
+          "end": 4.423,
+          "score": 0.072,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "touch",
+          "start": 4.443,
+          "end": 4.683,
+          "score": 0.824,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "me?",
+          "start": 4.984,
+          "end": 5.184,
+          "score": 0.682,
+          "speaker": "SPEAKER_00"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "local_voice",
+          "target_score": 0.4144186538830984,
+          "confidence": 1.0,
+          "details": {
+            "similarity": 0.2414819747209549,
+            "crop_start": 3.902,
+            "crop_end": 5.184,
+            "target_mean": 0.25681569303075474,
+            "competitor_mean": 0.07764442492690352,
+            "track_similarities": {
+              "SPEAKER_00": 0.14950570464134216,
+              "SPEAKER_01": 0.06999418139457703
+            },
+            "independent_profile_counts": {
+              "SPEAKER_00": 5,
+              "SPEAKER_01": 9
+            },
+            "best_track": "SPEAKER_00",
+            "track_margin": 0.07951152324676514
+          }
+        },
+        {
+          "source": "target_face_visible",
+          "target_score": 0,
+          "confidence": 0,
+          "details": {
+            "best_similarity": 0.015010695904493332,
+            "identity_anchor_similarity": null,
+            "target_visible_hint": false,
+            "tracked_target_frames": [],
+            "active_speaker_verified": false
+          }
+        },
+        {
+          "source": "visual_context",
+          "target_score": 0,
+          "confidence": 0,
+          "details": {
+            "frames_read": 15,
+            "observations": [
+              {
+                "frame": 72,
+                "similarity": -0.007137236185371876,
+                "bbox": [
+                  971.5775756835938,
+                  189.3960723876953,
+                  1142.8643798828125,
+                  396.84295654296875
+                ]
+              },
+              {
+                "frame": 72,
+                "similarity": -0.02176489867269993,
+                "bbox": [
+                  1883.4268798828125,
+                  509.3939208984375,
+                  1921.7637939453125,
+                  554.0578002929688
+                ]
+              },
+              {
+                "frame": 74,
+                "similarity": -0.0010284986346960068,
+                "bbox": [
+                  973.3802490234375,
+                  185.46817016601562,
+                  1145.130615234375,
+                  389.74359130859375
+                ]
+              },
+              {
+                "frame": 77,
+                "similarity": 0.014816532842814922,
+                "bbox": [
+                  974.10791015625,
+                  186.8269500732422,
+                  1144.60986328125,
+                  391.9558410644531
+                ]
+              },
+              {
+                "frame": 77,
+                "similarity": -0.01939120888710022,
+                "bbox": [
+                  1883.647705078125,
+                  497.9667663574219,
+                  1923.197509765625,
+                  542.8367309570312
+                ]
+              },
+              {
+                "frame": 80,
+                "similarity": -0.0073703378438949585,
+                "bbox": [
+                  969.0723266601562,
+                  187.22171020507812,
+                  1137.20166015625,
+                  398.4969177246094
+                ]
+              },
+              {
+                "frame": 80,
+                "similarity": -0.0592290498316288,
+                "bbox": [
+                  1875.2857666015625,
+                  498.96734619140625,
+                  1921.7088623046875,
+                  543.3446044921875
+                ]
+              },
+              {
+                "frame": 82,
+                "similarity": -0.004806824028491974,
+                "bbox": [
+                  967.8922729492188,
+                  189.7854766845703,
+                  1133.301025390625,
+                  399.6311950683594
+                ]
+              },
+              {
+                "frame": 82,
+                "similarity": -0.033829670399427414,
+                "bbox": [
+                  1874.312744140625,
+                  497.2156677246094,
+                  1919.2188720703125,
+                  540.9322509765625
+                ]
+              },
+              {
+                "frame": 85,
+                "similarity": -0.007613927125930786,
+                "bbox": [
+                  964.6038818359375,
+                  191.4811553955078,
+                  1132.258056640625,
+                  401.71453857421875
+                ]
+              },
+              {
+                "frame": 85,
+                "similarity": -0.018490266054868698,
+                "bbox": [
+                  1873.7486572265625,
+                  498.47601318359375,
+                  1918.4166259765625,
+                  542.7578125
+                ]
+              },
+              {
+                "frame": 88,
+                "similarity": -0.0030385665595531464,
+                "bbox": [
+                  962.7603149414062,
+                  194.6473846435547,
+                  1128.6568603515625,
+                  409.4814147949219
+                ]
+              },
+              {
+                "frame": 88,
+                "similarity": -0.023036140948534012,
+                "bbox": [
+                  1876.0125732421875,
+                  498.9574890136719,
+                  1919.746337890625,
+                  543.0769653320312
+                ]
+              },
+              {
+                "frame": 90,
+                "similarity": 0.015010695904493332,
+                "bbox": [
+                  957.2091064453125,
+                  196.67286682128906,
+                  1119.5487060546875,
+                  411.51434326171875
+                ]
+              },
+              {
+                "frame": 90,
+                "similarity": -0.0231701098382473,
+                "bbox": [
+                  1877.9754638671875,
+                  499.57574462890625,
+                  1920.7860107421875,
+                  544.2791748046875
+                ]
+              },
+              {
+                "frame": 93,
+                "similarity": 0.004225308075547218,
+                "bbox": [
+                  940.4118041992188,
+                  200.74801635742188,
+                  1106.84765625,
+                  414.29498291015625
+                ]
+              },
+              {
+                "frame": 93,
+                "similarity": -0.0521693117916584,
+                "bbox": [
+                  1880.4913330078125,
+                  499.5806884765625,
+                  1922.0987548828125,
+                  544.6724853515625
+                ]
+              },
+              {
+                "frame": 96,
+                "similarity": 0.014022335410118103,
+                "bbox": [
+                  937.0592651367188,
+                  206.3097381591797,
+                  1104.7943115234375,
+                  415.0340270996094
+                ]
+              },
+              {
+                "frame": 96,
+                "similarity": -0.02961362525820732,
+                "bbox": [
+                  1885.6513671875,
+                  500.5226745605469,
+                  1925.58544921875,
+                  546.5255737304688
+                ]
+              },
+              {
+                "frame": 98,
+                "similarity": 0.0028760768473148346,
+                "bbox": [
+                  945.484375,
+                  204.15028381347656,
+                  1112.143798828125,
+                  413.48236083984375
+                ]
+              },
+              {
+                "frame": 98,
+                "similarity": 0.006693078204989433,
+                "bbox": [
+                  1888.030517578125,
+                  499.25732421875,
+                  1930.4393310546875,
+                  547.7618408203125
+                ]
+              },
+              {
+                "frame": 101,
+                "similarity": 0.0017114020884037018,
+                "bbox": [
+                  959.9940185546875,
+                  205.0410919189453,
+                  1133.7725830078125,
+                  422.981689453125
+                ]
+              },
+              {
+                "frame": 103,
+                "similarity": -0.0036730431020259857,
+                "bbox": [
+                  959.8209228515625,
+                  203.4678497314453,
+                  1132.4783935546875,
+                  421.9564208984375
+                ]
+              },
+              {
+                "frame": 106,
+                "similarity": -0.033645808696746826,
+                "bbox": [
+                  953.5380249023438,
+                  194.9690704345703,
+                  1118.483642578125,
+                  410.0138244628906
+                ]
+              },
+              {
+                "frame": 109,
+                "similarity": -0.016318198293447495,
+                "bbox": [
+                  945.0086059570312,
+                  196.0849151611328,
+                  1111.6239013671875,
+                  406.9600524902344
+                ]
+              }
+            ],
+            "note": "Face identity and visibility do not identify police or prove speech."
+          }
+        },
+        {
+          "source": "target_mouth_motion",
+          "target_score": 0.0,
+          "confidence": 0.0,
+          "details": {
+            "direct_identity_matches": 0,
+            "mouth_samples": 0,
+            "aperture_spread": 0.0,
+            "active_speaker_verified": false,
+            "note": "Weak landmark motion hint; no lipreading or audio-visual synchronization model."
+          }
+        },
+        {
+          "source": "semantic_context",
+          "target_score": 0.0,
+          "confidence": 0.0,
+          "details": {
+            "identity_mapping": null,
+            "note": "No role or phrase is assumed to identify the supplied target."
+          }
+        }
+      ],
+      "final_speaker": "Target_Speaker",
+      "final_confidence": 0.6222055831503861,
+      "reasons": [
+        "baseline=SPEAKER_00; mapping strength=1.000",
+        "local_voice: +0.414"
+      ]
+    },
+    {
+      "start": 5.224,
+      "end": 5.925,
+      "text": "What's going on?",
+      "baseline": {
+        "raw_speaker_track": "SPEAKER_00",
+        "speaker": "Target_Speaker"
+      },
+      "words": [
+        {
+          "word": "What's",
+          "start": 5.224,
+          "end": 5.404,
+          "score": 0.782,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "going",
+          "start": 5.424,
+          "end": 5.644,
+          "score": 0.199,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "on?",
+          "start": 5.705,
+          "end": 5.925,
+          "score": 0.652,
+          "speaker": "SPEAKER_00"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "local_voice",
+          "target_score": -0.10011312878959225,
+          "confidence": 0.5841666666666664,
+          "details": {
+            "similarity": 0.14929266273975372,
+            "crop_start": 5.224,
+            "crop_end": 5.925,
+            "target_mean": 0.25681569303075474,
+            "competitor_mean": 0.07764442492690352,
+            "track_similarities": {
+              "SPEAKER_00": 0.13091689348220825,
+              "SPEAKER_01": -0.012326665222644806
+            },
+            "independent_profile_counts": {
+              "SPEAKER_00": 5,
+              "SPEAKER_01": 9
+            },
+            "best_track": "SPEAKER_00",
+            "track_margin": 0.14324355870485306
+          }
+        },
+        {
+          "source": "target_face_visible",
+          "target_score": 0,
+          "confidence": 0,
+          "details": {
+            "best_similarity": -0.00985688716173172,
+            "identity_anchor_similarity": null,
+            "target_visible_hint": false,
+            "tracked_target_frames": [],
+            "active_speaker_verified": false
+          }
+        },
+        {
+          "source": "visual_context",
+          "target_score": 0,
+          "confidence": 0,
+          "details": {
+            "frames_read": 10,
+            "observations": [
+              {
+                "frame": 100,
+                "similarity": -0.00454371701925993,
+                "bbox": [
+                  958.1105346679688,
+                  204.6704864501953,
+                  1126.9183349609375,
+                  419.2611999511719
+                ]
+              },
+              {
+                "frame": 102,
+                "similarity": -0.011299550533294678,
+                "bbox": [
+                  959.6875,
+                  205.26951599121094,
+                  1134.9686279296875,
+                  422.7896423339844
+                ]
+              },
+              {
+                "frame": 105,
+                "similarity": -0.021028008311986923,
+                "bbox": [
+                  958.5795288085938,
+                  196.56130981445312,
+                  1123.22607421875,
+                  414.25634765625
+                ]
+              },
+              {
+                "frame": 108,
+                "similarity": -0.01254240795969963,
+                "bbox": [
+                  946.9453125,
+                  191.69944763183594,
+                  1114.0379638671875,
+                  403.31634521484375
+                ]
+              },
+              {
+                "frame": 110,
+                "similarity": -0.016185618937015533,
+                "bbox": [
+                  944.3436279296875,
+                  196.806396484375,
+                  1110.115966796875,
+                  408.0770263671875
+                ]
+              },
+              {
+                "frame": 113,
+                "similarity": -0.05461719632148743,
+                "bbox": [
+                  943.89111328125,
+                  196.58116149902344,
+                  1111.0220947265625,
+                  411.3290710449219
+                ]
+              },
+              {
+                "frame": 116,
+                "similarity": -0.03296162188053131,
+                "bbox": [
+                  950.6306762695312,
+                  196.9122772216797,
+                  1116.25,
+                  413.39276123046875
+                ]
+              },
+              {
+                "frame": 118,
+                "similarity": -0.00985688716173172,
+                "bbox": [
+                  955.1746826171875,
+                  188.43055725097656,
+                  1120.1282958984375,
+                  404.77435302734375
+                ]
+              },
+              {
+                "frame": 121,
+                "similarity": -0.01578088290989399,
+                "bbox": [
+                  953.5550537109375,
+                  183.98606872558594,
+                  1121.1707763671875,
+                  393.04833984375
+                ]
+              },
+              {
+                "frame": 123,
+                "similarity": -0.03497330844402313,
+                "bbox": [
+                  956.3089599609375,
+                  185.98049926757812,
+                  1121.7763671875,
+                  397.3268127441406
+                ]
+              }
+            ],
+            "note": "Face identity and visibility do not identify police or prove speech."
+          }
+        },
+        {
+          "source": "target_mouth_motion",
+          "target_score": 0.0,
+          "confidence": 0.0,
+          "details": {
+            "direct_identity_matches": 0,
+            "mouth_samples": 0,
+            "aperture_spread": 0.0,
+            "active_speaker_verified": false,
+            "note": "Weak landmark motion hint; no lipreading or audio-visual synchronization model."
+          }
+        },
+        {
+          "source": "semantic_context",
+          "target_score": 0.0,
+          "confidence": 0.0,
+          "details": {
+            "identity_mapping": null,
+            "note": "No role or phrase is assumed to identify the supplied target."
+          }
+        }
+      ],
+      "final_speaker": "Target_Speaker",
+      "final_confidence": 0.43337303212233363,
+      "reasons": [
+        "baseline=SPEAKER_00; mapping strength=1.000",
+        "local_voice: -0.058"
+      ]
+    },
+    {
+      "start": 5.945,
+      "end": 6.766,
+      "text": "Come over here and talk.",
+      "baseline": {
+        "raw_speaker_track": "SPEAKER_00",
+        "speaker": "Target_Speaker"
+      },
+      "words": [
+        {
+          "word": "Come",
+          "start": 5.945,
+          "end": 6.085,
+          "score": 0.321,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "over",
+          "start": 6.125,
+          "end": 6.265,
+          "score": 0.933,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "here",
+          "start": 6.305,
+          "end": 6.426,
+          "score": 0.83,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "and",
+          "start": 6.446,
+          "end": 6.506,
+          "score": 0.436,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "talk.",
+          "start": 6.526,
+          "end": 6.766,
+          "score": 0.558,
+          "speaker": "SPEAKER_00"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "local_voice",
+          "target_score": -0.9375333739175866,
+          "confidence": 0.6841666666666665,
+          "details": {
+            "similarity": -0.0007489845156669617,
+            "crop_start": 5.945,
+            "crop_end": 6.766,
+            "target_mean": 0.25681569303075474,
+            "competitor_mean": 0.07764442492690352,
+            "track_similarities": {
+              "SPEAKER_00": 0.2860014736652374,
+              "SPEAKER_01": 0.5669072866439819
+            },
+            "independent_profile_counts": {
+              "SPEAKER_00": 5,
+              "SPEAKER_01": 8
+            },
+            "best_track": "SPEAKER_01",
+            "track_margin": 0.2809058129787445
+          }
+        },
+        {
+          "source": "target_face_visible",
+          "target_score": 0,
+          "confidence": 0,
+          "details": {
+            "best_similarity": 0.6595435738563538,
+            "identity_anchor_similarity": 0.6595435738563538,
+            "target_visible_hint": true,
+            "tracked_target_frames": [
+              {
+                "frame": 128,
+                "identity_source": "reference_match",
+                "similarity": 0.6595435738563538
+              },
+              {
+                "frame": 131,
+                "identity_source": "reference_match",
+                "similarity": 0.6558400392532349
+              },
+              {
+                "frame": 133,
+                "identity_source": "reference_match",
+                "similarity": 0.6500905752182007
+              },
+              {
+                "frame": 136,
+                "identity_source": "reference_match",
+                "similarity": 0.6290638446807861
+              },
+              {
+                "frame": 139,
+                "identity_source": "reference_match",
+                "similarity": 0.5955219864845276
+              },
+              {
+                "frame": 141,
+                "identity_source": "reference_match",
+                "similarity": 0.6479782462120056
+              }
+            ],
+            "active_speaker_verified": false
+          }
+        },
+        {
+          "source": "visual_context",
+          "target_score": 0,
+          "confidence": 0,
+          "details": {
+            "frames_read": 11,
+            "observations": [
+              {
+                "frame": 115,
+                "similarity": -0.03700452297925949,
+                "bbox": [
+                  946.8124389648438,
+                  195.83575439453125,
+                  1113.0838623046875,
+                  416.3842468261719
+                ]
+              },
+              {
+                "frame": 118,
+                "similarity": -0.00985688716173172,
+                "bbox": [
+                  955.1746826171875,
+                  188.43055725097656,
+                  1120.1282958984375,
+                  404.77435302734375
+                ]
+              },
+              {
+                "frame": 120,
+                "similarity": -0.004301553592085838,
+                "bbox": [
+                  954.7637939453125,
+                  183.5513916015625,
+                  1122.086181640625,
+                  394.42510986328125
+                ]
+              },
+              {
+                "frame": 123,
+                "similarity": -0.03497330844402313,
+                "bbox": [
+                  956.3089599609375,
+                  185.98049926757812,
+                  1121.7763671875,
+                  397.3268127441406
+                ]
+              },
+              {
+                "frame": 125,
+                "similarity": -0.022345304489135742,
+                "bbox": [
+                  958.4132690429688,
+                  191.82215881347656,
+                  1124.03466796875,
+                  416.0712890625
+                ]
+              },
+              {
+                "frame": 128,
+                "similarity": 0.6595435738563538,
+                "bbox": [
+                  401.2084655761719,
+                  153.9144744873047,
+                  565.288818359375,
+                  351.8844909667969
+                ]
+              },
+              {
+                "frame": 131,
+                "similarity": 0.6558400392532349,
+                "bbox": [
+                  401.78887939453125,
+                  154.36148071289062,
+                  566.0720825195312,
+                  349.6182861328125
+                ]
+              },
+              {
+                "frame": 133,
+                "similarity": 0.6500905752182007,
+                "bbox": [
+                  401.70318603515625,
+                  156.7430877685547,
+                  569.6463012695312,
+                  362.75384521484375
+                ]
+              },
+              {
+                "frame": 136,
+                "similarity": 0.6290638446807861,
+                "bbox": [
+                  427.451416015625,
+                  172.3976593017578,
+                  574.973388671875,
+                  370.62664794921875
+                ]
+              },
+              {
+                "frame": 139,
+                "similarity": 0.5955219864845276,
+                "bbox": [
+                  436.0481872558594,
+                  173.57887268066406,
+                  588.3988037109375,
+                  374.7071228027344
+                ]
+              },
+              {
+                "frame": 139,
+                "similarity": 0.3381080627441406,
+                "bbox": [
+                  315.8807373046875,
+                  528.1298828125,
+                  421.38714599609375,
+                  673.9469604492188
+                ]
+              },
+              {
+                "frame": 141,
+                "similarity": 0.6479782462120056,
+                "bbox": [
+                  433.3569030761719,
+                  178.91737365722656,
+                  579.5369262695312,
+                  370.1115417480469
+                ]
+              },
+              {
+                "frame": 141,
+                "similarity": 0.3374776840209961,
+                "bbox": [
+                  317.3930358886719,
+                  530.8865966796875,
+                  425.16497802734375,
+                  672.6849975585938
+                ]
+              }
+            ],
+            "note": "Face identity and visibility do not identify police or prove speech."
+          }
+        },
+        {
+          "source": "target_mouth_motion",
+          "target_score": 1.0,
+          "confidence": 0.2,
+          "details": {
+            "direct_identity_matches": 6,
+            "mouth_samples": 6,
+            "aperture_spread": 0.18786661326885223,
+            "active_speaker_verified": false,
+            "note": "Weak landmark motion hint; no lipreading or audio-visual synchronization model."
+          }
+        },
+        {
+          "source": "semantic_context",
+          "target_score": 0.0,
+          "confidence": 0.0,
+          "details": {
+            "identity_mapping": null,
+            "note": "No role or phrase is assumed to identify the supplied target."
+          }
+        }
+      ],
+      "final_speaker": "SPEAKER_01",
+      "final_confidence": 0.6841666666666665,
+      "reasons": [
+        "baseline=SPEAKER_00; mapping strength=1.000",
+        "local_voice: -0.641",
+        "independent voice profile supports correction to SPEAKER_01"
+      ]
+    },
+    {
+      "start": 6.786,
+      "end": 7.827,
+      "text": "You are on private property.",
+      "baseline": {
+        "raw_speaker_track": "SPEAKER_00",
+        "speaker": "Target_Speaker"
+      },
+      "words": [
+        {
+          "word": "You",
+          "start": 6.786,
+          "end": 6.846,
+          "score": 0.985,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "are",
+          "start": 6.866,
+          "end": 6.946,
+          "score": 0.51,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "on",
+          "start": 6.966,
+          "end": 7.006,
+          "score": 0.028,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "private",
+          "start": 7.026,
+          "end": 7.407,
+          "score": 0.516,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "property.",
+          "start": 7.447,
+          "end": 7.827,
+          "score": 0.936,
+          "speaker": "SPEAKER_00"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "local_voice",
+          "target_score": -0.45111865336411267,
+          "confidence": 0.8675000000000004,
+          "details": {
+            "similarity": 0.08640255779027939,
+            "crop_start": 6.786,
+            "crop_end": 7.827,
+            "target_mean": 0.25681569303075474,
+            "competitor_mean": 0.07764442492690352,
+            "track_similarities": {
+              "SPEAKER_00": 0.22409190237522125,
+              "SPEAKER_01": 0.3638274669647217
+            },
+            "independent_profile_counts": {
+              "SPEAKER_00": 5,
+              "SPEAKER_01": 8
+            },
+            "best_track": "SPEAKER_01",
+            "track_margin": 0.13973556458950043
+          }
+        },
+        {
+          "source": "target_face_visible",
+          "target_score": 0,
+          "confidence": 0,
+          "details": {
+            "best_similarity": 0.711344301700592,
+            "identity_anchor_similarity": 0.711344301700592,
+            "target_visible_hint": true,
+            "tracked_target_frames": [
+              {
+                "frame": 146,
+                "identity_source": "reference_match",
+                "similarity": 0.6574802398681641
+              },
+              {
+                "frame": 149,
+                "identity_source": "reference_match",
+                "similarity": 0.711344301700592
+              },
+              {
+                "frame": 151,
+                "identity_source": "reference_match",
+                "similarity": 0.7109560966491699
+              },
+              {
+                "frame": 154,
+                "identity_source": "reference_match",
+                "similarity": 0.6782553195953369
+              },
+              {
+                "frame": 156,
+                "identity_source": "reference_match",
+                "similarity": 0.6414355039596558
+              },
+              {
+                "frame": 159,
+                "identity_source": "reference_match",
+                "similarity": 0.6444485187530518
+              },
+              {
+                "frame": 162,
+                "identity_source": "reference_match",
+                "similarity": 0.6633836030960083
+              },
+              {
+                "frame": 164,
+                "identity_source": "reference_match",
+                "similarity": 0.6278576850891113
+              }
+            ],
+            "active_speaker_verified": false
+          }
+        },
+        {
+          "source": "visual_context",
+          "target_score": 0,
+          "confidence": 0,
+          "details": {
+            "frames_read": 13,
+            "observations": [
+              {
+                "frame": 133,
+                "similarity": 0.6500905752182007,
+                "bbox": [
+                  401.70318603515625,
+                  156.7430877685547,
+                  569.6463012695312,
+                  362.75384521484375
+                ]
+              },
+              {
+                "frame": 135,
+                "similarity": 0.6107021570205688,
+                "bbox": [
+                  415.17041015625,
+                  162.46548461914062,
+                  579.6575317382812,
+                  370.625244140625
+                ]
+              },
+              {
+                "frame": 138,
+                "similarity": 0.5832599401473999,
+                "bbox": [
+                  435.06805419921875,
+                  174.79481506347656,
+                  584.0386962890625,
+                  361.758056640625
+                ]
+              },
+              {
+                "frame": 138,
+                "similarity": 0.33122777938842773,
+                "bbox": [
+                  310.4983215332031,
+                  526.563720703125,
+                  419.66693115234375,
+                  668.665771484375
+                ]
+              },
+              {
+                "frame": 141,
+                "similarity": 0.6479782462120056,
+                "bbox": [
+                  433.3569030761719,
+                  178.91737365722656,
+                  579.5369262695312,
+                  370.1115417480469
+                ]
+              },
+              {
+                "frame": 141,
+                "similarity": 0.3374776840209961,
+                "bbox": [
+                  317.3930358886719,
+                  530.8865966796875,
+                  425.16497802734375,
+                  672.6849975585938
+                ]
+              },
+              {
+                "frame": 143,
+                "similarity": 0.6133511662483215,
+                "bbox": [
+                  426.8887023925781,
+                  169.55116271972656,
+                  583.8292846679688,
+                  360.513916015625
+                ]
+              },
+              {
+                "frame": 143,
+                "similarity": 0.3765796422958374,
+                "bbox": [
+                  318.5806579589844,
+                  530.5136108398438,
+                  422.6449890136719,
+                  669.6239013671875
+                ]
+              },
+              {
+                "frame": 146,
+                "similarity": 0.6574802398681641,
+                "bbox": [
+                  402.370361328125,
+                  126.05999755859375,
+                  572.5949096679688,
+                  325.2003479003906
+                ]
+              },
+              {
+                "frame": 146,
+                "similarity": 0.3999704122543335,
+                "bbox": [
+                  313.0179138183594,
+                  509.2984619140625,
+                  425.04144287109375,
+                  659.8528442382812
+                ]
+              },
+              {
+                "frame": 149,
+                "similarity": 0.711344301700592,
+                "bbox": [
+                  373.4826965332031,
+                  89.98430633544922,
+                  546.2921752929688,
+                  291.3454284667969
+                ]
+              },
+              {
+                "frame": 149,
+                "similarity": 0.36980465054512024,
+                "bbox": [
+                  289.710205078125,
+                  494.12786865234375,
+                  398.74639892578125,
+                  636.8017578125
+                ]
+              },
+              {
+                "frame": 151,
+                "similarity": 0.7109560966491699,
+                "bbox": [
+                  369.5246887207031,
+                  77.8716049194336,
+                  543.4534912109375,
+                  275.899658203125
+                ]
+              },
+              {
+                "frame": 151,
+                "similarity": 0.3832973837852478,
+                "bbox": [
+                  285.5855712890625,
+                  493.7958984375,
+                  393.09466552734375,
+                  632.8566284179688
+                ]
+              },
+              {
+                "frame": 154,
+                "similarity": 0.6782553195953369,
+                "bbox": [
+                  382.3980407714844,
+                  85.26224517822266,
+                  557.6966552734375,
+                  291.5702819824219
+                ]
+              },
+              {
+                "frame": 154,
+                "similarity": 0.3598679006099701,
+                "bbox": [
+                  294.5992431640625,
+                  513.0866088867188,
+                  401.5087585449219,
+                  653.4755859375
+                ]
+              },
+              {
+                "frame": 156,
+                "similarity": 0.6414355039596558,
+                "bbox": [
+                  387.4118957519531,
+                  104.62931060791016,
+                  565.3477172851562,
+                  316.0052795410156
+                ]
+              },
+              {
+                "frame": 156,
+                "similarity": 0.3651576638221741,
+                "bbox": [
+                  308.5775146484375,
+                  520.2120971679688,
+                  417.6507873535156,
+                  665.5191040039062
+                ]
+              },
+              {
+                "frame": 159,
+                "similarity": 0.6444485187530518,
+                "bbox": [
+                  382.6197509765625,
+                  60.891151428222656,
+                  550.4578857421875,
+                  264.3714599609375
+                ]
+              },
+              {
+                "frame": 159,
+                "similarity": 0.35627973079681396,
+                "bbox": [
+                  298.6050109863281,
+                  503.86376953125,
+                  399.9249572753906,
+                  638.5079956054688
+                ]
+              },
+              {
+                "frame": 162,
+                "similarity": 0.6633836030960083,
+                "bbox": [
+                  370.37200927734375,
+                  42.374839782714844,
+                  547.0108642578125,
+                  272.5492248535156
+                ]
+              },
+              {
+                "frame": 164,
+                "similarity": 0.6278576850891113,
+                "bbox": [
+                  349.9569396972656,
+                  47.02960968017578,
+                  524.3908081054688,
+                  279.9112243652344
+                ]
+              }
+            ],
+            "note": "Face identity and visibility do not identify police or prove speech."
+          }
+        },
+        {
+          "source": "target_mouth_motion",
+          "target_score": 1.0,
+          "confidence": 0.2,
+          "details": {
+            "direct_identity_matches": 13,
+            "mouth_samples": 8,
+            "aperture_spread": 0.19671086631715295,
+            "active_speaker_verified": false,
+            "note": "Weak landmark motion hint; no lipreading or audio-visual synchronization model."
+          }
+        },
+        {
+          "source": "semantic_context",
+          "target_score": 0.0,
+          "confidence": 0.0,
+          "details": {
+            "identity_mapping": null,
+            "note": "No role or phrase is assumed to identify the supplied target."
+          }
+        }
+      ],
+      "final_speaker": "SPEAKER_01",
+      "final_confidence": 0.45111865336411267,
+      "reasons": [
+        "baseline=SPEAKER_00; mapping strength=1.000",
+        "local_voice: -0.391",
+        "independent voice profile supports correction to SPEAKER_01"
+      ]
+    },
+    {
+      "start": 7.868,
+      "end": 8.528,
+      "text": "I'm not going to go in there.",
+      "baseline": {
+        "raw_speaker_track": "SPEAKER_00",
+        "speaker": "Target_Speaker"
+      },
+      "words": [
+        {
+          "word": "I'm",
+          "start": 7.868,
+          "end": 7.968,
+          "score": 0.843,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "not",
+          "start": 8.008,
+          "end": 8.068,
+          "score": 0.812,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "going",
+          "start": 8.088,
+          "end": 8.188,
+          "score": 0.194,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "to",
+          "start": 8.208,
+          "end": 8.248,
+          "score": 0.677,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "go",
+          "start": 8.288,
+          "end": 8.328,
+          "score": 0.716,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "in",
+          "start": 8.348,
+          "end": 8.388,
+          "score": 0.002,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "there.",
+          "start": 8.408,
+          "end": 8.528,
+          "score": 0.109,
+          "speaker": "SPEAKER_00"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "local_voice",
+          "target_score": 0.7450851148004315,
+          "confidence": 0.5500000000000002,
+          "details": {
+            "similarity": 0.300727903842926,
+            "crop_start": 7.868,
+            "crop_end": 8.528,
+            "target_mean": 0.25681569303075474,
+            "competitor_mean": 0.07764442492690352,
+            "track_similarities": {
+              "SPEAKER_00": 0.28563567996025085,
+              "SPEAKER_01": 0.19680362939834595
+            },
+            "independent_profile_counts": {
+              "SPEAKER_00": 5,
+              "SPEAKER_01": 8
+            },
+            "best_track": "SPEAKER_00",
+            "track_margin": 0.08883205056190491
+          }
+        },
+        {
+          "source": "target_face_visible",
+          "target_score": 0,
+          "confidence": 0,
+          "details": {
+            "best_similarity": 0.6612235307693481,
+            "identity_anchor_similarity": 0.6668603420257568,
+            "target_visible_hint": true,
+            "tracked_target_frames": [
+              {
+                "frame": 169,
+                "identity_source": "reference_match",
+                "similarity": 0.6612235307693481
+              },
+              {
+                "frame": 171,
+                "identity_source": "reference_match",
+                "similarity": 0.6367552876472473
+              },
+              {
+                "frame": 174,
+                "identity_source": "reference_match",
+                "similarity": 0.5935096740722656
+              },
+              {
+                "frame": 177,
+                "identity_source": "reference_match",
+                "similarity": 0.629520833492279
+              },
+              {
+                "frame": 179,
+                "identity_source": "reference_match",
+                "similarity": 0.6099516153335571
+              }
+            ],
+            "active_speaker_verified": false
+          }
+        },
+        {
+          "source": "visual_context",
+          "target_score": 0,
+          "confidence": 0,
+          "details": {
+            "frames_read": 10,
+            "observations": [
+              {
+                "frame": 156,
+                "similarity": 0.6414355039596558,
+                "bbox": [
+                  387.4118957519531,
+                  104.62931060791016,
+                  565.3477172851562,
+                  316.0052795410156
+                ]
+              },
+              {
+                "frame": 156,
+                "similarity": 0.3651576638221741,
+                "bbox": [
+                  308.5775146484375,
+                  520.2120971679688,
+                  417.6507873535156,
+                  665.5191040039062
+                ]
+              },
+              {
+                "frame": 158,
+                "similarity": 0.6394670009613037,
+                "bbox": [
+                  382.33209228515625,
+                  73.31319427490234,
+                  552.1114501953125,
+                  271.8929443359375
+                ]
+              },
+              {
+                "frame": 158,
+                "similarity": 0.37372225522994995,
+                "bbox": [
+                  298.26800537109375,
+                  502.8150634765625,
+                  407.43255615234375,
+                  650.2072143554688
+                ]
+              },
+              {
+                "frame": 161,
+                "similarity": 0.6668603420257568,
+                "bbox": [
+                  379.8004150390625,
+                  41.328495025634766,
+                  549.6814575195312,
+                  263.0433044433594
+                ]
+              },
+              {
+                "frame": 163,
+                "similarity": 0.6385993957519531,
+                "bbox": [
+                  362.4425354003906,
+                  42.72453689575195,
+                  534.6580200195312,
+                  278.0863952636719
+                ]
+              },
+              {
+                "frame": 166,
+                "similarity": 0.6104885339736938,
+                "bbox": [
+                  322.1977233886719,
+                  36.92384719848633,
+                  498.96478271484375,
+                  280.0414123535156
+                ]
+              },
+              {
+                "frame": 166,
+                "similarity": 0.3877168297767639,
+                "bbox": [
+                  237.54547119140625,
+                  477.9117126464844,
+                  344.06158447265625,
+                  632.86083984375
+                ]
+              },
+              {
+                "frame": 169,
+                "similarity": 0.6612235307693481,
+                "bbox": [
+                  382.7073669433594,
+                  0.7341156005859375,
+                  572.5146484375,
+                  271.97491455078125
+                ]
+              },
+              {
+                "frame": 171,
+                "similarity": 0.6367552876472473,
+                "bbox": [
+                  379.7980041503906,
+                  -17.410343170166016,
+                  578.378173828125,
+                  245.92359924316406
+                ]
+              },
+              {
+                "frame": 174,
+                "similarity": 0.5935096740722656,
+                "bbox": [
+                  312.5127868652344,
+                  -92.70085906982422,
+                  503.5061950683594,
+                  184.67906188964844
+                ]
+              },
+              {
+                "frame": 177,
+                "similarity": 0.629520833492279,
+                "bbox": [
+                  302.4591369628906,
+                  -104.08617401123047,
+                  503.0252380371094,
+                  163.25559997558594
+                ]
+              },
+              {
+                "frame": 177,
+                "similarity": 0.34893423318862915,
+                "bbox": [
+                  167.43411254882812,
+                  416.77838134765625,
+                  279.9930114746094,
+                  578.5037841796875
+                ]
+              },
+              {
+                "frame": 179,
+                "similarity": 0.6099516153335571,
+                "bbox": [
+                  292.53753662109375,
+                  -113.8000717163086,
+                  491.25274658203125,
+                  149.4044647216797
+                ]
+              },
+              {
+                "frame": 179,
+                "similarity": 0.37620553374290466,
+                "bbox": [
+                  152.9894256591797,
+                  399.1061096191406,
+                  268.1919860839844,
+                  564.200439453125
+                ]
+              }
+            ],
+            "note": "Face identity and visibility do not identify police or prove speech."
+          }
+        },
+        {
+          "source": "target_mouth_motion",
+          "target_score": 1.0,
+          "confidence": 0.2,
+          "details": {
+            "direct_identity_matches": 10,
+            "mouth_samples": 5,
+            "aperture_spread": 0.08494452834129332,
+            "active_speaker_verified": false,
+            "note": "Weak landmark motion hint; no lipreading or audio-visual synchronization model."
+          }
+        },
+        {
+          "source": "semantic_context",
+          "target_score": 0.0,
+          "confidence": 0.0,
+          "details": {
+            "identity_mapping": null,
+            "note": "No role or phrase is assumed to identify the supplied target."
+          }
+        }
+      ],
+      "final_speaker": "Target_Speaker",
+      "final_confidence": 0.7096774193548387,
+      "reasons": [
+        "baseline=SPEAKER_00; mapping strength=1.000",
+        "local_voice: +0.410"
+      ]
+    },
+    {
+      "start": 8.548,
+      "end": 9.43,
+      "text": "You are on private property.",
+      "baseline": {
+        "raw_speaker_track": "SPEAKER_01",
+        "speaker": "SPEAKER_01"
+      },
+      "words": [
+        {
+          "word": "You",
+          "start": 8.548,
+          "end": 8.609,
+          "score": 0.32,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "are",
+          "start": 8.629,
+          "end": 8.689,
+          "score": 0.006,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "on",
+          "start": 8.709,
+          "end": 8.749,
+          "score": 0.0,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "private",
+          "start": 8.769,
+          "end": 9.049,
+          "score": 0.779,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "property.",
+          "start": 9.089,
+          "end": 9.43,
+          "score": 0.994,
+          "speaker": "SPEAKER_01"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "local_voice",
+          "target_score": -0.625754169550569,
+          "confidence": 0.7349999999999998,
+          "details": {
+            "similarity": 0.055112890899181366,
+            "crop_start": 8.548,
+            "crop_end": 9.43,
+            "target_mean": 0.25681569303075474,
+            "competitor_mean": 0.07764442492690352,
+            "track_similarities": {
+              "SPEAKER_00": 0.18466758728027344,
+              "SPEAKER_01": 0.35672199726104736
+            },
+            "independent_profile_counts": {
+              "SPEAKER_00": 5,
+              "SPEAKER_01": 8
+            },
+            "best_track": "SPEAKER_01",
+            "track_margin": 0.17205440998077393
+          }
+        },
+        {
+          "source": "target_face_visible",
+          "target_score": 0,
+          "confidence": 0,
+          "details": {
+            "best_similarity": 0.6657328605651855,
+            "identity_anchor_similarity": 0.6657328605651855,
+            "target_visible_hint": true,
+            "tracked_target_frames": [
+              {
+                "frame": 183,
+                "identity_source": "reference_match",
+                "similarity": 0.4058857560157776
+              },
+              {
+                "frame": 186,
+                "identity_source": "reference_match",
+                "similarity": 0.5078272819519043
+              },
+              {
+                "frame": 188,
+                "identity_source": "reference_match",
+                "similarity": 0.6186426281929016
+              },
+              {
+                "frame": 191,
+                "identity_source": "reference_match",
+                "similarity": 0.6608881950378418
+              },
+              {
+                "frame": 194,
+                "identity_source": "reference_match",
+                "similarity": 0.6212379336357117
+              },
+              {
+                "frame": 196,
+                "identity_source": "reference_match",
+                "similarity": 0.6300035715103149
+              },
+              {
+                "frame": 199,
+                "identity_source": "reference_match",
+                "similarity": 0.6657328605651855
+              }
+            ],
+            "active_speaker_verified": false
+          }
+        },
+        {
+          "source": "visual_context",
+          "target_score": 0,
+          "confidence": 0,
+          "details": {
+            "frames_read": 12,
+            "observations": [
+              {
+                "frame": 170,
+                "similarity": 0.6361136436462402,
+                "bbox": [
+                  385.44891357421875,
+                  -1.3361778259277344,
+                  581.1282348632812,
+                  258.2732849121094
+                ]
+              },
+              {
+                "frame": 173,
+                "similarity": 0.6057323217391968,
+                "bbox": [
+                  336.77728271484375,
+                  -81.02471923828125,
+                  528.6844482421875,
+                  204.84619140625
+                ]
+              },
+              {
+                "frame": 175,
+                "similarity": 0.6078546643257141,
+                "bbox": [
+                  292.3061218261719,
+                  -110.79572296142578,
+                  491.6889953613281,
+                  179.31137084960938
+                ]
+              },
+              {
+                "frame": 178,
+                "similarity": 0.6255775690078735,
+                "bbox": [
+                  296.8747863769531,
+                  -120.34069061279297,
+                  499.0180969238281,
+                  160.57421875
+                ]
+              },
+              {
+                "frame": 178,
+                "similarity": 0.3419701159000397,
+                "bbox": [
+                  163.6357421875,
+                  411.9551696777344,
+                  270.4587097167969,
+                  573.5286865234375
+                ]
+              },
+              {
+                "frame": 180,
+                "similarity": 0.4020620286464691,
+                "bbox": [
+                  148.38140869140625,
+                  396.0978088378906,
+                  267.02783203125,
+                  559.650146484375
+                ]
+              },
+              {
+                "frame": 180,
+                "similarity": 0.47469159960746765,
+                "bbox": [
+                  291.7124328613281,
+                  -106.36344909667969,
+                  489.9063720703125,
+                  142.14793395996094
+                ]
+              },
+              {
+                "frame": 183,
+                "similarity": 0.4058857560157776,
+                "bbox": [
+                  135.90414428710938,
+                  364.09527587890625,
+                  260.33404541015625,
+                  549.3065795898438
+                ]
+              },
+              {
+                "frame": 183,
+                "similarity": 0.30853191018104553,
+                "bbox": [
+                  277.7710266113281,
+                  -124.49616241455078,
+                  480.96514892578125,
+                  158.9494171142578
+                ]
+              },
+              {
+                "frame": 186,
+                "similarity": 0.5078272819519043,
+                "bbox": [
+                  305.1439208984375,
+                  -102.94082641601562,
+                  506.6635437011719,
+                  139.3620147705078
+                ]
+              },
+              {
+                "frame": 186,
+                "similarity": 0.3716922700405121,
+                "bbox": [
+                  170.2884521484375,
+                  383.2110290527344,
+                  283.5138854980469,
+                  546.9564208984375
+                ]
+              },
+              {
+                "frame": 188,
+                "similarity": 0.6186426281929016,
+                "bbox": [
+                  344.88934326171875,
+                  -103.02972412109375,
+                  549.876220703125,
+                  155.2716827392578
+                ]
+              },
+              {
+                "frame": 188,
+                "similarity": 0.37144023180007935,
+                "bbox": [
+                  212.0306854248047,
+                  401.51763916015625,
+                  323.77142333984375,
+                  564.5971069335938
+                ]
+              },
+              {
+                "frame": 191,
+                "similarity": 0.6608881950378418,
+                "bbox": [
+                  485.7398986816406,
+                  -69.14078521728516,
+                  681.1503295898438,
+                  177.58709716796875
+                ]
+              },
+              {
+                "frame": 191,
+                "similarity": 0.36477386951446533,
+                "bbox": [
+                  366.7938537597656,
+                  414.5911865234375,
+                  476.4084777832031,
+                  576.1688842773438
+                ]
+              },
+              {
+                "frame": 194,
+                "similarity": 0.6212379336357117,
+                "bbox": [
+                  654.45263671875,
+                  -98.35039520263672,
+                  848.7969970703125,
+                  156.5313262939453
+                ]
+              },
+              {
+                "frame": 196,
+                "similarity": 0.6300035715103149,
+                "bbox": [
+                  826.1204223632812,
+                  -73.4780044555664,
+                  1033.37548828125,
+                  181.21142578125
+                ]
+              },
+              {
+                "frame": 199,
+                "similarity": 0.6657328605651855,
+                "bbox": [
+                  1004.8548583984375,
+                  54.983036041259766,
+                  1208.3175048828125,
+                  305.769775390625
+                ]
+              }
+            ],
+            "note": "Face identity and visibility do not identify police or prove speech."
+          }
+        },
+        {
+          "source": "target_mouth_motion",
+          "target_score": 1.0,
+          "confidence": 0.2,
+          "details": {
+            "direct_identity_matches": 12,
+            "mouth_samples": 7,
+            "aperture_spread": 0.08230080455541612,
+            "active_speaker_verified": false,
+            "note": "Weak landmark motion hint; no lipreading or audio-visual synchronization model."
+          }
+        },
+        {
+          "source": "semantic_context",
+          "target_score": 0.0,
+          "confidence": 0.0,
+          "details": {
+            "identity_mapping": null,
+            "note": "No role or phrase is assumed to identify the supplied target."
+          }
+        }
+      ],
+      "final_speaker": "SPEAKER_01",
+      "final_confidence": 0.7859372098207537,
+      "reasons": [
+        "baseline=SPEAKER_01; mapping strength=1.000",
+        "local_voice: -0.460"
+      ]
+    },
+    {
+      "start": 9.57,
+      "end": 11.052,
+      "text": "OK. Do not tell me what you're not going to do.",
+      "baseline": {
+        "raw_speaker_track": "SPEAKER_01",
+        "speaker": "SPEAKER_01"
+      },
+      "words": [
+        {
+          "word": "OK.",
+          "start": 9.57,
+          "end": 9.77,
+          "score": 0.547,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Do",
+          "start": 9.81,
+          "end": 9.91,
+          "score": 0.946,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "not",
+          "start": 9.95,
+          "end": 10.071,
+          "score": 0.888,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "tell",
+          "start": 10.111,
+          "end": 10.231,
+          "score": 0.879,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "me",
+          "start": 10.271,
+          "end": 10.331,
+          "score": 0.944,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "what",
+          "start": 10.371,
+          "end": 10.471,
+          "score": 0.997,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "you're",
+          "start": 10.491,
+          "end": 10.631,
+          "score": 0.952,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "not",
+          "start": 10.671,
+          "end": 10.751,
+          "score": 0.705,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "going",
+          "start": 10.772,
+          "end": 10.872,
+          "score": 0.533,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "to",
+          "start": 10.892,
+          "end": 10.952,
+          "score": 0.608,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "do.",
+          "start": 10.972,
+          "end": 11.052,
+          "score": 0.274,
+          "speaker": "SPEAKER_01"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "local_voice",
+          "target_score": -0.4185927350395004,
+          "confidence": 1.0,
+          "details": {
+            "similarity": 0.09223026782274246,
+            "crop_start": 9.57,
+            "crop_end": 11.052,
+            "target_mean": 0.25681569303075474,
+            "competitor_mean": 0.07764442492690352,
+            "track_similarities": {
+              "SPEAKER_00": 0.32206305861473083,
+              "SPEAKER_01": 0.5338362455368042
+            },
+            "independent_profile_counts": {
+              "SPEAKER_00": 6,
+              "SPEAKER_01": 8
+            },
+            "best_track": "SPEAKER_01",
+            "track_margin": 0.21177318692207336
+          }
+        },
+        {
+          "source": "target_face_visible",
+          "target_score": 0,
+          "confidence": 0,
+          "details": {
+            "best_similarity": 0.6933557987213135,
+            "identity_anchor_similarity": 0.6967258453369141,
+            "target_visible_hint": true,
+            "tracked_target_frames": [
+              {
+                "frame": 205,
+                "identity_source": "reference_match",
+                "similarity": 0.6624605655670166
+              },
+              {
+                "frame": 207,
+                "identity_source": "reference_match",
+                "similarity": 0.6771538853645325
+              },
+              {
+                "frame": 210,
+                "identity_source": "reference_match",
+                "similarity": 0.6933557987213135
+              },
+              {
+                "frame": 213,
+                "identity_source": "reference_match",
+                "similarity": 0.6406495571136475
+              },
+              {
+                "frame": 215,
+                "identity_source": "reference_match",
+                "similarity": 0.61996990442276
+              },
+              {
+                "frame": 218,
+                "identity_source": "reference_match",
+                "similarity": 0.5349218845367432
+              },
+              {
+                "frame": 220,
+                "identity_source": "reference_match",
+                "similarity": 0.5586836338043213
+              },
+              {
+                "frame": 223,
+                "identity_source": "reference_match",
+                "similarity": 0.5054023265838623
+              },
+              {
+                "frame": 231,
+                "identity_source": "reference_match",
+                "similarity": 0.4645920395851135
+              }
+            ],
+            "active_speaker_verified": false
+          }
+        },
+        {
+          "source": "visual_context",
+          "target_score": 0,
+          "confidence": 0,
+          "details": {
+            "frames_read": 16,
+            "observations": [
+              {
+                "frame": 191,
+                "similarity": 0.6608881950378418,
+                "bbox": [
+                  485.7398986816406,
+                  -69.14078521728516,
+                  681.1503295898438,
+                  177.58709716796875
+                ]
+              },
+              {
+                "frame": 191,
+                "similarity": 0.36477386951446533,
+                "bbox": [
+                  366.7938537597656,
+                  414.5911865234375,
+                  476.4084777832031,
+                  576.1688842773438
+                ]
+              },
+              {
+                "frame": 194,
+                "similarity": 0.6212379336357117,
+                "bbox": [
+                  654.45263671875,
+                  -98.35039520263672,
+                  848.7969970703125,
+                  156.5313262939453
+                ]
+              },
+              {
+                "frame": 197,
+                "similarity": 0.6441146731376648,
+                "bbox": [
+                  889.3372192382812,
+                  -38.84627151489258,
+                  1093.6539306640625,
+                  204.04568481445312
+                ]
+              },
+              {
+                "frame": 199,
+                "similarity": 0.6657328605651855,
+                "bbox": [
+                  1004.8548583984375,
+                  54.983036041259766,
+                  1208.3175048828125,
+                  305.769775390625
+                ]
+              },
+              {
+                "frame": 202,
+                "similarity": 0.6967258453369141,
+                "bbox": [
+                  1025.2630615234375,
+                  109.606201171875,
+                  1223.588134765625,
+                  352.84442138671875
+                ]
+              },
+              {
+                "frame": 205,
+                "similarity": 0.6624605655670166,
+                "bbox": [
+                  967.8270263671875,
+                  90.6840591430664,
+                  1160.6080322265625,
+                  320.5622863769531
+                ]
+              },
+              {
+                "frame": 207,
+                "similarity": 0.6771538853645325,
+                "bbox": [
+                  943.777099609375,
+                  65.63076782226562,
+                  1137.9476318359375,
+                  298.55438232421875
+                ]
+              },
+              {
+                "frame": 210,
+                "similarity": 0.6933557987213135,
+                "bbox": [
+                  884.010498046875,
+                  90.87039947509766,
+                  1070.65283203125,
+                  312.3233642578125
+                ]
+              },
+              {
+                "frame": 213,
+                "similarity": 0.6406495571136475,
+                "bbox": [
+                  875.21044921875,
+                  94.84598541259766,
+                  1067.1397705078125,
+                  301.6297912597656
+                ]
+              },
+              {
+                "frame": 215,
+                "similarity": 0.61996990442276,
+                "bbox": [
+                  936.3397216796875,
+                  56.96710968017578,
+                  1126.111083984375,
+                  269.94696044921875
+                ]
+              },
+              {
+                "frame": 218,
+                "similarity": 0.5349218845367432,
+                "bbox": [
+                  974.275634765625,
+                  -86.60071563720703,
+                  1184.4215087890625,
+                  179.85003662109375
+                ]
+              },
+              {
+                "frame": 220,
+                "similarity": 0.5586836338043213,
+                "bbox": [
+                  1043.462646484375,
+                  -28.33545684814453,
+                  1263.40283203125,
+                  239.92800903320312
+                ]
+              },
+              {
+                "frame": 223,
+                "similarity": 0.5054023265838623,
+                "bbox": [
+                  1104.6610107421875,
+                  -40.36944580078125,
+                  1327.8717041015625,
+                  246.18003845214844
+                ]
+              },
+              {
+                "frame": 228,
+                "similarity": 0.0624009370803833,
+                "bbox": [
+                  1362.21337890625,
+                  -33.40803909301758,
+                  1523.4593505859375,
+                  210.0307159423828
+                ]
+              },
+              {
+                "frame": 231,
+                "similarity": 0.4645920395851135,
+                "bbox": [
+                  1485.5479736328125,
+                  29.318344116210938,
+                  1702.953857421875,
+                  327.2300109863281
+                ]
+              }
+            ],
+            "note": "Face identity and visibility do not identify police or prove speech."
+          }
+        },
+        {
+          "source": "target_mouth_motion",
+          "target_score": 1.0,
+          "confidence": 0.2,
+          "details": {
+            "direct_identity_matches": 14,
+            "mouth_samples": 9,
+            "aperture_spread": 0.07875098362565042,
+            "active_speaker_verified": false,
+            "note": "Weak landmark motion hint; no lipreading or audio-visual synchronization model."
+          }
+        },
+        {
+          "source": "semantic_context",
+          "target_score": 0.0,
+          "confidence": 0.0,
+          "details": {
+            "identity_mapping": null,
+            "note": "No role or phrase is assumed to identify the supplied target."
+          }
+        }
+      ],
+      "final_speaker": "SPEAKER_01",
+      "final_confidence": 0.6248985387351615,
+      "reasons": [
+        "baseline=SPEAKER_01; mapping strength=1.000",
+        "local_voice: -0.419"
+      ]
+    },
+    {
+      "start": 11.072,
+      "end": 11.272,
+      "text": "All right.",
+      "baseline": {
+        "raw_speaker_track": "SPEAKER_01",
+        "speaker": "SPEAKER_01"
+      },
+      "words": [
+        {
+          "word": "All",
+          "start": 11.072,
+          "end": 11.132,
+          "score": 0.001,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "right.",
+          "start": 11.152,
+          "end": 11.272,
+          "score": 0.193,
+          "speaker": "SPEAKER_01"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "local_voice",
+          "target_score": 0.0,
+          "confidence": 0.0,
+          "details": {
+            "similarity": null,
+            "crop_start": 11.052,
+            "crop_end": 11.292,
+            "target_mean": 0.25681569303075474,
+            "competitor_mean": 0.07764442492690352,
+            "track_similarities": {},
+            "independent_profile_counts": {},
+            "best_track": null,
+            "track_margin": 0.0
+          }
+        },
+        {
+          "source": "target_face_visible",
+          "target_score": 0,
+          "confidence": 0,
+          "details": {
+            "best_similarity": 0.515713095664978,
+            "identity_anchor_similarity": 0.515713095664978,
+            "target_visible_hint": true,
+            "tracked_target_frames": [
+              {
+                "frame": 234,
+                "identity_source": "reference_match",
+                "similarity": 0.515713095664978
+              },
+              {
+                "frame": 236,
+                "identity_source": "reference_match",
+                "similarity": 0.4380977153778076
+              }
+            ],
+            "active_speaker_verified": false
+          }
+        },
+        {
+          "source": "visual_context",
+          "target_score": 0,
+          "confidence": 0,
+          "details": {
+            "frames_read": 6,
+            "observations": [
+              {
+                "frame": 223,
+                "similarity": 0.5054023265838623,
+                "bbox": [
+                  1104.6610107421875,
+                  -40.36944580078125,
+                  1327.8717041015625,
+                  246.18003845214844
+                ]
+              },
+              {
+                "frame": 228,
+                "similarity": 0.0624009370803833,
+                "bbox": [
+                  1362.21337890625,
+                  -33.40803909301758,
+                  1523.4593505859375,
+                  210.0307159423828
+                ]
+              },
+              {
+                "frame": 231,
+                "similarity": 0.4645920395851135,
+                "bbox": [
+                  1485.5479736328125,
+                  29.318344116210938,
+                  1702.953857421875,
+                  327.2300109863281
+                ]
+              },
+              {
+                "frame": 234,
+                "similarity": 0.515713095664978,
+                "bbox": [
+                  1506.5263671875,
+                  39.84316635131836,
+                  1727.4757080078125,
+                  340.9772644042969
+                ]
+              },
+              {
+                "frame": 236,
+                "similarity": 0.4380977153778076,
+                "bbox": [
+                  1540.259765625,
+                  27.84857940673828,
+                  1749.8148193359375,
+                  276.5450744628906
+                ]
+              }
+            ],
+            "note": "Face identity and visibility do not identify police or prove speech."
+          }
+        },
+        {
+          "source": "target_mouth_motion",
+          "target_score": 0.0,
+          "confidence": 0.0,
+          "details": {
+            "direct_identity_matches": 4,
+            "mouth_samples": 2,
+            "aperture_spread": 0.0,
+            "active_speaker_verified": false,
+            "note": "Weak landmark motion hint; no lipreading or audio-visual synchronization model."
+          }
+        },
+        {
+          "source": "semantic_context",
+          "target_score": 0.0,
+          "confidence": 0.0,
+          "details": {
+            "identity_mapping": null,
+            "note": "No role or phrase is assumed to identify the supplied target."
+          }
+        }
+      ],
+      "final_speaker": "Uncertain",
+      "final_confidence": 0.0,
+      "reasons": [
+        "baseline=SPEAKER_01; mapping strength=1.000",
+        "weak, balanced, or conflicting acoustic evidence",
+        "short utterance has no usable local voice evidence"
+      ]
+    },
+    {
+      "start": 11.292,
+      "end": 12.854,
+      "text": "Do you have any weapons on you?",
+      "baseline": {
+        "raw_speaker_track": "SPEAKER_01",
+        "speaker": "SPEAKER_01"
+      },
+      "words": [
+        {
+          "word": "Do",
+          "start": 11.292,
+          "end": 11.933,
+          "score": 0.815,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "you",
+          "start": 11.953,
+          "end": 12.053,
+          "score": 0.851,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "have",
+          "start": 12.073,
+          "end": 12.173,
+          "score": 0.862,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "any",
+          "start": 12.193,
+          "end": 12.294,
+          "score": 0.942,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "weapons",
+          "start": 12.334,
+          "end": 12.574,
+          "score": 0.902,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "on",
+          "start": 12.634,
+          "end": 12.694,
+          "score": 0.95,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "you?",
+          "start": 12.734,
+          "end": 12.854,
+          "score": 0.336,
+          "speaker": "SPEAKER_01"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "local_voice",
+          "target_score": -1.0,
+          "confidence": 1.0,
+          "details": {
+            "similarity": -0.09595048427581787,
+            "crop_start": 11.292,
+            "crop_end": 12.854,
+            "target_mean": 0.25681569303075474,
+            "competitor_mean": 0.07764442492690352,
+            "track_similarities": {
+              "SPEAKER_00": 0.2497175633907318,
+              "SPEAKER_01": 0.44482147693634033
+            },
+            "independent_profile_counts": {
+              "SPEAKER_00": 6,
+              "SPEAKER_01": 7
+            },
+            "best_track": "SPEAKER_01",
+            "track_margin": 0.19510391354560852
+          }
+        },
+        {
+          "source": "target_face_visible",
+          "target_score": 0,
+          "confidence": 0,
+          "details": {
+            "best_similarity": null,
+            "identity_anchor_similarity": 0.5496357083320618,
+            "target_visible_hint": false,
+            "tracked_target_frames": [],
+            "active_speaker_verified": false
+          }
+        },
+        {
+          "source": "visual_context",
+          "target_score": 0,
+          "confidence": 0,
+          "details": {
+            "frames_read": 17,
+            "observations": [
+              {
+                "frame": 228,
+                "similarity": 0.0624009370803833,
+                "bbox": [
+                  1362.21337890625,
+                  -33.40803909301758,
+                  1523.4593505859375,
+                  210.0307159423828
+                ]
+              },
+              {
+                "frame": 230,
+                "similarity": 0.40292227268218994,
+                "bbox": [
+                  1451.3194580078125,
+                  -8.744384765625,
+                  1652.3272705078125,
+                  278.7126159667969
+                ]
+              },
+              {
+                "frame": 233,
+                "similarity": 0.5496357083320618,
+                "bbox": [
+                  1500.923095703125,
+                  61.92733383178711,
+                  1723.835205078125,
+                  358.49029541015625
+                ]
+              },
+              {
+                "frame": 236,
+                "similarity": 0.4380977153778076,
+                "bbox": [
+                  1540.259765625,
+                  27.84857940673828,
+                  1749.8148193359375,
+                  276.5450744628906
+                ]
+              }
+            ],
+            "note": "Face identity and visibility do not identify police or prove speech."
+          }
+        },
+        {
+          "source": "target_mouth_motion",
+          "target_score": 0.0,
+          "confidence": 0.0,
+          "details": {
+            "direct_identity_matches": 3,
+            "mouth_samples": 0,
+            "aperture_spread": 0.0,
+            "active_speaker_verified": false,
+            "note": "Weak landmark motion hint; no lipreading or audio-visual synchronization model."
+          }
+        },
+        {
+          "source": "semantic_context",
+          "target_score": 0.0,
+          "confidence": 0.0,
+          "details": {
+            "identity_mapping": null,
+            "note": "No role or phrase is assumed to identify the supplied target."
+          }
+        }
+      ],
+      "final_speaker": "SPEAKER_01",
+      "final_confidence": 1.0,
+      "reasons": [
+        "baseline=SPEAKER_01; mapping strength=1.000",
+        "local_voice: -1.000"
+      ]
+    },
+    {
+      "start": 12.914,
+      "end": 13.115,
+      "text": "No.",
+      "baseline": {
+        "raw_speaker_track": "SPEAKER_01",
+        "speaker": "SPEAKER_01"
+      },
+      "words": [
+        {
+          "word": "No.",
+          "start": 12.914,
+          "end": 13.115,
+          "score": 0.617,
+          "speaker": "SPEAKER_01"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "local_voice",
+          "target_score": -0.9791108082636332,
+          "confidence": 0.16750000000000043,
+          "details": {
+            "similarity": -0.008198466151952744,
+            "crop_start": 12.854,
+            "crop_end": 13.265,
+            "target_mean": 0.25681569303075474,
+            "competitor_mean": 0.07764442492690352,
+            "track_similarities": {
+              "SPEAKER_00": 0.04607345536351204,
+              "SPEAKER_01": 0.16179075837135315
+            },
+            "independent_profile_counts": {
+              "SPEAKER_00": 6,
+              "SPEAKER_01": 8
+            },
+            "best_track": "SPEAKER_01",
+            "track_margin": 0.11571730300784111
+          }
+        },
+        {
+          "source": "target_face_visible",
+          "target_score": 0,
+          "confidence": 0,
+          "details": {
+            "best_similarity": null,
+            "identity_anchor_similarity": null,
+            "target_visible_hint": false,
+            "tracked_target_frames": [],
+            "active_speaker_verified": false
+          }
+        },
+        {
+          "source": "visual_context",
+          "target_score": 0,
+          "confidence": 0,
+          "details": {
+            "frames_read": 6,
+            "observations": [],
+            "note": "Face identity and visibility do not identify police or prove speech."
+          }
+        },
+        {
+          "source": "target_mouth_motion",
+          "target_score": 0.0,
+          "confidence": 0.0,
+          "details": {
+            "direct_identity_matches": 0,
+            "mouth_samples": 0,
+            "aperture_spread": 0.0,
+            "active_speaker_verified": false,
+            "note": "Weak landmark motion hint; no lipreading or audio-visual synchronization model."
+          }
+        },
+        {
+          "source": "semantic_context",
+          "target_score": 0.0,
+          "confidence": 0.0,
+          "details": {
+            "identity_mapping": null,
+            "note": "No role or phrase is assumed to identify the supplied target."
+          }
+        },
+        {
+          "source": "question_response",
+          "target_score": 0.0,
+          "confidence": 0.2,
+          "details": {
+            "question_start": 11.292,
+            "question_track": "SPEAKER_01",
+            "candidate_tracks": [
+              "SPEAKER_00"
+            ],
+            "candidate_track": "SPEAKER_00",
+            "gap": 0.0600000000000005,
+            "assumption": "Immediate brief answer may be a different speaker; not voice-verified."
+          }
+        }
+      ],
+      "final_speaker": "Target_Speaker",
+      "final_confidence": 0.2,
+      "reasons": [
+        "baseline=SPEAKER_01; mapping strength=1.000",
+        "local_voice: -0.164",
+        "weak question/answer inference to SPEAKER_00; not voice-verified"
+      ]
+    },
+    {
+      "start": 13.355,
+      "end": 15.578,
+      "text": "Do you mind if I pat you down to check?",
+      "baseline": {
+        "raw_speaker_track": "SPEAKER_01",
+        "speaker": "SPEAKER_01"
+      },
+      "words": [
+        {
+          "word": "Do",
+          "start": 13.355,
+          "end": 13.595,
+          "score": 0.808
+        },
+        {
+          "word": "you",
+          "start": 14.397,
+          "end": 14.517,
+          "score": 0.638,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "mind",
+          "start": 14.537,
+          "end": 14.657,
+          "score": 0.527,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "if",
+          "start": 14.697,
+          "end": 14.737,
+          "score": 0.3,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "I",
+          "start": 14.797,
+          "end": 14.857,
+          "score": 0.38,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "pat",
+          "start": 14.897,
+          "end": 15.017,
+          "score": 0.897,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "you",
+          "start": 15.037,
+          "end": 15.158,
+          "score": 0.323,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "down",
+          "start": 15.178,
+          "end": 15.278,
+          "score": 0.351,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "to",
+          "start": 15.298,
+          "end": 15.338,
+          "score": 0.008,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "check?",
+          "start": 15.358,
+          "end": 15.578,
+          "score": 0.518,
+          "speaker": "SPEAKER_01"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "local_voice",
+          "target_score": -0.8843117660593393,
+          "confidence": 1.0,
+          "details": {
+            "similarity": 0.00878679845482111,
+            "crop_start": 13.355,
+            "crop_end": 15.578,
+            "target_mean": 0.25681569303075474,
+            "competitor_mean": 0.07764442492690352,
+            "track_similarities": {
+              "SPEAKER_00": 0.30777889490127563,
+              "SPEAKER_01": 0.4034397304058075
+            },
+            "independent_profile_counts": {
+              "SPEAKER_00": 6,
+              "SPEAKER_01": 8
+            },
+            "best_track": "SPEAKER_01",
+            "track_margin": 0.09566083550453186
+          }
+        },
+        {
+          "source": "target_face_visible",
+          "target_score": 0,
+          "confidence": 0,
+          "details": {
+            "best_similarity": null,
+            "identity_anchor_similarity": null,
+            "target_visible_hint": false,
+            "tracked_target_frames": [],
+            "active_speaker_verified": false
+          }
+        },
+        {
+          "source": "visual_context",
+          "target_score": 0,
+          "confidence": 0,
+          "details": {
+            "frames_read": 22,
+            "observations": [],
+            "note": "Face identity and visibility do not identify police or prove speech."
+          }
+        },
+        {
+          "source": "target_mouth_motion",
+          "target_score": 0.0,
+          "confidence": 0.0,
+          "details": {
+            "direct_identity_matches": 0,
+            "mouth_samples": 0,
+            "aperture_spread": 0.0,
+            "active_speaker_verified": false,
+            "note": "Weak landmark motion hint; no lipreading or audio-visual synchronization model."
+          }
+        },
+        {
+          "source": "semantic_context",
+          "target_score": 0.0,
+          "confidence": 0.0,
+          "details": {
+            "identity_mapping": null,
+            "note": "No role or phrase is assumed to identify the supplied target."
+          }
+        }
+      ],
+      "final_speaker": "SPEAKER_01",
+      "final_confidence": 0.9253624297157027,
+      "reasons": [
+        "baseline=SPEAKER_01; mapping strength=1.000",
+        "local_voice: -0.884"
+      ]
+    },
+    {
+      "start": 15.678,
+      "end": 16.019,
+      "text": "Yeah, I do.",
+      "baseline": {
+        "raw_speaker_track": "SPEAKER_00",
+        "speaker": "Target_Speaker"
+      },
+      "words": [
+        {
+          "word": "Yeah,",
+          "start": 15.678,
+          "end": 15.879,
+          "score": 0.529,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "I",
+          "start": 15.899,
+          "end": 15.919,
+          "score": 0.003,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "do.",
+          "start": 15.939,
+          "end": 16.019,
+          "score": 0.744,
+          "speaker": "SPEAKER_00"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "local_voice",
+          "target_score": -0.5174503490668502,
+          "confidence": 0.2841666666666646,
+          "details": {
+            "similarity": 0.07451782375574112,
+            "crop_start": 15.578,
+            "crop_end": 16.039,
+            "target_mean": 0.25681569303075474,
+            "competitor_mean": 0.07764442492690352,
+            "track_similarities": {
+              "SPEAKER_00": 0.23157921433448792,
+              "SPEAKER_01": 0.2775534391403198
+            },
+            "independent_profile_counts": {
+              "SPEAKER_00": 6,
+              "SPEAKER_01": 8
+            },
+            "best_track": "SPEAKER_01",
+            "track_margin": 0.04597422480583191
+          }
+        },
+        {
+          "source": "target_face_visible",
+          "target_score": 0,
+          "confidence": 0,
+          "details": {
+            "best_similarity": null,
+            "identity_anchor_similarity": null,
+            "target_visible_hint": false,
+            "tracked_target_frames": [],
+            "active_speaker_verified": false
+          }
+        },
+        {
+          "source": "visual_context",
+          "target_score": 0,
+          "confidence": 0,
+          "details": {
+            "frames_read": 7,
+            "observations": [],
+            "note": "Face identity and visibility do not identify police or prove speech."
+          }
+        },
+        {
+          "source": "target_mouth_motion",
+          "target_score": 0.0,
+          "confidence": 0.0,
+          "details": {
+            "direct_identity_matches": 0,
+            "mouth_samples": 0,
+            "aperture_spread": 0.0,
+            "active_speaker_verified": false,
+            "note": "Weak landmark motion hint; no lipreading or audio-visual synchronization model."
+          }
+        },
+        {
+          "source": "semantic_context",
+          "target_score": 0.0,
+          "confidence": 0.0,
+          "details": {
+            "identity_mapping": null,
+            "note": "No role or phrase is assumed to identify the supplied target."
+          }
+        },
+        {
+          "source": "question_response",
+          "target_score": 0.0,
+          "confidence": 0.2,
+          "details": {
+            "question_start": 13.355,
+            "question_track": "SPEAKER_01",
+            "candidate_tracks": [
+              "SPEAKER_00"
+            ],
+            "candidate_track": "SPEAKER_00",
+            "gap": 0.10000000000000142,
+            "assumption": "Immediate brief answer may be a different speaker; not voice-verified."
+          }
+        }
+      ],
+      "final_speaker": "Target_Speaker",
+      "final_confidence": 0.2,
+      "reasons": [
+        "baseline=SPEAKER_00; mapping strength=1.000",
+        "local_voice: -0.147",
+        "weak question/answer inference to SPEAKER_00; not voice-verified"
+      ]
+    },
+    {
+      "start": 16.039,
+      "end": 17.2,
+      "text": "OK. Why are you out here?",
+      "baseline": {
+        "raw_speaker_track": "SPEAKER_01",
+        "speaker": "SPEAKER_01"
+      },
+      "words": [
+        {
+          "word": "OK.",
+          "start": 16.039,
+          "end": 16.119,
+          "score": 0.351,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Why",
+          "start": 16.539,
+          "end": 16.6,
+          "score": 0.003,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "are",
+          "start": 16.62,
+          "end": 16.74,
+          "score": 0.423,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "you",
+          "start": 16.86,
+          "end": 16.92,
+          "score": 0.006,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "out",
+          "start": 16.94,
+          "end": 17.0,
+          "score": 0.035,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "here?",
+          "start": 17.02,
+          "end": 17.2,
+          "score": 0.223,
+          "speaker": "SPEAKER_01"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "local_voice",
+          "target_score": -0.6072340543214396,
+          "confidence": 0.9674999999999983,
+          "details": {
+            "similarity": 0.05843116343021393,
+            "crop_start": 16.039,
+            "crop_end": 17.2,
+            "target_mean": 0.25681569303075474,
+            "competitor_mean": 0.07764442492690352,
+            "track_similarities": {
+              "SPEAKER_00": 0.30083009600639343,
+              "SPEAKER_01": 0.4983823597431183
+            },
+            "independent_profile_counts": {
+              "SPEAKER_00": 5,
+              "SPEAKER_01": 8
+            },
+            "best_track": "SPEAKER_01",
+            "track_margin": 0.19755226373672485
+          }
+        },
+        {
+          "source": "target_face_visible",
+          "target_score": 0,
+          "confidence": 0,
+          "details": {
+            "best_similarity": null,
+            "identity_anchor_similarity": null,
+            "target_visible_hint": false,
+            "tracked_target_frames": [],
+            "active_speaker_verified": false
+          }
+        },
+        {
+          "source": "visual_context",
+          "target_score": 0,
+          "confidence": 0,
+          "details": {
+            "frames_read": 14,
+            "observations": [],
+            "note": "Face identity and visibility do not identify police or prove speech."
+          }
+        },
+        {
+          "source": "target_mouth_motion",
+          "target_score": 0.0,
+          "confidence": 0.0,
+          "details": {
+            "direct_identity_matches": 0,
+            "mouth_samples": 0,
+            "aperture_spread": 0.0,
+            "active_speaker_verified": false,
+            "note": "Weak landmark motion hint; no lipreading or audio-visual synchronization model."
+          }
+        },
+        {
+          "source": "semantic_context",
+          "target_score": 0.0,
+          "confidence": 0.0,
+          "details": {
+            "identity_mapping": null,
+            "note": "No role or phrase is assumed to identify the supplied target."
+          }
+        }
+      ],
+      "final_speaker": "SPEAKER_01",
+      "final_confidence": 0.7495874448474419,
+      "reasons": [
+        "baseline=SPEAKER_01; mapping strength=1.000",
+        "local_voice: -0.587"
+      ]
+    },
+    {
+      "start": 17.22,
+      "end": 18.282,
+      "text": "This is an illegal search and seizure.",
+      "baseline": {
+        "raw_speaker_track": "SPEAKER_00",
+        "speaker": "Target_Speaker"
+      },
+      "words": [
+        {
+          "word": "This",
+          "start": 17.22,
+          "end": 17.301,
+          "score": 0.042,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "is",
+          "start": 17.321,
+          "end": 17.361,
+          "score": 0.001,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "an",
+          "start": 17.401,
+          "end": 17.441,
+          "score": 0.016,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "illegal",
+          "start": 17.461,
+          "end": 17.621,
+          "score": 0.133,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "search",
+          "start": 17.661,
+          "end": 17.841,
+          "score": 0.819,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "and",
+          "start": 17.881,
+          "end": 17.961,
+          "score": 0.445,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "seizure.",
+          "start": 17.981,
+          "end": 18.282,
+          "score": 0.446,
+          "speaker": "SPEAKER_00"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "local_voice",
+          "target_score": 1.0,
+          "confidence": 0.885000000000001,
+          "details": {
+            "similarity": 0.39920371770858765,
+            "crop_start": 17.22,
+            "crop_end": 18.282,
+            "target_mean": 0.25681569303075474,
+            "competitor_mean": 0.07764442492690352,
+            "track_similarities": {
+              "SPEAKER_00": 0.3187110424041748,
+              "SPEAKER_01": 0.2292945832014084
+            },
+            "independent_profile_counts": {
+              "SPEAKER_00": 5,
+              "SPEAKER_01": 8
+            },
+            "best_track": "SPEAKER_00",
+            "track_margin": 0.08941645920276642
+          }
+        },
+        {
+          "source": "target_face_visible",
+          "target_score": 0,
+          "confidence": 0,
+          "details": {
+            "best_similarity": null,
+            "identity_anchor_similarity": null,
+            "target_visible_hint": false,
+            "tracked_target_frames": [],
+            "active_speaker_verified": false
+          }
+        },
+        {
+          "source": "visual_context",
+          "target_score": 0,
+          "confidence": 0,
+          "details": {
+            "frames_read": 13,
+            "observations": [],
+            "note": "Face identity and visibility do not identify police or prove speech."
+          }
+        },
+        {
+          "source": "target_mouth_motion",
+          "target_score": 0.0,
+          "confidence": 0.0,
+          "details": {
+            "direct_identity_matches": 0,
+            "mouth_samples": 0,
+            "aperture_spread": 0.0,
+            "active_speaker_verified": false,
+            "note": "Weak landmark motion hint; no lipreading or audio-visual synchronization model."
+          }
+        },
+        {
+          "source": "semantic_context",
+          "target_score": 0.0,
+          "confidence": 0.0,
+          "details": {
+            "identity_mapping": null,
+            "note": "No role or phrase is assumed to identify the supplied target."
+          }
+        }
+      ],
+      "final_speaker": "Target_Speaker",
+      "final_confidence": 0.9258064516129038,
+      "reasons": [
+        "baseline=SPEAKER_00; mapping strength=1.000",
+        "local_voice: +0.885"
+      ]
+    },
+    {
+      "start": 18.462,
+      "end": 19.183,
+      "text": "Why are you out here?",
+      "baseline": {
+        "raw_speaker_track": "SPEAKER_01",
+        "speaker": "SPEAKER_01"
+      },
+      "words": [
+        {
+          "word": "Why",
+          "start": 18.462,
+          "end": 18.622,
+          "score": 0.904,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "are",
+          "start": 18.642,
+          "end": 18.722,
+          "score": 0.483,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "you",
+          "start": 18.742,
+          "end": 18.843,
+          "score": 0.854,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "out",
+          "start": 18.903,
+          "end": 19.003,
+          "score": 0.331,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "here?",
+          "start": 19.043,
+          "end": 19.183,
+          "score": 0.837,
+          "speaker": "SPEAKER_01"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "local_voice",
+          "target_score": -1.0,
+          "confidence": 0.6008333333333334,
+          "details": {
+            "similarity": -0.02190088853240013,
+            "crop_start": 18.462,
+            "crop_end": 19.183,
+            "target_mean": 0.25681569303075474,
+            "competitor_mean": 0.07764442492690352,
+            "track_similarities": {
+              "SPEAKER_00": 0.16290931403636932,
+              "SPEAKER_01": 0.3759166896343231
+            },
+            "independent_profile_counts": {
+              "SPEAKER_00": 6,
+              "SPEAKER_01": 8
+            },
+            "best_track": "SPEAKER_01",
+            "track_margin": 0.2130073755979538
+          }
+        },
+        {
+          "source": "target_face_visible",
+          "target_score": 0,
+          "confidence": 0,
+          "details": {
+            "best_similarity": null,
+            "identity_anchor_similarity": null,
+            "target_visible_hint": false,
+            "tracked_target_frames": [],
+            "active_speaker_verified": false
+          }
+        },
+        {
+          "source": "visual_context",
+          "target_score": 0,
+          "confidence": 0,
+          "details": {
+            "frames_read": 10,
+            "observations": [],
+            "note": "Face identity and visibility do not identify police or prove speech."
+          }
+        },
+        {
+          "source": "target_mouth_motion",
+          "target_score": 0.0,
+          "confidence": 0.0,
+          "details": {
+            "direct_identity_matches": 0,
+            "mouth_samples": 0,
+            "aperture_spread": 0.0,
+            "active_speaker_verified": false,
+            "note": "Weak landmark motion hint; no lipreading or audio-visual synchronization model."
+          }
+        },
+        {
+          "source": "semantic_context",
+          "target_score": 0.0,
+          "confidence": 0.0,
+          "details": {
+            "identity_mapping": null,
+            "note": "No role or phrase is assumed to identify the supplied target."
+          }
+        }
+      ],
+      "final_speaker": "SPEAKER_01",
+      "final_confidence": 0.7424731182795699,
+      "reasons": [
+        "baseline=SPEAKER_01; mapping strength=1.000",
+        "local_voice: -0.601"
+      ]
+    },
+    {
+      "start": 19.283,
+      "end": 20.585,
+      "text": "I'm invoking my Fifth Amendment rights, sir.",
+      "baseline": {
+        "raw_speaker_track": "SPEAKER_00",
+        "speaker": "Target_Speaker"
+      },
+      "words": [
+        {
+          "word": "I'm",
+          "start": 19.283,
+          "end": 19.363,
+          "score": 0.464,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "invoking",
+          "start": 19.423,
+          "end": 19.724,
+          "score": 0.446,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "my",
+          "start": 19.744,
+          "end": 19.824,
+          "score": 0.493,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Fifth",
+          "start": 19.844,
+          "end": 20.004,
+          "score": 0.283,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Amendment",
+          "start": 20.024,
+          "end": 20.285,
+          "score": 0.178,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "rights,",
+          "start": 20.305,
+          "end": 20.485,
+          "score": 0.376,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "sir.",
+          "start": 20.505,
+          "end": 20.585,
+          "score": 0.23,
+          "speaker": "SPEAKER_00"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "local_voice",
+          "target_score": 0.7658376438734704,
+          "confidence": 1.0,
+          "details": {
+            "similarity": 0.30444616079330444,
+            "crop_start": 19.283,
+            "crop_end": 20.585,
+            "target_mean": 0.25681569303075474,
+            "competitor_mean": 0.07764442492690352,
+            "track_similarities": {
+              "SPEAKER_00": 0.2922295928001404,
+              "SPEAKER_01": 0.1279083490371704
+            },
+            "independent_profile_counts": {
+              "SPEAKER_00": 5,
+              "SPEAKER_01": 9
+            },
+            "best_track": "SPEAKER_00",
+            "track_margin": 0.16432124376296997
+          }
+        },
+        {
+          "source": "target_face_visible",
+          "target_score": 0,
+          "confidence": 0,
+          "details": {
+            "best_similarity": null,
+            "identity_anchor_similarity": null,
+            "target_visible_hint": false,
+            "tracked_target_frames": [],
+            "active_speaker_verified": false
+          }
+        },
+        {
+          "source": "visual_context",
+          "target_score": 0,
+          "confidence": 0,
+          "details": {
+            "frames_read": 15,
+            "observations": [],
+            "note": "Face identity and visibility do not identify police or prove speech."
+          }
+        },
+        {
+          "source": "target_mouth_motion",
+          "target_score": 0.0,
+          "confidence": 0.0,
+          "details": {
+            "direct_identity_matches": 0,
+            "mouth_samples": 0,
+            "aperture_spread": 0.0,
+            "active_speaker_verified": false,
+            "note": "Weak landmark motion hint; no lipreading or audio-visual synchronization model."
+          }
+        },
+        {
+          "source": "semantic_context",
+          "target_score": 0.0,
+          "confidence": 0.0,
+          "details": {
+            "identity_mapping": null,
+            "note": "No role or phrase is assumed to identify the supplied target."
+          }
+        }
+      ],
+      "final_speaker": "Target_Speaker",
+      "final_confidence": 0.8489275121764326,
+      "reasons": [
+        "baseline=SPEAKER_00; mapping strength=1.000",
+        "local_voice: +0.766"
+      ]
+    },
+    {
+      "start": 20.925,
+      "end": 22.247,
+      "text": "You want to give me a reason why you're here?",
+      "baseline": {
+        "raw_speaker_track": "SPEAKER_01",
+        "speaker": "SPEAKER_01"
+      },
+      "words": [
+        {
+          "word": "You",
+          "start": 20.925,
+          "end": 21.006,
+          "score": 0.921,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "want",
+          "start": 21.026,
+          "end": 21.126,
+          "score": 0.712,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "to",
+          "start": 21.146,
+          "end": 21.186,
+          "score": 0.872,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "give",
+          "start": 21.226,
+          "end": 21.326,
+          "score": 0.967,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "me",
+          "start": 21.366,
+          "end": 21.446,
+          "score": 0.661,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "a",
+          "start": 21.466,
+          "end": 21.486,
+          "score": 0.206,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "reason",
+          "start": 21.526,
+          "end": 21.747,
+          "score": 0.845,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "why",
+          "start": 21.767,
+          "end": 21.887,
+          "score": 0.734,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "you're",
+          "start": 21.907,
+          "end": 22.067,
+          "score": 0.797,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "here?",
+          "start": 22.087,
+          "end": 22.247,
+          "score": 0.909,
+          "speaker": "SPEAKER_01"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "local_voice",
+          "target_score": 0.27004682675914454,
+          "confidence": 1.0,
+          "details": {
+            "similarity": 0.2156146913766861,
+            "crop_start": 20.925,
+            "crop_end": 22.247,
+            "target_mean": 0.25681569303075474,
+            "competitor_mean": 0.07764442492690352,
+            "track_similarities": {
+              "SPEAKER_00": 0.23776760697364807,
+              "SPEAKER_01": 0.47237932682037354
+            },
+            "independent_profile_counts": {
+              "SPEAKER_00": 6,
+              "SPEAKER_01": 8
+            },
+            "best_track": "SPEAKER_01",
+            "track_margin": 0.23461171984672546
+          }
+        },
+        {
+          "source": "target_face_visible",
+          "target_score": 0,
+          "confidence": 0,
+          "details": {
+            "best_similarity": null,
+            "identity_anchor_similarity": null,
+            "target_visible_hint": false,
+            "tracked_target_frames": [],
+            "active_speaker_verified": false
+          }
+        },
+        {
+          "source": "visual_context",
+          "target_score": 0,
+          "confidence": 0,
+          "details": {
+            "frames_read": 15,
+            "observations": [],
+            "note": "Face identity and visibility do not identify police or prove speech."
+          }
+        },
+        {
+          "source": "target_mouth_motion",
+          "target_score": 0.0,
+          "confidence": 0.0,
+          "details": {
+            "direct_identity_matches": 0,
+            "mouth_samples": 0,
+            "aperture_spread": 0.0,
+            "active_speaker_verified": false,
+            "note": "Weak landmark motion hint; no lipreading or audio-visual synchronization model."
+          }
+        },
+        {
+          "source": "semantic_context",
+          "target_score": 0.0,
+          "confidence": 0.0,
+          "details": {
+            "identity_mapping": null,
+            "note": "No role or phrase is assumed to identify the supplied target."
+          }
+        }
+      ],
+      "final_speaker": "SPEAKER_01",
+      "final_confidence": 0.1806149504779713,
+      "reasons": [
+        "baseline=SPEAKER_01; mapping strength=1.000",
+        "local_voice: +0.270"
+      ]
+    },
+    {
+      "start": 22.828,
+      "end": 24.45,
+      "text": "Where you took me from was public property.",
+      "baseline": {
+        "raw_speaker_track": "SPEAKER_01",
+        "speaker": "SPEAKER_01"
+      },
+      "words": [
+        {
+          "word": "Where",
+          "start": 22.828,
+          "end": 23.028,
+          "score": 0.532,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "you",
+          "start": 23.048,
+          "end": 23.149,
+          "score": 0.7,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "took",
+          "start": 23.169,
+          "end": 23.309,
+          "score": 0.425,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "me",
+          "start": 23.349,
+          "end": 23.449,
+          "score": 0.125,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "from",
+          "start": 23.469,
+          "end": 23.629,
+          "score": 0.829,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "was",
+          "start": 23.669,
+          "end": 23.809,
+          "score": 0.382,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "public",
+          "start": 23.829,
+          "end": 24.09,
+          "score": 0.779,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "property.",
+          "start": 24.13,
+          "end": 24.45,
+          "score": 0.973,
+          "speaker": "SPEAKER_01"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "local_voice",
+          "target_score": 1.0,
+          "confidence": 1.0,
+          "details": {
+            "similarity": 0.42661377787590027,
+            "crop_start": 22.828,
+            "crop_end": 24.45,
+            "target_mean": 0.25681569303075474,
+            "competitor_mean": 0.07764442492690352,
+            "track_similarities": {
+              "SPEAKER_00": 0.44670355319976807,
+              "SPEAKER_01": 0.2539525032043457
+            },
+            "independent_profile_counts": {
+              "SPEAKER_00": 5,
+              "SPEAKER_01": 7
+            },
+            "best_track": "SPEAKER_00",
+            "track_margin": 0.19275104999542236
+          }
+        },
+        {
+          "source": "target_face_visible",
+          "target_score": 0,
+          "confidence": 0,
+          "details": {
+            "best_similarity": null,
+            "identity_anchor_similarity": null,
+            "target_visible_hint": false,
+            "tracked_target_frames": [],
+            "active_speaker_verified": false
+          }
+        },
+        {
+          "source": "visual_context",
+          "target_score": 0,
+          "confidence": 0,
+          "details": {
+            "frames_read": 17,
+            "observations": [],
+            "note": "Face identity and visibility do not identify police or prove speech."
+          }
+        },
+        {
+          "source": "target_mouth_motion",
+          "target_score": 0.0,
+          "confidence": 0.0,
+          "details": {
+            "direct_identity_matches": 0,
+            "mouth_samples": 0,
+            "aperture_spread": 0.0,
+            "active_speaker_verified": false,
+            "note": "Weak landmark motion hint; no lipreading or audio-visual synchronization model."
+          }
+        },
+        {
+          "source": "semantic_context",
+          "target_score": 0.0,
+          "confidence": 0.0,
+          "details": {
+            "identity_mapping": null,
+            "note": "No role or phrase is assumed to identify the supplied target."
+          }
+        }
+      ],
+      "final_speaker": "Target_Speaker",
+      "final_confidence": 0.9637552499771118,
+      "reasons": [
+        "baseline=SPEAKER_01; mapping strength=1.000",
+        "local_voice: +1.000",
+        "independent voice profile supports correction to SPEAKER_00"
+      ]
+    },
+    {
+      "start": 24.571,
+      "end": 26.213,
+      "text": "I'm going to invoke my Fifth Amendment rights to pass out.",
+      "baseline": {
+        "raw_speaker_track": "SPEAKER_00",
+        "speaker": "Target_Speaker"
+      },
+      "words": [
+        {
+          "word": "I'm",
+          "start": 24.571,
+          "end": 24.691,
+          "score": 0.848,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "going",
+          "start": 24.711,
+          "end": 24.831,
+          "score": 0.344,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "to",
+          "start": 24.851,
+          "end": 24.891,
+          "score": 0.057,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "invoke",
+          "start": 24.911,
+          "end": 25.131,
+          "score": 0.381,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "my",
+          "start": 25.151,
+          "end": 25.251,
+          "score": 0.479,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Fifth",
+          "start": 25.271,
+          "end": 25.472,
+          "score": 0.329,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Amendment",
+          "start": 25.492,
+          "end": 25.712,
+          "score": 0.211,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "rights",
+          "start": 25.732,
+          "end": 25.912,
+          "score": 0.47,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "to",
+          "start": 25.932,
+          "end": 25.972,
+          "score": 0.001,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "pass",
+          "start": 25.992,
+          "end": 26.113,
+          "score": 0.17,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "out.",
+          "start": 26.133,
+          "end": 26.213,
+          "score": 0.125,
+          "speaker": "SPEAKER_00"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "local_voice",
+          "target_score": 0.2047285226066738,
+          "confidence": 1.0,
+          "details": {
+            "similarity": 0.20391152799129486,
+            "crop_start": 24.571,
+            "crop_end": 26.213,
+            "target_mean": 0.25681569303075474,
+            "competitor_mean": 0.07764442492690352,
+            "track_similarities": {
+              "SPEAKER_00": 0.3284357786178589,
+              "SPEAKER_01": 0.18443483114242554
+            },
+            "independent_profile_counts": {
+              "SPEAKER_00": 5,
+              "SPEAKER_01": 9
+            },
+            "best_track": "SPEAKER_00",
+            "track_margin": 0.14400094747543335
+          }
+        },
+        {
+          "source": "target_face_visible",
+          "target_score": 0,
+          "confidence": 0,
+          "details": {
+            "best_similarity": null,
+            "identity_anchor_similarity": null,
+            "target_visible_hint": false,
+            "tracked_target_frames": [],
+            "active_speaker_verified": false
+          }
+        },
+        {
+          "source": "visual_context",
+          "target_score": 0,
+          "confidence": 0,
+          "details": {
+            "frames_read": 18,
+            "observations": [],
+            "note": "Face identity and visibility do not identify police or prove speech."
+          }
+        },
+        {
+          "source": "target_mouth_motion",
+          "target_score": 0.0,
+          "confidence": 0.0,
+          "details": {
+            "direct_identity_matches": 0,
+            "mouth_samples": 0,
+            "aperture_spread": 0.0,
+            "active_speaker_verified": false,
+            "note": "Weak landmark motion hint; no lipreading or audio-visual synchronization model."
+          }
+        },
+        {
+          "source": "semantic_context",
+          "target_score": 0.0,
+          "confidence": 0.0,
+          "details": {
+            "identity_mapping": null,
+            "note": "No role or phrase is assumed to identify the supplied target."
+          }
+        }
+      ],
+      "final_speaker": "Target_Speaker",
+      "final_confidence": 0.48692162748817663,
+      "reasons": [
+        "baseline=SPEAKER_00; mapping strength=1.000",
+        "local_voice: +0.205"
+      ]
+    },
+    {
+      "start": 26.814,
+      "end": 28.175,
+      "text": "You're being arrested for criminal loitering.",
+      "baseline": {
+        "raw_speaker_track": "SPEAKER_01",
+        "speaker": "SPEAKER_01"
+      },
+      "words": [
+        {
+          "word": "You're",
+          "start": 26.814,
+          "end": 26.934,
+          "score": 0.053,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "being",
+          "start": 26.954,
+          "end": 27.074,
+          "score": 0.22,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "arrested",
+          "start": 27.094,
+          "end": 27.394,
+          "score": 0.477,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "for",
+          "start": 27.414,
+          "end": 27.515,
+          "score": 0.215,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "criminal",
+          "start": 27.535,
+          "end": 27.835,
+          "score": 0.441,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "loitering.",
+          "start": 27.855,
+          "end": 28.175,
+          "score": 0.619,
+          "speaker": "SPEAKER_01"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "local_voice",
+          "target_score": -1.0,
+          "confidence": 1.0,
+          "details": {
+            "similarity": -0.04320846498012543,
+            "crop_start": 26.814,
+            "crop_end": 28.175,
+            "target_mean": 0.25681569303075474,
+            "competitor_mean": 0.07764442492690352,
+            "track_similarities": {
+              "SPEAKER_00": 0.26225167512893677,
+              "SPEAKER_01": 0.3545164465904236
+            },
+            "independent_profile_counts": {
+              "SPEAKER_00": 6,
+              "SPEAKER_01": 8
+            },
+            "best_track": "SPEAKER_01",
+            "track_margin": 0.09226477146148682
+          }
+        },
+        {
+          "source": "target_face_visible",
+          "target_score": 0,
+          "confidence": 0,
+          "details": {
+            "best_similarity": 0.20305979251861572,
+            "identity_anchor_similarity": null,
+            "target_visible_hint": false,
+            "tracked_target_frames": [],
+            "active_speaker_verified": false
+          }
+        },
+        {
+          "source": "visual_context",
+          "target_score": 0,
+          "confidence": 0,
+          "details": {
+            "frames_read": 15,
+            "observations": [
+              {
+                "frame": 585,
+                "similarity": 0.20305979251861572,
+                "bbox": [
+                  1725.000732421875,
+                  45.83334732055664,
+                  1916.86962890625,
+                  337.2444763183594
+                ]
+              }
+            ],
+            "note": "Face identity and visibility do not identify police or prove speech."
+          }
+        },
+        {
+          "source": "target_mouth_motion",
+          "target_score": 0.0,
+          "confidence": 0.0,
+          "details": {
+            "direct_identity_matches": 0,
+            "mouth_samples": 0,
+            "aperture_spread": 0.0,
+            "active_speaker_verified": false,
+            "note": "Weak landmark motion hint; no lipreading or audio-visual synchronization model."
+          }
+        },
+        {
+          "source": "semantic_context",
+          "target_score": 0.0,
+          "confidence": 0.0,
+          "details": {
+            "identity_mapping": null,
+            "note": "No role or phrase is assumed to identify the supplied target."
+          }
+        }
+      ],
+      "final_speaker": "SPEAKER_01",
+      "final_confidence": 1.0,
+      "reasons": [
+        "baseline=SPEAKER_01; mapping strength=1.000",
+        "local_voice: -1.000"
+      ]
+    },
+    {
+      "start": 28.756,
+      "end": 29.357,
+      "text": "Criminal loitering.",
+      "baseline": {
+        "raw_speaker_track": "SPEAKER_01",
+        "speaker": "SPEAKER_01"
+      },
+      "words": [
+        {
+          "word": "Criminal",
+          "start": 28.756,
+          "end": 28.957,
+          "score": 0.096,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "loitering.",
+          "start": 28.997,
+          "end": 29.357,
+          "score": 0.566,
+          "speaker": "SPEAKER_01"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "local_voice",
+          "target_score": -0.7593541372604664,
+          "confidence": 0.5008333333333326,
+          "details": {
+            "similarity": 0.03117561526596546,
+            "crop_start": 28.756,
+            "crop_end": 29.357,
+            "target_mean": 0.25681569303075474,
+            "competitor_mean": 0.07764442492690352,
+            "track_similarities": {
+              "SPEAKER_00": 0.13359731435775757,
+              "SPEAKER_01": 0.10934525728225708
+            },
+            "independent_profile_counts": {
+              "SPEAKER_00": 6,
+              "SPEAKER_01": 9
+            },
+            "best_track": "SPEAKER_00",
+            "track_margin": 0.02425205707550049
+          }
+        },
+        {
+          "source": "target_face_visible",
+          "target_score": 0,
+          "confidence": 0,
+          "details": {
+            "best_similarity": 0.34662720561027527,
+            "identity_anchor_similarity": 0.5215893387794495,
+            "target_visible_hint": true,
+            "tracked_target_frames": [
+              {
+                "frame": 610,
+                "identity_source": "face_continuity",
+                "similarity": 0.1531391143798828
+              },
+              {
+                "frame": 612,
+                "identity_source": "face_continuity",
+                "similarity": 0.18884432315826416
+              },
+              {
+                "frame": 615,
+                "identity_source": "face_continuity",
+                "similarity": 0.16403940320014954
+              },
+              {
+                "frame": 618,
+                "identity_source": "face_continuity",
+                "similarity": 0.34662720561027527
+              }
+            ],
+            "active_speaker_verified": false
+          }
+        },
+        {
+          "source": "visual_context",
+          "target_score": 0,
+          "confidence": 0,
+          "details": {
+            "frames_read": 9,
+            "observations": [
+              {
+                "frame": 596,
+                "similarity": 0.5215893387794495,
+                "bbox": [
+                  1649.9466552734375,
+                  111.12843322753906,
+                  1869.728759765625,
+                  389.8478698730469
+                ]
+              },
+              {
+                "frame": 599,
+                "similarity": 0.4955323040485382,
+                "bbox": [
+                  1499.310791015625,
+                  69.13009643554688,
+                  1720.195068359375,
+                  354.5320129394531
+                ]
+              },
+              {
+                "frame": 602,
+                "similarity": 0.44404852390289307,
+                "bbox": [
+                  1447.342041015625,
+                  60.71245193481445,
+                  1663.91796875,
+                  367.09552001953125
+                ]
+              },
+              {
+                "frame": 604,
+                "similarity": 0.5157932043075562,
+                "bbox": [
+                  1427.446044921875,
+                  65.53520965576172,
+                  1620.7518310546875,
+                  387.5788879394531
+                ]
+              },
+              {
+                "frame": 607,
+                "similarity": 0.33373281359672546,
+                "bbox": [
+                  1442.9053955078125,
+                  97.11632537841797,
+                  1596.2388916015625,
+                  404.07330322265625
+                ]
+              },
+              {
+                "frame": 610,
+                "similarity": 0.1531391143798828,
+                "bbox": [
+                  1495.823486328125,
+                  150.14144897460938,
+                  1618.546142578125,
+                  448.81787109375
+                ]
+              },
+              {
+                "frame": 612,
+                "similarity": 0.18884432315826416,
+                "bbox": [
+                  1524.9581298828125,
+                  188.0069580078125,
+                  1643.0240478515625,
+                  438.8605041503906
+                ]
+              },
+              {
+                "frame": 615,
+                "similarity": 0.16403940320014954,
+                "bbox": [
+                  1521.8905029296875,
+                  194.9124755859375,
+                  1643.8743896484375,
+                  452.06207275390625
+                ]
+              },
+              {
+                "frame": 618,
+                "similarity": 0.34662720561027527,
+                "bbox": [
+                  1486.2740478515625,
+                  146.11257934570312,
+                  1621.3414306640625,
+                  423.3013916015625
+                ]
+              }
+            ],
+            "note": "Face identity and visibility do not identify police or prove speech."
+          }
+        },
+        {
+          "source": "target_mouth_motion",
+          "target_score": 0.0,
+          "confidence": 0.0,
+          "details": {
+            "direct_identity_matches": 4,
+            "mouth_samples": 4,
+            "aperture_spread": 0.0,
+            "active_speaker_verified": false,
+            "note": "Weak landmark motion hint; no lipreading or audio-visual synchronization model."
+          }
+        },
+        {
+          "source": "semantic_context",
+          "target_score": 0.0,
+          "confidence": 0.0,
+          "details": {
+            "identity_mapping": null,
+            "note": "No role or phrase is assumed to identify the supplied target."
+          }
+        }
+      ],
+      "final_speaker": "SPEAKER_01",
+      "final_confidence": 0.6779569892473114,
+      "reasons": [
+        "baseline=SPEAKER_01; mapping strength=1.000",
+        "local_voice: -0.380"
+      ]
+    }
+  ],
+  "source_offset_seconds": 0,
+  "experiment": "Reference-only comparison; frozen ASR, alignment, diarization and available voice embeddings; fresh candidate visual evidence; original visual evidence from checkpoint."
+}

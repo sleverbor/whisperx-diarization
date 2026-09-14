@@ -35,11 +35,15 @@ def main():
         prefix=next(n.rsplit('/',1)[0]+'/' for n in archive.namelist() if n.endswith('/manifest.json') and archive.read(n).find(b'bc5bef96708cfd')>=0)
         opening={Path(n).stem:json.loads(archive.read(n)) for n in archive.namelist() if n.startswith(prefix) and n.endswith('.json')}
     second={p.stem:json.loads(p.read_text()) for p in args.second_checkpoints.glob('*.json')}
+    for stage in ('transcription','alignment'):
+        if stage+'_vad' not in second and stage in second:
+            second[stage+'_vad']=second[stage]
     for clip,video,frozen,offset in [('opening',args.project/'short.mp4',opening,0),('second',args.second_video,second,625)]:
         if clip=='second':
             from cloud_runtime import file_digest
             assert file_digest(video)==frozen['manifest']['inputs']['video'],'Second clip does not match checkpoint'
         for reference,prior_dir in [('original',args.project),('candidate',args.candidate)]:
+            if (args.output_dir/f'{clip}_{reference}.json').exists(): continue
             class FrozenUpstream(StageCache):
                 def __init__(self,*unused):
                     self.root=None

@@ -1,0 +1,49 @@
+{
+  "opening": {
+    "original_counts": {
+      "SPEAKER_01": 12,
+      "Target_Speaker": 10,
+      "Uncertain": 2
+    },
+    "candidate_counts": {
+      "SPEAKER_01": 13,
+      "Target_Speaker": 10,
+      "Uncertain": 1
+    },
+    "original_voice_means": {
+      "SPEAKER_00": 0.2547629719289641,
+      "SPEAKER_01": 0.07858867736326323
+    },
+    "candidate_voice_means": {
+      "SPEAKER_00": 0.25681569303075474,
+      "SPEAKER_01": 0.07764442492690352
+    },
+    "label_changes": [
+      {
+        "start": 20.925,
+        "text": "You want to give me a reason why you're here?",
+        "original": "Uncertain",
+        "candidate": "SPEAKER_01"
+      }
+    ]
+  },
+  "second": {
+    "original_counts": {
+      "SPEAKER_00": 16,
+      "Uncertain": 2
+    },
+    "candidate_counts": {
+      "SPEAKER_00": 16,
+      "Uncertain": 2
+    },
+    "original_voice_means": {
+      "SPEAKER_00": 0.16603712522639677,
+      "SPEAKER_01": 0.4386766254901886
+    },
+    "candidate_voice_means": {
+      "SPEAKER_00": 0.1666432935744524,
+      "SPEAKER_01": 0.4554676413536072
+    },
+    "label_changes": []
+  }
+}
