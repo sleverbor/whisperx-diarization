@@ -1,0 +1,13 @@
+[665.18–670.88] Uncertain: Tower 11, no record from Mississippi or Massachusetts.
+[671.00–671.52] Uncertain: Number 8.
+[672.43–673.29] Uncertain: So is that a fake name?
+[674.13–674.33] Uncertain: No.
+[675.77–676.93] Opening_officer_reference: You just not in the system anywhere?
+[677.51–679.19] Uncertain: I don't get found guilty of anything.
+[679.55–680.63] Opening_officer_reference: Do you have a driver's license?
+[680.75–681.77] Target_Speaker: I do have a driver's license.
+[681.79–682.89] Opening_officer_reference: Then you should be in the system.
+[683.50–683.75] Uncertain: There.
+[684.78–685.68] Target_Speaker: I have a driver's license.
+[685.74–686.74] Target_Speaker: I didn't give you any fake information.
+[686.76–689.98] Uncertain: If you have a driver's license,

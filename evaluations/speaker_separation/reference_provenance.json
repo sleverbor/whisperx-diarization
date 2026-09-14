@@ -1,0 +1,36 @@
+{
+  "officer_sources": [
+    {
+      "start": 0.257,
+      "end": 2.04,
+      "track": "SPEAKER_01",
+      "checkpoint": "voice_4112_32640.json"
+    },
+    {
+      "start": 11.292,
+      "end": 12.854,
+      "track": "SPEAKER_01",
+      "checkpoint": "voice_180672_205664.json"
+    },
+    {
+      "start": 13.355,
+      "end": 15.578,
+      "track": "SPEAKER_01",
+      "checkpoint": "voice_213680_249248.json"
+    },
+    {
+      "start": 26.814,
+      "end": 28.175,
+      "track": "SPEAKER_01",
+      "checkpoint": "voice_429024_450800.json"
+    }
+  ],
+  "officer_target_similarity": -0.07307673245668411,
+  "selection": "Non-target opening track, saved strength >=0.65, duration >=1.2 seconds; no phrase selection",
+  "thresholds": {
+    "minimum_crop_seconds": 0.4,
+    "minimum_similarity": 0.25,
+    "minimum_margin": 0.08
+  },
+  "scores_are_calibrated": false
+}

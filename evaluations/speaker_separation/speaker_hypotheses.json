@@ -1,0 +1,152 @@
+[
+  {
+    "start": 665.18,
+    "end": 670.885,
+    "text": "Tower 11, no record from Mississippi or Massachusetts.",
+    "speaker_hypothesis": "Uncertain",
+    "voice_similarities": {
+      "Target_Speaker": 0.11490634828805923,
+      "Opening_officer_reference": 0.09328075498342514
+    },
+    "reason": "Weak or conflicting reference matches; may be another voice",
+    "review_required": true
+  },
+  {
+    "start": 671.005,
+    "end": 671.525,
+    "text": "Number 8.",
+    "speaker_hypothesis": "Uncertain",
+    "voice_similarities": {
+      "Target_Speaker": 0.07636594772338867,
+      "Opening_officer_reference": 0.21122249960899353
+    },
+    "reason": "Weak or conflicting reference matches; may be another voice",
+    "review_required": true
+  },
+  {
+    "start": 672.426,
+    "end": 673.287,
+    "text": "So is that a fake name?",
+    "speaker_hypothesis": "Uncertain",
+    "voice_similarities": {
+      "Target_Speaker": -0.009106198325753212,
+      "Opening_officer_reference": 0.15929090976715088
+    },
+    "reason": "Weak or conflicting reference matches; may be another voice",
+    "review_required": true
+  },
+  {
+    "start": 674.127,
+    "end": 674.327,
+    "text": "No.",
+    "speaker_hypothesis": "Uncertain",
+    "voice_similarities": {},
+    "reason": "Too short for reliable embedding",
+    "review_required": true
+  },
+  {
+    "start": 675.769,
+    "end": 676.93,
+    "text": "You just not in the system anywhere?",
+    "speaker_hypothesis": "Opening_officer_reference",
+    "voice_similarities": {
+      "Target_Speaker": -0.023638058453798294,
+      "Opening_officer_reference": 0.2788512706756592
+    },
+    "reason": "Tentative voice-reference match",
+    "review_required": true
+  },
+  {
+    "start": 677.51,
+    "end": 679.191,
+    "text": "I don't get found guilty of anything.",
+    "speaker_hypothesis": "Uncertain",
+    "voice_similarities": {
+      "Target_Speaker": 0.27423179149627686,
+      "Opening_officer_reference": 0.19564995169639587
+    },
+    "reason": "Weak or conflicting reference matches; may be another voice",
+    "review_required": true
+  },
+  {
+    "start": 679.552,
+    "end": 680.633,
+    "text": "Do you have a driver's license?",
+    "speaker_hypothesis": "Opening_officer_reference",
+    "voice_similarities": {
+      "Target_Speaker": 0.07730280607938766,
+      "Opening_officer_reference": 0.3704686760902405
+    },
+    "reason": "Tentative voice-reference match",
+    "review_required": true
+  },
+  {
+    "start": 680.753,
+    "end": 681.773,
+    "text": "I do have a driver's license.",
+    "speaker_hypothesis": "Target_Speaker",
+    "voice_similarities": {
+      "Target_Speaker": 0.5160243511199951,
+      "Opening_officer_reference": 0.08404598385095596
+    },
+    "reason": "Tentative voice-reference match",
+    "review_required": true
+  },
+  {
+    "start": 681.793,
+    "end": 682.894,
+    "text": "Then you should be in the system.",
+    "speaker_hypothesis": "Opening_officer_reference",
+    "voice_similarities": {
+      "Target_Speaker": -0.07977627962827682,
+      "Opening_officer_reference": 0.25320425629615784
+    },
+    "reason": "Tentative voice-reference match",
+    "review_required": true
+  },
+  {
+    "start": 683.495,
+    "end": 683.755,
+    "text": "There.",
+    "speaker_hypothesis": "Uncertain",
+    "voice_similarities": {},
+    "reason": "Too short for reliable embedding",
+    "review_required": true
+  },
+  {
+    "start": 684.776,
+    "end": 685.677,
+    "text": "I have a driver's license.",
+    "speaker_hypothesis": "Target_Speaker",
+    "voice_similarities": {
+      "Target_Speaker": 0.33866798877716064,
+      "Opening_officer_reference": -0.14142006635665894
+    },
+    "reason": "Tentative voice-reference match",
+    "review_required": true
+  },
+  {
+    "start": 685.737,
+    "end": 686.737,
+    "text": "I didn't give you any fake information.",
+    "speaker_hypothesis": "Target_Speaker",
+    "voice_similarities": {
+      "Target_Speaker": 0.3005618453025818,
+      "Opening_officer_reference": 0.21113789081573486
+    },
+    "reason": "Tentative voice-reference match",
+    "review_required": true
+  },
+  {
+    "start": 686.757,
+    "end": 689.98,
+    "text": "If you have a driver's license,",
+    "speaker_hypothesis": "Uncertain",
+    "voice_similarities": {
+      "Target_Speaker": 0.016429005190730095,
+      "Opening_officer_reference": 0.16893190145492554
+    },
+    "reason": "Weak or conflicting reference matches; may be another voice",
+    "review_required": true
+  }
+]
