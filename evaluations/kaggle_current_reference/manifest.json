@@ -1,0 +1,15 @@
+{
+  "code_sha256": {
+    "chainofrules.py": "c979aaac1a74886228e6169a7cc6f181be0241d9df882a072f642fca41fabd3a",
+    "cloud_runtime.py": "36e612be83ef9ec155754b9e0e31e38f4a6a41c074fd043d52df2be19ee53ac9",
+    "test_cloud_runtime.py": "2ca141e52d21d03a12ea65fd2e69fc9d693f71b44ebb9afdeae39f5abf82fe22",
+    "test_short_answers.py": "7f287c7c6012e21f51ede77f5935ba525df1af1269b777c61b617df6c1753fc7",
+    "recover_transcript_gaps.py": "e804d8bfb49edb81efeb42baef44629a7f9563ad291aaa6341ea15fc02703ba6",
+    "test_transcript_gaps.py": "2d3b5595bf210cdc55c1433b4c2210ff62a8b7ab4e0de7a2e32cc2ef46cbebfd"
+  },
+  "reference_sha256": {
+    "voice_embeddings.npy": "f22feac5254c52aad0a69a950011a819e579260a4aa964a29bd37ebb06926809",
+    "face_embeddings.npy": "e06f3840ae1f409f2885673d2658b70b7fb8f2cda9b197b7269d01c34300b76f",
+    "reference.json": "cedd9433d0107d7dc87af33271a2b9c75d3696a03a2ebcca205ed8cf74a0a3ca"
+  }
+}
