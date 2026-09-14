@@ -1,7 +1,7 @@
 import tempfile
 import unittest
 from types import SimpleNamespace
-from cloud_runtime import StageCache, create_face_analyzer
+from cloud_runtime import StageCache, create_face_analyzer, full_audio_chunks, create_full_audio_vad
 
 
 class CloudRuntimeTests(unittest.TestCase):
@@ -35,6 +35,25 @@ class CloudRuntimeTests(unittest.TestCase):
             self.assertEqual(calls[0]["providers"], expected)
             self.assertEqual(calls[1]["ctx_id"], context)
             self.assertEqual(actual["recognition"], ["CPUExecutionProvider"])
+
+
+    def test_full_coverage_has_no_gaps_and_bounds_final_window(self):
+        chunks = full_audio_chunks(65 * 16000, 16000)
+        self.assertEqual(chunks, [{"start": 0, "end": 30}, {"start": 30, "end": 60}, {"start": 60, "end": 65}])
+        for left, right in zip(chunks, chunks[1:]):
+            self.assertEqual(left["end"], right["start"])
+        self.assertAlmostEqual(full_audio_chunks(16001, 16000)[-1]["end"], 1.0000625)
+        with self.assertRaises(ValueError):
+            full_audio_chunks(0, 16000)
+
+    def test_whisperx_adapter_uses_requested_chunk_size(self):
+        import numpy as np
+        adapter = create_full_audio_vad()
+        audio = np.zeros(25 * 16000)
+        self.assertIs(adapter.preprocess_audio(audio), audio)
+        detected = adapter({"waveform": audio, "sample_rate": 16000})
+        self.assertEqual(adapter.merge_chunks(detected, 10, .5, .36),
+            [{"start": 0, "end": 10}, {"start": 10, "end": 20}, {"start": 20, "end": 25}])
 
     def test_pipeline_reuses_stages_voice_and_visual_evidence(self):
         import contextlib
@@ -86,6 +105,15 @@ class CloudRuntimeTests(unittest.TestCase):
                 self.assertEqual(visual.call_count, 1)
                 self.assertEqual(voice_load.call_args.kwargs["run_opts"], {"device": "cpu"})
                 self.assertEqual(cap.release.call_count, 2)
+                # Coverage changes only ASR/alignment caches, not track identity.
+                with patch("sys.argv", argv + ["--transcription-coverage", "full"]):
+                    pipeline.main()
+                self.assertEqual(load.call_count, 2)
+                self.assertIn("vad_model", load.call_args.kwargs)
+                self.assertEqual(align_load.call_count, 2)
+                self.assertEqual(diarize_load.call_count, 1)
+                self.assertEqual(voice.encode_batch.call_count, 2)
+                self.assertEqual(visual.call_count, 1)
 
 
 if __name__ == "__main__":

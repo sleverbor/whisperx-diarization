@@ -114,3 +114,7 @@ The transcript wording still needs audio verification, and general accuracy rema
 ## Full-video cloud test
 
 See [KAGGLE.md](KAGGLE.md) and `kaggle_full_video.ipynb` for the private GPU runner.
+
+## Experimental transcription coverage
+
+See [COVERAGE_TEST.md](COVERAGE_TEST.md) and `diarization_coverage_compare.ipynb` for paired short-clip tests.

@@ -14,7 +14,7 @@ from pathlib import Path
 from importlib.metadata import version
 import pandas as pd
 import onnxruntime as ort
-from cloud_runtime import StageCache, file_digest, create_face_analyzer
+from cloud_runtime import StageCache, file_digest, create_face_analyzer, create_full_audio_vad
 from dataclasses import dataclass, field, asdict
 import cv2
 import numpy as np
@@ -371,6 +371,8 @@ def main():
     parser.add_argument("--output", default="diarization_evidence.json")
     parser.add_argument("--batch-size", type=int, default=16)
     parser.add_argument("--cache-dir", help="Reuse completed stages for matching inputs/code/runtime")
+    parser.add_argument("--transcription-coverage", choices=("vad", "full"), default="vad",
+                        help="Experimental full coverage includes noise/silence; review for hallucinations")
     args = parser.parse_args()
     if args.batch_size < 1:
         parser.error("--batch-size must be positive")
@@ -440,14 +442,15 @@ def main():
     # =====================================================================
     print("⏳ Processing WhisperX Text Script...")
     def transcribe():
-        model = whisperx.load_model("large-v2", device, compute_type=compute_type)
+        options = {"vad_model": create_full_audio_vad()} if args.transcription_coverage == "full" else {}
+        model = whisperx.load_model("large-v2", device, compute_type=compute_type, **options)
         try:
             return model.transcribe(audio_loaded, batch_size=args.batch_size)
         finally:
             del model
             release_gpu()
 
-    asr_result = cache.get("transcription", transcribe)
+    asr_result = cache.get("transcription_" + args.transcription_coverage, transcribe)
 
     def align():
         model, metadata = whisperx.load_align_model(language_code=asr_result["language"], device=device)
@@ -458,7 +461,7 @@ def main():
             del model
             release_gpu()
 
-    aligned_result = cache.get("alignment", align)
+    aligned_result = cache.get("alignment_" + args.transcription_coverage, align)
     print("⏳ Generating Unsupervised Voice Tracks...")
 
     def diarize():
@@ -615,7 +618,8 @@ def main():
         with open(args.output, "w", encoding="utf-8") as output:
             json.dump({"target_candidate": target_track, "cluster_voice_means": means,
                        "mapping_strength": mapping_confidence,
-                       "runtime": {"device": device, "face_providers": face_providers},
+                       "runtime": {"device": device, "face_providers": face_providers,
+                                   "transcription_coverage": args.transcription_coverage},
                        "confidence_is_calibrated": False,
                        "segments": [asdict(segment) for segment in timeline]}, output, indent=2, ensure_ascii=False)
     finally:

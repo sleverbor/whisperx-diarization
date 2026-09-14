@@ -62,3 +62,31 @@ def create_face_analyzer(device, ort, factory):
     if device == "cuda" and (not actual or any("CUDAExecutionProvider" not in value for value in actual.values())):
         print("WARNING: one or more face models are using CPU; check onnxruntime-gpu/CUDA libraries.")
     return analyzer, actual
+
+
+def full_audio_chunks(sample_count, sample_rate, chunk_size=30):
+    """Cover every sample with bounded windows; do not infer whether it is speech."""
+    if sample_count <= 0 or sample_rate <= 0 or chunk_size <= 0:
+        raise ValueError("Audio length, sample rate and chunk size must be positive")
+    step = max(1, int(sample_rate * chunk_size))
+    return [{"start": left / sample_rate, "end": min(left + step, sample_count) / sample_rate}
+            for left in range(0, sample_count, step)]
+
+
+def create_full_audio_vad():
+    """WhisperX coverage adapter for controlled experiments, not a speech detector."""
+    from whisperx.vads.vad import Vad
+
+    class FullAudio(Vad):
+        @staticmethod
+        def preprocess_audio(audio):
+            return audio
+
+        def __call__(self, inputs):
+            return {"sample_count": len(inputs["waveform"]), "sample_rate": inputs["sample_rate"]}
+
+        @staticmethod
+        def merge_chunks(segments, chunk_size, onset, offset):
+            return full_audio_chunks(segments["sample_count"], segments["sample_rate"], chunk_size)
+
+    return FullAudio(.5)
