@@ -1,0 +1,36 @@
+{
+  "model": "large-v2",
+  "device": "cpu",
+  "language": "en",
+  "vad_filter": false,
+  "beam_size": 5,
+  "condition_on_previous_text": false,
+  "word_timestamps": true,
+  "source_offset_seconds": 640.0,
+  "samples_16000": {
+    "original": 400000,
+    "vocals": 400000,
+    "residual": 400000
+  },
+  "reconstruction_max_error": 2.5331974029541016e-07,
+  "runs": {
+    "original": {
+      "elapsed_seconds": 45.734576859977096,
+      "segments": 9
+    },
+    "vocals": {
+      "elapsed_seconds": 48.15017101005651,
+      "segments": 9
+    },
+    "residual": {
+      "elapsed_seconds": 62.7104165579658,
+      "segments": 1
+    }
+  },
+  "versions": {
+    "demucs": "4.1.0",
+    "faster-whisper": "1.2.1",
+    "torch": "2.8.0",
+    "soundfile": "0.14.0"
+  }
+}

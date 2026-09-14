@@ -1,0 +1,69 @@
+{
+  "source_offset_seconds": 640.0,
+  "segments": [
+    {
+      "start": 23.580000000000002,
+      "end": 24.98,
+      "text": " I'll see you in the next video, bye bye.",
+      "avg_logprob": -1.2995683774352074,
+      "no_speech_prob": 0.5636118054389954,
+      "compression_ratio": 0.8888888888888888,
+      "words": [
+        {
+          "start": 23.580000000000002,
+          "end": 24.98,
+          "word": " I'll",
+          "probability": 0.03359067998826504
+        },
+        {
+          "start": 24.98,
+          "end": 24.98,
+          "word": " see",
+          "probability": 0.1507152020931244
+        },
+        {
+          "start": 24.98,
+          "end": 24.98,
+          "word": " you",
+          "probability": 0.7486464977264404
+        },
+        {
+          "start": 24.98,
+          "end": 24.98,
+          "word": " in",
+          "probability": 0.20482270419597626
+        },
+        {
+          "start": 24.98,
+          "end": 24.98,
+          "word": " the",
+          "probability": 0.19858528673648834
+        },
+        {
+          "start": 24.98,
+          "end": 24.98,
+          "word": " next",
+          "probability": 0.1619819700717926
+        },
+        {
+          "start": 24.98,
+          "end": 24.98,
+          "word": " video,",
+          "probability": 0.47717544436454773
+        },
+        {
+          "start": 24.98,
+          "end": 24.98,
+          "word": " bye",
+          "probability": 0.4079778790473938
+        },
+        {
+          "start": 24.98,
+          "end": 24.98,
+          "word": " bye.",
+          "probability": 0.5343495719134808
+        }
+      ]
+    }
+  ]
+}

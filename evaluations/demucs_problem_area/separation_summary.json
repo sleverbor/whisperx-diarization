@@ -1,0 +1,12 @@
+{
+  "model": "htdemucs",
+  "device": "cpu",
+  "shifts": 1,
+  "seed": 0,
+  "sample_rate": 44100,
+  "samples": 1102500,
+  "reconstruction_error": 0.0,
+  "vocals_peak": 1.0121350288391113,
+  "elapsed_seconds": 37.20882945600897,
+  "saving": "soundfile FLOAT, no clipping or rescaling"
+}
