@@ -1,0 +1,23 @@
+Whole-video GPU result; original source timestamps and speaker tracks.
+[620.85-629.86] SPEAKER_07 (strength=1.00): Well, you can't do that while disturbing the peace and loitering around businesses, causing concern and suspicion.
+[630.68-631.28] SPEAKER_07 (strength=0.68): It's against the law.
+[633.74-634.57] SPEAKER_07 (strength=0.80): What's your date of birth, son?
+[634.90-635.66] SPEAKER_07 (strength=0.30): March 17, 2002.
+[636.35-639.85] SPEAKER_07 (strength=0.75): You got tattoos on both arms?
+[639.91-640.39] SPEAKER_07 (strength=0.61): Anywhere else?
+[640.73-641.53] SPEAKER_07 (strength=0.72): Yeah, on my chest.
+[642.81-645.05] SPEAKER_07 (strength=0.74): On my ribs.
+[645.61-646.75] SPEAKER_07 (strength=0.49): Nothing gang, anything?
+[648.17-649.36] NonTarget_Unknown (strength=0.63): That's all of you.
+[665.29-670.88] SPEAKER_07 (strength=0.89): Number 11, no record from Mississippi or Massachusetts.
+[671.00-671.44] SPEAKER_08 (strength=0.59): Number 8.
+[672.42-673.28] SPEAKER_07 (strength=0.82): So is that a fake name?
+[674.14-674.32] SPEAKER_07 (strength=0.30): No.
+[675.78-676.92] SPEAKER_07 (strength=0.97): You're just not in the system anywhere?
+[677.50-679.19] Target_Speaker (strength=0.44): I don't get found guilty of anything.
+[679.55-680.63] SPEAKER_07 (strength=0.94): Do you have a driver's license?
+[680.75-681.79] Target_Speaker (strength=0.68): I do have a driver's license.
+[681.81-682.89] SPEAKER_07 (strength=0.94): Then you should be in the system.
+[684.77-685.67] Target_Speaker (strength=0.55): I have a driver's license.
+[685.73-687.23] Target_Speaker (strength=0.64): I didn't give you any fake information.
+[689.91-698.95] Target_Speaker (strength=1.00): If you'd like me to have my driver's license dropped off here at the entrance of the jail, I could have that done if that makes it easier to identify myself.
