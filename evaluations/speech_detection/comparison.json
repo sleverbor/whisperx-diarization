@@ -1,0 +1,193 @@
+{
+  "region": [
+    1090,
+    1150
+  ],
+  "silero_options": {
+    "minimum_speech_ms": 100,
+    "minimum_silence_ms": 200,
+    "padding_ms": 0
+  },
+  "rows": [
+    {
+      "start": 1090.653,
+      "end": 1094.219,
+      "text": "My behavior is kind of a reflection of theirs, so I wouldn't agree more.",
+      "pyannote_coverage": 1.0,
+      "silero_coverage": {
+        "0.5": 1.0,
+        "0.35": 1.0,
+        "0.2": 1.0
+      }
+    },
+    {
+      "start": 1094.681,
+      "end": 1095.437,
+      "text": "I couldn't agree more.",
+      "pyannote_coverage": 0.0,
+      "silero_coverage": {
+        "0.5": 1.0,
+        "0.35": 1.0,
+        "0.2": 1.0
+      }
+    },
+    {
+      "start": 1098.202,
+      "end": 1099.216,
+      "text": "Couldn't agree a syllable more.",
+      "pyannote_coverage": 0.0,
+      "silero_coverage": {
+        "0.5": 0.9151873767258171,
+        "0.35": 0.946745562130086,
+        "0.2": 1.0
+      }
+    },
+    {
+      "start": 1102.56,
+      "end": 1105.749,
+      "text": "It's fun to get them off.",
+      "pyannote_coverage": 0.0,
+      "silero_coverage": {
+        "0.5": 0.7190341799936771,
+        "0.35": 0.7290686735653774,
+        "0.2": 0.9096895578551258
+      }
+    },
+    {
+      "start": 1106.09,
+      "end": 1107.213,
+      "text": "No, that's not the problem.",
+      "pyannote_coverage": 0.0,
+      "silero_coverage": {
+        "0.5": 1.0,
+        "0.35": 1.0,
+        "0.2": 1.0
+      }
+    },
+    {
+      "start": 1107.774,
+      "end": 1108.296,
+      "text": "They pee.",
+      "pyannote_coverage": 0.0,
+      "silero_coverage": {
+        "0.5": 0.9655172413792653,
+        "0.35": 0.9655172413792653,
+        "0.2": 1.0
+      }
+    },
+    {
+      "start": 1108.617,
+      "end": 1109.419,
+      "text": "It just got stuck.",
+      "pyannote_coverage": 0.8189292394016355,
+      "silero_coverage": {
+        "0.5": 1.0,
+        "0.35": 1.0,
+        "0.2": 1.0
+      }
+    },
+    {
+      "start": 1112.3,
+      "end": 1118.679,
+      "text": "I don't want to mess with your cuffs or mess them up or anything, but let's have a look.",
+      "pyannote_coverage": 0.5555337827245606,
+      "silero_coverage": {
+        "0.5": 0.45148142342060654,
+        "0.35": 0.5267283273240053,
+        "0.2": 0.546794168364945
+      }
+    },
+    {
+      "start": 1121.779,
+      "end": 1122.259,
+      "text": "Sounds like a lot of fun.",
+      "pyannote_coverage": 0.0,
+      "silero_coverage": {
+        "0.5": 0.0,
+        "0.35": 0.27291666666683445,
+        "0.2": 0.40624999999985195
+      }
+    },
+    {
+      "start": 1124.16,
+      "end": 1126.618,
+      "text": "We're not trying to tie someone, we're trying to get the key out of them.",
+      "pyannote_coverage": 0.0,
+      "silero_coverage": {
+        "0.5": 1.0,
+        "0.35": 1.0,
+        "0.2": 1.0
+      }
+    },
+    {
+      "start": 1127.9,
+      "end": 1128.317,
+      "text": "Oh, sorry.",
+      "pyannote_coverage": 0.0,
+      "silero_coverage": {
+        "0.5": 0.7218225419664059,
+        "0.35": 0.7985611510794975,
+        "0.2": 0.7985611510794975
+      }
+    },
+    {
+      "start": 1130.872,
+      "end": 1135.77,
+      "text": "I might need to get a new key, there might be something off with this one, because I just had an issue with that fella I got in.",
+      "pyannote_coverage": 0.41846799714169775,
+      "silero_coverage": {
+        "0.5": 0.9624336463862857,
+        "0.35": 0.9885667619436885,
+        "0.2": 1.0
+      }
+    },
+    {
+      "start": 1136.912,
+      "end": 1139.8310000000001,
+      "text": "Put this arm on the wall in front of you and that could have cut him off.",
+      "pyannote_coverage": 0.9776571599863024,
+      "silero_coverage": {
+        "0.5": 0.9780746831106283,
+        "0.35": 0.9780746831106283,
+        "0.2": 0.9890373415553531
+      }
+    },
+    {
+      "start": 1140.671,
+      "end": 1146.337,
+      "text": "That guy I just searched in that had the shackles, it had a little bit of difficulty opening up one of the shackles.",
+      "pyannote_coverage": 1.0,
+      "silero_coverage": {
+        "0.5": 0.9969996470172868,
+        "0.35": 0.9969996470172868,
+        "0.2": 0.9969996470172868
+      }
+    },
+    {
+      "start": 1146.939,
+      "end": 1148.3980000000001,
+      "text": "I think I got to get a new key then.",
+      "pyannote_coverage": 1.0,
+      "silero_coverage": {
+        "0.5": 1.0,
+        "0.35": 1.0,
+        "0.2": 1.0
+      }
+    }
+  ],
+  "digital_silence_control_passed": true,
+  "noise_candidate": {
+    "source_region": {
+      "start": 1100.0,
+      "end": 1102.0
+    },
+    "verified_speech_free": false,
+    "coverage": {
+      "0.5": 0.0,
+      "0.35": 0.0,
+      "0.2": 0.0
+    }
+  },
+  "coverage_is_not_accuracy": true,
+  "baseline_unchanged": true
+}
