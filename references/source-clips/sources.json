@@ -1,0 +1,43 @@
+{
+  "sources": [
+    {
+      "path": "source1_h264.mp4",
+      "url": "https://www.youtube.com/watch?v=jPebJwpIk4E",
+      "original_start_seconds": 0,
+      "offset_seconds": 0,
+      "duration_seconds": 30,
+      "face_roi": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "path": "source2_h264.mp4",
+      "url": "https://www.youtube.com/watch?v=sAkegc0fpS4",
+      "original_start_seconds": 10,
+      "offset_seconds": 0,
+      "duration_seconds": 30,
+      "face_roi": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "path": "source3_h264.mp4",
+      "url": "https://www.youtube.com/watch?v=ATiw41BT2o4",
+      "original_start_seconds": 0,
+      "offset_seconds": 0,
+      "duration_seconds": 30,
+      "face_roi": [
+        0,
+        0,
+        1,
+        0.5
+      ]
+    }
+  ]
+}

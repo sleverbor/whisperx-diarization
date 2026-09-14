@@ -1,0 +1,631 @@
+{
+  "voice": {
+    "anchor_row": 5,
+    "accepted_rows": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "excluded_rows": [
+      11
+    ],
+    "similarity_to_anchor": {
+      "0": 0.6584827899932861,
+      "1": 0.6593937873840332,
+      "2": 0.6885284781455994,
+      "3": 0.674271821975708,
+      "4": 0.7761543989181519,
+      "5": 1.0,
+      "6": 0.7910839915275574,
+      "7": 0.661964476108551,
+      "8": 0.7427387237548828,
+      "9": 0.7904856204986572,
+      "10": 0.7735282778739929,
+      "11": 0.2386450469493866,
+      "12": 0.7032325267791748,
+      "13": 0.6711817383766174,
+      "14": 0.6007311344146729,
+      "15": 0.6596139669418335,
+      "16": 0.4729231297969818,
+      "17": 0.6080156564712524,
+      "18": 0.6035195589065552
+    },
+    "minimum_similarity": 0.45,
+    "sample_provenance": [
+      {
+        "source": "https://www.youtube.com/watch?v=jPebJwpIk4E",
+        "start": 0.0,
+        "end": 4.0,
+        "speech_fraction": 1.0
+      },
+      {
+        "source": "https://www.youtube.com/watch?v=jPebJwpIk4E",
+        "start": 4.0,
+        "end": 8.0,
+        "speech_fraction": 1.0
+      },
+      {
+        "source": "https://www.youtube.com/watch?v=jPebJwpIk4E",
+        "start": 8.0,
+        "end": 12.0,
+        "speech_fraction": 1.0
+      },
+      {
+        "source": "https://www.youtube.com/watch?v=jPebJwpIk4E",
+        "start": 24.0,
+        "end": 28.0,
+        "speech_fraction": 1.0
+      },
+      {
+        "source": "https://www.youtube.com/watch?v=sAkegc0fpS4",
+        "start": 0.0,
+        "end": 4.0,
+        "speech_fraction": 1.0
+      },
+      {
+        "source": "https://www.youtube.com/watch?v=sAkegc0fpS4",
+        "start": 4.0,
+        "end": 8.0,
+        "speech_fraction": 1.0
+      },
+      {
+        "source": "https://www.youtube.com/watch?v=sAkegc0fpS4",
+        "start": 8.0,
+        "end": 12.0,
+        "speech_fraction": 1.0
+      },
+      {
+        "source": "https://www.youtube.com/watch?v=sAkegc0fpS4",
+        "start": 12.0,
+        "end": 16.0,
+        "speech_fraction": 1.0
+      },
+      {
+        "source": "https://www.youtube.com/watch?v=sAkegc0fpS4",
+        "start": 16.0,
+        "end": 20.0,
+        "speech_fraction": 1.0
+      },
+      {
+        "source": "https://www.youtube.com/watch?v=sAkegc0fpS4",
+        "start": 20.0,
+        "end": 24.0,
+        "speech_fraction": 1.0
+      },
+      {
+        "source": "https://www.youtube.com/watch?v=sAkegc0fpS4",
+        "start": 24.0,
+        "end": 28.0,
+        "speech_fraction": 1.0
+      },
+      {
+        "source": "https://www.youtube.com/watch?v=sAkegc0fpS4",
+        "start": 28.0,
+        "end": 30.0,
+        "speech_fraction": 1.0
+      },
+      {
+        "source": "https://www.youtube.com/watch?v=ATiw41BT2o4",
+        "start": 0.0,
+        "end": 4.0,
+        "speech_fraction": 1.0
+      },
+      {
+        "source": "https://www.youtube.com/watch?v=ATiw41BT2o4",
+        "start": 4.0,
+        "end": 8.0,
+        "speech_fraction": 1.0
+      },
+      {
+        "source": "https://www.youtube.com/watch?v=ATiw41BT2o4",
+        "start": 8.0,
+        "end": 12.0,
+        "speech_fraction": 1.0
+      },
+      {
+        "source": "https://www.youtube.com/watch?v=ATiw41BT2o4",
+        "start": 12.0,
+        "end": 16.0,
+        "speech_fraction": 1.0
+      },
+      {
+        "source": "https://www.youtube.com/watch?v=ATiw41BT2o4",
+        "start": 16.0,
+        "end": 20.0,
+        "speech_fraction": 1.0
+      },
+      {
+        "source": "https://www.youtube.com/watch?v=ATiw41BT2o4",
+        "start": 20.0,
+        "end": 24.0,
+        "speech_fraction": 1.0
+      },
+      {
+        "source": "https://www.youtube.com/watch?v=ATiw41BT2o4",
+        "start": 24.0,
+        "end": 28.0,
+        "speech_fraction": 1.0
+      }
+    ]
+  },
+  "face": {
+    "anchor_row": 6,
+    "accepted_rows": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33
+    ],
+    "excluded_rows": [
+      12
+    ],
+    "similarity_to_anchor": {
+      "0": 0.9302159547805786,
+      "1": 0.722030758857727,
+      "2": 0.9223388433456421,
+      "3": 0.9300636649131775,
+      "4": 0.9390357732772827,
+      "5": 0.9489903450012207,
+      "6": 1.0,
+      "7": 0.9541254043579102,
+      "8": 0.6763224601745605,
+      "9": 0.7413761615753174,
+      "10": 0.7540683746337891,
+      "11": 0.7811638712882996,
+      "12": 0.4497740864753723,
+      "13": 0.7520511746406555,
+      "14": 0.7010228633880615,
+      "15": 0.7402189373970032,
+      "16": 0.6991727352142334,
+      "17": 0.7740951180458069,
+      "18": 0.702531099319458,
+      "19": 0.7228758335113525,
+      "20": 0.6803135871887207,
+      "21": 0.6888223886489868,
+      "22": 0.5994078516960144,
+      "23": 0.5284961462020874,
+      "24": 0.6179863214492798,
+      "25": 0.6049845814704895,
+      "26": 0.5903407335281372,
+      "27": 0.6110228300094604,
+      "28": 0.5943287014961243,
+      "29": 0.5398817658424377,
+      "30": 0.6238495111465454,
+      "31": 0.6237165927886963,
+      "32": 0.6205103397369385,
+      "33": 0.5750705003738403
+    },
+    "minimum_similarity": 0.45,
+    "sample_provenance": [
+      {
+        "source": "https://www.youtube.com/watch?v=jPebJwpIk4E",
+        "timestamp": 0.0,
+        "roi": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "https://www.youtube.com/watch?v=jPebJwpIk4E",
+        "timestamp": 2.5,
+        "roi": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "https://www.youtube.com/watch?v=jPebJwpIk4E",
+        "timestamp": 5.0,
+        "roi": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "https://www.youtube.com/watch?v=jPebJwpIk4E",
+        "timestamp": 7.5,
+        "roi": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "https://www.youtube.com/watch?v=jPebJwpIk4E",
+        "timestamp": 10.0,
+        "roi": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "https://www.youtube.com/watch?v=jPebJwpIk4E",
+        "timestamp": 12.5,
+        "roi": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "https://www.youtube.com/watch?v=jPebJwpIk4E",
+        "timestamp": 15.0,
+        "roi": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "https://www.youtube.com/watch?v=jPebJwpIk4E",
+        "timestamp": 17.5,
+        "roi": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "https://www.youtube.com/watch?v=jPebJwpIk4E",
+        "timestamp": 20.0,
+        "roi": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "https://www.youtube.com/watch?v=jPebJwpIk4E",
+        "timestamp": 22.5,
+        "roi": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "https://www.youtube.com/watch?v=jPebJwpIk4E",
+        "timestamp": 25.0,
+        "roi": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "https://www.youtube.com/watch?v=jPebJwpIk4E",
+        "timestamp": 27.5,
+        "roi": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "https://www.youtube.com/watch?v=sAkegc0fpS4",
+        "timestamp": 0.0,
+        "roi": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "https://www.youtube.com/watch?v=sAkegc0fpS4",
+        "timestamp": 7.5,
+        "roi": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "https://www.youtube.com/watch?v=sAkegc0fpS4",
+        "timestamp": 10.0,
+        "roi": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "https://www.youtube.com/watch?v=sAkegc0fpS4",
+        "timestamp": 12.5,
+        "roi": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "https://www.youtube.com/watch?v=sAkegc0fpS4",
+        "timestamp": 15.0,
+        "roi": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "https://www.youtube.com/watch?v=sAkegc0fpS4",
+        "timestamp": 17.5,
+        "roi": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "https://www.youtube.com/watch?v=sAkegc0fpS4",
+        "timestamp": 20.0,
+        "roi": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "https://www.youtube.com/watch?v=sAkegc0fpS4",
+        "timestamp": 22.5,
+        "roi": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "https://www.youtube.com/watch?v=sAkegc0fpS4",
+        "timestamp": 25.0,
+        "roi": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "https://www.youtube.com/watch?v=sAkegc0fpS4",
+        "timestamp": 27.5,
+        "roi": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "source": "https://www.youtube.com/watch?v=ATiw41BT2o4",
+        "timestamp": 0.0,
+        "roi": [
+          0,
+          0,
+          1,
+          0.5
+        ]
+      },
+      {
+        "source": "https://www.youtube.com/watch?v=ATiw41BT2o4",
+        "timestamp": 2.5,
+        "roi": [
+          0,
+          0,
+          1,
+          0.5
+        ]
+      },
+      {
+        "source": "https://www.youtube.com/watch?v=ATiw41BT2o4",
+        "timestamp": 5.0,
+        "roi": [
+          0,
+          0,
+          1,
+          0.5
+        ]
+      },
+      {
+        "source": "https://www.youtube.com/watch?v=ATiw41BT2o4",
+        "timestamp": 7.5,
+        "roi": [
+          0,
+          0,
+          1,
+          0.5
+        ]
+      },
+      {
+        "source": "https://www.youtube.com/watch?v=ATiw41BT2o4",
+        "timestamp": 10.0,
+        "roi": [
+          0,
+          0,
+          1,
+          0.5
+        ]
+      },
+      {
+        "source": "https://www.youtube.com/watch?v=ATiw41BT2o4",
+        "timestamp": 12.5,
+        "roi": [
+          0,
+          0,
+          1,
+          0.5
+        ]
+      },
+      {
+        "source": "https://www.youtube.com/watch?v=ATiw41BT2o4",
+        "timestamp": 15.0,
+        "roi": [
+          0,
+          0,
+          1,
+          0.5
+        ]
+      },
+      {
+        "source": "https://www.youtube.com/watch?v=ATiw41BT2o4",
+        "timestamp": 17.5,
+        "roi": [
+          0,
+          0,
+          1,
+          0.5
+        ]
+      },
+      {
+        "source": "https://www.youtube.com/watch?v=ATiw41BT2o4",
+        "timestamp": 20.0,
+        "roi": [
+          0,
+          0,
+          1,
+          0.5
+        ]
+      },
+      {
+        "source": "https://www.youtube.com/watch?v=ATiw41BT2o4",
+        "timestamp": 22.5,
+        "roi": [
+          0,
+          0,
+          1,
+          0.5
+        ]
+      },
+      {
+        "source": "https://www.youtube.com/watch?v=ATiw41BT2o4",
+        "timestamp": 25.0,
+        "roi": [
+          0,
+          0,
+          1,
+          0.5
+        ]
+      },
+      {
+        "source": "https://www.youtube.com/watch?v=ATiw41BT2o4",
+        "timestamp": 27.5,
+        "roi": [
+          0,
+          0,
+          1,
+          0.5
+        ]
+      }
+    ]
+  },
+  "method": "majority-medoid consistency screening; unverified candidate",
+  "evaluation_audio_used_for_enrollment": false,
+  "source_manifest": {
+    "sources": [
+      {
+        "path": "source1_h264.mp4",
+        "url": "https://www.youtube.com/watch?v=jPebJwpIk4E",
+        "original_start_seconds": 0,
+        "offset_seconds": 0,
+        "duration_seconds": 30,
+        "face_roi": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "path": "source2_h264.mp4",
+        "url": "https://www.youtube.com/watch?v=sAkegc0fpS4",
+        "original_start_seconds": 10,
+        "offset_seconds": 0,
+        "duration_seconds": 30,
+        "face_roi": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "path": "source3_h264.mp4",
+        "url": "https://www.youtube.com/watch?v=ATiw41BT2o4",
+        "original_start_seconds": 0,
+        "offset_seconds": 0,
+        "duration_seconds": 30,
+        "face_roi": [
+          0,
+          0,
+          1,
+          0.5
+        ]
+      }
+    ]
+  }
+}
