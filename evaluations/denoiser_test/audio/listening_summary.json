@@ -1,0 +1,4 @@
+{
+  "common_gain": 0.6567127418386163,
+  "purpose": "Prevent playback clipping while preserving relative levels; ASR input files unchanged"
+}

@@ -1,0 +1,13 @@
+{
+  "original_samples_unchanged": true,
+  "lengths_equal": true,
+  "finite_samples": true,
+  "mix_error": 0.0,
+  "reconstruction_error": 0.0,
+  "peak_amplitudes": {
+    "original": 1.446599006652832,
+    "light": 1.1834046840667725,
+    "full": 1.1221598386764526,
+    "removed": 1.4456408023834229
+  }
+}

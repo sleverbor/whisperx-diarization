@@ -1,0 +1,34 @@
+{
+  "model": "large-v2",
+  "device": "cpu",
+  "language": "en",
+  "vad_filter": false,
+  "beam_size": 5,
+  "condition_on_previous_text": false,
+  "word_timestamps": true,
+  "source_offset_seconds": 640.0,
+  "samples_16000": {
+    "original": 400000,
+    "light": 400000,
+    "full": 400000
+  },
+  "runs": {
+    "original": {
+      "elapsed_seconds": 48.128332726075314,
+      "segments": 9
+    },
+    "light": {
+      "elapsed_seconds": 46.9598739289213,
+      "segments": 9
+    },
+    "full": {
+      "elapsed_seconds": 232.12253666692413,
+      "segments": 14
+    }
+  },
+  "versions": {
+    "faster-whisper": "1.2.1",
+    "torch": "2.8.0",
+    "soundfile": "0.14.0"
+  }
+}

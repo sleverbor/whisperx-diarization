@@ -1,0 +1,11 @@
+{
+  "model": "Meta Denoiser DNS64",
+  "device": "cpu",
+  "wet_fraction": 0.5,
+  "sample_rate": 16000,
+  "samples": 400000,
+  "input_sha256": "000f2cad59167297843bff47769fc04ca1656cfd09bef504380059fe77c26786",
+  "weights_sha256": "a7761ff99a7d5bb69c16a61b3089469805cf3afd82e128103f0f77e79dfead5f",
+  "elapsed_seconds": 26.860707777901553,
+  "save_format": "unclipped FLOAT; no loudness normalization"
+}

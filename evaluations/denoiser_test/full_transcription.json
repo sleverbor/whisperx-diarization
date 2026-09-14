@@ -1,0 +1,433 @@
+{
+  "source_offset_seconds": 640.0,
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 0.5,
+      "text": " No reals?",
+      "avg_logprob": -0.688893031971208,
+      "no_speech_prob": 0.2380220592021942,
+      "compression_ratio": 1.5766871165644172,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.08,
+          "word": " No",
+          "probability": 0.02633475884795189
+        },
+        {
+          "start": 0.08,
+          "end": 0.5,
+          "word": " reals?",
+          "probability": 0.24831591546535492
+        }
+      ]
+    },
+    {
+      "start": 0.74,
+      "end": 1.48,
+      "text": " Yeah, not much else.",
+      "avg_logprob": -0.688893031971208,
+      "no_speech_prob": 0.2380220592021942,
+      "compression_ratio": 1.5766871165644172,
+      "words": [
+        {
+          "start": 0.74,
+          "end": 0.92,
+          "word": " Yeah,",
+          "probability": 0.49869033694267273
+        },
+        {
+          "start": 0.98,
+          "end": 1.08,
+          "word": " not",
+          "probability": 0.14786063134670258
+        },
+        {
+          "start": 1.08,
+          "end": 1.22,
+          "word": " much",
+          "probability": 0.423178106546402
+        },
+        {
+          "start": 1.22,
+          "end": 1.48,
+          "word": " else.",
+          "probability": 0.514585554599762
+        }
+      ]
+    },
+    {
+      "start": 2.94,
+      "end": 4.94,
+      "text": " No, 11, is that a type of number?",
+      "avg_logprob": -0.688893031971208,
+      "no_speech_prob": 0.2380220592021942,
+      "compression_ratio": 1.5766871165644172,
+      "words": [
+        {
+          "start": 2.94,
+          "end": 3.26,
+          "word": " No,",
+          "probability": 0.24660724401474
+        },
+        {
+          "start": 3.26,
+          "end": 3.54,
+          "word": " 11,",
+          "probability": 0.10306042432785034
+        },
+        {
+          "start": 3.88,
+          "end": 4.16,
+          "word": " is",
+          "probability": 0.23106978833675385
+        },
+        {
+          "start": 4.16,
+          "end": 4.36,
+          "word": " that",
+          "probability": 0.872244119644165
+        },
+        {
+          "start": 4.36,
+          "end": 4.52,
+          "word": " a",
+          "probability": 0.17560650408267975
+        },
+        {
+          "start": 4.52,
+          "end": 4.62,
+          "word": " type",
+          "probability": 0.3471917510032654
+        },
+        {
+          "start": 4.62,
+          "end": 4.7,
+          "word": " of",
+          "probability": 0.8853428959846497
+        },
+        {
+          "start": 4.7,
+          "end": 4.94,
+          "word": " number?",
+          "probability": 0.8616777062416077
+        }
+      ]
+    },
+    {
+      "start": 5.5,
+      "end": 6.5,
+      "text": " Nothing gang, anything.",
+      "avg_logprob": -0.688893031971208,
+      "no_speech_prob": 0.2380220592021942,
+      "compression_ratio": 1.5766871165644172,
+      "words": [
+        {
+          "start": 5.5,
+          "end": 5.78,
+          "word": " Nothing",
+          "probability": 0.25705698132514954
+        },
+        {
+          "start": 5.78,
+          "end": 6.16,
+          "word": " gang,",
+          "probability": 0.6484684348106384
+        },
+        {
+          "start": 6.26,
+          "end": 6.5,
+          "word": " anything.",
+          "probability": 0.8187543153762817
+        }
+      ]
+    },
+    {
+      "start": 11.9,
+      "end": 12.6,
+      "text": " That's all of you.",
+      "avg_logprob": -0.688893031971208,
+      "no_speech_prob": 0.2380220592021942,
+      "compression_ratio": 1.5766871165644172,
+      "words": [
+        {
+          "start": 11.9,
+          "end": 12.26,
+          "word": " That's",
+          "probability": 0.6761660277843475
+        },
+        {
+          "start": 12.26,
+          "end": 12.36,
+          "word": " all",
+          "probability": 0.8490394353866577
+        },
+        {
+          "start": 12.36,
+          "end": 12.46,
+          "word": " of",
+          "probability": 0.08101218938827515
+        },
+        {
+          "start": 12.46,
+          "end": 12.6,
+          "word": " you.",
+          "probability": 0.7123917937278748
+        }
+      ]
+    },
+    {
+      "start": 12.96,
+      "end": 14.66,
+      "text": " It's not 10 minutes, it's not 11.",
+      "avg_logprob": -0.688893031971208,
+      "no_speech_prob": 0.2380220592021942,
+      "compression_ratio": 1.5766871165644172,
+      "words": [
+        {
+          "start": 12.96,
+          "end": 13.06,
+          "word": " It's",
+          "probability": 0.536792878061533
+        },
+        {
+          "start": 13.06,
+          "end": 13.16,
+          "word": " not",
+          "probability": 0.2911641597747803
+        },
+        {
+          "start": 13.16,
+          "end": 13.4,
+          "word": " 10",
+          "probability": 0.5131292939186096
+        },
+        {
+          "start": 13.4,
+          "end": 13.7,
+          "word": " minutes,",
+          "probability": 0.6150709986686707
+        },
+        {
+          "start": 14.22,
+          "end": 14.36,
+          "word": " it's",
+          "probability": 0.6862161308526993
+        },
+        {
+          "start": 14.36,
+          "end": 14.36,
+          "word": " not",
+          "probability": 0.7068912982940674
+        },
+        {
+          "start": 14.36,
+          "end": 14.66,
+          "word": " 11.",
+          "probability": 0.9027883410453796
+        }
+      ]
+    },
+    {
+      "start": 15.04,
+      "end": 15.4,
+      "text": " No, sorry.",
+      "avg_logprob": -0.688893031971208,
+      "no_speech_prob": 0.2380220592021942,
+      "compression_ratio": 1.5766871165644172,
+      "words": [
+        {
+          "start": 15.04,
+          "end": 15.22,
+          "word": " No,",
+          "probability": 0.18014709651470184
+        },
+        {
+          "start": 15.28,
+          "end": 15.4,
+          "word": " sorry.",
+          "probability": 0.2895817756652832
+        }
+      ]
+    },
+    {
+      "start": 15.46,
+      "end": 16.9,
+      "text": " Tell the girls, bye, bye.",
+      "avg_logprob": -0.688893031971208,
+      "no_speech_prob": 0.2380220592021942,
+      "compression_ratio": 1.5766871165644172,
+      "words": [
+        {
+          "start": 15.46,
+          "end": 15.64,
+          "word": " Tell",
+          "probability": 0.0346185527741909
+        },
+        {
+          "start": 15.64,
+          "end": 15.72,
+          "word": " the",
+          "probability": 0.29348865151405334
+        },
+        {
+          "start": 15.72,
+          "end": 15.88,
+          "word": " girls,",
+          "probability": 0.6250753402709961
+        },
+        {
+          "start": 15.98,
+          "end": 16.18,
+          "word": " bye,",
+          "probability": 0.5432801842689514
+        },
+        {
+          "start": 16.22,
+          "end": 16.9,
+          "word": " bye.",
+          "probability": 0.18418331444263458
+        }
+      ]
+    },
+    {
+      "start": 18.72,
+      "end": 19.08,
+      "text": " Thanks.",
+      "avg_logprob": -0.688893031971208,
+      "no_speech_prob": 0.2380220592021942,
+      "compression_ratio": 1.5766871165644172,
+      "words": [
+        {
+          "start": 18.72,
+          "end": 19.08,
+          "word": " Thanks.",
+          "probability": 0.13057780265808105
+        }
+      ]
+    },
+    {
+      "start": 21.66,
+      "end": 22.36,
+      "text": " I'm a few in.",
+      "avg_logprob": -0.688893031971208,
+      "no_speech_prob": 0.2380220592021942,
+      "compression_ratio": 1.5766871165644172,
+      "words": [
+        {
+          "start": 21.66,
+          "end": 21.92,
+          "word": " I'm",
+          "probability": 0.7143849432468414
+        },
+        {
+          "start": 21.92,
+          "end": 22.02,
+          "word": " a",
+          "probability": 0.17597752809524536
+        },
+        {
+          "start": 22.02,
+          "end": 22.2,
+          "word": " few",
+          "probability": 0.45925381779670715
+        },
+        {
+          "start": 22.2,
+          "end": 22.36,
+          "word": " in.",
+          "probability": 0.10285292565822601
+        }
+      ]
+    },
+    {
+      "start": 22.74,
+      "end": 23.1,
+      "text": " Sorry?",
+      "avg_logprob": -0.688893031971208,
+      "no_speech_prob": 0.2380220592021942,
+      "compression_ratio": 1.5766871165644172,
+      "words": [
+        {
+          "start": 22.74,
+          "end": 23.1,
+          "word": " Sorry?",
+          "probability": 0.4272870123386383
+        }
+      ]
+    },
+    {
+      "start": 23.24,
+      "end": 23.76,
+      "text": " I'm a few in.",
+      "avg_logprob": -0.688893031971208,
+      "no_speech_prob": 0.2380220592021942,
+      "compression_ratio": 1.5766871165644172,
+      "words": [
+        {
+          "start": 23.24,
+          "end": 23.36,
+          "word": " I'm",
+          "probability": 0.9615218937397003
+        },
+        {
+          "start": 23.36,
+          "end": 23.46,
+          "word": " a",
+          "probability": 0.9528340697288513
+        },
+        {
+          "start": 23.46,
+          "end": 23.6,
+          "word": " few",
+          "probability": 0.8678728342056274
+        },
+        {
+          "start": 23.6,
+          "end": 23.76,
+          "word": " in.",
+          "probability": 0.8494842648506165
+        }
+      ]
+    },
+    {
+      "start": 23.92,
+      "end": 24.28,
+      "text": " 160.",
+      "avg_logprob": -0.688893031971208,
+      "no_speech_prob": 0.2380220592021942,
+      "compression_ratio": 1.5766871165644172,
+      "words": [
+        {
+          "start": 23.92,
+          "end": 24.28,
+          "word": " 160.",
+          "probability": 0.22761160135269165
+        }
+      ]
+    },
+    {
+      "start": 24.28,
+      "end": 24.66,
+      "text": " feels heaven.",
+      "avg_logprob": -1.0999180525541306,
+      "no_speech_prob": 0.41065821051597595,
+      "compression_ratio": 0.6190476190476191,
+      "words": [
+        {
+          "start": 24.28,
+          "end": 24.48,
+          "word": " feels",
+          "probability": 0.23549997806549072
+        },
+        {
+          "start": 24.48,
+          "end": 24.66,
+          "word": " heaven.",
+          "probability": 0.4204139659802119
+        }
+      ]
+    }
+  ]
+}

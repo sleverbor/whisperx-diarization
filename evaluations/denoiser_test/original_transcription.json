@@ -1,0 +1,329 @@
+{
+  "source_offset_seconds": 640.0,
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 3.14,
+      "text": " Yeah, on my chest and my ribs.",
+      "avg_logprob": -0.3494608068936749,
+      "no_speech_prob": 0.06166311353445053,
+      "compression_ratio": 1.3937007874015748,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.86,
+          "word": " Yeah,",
+          "probability": 0.10146353393793106
+        },
+        {
+          "start": 0.96,
+          "end": 1.06,
+          "word": " on",
+          "probability": 0.5420179963111877
+        },
+        {
+          "start": 1.06,
+          "end": 1.16,
+          "word": " my",
+          "probability": 0.8989588022232056
+        },
+        {
+          "start": 1.16,
+          "end": 1.48,
+          "word": " chest",
+          "probability": 0.8052077889442444
+        },
+        {
+          "start": 1.48,
+          "end": 2.88,
+          "word": " and",
+          "probability": 0.10778097063302994
+        },
+        {
+          "start": 2.88,
+          "end": 3.02,
+          "word": " my",
+          "probability": 0.8601680397987366
+        },
+        {
+          "start": 3.02,
+          "end": 3.14,
+          "word": " ribs.",
+          "probability": 0.8114996552467346
+        }
+      ]
+    },
+    {
+      "start": 5.28,
+      "end": 6.52,
+      "text": " Nothing gang, anything.",
+      "avg_logprob": -0.3494608068936749,
+      "no_speech_prob": 0.06166311353445053,
+      "compression_ratio": 1.3937007874015748,
+      "words": [
+        {
+          "start": 5.28,
+          "end": 5.72,
+          "word": " Nothing",
+          "probability": 0.34754106402397156
+        },
+        {
+          "start": 5.72,
+          "end": 6.16,
+          "word": " gang,",
+          "probability": 0.7790894508361816
+        },
+        {
+          "start": 6.24,
+          "end": 6.52,
+          "word": " anything.",
+          "probability": 0.7944343686103821
+        }
+      ]
+    },
+    {
+      "start": 11.88,
+      "end": 12.58,
+      "text": " How tall are you?",
+      "avg_logprob": -0.3494608068936749,
+      "no_speech_prob": 0.06166311353445053,
+      "compression_ratio": 1.3937007874015748,
+      "words": [
+        {
+          "start": 11.88,
+          "end": 12.1,
+          "word": " How",
+          "probability": 0.3160175681114197
+        },
+        {
+          "start": 12.1,
+          "end": 12.32,
+          "word": " tall",
+          "probability": 0.8268070220947266
+        },
+        {
+          "start": 12.32,
+          "end": 12.42,
+          "word": " are",
+          "probability": 0.9009552597999573
+        },
+        {
+          "start": 12.42,
+          "end": 12.58,
+          "word": " you?",
+          "probability": 0.8839327096939087
+        }
+      ]
+    },
+    {
+      "start": 12.86,
+      "end": 14.66,
+      "text": " 5'10 and a half, 5'11.",
+      "avg_logprob": -0.3494608068936749,
+      "no_speech_prob": 0.06166311353445053,
+      "compression_ratio": 1.3937007874015748,
+      "words": [
+        {
+          "start": 12.86,
+          "end": 13.18,
+          "word": " 5",
+          "probability": 0.8410074710845947
+        },
+        {
+          "start": 13.18,
+          "end": 13.38,
+          "word": "'10",
+          "probability": 0.7858721017837524
+        },
+        {
+          "start": 13.38,
+          "end": 13.5,
+          "word": " and",
+          "probability": 0.20278114080429077
+        },
+        {
+          "start": 13.5,
+          "end": 13.54,
+          "word": " a",
+          "probability": 0.903192400932312
+        },
+        {
+          "start": 13.54,
+          "end": 13.72,
+          "word": " half,",
+          "probability": 0.8259273767471313
+        },
+        {
+          "start": 14.1,
+          "end": 14.36,
+          "word": " 5",
+          "probability": 0.9574131369590759
+        },
+        {
+          "start": 14.36,
+          "end": 14.66,
+          "word": "'11.",
+          "probability": 0.9855444133281708
+        }
+      ]
+    },
+    {
+      "start": 15.18,
+      "end": 17.22,
+      "text": " Tall girls, 5'11, 5'10.",
+      "avg_logprob": -0.3494608068936749,
+      "no_speech_prob": 0.06166311353445053,
+      "compression_ratio": 1.3937007874015748,
+      "words": [
+        {
+          "start": 15.18,
+          "end": 15.62,
+          "word": " Tall",
+          "probability": 0.35617560148239136
+        },
+        {
+          "start": 15.62,
+          "end": 15.88,
+          "word": " girls,",
+          "probability": 0.7030658721923828
+        },
+        {
+          "start": 15.96,
+          "end": 16.14,
+          "word": " 5",
+          "probability": 0.9913198351860046
+        },
+        {
+          "start": 16.14,
+          "end": 16.44,
+          "word": "'11,",
+          "probability": 0.9633137285709381
+        },
+        {
+          "start": 16.68,
+          "end": 16.98,
+          "word": " 5",
+          "probability": 0.9339184761047363
+        },
+        {
+          "start": 16.98,
+          "end": 17.22,
+          "word": "'10.",
+          "probability": 0.9927896559238434
+        }
+      ]
+    },
+    {
+      "start": 21.42,
+      "end": 22.32,
+      "text": " How much do you weigh?",
+      "avg_logprob": -0.3494608068936749,
+      "no_speech_prob": 0.06166311353445053,
+      "compression_ratio": 1.3937007874015748,
+      "words": [
+        {
+          "start": 21.42,
+          "end": 21.86,
+          "word": " How",
+          "probability": 0.5867904424667358
+        },
+        {
+          "start": 21.86,
+          "end": 22.04,
+          "word": " much",
+          "probability": 0.8149822950363159
+        },
+        {
+          "start": 22.04,
+          "end": 22.18,
+          "word": " do",
+          "probability": 0.7534505724906921
+        },
+        {
+          "start": 22.18,
+          "end": 22.3,
+          "word": " you",
+          "probability": 0.8793250322341919
+        },
+        {
+          "start": 22.3,
+          "end": 22.32,
+          "word": " weigh?",
+          "probability": 0.879660427570343
+        }
+      ]
+    },
+    {
+      "start": 22.7,
+      "end": 23.08,
+      "text": " Sorry?",
+      "avg_logprob": -0.3494608068936749,
+      "no_speech_prob": 0.06166311353445053,
+      "compression_ratio": 1.3937007874015748,
+      "words": [
+        {
+          "start": 22.7,
+          "end": 23.08,
+          "word": " Sorry?",
+          "probability": 0.4527478516101837
+        }
+      ]
+    },
+    {
+      "start": 23.24,
+      "end": 23.74,
+      "text": " How much do you weigh?",
+      "avg_logprob": -0.3494608068936749,
+      "no_speech_prob": 0.06166311353445053,
+      "compression_ratio": 1.3937007874015748,
+      "words": [
+        {
+          "start": 23.24,
+          "end": 23.34,
+          "word": " How",
+          "probability": 0.8158867359161377
+        },
+        {
+          "start": 23.34,
+          "end": 23.48,
+          "word": " much",
+          "probability": 0.8144589066505432
+        },
+        {
+          "start": 23.48,
+          "end": 23.6,
+          "word": " do",
+          "probability": 0.8937252759933472
+        },
+        {
+          "start": 23.6,
+          "end": 23.64,
+          "word": " you",
+          "probability": 0.895334005355835
+        },
+        {
+          "start": 23.64,
+          "end": 23.74,
+          "word": " weigh?",
+          "probability": 0.8306540250778198
+        }
+      ]
+    },
+    {
+      "start": 23.86,
+      "end": 24.3,
+      "text": " 160.",
+      "avg_logprob": -0.3494608068936749,
+      "no_speech_prob": 0.06166311353445053,
+      "compression_ratio": 1.3937007874015748,
+      "words": [
+        {
+          "start": 23.86,
+          "end": 24.3,
+          "word": " 160.",
+          "probability": 0.7081436514854431
+        }
+      ]
+    }
+  ]
+}
