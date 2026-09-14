@@ -1,0 +1,210 @@
+[
+  {
+    "start": 1090.653,
+    "end": 1093.237,
+    "raw_track": "SPEAKER_02",
+    "speaker_hypothesis": "Target_Speaker",
+    "text": "My behavior is kind of a reflection of theirs, so",
+    "review_required": true
+  },
+  {
+    "start": 1093.257,
+    "end": 1093.277,
+    "raw_track": "Uncertain",
+    "speaker_hypothesis": "Uncertain",
+    "text": "I",
+    "review_required": true
+  },
+  {
+    "start": 1093.297,
+    "end": 1094.219,
+    "raw_track": "SPEAKER_02",
+    "speaker_hypothesis": "Target_Speaker",
+    "text": "wouldn't agree more.",
+    "review_required": true
+  },
+  {
+    "start": 1094.681,
+    "end": 1095.437,
+    "raw_track": "Uncertain",
+    "speaker_hypothesis": "Uncertain",
+    "text": "I couldn't agree more.",
+    "review_required": true
+  },
+  {
+    "start": 1098.202,
+    "end": 1099.216,
+    "raw_track": "Uncertain",
+    "speaker_hypothesis": "Uncertain",
+    "text": "Couldn't agree a syllable more.",
+    "review_required": true
+  },
+  {
+    "start": 1102.56,
+    "end": 1103.863,
+    "raw_track": "Uncertain",
+    "speaker_hypothesis": "Uncertain",
+    "text": "It's fun to",
+    "review_required": true
+  },
+  {
+    "start": 1104.846,
+    "end": 1108.697,
+    "raw_track": "Uncertain",
+    "speaker_hypothesis": "Uncertain",
+    "text": "get them off. No, that's not the problem. They pee. It",
+    "review_required": true
+  },
+  {
+    "start": 1108.737,
+    "end": 1109.419,
+    "raw_track": "SPEAKER_00",
+    "speaker_hypothesis": "SPEAKER_00",
+    "text": "just got stuck.",
+    "review_required": true
+  },
+  {
+    "start": 1112.3,
+    "end": 1115.79,
+    "raw_track": "SPEAKER_00",
+    "speaker_hypothesis": "SPEAKER_00",
+    "text": "I don't want to mess with your cuffs or mess them up or anything, but let's",
+    "review_required": true
+  },
+  {
+    "start": 1118.157,
+    "end": 1118.679,
+    "raw_track": "Uncertain",
+    "speaker_hypothesis": "Uncertain",
+    "text": "have a look.",
+    "review_required": true
+  },
+  {
+    "start": 1124.16,
+    "end": 1126.618,
+    "raw_track": "Uncertain",
+    "speaker_hypothesis": "Uncertain",
+    "text": "We're not trying to tie someone, we're trying to get the key out of them.",
+    "review_required": true
+  },
+  {
+    "start": 1127.9,
+    "end": 1128.317,
+    "raw_track": "Uncertain",
+    "speaker_hypothesis": "Uncertain",
+    "text": "Oh, sorry.",
+    "review_required": true
+  },
+  {
+    "start": 1130.872,
+    "end": 1133.703,
+    "raw_track": "Uncertain",
+    "speaker_hypothesis": "Uncertain",
+    "text": "I might need to get a new key, there might be something off with this one,",
+    "review_required": true
+  },
+  {
+    "start": 1133.723,
+    "end": 1133.964,
+    "raw_track": "SPEAKER_01",
+    "speaker_hypothesis": "SPEAKER_01",
+    "text": "because",
+    "review_required": true
+  },
+  {
+    "start": 1133.9840000000002,
+    "end": 1134.0040000000001,
+    "raw_track": "Uncertain",
+    "speaker_hypothesis": "Uncertain",
+    "text": "I",
+    "review_required": true
+  },
+  {
+    "start": 1134.0240000000001,
+    "end": 1135.77,
+    "raw_track": "SPEAKER_01",
+    "speaker_hypothesis": "SPEAKER_01",
+    "text": "just had an issue with that fella I got in.",
+    "review_required": true
+  },
+  {
+    "start": 1136.912,
+    "end": 1139.8310000000001,
+    "raw_track": "SPEAKER_01",
+    "speaker_hypothesis": "SPEAKER_01",
+    "text": "Put this arm on the wall in front of you and that could have cut him off.",
+    "review_required": true
+  },
+  {
+    "start": 1140.671,
+    "end": 1141.0910000000001,
+    "raw_track": "SPEAKER_01",
+    "speaker_hypothesis": "SPEAKER_01",
+    "text": "That guy",
+    "review_required": true
+  },
+  {
+    "start": 1141.151,
+    "end": 1141.172,
+    "raw_track": "Uncertain",
+    "speaker_hypothesis": "Uncertain",
+    "text": "I",
+    "review_required": true
+  },
+  {
+    "start": 1141.192,
+    "end": 1143.093,
+    "raw_track": "SPEAKER_01",
+    "speaker_hypothesis": "SPEAKER_01",
+    "text": "just searched in that had the shackles, it had",
+    "review_required": true
+  },
+  {
+    "start": 1143.113,
+    "end": 1143.133,
+    "raw_track": "Uncertain",
+    "speaker_hypothesis": "Uncertain",
+    "text": "a",
+    "review_required": true
+  },
+  {
+    "start": 1143.153,
+    "end": 1146.337,
+    "raw_track": "SPEAKER_01",
+    "speaker_hypothesis": "SPEAKER_01",
+    "text": "little bit of difficulty opening up one of the shackles.",
+    "review_required": true
+  },
+  {
+    "start": 1146.939,
+    "end": 1146.959,
+    "raw_track": "Uncertain",
+    "speaker_hypothesis": "Uncertain",
+    "text": "I",
+    "review_required": true
+  },
+  {
+    "start": 1146.98,
+    "end": 1147.689,
+    "raw_track": "SPEAKER_01",
+    "speaker_hypothesis": "SPEAKER_01",
+    "text": "think I got to get",
+    "review_required": true
+  },
+  {
+    "start": 1147.709,
+    "end": 1147.729,
+    "raw_track": "Uncertain",
+    "speaker_hypothesis": "Uncertain",
+    "text": "a",
+    "review_required": true
+  },
+  {
+    "start": 1147.77,
+    "end": 1148.3980000000001,
+    "raw_track": "SPEAKER_01",
+    "speaker_hypothesis": "SPEAKER_01",
+    "text": "new key then.",
+    "review_required": true
+  }
+]

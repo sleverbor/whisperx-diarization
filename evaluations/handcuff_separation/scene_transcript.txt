@@ -1,0 +1,26 @@
+[1090.65–1093.24] Target_Speaker (SPEAKER_02): My behavior is kind of a reflection of theirs, so
+[1093.26–1093.28] Uncertain (Uncertain): I
+[1093.30–1094.22] Target_Speaker (SPEAKER_02): wouldn't agree more.
+[1094.68–1095.44] Uncertain (Uncertain): I couldn't agree more.
+[1098.20–1099.22] Uncertain (Uncertain): Couldn't agree a syllable more.
+[1102.56–1103.86] Uncertain (Uncertain): It's fun to
+[1104.85–1108.70] Uncertain (Uncertain): get them off. No, that's not the problem. They pee. It
+[1108.74–1109.42] SPEAKER_00 (SPEAKER_00): just got stuck.
+[1112.30–1115.79] SPEAKER_00 (SPEAKER_00): I don't want to mess with your cuffs or mess them up or anything, but let's
+[1118.16–1118.68] Uncertain (Uncertain): have a look.
+[1124.16–1126.62] Uncertain (Uncertain): We're not trying to tie someone, we're trying to get the key out of them.
+[1127.90–1128.32] Uncertain (Uncertain): Oh, sorry.
+[1130.87–1133.70] Uncertain (Uncertain): I might need to get a new key, there might be something off with this one,
+[1133.72–1133.96] SPEAKER_01 (SPEAKER_01): because
+[1133.98–1134.00] Uncertain (Uncertain): I
+[1134.02–1135.77] SPEAKER_01 (SPEAKER_01): just had an issue with that fella I got in.
+[1136.91–1139.83] SPEAKER_01 (SPEAKER_01): Put this arm on the wall in front of you and that could have cut him off.
+[1140.67–1141.09] SPEAKER_01 (SPEAKER_01): That guy
+[1141.15–1141.17] Uncertain (Uncertain): I
+[1141.19–1143.09] SPEAKER_01 (SPEAKER_01): just searched in that had the shackles, it had
+[1143.11–1143.13] Uncertain (Uncertain): a
+[1143.15–1146.34] SPEAKER_01 (SPEAKER_01): little bit of difficulty opening up one of the shackles.
+[1146.94–1146.96] Uncertain (Uncertain): I
+[1146.98–1147.69] SPEAKER_01 (SPEAKER_01): think I got to get
+[1147.71–1147.73] Uncertain (Uncertain): a
+[1147.77–1148.40] SPEAKER_01 (SPEAKER_01): new key then.

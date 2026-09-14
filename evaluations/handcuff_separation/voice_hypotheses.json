@@ -1,0 +1,182 @@
+[
+  {
+    "start": 1090.653,
+    "end": 1094.219,
+    "text": "My behavior is kind of a reflection of theirs, so I wouldn't agree more.",
+    "kind": "baseline",
+    "speaker_hypothesis": "Target_Speaker",
+    "voice_similarities": {
+      "Target_Speaker": 0.26423463225364685,
+      "Opening_officer_reference": 0.16097015142440796
+    },
+    "review_required": true
+  },
+  {
+    "start": 1094.681,
+    "end": 1095.437,
+    "text": "I couldn't agree more.",
+    "kind": "recovered",
+    "speaker_hypothesis": "Uncertain",
+    "voice_similarities": {
+      "Target_Speaker": 0.04689416661858559,
+      "Opening_officer_reference": -0.005767222493886948
+    },
+    "review_required": true
+  },
+  {
+    "start": 1098.202,
+    "end": 1099.216,
+    "text": "Couldn't agree a syllable more.",
+    "kind": "recovered",
+    "speaker_hypothesis": "Target_Speaker",
+    "voice_similarities": {
+      "Target_Speaker": 0.2600023150444031,
+      "Opening_officer_reference": 0.07699733972549438
+    },
+    "review_required": true
+  },
+  {
+    "start": 1102.56,
+    "end": 1105.749,
+    "text": "It's fun to get them off.",
+    "kind": "recovered",
+    "speaker_hypothesis": "Uncertain",
+    "voice_similarities": {
+      "Target_Speaker": -0.007390331476926804,
+      "Opening_officer_reference": 0.2117142379283905
+    },
+    "review_required": true
+  },
+  {
+    "start": 1106.09,
+    "end": 1107.213,
+    "text": "No, that's not the problem.",
+    "kind": "recovered",
+    "speaker_hypothesis": "Uncertain",
+    "voice_similarities": {
+      "Target_Speaker": 0.0014190785586833954,
+      "Opening_officer_reference": 0.029374748468399048
+    },
+    "review_required": true
+  },
+  {
+    "start": 1107.774,
+    "end": 1108.296,
+    "text": "They pee.",
+    "kind": "recovered",
+    "speaker_hypothesis": "Uncertain",
+    "voice_similarities": {
+      "Target_Speaker": 0.023528387770056725,
+      "Opening_officer_reference": -0.06625749170780182
+    },
+    "review_required": true
+  },
+  {
+    "start": 1108.617,
+    "end": 1109.419,
+    "text": "It just got stuck.",
+    "kind": "recovered",
+    "speaker_hypothesis": "Uncertain",
+    "voice_similarities": {
+      "Target_Speaker": -0.009038385935127735,
+      "Opening_officer_reference": 0.12697206437587738
+    },
+    "review_required": true
+  },
+  {
+    "start": 1112.3,
+    "end": 1118.679,
+    "text": "I don't want to mess with your cuffs or mess them up or anything, but let's have a look.",
+    "kind": "recovered",
+    "speaker_hypothesis": "Uncertain",
+    "voice_similarities": {
+      "Target_Speaker": 0.022302230820059776,
+      "Opening_officer_reference": 0.15815235674381256
+    },
+    "review_required": true
+  },
+  {
+    "start": 1121.779,
+    "end": 1122.259,
+    "text": "Sounds like a lot of fun.",
+    "kind": "recovered",
+    "speaker_hypothesis": "Uncertain",
+    "voice_similarities": {
+      "Target_Speaker": 0.22426116466522217,
+      "Opening_officer_reference": -0.10925933718681335
+    },
+    "review_required": true
+  },
+  {
+    "start": 1124.16,
+    "end": 1126.618,
+    "text": "We're not trying to tie someone, we're trying to get the key out of them.",
+    "kind": "recovered",
+    "speaker_hypothesis": "Uncertain",
+    "voice_similarities": {
+      "Target_Speaker": 0.19144302606582642,
+      "Opening_officer_reference": 0.20061826705932617
+    },
+    "review_required": true
+  },
+  {
+    "start": 1127.9,
+    "end": 1128.317,
+    "text": "Oh, sorry.",
+    "kind": "recovered",
+    "speaker_hypothesis": "Uncertain",
+    "voice_similarities": {
+      "Target_Speaker": 0.08166143298149109,
+      "Opening_officer_reference": 0.11461090296506882
+    },
+    "review_required": true
+  },
+  {
+    "start": 1130.872,
+    "end": 1135.77,
+    "text": "I might need to get a new key, there might be something off with this one, because I just had an issue with that fella I got in.",
+    "kind": "recovered",
+    "speaker_hypothesis": "Uncertain",
+    "voice_similarities": {
+      "Target_Speaker": 0.10558273643255234,
+      "Opening_officer_reference": 0.1040886789560318
+    },
+    "review_required": true
+  },
+  {
+    "start": 1136.912,
+    "end": 1139.8310000000001,
+    "text": "Put this arm on the wall in front of you and that could have cut him off.",
+    "kind": "recovered",
+    "speaker_hypothesis": "Uncertain",
+    "voice_similarities": {
+      "Target_Speaker": 0.06234583631157875,
+      "Opening_officer_reference": 0.13464273512363434
+    },
+    "review_required": true
+  },
+  {
+    "start": 1140.671,
+    "end": 1146.337,
+    "text": "That guy I just searched in that had the shackles, it had a little bit of difficulty opening up one of the shackles.",
+    "kind": "baseline",
+    "speaker_hypothesis": "Uncertain",
+    "voice_similarities": {
+      "Target_Speaker": 0.2413085699081421,
+      "Opening_officer_reference": 0.2789798378944397
+    },
+    "review_required": true
+  },
+  {
+    "start": 1146.939,
+    "end": 1148.3980000000001,
+    "text": "I think I got to get a new key then.",
+    "kind": "baseline",
+    "speaker_hypothesis": "Uncertain",
+    "voice_similarities": {
+      "Target_Speaker": 0.05320591852068901,
+      "Opening_officer_reference": 0.06277350336313248
+    },
+    "review_required": true
+  }
+]

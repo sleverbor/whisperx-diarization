@@ -1,0 +1,26 @@
+{
+  "SPEAKER_00": {
+    "clean_samples": 1,
+    "voice_similarities": {
+      "Target_Speaker": 0.10769270360469818,
+      "Opening_officer_reference": 0.1621362417936325
+    },
+    "tentative_label": "SPEAKER_00"
+  },
+  "SPEAKER_01": {
+    "clean_samples": 3,
+    "voice_similarities": {
+      "Target_Speaker": 0.16422298550605774,
+      "Opening_officer_reference": 0.22332695126533508
+    },
+    "tentative_label": "SPEAKER_01"
+  },
+  "SPEAKER_02": {
+    "clean_samples": 1,
+    "voice_similarities": {
+      "Target_Speaker": 0.2679786682128906,
+      "Opening_officer_reference": 0.1651202142238617
+    },
+    "tentative_label": "Target_Speaker"
+  }
+}

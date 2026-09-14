@@ -1,0 +1,22 @@
+{
+  "long_target_agreement_direct_match": {
+    "start": 1098.202,
+    "end": 1099.216,
+    "text": "Couldn't agree a syllable more.",
+    "kind": "recovered",
+    "speaker_hypothesis": "Target_Speaker",
+    "voice_similarities": {
+      "Target_Speaker": 0.2600023150444031,
+      "Opening_officer_reference": 0.07699733972549438
+    },
+    "review_required": true
+  },
+  "diarization_coverage_seconds_for_that_response": 0,
+  "scene_diarization_intervals": 9,
+  "speaker_count_constraint": 3,
+  "source_interval": [
+    1090,
+    1150
+  ],
+  "status": "partial; known errors; no pipeline defaults changed"
+}
