@@ -1,0 +1,250 @@
+{
+  "clip_voice_means": {
+    "SPEAKER_00": 0.15830767462746456,
+    "SPEAKER_01": 0.5115808844566345
+  },
+  "diarization": [
+    {
+      "start": 0.03096875,
+      "end": 0.58784375,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "start": 1.7353437500000002,
+      "end": 6.37596875,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "start": 8.704718750000001,
+      "end": 9.750968750000002,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "start": 9.83534375,
+      "end": 10.99971875,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "start": 11.25284375,
+      "end": 12.04596875,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "start": 13.328468750000003,
+      "end": 15.606593750000002,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "start": 15.62346875,
+      "end": 16.602218750000002,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "start": 15.707843750000002,
+      "end": 15.84284375,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "start": 17.78346875,
+      "end": 21.86721875,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "start": 27.149093750000002,
+      "end": 27.520343750000002,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "start": 40.463468750000004,
+      "end": 40.767218750000005,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "start": 40.969718750000006,
+      "end": 41.03721875,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "start": 41.10471875,
+      "end": 43.55159375,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "start": 45.930968750000005,
+      "end": 49.45784375,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "start": 50.72346875,
+      "end": 51.98909375,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "start": 52.30971875,
+      "end": 54.368468750000005,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "start": 54.385343750000004,
+      "end": 54.41909375,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "start": 54.486593750000004,
+      "end": 57.87846875,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "start": 55.330343750000004,
+      "end": 56.798468750000005,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "start": 58.45221875,
+      "end": 62.265968750000006,
+      "speaker": "SPEAKER_00"
+    }
+  ],
+  "segments": [
+    {
+      "clip_start": 0.211,
+      "source_start": 625.211,
+      "text": "and loitering around businesses causing concern and suspicion against the law.",
+      "baseline_track": "SPEAKER_00",
+      "track_overlap_seconds": {
+        "SPEAKER_00": 4.9775,
+        "SPEAKER_01": 0.0
+      },
+      "closest_full_video_text": "It's against the law.",
+      "full_video_start": 630.678,
+      "text_similarity": 0.40404040404040403,
+      "start_difference_seconds": 5.4669999999999845
+    },
+    {
+      "clip_start": 8.737,
+      "source_start": 633.737,
+      "text": "What's your date of birth, John?",
+      "baseline_track": "SPEAKER_00",
+      "track_overlap_seconds": {
+        "SPEAKER_00": 0.8209999999999997,
+        "SPEAKER_01": 0.0
+      },
+      "closest_full_video_text": "What's your date of birth, son?",
+      "full_video_start": 633.744,
+      "text_similarity": 0.9523809523809523,
+      "start_difference_seconds": 0.007000000000061846
+    },
+    {
+      "clip_start": 9.938,
+      "source_start": 634.938,
+      "text": "March 17, 2002.",
+      "baseline_track": "SPEAKER_00",
+      "track_overlap_seconds": {
+        "SPEAKER_00": 0.7210000000000001,
+        "SPEAKER_01": 0.0
+      },
+      "closest_full_video_text": "March 17, 2002.",
+      "full_video_start": 634.905,
+      "text_similarity": 1.0,
+      "start_difference_seconds": -0.03300000000001546
+    },
+    {
+      "clip_start": 11.359,
+      "source_start": 636.359,
+      "text": "You got tattoos on both arms?",
+      "baseline_track": "SPEAKER_00",
+      "track_overlap_seconds": {
+        "SPEAKER_00": 2.2204999999999977,
+        "SPEAKER_01": 0.0
+      },
+      "closest_full_video_text": "You got tattoos on both arms?",
+      "full_video_start": 636.346,
+      "text_similarity": 1.0,
+      "start_difference_seconds": -0.013000000000033651
+    },
+    {
+      "clip_start": 14.922,
+      "source_start": 639.922,
+      "text": "Anywhere else?",
+      "baseline_track": "SPEAKER_00",
+      "track_overlap_seconds": {
+        "SPEAKER_00": 0.4599999999999991,
+        "SPEAKER_01": 0.0
+      },
+      "closest_full_video_text": "Anywhere else?",
+      "full_video_start": 639.909,
+      "text_similarity": 1.0,
+      "start_difference_seconds": -0.013000000000033651
+    },
+    {
+      "clip_start": 15.742,
+      "source_start": 640.742,
+      "text": "Yeah, on my chest.",
+      "baseline_track": "SPEAKER_00",
+      "track_overlap_seconds": {
+        "SPEAKER_00": 0.7809999999999988,
+        "SPEAKER_01": 0.10084374999999923
+      },
+      "closest_full_video_text": "Yeah, on my chest.",
+      "full_video_start": 640.729,
+      "text_similarity": 1.0,
+      "start_difference_seconds": -0.012999999999919964
+    },
+    {
+      "clip_start": 40.24,
+      "source_start": 665.24,
+      "text": "I don't get found guilty of anything.",
+      "baseline_track": "SPEAKER_00",
+      "track_overlap_seconds": {
+        "SPEAKER_00": 1.50853124999999,
+        "SPEAKER_01": 0.0
+      },
+      "closest_full_video_text": "I don't get found guilty of anything.",
+      "full_video_start": 677.504,
+      "text_similarity": 1.0,
+      "start_difference_seconds": 12.26400000000001
+    },
+    {
+      "clip_start": 42.322,
+      "source_start": 667.322,
+      "text": "I do have a driver's license.",
+      "baseline_track": "SPEAKER_00",
+      "track_overlap_seconds": {
+        "SPEAKER_00": 1.1609999999999943,
+        "SPEAKER_01": 0.0
+      },
+      "closest_full_video_text": "I do have a driver's license.",
+      "full_video_start": 680.747,
+      "text_similarity": 1.0,
+      "start_difference_seconds": 13.424999999999955
+    },
+    {
+      "clip_start": 45.704,
+      "source_start": 670.704,
+      "text": "I have a driver's license.",
+      "baseline_track": "SPEAKER_00",
+      "track_overlap_seconds": {
+        "SPEAKER_00": 1.7750312499999978,
+        "SPEAKER_01": 0.0
+      },
+      "closest_full_video_text": "I have a driver's license.",
+      "full_video_start": 684.771,
+      "text_similarity": 1.0,
+      "start_difference_seconds": 14.067000000000007
+    },
+    {
+      "clip_start": 47.726,
+      "source_start": 672.726,
+      "text": "I didn't give you any fake information.",
+      "baseline_track": "SPEAKER_00",
+      "track_overlap_seconds": {
+        "SPEAKER_00": 2.5973749999999995,
+        "SPEAKER_01": 0.0
+      },
+      "closest_full_video_text": "I didn't give you any fake information.",
+      "full_video_start": 685.732,
+      "text_similarity": 1.0,
+      "start_difference_seconds": 13.005999999999972
+    }
+  ]
+}

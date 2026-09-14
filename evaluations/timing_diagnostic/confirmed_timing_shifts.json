@@ -1,0 +1,34 @@
+[
+  {
+    "text": "I don't get found guilty of anything.",
+    "saved_start_seconds": 665.24,
+    "control_start_seconds": 677.28,
+    "difference_seconds": 12.039999999999964,
+    "control_text": " I don't get found guilty of anything.",
+    "original_segment_unchanged": true
+  },
+  {
+    "text": "I do have a driver's license.",
+    "saved_start_seconds": 667.322,
+    "control_start_seconds": 680.68,
+    "difference_seconds": 13.357999999999947,
+    "control_text": " I do have a driver's license.",
+    "original_segment_unchanged": true
+  },
+  {
+    "text": "I have a driver's license.",
+    "saved_start_seconds": 670.704,
+    "control_start_seconds": 684.38,
+    "difference_seconds": 13.676000000000045,
+    "control_text": " I have a driver's license.",
+    "original_segment_unchanged": true
+  },
+  {
+    "text": "I didn't give you any fake information.",
+    "saved_start_seconds": 672.726,
+    "control_start_seconds": 685.64,
+    "difference_seconds": 12.913999999999987,
+    "control_text": " I didn't give you any fake information.",
+    "original_segment_unchanged": true
+  }
+]

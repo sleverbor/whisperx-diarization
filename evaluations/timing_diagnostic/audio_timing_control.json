@@ -1,0 +1,520 @@
+[
+  {
+    "start": 665.0,
+    "end": 668.32,
+    "text": " Tower 11, no record from Mississippi or Massachusetts.",
+    "avg_logprob": -0.3369983850881971,
+    "words": [
+      {
+        "start": 665.0,
+        "end": 665.36,
+        "word": " Tower",
+        "probability": 0.0333552360534668
+      },
+      {
+        "start": 665.36,
+        "end": 665.76,
+        "word": " 11,",
+        "probability": 0.6884505748748779
+      },
+      {
+        "start": 666.16,
+        "end": 666.38,
+        "word": " no",
+        "probability": 0.8326876759529114
+      },
+      {
+        "start": 666.38,
+        "end": 666.76,
+        "word": " record",
+        "probability": 0.791530191898346
+      },
+      {
+        "start": 666.76,
+        "end": 666.98,
+        "word": " from",
+        "probability": 0.21249344944953918
+      },
+      {
+        "start": 666.98,
+        "end": 667.42,
+        "word": " Mississippi",
+        "probability": 0.7942408919334412
+      },
+      {
+        "start": 667.42,
+        "end": 667.72,
+        "word": " or",
+        "probability": 0.8964638710021973
+      },
+      {
+        "start": 667.72,
+        "end": 668.32,
+        "word": " Massachusetts.",
+        "probability": 0.6621381044387817
+      }
+    ]
+  },
+  {
+    "start": 670.74,
+    "end": 671.48,
+    "text": " Number 8.",
+    "avg_logprob": -0.3369983850881971,
+    "words": [
+      {
+        "start": 670.74,
+        "end": 671.18,
+        "word": " Number",
+        "probability": 0.13174328207969666
+      },
+      {
+        "start": 671.18,
+        "end": 671.48,
+        "word": " 8.",
+        "probability": 0.47367221117019653
+      }
+    ]
+  },
+  {
+    "start": 672.36,
+    "end": 673.22,
+    "text": " So is that a fake name?",
+    "avg_logprob": -0.3369983850881971,
+    "words": [
+      {
+        "start": 672.36,
+        "end": 672.52,
+        "word": " So",
+        "probability": 0.4344041347503662
+      },
+      {
+        "start": 672.52,
+        "end": 672.6,
+        "word": " is",
+        "probability": 0.6680358052253723
+      },
+      {
+        "start": 672.6,
+        "end": 672.7,
+        "word": " that",
+        "probability": 0.8763322234153748
+      },
+      {
+        "start": 672.7,
+        "end": 672.8,
+        "word": " a",
+        "probability": 0.9915042519569397
+      },
+      {
+        "start": 672.8,
+        "end": 673.0,
+        "word": " fake",
+        "probability": 0.8027226328849792
+      },
+      {
+        "start": 673.0,
+        "end": 673.22,
+        "word": " name?",
+        "probability": 0.7999627590179443
+      }
+    ]
+  },
+  {
+    "start": 674.04,
+    "end": 674.28,
+    "text": " No.",
+    "avg_logprob": -0.3369983850881971,
+    "words": [
+      {
+        "start": 674.04,
+        "end": 674.28,
+        "word": " No.",
+        "probability": 0.8234991431236267
+      }
+    ]
+  },
+  {
+    "start": 675.74,
+    "end": 676.82,
+    "text": " You just not in the system anywhere?",
+    "avg_logprob": -0.3369983850881971,
+    "words": [
+      {
+        "start": 675.74,
+        "end": 675.88,
+        "word": " You",
+        "probability": 0.6162024736404419
+      },
+      {
+        "start": 675.88,
+        "end": 676.0,
+        "word": " just",
+        "probability": 0.7820513248443604
+      },
+      {
+        "start": 676.0,
+        "end": 676.16,
+        "word": " not",
+        "probability": 0.36671245098114014
+      },
+      {
+        "start": 676.16,
+        "end": 676.3,
+        "word": " in",
+        "probability": 0.8053990602493286
+      },
+      {
+        "start": 676.3,
+        "end": 676.3,
+        "word": " the",
+        "probability": 0.7864995002746582
+      },
+      {
+        "start": 676.3,
+        "end": 676.5,
+        "word": " system",
+        "probability": 0.8818461298942566
+      },
+      {
+        "start": 676.5,
+        "end": 676.82,
+        "word": " anywhere?",
+        "probability": 0.5736818909645081
+      }
+    ]
+  },
+  {
+    "start": 677.28,
+    "end": 679.1,
+    "text": " I don't get found guilty of anything.",
+    "avg_logprob": -0.3369983850881971,
+    "words": [
+      {
+        "start": 677.28,
+        "end": 677.58,
+        "word": " I",
+        "probability": 0.9713206887245178
+      },
+      {
+        "start": 677.58,
+        "end": 677.94,
+        "word": " don't",
+        "probability": 0.9150652289390564
+      },
+      {
+        "start": 677.94,
+        "end": 678.1,
+        "word": " get",
+        "probability": 0.846117377281189
+      },
+      {
+        "start": 678.1,
+        "end": 678.3,
+        "word": " found",
+        "probability": 0.8861629366874695
+      },
+      {
+        "start": 678.3,
+        "end": 678.62,
+        "word": " guilty",
+        "probability": 0.8540421724319458
+      },
+      {
+        "start": 678.62,
+        "end": 678.8,
+        "word": " of",
+        "probability": 0.8551177978515625
+      },
+      {
+        "start": 678.8,
+        "end": 679.1,
+        "word": " anything.",
+        "probability": 0.8390387892723083
+      }
+    ]
+  },
+  {
+    "start": 679.5,
+    "end": 680.5,
+    "text": " Do you have a driver's license?",
+    "avg_logprob": -0.3369983850881971,
+    "words": [
+      {
+        "start": 679.5,
+        "end": 679.68,
+        "word": " Do",
+        "probability": 0.5544191598892212
+      },
+      {
+        "start": 679.68,
+        "end": 679.72,
+        "word": " you",
+        "probability": 0.8991177678108215
+      },
+      {
+        "start": 679.72,
+        "end": 679.82,
+        "word": " have",
+        "probability": 0.8920413851737976
+      },
+      {
+        "start": 679.82,
+        "end": 679.92,
+        "word": " a",
+        "probability": 0.9902082681655884
+      },
+      {
+        "start": 679.92,
+        "end": 680.26,
+        "word": " driver's",
+        "probability": 0.7728680372238159
+      },
+      {
+        "start": 680.26,
+        "end": 680.5,
+        "word": " license?",
+        "probability": 0.7913626432418823
+      }
+    ]
+  },
+  {
+    "start": 680.68,
+    "end": 681.66,
+    "text": " I do have a driver's license.",
+    "avg_logprob": -0.3369983850881971,
+    "words": [
+      {
+        "start": 680.68,
+        "end": 680.8,
+        "word": " I",
+        "probability": 0.9898778796195984
+      },
+      {
+        "start": 680.8,
+        "end": 680.92,
+        "word": " do",
+        "probability": 0.8900537490844727
+      },
+      {
+        "start": 680.92,
+        "end": 681.06,
+        "word": " have",
+        "probability": 0.88780277967453
+      },
+      {
+        "start": 681.06,
+        "end": 681.12,
+        "word": " a",
+        "probability": 0.9941766262054443
+      },
+      {
+        "start": 681.12,
+        "end": 681.42,
+        "word": " driver's",
+        "probability": 0.8838872313499451
+      },
+      {
+        "start": 681.42,
+        "end": 681.66,
+        "word": " license.",
+        "probability": 0.766497015953064
+      }
+    ]
+  },
+  {
+    "start": 681.72,
+    "end": 682.78,
+    "text": " Then you should be in the system.",
+    "avg_logprob": -0.3369983850881971,
+    "words": [
+      {
+        "start": 681.72,
+        "end": 681.9,
+        "word": " Then",
+        "probability": 0.8037323355674744
+      },
+      {
+        "start": 681.9,
+        "end": 682.04,
+        "word": " you",
+        "probability": 0.8972273468971252
+      },
+      {
+        "start": 682.04,
+        "end": 682.18,
+        "word": " should",
+        "probability": 0.9163038730621338
+      },
+      {
+        "start": 682.18,
+        "end": 682.34,
+        "word": " be",
+        "probability": 0.9080052971839905
+      },
+      {
+        "start": 682.34,
+        "end": 682.44,
+        "word": " in",
+        "probability": 0.8551080226898193
+      },
+      {
+        "start": 682.44,
+        "end": 682.54,
+        "word": " the",
+        "probability": 0.8144450187683105
+      },
+      {
+        "start": 682.54,
+        "end": 682.78,
+        "word": " system.",
+        "probability": 0.8703851103782654
+      }
+    ]
+  },
+  {
+    "start": 683.44,
+    "end": 683.66,
+    "text": " There.",
+    "avg_logprob": -0.3369983850881971,
+    "words": [
+      {
+        "start": 683.44,
+        "end": 683.66,
+        "word": " There.",
+        "probability": 0.5163514018058777
+      }
+    ]
+  },
+  {
+    "start": 684.38,
+    "end": 685.56,
+    "text": " I have a driver's license.",
+    "avg_logprob": -0.3369983850881971,
+    "words": [
+      {
+        "start": 684.38,
+        "end": 684.82,
+        "word": " I",
+        "probability": 0.9955606460571289
+      },
+      {
+        "start": 684.82,
+        "end": 684.98,
+        "word": " have",
+        "probability": 0.8717988133430481
+      },
+      {
+        "start": 684.98,
+        "end": 685.08,
+        "word": " a",
+        "probability": 0.9111359119415283
+      },
+      {
+        "start": 685.08,
+        "end": 685.32,
+        "word": " driver's",
+        "probability": 0.8793515563011169
+      },
+      {
+        "start": 685.32,
+        "end": 685.56,
+        "word": " license.",
+        "probability": 0.8074076771736145
+      }
+    ]
+  },
+  {
+    "start": 685.64,
+    "end": 687.24,
+    "text": " I didn't give you any fake information.",
+    "avg_logprob": -0.3369983850881971,
+    "words": [
+      {
+        "start": 685.64,
+        "end": 685.74,
+        "word": " I",
+        "probability": 0.9858585000038147
+      },
+      {
+        "start": 685.74,
+        "end": 685.94,
+        "word": " didn't",
+        "probability": 0.914437472820282
+      },
+      {
+        "start": 685.94,
+        "end": 686.18,
+        "word": " give",
+        "probability": 0.8226891160011292
+      },
+      {
+        "start": 686.18,
+        "end": 686.26,
+        "word": " you",
+        "probability": 0.8737223148345947
+      },
+      {
+        "start": 686.26,
+        "end": 686.44,
+        "word": " any",
+        "probability": 0.815491259098053
+      },
+      {
+        "start": 686.44,
+        "end": 686.72,
+        "word": " fake",
+        "probability": 0.7589942812919617
+      },
+      {
+        "start": 686.72,
+        "end": 687.24,
+        "word": " information.",
+        "probability": 0.7433449029922485
+      }
+    ]
+  },
+  {
+    "start": 689.54,
+    "end": 689.98,
+    "text": " If you have a driver's license,",
+    "avg_logprob": -0.3369983850881971,
+    "words": [
+      {
+        "start": 689.54,
+        "end": 689.98,
+        "word": " If",
+        "probability": 0.8335210084915161
+      },
+      {
+        "start": 689.98,
+        "end": 689.98,
+        "word": " you",
+        "probability": 0.8449098467826843
+      },
+      {
+        "start": 689.98,
+        "end": 689.98,
+        "word": " have",
+        "probability": 0.09168259799480438
+      },
+      {
+        "start": 689.98,
+        "end": 689.98,
+        "word": " a",
+        "probability": 0.632838249206543
+      },
+      {
+        "start": 689.98,
+        "end": 689.98,
+        "word": " driver's",
+        "probability": 0.7234224677085876
+      },
+      {
+        "start": 689.98,
+        "end": 689.98,
+        "word": " license,",
+        "probability": 0.7665529251098633
+      }
+    ]
+  }
+]
