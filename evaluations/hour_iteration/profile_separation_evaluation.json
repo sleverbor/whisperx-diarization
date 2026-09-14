@@ -1,0 +1,86 @@
+[
+  {
+    "signal": "raw",
+    "mode": "complete",
+    "within_key_voice_mean": 0.32331752677758535,
+    "cross_officer_mean": 0.3744533782203992,
+    "within_key_voice_range": [
+      0.1024046242237091,
+      0.5731595754623413
+    ],
+    "cross_officer_range": [
+      0.14216738939285278,
+      0.5255330204963684
+    ]
+  },
+  {
+    "signal": "raw",
+    "mode": "voiced_only",
+    "within_key_voice_mean": 0.30869485934575397,
+    "cross_officer_mean": 0.3638206161558628,
+    "within_key_voice_range": [
+      0.1024046242237091,
+      0.5765312910079956
+    ],
+    "cross_officer_range": [
+      0.14216738939285278,
+      0.5429031252861023
+    ]
+  },
+  {
+    "signal": "light",
+    "mode": "complete",
+    "within_key_voice_mean": 0.3059904312094053,
+    "cross_officer_mean": 0.3836696036159992,
+    "within_key_voice_range": [
+      0.046837933361530304,
+      0.5507583022117615
+    ],
+    "cross_officer_range": [
+      0.19223302602767944,
+      0.5619758367538452
+    ]
+  },
+  {
+    "signal": "light",
+    "mode": "voiced_only",
+    "within_key_voice_mean": 0.2913684085011482,
+    "cross_officer_mean": 0.37546613812446594,
+    "within_key_voice_range": [
+      0.046837933361530304,
+      0.5576974153518677
+    ],
+    "cross_officer_range": [
+      0.18519651889801025,
+      0.5462969541549683
+    ]
+  },
+  {
+    "signal": "full",
+    "mode": "complete",
+    "within_key_voice_mean": 0.30919145345687865,
+    "cross_officer_mean": 0.3322154109676679,
+    "within_key_voice_range": [
+      0.14997601509094238,
+      0.48638278245925903
+    ],
+    "cross_officer_range": [
+      0.17572996020317078,
+      0.5217791795730591
+    ]
+  },
+  {
+    "signal": "full",
+    "mode": "voiced_only",
+    "within_key_voice_mean": 0.29134004016717274,
+    "cross_officer_mean": 0.3232375904917717,
+    "within_key_voice_range": [
+      0.12754037976264954,
+      0.4836130738258362
+    ],
+    "cross_officer_range": [
+      0.16660651564598083,
+      0.5072630047798157
+    ]
+  }
+]

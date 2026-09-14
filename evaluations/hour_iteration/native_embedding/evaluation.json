@@ -1,0 +1,302 @@
+[
+  {
+    "signal": "raw",
+    "rows": [
+      {
+        "segment_index": 1,
+        "signal": "raw",
+        "text": "I couldn't agree more.",
+        "start": 1094.681,
+        "end": 1095.437,
+        "scores": {
+          "Target_Speaker": 0.04189004376530647,
+          "Opening_officer_reference": 0.09033747017383575
+        },
+        "expected": "Target_Speaker",
+        "hypothesis": "Uncertain"
+      },
+      {
+        "segment_index": 2,
+        "signal": "raw",
+        "text": "Couldn't agree a syllable more.",
+        "start": 1098.202,
+        "end": 1099.216,
+        "scores": {
+          "Target_Speaker": 0.21868681907653809,
+          "Opening_officer_reference": 0.08054997026920319
+        },
+        "expected": "Target_Speaker",
+        "hypothesis": "Uncertain"
+      },
+      {
+        "segment_index": 4,
+        "signal": "raw",
+        "text": "No, that's not the problem.",
+        "start": 1106.09,
+        "end": 1107.213,
+        "scores": {
+          "Target_Speaker": -0.14375773072242737,
+          "Opening_officer_reference": 0.003910847008228302
+        },
+        "expected": "Other",
+        "hypothesis": "Uncertain"
+      },
+      {
+        "segment_index": 5,
+        "signal": "raw",
+        "text": "They pee.",
+        "start": 1107.774,
+        "end": 1108.296,
+        "scores": {
+          "Target_Speaker": 0.03016838990151882,
+          "Opening_officer_reference": 0.07046490907669067
+        },
+        "expected": "Other",
+        "hypothesis": "Uncertain"
+      },
+      {
+        "segment_index": 6,
+        "signal": "raw",
+        "text": "It just got stuck.",
+        "start": 1108.617,
+        "end": 1109.419,
+        "scores": {
+          "Target_Speaker": -0.02861773781478405,
+          "Opening_officer_reference": 0.16477429866790771
+        },
+        "expected": "Other",
+        "hypothesis": "Uncertain"
+      },
+      {
+        "segment_index": 7,
+        "signal": "raw",
+        "text": "I don't want to mess with your cuffs or mess them up or anything, but let's have a look.",
+        "start": 1112.3,
+        "end": 1118.679,
+        "scores": {
+          "Target_Speaker": 0.004347285255789757,
+          "Opening_officer_reference": 0.2859390079975128
+        },
+        "expected": "Opening_officer_reference",
+        "hypothesis": "Opening_officer_reference"
+      },
+      {
+        "segment_index": 9,
+        "signal": "raw",
+        "text": "We're not trying to tie someone, we're trying to get the key out of them.",
+        "start": 1124.16,
+        "end": 1126.618,
+        "scores": {
+          "Target_Speaker": 0.12019988894462585,
+          "Opening_officer_reference": 0.10675963759422302
+        },
+        "expected": "Opening_officer_reference",
+        "hypothesis": "Uncertain"
+      },
+      {
+        "segment_index": 11,
+        "signal": "raw",
+        "text": "I might need to get a new key, there might be something off with this one, because I just had an issue with that fella I got in.",
+        "start": 1130.872,
+        "end": 1135.77,
+        "scores": {
+          "Target_Speaker": 0.04688511788845062,
+          "Opening_officer_reference": 0.09599748998880386
+        },
+        "expected": "Other",
+        "hypothesis": "Uncertain"
+      },
+      {
+        "segment_index": 12,
+        "signal": "raw",
+        "text": "Put this arm on the wall in front of you and that could have cut him off.",
+        "start": 1136.912,
+        "end": 1139.8310000000001,
+        "scores": {
+          "Target_Speaker": -0.016977492719888687,
+          "Opening_officer_reference": 0.1313944309949875
+        },
+        "expected": "Other",
+        "hypothesis": "Uncertain"
+      },
+      {
+        "segment_index": 13,
+        "signal": "raw",
+        "text": "That guy I just searched in that had the shackles, it had a little bit of difficulty opening up one of the shackles.",
+        "start": 1140.671,
+        "end": 1146.337,
+        "scores": {
+          "Target_Speaker": 0.14358332753181458,
+          "Opening_officer_reference": 0.21721284091472626
+        },
+        "expected": "Other",
+        "hypothesis": "Uncertain"
+      },
+      {
+        "segment_index": 14,
+        "signal": "raw",
+        "text": "I think I got to get a new key then.",
+        "start": 1146.939,
+        "end": 1148.3980000000001,
+        "scores": {
+          "Target_Speaker": 0.09950745850801468,
+          "Opening_officer_reference": 0.11794625222682953
+        },
+        "expected": "Other",
+        "hypothesis": "Uncertain"
+      }
+    ],
+    "correct_known": 1,
+    "false_known_on_other": 0
+  },
+  {
+    "signal": "light",
+    "rows": [
+      {
+        "segment_index": 1,
+        "signal": "light",
+        "text": "I couldn't agree more.",
+        "start": 1094.681,
+        "end": 1095.437,
+        "scores": {
+          "Target_Speaker": 0.044920071959495544,
+          "Opening_officer_reference": 0.13306769728660583
+        },
+        "expected": "Target_Speaker",
+        "hypothesis": "Uncertain"
+      },
+      {
+        "segment_index": 2,
+        "signal": "light",
+        "text": "Couldn't agree a syllable more.",
+        "start": 1098.202,
+        "end": 1099.216,
+        "scores": {
+          "Target_Speaker": 0.20329205691814423,
+          "Opening_officer_reference": 0.0846058651804924
+        },
+        "expected": "Target_Speaker",
+        "hypothesis": "Uncertain"
+      },
+      {
+        "segment_index": 4,
+        "signal": "light",
+        "text": "No, that's not the problem.",
+        "start": 1106.09,
+        "end": 1107.213,
+        "scores": {
+          "Target_Speaker": -0.13948507606983185,
+          "Opening_officer_reference": -0.06868584454059601
+        },
+        "expected": "Other",
+        "hypothesis": "Uncertain"
+      },
+      {
+        "segment_index": 5,
+        "signal": "light",
+        "text": "They pee.",
+        "start": 1107.774,
+        "end": 1108.296,
+        "scores": {
+          "Target_Speaker": 0.09594356268644333,
+          "Opening_officer_reference": 0.09522896260023117
+        },
+        "expected": "Other",
+        "hypothesis": "Uncertain"
+      },
+      {
+        "segment_index": 6,
+        "signal": "light",
+        "text": "It just got stuck.",
+        "start": 1108.617,
+        "end": 1109.419,
+        "scores": {
+          "Target_Speaker": -0.02415970154106617,
+          "Opening_officer_reference": 0.1693010926246643
+        },
+        "expected": "Other",
+        "hypothesis": "Uncertain"
+      },
+      {
+        "segment_index": 7,
+        "signal": "light",
+        "text": "I don't want to mess with your cuffs or mess them up or anything, but let's have a look.",
+        "start": 1112.3,
+        "end": 1118.679,
+        "scores": {
+          "Target_Speaker": 0.009313404560089111,
+          "Opening_officer_reference": 0.3354622721672058
+        },
+        "expected": "Opening_officer_reference",
+        "hypothesis": "Opening_officer_reference"
+      },
+      {
+        "segment_index": 9,
+        "signal": "light",
+        "text": "We're not trying to tie someone, we're trying to get the key out of them.",
+        "start": 1124.16,
+        "end": 1126.618,
+        "scores": {
+          "Target_Speaker": 0.024388512596488,
+          "Opening_officer_reference": 0.20906570553779602
+        },
+        "expected": "Opening_officer_reference",
+        "hypothesis": "Uncertain"
+      },
+      {
+        "segment_index": 11,
+        "signal": "light",
+        "text": "I might need to get a new key, there might be something off with this one, because I just had an issue with that fella I got in.",
+        "start": 1130.872,
+        "end": 1135.77,
+        "scores": {
+          "Target_Speaker": 0.009310659021139145,
+          "Opening_officer_reference": 0.11905249953269958
+        },
+        "expected": "Other",
+        "hypothesis": "Uncertain"
+      },
+      {
+        "segment_index": 12,
+        "signal": "light",
+        "text": "Put this arm on the wall in front of you and that could have cut him off.",
+        "start": 1136.912,
+        "end": 1139.8310000000001,
+        "scores": {
+          "Target_Speaker": -0.02384307235479355,
+          "Opening_officer_reference": 0.13657301664352417
+        },
+        "expected": "Other",
+        "hypothesis": "Uncertain"
+      },
+      {
+        "segment_index": 13,
+        "signal": "light",
+        "text": "That guy I just searched in that had the shackles, it had a little bit of difficulty opening up one of the shackles.",
+        "start": 1140.671,
+        "end": 1146.337,
+        "scores": {
+          "Target_Speaker": 0.1365060806274414,
+          "Opening_officer_reference": 0.20213976502418518
+        },
+        "expected": "Other",
+        "hypothesis": "Uncertain"
+      },
+      {
+        "segment_index": 14,
+        "signal": "light",
+        "text": "I think I got to get a new key then.",
+        "start": 1146.939,
+        "end": 1148.3980000000001,
+        "scores": {
+          "Target_Speaker": 0.16765573620796204,
+          "Opening_officer_reference": 0.13173717260360718
+        },
+        "expected": "Other",
+        "hypothesis": "Uncertain"
+      }
+    ],
+    "correct_known": 1,
+    "false_known_on_other": 0
+  }
+]

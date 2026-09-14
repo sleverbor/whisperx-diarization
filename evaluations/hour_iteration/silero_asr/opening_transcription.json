@@ -1,0 +1,21 @@
+{
+  "segments": [
+    {
+      "text": " What you out of here doing man? Come over here and talk to me.",
+      "start": 0,
+      "end": 30.0,
+      "avg_logprob": -0.459992436801686
+    }
+  ],
+  "language": "en",
+  "source_offset_seconds": 0,
+  "settings": {
+    "vad": "faster-whisper Silero activity adapter",
+    "threshold": 0.5,
+    "context_seconds": 0.5,
+    "chunk_size": 30,
+    "device": "cpu",
+    "compute_type": "int8",
+    "batch_size": 4
+  }
+}

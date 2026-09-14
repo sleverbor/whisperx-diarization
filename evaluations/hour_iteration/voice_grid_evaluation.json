@@ -1,0 +1,662 @@
+[
+  {
+    "signal": "raw",
+    "mode": "complete",
+    "correct_known": 1,
+    "known_evaluated": 4,
+    "wrong_known": 0,
+    "false_known_on_other": 0,
+    "other_evaluated": 7,
+    "rows": [
+      {
+        "segment_index": 1,
+        "expected": "Target_Speaker",
+        "hypothesis": "Uncertain",
+        "scores": {
+          "Target_Speaker": 0.04689416661858559,
+          "Opening_officer_reference": -0.005767222493886948
+        }
+      },
+      {
+        "segment_index": 2,
+        "expected": "Target_Speaker",
+        "hypothesis": "Target_Speaker",
+        "scores": {
+          "Target_Speaker": 0.2600023150444031,
+          "Opening_officer_reference": 0.07699733972549438
+        }
+      },
+      {
+        "segment_index": 4,
+        "expected": "Other",
+        "hypothesis": "Uncertain",
+        "scores": {
+          "Target_Speaker": 0.0014190785586833954,
+          "Opening_officer_reference": 0.029374748468399048
+        }
+      },
+      {
+        "segment_index": 5,
+        "expected": "Other",
+        "hypothesis": "Uncertain",
+        "scores": {
+          "Target_Speaker": 0.023528387770056725,
+          "Opening_officer_reference": -0.06625749170780182
+        }
+      },
+      {
+        "segment_index": 6,
+        "expected": "Other",
+        "hypothesis": "Uncertain",
+        "scores": {
+          "Target_Speaker": -0.009038385935127735,
+          "Opening_officer_reference": 0.12697206437587738
+        }
+      },
+      {
+        "segment_index": 7,
+        "expected": "Opening_officer_reference",
+        "hypothesis": "Uncertain",
+        "scores": {
+          "Target_Speaker": 0.022302230820059776,
+          "Opening_officer_reference": 0.15815235674381256
+        }
+      },
+      {
+        "segment_index": 9,
+        "expected": "Opening_officer_reference",
+        "hypothesis": "Uncertain",
+        "scores": {
+          "Target_Speaker": 0.19144302606582642,
+          "Opening_officer_reference": 0.20061826705932617
+        }
+      },
+      {
+        "segment_index": 11,
+        "expected": "Other",
+        "hypothesis": "Uncertain",
+        "scores": {
+          "Target_Speaker": 0.10558273643255234,
+          "Opening_officer_reference": 0.1040886789560318
+        }
+      },
+      {
+        "segment_index": 12,
+        "expected": "Other",
+        "hypothesis": "Uncertain",
+        "scores": {
+          "Target_Speaker": 0.06234583631157875,
+          "Opening_officer_reference": 0.13464273512363434
+        }
+      },
+      {
+        "segment_index": 13,
+        "expected": "Other",
+        "hypothesis": "Uncertain",
+        "scores": {
+          "Target_Speaker": 0.2413085699081421,
+          "Opening_officer_reference": 0.2789798378944397
+        }
+      },
+      {
+        "segment_index": 14,
+        "expected": "Other",
+        "hypothesis": "Uncertain",
+        "scores": {
+          "Target_Speaker": 0.05320591852068901,
+          "Opening_officer_reference": 0.06277350336313248
+        }
+      }
+    ]
+  },
+  {
+    "signal": "raw",
+    "mode": "voiced_only",
+    "correct_known": 0,
+    "known_evaluated": 4,
+    "wrong_known": 0,
+    "false_known_on_other": 0,
+    "other_evaluated": 7,
+    "rows": [
+      {
+        "segment_index": 1,
+        "expected": "Target_Speaker",
+        "hypothesis": "Uncertain",
+        "scores": {
+          "Target_Speaker": 0.04689416661858559,
+          "Opening_officer_reference": -0.005767222493886948
+        }
+      },
+      {
+        "segment_index": 2,
+        "expected": "Target_Speaker",
+        "hypothesis": "Uncertain",
+        "scores": {
+          "Target_Speaker": 0.04771358519792557,
+          "Opening_officer_reference": -0.04528482258319855
+        }
+      },
+      {
+        "segment_index": 4,
+        "expected": "Other",
+        "hypothesis": "Uncertain",
+        "scores": {
+          "Target_Speaker": 0.0014190785586833954,
+          "Opening_officer_reference": 0.029374748468399048
+        }
+      },
+      {
+        "segment_index": 5,
+        "expected": "Other",
+        "hypothesis": "Uncertain",
+        "scores": {
+          "Target_Speaker": 0.015944603830575943,
+          "Opening_officer_reference": -0.07182762026786804
+        }
+      },
+      {
+        "segment_index": 6,
+        "expected": "Other",
+        "hypothesis": "Uncertain",
+        "scores": {
+          "Target_Speaker": -0.009038385935127735,
+          "Opening_officer_reference": 0.12697206437587738
+        }
+      },
+      {
+        "segment_index": 7,
+        "expected": "Opening_officer_reference",
+        "hypothesis": "Uncertain",
+        "scores": {
+          "Target_Speaker": 0.09386122226715088,
+          "Opening_officer_reference": 0.17056804895401
+        }
+      },
+      {
+        "segment_index": 9,
+        "expected": "Opening_officer_reference",
+        "hypothesis": "Uncertain",
+        "scores": {
+          "Target_Speaker": 0.19144302606582642,
+          "Opening_officer_reference": 0.20061826705932617
+        }
+      },
+      {
+        "segment_index": 11,
+        "expected": "Other",
+        "hypothesis": "Uncertain",
+        "scores": {
+          "Target_Speaker": 0.07827561348676682,
+          "Opening_officer_reference": 0.14998649060726166
+        }
+      },
+      {
+        "segment_index": 12,
+        "expected": "Other",
+        "hypothesis": "Uncertain",
+        "scores": {
+          "Target_Speaker": 0.012564845383167267,
+          "Opening_officer_reference": 0.09508974850177765
+        }
+      },
+      {
+        "segment_index": 13,
+        "expected": "Other",
+        "hypothesis": "Uncertain",
+        "scores": {
+          "Target_Speaker": 0.24462562799453735,
+          "Opening_officer_reference": 0.2807351350784302
+        }
+      },
+      {
+        "segment_index": 14,
+        "expected": "Other",
+        "hypothesis": "Uncertain",
+        "scores": {
+          "Target_Speaker": 0.05320591852068901,
+          "Opening_officer_reference": 0.06277350336313248
+        }
+      }
+    ]
+  },
+  {
+    "signal": "light",
+    "mode": "complete",
+    "correct_known": 0,
+    "known_evaluated": 4,
+    "wrong_known": 0,
+    "false_known_on_other": 0,
+    "other_evaluated": 7,
+    "rows": [
+      {
+        "segment_index": 1,
+        "expected": "Target_Speaker",
+        "hypothesis": "Uncertain",
+        "scores": {
+          "Target_Speaker": 0.106199711561203,
+          "Opening_officer_reference": 0.12642307579517365
+        }
+      },
+      {
+        "segment_index": 2,
+        "expected": "Target_Speaker",
+        "hypothesis": "Uncertain",
+        "scores": {
+          "Target_Speaker": 0.20421531796455383,
+          "Opening_officer_reference": 0.05484456196427345
+        }
+      },
+      {
+        "segment_index": 4,
+        "expected": "Other",
+        "hypothesis": "Uncertain",
+        "scores": {
+          "Target_Speaker": 0.03975247964262962,
+          "Opening_officer_reference": 0.07768338173627853
+        }
+      },
+      {
+        "segment_index": 5,
+        "expected": "Other",
+        "hypothesis": "Uncertain",
+        "scores": {
+          "Target_Speaker": 0.04424654319882393,
+          "Opening_officer_reference": -0.05539020895957947
+        }
+      },
+      {
+        "segment_index": 6,
+        "expected": "Other",
+        "hypothesis": "Uncertain",
+        "scores": {
+          "Target_Speaker": 0.004873093217611313,
+          "Opening_officer_reference": 0.13565972447395325
+        }
+      },
+      {
+        "segment_index": 7,
+        "expected": "Opening_officer_reference",
+        "hypothesis": "Uncertain",
+        "scores": {
+          "Target_Speaker": 0.030289413407444954,
+          "Opening_officer_reference": 0.17016969621181488
+        }
+      },
+      {
+        "segment_index": 9,
+        "expected": "Opening_officer_reference",
+        "hypothesis": "Uncertain",
+        "scores": {
+          "Target_Speaker": 0.1598849594593048,
+          "Opening_officer_reference": 0.18040835857391357
+        }
+      },
+      {
+        "segment_index": 11,
+        "expected": "Other",
+        "hypothesis": "Uncertain",
+        "scores": {
+          "Target_Speaker": 0.10114811360836029,
+          "Opening_officer_reference": 0.12966571748256683
+        }
+      },
+      {
+        "segment_index": 12,
+        "expected": "Other",
+        "hypothesis": "Uncertain",
+        "scores": {
+          "Target_Speaker": 0.06523368507623672,
+          "Opening_officer_reference": 0.08733239024877548
+        }
+      },
+      {
+        "segment_index": 13,
+        "expected": "Other",
+        "hypothesis": "Uncertain",
+        "scores": {
+          "Target_Speaker": 0.2168678641319275,
+          "Opening_officer_reference": 0.29006054997444153
+        }
+      },
+      {
+        "segment_index": 14,
+        "expected": "Other",
+        "hypothesis": "Uncertain",
+        "scores": {
+          "Target_Speaker": 0.09093324095010757,
+          "Opening_officer_reference": 0.06608101725578308
+        }
+      }
+    ]
+  },
+  {
+    "signal": "light",
+    "mode": "voiced_only",
+    "correct_known": 0,
+    "known_evaluated": 4,
+    "wrong_known": 0,
+    "false_known_on_other": 0,
+    "other_evaluated": 7,
+    "rows": [
+      {
+        "segment_index": 1,
+        "expected": "Target_Speaker",
+        "hypothesis": "Uncertain",
+        "scores": {
+          "Target_Speaker": 0.106199711561203,
+          "Opening_officer_reference": 0.12642307579517365
+        }
+      },
+      {
+        "segment_index": 2,
+        "expected": "Target_Speaker",
+        "hypothesis": "Uncertain",
+        "scores": {
+          "Target_Speaker": 0.10154248774051666,
+          "Opening_officer_reference": -0.04416580870747566
+        }
+      },
+      {
+        "segment_index": 4,
+        "expected": "Other",
+        "hypothesis": "Uncertain",
+        "scores": {
+          "Target_Speaker": 0.03975247964262962,
+          "Opening_officer_reference": 0.07768338173627853
+        }
+      },
+      {
+        "segment_index": 5,
+        "expected": "Other",
+        "hypothesis": "Uncertain",
+        "scores": {
+          "Target_Speaker": 0.026981325820088387,
+          "Opening_officer_reference": -0.018872657790780067
+        }
+      },
+      {
+        "segment_index": 6,
+        "expected": "Other",
+        "hypothesis": "Uncertain",
+        "scores": {
+          "Target_Speaker": 0.004873093217611313,
+          "Opening_officer_reference": 0.13565972447395325
+        }
+      },
+      {
+        "segment_index": 7,
+        "expected": "Opening_officer_reference",
+        "hypothesis": "Uncertain",
+        "scores": {
+          "Target_Speaker": 0.10512630641460419,
+          "Opening_officer_reference": 0.15340746939182281
+        }
+      },
+      {
+        "segment_index": 9,
+        "expected": "Opening_officer_reference",
+        "hypothesis": "Uncertain",
+        "scores": {
+          "Target_Speaker": 0.1598849594593048,
+          "Opening_officer_reference": 0.18040835857391357
+        }
+      },
+      {
+        "segment_index": 11,
+        "expected": "Other",
+        "hypothesis": "Uncertain",
+        "scores": {
+          "Target_Speaker": 0.058772116899490356,
+          "Opening_officer_reference": 0.1527348756790161
+        }
+      },
+      {
+        "segment_index": 12,
+        "expected": "Other",
+        "hypothesis": "Uncertain",
+        "scores": {
+          "Target_Speaker": 0.010170437395572662,
+          "Opening_officer_reference": 0.07689705491065979
+        }
+      },
+      {
+        "segment_index": 13,
+        "expected": "Other",
+        "hypothesis": "Uncertain",
+        "scores": {
+          "Target_Speaker": 0.22721511125564575,
+          "Opening_officer_reference": 0.2928599715232849
+        }
+      },
+      {
+        "segment_index": 14,
+        "expected": "Other",
+        "hypothesis": "Uncertain",
+        "scores": {
+          "Target_Speaker": 0.09093324095010757,
+          "Opening_officer_reference": 0.06608101725578308
+        }
+      }
+    ]
+  },
+  {
+    "signal": "full",
+    "mode": "complete",
+    "correct_known": 2,
+    "known_evaluated": 4,
+    "wrong_known": 0,
+    "false_known_on_other": 1,
+    "other_evaluated": 7,
+    "rows": [
+      {
+        "segment_index": 1,
+        "expected": "Target_Speaker",
+        "hypothesis": "Uncertain",
+        "scores": {
+          "Target_Speaker": -0.011653022840619087,
+          "Opening_officer_reference": 0.19709235429763794
+        }
+      },
+      {
+        "segment_index": 2,
+        "expected": "Target_Speaker",
+        "hypothesis": "Target_Speaker",
+        "scores": {
+          "Target_Speaker": 0.2547045946121216,
+          "Opening_officer_reference": 0.022196568548679352
+        }
+      },
+      {
+        "segment_index": 4,
+        "expected": "Other",
+        "hypothesis": "Uncertain",
+        "scores": {
+          "Target_Speaker": 0.009129166603088379,
+          "Opening_officer_reference": 0.05457877367734909
+        }
+      },
+      {
+        "segment_index": 5,
+        "expected": "Other",
+        "hypothesis": "Uncertain",
+        "scores": {
+          "Target_Speaker": 0.09838853031396866,
+          "Opening_officer_reference": 0.03615707904100418
+        }
+      },
+      {
+        "segment_index": 6,
+        "expected": "Other",
+        "hypothesis": "Uncertain",
+        "scores": {
+          "Target_Speaker": -0.021427012979984283,
+          "Opening_officer_reference": 0.14100785553455353
+        }
+      },
+      {
+        "segment_index": 7,
+        "expected": "Opening_officer_reference",
+        "hypothesis": "Uncertain",
+        "scores": {
+          "Target_Speaker": 0.05411371961236,
+          "Opening_officer_reference": 0.1554773598909378
+        }
+      },
+      {
+        "segment_index": 9,
+        "expected": "Opening_officer_reference",
+        "hypothesis": "Opening_officer_reference",
+        "scores": {
+          "Target_Speaker": -0.005801573395729065,
+          "Opening_officer_reference": 0.2637501657009125
+        }
+      },
+      {
+        "segment_index": 11,
+        "expected": "Other",
+        "hypothesis": "Uncertain",
+        "scores": {
+          "Target_Speaker": -0.036074064671993256,
+          "Opening_officer_reference": 0.22112131118774414
+        }
+      },
+      {
+        "segment_index": 12,
+        "expected": "Other",
+        "hypothesis": "Uncertain",
+        "scores": {
+          "Target_Speaker": 0.09711796045303345,
+          "Opening_officer_reference": 0.07460353523492813
+        }
+      },
+      {
+        "segment_index": 13,
+        "expected": "Other",
+        "hypothesis": "Opening_officer_reference",
+        "scores": {
+          "Target_Speaker": 0.20875446498394012,
+          "Opening_officer_reference": 0.3082156777381897
+        }
+      },
+      {
+        "segment_index": 14,
+        "expected": "Other",
+        "hypothesis": "Uncertain",
+        "scores": {
+          "Target_Speaker": 0.10053248703479767,
+          "Opening_officer_reference": 0.07356922328472137
+        }
+      }
+    ]
+  },
+  {
+    "signal": "full",
+    "mode": "voiced_only",
+    "correct_known": 1,
+    "known_evaluated": 4,
+    "wrong_known": 0,
+    "false_known_on_other": 2,
+    "other_evaluated": 7,
+    "rows": [
+      {
+        "segment_index": 1,
+        "expected": "Target_Speaker",
+        "hypothesis": "Uncertain",
+        "scores": {
+          "Target_Speaker": -0.011653022840619087,
+          "Opening_officer_reference": 0.19709235429763794
+        }
+      },
+      {
+        "segment_index": 2,
+        "expected": "Target_Speaker",
+        "hypothesis": "Uncertain",
+        "scores": {
+          "Target_Speaker": 0.19159497320652008,
+          "Opening_officer_reference": -0.03722705319523811
+        }
+      },
+      {
+        "segment_index": 4,
+        "expected": "Other",
+        "hypothesis": "Uncertain",
+        "scores": {
+          "Target_Speaker": 0.009129166603088379,
+          "Opening_officer_reference": 0.05457877367734909
+        }
+      },
+      {
+        "segment_index": 5,
+        "expected": "Other",
+        "hypothesis": "Uncertain",
+        "scores": {
+          "Target_Speaker": 0.08065982162952423,
+          "Opening_officer_reference": 0.05208994448184967
+        }
+      },
+      {
+        "segment_index": 6,
+        "expected": "Other",
+        "hypothesis": "Uncertain",
+        "scores": {
+          "Target_Speaker": -0.021427012979984283,
+          "Opening_officer_reference": 0.14100785553455353
+        }
+      },
+      {
+        "segment_index": 7,
+        "expected": "Opening_officer_reference",
+        "hypothesis": "Uncertain",
+        "scores": {
+          "Target_Speaker": 0.0408979095518589,
+          "Opening_officer_reference": 0.11431954801082611
+        }
+      },
+      {
+        "segment_index": 9,
+        "expected": "Opening_officer_reference",
+        "hypothesis": "Opening_officer_reference",
+        "scores": {
+          "Target_Speaker": -0.005801573395729065,
+          "Opening_officer_reference": 0.2637501657009125
+        }
+      },
+      {
+        "segment_index": 11,
+        "expected": "Other",
+        "hypothesis": "Opening_officer_reference",
+        "scores": {
+          "Target_Speaker": -0.01200726255774498,
+          "Opening_officer_reference": 0.2564288377761841
+        }
+      },
+      {
+        "segment_index": 12,
+        "expected": "Other",
+        "hypothesis": "Uncertain",
+        "scores": {
+          "Target_Speaker": 0.03714238479733467,
+          "Opening_officer_reference": 0.05194330960512161
+        }
+      },
+      {
+        "segment_index": 13,
+        "expected": "Other",
+        "hypothesis": "Opening_officer_reference",
+        "scores": {
+          "Target_Speaker": 0.22056794166564941,
+          "Opening_officer_reference": 0.30538931488990784
+        }
+      },
+      {
+        "segment_index": 14,
+        "expected": "Other",
+        "hypothesis": "Uncertain",
+        "scores": {
+          "Target_Speaker": 0.10053248703479767,
+          "Opening_officer_reference": 0.07356922328472137
+        }
+      }
+    ]
+  }
+]

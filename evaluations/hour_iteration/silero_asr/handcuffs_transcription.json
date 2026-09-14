@@ -1,0 +1,39 @@
+{
+  "segments": [
+    {
+      "text": " And two, it lets them know kind of what to expect, so. I appreciate people. Oh yeah. Well I can tell everybody else that comes in here, my behavior is kind of a reflection of theirs. I couldn't agree more. I couldn't agree more. Couldn't agree a syllable more.",
+      "start": 0,
+      "end": 21.876,
+      "avg_logprob": -0.3380535907215542
+    },
+    {
+      "text": " No, that's not the problem. The key, it just got stuck. I don't want to mess with your cuffs or mess them up or anything, but let's... I'm taking too much, Tommy. I don't got much space. Well, we're not trying to tie someone. We're trying to get the key out of them.",
+      "start": 24.428,
+      "end": 51.924,
+      "avg_logprob": -0.38215468645095824
+    },
+    {
+      "text": " I might need to get a new key. There might be something off with this one, because I just had an issue with that fella I got in. Put this arm on the wall and probably even that could have come off. That guy I just searched in that had the shackles, it had a little bit of difficulty opening up one of the shackled eyes. I think I got to get a new key then. All right, you're good. Go ahead and have a seat. Take off your shoes for me. What size shoe do you wear? This and that. OK. Take off your necklace.",
+      "start": 52.716,
+      "end": 82.164,
+      "avg_logprob": -0.2883122749328613
+    },
+    {
+      "text": " Take out your earrings and your wristband there.",
+      "start": 82.188,
+      "end": 86.1,
+      "avg_logprob": -0.4996789043599909
+    }
+  ],
+  "language": "en",
+  "source_offset_seconds": 1078,
+  "settings": {
+    "vad": "faster-whisper Silero activity adapter",
+    "threshold": 0.5,
+    "context_seconds": 0.5,
+    "chunk_size": 30,
+    "device": "cpu",
+    "compute_type": "int8",
+    "batch_size": 4
+  }
+}

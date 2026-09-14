@@ -1,0 +1,191 @@
+{
+  "segments": [
+    {
+      "start": 0.24,
+      "end": 0.941,
+      "text": " What you out of here doing man?",
+      "words": [
+        {
+          "word": "What",
+          "start": 0.24,
+          "end": 0.34,
+          "score": 0.699
+        },
+        {
+          "word": "you",
+          "start": 0.36,
+          "end": 0.42,
+          "score": 0.0
+        },
+        {
+          "word": "out",
+          "start": 0.44,
+          "end": 0.5,
+          "score": 0.091
+        },
+        {
+          "word": "of",
+          "start": 0.52,
+          "end": 0.56,
+          "score": 0.0
+        },
+        {
+          "word": "here",
+          "start": 0.58,
+          "end": 0.66,
+          "score": 0.324
+        },
+        {
+          "word": "doing",
+          "start": 0.68,
+          "end": 0.801,
+          "score": 0.355
+        },
+        {
+          "word": "man?",
+          "start": 0.821,
+          "end": 0.941,
+          "score": 0.379
+        }
+      ],
+      "avg_logprob": -0.459992436801686
+    },
+    {
+      "start": 2.041,
+      "end": 2.962,
+      "text": "Come over here and talk to me.",
+      "words": [
+        {
+          "word": "Come",
+          "start": 2.041,
+          "end": 2.161,
+          "score": 0.918
+        },
+        {
+          "word": "over",
+          "start": 2.201,
+          "end": 2.322,
+          "score": 0.689
+        },
+        {
+          "word": "here",
+          "start": 2.342,
+          "end": 2.422,
+          "score": 0.352
+        },
+        {
+          "word": "and",
+          "start": 2.442,
+          "end": 2.502,
+          "score": 0.324
+        },
+        {
+          "word": "talk",
+          "start": 2.522,
+          "end": 2.702,
+          "score": 0.749
+        },
+        {
+          "word": "to",
+          "start": 2.722,
+          "end": 2.842,
+          "score": 0.416
+        },
+        {
+          "word": "me.",
+          "start": 2.862,
+          "end": 2.962,
+          "score": 0.904
+        }
+      ],
+      "avg_logprob": -0.459992436801686
+    }
+  ],
+  "word_segments": [
+    {
+      "word": "What",
+      "start": 0.24,
+      "end": 0.34,
+      "score": 0.699
+    },
+    {
+      "word": "you",
+      "start": 0.36,
+      "end": 0.42,
+      "score": 0.0
+    },
+    {
+      "word": "out",
+      "start": 0.44,
+      "end": 0.5,
+      "score": 0.091
+    },
+    {
+      "word": "of",
+      "start": 0.52,
+      "end": 0.56,
+      "score": 0.0
+    },
+    {
+      "word": "here",
+      "start": 0.58,
+      "end": 0.66,
+      "score": 0.324
+    },
+    {
+      "word": "doing",
+      "start": 0.68,
+      "end": 0.801,
+      "score": 0.355
+    },
+    {
+      "word": "man?",
+      "start": 0.821,
+      "end": 0.941,
+      "score": 0.379
+    },
+    {
+      "word": "Come",
+      "start": 2.041,
+      "end": 2.161,
+      "score": 0.918
+    },
+    {
+      "word": "over",
+      "start": 2.201,
+      "end": 2.322,
+      "score": 0.689
+    },
+    {
+      "word": "here",
+      "start": 2.342,
+      "end": 2.422,
+      "score": 0.352
+    },
+    {
+      "word": "and",
+      "start": 2.442,
+      "end": 2.502,
+      "score": 0.324
+    },
+    {
+      "word": "talk",
+      "start": 2.522,
+      "end": 2.702,
+      "score": 0.749
+    },
+    {
+      "word": "to",
+      "start": 2.722,
+      "end": 2.842,
+      "score": 0.416
+    },
+    {
+      "word": "me.",
+      "start": 2.862,
+      "end": 2.962,
+      "score": 0.904
+    }
+  ],
+  "source_offset_seconds": 0
+}

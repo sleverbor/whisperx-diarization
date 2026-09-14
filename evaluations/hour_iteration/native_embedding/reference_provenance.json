@@ -1,0 +1,32 @@
+{
+  "model_checkpoint": "pytorch_model.bin",
+  "target_reference_samples": 18,
+  "officer_reference_samples": [
+    {
+      "start": 0.257,
+      "end": 2.04,
+      "track": "SPEAKER_01",
+      "checkpoint": "voice_4112_32640.json"
+    },
+    {
+      "start": 11.292,
+      "end": 12.854,
+      "track": "SPEAKER_01",
+      "checkpoint": "voice_180672_205664.json"
+    },
+    {
+      "start": 13.355,
+      "end": 15.578,
+      "track": "SPEAKER_01",
+      "checkpoint": "voice_213680_249248.json"
+    },
+    {
+      "start": 26.814,
+      "end": 28.175,
+      "track": "SPEAKER_01",
+      "checkpoint": "voice_429024_450800.json"
+    }
+  ],
+  "dimensions": 256,
+  "not_ecapa_compatible": true
+}
