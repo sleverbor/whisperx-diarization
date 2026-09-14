@@ -1,0 +1,34 @@
+[
+  {
+    "baseline_text": "I don't get found guilty of anything.",
+    "saved_source_start": 665.24,
+    "audio_control_start": 677.28,
+    "complete_alignment_source_start": 677.51,
+    "complete_alignment_text": "I don't get found guilty of anything.",
+    "absolute_error_vs_audio_control": 0.2300000000000182
+  },
+  {
+    "baseline_text": "I do have a driver's license.",
+    "saved_source_start": 667.322,
+    "audio_control_start": 680.68,
+    "complete_alignment_source_start": 680.753,
+    "complete_alignment_text": "I do have a driver's license.",
+    "absolute_error_vs_audio_control": 0.07300000000009277
+  },
+  {
+    "baseline_text": "I have a driver's license.",
+    "saved_source_start": 670.704,
+    "audio_control_start": 684.38,
+    "complete_alignment_source_start": 684.776,
+    "complete_alignment_text": "I have a driver's license.",
+    "absolute_error_vs_audio_control": 0.39599999999995816
+  },
+  {
+    "baseline_text": "I didn't give you any fake information.",
+    "saved_source_start": 672.726,
+    "audio_control_start": 685.64,
+    "complete_alignment_source_start": 685.737,
+    "complete_alignment_text": "I didn't give you any fake information.",
+    "absolute_error_vs_audio_control": 0.09699999999997999
+  }
+]
