@@ -1,0 +1,21 @@
+[1076.52-1081.08] Uncertain: One, it keeps me in good practice, and two, it lets them know kind of what to
+[1090.59-1094.28] SPEAKER_06: My behavior is kind of a reflection of theirs, so I wouldn't agree more.
+[1094.58-1095.54] REVIEW (single decode; speaker unknown): I couldn't agree more.
+[1097.94-1099.48] REVIEW (single decode; speaker unknown): Couldn't agree a syllable more.
+[1102.28-1109.42] REVIEW (overlap support 13/17 words; speaker unknown): It's fun to get them off. No, that's not the problem. They pee. It just got stuck.
+[1112.04-1118.78] REVIEW (overlap support 19/19 words; speaker unknown): I don't want to mess with your cuffs or mess them up or anything, but let's have a look.
+[1121.78-1122.26] REVIEW (single decode; speaker unknown): Sounds like a lot of fun.
+[1124.02-1126.76] REVIEW (overlap support 15/15 words; speaker unknown): We're not trying to tie someone, we're trying to get the key out of them.
+[1127.88-1128.38] REVIEW (single decode; speaker unknown): Oh, sorry.
+[1130.51-1135.95] REVIEW (overlap support 28/28 words; speaker unknown): I might need to get a new key, there might be something off with this one, because I just had an issue with that fella I got in.
+[1136.81-1139.83] REVIEW (overlap support 17/17 words; speaker unknown): Put this arm on the wall in front of you and that could have cut him off.
+[1140.67-1146.66] SPEAKER_06: That guy I just searched in that had the shackles, it had a little bit of difficulty opening up one of the shackles.
+[1146.78-1148.50] SPEAKER_06: I think I got to get a new key then.
+[1148.52-1150.66] SPEAKER_06: Alright, you're good.
+[1150.68-1151.60] SPEAKER_06: Go ahead and have a seat.
+[1151.68-1153.06] SPEAKER_06: Take off your shoes for me.
+[1154.12-1155.65] SPEAKER_06: What size shoe do you wear?
+[1155.69-1155.97] SPEAKER_06: That.
+[1156.95-1157.25] SPEAKER_06: Okay.
+[1157.79-1158.93] SPEAKER_06: Take off your necklace.
+[1160.49-1163.33] SPEAKER_06: Take off your earrings and your wristband there.

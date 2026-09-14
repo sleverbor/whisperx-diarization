@@ -1,0 +1,12 @@
+User-supplied listening reference, not a model prompt. Approximate sequence, no precise word timings verified.
+
+Key officer: My behavior is kind of a reflection of theirs...
+Target: I couldn't agree more... I couldn't agree more. Yup... Couldn't agree a syllable more.
+Unclear: Radio transmission and muttering under key noise.
+Key officer: I'm like no that's not the problem. The key just got stuck.
+Original officer: I don't want to mess with your cuffs or mess them up or anything... but let's...
+Target: Don't tighten up on me too much. I don't got much space.
+Original officer: We're not trying to tighten. We're trying to get the key out of...
+Key officer: I might need to get a new key. There might be something off with this one because I just had an issue with that fella I got in. Put this arm on the wall in front of you when the cuff comes off.
+
+Height/weight reference: Questions about height and weight; user confirmed speech despite door/cart noise. Earlier repeated audio-only decodes give 5'10 and a half / 5'11 and 160. These are model-derived control hypotheses, not independently verified ground truth for every word.

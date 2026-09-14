@@ -1,0 +1,2564 @@
+[
+  {
+    "gap_index": 0,
+    "window_index": 0,
+    "window_start": 14.278999999999996,
+    "window_end": 34.278999999999996,
+    "segments": [
+      {
+        "start": 14.278999999999996,
+        "end": 16.298999999999996,
+        "text": " I couldn't agree more.",
+        "avg_logprob": -0.4272532242995042,
+        "no_speech_prob": 0.2019273042678833,
+        "compression_ratio": 1.4435483870967742,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 14.278999999999996,
+            "end": 15.178999999999997,
+            "word": " I",
+            "probability": 0.12915495038032532,
+            "window_index": 0,
+            "low_confidence": true
+          },
+          {
+            "start": 15.178999999999997,
+            "end": 15.658999999999995,
+            "word": " couldn't",
+            "probability": 0.7404269874095917,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 15.658999999999995,
+            "end": 15.918999999999997,
+            "word": " agree",
+            "probability": 0.8852683305740356,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 15.918999999999997,
+            "end": 16.298999999999996,
+            "word": " more.",
+            "probability": 0.8357757925987244,
+            "window_index": 0,
+            "low_confidence": false
+          }
+        ]
+      },
+      {
+        "start": 16.578999999999997,
+        "end": 17.538999999999994,
+        "text": " I couldn't agree more.",
+        "avg_logprob": -0.4272532242995042,
+        "no_speech_prob": 0.2019273042678833,
+        "compression_ratio": 1.4435483870967742,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 16.578999999999997,
+            "end": 16.698999999999998,
+            "word": " I",
+            "probability": 0.5796402096748352,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 16.698999999999998,
+            "end": 16.998999999999995,
+            "word": " couldn't",
+            "probability": 0.8877586126327515,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 16.998999999999995,
+            "end": 17.178999999999995,
+            "word": " agree",
+            "probability": 0.8994480967521667,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 17.178999999999995,
+            "end": 17.538999999999994,
+            "word": " more.",
+            "probability": 0.8209208250045776,
+            "window_index": 0,
+            "low_confidence": false
+          }
+        ]
+      },
+      {
+        "start": 19.938999999999997,
+        "end": 21.478999999999996,
+        "text": " Couldn't agree a syllable more.",
+        "avg_logprob": -0.4272532242995042,
+        "no_speech_prob": 0.2019273042678833,
+        "compression_ratio": 1.4435483870967742,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 19.938999999999997,
+            "end": 20.418999999999997,
+            "word": " Couldn't",
+            "probability": 0.6259193867444992,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 20.418999999999997,
+            "end": 20.678999999999995,
+            "word": " agree",
+            "probability": 0.9063473343849182,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 20.678999999999995,
+            "end": 20.838999999999995,
+            "word": " a",
+            "probability": 0.7763524651527405,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 20.838999999999995,
+            "end": 21.058999999999997,
+            "word": " syllable",
+            "probability": 0.8206031322479248,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 21.058999999999997,
+            "end": 21.478999999999996,
+            "word": " more.",
+            "probability": 0.8522285223007202,
+            "window_index": 0,
+            "low_confidence": false
+          }
+        ]
+      },
+      {
+        "start": 24.339,
+        "end": 25.098999999999997,
+        "text": " Well, I had fun.",
+        "avg_logprob": -0.4272532242995042,
+        "no_speech_prob": 0.2019273042678833,
+        "compression_ratio": 1.4435483870967742,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 24.339,
+            "end": 24.478999999999996,
+            "word": " Well,",
+            "probability": 0.17116095125675201,
+            "window_index": 0,
+            "low_confidence": true
+          },
+          {
+            "start": 24.598999999999997,
+            "end": 24.638999999999996,
+            "word": " I",
+            "probability": 0.2705944776535034,
+            "window_index": 0,
+            "low_confidence": true
+          },
+          {
+            "start": 24.638999999999996,
+            "end": 24.798999999999996,
+            "word": " had",
+            "probability": 0.4599335193634033,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 24.798999999999996,
+            "end": 25.098999999999997,
+            "word": " fun.",
+            "probability": 0.7096246480941772,
+            "window_index": 0,
+            "low_confidence": false
+          }
+        ]
+      },
+      {
+        "start": 26.218999999999994,
+        "end": 27.758999999999997,
+        "text": " It was fun to get them up.",
+        "avg_logprob": -0.4272532242995042,
+        "no_speech_prob": 0.2019273042678833,
+        "compression_ratio": 1.4435483870967742,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 26.218999999999994,
+            "end": 26.519,
+            "word": " It",
+            "probability": 0.220517098903656,
+            "window_index": 0,
+            "low_confidence": true
+          },
+          {
+            "start": 26.519,
+            "end": 26.998999999999995,
+            "word": " was",
+            "probability": 0.6793004274368286,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 26.998999999999995,
+            "end": 27.159,
+            "word": " fun",
+            "probability": 0.8450362682342529,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 27.159,
+            "end": 27.278999999999996,
+            "word": " to",
+            "probability": 0.7750195860862732,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 27.278999999999996,
+            "end": 27.418999999999997,
+            "word": " get",
+            "probability": 0.8093789219856262,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 27.418999999999997,
+            "end": 27.519,
+            "word": " them",
+            "probability": 0.19097472727298737,
+            "window_index": 0,
+            "low_confidence": true
+          },
+          {
+            "start": 27.519,
+            "end": 27.758999999999997,
+            "word": " up.",
+            "probability": 0.39982742071151733,
+            "window_index": 0,
+            "low_confidence": true
+          }
+        ]
+      },
+      {
+        "start": 28.038999999999994,
+        "end": 29.178999999999995,
+        "text": " No, that's not the problem.",
+        "avg_logprob": -0.4272532242995042,
+        "no_speech_prob": 0.2019273042678833,
+        "compression_ratio": 1.4435483870967742,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 28.038999999999994,
+            "end": 28.238999999999997,
+            "word": " No,",
+            "probability": 0.6861177086830139,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 28.278999999999996,
+            "end": 28.478999999999996,
+            "word": " that's",
+            "probability": 0.9295764565467834,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 28.478999999999996,
+            "end": 28.618999999999996,
+            "word": " not",
+            "probability": 0.8878856897354126,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 28.618999999999996,
+            "end": 28.778999999999996,
+            "word": " the",
+            "probability": 0.7961658239364624,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 28.778999999999996,
+            "end": 29.178999999999995,
+            "word": " problem.",
+            "probability": 0.7882468104362488,
+            "window_index": 0,
+            "low_confidence": false
+          }
+        ]
+      },
+      {
+        "start": 29.758999999999997,
+        "end": 31.398999999999997,
+        "text": " They peed. It just got stuck.",
+        "avg_logprob": -0.4272532242995042,
+        "no_speech_prob": 0.2019273042678833,
+        "compression_ratio": 1.4435483870967742,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 29.758999999999997,
+            "end": 29.958999999999996,
+            "word": " They",
+            "probability": 0.5210837721824646,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 29.958999999999996,
+            "end": 30.338999999999995,
+            "word": " peed.",
+            "probability": 0.6197099536657333,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 30.558999999999997,
+            "end": 30.698999999999998,
+            "word": " It",
+            "probability": 0.4464447796344757,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 30.698999999999998,
+            "end": 30.878999999999998,
+            "word": " just",
+            "probability": 0.8762069344520569,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 30.878999999999998,
+            "end": 31.078999999999997,
+            "word": " got",
+            "probability": 0.8808521032333374,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 31.078999999999997,
+            "end": 31.398999999999997,
+            "word": " stuck.",
+            "probability": 0.8329769968986511,
+            "window_index": 0,
+            "low_confidence": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "gap_index": 0,
+    "window_index": 1,
+    "window_start": 24.278999999999996,
+    "window_end": 44.278999999999996,
+    "segments": [
+      {
+        "start": 24.278999999999996,
+        "end": 27.758999999999997,
+        "text": " It's fun to get them off.",
+        "avg_logprob": -0.7421219516807879,
+        "no_speech_prob": 0.06879283487796783,
+        "compression_ratio": 1.3680555555555556,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 24.278999999999996,
+            "end": 24.738999999999997,
+            "word": " It's",
+            "probability": 0.198072774335742,
+            "window_index": 1,
+            "low_confidence": true
+          },
+          {
+            "start": 24.738999999999997,
+            "end": 25.078999999999997,
+            "word": " fun",
+            "probability": 0.13954849541187286,
+            "window_index": 1,
+            "low_confidence": true
+          },
+          {
+            "start": 25.078999999999997,
+            "end": 27.278999999999996,
+            "word": " to",
+            "probability": 0.4456213414669037,
+            "window_index": 1,
+            "low_confidence": false
+          },
+          {
+            "start": 27.278999999999996,
+            "end": 27.418999999999997,
+            "word": " get",
+            "probability": 0.845551073551178,
+            "window_index": 1,
+            "low_confidence": false
+          },
+          {
+            "start": 27.418999999999997,
+            "end": 27.519,
+            "word": " them",
+            "probability": 0.4842432737350464,
+            "window_index": 1,
+            "low_confidence": false
+          },
+          {
+            "start": 27.519,
+            "end": 27.758999999999997,
+            "word": " off.",
+            "probability": 0.2805875539779663,
+            "window_index": 1,
+            "low_confidence": true
+          }
+        ]
+      },
+      {
+        "start": 28.058999999999997,
+        "end": 29.198999999999998,
+        "text": " No, that's not the problem.",
+        "avg_logprob": -0.7421219516807879,
+        "no_speech_prob": 0.06879283487796783,
+        "compression_ratio": 1.3680555555555556,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 28.058999999999997,
+            "end": 28.218999999999998,
+            "word": " No,",
+            "probability": 0.6647481322288513,
+            "window_index": 1,
+            "low_confidence": false
+          },
+          {
+            "start": 28.278999999999996,
+            "end": 28.478999999999996,
+            "word": " that's",
+            "probability": 0.9286063313484192,
+            "window_index": 1,
+            "low_confidence": false
+          },
+          {
+            "start": 28.478999999999996,
+            "end": 28.618999999999996,
+            "word": " not",
+            "probability": 0.8938320279121399,
+            "window_index": 1,
+            "low_confidence": false
+          },
+          {
+            "start": 28.618999999999996,
+            "end": 28.778999999999996,
+            "word": " the",
+            "probability": 0.7932718396186829,
+            "window_index": 1,
+            "low_confidence": false
+          },
+          {
+            "start": 28.778999999999996,
+            "end": 29.198999999999998,
+            "word": " problem.",
+            "probability": 0.7861583232879639,
+            "window_index": 1,
+            "low_confidence": false
+          }
+        ]
+      },
+      {
+        "start": 29.758999999999997,
+        "end": 30.258999999999997,
+        "text": " They pee.",
+        "avg_logprob": -0.7421219516807879,
+        "no_speech_prob": 0.06879283487796783,
+        "compression_ratio": 1.3680555555555556,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 29.758999999999997,
+            "end": 29.958999999999996,
+            "word": " They",
+            "probability": 0.6761767268180847,
+            "window_index": 1,
+            "low_confidence": false
+          },
+          {
+            "start": 29.958999999999996,
+            "end": 30.258999999999997,
+            "word": " pee.",
+            "probability": 0.44541993737220764,
+            "window_index": 1,
+            "low_confidence": false
+          }
+        ]
+      },
+      {
+        "start": 30.519,
+        "end": 31.418999999999997,
+        "text": " It just got stuck.",
+        "avg_logprob": -0.7421219516807879,
+        "no_speech_prob": 0.06879283487796783,
+        "compression_ratio": 1.3680555555555556,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 30.519,
+            "end": 30.678999999999995,
+            "word": " It",
+            "probability": 0.47711318731307983,
+            "window_index": 1,
+            "low_confidence": false
+          },
+          {
+            "start": 30.678999999999995,
+            "end": 30.878999999999998,
+            "word": " just",
+            "probability": 0.8668062686920166,
+            "window_index": 1,
+            "low_confidence": false
+          },
+          {
+            "start": 30.878999999999998,
+            "end": 31.078999999999997,
+            "word": " got",
+            "probability": 0.8020246624946594,
+            "window_index": 1,
+            "low_confidence": false
+          },
+          {
+            "start": 31.078999999999997,
+            "end": 31.418999999999997,
+            "word": " stuck.",
+            "probability": 0.8087636828422546,
+            "window_index": 1,
+            "low_confidence": false
+          }
+        ]
+      },
+      {
+        "start": 34.038999999999994,
+        "end": 36.79899999999999,
+        "text": " I don't want to mess with your cuffs or mess them up or anything,",
+        "avg_logprob": -0.7421219516807879,
+        "no_speech_prob": 0.06879283487796783,
+        "compression_ratio": 1.3680555555555556,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 34.038999999999994,
+            "end": 34.43899999999999,
+            "word": " I",
+            "probability": 0.9124396443367004,
+            "window_index": 1,
+            "low_confidence": false
+          },
+          {
+            "start": 34.43899999999999,
+            "end": 34.538999999999994,
+            "word": " don't",
+            "probability": 0.9229494035243988,
+            "window_index": 1,
+            "low_confidence": false
+          },
+          {
+            "start": 34.538999999999994,
+            "end": 34.659,
+            "word": " want",
+            "probability": 0.6032119989395142,
+            "window_index": 1,
+            "low_confidence": false
+          },
+          {
+            "start": 34.659,
+            "end": 34.778999999999996,
+            "word": " to",
+            "probability": 0.912869930267334,
+            "window_index": 1,
+            "low_confidence": false
+          },
+          {
+            "start": 34.778999999999996,
+            "end": 34.93899999999999,
+            "word": " mess",
+            "probability": 0.843595564365387,
+            "window_index": 1,
+            "low_confidence": false
+          },
+          {
+            "start": 34.93899999999999,
+            "end": 35.07899999999999,
+            "word": " with",
+            "probability": 0.7974125146865845,
+            "window_index": 1,
+            "low_confidence": false
+          },
+          {
+            "start": 35.07899999999999,
+            "end": 35.259,
+            "word": " your",
+            "probability": 0.7916130423545837,
+            "window_index": 1,
+            "low_confidence": false
+          },
+          {
+            "start": 35.259,
+            "end": 35.659,
+            "word": " cuffs",
+            "probability": 0.5810644974311193,
+            "window_index": 1,
+            "low_confidence": false
+          },
+          {
+            "start": 35.659,
+            "end": 35.739,
+            "word": " or",
+            "probability": 0.8138318657875061,
+            "window_index": 1,
+            "low_confidence": false
+          },
+          {
+            "start": 35.739,
+            "end": 35.979,
+            "word": " mess",
+            "probability": 0.7286516427993774,
+            "window_index": 1,
+            "low_confidence": false
+          },
+          {
+            "start": 35.979,
+            "end": 36.099,
+            "word": " them",
+            "probability": 0.7048319578170776,
+            "window_index": 1,
+            "low_confidence": false
+          },
+          {
+            "start": 36.099,
+            "end": 36.29899999999999,
+            "word": " up",
+            "probability": 0.8999484777450562,
+            "window_index": 1,
+            "low_confidence": false
+          },
+          {
+            "start": 36.29899999999999,
+            "end": 36.419,
+            "word": " or",
+            "probability": 0.8778252601623535,
+            "window_index": 1,
+            "low_confidence": false
+          },
+          {
+            "start": 36.419,
+            "end": 36.79899999999999,
+            "word": " anything,",
+            "probability": 0.8384129405021667,
+            "window_index": 1,
+            "low_confidence": false
+          }
+        ]
+      },
+      {
+        "start": 36.979,
+        "end": 40.778999999999996,
+        "text": " but let's have a look.",
+        "avg_logprob": -0.7421219516807879,
+        "no_speech_prob": 0.06879283487796783,
+        "compression_ratio": 1.3680555555555556,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 36.979,
+            "end": 37.178999999999995,
+            "word": " but",
+            "probability": 0.8887112736701965,
+            "window_index": 1,
+            "low_confidence": false
+          },
+          {
+            "start": 37.178999999999995,
+            "end": 38.858999999999995,
+            "word": " let's",
+            "probability": 0.689436599612236,
+            "window_index": 1,
+            "low_confidence": false
+          },
+          {
+            "start": 38.858999999999995,
+            "end": 40.29899999999999,
+            "word": " have",
+            "probability": 0.02130555920302868,
+            "window_index": 1,
+            "low_confidence": true
+          },
+          {
+            "start": 40.29899999999999,
+            "end": 40.458999999999996,
+            "word": " a",
+            "probability": 0.2794782519340515,
+            "window_index": 1,
+            "low_confidence": true
+          },
+          {
+            "start": 40.458999999999996,
+            "end": 40.778999999999996,
+            "word": " look.",
+            "probability": 0.6942487359046936,
+            "window_index": 1,
+            "low_confidence": false
+          }
+        ]
+      },
+      {
+        "start": 43.778999999999996,
+        "end": 44.259,
+        "text": " Sounds like a lot of fun.",
+        "avg_logprob": -0.7421219516807879,
+        "no_speech_prob": 0.06879283487796783,
+        "compression_ratio": 1.3680555555555556,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 43.778999999999996,
+            "end": 44.07899999999999,
+            "word": " Sounds",
+            "probability": 0.33630937337875366,
+            "window_index": 1,
+            "low_confidence": true
+          },
+          {
+            "start": 44.07899999999999,
+            "end": 44.259,
+            "word": " like",
+            "probability": 0.8617931008338928,
+            "window_index": 1,
+            "low_confidence": false
+          },
+          {
+            "start": 44.259,
+            "end": 44.259,
+            "word": " a",
+            "probability": 0.11900343000888824,
+            "window_index": 1,
+            "low_confidence": true
+          },
+          {
+            "start": 44.259,
+            "end": 44.259,
+            "word": " lot",
+            "probability": 0.21196585893630981,
+            "window_index": 1,
+            "low_confidence": true
+          },
+          {
+            "start": 44.259,
+            "end": 44.259,
+            "word": " of",
+            "probability": 0.8427957892417908,
+            "window_index": 1,
+            "low_confidence": false
+          },
+          {
+            "start": 44.259,
+            "end": 44.259,
+            "word": " fun.",
+            "probability": 0.6791219711303711,
+            "window_index": 1,
+            "low_confidence": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "gap_index": 0,
+    "window_index": 2,
+    "window_start": 34.278999999999996,
+    "window_end": 54.278999999999996,
+    "segments": [
+      {
+        "start": 34.278999999999996,
+        "end": 40.538999999999994,
+        "text": " I don't want to mess with your cuffs or mess them up or anything, but let's have a look.",
+        "avg_logprob": -0.4807873849409172,
+        "no_speech_prob": 0.029668010771274567,
+        "compression_ratio": 1.5521472392638036,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 34.278999999999996,
+            "end": 34.419,
+            "word": " I",
+            "probability": 0.4177229106426239,
+            "window_index": 2,
+            "low_confidence": false
+          },
+          {
+            "start": 34.419,
+            "end": 34.538999999999994,
+            "word": " don't",
+            "probability": 0.8301521241664886,
+            "window_index": 2,
+            "low_confidence": false
+          },
+          {
+            "start": 34.538999999999994,
+            "end": 34.678999999999995,
+            "word": " want",
+            "probability": 0.567434549331665,
+            "window_index": 2,
+            "low_confidence": false
+          },
+          {
+            "start": 34.678999999999995,
+            "end": 34.778999999999996,
+            "word": " to",
+            "probability": 0.8976953029632568,
+            "window_index": 2,
+            "low_confidence": false
+          },
+          {
+            "start": 34.778999999999996,
+            "end": 34.93899999999999,
+            "word": " mess",
+            "probability": 0.8582649827003479,
+            "window_index": 2,
+            "low_confidence": false
+          },
+          {
+            "start": 34.93899999999999,
+            "end": 35.07899999999999,
+            "word": " with",
+            "probability": 0.7842795848846436,
+            "window_index": 2,
+            "low_confidence": false
+          },
+          {
+            "start": 35.07899999999999,
+            "end": 35.25899999999999,
+            "word": " your",
+            "probability": 0.7265682220458984,
+            "window_index": 2,
+            "low_confidence": false
+          },
+          {
+            "start": 35.25899999999999,
+            "end": 35.678999999999995,
+            "word": " cuffs",
+            "probability": 0.6283139983812968,
+            "window_index": 2,
+            "low_confidence": false
+          },
+          {
+            "start": 35.678999999999995,
+            "end": 35.739,
+            "word": " or",
+            "probability": 0.7795928716659546,
+            "window_index": 2,
+            "low_confidence": false
+          },
+          {
+            "start": 35.739,
+            "end": 35.979,
+            "word": " mess",
+            "probability": 0.6147953867912292,
+            "window_index": 2,
+            "low_confidence": false
+          },
+          {
+            "start": 35.979,
+            "end": 36.119,
+            "word": " them",
+            "probability": 0.6442678570747375,
+            "window_index": 2,
+            "low_confidence": false
+          },
+          {
+            "start": 36.119,
+            "end": 36.318999999999996,
+            "word": " up",
+            "probability": 0.8978003263473511,
+            "window_index": 2,
+            "low_confidence": false
+          },
+          {
+            "start": 36.318999999999996,
+            "end": 36.43899999999999,
+            "word": " or",
+            "probability": 0.8439911007881165,
+            "window_index": 2,
+            "low_confidence": false
+          },
+          {
+            "start": 36.43899999999999,
+            "end": 36.75899999999999,
+            "word": " anything,",
+            "probability": 0.8578262329101562,
+            "window_index": 2,
+            "low_confidence": false
+          },
+          {
+            "start": 36.998999999999995,
+            "end": 37.178999999999995,
+            "word": " but",
+            "probability": 0.8755461573600769,
+            "window_index": 2,
+            "low_confidence": false
+          },
+          {
+            "start": 37.178999999999995,
+            "end": 39.559,
+            "word": " let's",
+            "probability": 0.7973579168319702,
+            "window_index": 2,
+            "low_confidence": false
+          },
+          {
+            "start": 39.559,
+            "end": 40.29899999999999,
+            "word": " have",
+            "probability": 0.1512974500656128,
+            "window_index": 2,
+            "low_confidence": true
+          },
+          {
+            "start": 40.29899999999999,
+            "end": 40.458999999999996,
+            "word": " a",
+            "probability": 0.7914632558822632,
+            "window_index": 2,
+            "low_confidence": false
+          },
+          {
+            "start": 40.458999999999996,
+            "end": 40.538999999999994,
+            "word": " look.",
+            "probability": 0.8148432374000549,
+            "window_index": 2,
+            "low_confidence": false
+          }
+        ]
+      },
+      {
+        "start": 43.699,
+        "end": 45.958999999999996,
+        "text": " I'm typing too much on it, I don't have much space.",
+        "avg_logprob": -0.4807873849409172,
+        "no_speech_prob": 0.029668010771274567,
+        "compression_ratio": 1.5521472392638036,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 43.699,
+            "end": 44.059,
+            "word": " I'm",
+            "probability": 0.6965058892965317,
+            "window_index": 2,
+            "low_confidence": false
+          },
+          {
+            "start": 44.059,
+            "end": 44.259,
+            "word": " typing",
+            "probability": 0.21565556526184082,
+            "window_index": 2,
+            "low_confidence": true
+          },
+          {
+            "start": 44.259,
+            "end": 44.519,
+            "word": " too",
+            "probability": 0.7548713684082031,
+            "window_index": 2,
+            "low_confidence": false
+          },
+          {
+            "start": 44.519,
+            "end": 44.759,
+            "word": " much",
+            "probability": 0.8068849444389343,
+            "window_index": 2,
+            "low_confidence": false
+          },
+          {
+            "start": 44.759,
+            "end": 44.93899999999999,
+            "word": " on",
+            "probability": 0.4310378134250641,
+            "window_index": 2,
+            "low_confidence": false
+          },
+          {
+            "start": 44.93899999999999,
+            "end": 45.038999999999994,
+            "word": " it,",
+            "probability": 0.40786629915237427,
+            "window_index": 2,
+            "low_confidence": false
+          },
+          {
+            "start": 45.07899999999999,
+            "end": 45.138999999999996,
+            "word": " I",
+            "probability": 0.9667148590087891,
+            "window_index": 2,
+            "low_confidence": false
+          },
+          {
+            "start": 45.138999999999996,
+            "end": 45.259,
+            "word": " don't",
+            "probability": 0.8570049703121185,
+            "window_index": 2,
+            "low_confidence": false
+          },
+          {
+            "start": 45.259,
+            "end": 45.379,
+            "word": " have",
+            "probability": 0.4875169098377228,
+            "window_index": 2,
+            "low_confidence": false
+          },
+          {
+            "start": 45.379,
+            "end": 45.638999999999996,
+            "word": " much",
+            "probability": 0.6652549505233765,
+            "window_index": 2,
+            "low_confidence": false
+          },
+          {
+            "start": 45.638999999999996,
+            "end": 45.958999999999996,
+            "word": " space.",
+            "probability": 0.820113480091095,
+            "window_index": 2,
+            "low_confidence": false
+          }
+        ]
+      },
+      {
+        "start": 46.159,
+        "end": 48.718999999999994,
+        "text": " We're not trying to type, we're trying to get the key out of it.",
+        "avg_logprob": -0.4807873849409172,
+        "no_speech_prob": 0.029668010771274567,
+        "compression_ratio": 1.5521472392638036,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 46.159,
+            "end": 46.398999999999994,
+            "word": " We're",
+            "probability": 0.5900586843490601,
+            "window_index": 2,
+            "low_confidence": false
+          },
+          {
+            "start": 46.398999999999994,
+            "end": 46.559,
+            "word": " not",
+            "probability": 0.8860325813293457,
+            "window_index": 2,
+            "low_confidence": false
+          },
+          {
+            "start": 46.559,
+            "end": 46.778999999999996,
+            "word": " trying",
+            "probability": 0.7905325293540955,
+            "window_index": 2,
+            "low_confidence": false
+          },
+          {
+            "start": 46.778999999999996,
+            "end": 46.898999999999994,
+            "word": " to",
+            "probability": 0.9102423787117004,
+            "window_index": 2,
+            "low_confidence": false
+          },
+          {
+            "start": 46.898999999999994,
+            "end": 47.178999999999995,
+            "word": " type,",
+            "probability": 0.7191693186759949,
+            "window_index": 2,
+            "low_confidence": false
+          },
+          {
+            "start": 47.318999999999996,
+            "end": 47.419,
+            "word": " we're",
+            "probability": 0.8710163235664368,
+            "window_index": 2,
+            "low_confidence": false
+          },
+          {
+            "start": 47.419,
+            "end": 47.659,
+            "word": " trying",
+            "probability": 0.7565345764160156,
+            "window_index": 2,
+            "low_confidence": false
+          },
+          {
+            "start": 47.659,
+            "end": 47.739,
+            "word": " to",
+            "probability": 0.9012525081634521,
+            "window_index": 2,
+            "low_confidence": false
+          },
+          {
+            "start": 47.739,
+            "end": 47.898999999999994,
+            "word": " get",
+            "probability": 0.8954682946205139,
+            "window_index": 2,
+            "low_confidence": false
+          },
+          {
+            "start": 47.898999999999994,
+            "end": 48.019,
+            "word": " the",
+            "probability": 0.6149929165840149,
+            "window_index": 2,
+            "low_confidence": false
+          },
+          {
+            "start": 48.019,
+            "end": 48.178999999999995,
+            "word": " key",
+            "probability": 0.732782244682312,
+            "window_index": 2,
+            "low_confidence": false
+          },
+          {
+            "start": 48.178999999999995,
+            "end": 48.458999999999996,
+            "word": " out",
+            "probability": 0.8252401351928711,
+            "window_index": 2,
+            "low_confidence": false
+          },
+          {
+            "start": 48.458999999999996,
+            "end": 48.57899999999999,
+            "word": " of",
+            "probability": 0.6765177249908447,
+            "window_index": 2,
+            "low_confidence": false
+          },
+          {
+            "start": 48.57899999999999,
+            "end": 48.718999999999994,
+            "word": " it.",
+            "probability": 0.5549423694610596,
+            "window_index": 2,
+            "low_confidence": false
+          }
+        ]
+      },
+      {
+        "start": 49.879,
+        "end": 50.379,
+        "text": " Oh, sorry.",
+        "avg_logprob": -0.4807873849409172,
+        "no_speech_prob": 0.029668010771274567,
+        "compression_ratio": 1.5521472392638036,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 49.879,
+            "end": 50.119,
+            "word": " Oh,",
+            "probability": 0.30771470069885254,
+            "window_index": 2,
+            "low_confidence": true
+          },
+          {
+            "start": 50.199,
+            "end": 50.379,
+            "word": " sorry.",
+            "probability": 0.2236550897359848,
+            "window_index": 2,
+            "low_confidence": true
+          }
+        ]
+      },
+      {
+        "start": 52.458999999999996,
+        "end": 54.259,
+        "text": " I might need to get a new key there.",
+        "avg_logprob": -0.4807873849409172,
+        "no_speech_prob": 0.029668010771274567,
+        "compression_ratio": 1.5521472392638036,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 52.458999999999996,
+            "end": 52.818999999999996,
+            "word": " I",
+            "probability": 0.7102830410003662,
+            "window_index": 2,
+            "low_confidence": false
+          },
+          {
+            "start": 52.818999999999996,
+            "end": 53.178999999999995,
+            "word": " might",
+            "probability": 0.7252272963523865,
+            "window_index": 2,
+            "low_confidence": false
+          },
+          {
+            "start": 53.178999999999995,
+            "end": 53.358999999999995,
+            "word": " need",
+            "probability": 0.6923878192901611,
+            "window_index": 2,
+            "low_confidence": false
+          },
+          {
+            "start": 53.358999999999995,
+            "end": 53.419,
+            "word": " to",
+            "probability": 0.8943996429443359,
+            "window_index": 2,
+            "low_confidence": false
+          },
+          {
+            "start": 53.419,
+            "end": 53.559,
+            "word": " get",
+            "probability": 0.9005106687545776,
+            "window_index": 2,
+            "low_confidence": false
+          },
+          {
+            "start": 53.559,
+            "end": 53.699,
+            "word": " a",
+            "probability": 0.9912750720977783,
+            "window_index": 2,
+            "low_confidence": false
+          },
+          {
+            "start": 53.699,
+            "end": 53.899,
+            "word": " new",
+            "probability": 0.7957266569137573,
+            "window_index": 2,
+            "low_confidence": false
+          },
+          {
+            "start": 53.899,
+            "end": 54.119,
+            "word": " key",
+            "probability": 0.8066695928573608,
+            "window_index": 2,
+            "low_confidence": false
+          },
+          {
+            "start": 54.119,
+            "end": 54.259,
+            "word": " there.",
+            "probability": 0.24129551649093628,
+            "window_index": 2,
+            "low_confidence": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "gap_index": 0,
+    "window_index": 3,
+    "window_start": 44.278999999999996,
+    "window_end": 64.279,
+    "segments": [
+      {
+        "start": 46.019,
+        "end": 48.759,
+        "text": " We're not trying to tie someone, we're trying to get the key out of them.",
+        "avg_logprob": -0.5054882087490775,
+        "no_speech_prob": 0.16988356411457062,
+        "compression_ratio": 1.6288659793814433,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 46.019,
+            "end": 46.379,
+            "word": " We're",
+            "probability": 0.28533014841377735,
+            "window_index": 3,
+            "low_confidence": true
+          },
+          {
+            "start": 46.379,
+            "end": 46.538999999999994,
+            "word": " not",
+            "probability": 0.824357807636261,
+            "window_index": 3,
+            "low_confidence": false
+          },
+          {
+            "start": 46.538999999999994,
+            "end": 46.799,
+            "word": " trying",
+            "probability": 0.7390517592430115,
+            "window_index": 3,
+            "low_confidence": false
+          },
+          {
+            "start": 46.799,
+            "end": 46.919,
+            "word": " to",
+            "probability": 0.899756908416748,
+            "window_index": 3,
+            "low_confidence": false
+          },
+          {
+            "start": 46.919,
+            "end": 47.138999999999996,
+            "word": " tie",
+            "probability": 0.3455692529678345,
+            "window_index": 3,
+            "low_confidence": true
+          },
+          {
+            "start": 47.138999999999996,
+            "end": 47.358999999999995,
+            "word": " someone,",
+            "probability": 0.29399827122688293,
+            "window_index": 3,
+            "low_confidence": true
+          },
+          {
+            "start": 47.479,
+            "end": 47.498999999999995,
+            "word": " we're",
+            "probability": 0.8183478713035583,
+            "window_index": 3,
+            "low_confidence": false
+          },
+          {
+            "start": 47.498999999999995,
+            "end": 47.638999999999996,
+            "word": " trying",
+            "probability": 0.7745508551597595,
+            "window_index": 3,
+            "low_confidence": false
+          },
+          {
+            "start": 47.638999999999996,
+            "end": 47.739,
+            "word": " to",
+            "probability": 0.9106406569480896,
+            "window_index": 3,
+            "low_confidence": false
+          },
+          {
+            "start": 47.739,
+            "end": 47.898999999999994,
+            "word": " get",
+            "probability": 0.8895338177680969,
+            "window_index": 3,
+            "low_confidence": false
+          },
+          {
+            "start": 47.898999999999994,
+            "end": 48.019,
+            "word": " the",
+            "probability": 0.5654111504554749,
+            "window_index": 3,
+            "low_confidence": false
+          },
+          {
+            "start": 48.019,
+            "end": 48.178999999999995,
+            "word": " key",
+            "probability": 0.770789384841919,
+            "window_index": 3,
+            "low_confidence": false
+          },
+          {
+            "start": 48.178999999999995,
+            "end": 48.458999999999996,
+            "word": " out",
+            "probability": 0.8204895257949829,
+            "window_index": 3,
+            "low_confidence": false
+          },
+          {
+            "start": 48.458999999999996,
+            "end": 48.559,
+            "word": " of",
+            "probability": 0.7686202526092529,
+            "window_index": 3,
+            "low_confidence": false
+          },
+          {
+            "start": 48.559,
+            "end": 48.759,
+            "word": " them.",
+            "probability": 0.620561420917511,
+            "window_index": 3,
+            "low_confidence": false
+          }
+        ]
+      },
+      {
+        "start": 52.43899999999999,
+        "end": 56.099,
+        "text": " I might need to get a new key, there might be something off with this one because I just",
+        "avg_logprob": -0.5054882087490775,
+        "no_speech_prob": 0.16988356411457062,
+        "compression_ratio": 1.6288659793814433,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 52.43899999999999,
+            "end": 52.79899999999999,
+            "word": " I",
+            "probability": 0.34904375672340393,
+            "window_index": 3,
+            "low_confidence": true
+          },
+          {
+            "start": 52.79899999999999,
+            "end": 53.159,
+            "word": " might",
+            "probability": 0.6977482438087463,
+            "window_index": 3,
+            "low_confidence": false
+          },
+          {
+            "start": 53.159,
+            "end": 53.358999999999995,
+            "word": " need",
+            "probability": 0.7230220437049866,
+            "window_index": 3,
+            "low_confidence": false
+          },
+          {
+            "start": 53.358999999999995,
+            "end": 53.43899999999999,
+            "word": " to",
+            "probability": 0.8825149536132812,
+            "window_index": 3,
+            "low_confidence": false
+          },
+          {
+            "start": 53.43899999999999,
+            "end": 53.559,
+            "word": " get",
+            "probability": 0.9028359055519104,
+            "window_index": 3,
+            "low_confidence": false
+          },
+          {
+            "start": 53.559,
+            "end": 53.699,
+            "word": " a",
+            "probability": 0.9822496175765991,
+            "window_index": 3,
+            "low_confidence": false
+          },
+          {
+            "start": 53.699,
+            "end": 53.898999999999994,
+            "word": " new",
+            "probability": 0.7933653593063354,
+            "window_index": 3,
+            "low_confidence": false
+          },
+          {
+            "start": 53.898999999999994,
+            "end": 54.119,
+            "word": " key,",
+            "probability": 0.8001068234443665,
+            "window_index": 3,
+            "low_confidence": false
+          },
+          {
+            "start": 54.278999999999996,
+            "end": 54.318999999999996,
+            "word": " there",
+            "probability": 0.7071216702461243,
+            "window_index": 3,
+            "low_confidence": false
+          },
+          {
+            "start": 54.318999999999996,
+            "end": 54.498999999999995,
+            "word": " might",
+            "probability": 0.7895615100860596,
+            "window_index": 3,
+            "low_confidence": false
+          },
+          {
+            "start": 54.498999999999995,
+            "end": 54.659,
+            "word": " be",
+            "probability": 0.8973228931427002,
+            "window_index": 3,
+            "low_confidence": false
+          },
+          {
+            "start": 54.659,
+            "end": 54.858999999999995,
+            "word": " something",
+            "probability": 0.7144948244094849,
+            "window_index": 3,
+            "low_confidence": false
+          },
+          {
+            "start": 54.858999999999995,
+            "end": 55.159,
+            "word": " off",
+            "probability": 0.46667414903640747,
+            "window_index": 3,
+            "low_confidence": false
+          },
+          {
+            "start": 55.159,
+            "end": 55.318999999999996,
+            "word": " with",
+            "probability": 0.7692956328392029,
+            "window_index": 3,
+            "low_confidence": false
+          },
+          {
+            "start": 55.318999999999996,
+            "end": 55.519,
+            "word": " this",
+            "probability": 0.8715498447418213,
+            "window_index": 3,
+            "low_confidence": false
+          },
+          {
+            "start": 55.519,
+            "end": 55.659,
+            "word": " one",
+            "probability": 0.8127487301826477,
+            "window_index": 3,
+            "low_confidence": false
+          },
+          {
+            "start": 55.659,
+            "end": 55.839,
+            "word": " because",
+            "probability": 0.3023328185081482,
+            "window_index": 3,
+            "low_confidence": true
+          },
+          {
+            "start": 55.839,
+            "end": 55.93899999999999,
+            "word": " I",
+            "probability": 0.9761207699775696,
+            "window_index": 3,
+            "low_confidence": false
+          },
+          {
+            "start": 55.93899999999999,
+            "end": 56.099,
+            "word": " just",
+            "probability": 0.7768267393112183,
+            "window_index": 3,
+            "low_confidence": false
+          }
+        ]
+      },
+      {
+        "start": 56.099,
+        "end": 57.919,
+        "text": " had an issue with that fella I got in.",
+        "avg_logprob": -0.5054882087490775,
+        "no_speech_prob": 0.16988356411457062,
+        "compression_ratio": 1.6288659793814433,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 56.099,
+            "end": 56.259,
+            "word": " had",
+            "probability": 0.8014665842056274,
+            "window_index": 3,
+            "low_confidence": false
+          },
+          {
+            "start": 56.259,
+            "end": 56.379,
+            "word": " an",
+            "probability": 0.8835415840148926,
+            "window_index": 3,
+            "low_confidence": false
+          },
+          {
+            "start": 56.379,
+            "end": 56.599,
+            "word": " issue",
+            "probability": 0.8993711471557617,
+            "window_index": 3,
+            "low_confidence": false
+          },
+          {
+            "start": 56.599,
+            "end": 56.818999999999996,
+            "word": " with",
+            "probability": 0.7914440631866455,
+            "window_index": 3,
+            "low_confidence": false
+          },
+          {
+            "start": 56.818999999999996,
+            "end": 56.998999999999995,
+            "word": " that",
+            "probability": 0.7931927442550659,
+            "window_index": 3,
+            "low_confidence": false
+          },
+          {
+            "start": 56.998999999999995,
+            "end": 57.218999999999994,
+            "word": " fella",
+            "probability": 0.5054066181182861,
+            "window_index": 3,
+            "low_confidence": false
+          },
+          {
+            "start": 57.218999999999994,
+            "end": 57.419,
+            "word": " I",
+            "probability": 0.8110591769218445,
+            "window_index": 3,
+            "low_confidence": false
+          },
+          {
+            "start": 57.419,
+            "end": 57.619,
+            "word": " got",
+            "probability": 0.8700607419013977,
+            "window_index": 3,
+            "low_confidence": false
+          },
+          {
+            "start": 57.619,
+            "end": 57.919,
+            "word": " in.",
+            "probability": 0.8784710764884949,
+            "window_index": 3,
+            "low_confidence": false
+          }
+        ]
+      },
+      {
+        "start": 58.739,
+        "end": 61.818999999999996,
+        "text": " Put this arm on the wall in front of you and that could have cut him off.",
+        "avg_logprob": -0.5054882087490775,
+        "no_speech_prob": 0.16988356411457062,
+        "compression_ratio": 1.6288659793814433,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 58.739,
+            "end": 59.038999999999994,
+            "word": " Put",
+            "probability": 0.4928511679172516,
+            "window_index": 3,
+            "low_confidence": false
+          },
+          {
+            "start": 59.038999999999994,
+            "end": 59.239,
+            "word": " this",
+            "probability": 0.8326601386070251,
+            "window_index": 3,
+            "low_confidence": false
+          },
+          {
+            "start": 59.239,
+            "end": 59.479,
+            "word": " arm",
+            "probability": 0.6889263391494751,
+            "window_index": 3,
+            "low_confidence": false
+          },
+          {
+            "start": 59.479,
+            "end": 59.678999999999995,
+            "word": " on",
+            "probability": 0.8049256801605225,
+            "window_index": 3,
+            "low_confidence": false
+          },
+          {
+            "start": 59.678999999999995,
+            "end": 59.839,
+            "word": " the",
+            "probability": 0.7925130724906921,
+            "window_index": 3,
+            "low_confidence": false
+          },
+          {
+            "start": 59.839,
+            "end": 60.199,
+            "word": " wall",
+            "probability": 0.6393464207649231,
+            "window_index": 3,
+            "low_confidence": false
+          },
+          {
+            "start": 60.199,
+            "end": 60.358999999999995,
+            "word": " in",
+            "probability": 0.8234695196151733,
+            "window_index": 3,
+            "low_confidence": false
+          },
+          {
+            "start": 60.358999999999995,
+            "end": 60.539,
+            "word": " front",
+            "probability": 0.9221635460853577,
+            "window_index": 3,
+            "low_confidence": false
+          },
+          {
+            "start": 60.539,
+            "end": 60.619,
+            "word": " of",
+            "probability": 0.9016834497451782,
+            "window_index": 3,
+            "low_confidence": false
+          },
+          {
+            "start": 60.619,
+            "end": 60.759,
+            "word": " you",
+            "probability": 0.8855059742927551,
+            "window_index": 3,
+            "low_confidence": false
+          },
+          {
+            "start": 60.759,
+            "end": 60.899,
+            "word": " and",
+            "probability": 0.1671317219734192,
+            "window_index": 3,
+            "low_confidence": true
+          },
+          {
+            "start": 60.899,
+            "end": 61.059,
+            "word": " that",
+            "probability": 0.7118975520133972,
+            "window_index": 3,
+            "low_confidence": false
+          },
+          {
+            "start": 61.059,
+            "end": 61.218999999999994,
+            "word": " could",
+            "probability": 0.6692617535591125,
+            "window_index": 3,
+            "low_confidence": false
+          },
+          {
+            "start": 61.218999999999994,
+            "end": 61.318999999999996,
+            "word": " have",
+            "probability": 0.5894349217414856,
+            "window_index": 3,
+            "low_confidence": false
+          },
+          {
+            "start": 61.318999999999996,
+            "end": 61.498999999999995,
+            "word": " cut",
+            "probability": 0.5628196001052856,
+            "window_index": 3,
+            "low_confidence": false
+          },
+          {
+            "start": 61.498999999999995,
+            "end": 61.599,
+            "word": " him",
+            "probability": 0.24260106682777405,
+            "window_index": 3,
+            "low_confidence": true
+          },
+          {
+            "start": 61.599,
+            "end": 61.818999999999996,
+            "word": " off.",
+            "probability": 0.7760404944419861,
+            "window_index": 3,
+            "low_confidence": false
+          }
+        ]
+      },
+      {
+        "start": 62.559,
+        "end": 64.259,
+        "text": " That guy I just searched in at the shop.",
+        "avg_logprob": -0.5054882087490775,
+        "no_speech_prob": 0.16988356411457062,
+        "compression_ratio": 1.6288659793814433,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 62.559,
+            "end": 62.839,
+            "word": " That",
+            "probability": 0.747437059879303,
+            "window_index": 3,
+            "low_confidence": false
+          },
+          {
+            "start": 62.839,
+            "end": 63.059,
+            "word": " guy",
+            "probability": 0.8176581859588623,
+            "window_index": 3,
+            "low_confidence": false
+          },
+          {
+            "start": 63.059,
+            "end": 63.178999999999995,
+            "word": " I",
+            "probability": 0.5768664479255676,
+            "window_index": 3,
+            "low_confidence": false
+          },
+          {
+            "start": 63.178999999999995,
+            "end": 63.358999999999995,
+            "word": " just",
+            "probability": 0.8783610463142395,
+            "window_index": 3,
+            "low_confidence": false
+          },
+          {
+            "start": 63.358999999999995,
+            "end": 63.599,
+            "word": " searched",
+            "probability": 0.7770548462867737,
+            "window_index": 3,
+            "low_confidence": false
+          },
+          {
+            "start": 63.599,
+            "end": 63.818999999999996,
+            "word": " in",
+            "probability": 0.8556856513023376,
+            "window_index": 3,
+            "low_confidence": false
+          },
+          {
+            "start": 63.818999999999996,
+            "end": 64.039,
+            "word": " at",
+            "probability": 0.32942843437194824,
+            "window_index": 3,
+            "low_confidence": true
+          },
+          {
+            "start": 64.039,
+            "end": 64.199,
+            "word": " the",
+            "probability": 0.803433895111084,
+            "window_index": 3,
+            "low_confidence": false
+          },
+          {
+            "start": 64.199,
+            "end": 64.259,
+            "word": " shop.",
+            "probability": 0.34979772567749023,
+            "window_index": 3,
+            "low_confidence": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "gap_index": 0,
+    "window_index": 4,
+    "window_start": 44.67100000000005,
+    "window_end": 64.67100000000005,
+    "segments": [
+      {
+        "start": 46.03100000000005,
+        "end": 48.831000000000046,
+        "text": " We're not trying to tie someone, we're trying to get a key out of them.",
+        "avg_logprob": -0.4654790662849943,
+        "no_speech_prob": 0.08015848696231842,
+        "compression_ratio": 1.6262135922330097,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 46.03100000000005,
+            "end": 46.39100000000005,
+            "word": " We're",
+            "probability": 0.36152106523513794,
+            "window_index": 4,
+            "low_confidence": true
+          },
+          {
+            "start": 46.39100000000005,
+            "end": 46.55100000000005,
+            "word": " not",
+            "probability": 0.8234498500823975,
+            "window_index": 4,
+            "low_confidence": false
+          },
+          {
+            "start": 46.55100000000005,
+            "end": 46.79100000000005,
+            "word": " trying",
+            "probability": 0.7237852215766907,
+            "window_index": 4,
+            "low_confidence": false
+          },
+          {
+            "start": 46.79100000000005,
+            "end": 46.91100000000005,
+            "word": " to",
+            "probability": 0.9027934670448303,
+            "window_index": 4,
+            "low_confidence": false
+          },
+          {
+            "start": 46.91100000000005,
+            "end": 47.13100000000005,
+            "word": " tie",
+            "probability": 0.35165926814079285,
+            "window_index": 4,
+            "low_confidence": true
+          },
+          {
+            "start": 47.13100000000005,
+            "end": 47.331000000000046,
+            "word": " someone,",
+            "probability": 0.3936992883682251,
+            "window_index": 4,
+            "low_confidence": true
+          },
+          {
+            "start": 47.471000000000046,
+            "end": 47.49100000000005,
+            "word": " we're",
+            "probability": 0.8288690447807312,
+            "window_index": 4,
+            "low_confidence": false
+          },
+          {
+            "start": 47.49100000000005,
+            "end": 47.63100000000005,
+            "word": " trying",
+            "probability": 0.7519468069076538,
+            "window_index": 4,
+            "low_confidence": false
+          },
+          {
+            "start": 47.63100000000005,
+            "end": 47.75100000000005,
+            "word": " to",
+            "probability": 0.8941851854324341,
+            "window_index": 4,
+            "low_confidence": false
+          },
+          {
+            "start": 47.75100000000005,
+            "end": 47.89100000000005,
+            "word": " get",
+            "probability": 0.8881281018257141,
+            "window_index": 4,
+            "low_confidence": false
+          },
+          {
+            "start": 47.89100000000005,
+            "end": 48.03100000000005,
+            "word": " a",
+            "probability": 0.7075052261352539,
+            "window_index": 4,
+            "low_confidence": false
+          },
+          {
+            "start": 48.03100000000005,
+            "end": 48.17100000000005,
+            "word": " key",
+            "probability": 0.7774444222450256,
+            "window_index": 4,
+            "low_confidence": false
+          },
+          {
+            "start": 48.17100000000005,
+            "end": 48.471000000000046,
+            "word": " out",
+            "probability": 0.8189075589179993,
+            "window_index": 4,
+            "low_confidence": false
+          },
+          {
+            "start": 48.471000000000046,
+            "end": 48.55100000000005,
+            "word": " of",
+            "probability": 0.828106701374054,
+            "window_index": 4,
+            "low_confidence": false
+          },
+          {
+            "start": 48.55100000000005,
+            "end": 48.831000000000046,
+            "word": " them.",
+            "probability": 0.6341743469238281,
+            "window_index": 4,
+            "low_confidence": false
+          }
+        ]
+      },
+      {
+        "start": 49.95100000000005,
+        "end": 50.17100000000005,
+        "text": " Okay.",
+        "avg_logprob": -0.4654790662849943,
+        "no_speech_prob": 0.08015848696231842,
+        "compression_ratio": 1.6262135922330097,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 49.95100000000005,
+            "end": 50.17100000000005,
+            "word": " Okay.",
+            "probability": 0.07858903706073761,
+            "window_index": 4,
+            "low_confidence": true
+          }
+        ]
+      },
+      {
+        "start": 52.51100000000005,
+        "end": 55.93100000000005,
+        "text": " I might need to get a new key, there might be something off with this one, because I",
+        "avg_logprob": -0.4654790662849943,
+        "no_speech_prob": 0.08015848696231842,
+        "compression_ratio": 1.6262135922330097,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 52.51100000000005,
+            "end": 52.87100000000005,
+            "word": " I",
+            "probability": 0.6109308004379272,
+            "window_index": 4,
+            "low_confidence": false
+          },
+          {
+            "start": 52.87100000000005,
+            "end": 53.17100000000005,
+            "word": " might",
+            "probability": 0.7412247657775879,
+            "window_index": 4,
+            "low_confidence": false
+          },
+          {
+            "start": 53.17100000000005,
+            "end": 53.35100000000005,
+            "word": " need",
+            "probability": 0.6998588442802429,
+            "window_index": 4,
+            "low_confidence": false
+          },
+          {
+            "start": 53.35100000000005,
+            "end": 53.43100000000005,
+            "word": " to",
+            "probability": 0.8774029016494751,
+            "window_index": 4,
+            "low_confidence": false
+          },
+          {
+            "start": 53.43100000000005,
+            "end": 53.55100000000005,
+            "word": " get",
+            "probability": 0.8975408673286438,
+            "window_index": 4,
+            "low_confidence": false
+          },
+          {
+            "start": 53.55100000000005,
+            "end": 53.691000000000045,
+            "word": " a",
+            "probability": 0.9862992167472839,
+            "window_index": 4,
+            "low_confidence": false
+          },
+          {
+            "start": 53.691000000000045,
+            "end": 53.91100000000005,
+            "word": " new",
+            "probability": 0.8020256757736206,
+            "window_index": 4,
+            "low_confidence": false
+          },
+          {
+            "start": 53.91100000000005,
+            "end": 54.13100000000005,
+            "word": " key,",
+            "probability": 0.818062961101532,
+            "window_index": 4,
+            "low_confidence": false
+          },
+          {
+            "start": 54.29100000000005,
+            "end": 54.331000000000046,
+            "word": " there",
+            "probability": 0.6887490749359131,
+            "window_index": 4,
+            "low_confidence": false
+          },
+          {
+            "start": 54.331000000000046,
+            "end": 54.49100000000005,
+            "word": " might",
+            "probability": 0.798932671546936,
+            "window_index": 4,
+            "low_confidence": false
+          },
+          {
+            "start": 54.49100000000005,
+            "end": 54.67100000000005,
+            "word": " be",
+            "probability": 0.8956227898597717,
+            "window_index": 4,
+            "low_confidence": false
+          },
+          {
+            "start": 54.67100000000005,
+            "end": 54.85100000000005,
+            "word": " something",
+            "probability": 0.718536913394928,
+            "window_index": 4,
+            "low_confidence": false
+          },
+          {
+            "start": 54.85100000000005,
+            "end": 55.17100000000005,
+            "word": " off",
+            "probability": 0.5372593998908997,
+            "window_index": 4,
+            "low_confidence": false
+          },
+          {
+            "start": 55.17100000000005,
+            "end": 55.31100000000005,
+            "word": " with",
+            "probability": 0.7662568688392639,
+            "window_index": 4,
+            "low_confidence": false
+          },
+          {
+            "start": 55.31100000000005,
+            "end": 55.53100000000005,
+            "word": " this",
+            "probability": 0.8767874836921692,
+            "window_index": 4,
+            "low_confidence": false
+          },
+          {
+            "start": 55.53100000000005,
+            "end": 55.691000000000045,
+            "word": " one,",
+            "probability": 0.8094619512557983,
+            "window_index": 4,
+            "low_confidence": false
+          },
+          {
+            "start": 55.73100000000005,
+            "end": 55.831000000000046,
+            "word": " because",
+            "probability": 0.5168187618255615,
+            "window_index": 4,
+            "low_confidence": false
+          },
+          {
+            "start": 55.831000000000046,
+            "end": 55.93100000000005,
+            "word": " I",
+            "probability": 0.984653651714325,
+            "window_index": 4,
+            "low_confidence": false
+          }
+        ]
+      },
+      {
+        "start": 55.93100000000005,
+        "end": 57.95100000000005,
+        "text": " just had an issue with that fella I got in.",
+        "avg_logprob": -0.4654790662849943,
+        "no_speech_prob": 0.08015848696231842,
+        "compression_ratio": 1.6262135922330097,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 55.93100000000005,
+            "end": 56.11100000000005,
+            "word": " just",
+            "probability": 0.8180805444717407,
+            "window_index": 4,
+            "low_confidence": false
+          },
+          {
+            "start": 56.11100000000005,
+            "end": 56.25100000000005,
+            "word": " had",
+            "probability": 0.7941033244132996,
+            "window_index": 4,
+            "low_confidence": false
+          },
+          {
+            "start": 56.25100000000005,
+            "end": 56.37100000000005,
+            "word": " an",
+            "probability": 0.8898414969444275,
+            "window_index": 4,
+            "low_confidence": false
+          },
+          {
+            "start": 56.37100000000005,
+            "end": 56.59100000000005,
+            "word": " issue",
+            "probability": 0.8782988786697388,
+            "window_index": 4,
+            "low_confidence": false
+          },
+          {
+            "start": 56.59100000000005,
+            "end": 56.831000000000046,
+            "word": " with",
+            "probability": 0.7948512434959412,
+            "window_index": 4,
+            "low_confidence": false
+          },
+          {
+            "start": 56.831000000000046,
+            "end": 56.99100000000005,
+            "word": " that",
+            "probability": 0.8372818827629089,
+            "window_index": 4,
+            "low_confidence": false
+          },
+          {
+            "start": 56.99100000000005,
+            "end": 57.21100000000005,
+            "word": " fella",
+            "probability": 0.5833994150161743,
+            "window_index": 4,
+            "low_confidence": false
+          },
+          {
+            "start": 57.21100000000005,
+            "end": 57.41100000000005,
+            "word": " I",
+            "probability": 0.8805935382843018,
+            "window_index": 4,
+            "low_confidence": false
+          },
+          {
+            "start": 57.41100000000005,
+            "end": 57.61100000000005,
+            "word": " got",
+            "probability": 0.8732091188430786,
+            "window_index": 4,
+            "low_confidence": false
+          },
+          {
+            "start": 57.61100000000005,
+            "end": 57.95100000000005,
+            "word": " in.",
+            "probability": 0.8945896029472351,
+            "window_index": 4,
+            "low_confidence": false
+          }
+        ]
+      },
+      {
+        "start": 58.81100000000005,
+        "end": 61.831000000000046,
+        "text": " Put this arm on the wall in front of you and that could have cut him off.",
+        "avg_logprob": -0.4654790662849943,
+        "no_speech_prob": 0.08015848696231842,
+        "compression_ratio": 1.6262135922330097,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 58.81100000000005,
+            "end": 59.05100000000005,
+            "word": " Put",
+            "probability": 0.5941340923309326,
+            "window_index": 4,
+            "low_confidence": false
+          },
+          {
+            "start": 59.05100000000005,
+            "end": 59.25100000000005,
+            "word": " this",
+            "probability": 0.8266233801841736,
+            "window_index": 4,
+            "low_confidence": false
+          },
+          {
+            "start": 59.25100000000005,
+            "end": 59.471000000000046,
+            "word": " arm",
+            "probability": 0.7320432662963867,
+            "window_index": 4,
+            "low_confidence": false
+          },
+          {
+            "start": 59.471000000000046,
+            "end": 59.67100000000005,
+            "word": " on",
+            "probability": 0.7912993431091309,
+            "window_index": 4,
+            "low_confidence": false
+          },
+          {
+            "start": 59.67100000000005,
+            "end": 59.85100000000005,
+            "word": " the",
+            "probability": 0.7989249229431152,
+            "window_index": 4,
+            "low_confidence": false
+          },
+          {
+            "start": 59.85100000000005,
+            "end": 60.191000000000045,
+            "word": " wall",
+            "probability": 0.6924335360527039,
+            "window_index": 4,
+            "low_confidence": false
+          },
+          {
+            "start": 60.191000000000045,
+            "end": 60.35100000000005,
+            "word": " in",
+            "probability": 0.7925112843513489,
+            "window_index": 4,
+            "low_confidence": false
+          },
+          {
+            "start": 60.35100000000005,
+            "end": 60.55100000000005,
+            "word": " front",
+            "probability": 0.9196991324424744,
+            "window_index": 4,
+            "low_confidence": false
+          },
+          {
+            "start": 60.55100000000005,
+            "end": 60.63100000000005,
+            "word": " of",
+            "probability": 0.9072614908218384,
+            "window_index": 4,
+            "low_confidence": false
+          },
+          {
+            "start": 60.63100000000005,
+            "end": 60.77100000000005,
+            "word": " you",
+            "probability": 0.8712884187698364,
+            "window_index": 4,
+            "low_confidence": false
+          },
+          {
+            "start": 60.77100000000005,
+            "end": 60.89100000000005,
+            "word": " and",
+            "probability": 0.189962238073349,
+            "window_index": 4,
+            "low_confidence": true
+          },
+          {
+            "start": 60.89100000000005,
+            "end": 61.07100000000005,
+            "word": " that",
+            "probability": 0.7146045565605164,
+            "window_index": 4,
+            "low_confidence": false
+          },
+          {
+            "start": 61.07100000000005,
+            "end": 61.21100000000005,
+            "word": " could",
+            "probability": 0.6912806630134583,
+            "window_index": 4,
+            "low_confidence": false
+          },
+          {
+            "start": 61.21100000000005,
+            "end": 61.31100000000005,
+            "word": " have",
+            "probability": 0.5842617154121399,
+            "window_index": 4,
+            "low_confidence": false
+          },
+          {
+            "start": 61.31100000000005,
+            "end": 61.51100000000005,
+            "word": " cut",
+            "probability": 0.6596880555152893,
+            "window_index": 4,
+            "low_confidence": false
+          },
+          {
+            "start": 61.51100000000005,
+            "end": 61.57100000000005,
+            "word": " him",
+            "probability": 0.23214761912822723,
+            "window_index": 4,
+            "low_confidence": true
+          },
+          {
+            "start": 61.57100000000005,
+            "end": 61.831000000000046,
+            "word": " off.",
+            "probability": 0.7605501413345337,
+            "window_index": 4,
+            "low_confidence": false
+          }
+        ]
+      },
+      {
+        "start": 62.551000000000045,
+        "end": 64.65100000000005,
+        "text": " That guy I just searched in at the shack a little bit.",
+        "avg_logprob": -0.4654790662849943,
+        "no_speech_prob": 0.08015848696231842,
+        "compression_ratio": 1.6262135922330097,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 62.551000000000045,
+            "end": 62.831000000000046,
+            "word": " That",
+            "probability": 0.7829041481018066,
+            "window_index": 4,
+            "low_confidence": false
+          },
+          {
+            "start": 62.831000000000046,
+            "end": 63.051000000000045,
+            "word": " guy",
+            "probability": 0.8302079439163208,
+            "window_index": 4,
+            "low_confidence": false
+          },
+          {
+            "start": 63.051000000000045,
+            "end": 63.191000000000045,
+            "word": " I",
+            "probability": 0.6090982556343079,
+            "window_index": 4,
+            "low_confidence": false
+          },
+          {
+            "start": 63.191000000000045,
+            "end": 63.35100000000005,
+            "word": " just",
+            "probability": 0.8827250599861145,
+            "window_index": 4,
+            "low_confidence": false
+          },
+          {
+            "start": 63.35100000000005,
+            "end": 63.59100000000005,
+            "word": " searched",
+            "probability": 0.7434736490249634,
+            "window_index": 4,
+            "low_confidence": false
+          },
+          {
+            "start": 63.59100000000005,
+            "end": 63.81100000000005,
+            "word": " in",
+            "probability": 0.8568677306175232,
+            "window_index": 4,
+            "low_confidence": false
+          },
+          {
+            "start": 63.81100000000005,
+            "end": 64.03100000000005,
+            "word": " at",
+            "probability": 0.19547592103481293,
+            "window_index": 4,
+            "low_confidence": true
+          },
+          {
+            "start": 64.03100000000005,
+            "end": 64.21100000000004,
+            "word": " the",
+            "probability": 0.8086709380149841,
+            "window_index": 4,
+            "low_confidence": false
+          },
+          {
+            "start": 64.21100000000004,
+            "end": 64.55100000000004,
+            "word": " shack",
+            "probability": 0.9676766395568848,
+            "window_index": 4,
+            "low_confidence": false
+          },
+          {
+            "start": 64.55100000000004,
+            "end": 64.65100000000005,
+            "word": " a",
+            "probability": 0.6260462999343872,
+            "window_index": 4,
+            "low_confidence": false
+          },
+          {
+            "start": 64.65100000000005,
+            "end": 64.65100000000005,
+            "word": " little",
+            "probability": 0.7613552808761597,
+            "window_index": 4,
+            "low_confidence": false
+          },
+          {
+            "start": 64.65100000000005,
+            "end": 64.65100000000005,
+            "word": " bit.",
+            "probability": 0.7874731421470642,
+            "window_index": 4,
+            "low_confidence": false
+          }
+        ]
+      }
+    ]
+  }
+]
