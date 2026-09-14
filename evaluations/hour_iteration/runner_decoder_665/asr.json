@@ -1,0 +1,549 @@
+{
+  "language": "en",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 4.4,
+      "text": " Tower 11, no record from Mississippi or Massachusetts.",
+      "avg_logprob": -0.3451603392759959,
+      "no_speech_prob": 0.0035762940533459187,
+      "compression_ratio": 1.7488151658767772,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.36,
+          "word": " Tower",
+          "probability": 0.029401326552033424
+        },
+        {
+          "start": 0.36,
+          "end": 0.76,
+          "word": " 11,",
+          "probability": 0.67479407787323
+        },
+        {
+          "start": 1.16,
+          "end": 1.38,
+          "word": " no",
+          "probability": 0.8197420239448547
+        },
+        {
+          "start": 1.38,
+          "end": 1.78,
+          "word": " record",
+          "probability": 0.8018214702606201
+        },
+        {
+          "start": 1.78,
+          "end": 2.0,
+          "word": " from",
+          "probability": 0.24150092899799347
+        },
+        {
+          "start": 2.0,
+          "end": 2.42,
+          "word": " Mississippi",
+          "probability": 0.7719680070877075
+        },
+        {
+          "start": 2.42,
+          "end": 2.72,
+          "word": " or",
+          "probability": 0.9036498665809631
+        },
+        {
+          "start": 2.72,
+          "end": 4.4,
+          "word": " Massachusetts.",
+          "probability": 0.6366592049598694
+        }
+      ]
+    },
+    {
+      "start": 5.740000000000001,
+      "end": 6.48,
+      "text": " Number 8.",
+      "avg_logprob": -0.3451603392759959,
+      "no_speech_prob": 0.0035762940533459187,
+      "compression_ratio": 1.7488151658767772,
+      "words": [
+        {
+          "start": 5.740000000000001,
+          "end": 6.18,
+          "word": " Number",
+          "probability": 0.17445269227027893
+        },
+        {
+          "start": 6.18,
+          "end": 6.48,
+          "word": " 8.",
+          "probability": 0.49957799911499023
+        }
+      ]
+    },
+    {
+      "start": 7.36,
+      "end": 8.22,
+      "text": " So is that a fake name?",
+      "avg_logprob": -0.3451603392759959,
+      "no_speech_prob": 0.0035762940533459187,
+      "compression_ratio": 1.7488151658767772,
+      "words": [
+        {
+          "start": 7.36,
+          "end": 7.52,
+          "word": " So",
+          "probability": 0.4265235662460327
+        },
+        {
+          "start": 7.52,
+          "end": 7.6,
+          "word": " is",
+          "probability": 0.6539036631584167
+        },
+        {
+          "start": 7.6,
+          "end": 7.68,
+          "word": " that",
+          "probability": 0.8663181662559509
+        },
+        {
+          "start": 7.68,
+          "end": 7.8,
+          "word": " a",
+          "probability": 0.9923306703567505
+        },
+        {
+          "start": 7.8,
+          "end": 8.0,
+          "word": " fake",
+          "probability": 0.8026020526885986
+        },
+        {
+          "start": 8.0,
+          "end": 8.22,
+          "word": " name?",
+          "probability": 0.800015389919281
+        }
+      ]
+    },
+    {
+      "start": 9.02,
+      "end": 9.28,
+      "text": " No.",
+      "avg_logprob": -0.3451603392759959,
+      "no_speech_prob": 0.0035762940533459187,
+      "compression_ratio": 1.7488151658767772,
+      "words": [
+        {
+          "start": 9.02,
+          "end": 9.28,
+          "word": " No.",
+          "probability": 0.8180729746818542
+        }
+      ]
+    },
+    {
+      "start": 10.74,
+      "end": 11.82,
+      "text": " You just not in the system anywhere?",
+      "avg_logprob": -0.3451603392759959,
+      "no_speech_prob": 0.0035762940533459187,
+      "compression_ratio": 1.7488151658767772,
+      "words": [
+        {
+          "start": 10.74,
+          "end": 10.88,
+          "word": " You",
+          "probability": 0.6472903490066528
+        },
+        {
+          "start": 10.88,
+          "end": 11.0,
+          "word": " just",
+          "probability": 0.7691364288330078
+        },
+        {
+          "start": 11.0,
+          "end": 11.16,
+          "word": " not",
+          "probability": 0.31883370876312256
+        },
+        {
+          "start": 11.16,
+          "end": 11.3,
+          "word": " in",
+          "probability": 0.8052817583084106
+        },
+        {
+          "start": 11.3,
+          "end": 11.3,
+          "word": " the",
+          "probability": 0.7779416441917419
+        },
+        {
+          "start": 11.3,
+          "end": 11.5,
+          "word": " system",
+          "probability": 0.8774340152740479
+        },
+        {
+          "start": 11.5,
+          "end": 11.82,
+          "word": " anywhere?",
+          "probability": 0.5434067249298096
+        }
+      ]
+    },
+    {
+      "start": 12.28,
+      "end": 14.1,
+      "text": " I don't get found guilty of anything.",
+      "avg_logprob": -0.3451603392759959,
+      "no_speech_prob": 0.0035762940533459187,
+      "compression_ratio": 1.7488151658767772,
+      "words": [
+        {
+          "start": 12.28,
+          "end": 12.58,
+          "word": " I",
+          "probability": 0.9688354134559631
+        },
+        {
+          "start": 12.58,
+          "end": 12.94,
+          "word": " don't",
+          "probability": 0.9041278660297394
+        },
+        {
+          "start": 12.94,
+          "end": 13.1,
+          "word": " get",
+          "probability": 0.8306739330291748
+        },
+        {
+          "start": 13.1,
+          "end": 13.3,
+          "word": " found",
+          "probability": 0.8821897506713867
+        },
+        {
+          "start": 13.3,
+          "end": 13.62,
+          "word": " guilty",
+          "probability": 0.849318265914917
+        },
+        {
+          "start": 13.62,
+          "end": 13.8,
+          "word": " of",
+          "probability": 0.8700025677680969
+        },
+        {
+          "start": 13.8,
+          "end": 14.1,
+          "word": " anything.",
+          "probability": 0.8361878991127014
+        }
+      ]
+    },
+    {
+      "start": 14.5,
+      "end": 15.5,
+      "text": " Do you have a driver's license?",
+      "avg_logprob": -0.3451603392759959,
+      "no_speech_prob": 0.0035762940533459187,
+      "compression_ratio": 1.7488151658767772,
+      "words": [
+        {
+          "start": 14.5,
+          "end": 14.68,
+          "word": " Do",
+          "probability": 0.599317193031311
+        },
+        {
+          "start": 14.68,
+          "end": 14.72,
+          "word": " you",
+          "probability": 0.8881316781044006
+        },
+        {
+          "start": 14.72,
+          "end": 14.82,
+          "word": " have",
+          "probability": 0.8944714069366455
+        },
+        {
+          "start": 14.82,
+          "end": 14.92,
+          "word": " a",
+          "probability": 0.9922314882278442
+        },
+        {
+          "start": 14.92,
+          "end": 15.26,
+          "word": " driver's",
+          "probability": 0.7778109014034271
+        },
+        {
+          "start": 15.26,
+          "end": 15.5,
+          "word": " license?",
+          "probability": 0.7819862961769104
+        }
+      ]
+    },
+    {
+      "start": 15.68,
+      "end": 16.66,
+      "text": " I do have a driver's license.",
+      "avg_logprob": -0.3451603392759959,
+      "no_speech_prob": 0.0035762940533459187,
+      "compression_ratio": 1.7488151658767772,
+      "words": [
+        {
+          "start": 15.68,
+          "end": 15.8,
+          "word": " I",
+          "probability": 0.9886603355407715
+        },
+        {
+          "start": 15.8,
+          "end": 15.92,
+          "word": " do",
+          "probability": 0.8943483829498291
+        },
+        {
+          "start": 15.92,
+          "end": 16.06,
+          "word": " have",
+          "probability": 0.8808023929595947
+        },
+        {
+          "start": 16.06,
+          "end": 16.12,
+          "word": " a",
+          "probability": 0.9942378997802734
+        },
+        {
+          "start": 16.12,
+          "end": 16.42,
+          "word": " driver's",
+          "probability": 0.884954571723938
+        },
+        {
+          "start": 16.42,
+          "end": 16.66,
+          "word": " license.",
+          "probability": 0.7795068025588989
+        }
+      ]
+    },
+    {
+      "start": 16.72,
+      "end": 17.78,
+      "text": " Then you should be in the system.",
+      "avg_logprob": -0.3451603392759959,
+      "no_speech_prob": 0.0035762940533459187,
+      "compression_ratio": 1.7488151658767772,
+      "words": [
+        {
+          "start": 16.72,
+          "end": 16.9,
+          "word": " Then",
+          "probability": 0.7990719676017761
+        },
+        {
+          "start": 16.9,
+          "end": 17.04,
+          "word": " you",
+          "probability": 0.8936699628829956
+        },
+        {
+          "start": 17.04,
+          "end": 17.18,
+          "word": " should",
+          "probability": 0.915276825428009
+        },
+        {
+          "start": 17.18,
+          "end": 17.34,
+          "word": " be",
+          "probability": 0.9107367992401123
+        },
+        {
+          "start": 17.34,
+          "end": 17.44,
+          "word": " in",
+          "probability": 0.8585608005523682
+        },
+        {
+          "start": 17.44,
+          "end": 17.54,
+          "word": " the",
+          "probability": 0.8056145310401917
+        },
+        {
+          "start": 17.54,
+          "end": 17.78,
+          "word": " system.",
+          "probability": 0.8637932538986206
+        }
+      ]
+    },
+    {
+      "start": 18.44,
+      "end": 18.66,
+      "text": " There.",
+      "avg_logprob": -0.3451603392759959,
+      "no_speech_prob": 0.0035762940533459187,
+      "compression_ratio": 1.7488151658767772,
+      "words": [
+        {
+          "start": 18.44,
+          "end": 18.66,
+          "word": " There.",
+          "probability": 0.5554381012916565
+        }
+      ]
+    },
+    {
+      "start": 19.380000000000003,
+      "end": 20.56,
+      "text": " I have a driver's license.",
+      "avg_logprob": -0.3451603392759959,
+      "no_speech_prob": 0.0035762940533459187,
+      "compression_ratio": 1.7488151658767772,
+      "words": [
+        {
+          "start": 19.380000000000003,
+          "end": 19.82,
+          "word": " I",
+          "probability": 0.9951505661010742
+        },
+        {
+          "start": 19.82,
+          "end": 19.98,
+          "word": " have",
+          "probability": 0.8709964752197266
+        },
+        {
+          "start": 19.98,
+          "end": 20.1,
+          "word": " a",
+          "probability": 0.9187827706336975
+        },
+        {
+          "start": 20.1,
+          "end": 20.32,
+          "word": " driver's",
+          "probability": 0.887024998664856
+        },
+        {
+          "start": 20.32,
+          "end": 20.56,
+          "word": " license.",
+          "probability": 0.7997716665267944
+        }
+      ]
+    },
+    {
+      "start": 20.64,
+      "end": 22.24,
+      "text": " I didn't give you any fake information.",
+      "avg_logprob": -0.3451603392759959,
+      "no_speech_prob": 0.0035762940533459187,
+      "compression_ratio": 1.7488151658767772,
+      "words": [
+        {
+          "start": 20.64,
+          "end": 20.74,
+          "word": " I",
+          "probability": 0.9863864183425903
+        },
+        {
+          "start": 20.74,
+          "end": 20.96,
+          "word": " didn't",
+          "probability": 0.9222225248813629
+        },
+        {
+          "start": 20.96,
+          "end": 21.18,
+          "word": " give",
+          "probability": 0.8099650740623474
+        },
+        {
+          "start": 21.18,
+          "end": 21.26,
+          "word": " you",
+          "probability": 0.8799656629562378
+        },
+        {
+          "start": 21.26,
+          "end": 21.44,
+          "word": " any",
+          "probability": 0.8104069828987122
+        },
+        {
+          "start": 21.44,
+          "end": 21.72,
+          "word": " fake",
+          "probability": 0.7619584202766418
+        },
+        {
+          "start": 21.72,
+          "end": 22.24,
+          "word": " information.",
+          "probability": 0.7323479652404785
+        }
+      ]
+    },
+    {
+      "start": 24.540000000000003,
+      "end": 24.98,
+      "text": " If you have a driver's license,",
+      "avg_logprob": -0.3451603392759959,
+      "no_speech_prob": 0.0035762940533459187,
+      "compression_ratio": 1.7488151658767772,
+      "words": [
+        {
+          "start": 24.540000000000003,
+          "end": 24.98,
+          "word": " If",
+          "probability": 0.853348970413208
+        },
+        {
+          "start": 24.98,
+          "end": 24.98,
+          "word": " you",
+          "probability": 0.8540900945663452
+        },
+        {
+          "start": 24.98,
+          "end": 24.98,
+          "word": " have",
+          "probability": 0.09749609231948853
+        },
+        {
+          "start": 24.98,
+          "end": 24.98,
+          "word": " a",
+          "probability": 0.5972824096679688
+        },
+        {
+          "start": 24.98,
+          "end": 24.98,
+          "word": " driver's",
+          "probability": 0.7270598262548447
+        },
+        {
+          "start": 24.98,
+          "end": 24.98,
+          "word": " license,",
+          "probability": 0.7483838200569153
+        }
+      ]
+    }
+  ]
+}

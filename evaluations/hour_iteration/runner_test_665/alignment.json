@@ -1,0 +1,866 @@
+{
+  "segments": [
+    {
+      "start": 0.281,
+      "end": 3.496,
+      "text": " Tower 11, no record from Mississippi or Massachusetts.",
+      "words": [
+        {
+          "word": "Tower",
+          "start": 0.281,
+          "end": 0.703,
+          "score": 0.62
+        },
+        {
+          "word": "11,",
+          "start": 0.723,
+          "end": 0.784,
+          "score": 0.971
+        },
+        {
+          "word": "no",
+          "start": 1.286,
+          "end": 1.447,
+          "score": 0.918
+        },
+        {
+          "word": "record",
+          "start": 1.527,
+          "end": 1.728,
+          "score": 0.386
+        },
+        {
+          "word": "from",
+          "start": 1.748,
+          "end": 1.889,
+          "score": 0.405
+        },
+        {
+          "word": "Mississippi",
+          "start": 1.969,
+          "end": 2.572,
+          "score": 0.715
+        },
+        {
+          "word": "or",
+          "start": 2.652,
+          "end": 2.773,
+          "score": 0.742
+        },
+        {
+          "word": "Massachusetts.",
+          "start": 2.793,
+          "end": 3.496,
+          "score": 0.556
+        }
+      ],
+      "avg_logprob": -0.3451603392759959
+    },
+    {
+      "start": 5.802,
+      "end": 6.172,
+      "text": " Number 8.",
+      "words": [
+        {
+          "word": "Number",
+          "start": 5.802,
+          "end": 6.11,
+          "score": 0.246
+        },
+        {
+          "word": "8.",
+          "start": 6.131,
+          "end": 6.172,
+          "score": 0.25
+        }
+      ],
+      "avg_logprob": -0.3451603392759959
+    },
+    {
+      "start": 7.442,
+      "end": 8.22,
+      "text": " So is that a fake name?",
+      "words": [
+        {
+          "word": "So",
+          "start": 7.442,
+          "end": 7.503,
+          "score": 0.552
+        },
+        {
+          "word": "is",
+          "start": 7.524,
+          "end": 7.565,
+          "score": 0.054
+        },
+        {
+          "word": "that",
+          "start": 7.585,
+          "end": 7.708,
+          "score": 0.798
+        },
+        {
+          "word": "a",
+          "start": 7.729,
+          "end": 7.749,
+          "score": 0.802
+        },
+        {
+          "word": "fake",
+          "start": 7.81,
+          "end": 8.015,
+          "score": 0.244
+        },
+        {
+          "word": "name?",
+          "start": 8.056,
+          "end": 8.22,
+          "score": 0.47
+        }
+      ],
+      "avg_logprob": -0.3451603392759959
+    },
+    {
+      "start": 9.128,
+      "end": 9.28,
+      "text": " No.",
+      "words": [
+        {
+          "word": "No.",
+          "start": 9.128,
+          "end": 9.28,
+          "score": 0.397
+        }
+      ],
+      "avg_logprob": -0.3451603392759959
+    },
+    {
+      "start": 10.822,
+      "end": 11.82,
+      "text": " You just not in the system anywhere?",
+      "words": [
+        {
+          "word": "You",
+          "start": 10.822,
+          "end": 10.883,
+          "score": 0.18
+        },
+        {
+          "word": "just",
+          "start": 10.903,
+          "end": 11.005,
+          "score": 0.32
+        },
+        {
+          "word": "not",
+          "start": 11.046,
+          "end": 11.168,
+          "score": 0.769
+        },
+        {
+          "word": "in",
+          "start": 11.209,
+          "end": 11.249,
+          "score": 0.124
+        },
+        {
+          "word": "the",
+          "start": 11.27,
+          "end": 11.372,
+          "score": 0.385
+        },
+        {
+          "word": "system",
+          "start": 11.392,
+          "end": 11.596,
+          "score": 0.214
+        },
+        {
+          "word": "anywhere?",
+          "start": 11.616,
+          "end": 11.82,
+          "score": 0.539
+        }
+      ],
+      "avg_logprob": -0.3451603392759959
+    },
+    {
+      "start": 12.502,
+      "end": 14.06,
+      "text": " I don't get found guilty of anything.",
+      "words": [
+        {
+          "word": "I",
+          "start": 12.502,
+          "end": 12.644,
+          "score": 0.713
+        },
+        {
+          "word": "don't",
+          "start": 12.786,
+          "end": 12.968,
+          "score": 0.544
+        },
+        {
+          "word": "get",
+          "start": 13.008,
+          "end": 13.15,
+          "score": 0.433
+        },
+        {
+          "word": "found",
+          "start": 13.19,
+          "end": 13.352,
+          "score": 0.321
+        },
+        {
+          "word": "guilty",
+          "start": 13.392,
+          "end": 13.716,
+          "score": 0.968
+        },
+        {
+          "word": "of",
+          "start": 13.736,
+          "end": 13.797,
+          "score": 0.242
+        },
+        {
+          "word": "anything.",
+          "start": 13.857,
+          "end": 14.06,
+          "score": 0.156
+        }
+      ],
+      "avg_logprob": -0.3451603392759959
+    },
+    {
+      "start": 14.561,
+      "end": 15.48,
+      "text": " Do you have a driver's license?",
+      "words": [
+        {
+          "word": "Do",
+          "start": 14.561,
+          "end": 14.602,
+          "score": 0.0
+        },
+        {
+          "word": "you",
+          "start": 14.622,
+          "end": 14.684,
+          "score": 0.069
+        },
+        {
+          "word": "have",
+          "start": 14.704,
+          "end": 14.806,
+          "score": 0.283
+        },
+        {
+          "word": "a",
+          "start": 14.867,
+          "end": 14.908,
+          "score": 0.072
+        },
+        {
+          "word": "driver's",
+          "start": 14.929,
+          "end": 15.235,
+          "score": 0.533
+        },
+        {
+          "word": "license?",
+          "start": 15.255,
+          "end": 15.48,
+          "score": 0.408
+        }
+      ],
+      "avg_logprob": -0.3451603392759959
+    },
+    {
+      "start": 15.721,
+      "end": 16.619,
+      "text": " I do have a driver's license.",
+      "words": [
+        {
+          "word": "I",
+          "start": 15.721,
+          "end": 15.803,
+          "score": 0.506
+        },
+        {
+          "word": "do",
+          "start": 15.823,
+          "end": 15.945,
+          "score": 0.73
+        },
+        {
+          "word": "have",
+          "start": 15.986,
+          "end": 16.068,
+          "score": 0.159
+        },
+        {
+          "word": "a",
+          "start": 16.088,
+          "end": 16.15,
+          "score": 0.316
+        },
+        {
+          "word": "driver's",
+          "start": 16.17,
+          "end": 16.395,
+          "score": 0.172
+        },
+        {
+          "word": "license.",
+          "start": 16.415,
+          "end": 16.619,
+          "score": 0.484
+        }
+      ],
+      "avg_logprob": -0.3451603392759959
+    },
+    {
+      "start": 16.781,
+      "end": 17.719,
+      "text": " Then you should be in the system.",
+      "words": [
+        {
+          "word": "Then",
+          "start": 16.781,
+          "end": 16.863,
+          "score": 0.725
+        },
+        {
+          "word": "you",
+          "start": 16.903,
+          "end": 17.026,
+          "score": 0.383
+        },
+        {
+          "word": "should",
+          "start": 17.046,
+          "end": 17.209,
+          "score": 0.209
+        },
+        {
+          "word": "be",
+          "start": 17.25,
+          "end": 17.311,
+          "score": 0.274
+        },
+        {
+          "word": "in",
+          "start": 17.332,
+          "end": 17.433,
+          "score": 0.596
+        },
+        {
+          "word": "the",
+          "start": 17.454,
+          "end": 17.535,
+          "score": 0.256
+        },
+        {
+          "word": "system.",
+          "start": 17.576,
+          "end": 17.719,
+          "score": 0.144
+        }
+      ],
+      "avg_logprob": -0.3451603392759959
+    },
+    {
+      "start": 18.506,
+      "end": 18.66,
+      "text": " There.",
+      "words": [
+        {
+          "word": "There.",
+          "start": 18.506,
+          "end": 18.66,
+          "score": 0.215
+        }
+      ],
+      "avg_logprob": -0.3451603392759959
+    },
+    {
+      "start": 19.767,
+      "end": 20.54,
+      "text": " I have a driver's license.",
+      "words": [
+        {
+          "word": "I",
+          "start": 19.767,
+          "end": 19.828,
+          "score": 0.964
+        },
+        {
+          "word": "have",
+          "start": 19.868,
+          "end": 19.99,
+          "score": 0.83
+        },
+        {
+          "word": "a",
+          "start": 20.031,
+          "end": 20.092,
+          "score": 0.348
+        },
+        {
+          "word": "driver's",
+          "start": 20.112,
+          "end": 20.296,
+          "score": 0.1
+        },
+        {
+          "word": "license.",
+          "start": 20.316,
+          "end": 20.54,
+          "score": 0.512
+        }
+      ],
+      "avg_logprob": -0.3451603392759959
+    },
+    {
+      "start": 20.64,
+      "end": 22.22,
+      "text": " I didn't give you any fake information.",
+      "words": [
+        {
+          "word": "I",
+          "start": 20.64,
+          "end": 20.66,
+          "score": 0.0
+        },
+        {
+          "word": "didn't",
+          "start": 20.701,
+          "end": 20.924,
+          "score": 0.291
+        },
+        {
+          "word": "give",
+          "start": 21.025,
+          "end": 21.227,
+          "score": 0.442
+        },
+        {
+          "word": "you",
+          "start": 21.268,
+          "end": 21.369,
+          "score": 0.312
+        },
+        {
+          "word": "any",
+          "start": 21.41,
+          "end": 21.531,
+          "score": 0.361
+        },
+        {
+          "word": "fake",
+          "start": 21.551,
+          "end": 21.693,
+          "score": 0.272
+        },
+        {
+          "word": "information.",
+          "start": 21.815,
+          "end": 22.22,
+          "score": 0.202
+        }
+      ],
+      "avg_logprob": -0.3451603392759959
+    },
+    {
+      "start": 24.540000000000003,
+      "end": 24.98,
+      "text": " If you have a driver's license,",
+      "words": [],
+      "chars": null,
+      "avg_logprob": -0.3451603392759959
+    }
+  ],
+  "word_segments": [
+    {
+      "word": "Tower",
+      "start": 0.281,
+      "end": 0.703,
+      "score": 0.62
+    },
+    {
+      "word": "11,",
+      "start": 0.723,
+      "end": 0.784,
+      "score": 0.971
+    },
+    {
+      "word": "no",
+      "start": 1.286,
+      "end": 1.447,
+      "score": 0.918
+    },
+    {
+      "word": "record",
+      "start": 1.527,
+      "end": 1.728,
+      "score": 0.386
+    },
+    {
+      "word": "from",
+      "start": 1.748,
+      "end": 1.889,
+      "score": 0.405
+    },
+    {
+      "word": "Mississippi",
+      "start": 1.969,
+      "end": 2.572,
+      "score": 0.715
+    },
+    {
+      "word": "or",
+      "start": 2.652,
+      "end": 2.773,
+      "score": 0.742
+    },
+    {
+      "word": "Massachusetts.",
+      "start": 2.793,
+      "end": 3.496,
+      "score": 0.556
+    },
+    {
+      "word": "Number",
+      "start": 5.802,
+      "end": 6.11,
+      "score": 0.246
+    },
+    {
+      "word": "8.",
+      "start": 6.131,
+      "end": 6.172,
+      "score": 0.25
+    },
+    {
+      "word": "So",
+      "start": 7.442,
+      "end": 7.503,
+      "score": 0.552
+    },
+    {
+      "word": "is",
+      "start": 7.524,
+      "end": 7.565,
+      "score": 0.054
+    },
+    {
+      "word": "that",
+      "start": 7.585,
+      "end": 7.708,
+      "score": 0.798
+    },
+    {
+      "word": "a",
+      "start": 7.729,
+      "end": 7.749,
+      "score": 0.802
+    },
+    {
+      "word": "fake",
+      "start": 7.81,
+      "end": 8.015,
+      "score": 0.244
+    },
+    {
+      "word": "name?",
+      "start": 8.056,
+      "end": 8.22,
+      "score": 0.47
+    },
+    {
+      "word": "No.",
+      "start": 9.128,
+      "end": 9.28,
+      "score": 0.397
+    },
+    {
+      "word": "You",
+      "start": 10.822,
+      "end": 10.883,
+      "score": 0.18
+    },
+    {
+      "word": "just",
+      "start": 10.903,
+      "end": 11.005,
+      "score": 0.32
+    },
+    {
+      "word": "not",
+      "start": 11.046,
+      "end": 11.168,
+      "score": 0.769
+    },
+    {
+      "word": "in",
+      "start": 11.209,
+      "end": 11.249,
+      "score": 0.124
+    },
+    {
+      "word": "the",
+      "start": 11.27,
+      "end": 11.372,
+      "score": 0.385
+    },
+    {
+      "word": "system",
+      "start": 11.392,
+      "end": 11.596,
+      "score": 0.214
+    },
+    {
+      "word": "anywhere?",
+      "start": 11.616,
+      "end": 11.82,
+      "score": 0.539
+    },
+    {
+      "word": "I",
+      "start": 12.502,
+      "end": 12.644,
+      "score": 0.713
+    },
+    {
+      "word": "don't",
+      "start": 12.786,
+      "end": 12.968,
+      "score": 0.544
+    },
+    {
+      "word": "get",
+      "start": 13.008,
+      "end": 13.15,
+      "score": 0.433
+    },
+    {
+      "word": "found",
+      "start": 13.19,
+      "end": 13.352,
+      "score": 0.321
+    },
+    {
+      "word": "guilty",
+      "start": 13.392,
+      "end": 13.716,
+      "score": 0.968
+    },
+    {
+      "word": "of",
+      "start": 13.736,
+      "end": 13.797,
+      "score": 0.242
+    },
+    {
+      "word": "anything.",
+      "start": 13.857,
+      "end": 14.06,
+      "score": 0.156
+    },
+    {
+      "word": "Do",
+      "start": 14.561,
+      "end": 14.602,
+      "score": 0.0
+    },
+    {
+      "word": "you",
+      "start": 14.622,
+      "end": 14.684,
+      "score": 0.069
+    },
+    {
+      "word": "have",
+      "start": 14.704,
+      "end": 14.806,
+      "score": 0.283
+    },
+    {
+      "word": "a",
+      "start": 14.867,
+      "end": 14.908,
+      "score": 0.072
+    },
+    {
+      "word": "driver's",
+      "start": 14.929,
+      "end": 15.235,
+      "score": 0.533
+    },
+    {
+      "word": "license?",
+      "start": 15.255,
+      "end": 15.48,
+      "score": 0.408
+    },
+    {
+      "word": "I",
+      "start": 15.721,
+      "end": 15.803,
+      "score": 0.506
+    },
+    {
+      "word": "do",
+      "start": 15.823,
+      "end": 15.945,
+      "score": 0.73
+    },
+    {
+      "word": "have",
+      "start": 15.986,
+      "end": 16.068,
+      "score": 0.159
+    },
+    {
+      "word": "a",
+      "start": 16.088,
+      "end": 16.15,
+      "score": 0.316
+    },
+    {
+      "word": "driver's",
+      "start": 16.17,
+      "end": 16.395,
+      "score": 0.172
+    },
+    {
+      "word": "license.",
+      "start": 16.415,
+      "end": 16.619,
+      "score": 0.484
+    },
+    {
+      "word": "Then",
+      "start": 16.781,
+      "end": 16.863,
+      "score": 0.725
+    },
+    {
+      "word": "you",
+      "start": 16.903,
+      "end": 17.026,
+      "score": 0.383
+    },
+    {
+      "word": "should",
+      "start": 17.046,
+      "end": 17.209,
+      "score": 0.209
+    },
+    {
+      "word": "be",
+      "start": 17.25,
+      "end": 17.311,
+      "score": 0.274
+    },
+    {
+      "word": "in",
+      "start": 17.332,
+      "end": 17.433,
+      "score": 0.596
+    },
+    {
+      "word": "the",
+      "start": 17.454,
+      "end": 17.535,
+      "score": 0.256
+    },
+    {
+      "word": "system.",
+      "start": 17.576,
+      "end": 17.719,
+      "score": 0.144
+    },
+    {
+      "word": "There.",
+      "start": 18.506,
+      "end": 18.66,
+      "score": 0.215
+    },
+    {
+      "word": "I",
+      "start": 19.767,
+      "end": 19.828,
+      "score": 0.964
+    },
+    {
+      "word": "have",
+      "start": 19.868,
+      "end": 19.99,
+      "score": 0.83
+    },
+    {
+      "word": "a",
+      "start": 20.031,
+      "end": 20.092,
+      "score": 0.348
+    },
+    {
+      "word": "driver's",
+      "start": 20.112,
+      "end": 20.296,
+      "score": 0.1
+    },
+    {
+      "word": "license.",
+      "start": 20.316,
+      "end": 20.54,
+      "score": 0.512
+    },
+    {
+      "word": "I",
+      "start": 20.64,
+      "end": 20.66,
+      "score": 0.0
+    },
+    {
+      "word": "didn't",
+      "start": 20.701,
+      "end": 20.924,
+      "score": 0.291
+    },
+    {
+      "word": "give",
+      "start": 21.025,
+      "end": 21.227,
+      "score": 0.442
+    },
+    {
+      "word": "you",
+      "start": 21.268,
+      "end": 21.369,
+      "score": 0.312
+    },
+    {
+      "word": "any",
+      "start": 21.41,
+      "end": 21.531,
+      "score": 0.361
+    },
+    {
+      "word": "fake",
+      "start": 21.551,
+      "end": 21.693,
+      "score": 0.272
+    },
+    {
+      "word": "information.",
+      "start": 21.815,
+      "end": 22.22,
+      "score": 0.202
+    }
+  ]
+}

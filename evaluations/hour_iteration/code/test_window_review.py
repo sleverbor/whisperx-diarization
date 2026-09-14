@@ -1,6 +1,18 @@
 import unittest
-from review_audio_window import baseline_evidence,resolve_voice
+from review_audio_window import baseline_evidence,resolve_voice,decoder_sentence_bounds,resolve_timing_evidence
 class WindowTests(unittest.TestCase):
+    def test_consistent_crops_with_one_qualified_match(self):
+        self.assertEqual(resolve_timing_evidence([{'Target':.34,'Other':.18},{'Target':.27,'Other':.21}]),'Target')
+    def test_conflicting_crops_do_not_choose_the_stronger_match(self):
+        self.assertEqual(resolve_timing_evidence([{'Target':.7,'Other':.1},{'Target':.1,'Other':.3}]),'Uncertain')
+    def test_two_weak_crops_do_not_accumulate_confidence(self):
+        self.assertEqual(resolve_timing_evidence([{'Target':.2,'Other':.1},{'Target':.21,'Other':.1}]),'Uncertain')
+    def test_decoder_words_follow_repeated_sentences_in_order(self):
+        d=[{'text':'I agree. I agree.','words':[{'word':'I','start':0,'end':.1},{'word':'agree.','start':.1,'end':1},{'word':'I','start':2,'end':2.1},{'word':'agree.','start':2.1,'end':3}]}]
+        a=[{'text':'I agree.'},{'text':'I agree.'}]
+        self.assertEqual(decoder_sentence_bounds(d,a),[(0,1),(2,3)])
+    def test_missing_word_links_do_not_invent_timings(self):
+        self.assertEqual(decoder_sentence_bounds([{'text':'Hi.'}],[{'text':'Hi.'}]),[None])
     def test_raw_ids_preserved_and_offsets_applied(self):
         a=[{'start':0,'end':2,'raw_speaker_track':'SPEAKER_03','final_speaker':'Target_Speaker'},{'start':2,'end':4,'raw_speaker_track':'SPEAKER_07','final_speaker':'SPEAKER_07'}]
         result=baseline_evidence(a,101,103,offset=100)

@@ -1,0 +1,34 @@
+{
+  "intervals": [
+    {
+      "review_interval": "key_reflection",
+      "observations": 86,
+      "high_score_moderate_pose_observations": 9,
+      "longest_spatial_track_aperture_median": 0.09316498041152954,
+      "longest_spatial_track_aperture_range": 0.24315674230456352
+    },
+    {
+      "review_interval": "target_agreement",
+      "observations": 58,
+      "high_score_moderate_pose_observations": 0,
+      "longest_spatial_track_aperture_median": 0.09708330035209656,
+      "longest_spatial_track_aperture_range": 0.1302986517548561
+    },
+    {
+      "review_interval": "target_long_agreement",
+      "observations": 25,
+      "high_score_moderate_pose_observations": 0,
+      "longest_spatial_track_aperture_median": 0.024942122399806976,
+      "longest_spatial_track_aperture_range": 0.03911410691216588
+    }
+  ],
+  "same_visible_face_continuity_improved": true,
+  "longest_track_observations": 211,
+  "limitations": [
+    "Spatial tracking improves continuity but does not verify identity",
+    "Most longest-track observations have strong yaw and roll",
+    "Aperture can be estimated when the mouth is obscured; unreliable active-speaker evidence",
+    "Listening roles used only to inspect the probe, not to assign speakers"
+  ],
+  "speaker_assignment_changed": false
+}

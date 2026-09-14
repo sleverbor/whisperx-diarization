@@ -1,0 +1,531 @@
+[
+  {
+    "window_start": 665,
+    "index": 0,
+    "text": " Tower 11, no record from Mississippi or Massachusetts.",
+    "timing_sources": {
+      "alignment": {
+        "start": 665.281,
+        "end": 668.496,
+        "scores": {
+          "Target_Speaker": -0.0688716396689415,
+          "Opening_officer": 0.06387223303318024
+        },
+        "hypothesis": "Uncertain"
+      },
+      "decoder": {
+        "start": 665.0,
+        "end": 669.4,
+        "scores": {
+          "Target_Speaker": 0.08585674315690994,
+          "Opening_officer": 0.12004070729017258
+        },
+        "hypothesis": "Uncertain"
+      }
+    }
+  },
+  {
+    "window_start": 665,
+    "index": 1,
+    "text": " Number 8.",
+    "timing_sources": {
+      "alignment": {
+        "start": 670.802,
+        "end": 671.172,
+        "scores": {},
+        "hypothesis": "Uncertain"
+      },
+      "decoder": {
+        "start": 670.74,
+        "end": 671.48,
+        "scores": {
+          "Target_Speaker": 0.04328024759888649,
+          "Opening_officer": 0.21681135892868042
+        },
+        "hypothesis": "Uncertain"
+      }
+    }
+  },
+  {
+    "window_start": 665,
+    "index": 2,
+    "text": " So is that a fake name?",
+    "timing_sources": {
+      "alignment": {
+        "start": 672.442,
+        "end": 673.22,
+        "scores": {
+          "Target_Speaker": -0.018575813621282578,
+          "Opening_officer": 0.18250034749507904
+        },
+        "hypothesis": "Uncertain"
+      },
+      "decoder": {
+        "start": 672.36,
+        "end": 673.22,
+        "scores": {
+          "Target_Speaker": -0.014834638684988022,
+          "Opening_officer": 0.19201624393463135
+        },
+        "hypothesis": "Uncertain"
+      }
+    }
+  },
+  {
+    "window_start": 665,
+    "index": 3,
+    "text": " No.",
+    "timing_sources": {
+      "alignment": {
+        "start": 674.128,
+        "end": 674.28,
+        "scores": {},
+        "hypothesis": "Uncertain"
+      },
+      "decoder": {
+        "start": 674.02,
+        "end": 674.28,
+        "scores": {},
+        "hypothesis": "Uncertain"
+      }
+    }
+  },
+  {
+    "window_start": 665,
+    "index": 4,
+    "text": " You just not in the system anywhere?",
+    "timing_sources": {
+      "alignment": {
+        "start": 675.822,
+        "end": 676.82,
+        "scores": {
+          "Target_Speaker": 0.03486733138561249,
+          "Opening_officer": 0.21160784363746643
+        },
+        "hypothesis": "Uncertain"
+      },
+      "decoder": {
+        "start": 675.74,
+        "end": 676.82,
+        "scores": {
+          "Target_Speaker": -0.015395157039165497,
+          "Opening_officer": 0.2610923647880554
+        },
+        "hypothesis": "Opening_officer"
+      }
+    }
+  },
+  {
+    "window_start": 665,
+    "index": 5,
+    "text": " I don't get found guilty of anything.",
+    "timing_sources": {
+      "alignment": {
+        "start": 677.502,
+        "end": 679.06,
+        "scores": {
+          "Target_Speaker": 0.3416255712509155,
+          "Opening_officer": 0.17908750474452972
+        },
+        "hypothesis": "Target_Speaker"
+      },
+      "decoder": {
+        "start": 677.28,
+        "end": 679.1,
+        "scores": {
+          "Target_Speaker": 0.2751282751560211,
+          "Opening_officer": 0.21264474093914032
+        },
+        "hypothesis": "Uncertain"
+      }
+    }
+  },
+  {
+    "window_start": 665,
+    "index": 6,
+    "text": " Do you have a driver's license?",
+    "timing_sources": {
+      "alignment": {
+        "start": 679.561,
+        "end": 680.48,
+        "scores": {
+          "Target_Speaker": 0.06452140212059021,
+          "Opening_officer": 0.24335531890392303
+        },
+        "hypothesis": "Uncertain"
+      },
+      "decoder": {
+        "start": 679.5,
+        "end": 680.5,
+        "scores": {
+          "Target_Speaker": 0.05936373397707939,
+          "Opening_officer": 0.3434254825115204
+        },
+        "hypothesis": "Opening_officer"
+      }
+    }
+  },
+  {
+    "window_start": 665,
+    "index": 7,
+    "text": " I do have a driver's license.",
+    "timing_sources": {
+      "alignment": {
+        "start": 680.721,
+        "end": 681.619,
+        "scores": {
+          "Target_Speaker": 0.5188406705856323,
+          "Opening_officer": 0.06254890561103821
+        },
+        "hypothesis": "Target_Speaker"
+      },
+      "decoder": {
+        "start": 680.68,
+        "end": 681.66,
+        "scores": {
+          "Target_Speaker": 0.4917373061180115,
+          "Opening_officer": 0.016843929886817932
+        },
+        "hypothesis": "Target_Speaker"
+      }
+    }
+  },
+  {
+    "window_start": 665,
+    "index": 8,
+    "text": " Then you should be in the system.",
+    "timing_sources": {
+      "alignment": {
+        "start": 681.781,
+        "end": 682.719,
+        "scores": {
+          "Target_Speaker": -0.06728584319353104,
+          "Opening_officer": 0.21632546186447144
+        },
+        "hypothesis": "Uncertain"
+      },
+      "decoder": {
+        "start": 681.72,
+        "end": 682.78,
+        "scores": {
+          "Target_Speaker": -0.0790882557630539,
+          "Opening_officer": 0.20177888870239258
+        },
+        "hypothesis": "Uncertain"
+      }
+    }
+  },
+  {
+    "window_start": 665,
+    "index": 9,
+    "text": " There.",
+    "timing_sources": {
+      "alignment": {
+        "start": 683.506,
+        "end": 683.66,
+        "scores": {},
+        "hypothesis": "Uncertain"
+      },
+      "decoder": {
+        "start": 683.44,
+        "end": 683.66,
+        "scores": {},
+        "hypothesis": "Uncertain"
+      }
+    }
+  },
+  {
+    "window_start": 665,
+    "index": 10,
+    "text": " I have a driver's license.",
+    "timing_sources": {
+      "alignment": {
+        "start": 684.767,
+        "end": 685.54,
+        "scores": {
+          "Target_Speaker": 0.24319273233413696,
+          "Opening_officer": -0.017318621277809143
+        },
+        "hypothesis": "Uncertain"
+      },
+      "decoder": {
+        "start": 684.38,
+        "end": 685.56,
+        "scores": {
+          "Target_Speaker": 0.2855165898799896,
+          "Opening_officer": -0.0339827835559845
+        },
+        "hypothesis": "Target_Speaker"
+      }
+    }
+  },
+  {
+    "window_start": 665,
+    "index": 11,
+    "text": " I didn't give you any fake information.",
+    "timing_sources": {
+      "alignment": {
+        "start": 685.64,
+        "end": 687.22,
+        "scores": {
+          "Target_Speaker": 0.4798129200935364,
+          "Opening_officer": 0.039335157722234726
+        },
+        "hypothesis": "Target_Speaker"
+      },
+      "decoder": {
+        "start": 685.64,
+        "end": 687.24,
+        "scores": {
+          "Target_Speaker": 0.4803314208984375,
+          "Opening_officer": 0.0333264097571373
+        },
+        "hypothesis": "Target_Speaker"
+      }
+    }
+  },
+  {
+    "window_start": 665,
+    "index": 12,
+    "text": " If you have a driver's license,",
+    "timing_sources": {
+      "alignment": {
+        "start": 689.54,
+        "end": 689.98,
+        "scores": {
+          "Target_Speaker": 0.03200250864028931,
+          "Opening_officer": 0.3172334134578705
+        },
+        "hypothesis": "Opening_officer"
+      },
+      "decoder": {
+        "start": 689.54,
+        "end": 689.98,
+        "scores": {
+          "Target_Speaker": 0.03200250864028931,
+          "Opening_officer": 0.3172334134578705
+        },
+        "hypothesis": "Opening_officer"
+      }
+    }
+  },
+  {
+    "window_start": 640,
+    "index": 0,
+    "text": " Yeah, on my chest and my ribs.",
+    "timing_sources": {
+      "alignment": {
+        "start": 640.101,
+        "end": 643.14,
+        "scores": {
+          "Target_Speaker": 0.2818111181259155,
+          "Opening_officer": 0.2520429193973541
+        },
+        "hypothesis": "Uncertain"
+      },
+      "decoder": {
+        "start": 640.0,
+        "end": 643.14,
+        "scores": {
+          "Target_Speaker": 0.315079927444458,
+          "Opening_officer": 0.27072402834892273
+        },
+        "hypothesis": "Uncertain"
+      }
+    }
+  },
+  {
+    "window_start": 640,
+    "index": 1,
+    "text": " Nothing gang, anything.",
+    "timing_sources": {
+      "alignment": {
+        "start": 645.585,
+        "end": 646.52,
+        "scores": {
+          "Target_Speaker": 0.25985705852508545,
+          "Opening_officer": -0.010739840567111969
+        },
+        "hypothesis": "Target_Speaker"
+      },
+      "decoder": {
+        "start": 645.26,
+        "end": 646.52,
+        "scores": {
+          "Target_Speaker": 0.21311411261558533,
+          "Opening_officer": 0.0733894556760788
+        },
+        "hypothesis": "Uncertain"
+      }
+    }
+  },
+  {
+    "window_start": 640,
+    "index": 2,
+    "text": " How tall are you?",
+    "timing_sources": {
+      "alignment": {
+        "start": 652.046,
+        "end": 652.518,
+        "scores": {
+          "Target_Speaker": -0.04475712031126022,
+          "Opening_officer": 0.06312060356140137
+        },
+        "hypothesis": "Uncertain"
+      },
+      "decoder": {
+        "start": 651.84,
+        "end": 652.58,
+        "scores": {
+          "Target_Speaker": -0.03899964690208435,
+          "Opening_officer": 0.1841590404510498
+        },
+        "hypothesis": "Uncertain"
+      }
+    }
+  },
+  {
+    "window_start": 640,
+    "index": 3,
+    "text": " 5'10 and a half, 5'11.",
+    "timing_sources": {
+      "alignment": {
+        "start": 653.002,
+        "end": 654.66,
+        "scores": {
+          "Target_Speaker": -0.033407799899578094,
+          "Opening_officer": 0.01214480772614479
+        },
+        "hypothesis": "Uncertain"
+      },
+      "decoder": {
+        "start": 652.86,
+        "end": 654.66,
+        "scores": {
+          "Target_Speaker": -0.002526700496673584,
+          "Opening_officer": 0.01028207316994667
+        },
+        "hypothesis": "Uncertain"
+      }
+    }
+  },
+  {
+    "window_start": 640,
+    "index": 4,
+    "text": " Tall girls, 5'11, 5'10.",
+    "timing_sources": {
+      "alignment": {
+        "start": 655.483,
+        "end": 656.513,
+        "scores": {
+          "Target_Speaker": 0.4560243487358093,
+          "Opening_officer": -0.13081404566764832
+        },
+        "hypothesis": "Target_Speaker"
+      },
+      "decoder": {
+        "start": 655.14,
+        "end": 657.22,
+        "scores": {
+          "Target_Speaker": 0.42001062631607056,
+          "Opening_officer": -0.022277705371379852
+        },
+        "hypothesis": "Target_Speaker"
+      }
+    }
+  },
+  {
+    "window_start": 640,
+    "index": 5,
+    "text": " How much do you weigh?",
+    "timing_sources": {
+      "alignment": {
+        "start": 661.441,
+        "end": 662.157,
+        "scores": {
+          "Target_Speaker": -0.005367781966924667,
+          "Opening_officer": 0.08156619220972061
+        },
+        "hypothesis": "Uncertain"
+      },
+      "decoder": {
+        "start": 661.38,
+        "end": 662.32,
+        "scores": {
+          "Target_Speaker": -0.0030809082090854645,
+          "Opening_officer": 0.24230347573757172
+        },
+        "hypothesis": "Uncertain"
+      }
+    }
+  },
+  {
+    "window_start": 640,
+    "index": 6,
+    "text": " Sorry?",
+    "timing_sources": {
+      "alignment": {
+        "start": 662.953,
+        "end": 663.079,
+        "scores": {},
+        "hypothesis": "Uncertain"
+      },
+      "decoder": {
+        "start": 662.7,
+        "end": 663.1,
+        "scores": {
+          "Target_Speaker": 0.05528271570801735,
+          "Opening_officer": -0.0493416003882885
+        },
+        "hypothesis": "Uncertain"
+      }
+    }
+  },
+  {
+    "window_start": 640,
+    "index": 7,
+    "text": " How much do you weigh?",
+    "timing_sources": {
+      "alignment": {
+        "start": 663.24,
+        "end": 663.74,
+        "scores": {
+          "Target_Speaker": -0.10252809524536133,
+          "Opening_officer": 0.2371019423007965
+        },
+        "hypothesis": "Uncertain"
+      },
+      "decoder": {
+        "start": 663.24,
+        "end": 663.74,
+        "scores": {
+          "Target_Speaker": -0.10252809524536133,
+          "Opening_officer": 0.2371019423007965
+        },
+        "hypothesis": "Uncertain"
+      }
+    }
+  },
+  {
+    "window_start": 640,
+    "index": 8,
+    "text": " 160.",
+    "timing_sources": {
+      "alignment": {
+        "start": 664.008,
+        "end": 664.133,
+        "scores": {},
+        "hypothesis": "Uncertain"
+      },
+      "decoder": {
+        "start": 663.82,
+        "end": 664.3,
+        "scores": {
+          "Target_Speaker": 0.11545082181692123,
+          "Opening_officer": -0.022383712232112885
+        },
+        "hypothesis": "Uncertain"
+      }
+    }
+  }
+]

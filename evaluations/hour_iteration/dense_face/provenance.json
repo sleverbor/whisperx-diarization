@@ -1,0 +1,9 @@
+{
+  "source_start": 1086,
+  "source_duration": 14,
+  "source_fps": 21.105624749804775,
+  "sample_every_frames": 1,
+  "tracking": "consecutive spatial overlap plus appearance, diagnostic only",
+  "speaker_identity_verified": false,
+  "elapsed_seconds": 226.86714570899494
+}

@@ -1,0 +1,14 @@
+{
+  "working_baseline_unchanged": true,
+  "bounded_asr": {
+    "opening": "coverage restored",
+    "height_weight": "regressed; invented text on short crops",
+    "handcuffs": "cancelled after second-scene regression"
+  },
+  "native_contextual_scenes": "partial, two height/weight windows saved; stopped to avoid concurrent large ASR models",
+  "unsupported_whisperx_timestamp_tokens": "cancelled; not promoted",
+  "voice_filters": "raw best overall on reviewed independent-reference set",
+  "jitter_unanimity": "lost correct matches and retained officer confusion; not a default gate",
+  "face_motion": "improved spatial continuity at original resolution; pose and occlusion prevent reliable active-speaker attribution",
+  "optional_runner": "native uncut ASR plus decoder/alignment crop comparison; final validation in progress"
+}

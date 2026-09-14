@@ -28,6 +28,35 @@ def baseline_evidence(segments, start, end, offset=0):
             'segments':sources,'identity_verified':False}
 
 
+def decoder_sentence_bounds(decoded_segments, aligned_segments):
+    """Link generated sentence text to its own decoder words, in sequence.
+
+    This matches two representations of the same ASR hypothesis, not supplied
+    expected dialogue. Missing links yield None rather than invented timings.
+    """
+    text_parts=[];word_spans=[];base=0
+    for segment in decoded_segments:
+        body=' '.join(segment['text'].split());cursor=0
+        for word in segment.get('words',[]):
+            token=' '.join(word.get('word','').split())
+            location=body.find(token,cursor) if token else -1
+            if location<0:continue
+            word_spans.append((base+location,base+location+len(token),float(word['start']),float(word['end'])))
+            cursor=location+len(token)
+        text_parts.append(body);base+=len(body)+1
+    text=' '.join(text_parts);cursor=0;bounds=[]
+    for segment in aligned_segments:
+        sentence=' '.join(segment['text'].split());left=text.find(sentence,cursor) if sentence else -1
+        if left<0:
+            bounds.append(None);continue
+        right=left+len(sentence);cursor=right
+        words=[w for w in word_spans if w[0]<right and w[1]>left]
+        if not words or max(w[3] for w in words)<=min(w[2] for w in words):
+            bounds.append(None)
+        else:bounds.append((min(w[2] for w in words),max(w[3] for w in words)))
+    return bounds
+
+
 def resolve_voice(scores, min_similarity=.25, min_margin=.08):
     """Conservative review hypothesis; thresholds are not calibrated confidence."""
     if not scores: return 'Uncertain'
@@ -38,6 +67,20 @@ def resolve_voice(scores, min_similarity=.25, min_margin=.08):
     if scores[ranked[0]] < min_similarity: return 'Uncertain'
     if runner is not None and scores[ranked[0]]-runner < min_margin: return 'Uncertain'
     return ranked[0]
+
+
+def resolve_timing_evidence(variants, min_similarity=.25, min_margin=.08):
+    """Use one evidence family: agree on the leading voice, with qualified support.
+
+    Alternate crops are not independent votes and do not raise confidence.
+    Conflicting leading identities abstain, even if one crop matches strongly.
+    """
+    usable=[scores for scores in variants if scores]
+    if not usable:return 'Uncertain'
+    leaders={max(scores,key=scores.get) for scores in usable}
+    if len(leaders)!=1:return 'Uncertain'
+    leader=next(iter(leaders))
+    return leader if any(resolve_voice(scores,min_similarity,min_margin)==leader for scores in usable) else 'Uncertain'
 
 
 def sha(path):
@@ -59,6 +102,8 @@ def main():
                    help='Add this offset to baseline times; default assumes absolute video times')
     p.add_argument('--output-dir',type=Path,required=True)
     p.add_argument('--model',default='large-v2')
+    p.add_argument('--asr-engine',choices=['native','bounded-whisperx'],default='native')
+    p.add_argument('--timing-source',choices=['consensus','decoder','alignment'],default='consensus')
     p.add_argument('--language',default='en')
     p.add_argument('--device',choices=['auto','cpu','cuda'],default='auto')
     p.add_argument('--threads',type=int,default=4)
@@ -104,9 +149,19 @@ def main():
         '-ar','16000','-ac','1','-f','f32le','pipe:1'])
     audio=np.frombuffer(raw,dtype='<f4').copy()
     if not len(audio) or not np.isfinite(audio).all():p.error('No valid audio decoded')
-    asr=whisperx.load_model(a.model,device,compute_type='float16' if device=='cuda' else 'int8',
-        language=a.language,vad_model=make_vad(context=a.context_seconds))
-    result=asr.transcribe(audio,batch_size=4,chunk_size=a.chunk_seconds,language=a.language)
+    if a.asr_engine=='native':
+        from faster_whisper import WhisperModel
+        asr=WhisperModel(a.model,device=device,compute_type='float16' if device=='cuda' else 'int8',cpu_threads=a.threads)
+        decoded,_=asr.transcribe(audio,language=a.language,beam_size=5,
+            vad_filter=False,condition_on_previous_text=False,word_timestamps=True)
+        result={'language':a.language,'segments':[{'start':float(s.start),'end':float(s.end),'text':s.text,
+            'avg_logprob':float(s.avg_logprob),'no_speech_prob':float(s.no_speech_prob),
+            'compression_ratio':float(s.compression_ratio),
+            'words':[{'start':float(w.start),'end':float(w.end),'word':w.word,'probability':float(w.probability)} for w in s.words or []]} for s in decoded]}
+    else:
+        asr=whisperx.load_model(a.model,device,compute_type='float16' if device=='cuda' else 'int8',
+            language=a.language,vad_model=make_vad(context=a.context_seconds))
+        result=asr.transcribe(audio,batch_size=4,chunk_size=a.chunk_seconds,language=a.language)
     (a.output_dir/'asr.json').write_text(json.dumps(result,indent=2)+'\n')
     del asr;gc.collect()
     if device=='cuda':torch.cuda.empty_cache()
@@ -133,8 +188,13 @@ def main():
         profiles[name]=unit(np.mean([unit(v) for v in values],axis=0))
     baseline=json.loads(a.baseline.read_text()) if a.baseline else {'segments':[]}
     rows=[]
+    decoder_bounds=decoder_sentence_bounds(result['segments'],aligned['segments'])
     for index,s in enumerate(aligned['segments']):
-        left,right=float(s['start']),float(s['end']);scores={};reasons=[]
+        alignment_left,alignment_right=float(s['start']),float(s['end']);scores={};reasons=[]
+        bounds=decoder_bounds[index]
+        use_decoder=a.timing_source in ('decoder','consensus') and bounds is not None
+        left,right=bounds if use_decoder else (alignment_left,alignment_right)
+        if a.timing_source in ('decoder','consensus') and bounds is None:reasons.append('Decoder word boundaries unavailable; alignment fallback needs review')
         if right-left>=.4:
             crop=torch.from_numpy(audio[round(left*16000):round(right*16000)]).unsqueeze(0).to(device)
             with torch.no_grad():v=unit(encoder.encode_batch(crop).detach().cpu().numpy())
@@ -142,7 +202,12 @@ def main():
                 if v.shape!=profile.shape:raise ValueError('Reference embedding model/dimension mismatch')
                 scores[name]=float(v@profile)
         else:reasons.append('Voice crop shorter than 0.4 seconds')
-        speaker=resolve_voice(scores,a.min_similarity,a.min_margin)
+        variants=[{'source':'decoder' if use_decoder else 'alignment','start':a.start+left,'end':a.start+right,'scores':scores}]
+        if a.timing_source=='consensus' and use_decoder and alignment_right-alignment_left>=.4 and (abs(left-alignment_left)>1/16000 or abs(right-alignment_right)>1/16000):
+            crop=torch.from_numpy(audio[round(alignment_left*16000):round(alignment_right*16000)]).unsqueeze(0).to(device)
+            with torch.no_grad():alternate=unit(encoder.encode_batch(crop).detach().cpu().numpy())
+            variants.append({'source':'alignment','start':a.start+alignment_left,'end':a.start+alignment_right,'scores':{name:float(alternate@profile) for name,profile in profiles.items()}})
+        speaker=resolve_timing_evidence([v['scores'] for v in variants],a.min_similarity,a.min_margin) if a.timing_source=='consensus' else resolve_voice(scores,a.min_similarity,a.min_margin)
         near_edge=left<=.25 or right>=len(audio)/16000-.25
         if near_edge:reasons.append('Near audio-window boundary; wording or timing may be incomplete')
         if speaker=='Uncertain':reasons.append('Insufficient voice similarity or separation between profiles')
@@ -150,17 +215,19 @@ def main():
         absolute_start,absolute_end=a.start+left,a.start+right
         rows.append({'index':index,'start':absolute_start,'end':absolute_end,'text':s['text'],
             'speaker_hypothesis':speaker,'review_required':True,'near_window_boundary':near_edge,'reasons':reasons,
-            'evidence':[baseline_evidence(baseline['segments'],absolute_start,absolute_end,a.baseline_offset),
-                {'source':'local_voice','similarities':scores,'min_similarity':a.min_similarity,
+            'evidence':[{'source':'timing_comparison','selected_source':'decoder' if use_decoder else 'alignment',
+                'alignment_start':a.start+alignment_left,'alignment_end':a.start+alignment_right,
+                'decoder_start':a.start+bounds[0] if bounds else None,'decoder_end':a.start+bounds[1] if bounds else None},baseline_evidence(baseline['segments'],absolute_start,absolute_end,a.baseline_offset),
+                {'source':'local_voice','similarities':scores,'timing_variants':variants,'variants_are_independent_votes':False,'min_similarity':a.min_similarity,
                  'min_margin':a.min_margin,'identity_probability_calibrated':False}],
-            'words':[{**w,**({'start':a.start+w['start']} if 'start' in w else {}),
+            'alignment_words':[{**w,**({'start':a.start+w['start']} if 'start' in w else {}),
                       **({'end':a.start+w['end']} if 'end' in w else {})} for w in s.get('words',[])]})
     document={'baseline_modified':False,'experimental':True,'segments':rows,
         'provenance':{'video':str(a.video.resolve()),'video_sha256':sha(a.video),
             'window_start':a.start,'decoded_duration':len(audio)/16000,
             'models':{'asr':a.model,'voice':'speechbrain/spkrec-ecapa-voxceleb'},
-            'device':device,'vad':'bounded_silero','chunk_seconds':a.chunk_seconds,
-            'context_seconds':a.context_seconds,'references':{k:{'path':str(v.resolve()),'sha256':sha(v)} for k,v in references.items()},
+            'device':device,'requested_timing_source':a.timing_source,'asr_engine':a.asr_engine,'vad':'disabled' if a.asr_engine=='native' else 'bounded_silero','chunk_seconds':a.chunk_seconds if a.asr_engine=='bounded-whisperx' else None,
+            'context_seconds':a.context_seconds if a.asr_engine=='bounded-whisperx' else None,'references':{k:{'path':str(v.resolve()),'sha256':sha(v)} for k,v in references.items()},
             'baseline':str(a.baseline.resolve()) if a.baseline else None,
             'baseline_sha256':sha(a.baseline) if a.baseline else None,'elapsed_seconds':time.monotonic()-started}}
     (a.output_dir/'review_hypotheses.json').write_text(json.dumps(document,indent=2)+'\n')

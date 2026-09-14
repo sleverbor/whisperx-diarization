@@ -1,0 +1,555 @@
+{
+  "baseline_modified": false,
+  "experimental": true,
+  "segments": [
+    {
+      "index": 0,
+      "start": 640.101,
+      "end": 643.14,
+      "text": " Yeah, on my chest and my ribs.",
+      "speaker_hypothesis": "Uncertain",
+      "review_required": true,
+      "near_window_boundary": true,
+      "reasons": [
+        "Near audio-window boundary; wording or timing may be incomplete",
+        "Insufficient voice similarity or separation between profiles"
+      ],
+      "evidence": [
+        {
+          "source": "baseline_overlap",
+          "raw_track_overlap_seconds": {
+            "SPEAKER_07": 1.4179999999998927
+          },
+          "segments": [
+            {
+              "segment_index": 244,
+              "raw_speaker_track": "SPEAKER_07",
+              "baseline_speaker": "SPEAKER_07",
+              "overlap_seconds": 0.2880000000000109
+            },
+            {
+              "segment_index": 245,
+              "raw_speaker_track": "SPEAKER_07",
+              "baseline_speaker": "SPEAKER_07",
+              "overlap_seconds": 0.8009999999999309
+            },
+            {
+              "segment_index": 246,
+              "raw_speaker_track": "SPEAKER_07",
+              "baseline_speaker": "SPEAKER_07",
+              "overlap_seconds": 0.3289999999999509
+            }
+          ],
+          "identity_verified": false
+        },
+        {
+          "source": "local_voice",
+          "similarities": {
+            "Target_Speaker": 0.2818111181259155,
+            "Opening_officer": 0.2520429193973541
+          },
+          "min_similarity": 0.25,
+          "min_margin": 0.08,
+          "identity_probability_calibrated": false
+        }
+      ],
+      "words": [
+        {
+          "word": "Yeah,",
+          "start": 640.101,
+          "end": 640.382,
+          "score": 0.455
+        },
+        {
+          "word": "on",
+          "start": 640.946,
+          "end": 641.047,
+          "score": 0.586
+        },
+        {
+          "word": "my",
+          "start": 641.067,
+          "end": 641.167,
+          "score": 0.914
+        },
+        {
+          "word": "chest",
+          "start": 641.188,
+          "end": 641.51,
+          "score": 0.895
+        },
+        {
+          "word": "and",
+          "start": 642.858,
+          "end": 642.919,
+          "score": 0.304
+        },
+        {
+          "word": "my",
+          "start": 642.939,
+          "end": 643.019,
+          "score": 0.522
+        },
+        {
+          "word": "ribs.",
+          "start": 643.039,
+          "end": 643.14,
+          "score": 0.006
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "start": 645.585,
+      "end": 646.52,
+      "text": " Nothing gang, anything.",
+      "speaker_hypothesis": "Target_Speaker",
+      "review_required": true,
+      "near_window_boundary": false,
+      "reasons": [],
+      "evidence": [
+        {
+          "source": "baseline_overlap",
+          "raw_track_overlap_seconds": {
+            "SPEAKER_07": 0.9069999999999254
+          },
+          "segments": [
+            {
+              "segment_index": 247,
+              "raw_speaker_track": "SPEAKER_07",
+              "baseline_speaker": "SPEAKER_07",
+              "overlap_seconds": 0.9069999999999254
+            }
+          ],
+          "identity_verified": false
+        },
+        {
+          "source": "local_voice",
+          "similarities": {
+            "Target_Speaker": 0.25985705852508545,
+            "Opening_officer": -0.010739840567111969
+          },
+          "min_similarity": 0.25,
+          "min_margin": 0.08,
+          "identity_probability_calibrated": false
+        }
+      ],
+      "words": [
+        {
+          "word": "Nothing",
+          "start": 645.585,
+          "end": 645.87,
+          "score": 0.351
+        },
+        {
+          "word": "gang,",
+          "start": 645.91,
+          "end": 646.235,
+          "score": 0.859
+        },
+        {
+          "word": "anything.",
+          "start": 646.276,
+          "end": 646.52,
+          "score": 0.33
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "start": 652.046,
+      "end": 652.518,
+      "text": " How tall are you?",
+      "speaker_hypothesis": "Uncertain",
+      "review_required": true,
+      "near_window_boundary": false,
+      "reasons": [
+        "Insufficient voice similarity or separation between profiles"
+      ],
+      "evidence": [
+        {
+          "source": "baseline_overlap",
+          "raw_track_overlap_seconds": {},
+          "segments": [],
+          "identity_verified": false
+        },
+        {
+          "source": "local_voice",
+          "similarities": {
+            "Target_Speaker": -0.044757090508937836,
+            "Opening_officer": 0.06312066316604614
+          },
+          "min_similarity": 0.25,
+          "min_margin": 0.08,
+          "identity_probability_calibrated": false
+        }
+      ],
+      "words": [
+        {
+          "word": "How",
+          "start": 652.046,
+          "end": 652.148,
+          "score": 0.296
+        },
+        {
+          "word": "tall",
+          "start": 652.189,
+          "end": 652.333,
+          "score": 0.325
+        },
+        {
+          "word": "are",
+          "start": 652.354,
+          "end": 652.416,
+          "score": 0.053
+        },
+        {
+          "word": "you?",
+          "start": 652.436,
+          "end": 652.518,
+          "score": 0.327
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "start": 653.002,
+      "end": 654.66,
+      "text": " 5'10 and a half, 5'11.",
+      "speaker_hypothesis": "Uncertain",
+      "review_required": true,
+      "near_window_boundary": false,
+      "reasons": [
+        "Insufficient voice similarity or separation between profiles"
+      ],
+      "evidence": [
+        {
+          "source": "baseline_overlap",
+          "raw_track_overlap_seconds": {},
+          "segments": [],
+          "identity_verified": false
+        },
+        {
+          "source": "local_voice",
+          "similarities": {
+            "Target_Speaker": -0.03340784087777138,
+            "Opening_officer": 0.012144830077886581
+          },
+          "min_similarity": 0.25,
+          "min_margin": 0.08,
+          "identity_probability_calibrated": false
+        }
+      ],
+      "words": [
+        {
+          "word": "5'10",
+          "start": 653.002,
+          "end": 653.224,
+          "score": 0.424
+        },
+        {
+          "word": "and",
+          "start": 653.285,
+          "end": 653.406,
+          "score": 0.43
+        },
+        {
+          "word": "a",
+          "start": 653.568,
+          "end": 653.73,
+          "score": 0.772
+        },
+        {
+          "word": "half,",
+          "start": 654.235,
+          "end": 654.498,
+          "score": 0.548
+        },
+        {
+          "word": "5'11.",
+          "start": 654.518,
+          "end": 654.66,
+          "score": 0.404
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "start": 655.483,
+      "end": 656.513,
+      "text": " Tall girls, 5'11, 5'10.",
+      "speaker_hypothesis": "Target_Speaker",
+      "review_required": true,
+      "near_window_boundary": false,
+      "reasons": [],
+      "evidence": [
+        {
+          "source": "baseline_overlap",
+          "raw_track_overlap_seconds": {},
+          "segments": [],
+          "identity_verified": false
+        },
+        {
+          "source": "local_voice",
+          "similarities": {
+            "Target_Speaker": 0.45602425932884216,
+            "Opening_officer": -0.1308140754699707
+          },
+          "min_similarity": 0.25,
+          "min_margin": 0.08,
+          "identity_probability_calibrated": false
+        }
+      ],
+      "words": [
+        {
+          "word": "Tall",
+          "start": 655.483,
+          "end": 655.685,
+          "score": 0.577
+        },
+        {
+          "word": "girls,",
+          "start": 655.726,
+          "end": 655.948,
+          "score": 0.939
+        },
+        {
+          "word": "5'11,",
+          "start": 656.008,
+          "end": 656.17,
+          "score": 0.462
+        },
+        {
+          "word": "5'10.",
+          "start": 656.19,
+          "end": 656.513,
+          "score": 0.661
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "start": 661.441,
+      "end": 662.157,
+      "text": " How much do you weigh?",
+      "speaker_hypothesis": "Uncertain",
+      "review_required": true,
+      "near_window_boundary": false,
+      "reasons": [
+        "Insufficient voice similarity or separation between profiles"
+      ],
+      "evidence": [
+        {
+          "source": "baseline_overlap",
+          "raw_track_overlap_seconds": {},
+          "segments": [],
+          "identity_verified": false
+        },
+        {
+          "source": "local_voice",
+          "similarities": {
+            "Target_Speaker": -0.005367781966924667,
+            "Opening_officer": 0.08156619220972061
+          },
+          "min_similarity": 0.25,
+          "min_margin": 0.08,
+          "identity_probability_calibrated": false
+        }
+      ],
+      "words": [
+        {
+          "word": "How",
+          "start": 661.441,
+          "end": 661.523,
+          "score": 0.188
+        },
+        {
+          "word": "much",
+          "start": 661.543,
+          "end": 661.625,
+          "score": 0.014
+        },
+        {
+          "word": "do",
+          "start": 661.646,
+          "end": 661.687,
+          "score": 0.019
+        },
+        {
+          "word": "you",
+          "start": 661.707,
+          "end": 661.87,
+          "score": 0.387
+        },
+        {
+          "word": "weigh?",
+          "start": 661.891,
+          "end": 662.157,
+          "score": 0.568
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "start": 662.953,
+      "end": 663.079,
+      "text": " Sorry?",
+      "speaker_hypothesis": "Uncertain",
+      "review_required": true,
+      "near_window_boundary": false,
+      "reasons": [
+        "Voice crop shorter than 0.4 seconds",
+        "Insufficient voice similarity or separation between profiles"
+      ],
+      "evidence": [
+        {
+          "source": "baseline_overlap",
+          "raw_track_overlap_seconds": {},
+          "segments": [],
+          "identity_verified": false
+        },
+        {
+          "source": "local_voice",
+          "similarities": {},
+          "min_similarity": 0.25,
+          "min_margin": 0.08,
+          "identity_probability_calibrated": false
+        }
+      ],
+      "words": [
+        {
+          "word": "Sorry?",
+          "start": 662.953,
+          "end": 663.079,
+          "score": 0.023
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "start": 663.24,
+      "end": 663.74,
+      "text": " How much do you weigh?",
+      "speaker_hypothesis": "Uncertain",
+      "review_required": true,
+      "near_window_boundary": false,
+      "reasons": [
+        "Insufficient voice similarity or separation between profiles"
+      ],
+      "evidence": [
+        {
+          "source": "baseline_overlap",
+          "raw_track_overlap_seconds": {},
+          "segments": [],
+          "identity_verified": false
+        },
+        {
+          "source": "local_voice",
+          "similarities": {
+            "Target_Speaker": -0.10252807289361954,
+            "Opening_officer": 0.2371019572019577
+          },
+          "min_similarity": 0.25,
+          "min_margin": 0.08,
+          "identity_probability_calibrated": false
+        }
+      ],
+      "words": [
+        {
+          "word": "How",
+          "start": 663.24,
+          "end": 663.302,
+          "score": 0.001
+        },
+        {
+          "word": "much",
+          "start": 663.323,
+          "end": 663.407,
+          "score": 0.002
+        },
+        {
+          "word": "do",
+          "start": 663.427,
+          "end": 663.469,
+          "score": 0.003
+        },
+        {
+          "word": "you",
+          "start": 663.511,
+          "end": 663.594,
+          "score": 0.166
+        },
+        {
+          "word": "weigh?",
+          "start": 663.615,
+          "end": 663.74,
+          "score": 0.001
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "start": 664.008,
+      "end": 664.133,
+      "text": " 160.",
+      "speaker_hypothesis": "Uncertain",
+      "review_required": true,
+      "near_window_boundary": false,
+      "reasons": [
+        "Voice crop shorter than 0.4 seconds",
+        "Insufficient voice similarity or separation between profiles"
+      ],
+      "evidence": [
+        {
+          "source": "baseline_overlap",
+          "raw_track_overlap_seconds": {},
+          "segments": [],
+          "identity_verified": false
+        },
+        {
+          "source": "local_voice",
+          "similarities": {},
+          "min_similarity": 0.25,
+          "min_margin": 0.08,
+          "identity_probability_calibrated": false
+        }
+      ],
+      "words": [
+        {
+          "word": "160.",
+          "start": 664.008,
+          "end": 664.133,
+          "score": 0.308
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "video": "/home/think/projects/whisperx_diarization/video.mp4",
+    "video_sha256": "c90216467d260eab6e946e8118f4ef2d591b8b7d736ccf056e43208a25fba0d5",
+    "window_start": 640.0,
+    "decoded_duration": 25.0,
+    "models": {
+      "asr": "large-v2",
+      "voice": "speechbrain/spkrec-ecapa-voxceleb"
+    },
+    "device": "cpu",
+    "asr_engine": "native",
+    "vad": "disabled",
+    "chunk_seconds": null,
+    "context_seconds": null,
+    "references": {
+      "Target_Speaker": {
+        "path": "/home/think/projects/whisperx_diarization/references/youtube-v1/voice_embeddings.npy",
+        "sha256": "f22feac5254c52aad0a69a950011a819e579260a4aa964a29bd37ebb06926809"
+      },
+      "Opening_officer": {
+        "path": "/home/think/Documents/Codex/2026-09-13/referenced-chatgpt-conversation-this-is-an/outputs/speaker_separation/officer_reference.npy",
+        "sha256": "8542fdd1f9335670ed003efd1449b75d3867c80012331259d3e3d90d8ff07211"
+      }
+    },
+    "baseline": "/home/think/Documents/Codex/2026-09-13/referenced-chatgpt-conversation-this-is-an/work/kaggle_latest/results/full_video_evidence.json",
+    "baseline_sha256": "a2054622325ffab780a7683ad576f2892baf81dcf4f3c77d01d417241adab85d",
+    "elapsed_seconds": 83.05252305907197
+  }
+}

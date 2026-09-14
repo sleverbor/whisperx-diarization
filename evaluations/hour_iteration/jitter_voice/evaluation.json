@@ -1,0 +1,618 @@
+{
+  "evaluation_only_listening_roles": {
+    "height_weight": {
+      "25": "Target_Speaker",
+      "26": "Opening_officer_reference",
+      "27": "Target_Speaker",
+      "28": "Opening_officer_reference",
+      "29": "Target_Speaker",
+      "30": "Target_Speaker"
+    },
+    "handcuffs": {
+      "3": "Other",
+      "4": "Target_Speaker",
+      "5": "Target_Speaker",
+      "6": "Target_Speaker",
+      "7": "Other",
+      "8": "Other",
+      "10": "Target_Speaker",
+      "11": "Target_Speaker",
+      "12": "Opening_officer_reference",
+      "13": "Opening_officer_reference",
+      "14": "Other",
+      "15": "Other",
+      "16": "Other"
+    }
+  },
+  "reviewed_reference_seed_roles_not_automatic": true,
+  "summaries": [
+    {
+      "mode": "independent_reference",
+      "jitter_radius_seconds": 0,
+      "known_evaluated": 13,
+      "known_correct": 8,
+      "known_wrong": 0,
+      "other_evaluated": 6,
+      "false_known_on_other": 0,
+      "rows": [
+        {
+          "scene": "height_weight",
+          "index": 25,
+          "expected": "Target_Speaker",
+          "hypothesis": "Target_Speaker"
+        },
+        {
+          "scene": "height_weight",
+          "index": 26,
+          "expected": "Opening_officer_reference",
+          "hypothesis": "Opening_officer_reference"
+        },
+        {
+          "scene": "height_weight",
+          "index": 27,
+          "expected": "Target_Speaker",
+          "hypothesis": "Target_Speaker"
+        },
+        {
+          "scene": "height_weight",
+          "index": 28,
+          "expected": "Opening_officer_reference",
+          "hypothesis": "Opening_officer_reference"
+        },
+        {
+          "scene": "height_weight",
+          "index": 29,
+          "expected": "Target_Speaker",
+          "hypothesis": "Target_Speaker"
+        },
+        {
+          "scene": "height_weight",
+          "index": 30,
+          "expected": "Target_Speaker",
+          "hypothesis": "Target_Speaker"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 3,
+          "expected": "Other",
+          "hypothesis": "Uncertain"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 4,
+          "expected": "Target_Speaker",
+          "hypothesis": "Target_Speaker"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 5,
+          "expected": "Target_Speaker",
+          "hypothesis": "Uncertain"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 6,
+          "expected": "Target_Speaker",
+          "hypothesis": "Target_Speaker"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 7,
+          "expected": "Other",
+          "hypothesis": "Uncertain"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 8,
+          "expected": "Other",
+          "hypothesis": "Uncertain"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 10,
+          "expected": "Target_Speaker",
+          "hypothesis": "Uncertain"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 11,
+          "expected": "Target_Speaker",
+          "hypothesis": "Uncertain"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 12,
+          "expected": "Opening_officer_reference",
+          "hypothesis": "Uncertain"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 13,
+          "expected": "Opening_officer_reference",
+          "hypothesis": "Uncertain"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 14,
+          "expected": "Other",
+          "hypothesis": "Uncertain"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 15,
+          "expected": "Other",
+          "hypothesis": "Uncertain"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 16,
+          "expected": "Other",
+          "hypothesis": "Uncertain"
+        }
+      ]
+    },
+    {
+      "mode": "independent_reference",
+      "jitter_radius_seconds": 0.1,
+      "known_evaluated": 13,
+      "known_correct": 6,
+      "known_wrong": 0,
+      "other_evaluated": 6,
+      "false_known_on_other": 0,
+      "rows": [
+        {
+          "scene": "height_weight",
+          "index": 25,
+          "expected": "Target_Speaker",
+          "hypothesis": "Uncertain"
+        },
+        {
+          "scene": "height_weight",
+          "index": 26,
+          "expected": "Opening_officer_reference",
+          "hypothesis": "Opening_officer_reference"
+        },
+        {
+          "scene": "height_weight",
+          "index": 27,
+          "expected": "Target_Speaker",
+          "hypothesis": "Target_Speaker"
+        },
+        {
+          "scene": "height_weight",
+          "index": 28,
+          "expected": "Opening_officer_reference",
+          "hypothesis": "Opening_officer_reference"
+        },
+        {
+          "scene": "height_weight",
+          "index": 29,
+          "expected": "Target_Speaker",
+          "hypothesis": "Target_Speaker"
+        },
+        {
+          "scene": "height_weight",
+          "index": 30,
+          "expected": "Target_Speaker",
+          "hypothesis": "Target_Speaker"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 3,
+          "expected": "Other",
+          "hypothesis": "Uncertain"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 4,
+          "expected": "Target_Speaker",
+          "hypothesis": "Target_Speaker"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 5,
+          "expected": "Target_Speaker",
+          "hypothesis": "Uncertain"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 6,
+          "expected": "Target_Speaker",
+          "hypothesis": "Uncertain"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 7,
+          "expected": "Other",
+          "hypothesis": "Uncertain"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 8,
+          "expected": "Other",
+          "hypothesis": "Uncertain"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 10,
+          "expected": "Target_Speaker",
+          "hypothesis": "Uncertain"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 11,
+          "expected": "Target_Speaker",
+          "hypothesis": "Uncertain"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 12,
+          "expected": "Opening_officer_reference",
+          "hypothesis": "Uncertain"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 13,
+          "expected": "Opening_officer_reference",
+          "hypothesis": "Uncertain"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 14,
+          "expected": "Other",
+          "hypothesis": "Uncertain"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 15,
+          "expected": "Other",
+          "hypothesis": "Uncertain"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 16,
+          "expected": "Other",
+          "hypothesis": "Uncertain"
+        }
+      ]
+    },
+    {
+      "mode": "independent_reference",
+      "jitter_radius_seconds": 0.2,
+      "known_evaluated": 13,
+      "known_correct": 4,
+      "known_wrong": 0,
+      "other_evaluated": 6,
+      "false_known_on_other": 0,
+      "rows": [
+        {
+          "scene": "height_weight",
+          "index": 25,
+          "expected": "Target_Speaker",
+          "hypothesis": "Uncertain"
+        },
+        {
+          "scene": "height_weight",
+          "index": 26,
+          "expected": "Opening_officer_reference",
+          "hypothesis": "Opening_officer_reference"
+        },
+        {
+          "scene": "height_weight",
+          "index": 27,
+          "expected": "Target_Speaker",
+          "hypothesis": "Uncertain"
+        },
+        {
+          "scene": "height_weight",
+          "index": 28,
+          "expected": "Opening_officer_reference",
+          "hypothesis": "Opening_officer_reference"
+        },
+        {
+          "scene": "height_weight",
+          "index": 29,
+          "expected": "Target_Speaker",
+          "hypothesis": "Target_Speaker"
+        },
+        {
+          "scene": "height_weight",
+          "index": 30,
+          "expected": "Target_Speaker",
+          "hypothesis": "Target_Speaker"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 3,
+          "expected": "Other",
+          "hypothesis": "Uncertain"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 4,
+          "expected": "Target_Speaker",
+          "hypothesis": "Uncertain"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 5,
+          "expected": "Target_Speaker",
+          "hypothesis": "Uncertain"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 6,
+          "expected": "Target_Speaker",
+          "hypothesis": "Uncertain"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 7,
+          "expected": "Other",
+          "hypothesis": "Uncertain"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 8,
+          "expected": "Other",
+          "hypothesis": "Uncertain"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 10,
+          "expected": "Target_Speaker",
+          "hypothesis": "Uncertain"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 11,
+          "expected": "Target_Speaker",
+          "hypothesis": "Uncertain"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 12,
+          "expected": "Opening_officer_reference",
+          "hypothesis": "Uncertain"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 13,
+          "expected": "Opening_officer_reference",
+          "hypothesis": "Uncertain"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 14,
+          "expected": "Other",
+          "hypothesis": "Uncertain"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 15,
+          "expected": "Other",
+          "hypothesis": "Uncertain"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 16,
+          "expected": "Other",
+          "hypothesis": "Uncertain"
+        }
+      ]
+    },
+    {
+      "mode": "reviewed_reference_diagnostic",
+      "jitter_radius_seconds": 0,
+      "known_evaluated": 10,
+      "known_correct": 2,
+      "known_wrong": 1,
+      "other_evaluated": 0,
+      "false_known_on_other": 0,
+      "rows": [
+        {
+          "scene": "handcuffs",
+          "index": 3,
+          "expected": "Scene_key_officer",
+          "hypothesis": "Scene_original_officer"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 4,
+          "expected": "Target_Speaker",
+          "hypothesis": "Target_Speaker"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 5,
+          "expected": "Target_Speaker",
+          "hypothesis": "Uncertain"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 6,
+          "expected": "Target_Speaker",
+          "hypothesis": "Target_Speaker"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 7,
+          "expected": "Scene_key_officer",
+          "hypothesis": "Uncertain"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 8,
+          "expected": "Scene_key_officer",
+          "hypothesis": "Uncertain"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 10,
+          "expected": "Target_Speaker",
+          "hypothesis": "Uncertain"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 11,
+          "expected": "Target_Speaker",
+          "hypothesis": "Uncertain"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 12,
+          "expected": "Scene_original_officer",
+          "hypothesis": "Uncertain"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 13,
+          "expected": "Scene_original_officer",
+          "hypothesis": "Uncertain"
+        }
+      ]
+    },
+    {
+      "mode": "reviewed_reference_diagnostic",
+      "jitter_radius_seconds": 0.1,
+      "known_evaluated": 10,
+      "known_correct": 0,
+      "known_wrong": 1,
+      "other_evaluated": 0,
+      "false_known_on_other": 0,
+      "rows": [
+        {
+          "scene": "handcuffs",
+          "index": 3,
+          "expected": "Scene_key_officer",
+          "hypothesis": "Scene_original_officer"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 4,
+          "expected": "Target_Speaker",
+          "hypothesis": "Uncertain"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 5,
+          "expected": "Target_Speaker",
+          "hypothesis": "Uncertain"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 6,
+          "expected": "Target_Speaker",
+          "hypothesis": "Uncertain"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 7,
+          "expected": "Scene_key_officer",
+          "hypothesis": "Uncertain"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 8,
+          "expected": "Scene_key_officer",
+          "hypothesis": "Uncertain"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 10,
+          "expected": "Target_Speaker",
+          "hypothesis": "Uncertain"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 11,
+          "expected": "Target_Speaker",
+          "hypothesis": "Uncertain"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 12,
+          "expected": "Scene_original_officer",
+          "hypothesis": "Uncertain"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 13,
+          "expected": "Scene_original_officer",
+          "hypothesis": "Uncertain"
+        }
+      ]
+    },
+    {
+      "mode": "reviewed_reference_diagnostic",
+      "jitter_radius_seconds": 0.2,
+      "known_evaluated": 10,
+      "known_correct": 0,
+      "known_wrong": 1,
+      "other_evaluated": 0,
+      "false_known_on_other": 0,
+      "rows": [
+        {
+          "scene": "handcuffs",
+          "index": 3,
+          "expected": "Scene_key_officer",
+          "hypothesis": "Scene_original_officer"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 4,
+          "expected": "Target_Speaker",
+          "hypothesis": "Uncertain"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 5,
+          "expected": "Target_Speaker",
+          "hypothesis": "Uncertain"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 6,
+          "expected": "Target_Speaker",
+          "hypothesis": "Uncertain"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 7,
+          "expected": "Scene_key_officer",
+          "hypothesis": "Uncertain"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 8,
+          "expected": "Scene_key_officer",
+          "hypothesis": "Uncertain"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 10,
+          "expected": "Target_Speaker",
+          "hypothesis": "Uncertain"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 11,
+          "expected": "Target_Speaker",
+          "hypothesis": "Uncertain"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 12,
+          "expected": "Scene_original_officer",
+          "hypothesis": "Uncertain"
+        },
+        {
+          "scene": "handcuffs",
+          "index": 13,
+          "expected": "Scene_original_officer",
+          "hypothesis": "Uncertain"
+        }
+      ]
+    }
+  ]
+}

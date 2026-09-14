@@ -1,0 +1,4302 @@
+[
+  {
+    "scene": "height_weight",
+    "index": 0,
+    "start": 625.18,
+    "end": 629.862,
+    "text": " and loitering around businesses, causing concern and suspicion.",
+    "center_hypothesis": "Opening_officer_reference",
+    "stability_hypotheses": {
+      "0.1": {
+        "hypothesis": "Opening_officer_reference",
+        "reviewed_reference_hypothesis": null
+      },
+      "0.2": {
+        "hypothesis": "Opening_officer_reference",
+        "reviewed_reference_hypothesis": null
+      }
+    },
+    "observations": [
+      {
+        "shift_seconds": -0.2,
+        "scores": {
+          "Target_Speaker": 0.00035304203629493713,
+          "Opening_officer_reference": 0.3310752213001251
+        },
+        "hypothesis": "Opening_officer_reference",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": -0.1,
+        "scores": {
+          "Target_Speaker": 0.0041339099407196045,
+          "Opening_officer_reference": 0.3083737790584564
+        },
+        "hypothesis": "Opening_officer_reference",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0,
+        "scores": {
+          "Target_Speaker": -0.0043043456971645355,
+          "Opening_officer_reference": 0.29692476987838745
+        },
+        "hypothesis": "Opening_officer_reference",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0.1,
+        "scores": {
+          "Target_Speaker": 0.007239840924739838,
+          "Opening_officer_reference": 0.308392733335495
+        },
+        "hypothesis": "Opening_officer_reference",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0.2,
+        "scores": {
+          "Target_Speaker": 0.00021923333406448364,
+          "Opening_officer_reference": 0.33118101954460144
+        },
+        "hypothesis": "Opening_officer_reference",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      }
+    ]
+  },
+  {
+    "scene": "height_weight",
+    "index": 1,
+    "start": 630.622,
+    "end": 631.323,
+    "text": "It's against the law.",
+    "center_hypothesis": "Uncertain",
+    "stability_hypotheses": {
+      "0.1": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": null
+      },
+      "0.2": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": null
+      }
+    },
+    "observations": [
+      {
+        "shift_seconds": -0.2,
+        "scores": {
+          "Target_Speaker": -0.07328525185585022,
+          "Opening_officer_reference": 0.13478714227676392
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": -0.1,
+        "scores": {
+          "Target_Speaker": -0.062907874584198,
+          "Opening_officer_reference": 0.14238537847995758
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0,
+        "scores": {
+          "Target_Speaker": -0.05712011456489563,
+          "Opening_officer_reference": 0.09033674001693726
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0.1,
+        "scores": {
+          "Target_Speaker": -0.07393811643123627,
+          "Opening_officer_reference": 0.041463255882263184
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0.2,
+        "scores": {
+          "Target_Speaker": 0.005884874612092972,
+          "Opening_officer_reference": 0.03888404741883278
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      }
+    ]
+  },
+  {
+    "scene": "height_weight",
+    "index": 2,
+    "start": 633.724,
+    "end": 634.564,
+    "text": "What's your date of birth, John?",
+    "center_hypothesis": "Opening_officer_reference",
+    "stability_hypotheses": {
+      "0.1": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": null
+      },
+      "0.2": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": null
+      }
+    },
+    "observations": [
+      {
+        "shift_seconds": -0.2,
+        "scores": {
+          "Target_Speaker": 0.077756367623806,
+          "Opening_officer_reference": 0.3128124475479126
+        },
+        "hypothesis": "Opening_officer_reference",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": -0.1,
+        "scores": {
+          "Target_Speaker": 0.0972433015704155,
+          "Opening_officer_reference": 0.3078508973121643
+        },
+        "hypothesis": "Opening_officer_reference",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0,
+        "scores": {
+          "Target_Speaker": 0.05625658109784126,
+          "Opening_officer_reference": 0.3140747845172882
+        },
+        "hypothesis": "Opening_officer_reference",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0.1,
+        "scores": {
+          "Target_Speaker": 0.02108222246170044,
+          "Opening_officer_reference": 0.19272470474243164
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0.2,
+        "scores": {
+          "Target_Speaker": 0.05929020047187805,
+          "Opening_officer_reference": 0.1488945484161377
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      }
+    ]
+  },
+  {
+    "scene": "height_weight",
+    "index": 3,
+    "start": 634.924,
+    "end": 636.825,
+    "text": "March 17th, 2002.",
+    "center_hypothesis": "Target_Speaker",
+    "stability_hypotheses": {
+      "0.1": {
+        "hypothesis": "Target_Speaker",
+        "reviewed_reference_hypothesis": null
+      },
+      "0.2": {
+        "hypothesis": "Target_Speaker",
+        "reviewed_reference_hypothesis": null
+      }
+    },
+    "observations": [
+      {
+        "shift_seconds": -0.2,
+        "scores": {
+          "Target_Speaker": 0.49022406339645386,
+          "Opening_officer_reference": 0.09975863993167877
+        },
+        "hypothesis": "Target_Speaker",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": -0.1,
+        "scores": {
+          "Target_Speaker": 0.48885929584503174,
+          "Opening_officer_reference": 0.10894134640693665
+        },
+        "hypothesis": "Target_Speaker",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0,
+        "scores": {
+          "Target_Speaker": 0.49973928928375244,
+          "Opening_officer_reference": 0.09000606834888458
+        },
+        "hypothesis": "Target_Speaker",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0.1,
+        "scores": {
+          "Target_Speaker": 0.4668845534324646,
+          "Opening_officer_reference": 0.140914648771286
+        },
+        "hypothesis": "Target_Speaker",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0.2,
+        "scores": {
+          "Target_Speaker": 0.3890177011489868,
+          "Opening_officer_reference": 0.18560758233070374
+        },
+        "hypothesis": "Target_Speaker",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      }
+    ]
+  },
+  {
+    "scene": "height_weight",
+    "index": 4,
+    "start": 636.845,
+    "end": 639.846,
+    "text": "You got tattoos on both arms?",
+    "center_hypothesis": "Opening_officer_reference",
+    "stability_hypotheses": {
+      "0.1": {
+        "hypothesis": "Opening_officer_reference",
+        "reviewed_reference_hypothesis": null
+      },
+      "0.2": {
+        "hypothesis": "Opening_officer_reference",
+        "reviewed_reference_hypothesis": null
+      }
+    },
+    "observations": [
+      {
+        "shift_seconds": -0.2,
+        "scores": {
+          "Target_Speaker": 0.09249068051576614,
+          "Opening_officer_reference": 0.33384081721305847
+        },
+        "hypothesis": "Opening_officer_reference",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": -0.1,
+        "scores": {
+          "Target_Speaker": 0.05884973332285881,
+          "Opening_officer_reference": 0.31398046016693115
+        },
+        "hypothesis": "Opening_officer_reference",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0,
+        "scores": {
+          "Target_Speaker": 0.0626583993434906,
+          "Opening_officer_reference": 0.2807370126247406
+        },
+        "hypothesis": "Opening_officer_reference",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0.1,
+        "scores": {
+          "Target_Speaker": 0.03237549215555191,
+          "Opening_officer_reference": 0.26322513818740845
+        },
+        "hypothesis": "Opening_officer_reference",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0.2,
+        "scores": {
+          "Target_Speaker": 0.04290597140789032,
+          "Opening_officer_reference": 0.29003021121025085
+        },
+        "hypothesis": "Opening_officer_reference",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      }
+    ]
+  },
+  {
+    "scene": "height_weight",
+    "index": 5,
+    "start": 639.906,
+    "end": 640.387,
+    "text": "Anywhere else?",
+    "center_hypothesis": "Uncertain",
+    "stability_hypotheses": {
+      "0.1": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": null
+      },
+      "0.2": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": null
+      }
+    },
+    "observations": [
+      {
+        "shift_seconds": -0.2,
+        "scores": {
+          "Target_Speaker": 0.02472769469022751,
+          "Opening_officer_reference": 0.1392987072467804
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": -0.1,
+        "scores": {
+          "Target_Speaker": 0.05038075894117355,
+          "Opening_officer_reference": 0.10964710265398026
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0,
+        "scores": {
+          "Target_Speaker": -0.03735325112938881,
+          "Opening_officer_reference": 0.17188502848148346
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0.1,
+        "scores": {
+          "Target_Speaker": -0.1440466046333313,
+          "Opening_officer_reference": 0.16024652123451233
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0.2,
+        "scores": {
+          "Target_Speaker": -0.127113938331604,
+          "Opening_officer_reference": 0.1717129647731781
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      }
+    ]
+  },
+  {
+    "scene": "height_weight",
+    "index": 6,
+    "start": 640.727,
+    "end": 641.527,
+    "text": "Yeah, on my chest.",
+    "center_hypothesis": "Uncertain",
+    "stability_hypotheses": {
+      "0.1": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": null
+      },
+      "0.2": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": null
+      }
+    },
+    "observations": [
+      {
+        "shift_seconds": -0.2,
+        "scores": {
+          "Target_Speaker": 0.2059008628129959,
+          "Opening_officer_reference": 0.19306233525276184
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": -0.1,
+        "scores": {
+          "Target_Speaker": 0.179092675447464,
+          "Opening_officer_reference": 0.2058856040239334
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0,
+        "scores": {
+          "Target_Speaker": 0.16711978614330292,
+          "Opening_officer_reference": 0.22200535237789154
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0.1,
+        "scores": {
+          "Target_Speaker": 0.026365015655755997,
+          "Opening_officer_reference": 0.1827503740787506
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0.2,
+        "scores": {
+          "Target_Speaker": 0.0599539615213871,
+          "Opening_officer_reference": 0.1159011572599411
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      }
+    ]
+  },
+  {
+    "scene": "height_weight",
+    "index": 7,
+    "start": 642.848,
+    "end": 645.069,
+    "text": "On my ribs.",
+    "center_hypothesis": "Uncertain",
+    "stability_hypotheses": {
+      "0.1": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": null
+      },
+      "0.2": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": null
+      }
+    },
+    "observations": [
+      {
+        "shift_seconds": -0.2,
+        "scores": {
+          "Target_Speaker": 0.15259984135627747,
+          "Opening_officer_reference": 0.09288115799427032
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": -0.1,
+        "scores": {
+          "Target_Speaker": 0.16399961709976196,
+          "Opening_officer_reference": 0.050932228565216064
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0,
+        "scores": {
+          "Target_Speaker": 0.14322441816329956,
+          "Opening_officer_reference": 0.020189836621284485
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0.1,
+        "scores": {
+          "Target_Speaker": 0.1313825398683548,
+          "Opening_officer_reference": 0.02813982032239437
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0.2,
+        "scores": {
+          "Target_Speaker": 0.12221679091453552,
+          "Opening_officer_reference": 0.04011286050081253
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      }
+    ]
+  },
+  {
+    "scene": "height_weight",
+    "index": 8,
+    "start": 645.609,
+    "end": 646.729,
+    "text": "Nothing gang, anything?",
+    "center_hypothesis": "Target_Speaker",
+    "stability_hypotheses": {
+      "0.1": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": null
+      },
+      "0.2": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": null
+      }
+    },
+    "observations": [
+      {
+        "shift_seconds": -0.2,
+        "scores": {
+          "Target_Speaker": 0.21554124355316162,
+          "Opening_officer_reference": 0.04247304052114487
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": -0.1,
+        "scores": {
+          "Target_Speaker": 0.19936464726924896,
+          "Opening_officer_reference": 0.026750218123197556
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0,
+        "scores": {
+          "Target_Speaker": 0.2525544762611389,
+          "Opening_officer_reference": -0.02140502631664276
+        },
+        "hypothesis": "Target_Speaker",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0.1,
+        "scores": {
+          "Target_Speaker": 0.2336711585521698,
+          "Opening_officer_reference": -0.07440295070409775
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0.2,
+        "scores": {
+          "Target_Speaker": 0.20044824481010437,
+          "Opening_officer_reference": -0.04723405838012695
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      }
+    ]
+  },
+  {
+    "scene": "height_weight",
+    "index": 9,
+    "start": 648.17,
+    "end": 649.33,
+    "text": "That's all of you.",
+    "center_hypothesis": "Uncertain",
+    "stability_hypotheses": {
+      "0.1": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": null
+      },
+      "0.2": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": null
+      }
+    },
+    "observations": [
+      {
+        "shift_seconds": -0.2,
+        "scores": {
+          "Target_Speaker": -0.11396186053752899,
+          "Opening_officer_reference": 0.030951689928770065
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": -0.1,
+        "scores": {
+          "Target_Speaker": -0.14872777462005615,
+          "Opening_officer_reference": 0.0716022253036499
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0,
+        "scores": {
+          "Target_Speaker": -0.13998886942863464,
+          "Opening_officer_reference": 0.0492277666926384
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0.1,
+        "scores": {
+          "Target_Speaker": -0.11212395131587982,
+          "Opening_officer_reference": 0.05798477679491043
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0.2,
+        "scores": {
+          "Target_Speaker": -0.12712378799915314,
+          "Opening_officer_reference": 0.05908021330833435
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      }
+    ]
+  },
+  {
+    "scene": "height_weight",
+    "index": 10,
+    "start": 654.288,
+    "end": 654.729,
+    "text": " 511.",
+    "center_hypothesis": "Uncertain",
+    "stability_hypotheses": {
+      "0.1": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": null
+      },
+      "0.2": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": null
+      }
+    },
+    "observations": [
+      {
+        "shift_seconds": -0.2,
+        "scores": {
+          "Target_Speaker": -0.008798377588391304,
+          "Opening_officer_reference": 0.034781523048877716
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": -0.1,
+        "scores": {
+          "Target_Speaker": -0.05251973122358322,
+          "Opening_officer_reference": -0.011543052271008492
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0,
+        "scores": {
+          "Target_Speaker": -0.011645208112895489,
+          "Opening_officer_reference": 0.002015255391597748
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0.1,
+        "scores": {
+          "Target_Speaker": 0.03632077947258949,
+          "Opening_officer_reference": 0.0148222791031003
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0.2,
+        "scores": {
+          "Target_Speaker": -0.01772696152329445,
+          "Opening_officer_reference": 0.09141137450933456
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      }
+    ]
+  },
+  {
+    "scene": "height_weight",
+    "index": 11,
+    "start": 655.009,
+    "end": 656.49,
+    "text": "Tell the girls 511.",
+    "center_hypothesis": "Target_Speaker",
+    "stability_hypotheses": {
+      "0.1": {
+        "hypothesis": "Target_Speaker",
+        "reviewed_reference_hypothesis": null
+      },
+      "0.2": {
+        "hypothesis": "Target_Speaker",
+        "reviewed_reference_hypothesis": null
+      }
+    },
+    "observations": [
+      {
+        "shift_seconds": -0.2,
+        "scores": {
+          "Target_Speaker": 0.36996516585350037,
+          "Opening_officer_reference": -0.06755769997835159
+        },
+        "hypothesis": "Target_Speaker",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": -0.1,
+        "scores": {
+          "Target_Speaker": 0.3576886057853699,
+          "Opening_officer_reference": -0.048538435250520706
+        },
+        "hypothesis": "Target_Speaker",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0,
+        "scores": {
+          "Target_Speaker": 0.3877648413181305,
+          "Opening_officer_reference": -0.10462010651826859
+        },
+        "hypothesis": "Target_Speaker",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0.1,
+        "scores": {
+          "Target_Speaker": 0.4065326452255249,
+          "Opening_officer_reference": -0.08801627904176712
+        },
+        "hypothesis": "Target_Speaker",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0.2,
+        "scores": {
+          "Target_Speaker": 0.4111619293689728,
+          "Opening_officer_reference": -0.07674001902341843
+        },
+        "hypothesis": "Target_Speaker",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      }
+    ]
+  },
+  {
+    "scene": "height_weight",
+    "index": 12,
+    "start": 656.51,
+    "end": 658.311,
+    "text": "910.",
+    "center_hypothesis": "Uncertain",
+    "stability_hypotheses": {
+      "0.1": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": null
+      },
+      "0.2": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": null
+      }
+    },
+    "observations": [
+      {
+        "shift_seconds": -0.2,
+        "scores": {
+          "Target_Speaker": -0.03766869381070137,
+          "Opening_officer_reference": 0.04282521829009056
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": -0.1,
+        "scores": {
+          "Target_Speaker": -0.05522152781486511,
+          "Opening_officer_reference": 0.052948348224163055
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0,
+        "scores": {
+          "Target_Speaker": -0.05626623332500458,
+          "Opening_officer_reference": 0.050003230571746826
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0.1,
+        "scores": {
+          "Target_Speaker": -0.06789452582597733,
+          "Opening_officer_reference": 0.046224962919950485
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0.2,
+        "scores": {
+          "Target_Speaker": -0.08520705252885818,
+          "Opening_officer_reference": 0.06546887755393982
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      }
+    ]
+  },
+  {
+    "scene": "height_weight",
+    "index": 13,
+    "start": 658.931,
+    "end": 659.731,
+    "text": "Number 13.",
+    "center_hypothesis": "Uncertain",
+    "stability_hypotheses": {
+      "0.1": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": null
+      },
+      "0.2": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": null
+      }
+    },
+    "observations": [
+      {
+        "shift_seconds": -0.2,
+        "scores": {
+          "Target_Speaker": 0.0658205896615982,
+          "Opening_officer_reference": 0.21764463186264038
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": -0.1,
+        "scores": {
+          "Target_Speaker": 0.03663316369056702,
+          "Opening_officer_reference": 0.1524888277053833
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0,
+        "scores": {
+          "Target_Speaker": 0.035503849387168884,
+          "Opening_officer_reference": 0.2183847576379776
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0.1,
+        "scores": {
+          "Target_Speaker": 0.024394609034061432,
+          "Opening_officer_reference": 0.1840774118900299
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0.2,
+        "scores": {
+          "Target_Speaker": -0.05496447533369064,
+          "Opening_officer_reference": 0.16213014721870422
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      }
+    ]
+  },
+  {
+    "scene": "height_weight",
+    "index": 14,
+    "start": 661.372,
+    "end": 662.513,
+    "text": "How much do you weigh?",
+    "center_hypothesis": "Uncertain",
+    "stability_hypotheses": {
+      "0.1": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": null
+      },
+      "0.2": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": null
+      }
+    },
+    "observations": [
+      {
+        "shift_seconds": -0.2,
+        "scores": {
+          "Target_Speaker": 0.016870982944965363,
+          "Opening_officer_reference": 0.2323099970817566
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": -0.1,
+        "scores": {
+          "Target_Speaker": 0.07272288203239441,
+          "Opening_officer_reference": 0.2928582429885864
+        },
+        "hypothesis": "Opening_officer_reference",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0,
+        "scores": {
+          "Target_Speaker": 0.0591154545545578,
+          "Opening_officer_reference": 0.2084493637084961
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0.1,
+        "scores": {
+          "Target_Speaker": 0.1277405023574829,
+          "Opening_officer_reference": 0.20815402269363403
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0.2,
+        "scores": {
+          "Target_Speaker": 0.09563285857439041,
+          "Opening_officer_reference": 0.21314728260040283
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      }
+    ]
+  },
+  {
+    "scene": "height_weight",
+    "index": 16,
+    "start": 663.253,
+    "end": 664.134,
+    "text": "How much do you weigh?",
+    "center_hypothesis": "Uncertain",
+    "stability_hypotheses": {
+      "0.1": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": null
+      },
+      "0.2": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": null
+      }
+    },
+    "observations": [
+      {
+        "shift_seconds": -0.2,
+        "scores": {
+          "Target_Speaker": -0.10871726274490356,
+          "Opening_officer_reference": 0.23433829843997955
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": -0.1,
+        "scores": {
+          "Target_Speaker": -0.13440541923046112,
+          "Opening_officer_reference": 0.18948231637477875
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0,
+        "scores": {
+          "Target_Speaker": -0.09993001818656921,
+          "Opening_officer_reference": 0.12286009639501572
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0.1,
+        "scores": {
+          "Target_Speaker": -0.09871141612529755,
+          "Opening_officer_reference": -0.06331542134284973
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0.2,
+        "scores": {
+          "Target_Speaker": -0.026815831661224365,
+          "Opening_officer_reference": -0.004774760454893112
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      }
+    ]
+  },
+  {
+    "scene": "height_weight",
+    "index": 18,
+    "start": 664.394,
+    "end": 665.815,
+    "text": "Number 11.",
+    "center_hypothesis": "Opening_officer_reference",
+    "stability_hypotheses": {
+      "0.1": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": null
+      },
+      "0.2": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": null
+      }
+    },
+    "observations": [
+      {
+        "shift_seconds": -0.2,
+        "scores": {
+          "Target_Speaker": 0.25203660130500793,
+          "Opening_officer_reference": 0.20543313026428223
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": -0.1,
+        "scores": {
+          "Target_Speaker": 0.21842415630817413,
+          "Opening_officer_reference": 0.24484947323799133
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0,
+        "scores": {
+          "Target_Speaker": 0.15280254185199738,
+          "Opening_officer_reference": 0.2852840721607208
+        },
+        "hypothesis": "Opening_officer_reference",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0.1,
+        "scores": {
+          "Target_Speaker": 0.16581937670707703,
+          "Opening_officer_reference": 0.2786043882369995
+        },
+        "hypothesis": "Opening_officer_reference",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0.2,
+        "scores": {
+          "Target_Speaker": 0.18367822468280792,
+          "Opening_officer_reference": 0.25915414094924927
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      }
+    ]
+  },
+  {
+    "scene": "height_weight",
+    "index": 19,
+    "start": 666.275,
+    "end": 666.895,
+    "text": "No record.",
+    "center_hypothesis": "Uncertain",
+    "stability_hypotheses": {
+      "0.1": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": null
+      },
+      "0.2": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": null
+      }
+    },
+    "observations": [
+      {
+        "shift_seconds": -0.2,
+        "scores": {
+          "Target_Speaker": -0.03473438322544098,
+          "Opening_officer_reference": 0.15197908878326416
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": -0.1,
+        "scores": {
+          "Target_Speaker": -0.014401519671082497,
+          "Opening_officer_reference": 0.15927034616470337
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0,
+        "scores": {
+          "Target_Speaker": 0.07270051538944244,
+          "Opening_officer_reference": 0.1442316174507141
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0.1,
+        "scores": {
+          "Target_Speaker": -0.04003620892763138,
+          "Opening_officer_reference": 0.24060168862342834
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0.2,
+        "scores": {
+          "Target_Speaker": 0.014910772442817688,
+          "Opening_officer_reference": 0.05419239401817322
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      }
+    ]
+  },
+  {
+    "scene": "height_weight",
+    "index": 20,
+    "start": 666.915,
+    "end": 670.898,
+    "text": "Mississippi or Massachusetts.",
+    "center_hypothesis": "Uncertain",
+    "stability_hypotheses": {
+      "0.1": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": null
+      },
+      "0.2": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": null
+      }
+    },
+    "observations": [
+      {
+        "shift_seconds": -0.2,
+        "scores": {
+          "Target_Speaker": 0.14291946589946747,
+          "Opening_officer_reference": -0.0007716994732618332
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": -0.1,
+        "scores": {
+          "Target_Speaker": 0.09864586591720581,
+          "Opening_officer_reference": -0.013055691495537758
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0,
+        "scores": {
+          "Target_Speaker": 0.09166547656059265,
+          "Opening_officer_reference": -0.007533784955739975
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0.1,
+        "scores": {
+          "Target_Speaker": 0.0775805115699768,
+          "Opening_officer_reference": 0.026192564517259598
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0.2,
+        "scores": {
+          "Target_Speaker": 0.09024527668952942,
+          "Opening_officer_reference": 0.11396084725856781
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      }
+    ]
+  },
+  {
+    "scene": "height_weight",
+    "index": 21,
+    "start": 670.998,
+    "end": 671.418,
+    "text": "Number 8.",
+    "center_hypothesis": "Uncertain",
+    "stability_hypotheses": {
+      "0.1": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": null
+      },
+      "0.2": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": null
+      }
+    },
+    "observations": [
+      {
+        "shift_seconds": -0.2,
+        "scores": {
+          "Target_Speaker": -0.02414654567837715,
+          "Opening_officer_reference": 0.1343427151441574
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": -0.1,
+        "scores": {
+          "Target_Speaker": -0.021129468455910683,
+          "Opening_officer_reference": 0.16519856452941895
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0,
+        "scores": {
+          "Target_Speaker": 0.0577106848359108,
+          "Opening_officer_reference": 0.18538525700569153
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0.1,
+        "scores": {
+          "Target_Speaker": 0.008221045136451721,
+          "Opening_officer_reference": 0.08146961033344269
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0.2,
+        "scores": {
+          "Target_Speaker": -0.024423370137810707,
+          "Opening_officer_reference": 0.01634487882256508
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      }
+    ]
+  },
+  {
+    "scene": "height_weight",
+    "index": 22,
+    "start": 672.499,
+    "end": 673.279,
+    "text": "Is that a fake name?",
+    "center_hypothesis": "Uncertain",
+    "stability_hypotheses": {
+      "0.1": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": null
+      },
+      "0.2": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": null
+      }
+    },
+    "observations": [
+      {
+        "shift_seconds": -0.2,
+        "scores": {
+          "Target_Speaker": -0.04636653512716293,
+          "Opening_officer_reference": 0.3054400384426117
+        },
+        "hypothesis": "Opening_officer_reference",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": -0.1,
+        "scores": {
+          "Target_Speaker": -0.037139542400836945,
+          "Opening_officer_reference": 0.22029905021190643
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0,
+        "scores": {
+          "Target_Speaker": -0.048551615327596664,
+          "Opening_officer_reference": 0.1993504911661148
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0.1,
+        "scores": {
+          "Target_Speaker": -0.10065476596355438,
+          "Opening_officer_reference": 0.1602843999862671
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0.2,
+        "scores": {
+          "Target_Speaker": -0.09127843379974365,
+          "Opening_officer_reference": 0.15655958652496338
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      }
+    ]
+  },
+  {
+    "scene": "height_weight",
+    "index": 24,
+    "start": 675.768,
+    "end": 676.909,
+    "text": " You just found the system anywhere?",
+    "center_hypothesis": "Opening_officer_reference",
+    "stability_hypotheses": {
+      "0.1": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": null
+      },
+      "0.2": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": null
+      }
+    },
+    "observations": [
+      {
+        "shift_seconds": -0.2,
+        "scores": {
+          "Target_Speaker": -0.05774408206343651,
+          "Opening_officer_reference": 0.281139999628067
+        },
+        "hypothesis": "Opening_officer_reference",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": -0.1,
+        "scores": {
+          "Target_Speaker": -0.023463644087314606,
+          "Opening_officer_reference": 0.2561318874359131
+        },
+        "hypothesis": "Opening_officer_reference",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0,
+        "scores": {
+          "Target_Speaker": 0.010552563704550266,
+          "Opening_officer_reference": 0.2817891240119934
+        },
+        "hypothesis": "Opening_officer_reference",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0.1,
+        "scores": {
+          "Target_Speaker": -0.002107882872223854,
+          "Opening_officer_reference": 0.23191215097904205
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0.2,
+        "scores": {
+          "Target_Speaker": 0.057252876460552216,
+          "Opening_officer_reference": 0.19732517004013062
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      }
+    ]
+  },
+  {
+    "scene": "height_weight",
+    "index": 25,
+    "start": 677.49,
+    "end": 679.171,
+    "text": "I don't get found guilty of anything.",
+    "center_hypothesis": "Target_Speaker",
+    "stability_hypotheses": {
+      "0.1": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": null
+      },
+      "0.2": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": null
+      }
+    },
+    "observations": [
+      {
+        "shift_seconds": -0.2,
+        "scores": {
+          "Target_Speaker": 0.2930513024330139,
+          "Opening_officer_reference": 0.23725350201129913
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": -0.1,
+        "scores": {
+          "Target_Speaker": 0.3240004777908325,
+          "Opening_officer_reference": 0.21600928902626038
+        },
+        "hypothesis": "Target_Speaker",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0,
+        "scores": {
+          "Target_Speaker": 0.28649669885635376,
+          "Opening_officer_reference": 0.19025354087352753
+        },
+        "hypothesis": "Target_Speaker",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0.1,
+        "scores": {
+          "Target_Speaker": 0.2605593502521515,
+          "Opening_officer_reference": 0.18250256776809692
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0.2,
+        "scores": {
+          "Target_Speaker": 0.26768171787261963,
+          "Opening_officer_reference": 0.17835304141044617
+        },
+        "hypothesis": "Target_Speaker",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      }
+    ]
+  },
+  {
+    "scene": "height_weight",
+    "index": 26,
+    "start": 679.191,
+    "end": 680.612,
+    "text": "Do you have a driver's license?",
+    "center_hypothesis": "Opening_officer_reference",
+    "stability_hypotheses": {
+      "0.1": {
+        "hypothesis": "Opening_officer_reference",
+        "reviewed_reference_hypothesis": null
+      },
+      "0.2": {
+        "hypothesis": "Opening_officer_reference",
+        "reviewed_reference_hypothesis": null
+      }
+    },
+    "observations": [
+      {
+        "shift_seconds": -0.2,
+        "scores": {
+          "Target_Speaker": 0.09760088473558426,
+          "Opening_officer_reference": 0.27014461159706116
+        },
+        "hypothesis": "Opening_officer_reference",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": -0.1,
+        "scores": {
+          "Target_Speaker": 0.08610280603170395,
+          "Opening_officer_reference": 0.35177165269851685
+        },
+        "hypothesis": "Opening_officer_reference",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0,
+        "scores": {
+          "Target_Speaker": 0.03125520795583725,
+          "Opening_officer_reference": 0.4187980890274048
+        },
+        "hypothesis": "Opening_officer_reference",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0.1,
+        "scores": {
+          "Target_Speaker": 0.03344428166747093,
+          "Opening_officer_reference": 0.38394320011138916
+        },
+        "hypothesis": "Opening_officer_reference",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0.2,
+        "scores": {
+          "Target_Speaker": 0.09131322801113129,
+          "Opening_officer_reference": 0.3975614309310913
+        },
+        "hypothesis": "Opening_officer_reference",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      }
+    ]
+  },
+  {
+    "scene": "height_weight",
+    "index": 27,
+    "start": 680.752,
+    "end": 681.773,
+    "text": "I do have a driver's license.",
+    "center_hypothesis": "Target_Speaker",
+    "stability_hypotheses": {
+      "0.1": {
+        "hypothesis": "Target_Speaker",
+        "reviewed_reference_hypothesis": null
+      },
+      "0.2": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": null
+      }
+    },
+    "observations": [
+      {
+        "shift_seconds": -0.2,
+        "scores": {
+          "Target_Speaker": 0.5004268288612366,
+          "Opening_officer_reference": 0.060927391052246094
+        },
+        "hypothesis": "Target_Speaker",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": -0.1,
+        "scores": {
+          "Target_Speaker": 0.5253287553787231,
+          "Opening_officer_reference": -0.031370267271995544
+        },
+        "hypothesis": "Target_Speaker",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0,
+        "scores": {
+          "Target_Speaker": 0.5564602613449097,
+          "Opening_officer_reference": 0.04985303431749344
+        },
+        "hypothesis": "Target_Speaker",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0.1,
+        "scores": {
+          "Target_Speaker": 0.3285704255104065,
+          "Opening_officer_reference": 0.08146681636571884
+        },
+        "hypothesis": "Target_Speaker",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0.2,
+        "scores": {
+          "Target_Speaker": 0.24642227590084076,
+          "Opening_officer_reference": 0.09384641796350479
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      }
+    ]
+  },
+  {
+    "scene": "height_weight",
+    "index": 28,
+    "start": 681.793,
+    "end": 683.715,
+    "text": "Then you should be on the system.",
+    "center_hypothesis": "Opening_officer_reference",
+    "stability_hypotheses": {
+      "0.1": {
+        "hypothesis": "Opening_officer_reference",
+        "reviewed_reference_hypothesis": null
+      },
+      "0.2": {
+        "hypothesis": "Opening_officer_reference",
+        "reviewed_reference_hypothesis": null
+      }
+    },
+    "observations": [
+      {
+        "shift_seconds": -0.2,
+        "scores": {
+          "Target_Speaker": -0.134159654378891,
+          "Opening_officer_reference": 0.35977908968925476
+        },
+        "hypothesis": "Opening_officer_reference",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": -0.1,
+        "scores": {
+          "Target_Speaker": -0.023468315601348877,
+          "Opening_officer_reference": 0.3259629011154175
+        },
+        "hypothesis": "Opening_officer_reference",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0,
+        "scores": {
+          "Target_Speaker": 0.03324408084154129,
+          "Opening_officer_reference": 0.2750321924686432
+        },
+        "hypothesis": "Opening_officer_reference",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0.1,
+        "scores": {
+          "Target_Speaker": 0.03543049842119217,
+          "Opening_officer_reference": 0.3055618405342102
+        },
+        "hypothesis": "Opening_officer_reference",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0.2,
+        "scores": {
+          "Target_Speaker": 0.08085131645202637,
+          "Opening_officer_reference": 0.28550446033477783
+        },
+        "hypothesis": "Opening_officer_reference",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      }
+    ]
+  },
+  {
+    "scene": "height_weight",
+    "index": 29,
+    "start": 684.776,
+    "end": 685.676,
+    "text": "I have a driver's license.",
+    "center_hypothesis": "Target_Speaker",
+    "stability_hypotheses": {
+      "0.1": {
+        "hypothesis": "Target_Speaker",
+        "reviewed_reference_hypothesis": null
+      },
+      "0.2": {
+        "hypothesis": "Target_Speaker",
+        "reviewed_reference_hypothesis": null
+      }
+    },
+    "observations": [
+      {
+        "shift_seconds": -0.2,
+        "scores": {
+          "Target_Speaker": 0.27000558376312256,
+          "Opening_officer_reference": -0.02947895973920822
+        },
+        "hypothesis": "Target_Speaker",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": -0.1,
+        "scores": {
+          "Target_Speaker": 0.27043962478637695,
+          "Opening_officer_reference": -0.042526725679636
+        },
+        "hypothesis": "Target_Speaker",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0,
+        "scores": {
+          "Target_Speaker": 0.33688604831695557,
+          "Opening_officer_reference": -0.14234836399555206
+        },
+        "hypothesis": "Target_Speaker",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0.1,
+        "scores": {
+          "Target_Speaker": 0.42118167877197266,
+          "Opening_officer_reference": -0.044379472732543945
+        },
+        "hypothesis": "Target_Speaker",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0.2,
+        "scores": {
+          "Target_Speaker": 0.346159428358078,
+          "Opening_officer_reference": 0.0480303019285202
+        },
+        "hypothesis": "Target_Speaker",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      }
+    ]
+  },
+  {
+    "scene": "height_weight",
+    "index": 30,
+    "start": 685.716,
+    "end": 687.358,
+    "text": "I didn't give you any fake information.",
+    "center_hypothesis": "Target_Speaker",
+    "stability_hypotheses": {
+      "0.1": {
+        "hypothesis": "Target_Speaker",
+        "reviewed_reference_hypothesis": null
+      },
+      "0.2": {
+        "hypothesis": "Target_Speaker",
+        "reviewed_reference_hypothesis": null
+      }
+    },
+    "observations": [
+      {
+        "shift_seconds": -0.2,
+        "scores": {
+          "Target_Speaker": 0.4636300206184387,
+          "Opening_officer_reference": 0.044609833508729935
+        },
+        "hypothesis": "Target_Speaker",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": -0.1,
+        "scores": {
+          "Target_Speaker": 0.45127004384994507,
+          "Opening_officer_reference": 0.013732172548770905
+        },
+        "hypothesis": "Target_Speaker",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0,
+        "scores": {
+          "Target_Speaker": 0.38110262155532837,
+          "Opening_officer_reference": 0.07639247179031372
+        },
+        "hypothesis": "Target_Speaker",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0.1,
+        "scores": {
+          "Target_Speaker": 0.28665533661842346,
+          "Opening_officer_reference": 0.10604094713926315
+        },
+        "hypothesis": "Target_Speaker",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      },
+      {
+        "shift_seconds": 0.2,
+        "scores": {
+          "Target_Speaker": 0.28801339864730835,
+          "Opening_officer_reference": 0.07967454195022583
+        },
+        "hypothesis": "Target_Speaker",
+        "reviewed_reference_scores": {},
+        "reviewed_reference_hypothesis": null
+      }
+    ]
+  },
+  {
+    "scene": "handcuffs",
+    "index": 0,
+    "start": 1078.02,
+    "end": 1082.623,
+    "text": " And two, it lets them know kind of what to expect, so.",
+    "center_hypothesis": "Target_Speaker",
+    "stability_hypotheses": {
+      "0.1": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      "0.2": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": "Uncertain"
+      }
+    },
+    "observations": [
+      {
+        "shift_seconds": -0.2,
+        "scores": {
+          "Target_Speaker": 0.28362739086151123,
+          "Opening_officer_reference": 0.20274144411087036
+        },
+        "hypothesis": "Target_Speaker",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.28362739086151123,
+          "Scene_original_officer": 0.45962733030319214,
+          "Scene_key_officer": 0.5090699195861816
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": -0.1,
+        "scores": {
+          "Target_Speaker": 0.2944889962673187,
+          "Opening_officer_reference": 0.1949254274368286
+        },
+        "hypothesis": "Target_Speaker",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.2944889962673187,
+          "Scene_original_officer": 0.47107401490211487,
+          "Scene_key_officer": 0.5111856460571289
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": 0,
+        "scores": {
+          "Target_Speaker": 0.29375988245010376,
+          "Opening_officer_reference": 0.20948153734207153
+        },
+        "hypothesis": "Target_Speaker",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.29375988245010376,
+          "Scene_original_officer": 0.49530094861984253,
+          "Scene_key_officer": 0.505913496017456
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": 0.1,
+        "scores": {
+          "Target_Speaker": 0.29010891914367676,
+          "Opening_officer_reference": 0.21508030593395233
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.29010891914367676,
+          "Scene_original_officer": 0.488910973072052,
+          "Scene_key_officer": 0.5117436647415161
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": 0.2,
+        "scores": {
+          "Target_Speaker": 0.3024313747882843,
+          "Opening_officer_reference": 0.1904899924993515
+        },
+        "hypothesis": "Target_Speaker",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.3024313747882843,
+          "Scene_original_officer": 0.48213475942611694,
+          "Scene_key_officer": 0.5131216049194336
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      }
+    ]
+  },
+  {
+    "scene": "handcuffs",
+    "index": 1,
+    "start": 1082.643,
+    "end": 1085.365,
+    "text": "I appreciate people.",
+    "center_hypothesis": "Uncertain",
+    "stability_hypotheses": {
+      "0.1": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      "0.2": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": "Uncertain"
+      }
+    },
+    "observations": [
+      {
+        "shift_seconds": -0.2,
+        "scores": {
+          "Target_Speaker": -0.08648122102022171,
+          "Opening_officer_reference": 0.12465512752532959
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": -0.08648122102022171,
+          "Scene_original_officer": 0.04096647724509239,
+          "Scene_key_officer": 0.15649832785129547
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": -0.1,
+        "scores": {
+          "Target_Speaker": -0.04179969057440758,
+          "Opening_officer_reference": 0.1077994778752327
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": -0.04179969057440758,
+          "Scene_original_officer": 0.10179577767848969,
+          "Scene_key_officer": 0.19836382567882538
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": 0,
+        "scores": {
+          "Target_Speaker": 0.1294543594121933,
+          "Opening_officer_reference": 0.11387701332569122
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.1294543594121933,
+          "Scene_original_officer": 0.08603742718696594,
+          "Scene_key_officer": 0.23692648112773895
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": 0.1,
+        "scores": {
+          "Target_Speaker": 0.16729050874710083,
+          "Opening_officer_reference": 0.10445873439311981
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.16729050874710083,
+          "Scene_original_officer": 0.04251841455698013,
+          "Scene_key_officer": 0.2578989863395691
+        },
+        "reviewed_reference_hypothesis": "Scene_key_officer"
+      },
+      {
+        "shift_seconds": 0.2,
+        "scores": {
+          "Target_Speaker": 0.1774997115135193,
+          "Opening_officer_reference": 0.05548938736319542
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.1774997115135193,
+          "Scene_original_officer": 0.028528042137622833,
+          "Scene_key_officer": 0.27793067693710327
+        },
+        "reviewed_reference_hypothesis": "Scene_key_officer"
+      }
+    ]
+  },
+  {
+    "scene": "handcuffs",
+    "index": 2,
+    "start": 1085.465,
+    "end": 1086.026,
+    "text": "Oh yeah.",
+    "center_hypothesis": "Uncertain",
+    "stability_hypotheses": {
+      "0.1": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      "0.2": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": "Uncertain"
+      }
+    },
+    "observations": [
+      {
+        "shift_seconds": -0.2,
+        "scores": {
+          "Target_Speaker": -0.017459705471992493,
+          "Opening_officer_reference": -0.007329885847866535
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": -0.017459705471992493,
+          "Scene_original_officer": -0.016313353553414345,
+          "Scene_key_officer": 0.1637442409992218
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": -0.1,
+        "scores": {
+          "Target_Speaker": 0.07902947813272476,
+          "Opening_officer_reference": -0.009106811136007309
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.07902947813272476,
+          "Scene_original_officer": 0.0530879870057106,
+          "Scene_key_officer": 0.08347295224666595
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": 0,
+        "scores": {
+          "Target_Speaker": 0.041859738528728485,
+          "Opening_officer_reference": -0.03089132159948349
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.041859738528728485,
+          "Scene_original_officer": 0.06601899862289429,
+          "Scene_key_officer": 0.03464096039533615
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": 0.1,
+        "scores": {
+          "Target_Speaker": 0.09027127921581268,
+          "Opening_officer_reference": -0.03413712978363037
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.09027127921581268,
+          "Scene_original_officer": -0.017615392804145813,
+          "Scene_key_officer": -0.0650925412774086
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": 0.2,
+        "scores": {
+          "Target_Speaker": 0.09111062437295914,
+          "Opening_officer_reference": -0.11127295345067978
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.09111062437295914,
+          "Scene_original_officer": 0.005896208807826042,
+          "Scene_key_officer": 0.06343016028404236
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      }
+    ]
+  },
+  {
+    "scene": "handcuffs",
+    "index": 3,
+    "start": 1087.107,
+    "end": 1092.991,
+    "text": "Well I can tell everybody else that comes in here, my behavior is kind of a reflection of theirs.",
+    "center_hypothesis": "Uncertain",
+    "stability_hypotheses": {
+      "0.1": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": "Scene_original_officer"
+      },
+      "0.2": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": "Scene_original_officer"
+      }
+    },
+    "observations": [
+      {
+        "shift_seconds": -0.2,
+        "scores": {
+          "Target_Speaker": 0.07002817839384079,
+          "Opening_officer_reference": 0.15884388983249664
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.07002817839384079,
+          "Scene_original_officer": 0.6341703534126282,
+          "Scene_key_officer": 0.49473512172698975
+        },
+        "reviewed_reference_hypothesis": "Scene_original_officer"
+      },
+      {
+        "shift_seconds": -0.1,
+        "scores": {
+          "Target_Speaker": 0.0656309425830841,
+          "Opening_officer_reference": 0.15751972794532776
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.0656309425830841,
+          "Scene_original_officer": 0.6257756948471069,
+          "Scene_key_officer": 0.48777875304222107
+        },
+        "reviewed_reference_hypothesis": "Scene_original_officer"
+      },
+      {
+        "shift_seconds": 0,
+        "scores": {
+          "Target_Speaker": 0.07865849137306213,
+          "Opening_officer_reference": 0.16669565439224243
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.07865849137306213,
+          "Scene_original_officer": 0.6403964757919312,
+          "Scene_key_officer": 0.48705998063087463
+        },
+        "reviewed_reference_hypothesis": "Scene_original_officer"
+      },
+      {
+        "shift_seconds": 0.1,
+        "scores": {
+          "Target_Speaker": 0.10208941996097565,
+          "Opening_officer_reference": 0.16271546483039856
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.10208941996097565,
+          "Scene_original_officer": 0.6443125009536743,
+          "Scene_key_officer": 0.48296692967414856
+        },
+        "reviewed_reference_hypothesis": "Scene_original_officer"
+      },
+      {
+        "shift_seconds": 0.2,
+        "scores": {
+          "Target_Speaker": 0.1308669149875641,
+          "Opening_officer_reference": 0.16933119297027588
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.1308669149875641,
+          "Scene_original_officer": 0.633343517780304,
+          "Scene_key_officer": 0.4612129032611847
+        },
+        "reviewed_reference_hypothesis": "Scene_original_officer"
+      }
+    ]
+  },
+  {
+    "scene": "handcuffs",
+    "index": 4,
+    "start": 1093.151,
+    "end": 1094.352,
+    "text": "I couldn't agree more.",
+    "center_hypothesis": "Target_Speaker",
+    "stability_hypotheses": {
+      "0.1": {
+        "hypothesis": "Target_Speaker",
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      "0.2": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": "Uncertain"
+      }
+    },
+    "observations": [
+      {
+        "shift_seconds": -0.2,
+        "scores": {
+          "Target_Speaker": 0.3772276043891907,
+          "Opening_officer_reference": 0.04384782165288925
+        },
+        "hypothesis": "Target_Speaker",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.3772276043891907,
+          "Scene_original_officer": 0.09011522680521011,
+          "Scene_key_officer": 0.15132573246955872
+        },
+        "reviewed_reference_hypothesis": "Target_Speaker"
+      },
+      {
+        "shift_seconds": -0.1,
+        "scores": {
+          "Target_Speaker": 0.3231370449066162,
+          "Opening_officer_reference": 0.014855556190013885
+        },
+        "hypothesis": "Target_Speaker",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.3231370449066162,
+          "Scene_original_officer": 0.17819763720035553,
+          "Scene_key_officer": 0.13958308100700378
+        },
+        "reviewed_reference_hypothesis": "Target_Speaker"
+      },
+      {
+        "shift_seconds": 0,
+        "scores": {
+          "Target_Speaker": 0.2752193808555603,
+          "Opening_officer_reference": 0.0673840120434761
+        },
+        "hypothesis": "Target_Speaker",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.2752193808555603,
+          "Scene_original_officer": 0.1708211600780487,
+          "Scene_key_officer": 0.17795279622077942
+        },
+        "reviewed_reference_hypothesis": "Target_Speaker"
+      },
+      {
+        "shift_seconds": 0.1,
+        "scores": {
+          "Target_Speaker": 0.2547823488712311,
+          "Opening_officer_reference": 0.046827565878629684
+        },
+        "hypothesis": "Target_Speaker",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.2547823488712311,
+          "Scene_original_officer": 0.21298615634441376,
+          "Scene_key_officer": 0.21219971776008606
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": 0.2,
+        "scores": {
+          "Target_Speaker": 0.22374467551708221,
+          "Opening_officer_reference": -0.052118152379989624
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.22374467551708221,
+          "Scene_original_officer": 0.12632985413074493,
+          "Scene_key_officer": 0.1197473332285881
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      }
+    ]
+  },
+  {
+    "scene": "handcuffs",
+    "index": 5,
+    "start": 1094.372,
+    "end": 1095.533,
+    "text": "I couldn't agree more.",
+    "center_hypothesis": "Uncertain",
+    "stability_hypotheses": {
+      "0.1": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      "0.2": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": "Uncertain"
+      }
+    },
+    "observations": [
+      {
+        "shift_seconds": -0.2,
+        "scores": {
+          "Target_Speaker": 0.012752622365951538,
+          "Opening_officer_reference": 0.010445721447467804
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.012752622365951538,
+          "Scene_original_officer": 0.1493998020887375,
+          "Scene_key_officer": 0.00027144700288772583
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": -0.1,
+        "scores": {
+          "Target_Speaker": -0.01840652897953987,
+          "Opening_officer_reference": -0.0005103684961795807
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": -0.01840652897953987,
+          "Scene_original_officer": 0.12459087371826172,
+          "Scene_key_officer": 0.0652286633849144
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": 0,
+        "scores": {
+          "Target_Speaker": 0.01450774073600769,
+          "Opening_officer_reference": 0.03787867724895477
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.01450774073600769,
+          "Scene_original_officer": 0.15604662895202637,
+          "Scene_key_officer": 0.07886520028114319
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": 0.1,
+        "scores": {
+          "Target_Speaker": 0.043874118477106094,
+          "Opening_officer_reference": 0.07296286523342133
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.043874118477106094,
+          "Scene_original_officer": 0.13657817244529724,
+          "Scene_key_officer": 0.057597044855356216
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": 0.2,
+        "scores": {
+          "Target_Speaker": 0.017889998853206635,
+          "Opening_officer_reference": 0.06345661729574203
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.017889998853206635,
+          "Scene_original_officer": 0.1303602159023285,
+          "Scene_key_officer": 0.04863123223185539
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      }
+    ]
+  },
+  {
+    "scene": "handcuffs",
+    "index": 6,
+    "start": 1098.215,
+    "end": 1099.376,
+    "text": "Couldn't agree a syllable more.",
+    "center_hypothesis": "Target_Speaker",
+    "stability_hypotheses": {
+      "0.1": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      "0.2": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": "Uncertain"
+      }
+    },
+    "observations": [
+      {
+        "shift_seconds": -0.2,
+        "scores": {
+          "Target_Speaker": 0.20274844765663147,
+          "Opening_officer_reference": 0.08383534848690033
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.20274844765663147,
+          "Scene_original_officer": 0.20452526211738586,
+          "Scene_key_officer": 0.14789794385433197
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": -0.1,
+        "scores": {
+          "Target_Speaker": 0.21323102712631226,
+          "Opening_officer_reference": 0.07327895611524582
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.21323102712631226,
+          "Scene_original_officer": 0.2178390622138977,
+          "Scene_key_officer": 0.16969908773899078
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": 0,
+        "scores": {
+          "Target_Speaker": 0.2644451856613159,
+          "Opening_officer_reference": 0.05187265947461128
+        },
+        "hypothesis": "Target_Speaker",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.2644451856613159,
+          "Scene_original_officer": 0.16835033893585205,
+          "Scene_key_officer": 0.1280280351638794
+        },
+        "reviewed_reference_hypothesis": "Target_Speaker"
+      },
+      {
+        "shift_seconds": 0.1,
+        "scores": {
+          "Target_Speaker": 0.1276259422302246,
+          "Opening_officer_reference": 0.011264609172940254
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.1276259422302246,
+          "Scene_original_officer": 0.14769190549850464,
+          "Scene_key_officer": 0.13854488730430603
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": 0.2,
+        "scores": {
+          "Target_Speaker": 0.10722145438194275,
+          "Opening_officer_reference": -0.009749677032232285
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.10722145438194275,
+          "Scene_original_officer": 0.19402770698070526,
+          "Scene_key_officer": 0.15405264496803284
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      }
+    ]
+  },
+  {
+    "scene": "handcuffs",
+    "index": 7,
+    "start": 1103.148,
+    "end": 1107.251,
+    "text": " No, that's not the problem.",
+    "center_hypothesis": "Uncertain",
+    "stability_hypotheses": {
+      "0.1": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      "0.2": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": "Uncertain"
+      }
+    },
+    "observations": [
+      {
+        "shift_seconds": -0.2,
+        "scores": {
+          "Target_Speaker": 0.02326086349785328,
+          "Opening_officer_reference": 0.11797185987234116
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.02326086349785328,
+          "Scene_original_officer": 0.4034194350242615,
+          "Scene_key_officer": 0.3748260736465454
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": -0.1,
+        "scores": {
+          "Target_Speaker": 0.01500052772462368,
+          "Opening_officer_reference": 0.12300346791744232
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.01500052772462368,
+          "Scene_original_officer": 0.40915122628211975,
+          "Scene_key_officer": 0.39880043268203735
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": 0,
+        "scores": {
+          "Target_Speaker": 0.010133394971489906,
+          "Opening_officer_reference": 0.1412227898836136
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.010133394971489906,
+          "Scene_original_officer": 0.3279234766960144,
+          "Scene_key_officer": 0.3701992630958557
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": 0.1,
+        "scores": {
+          "Target_Speaker": 0.002381943166255951,
+          "Opening_officer_reference": 0.12725847959518433
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.002381943166255951,
+          "Scene_original_officer": 0.33597880601882935,
+          "Scene_key_officer": 0.37197548151016235
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": 0.2,
+        "scores": {
+          "Target_Speaker": 0.013017388060688972,
+          "Opening_officer_reference": 0.10716082900762558
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.013017388060688972,
+          "Scene_original_officer": 0.34436190128326416,
+          "Scene_key_officer": 0.3740995526313782
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      }
+    ]
+  },
+  {
+    "scene": "handcuffs",
+    "index": 8,
+    "start": 1107.771,
+    "end": 1109.432,
+    "text": "The key, it just got stuck.",
+    "center_hypothesis": "Uncertain",
+    "stability_hypotheses": {
+      "0.1": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      "0.2": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": "Uncertain"
+      }
+    },
+    "observations": [
+      {
+        "shift_seconds": -0.2,
+        "scores": {
+          "Target_Speaker": 0.04656566306948662,
+          "Opening_officer_reference": 0.18570074439048767
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.04656566306948662,
+          "Scene_original_officer": 0.31019970774650574,
+          "Scene_key_officer": 0.2931075096130371
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": -0.1,
+        "scores": {
+          "Target_Speaker": 0.0025250203907489777,
+          "Opening_officer_reference": 0.1630355715751648
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.0025250203907489777,
+          "Scene_original_officer": 0.3557892143726349,
+          "Scene_key_officer": 0.3162192702293396
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": 0,
+        "scores": {
+          "Target_Speaker": -0.028564875945448875,
+          "Opening_officer_reference": 0.1537773162126541
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": -0.028564875945448875,
+          "Scene_original_officer": 0.3445969223976135,
+          "Scene_key_officer": 0.3303724527359009
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": 0.1,
+        "scores": {
+          "Target_Speaker": -0.00830855593085289,
+          "Opening_officer_reference": 0.13034266233444214
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": -0.00830855593085289,
+          "Scene_original_officer": 0.3278118073940277,
+          "Scene_key_officer": 0.27859073877334595
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": 0.2,
+        "scores": {
+          "Target_Speaker": 0.0059230737388134,
+          "Opening_officer_reference": 0.13398073613643646
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.0059230737388134,
+          "Scene_original_officer": 0.3276979923248291,
+          "Scene_key_officer": 0.28809428215026855
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      }
+    ]
+  },
+  {
+    "scene": "handcuffs",
+    "index": 9,
+    "start": 1110.092,
+    "end": 1118.717,
+    "text": "I don't want to mess with your cuffs or mess them up or anything, but let's...",
+    "center_hypothesis": "Uncertain",
+    "stability_hypotheses": {
+      "0.1": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": "Scene_original_officer"
+      },
+      "0.2": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": "Scene_original_officer"
+      }
+    },
+    "observations": [
+      {
+        "shift_seconds": -0.2,
+        "scores": {
+          "Target_Speaker": -0.01261570118367672,
+          "Opening_officer_reference": 0.1452183723449707
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": -0.01261570118367672,
+          "Scene_original_officer": 0.8533632755279541,
+          "Scene_key_officer": 0.33711034059524536
+        },
+        "reviewed_reference_hypothesis": "Scene_original_officer"
+      },
+      {
+        "shift_seconds": -0.1,
+        "scores": {
+          "Target_Speaker": -0.018054131418466568,
+          "Opening_officer_reference": 0.144314706325531
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": -0.018054131418466568,
+          "Scene_original_officer": 0.8505723476409912,
+          "Scene_key_officer": 0.3409610390663147
+        },
+        "reviewed_reference_hypothesis": "Scene_original_officer"
+      },
+      {
+        "shift_seconds": 0,
+        "scores": {
+          "Target_Speaker": -0.019876569509506226,
+          "Opening_officer_reference": 0.15196168422698975
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": -0.019876569509506226,
+          "Scene_original_officer": 0.856875479221344,
+          "Scene_key_officer": 0.34027785062789917
+        },
+        "reviewed_reference_hypothesis": "Scene_original_officer"
+      },
+      {
+        "shift_seconds": 0.1,
+        "scores": {
+          "Target_Speaker": -0.018813494592905045,
+          "Opening_officer_reference": 0.15241268277168274
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": -0.018813494592905045,
+          "Scene_original_officer": 0.8543550968170166,
+          "Scene_key_officer": 0.34091055393218994
+        },
+        "reviewed_reference_hypothesis": "Scene_original_officer"
+      },
+      {
+        "shift_seconds": 0.2,
+        "scores": {
+          "Target_Speaker": -0.023299172520637512,
+          "Opening_officer_reference": 0.1515696495771408
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": -0.023299172520637512,
+          "Scene_original_officer": 0.8519190549850464,
+          "Scene_key_officer": 0.33561843633651733
+        },
+        "reviewed_reference_hypothesis": "Scene_original_officer"
+      }
+    ]
+  },
+  {
+    "scene": "handcuffs",
+    "index": 10,
+    "start": 1121.939,
+    "end": 1123.06,
+    "text": "I'm taking too much, Tommy.",
+    "center_hypothesis": "Uncertain",
+    "stability_hypotheses": {
+      "0.1": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      "0.2": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": "Uncertain"
+      }
+    },
+    "observations": [
+      {
+        "shift_seconds": -0.2,
+        "scores": {
+          "Target_Speaker": 0.18694159388542175,
+          "Opening_officer_reference": 0.09264406561851501
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.18694159388542175,
+          "Scene_original_officer": 0.007410782389342785,
+          "Scene_key_officer": 0.019783126190304756
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": -0.1,
+        "scores": {
+          "Target_Speaker": 0.19268831610679626,
+          "Opening_officer_reference": 0.11054651439189911
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.19268831610679626,
+          "Scene_original_officer": 0.0015326328575611115,
+          "Scene_key_officer": 0.03234812617301941
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": 0,
+        "scores": {
+          "Target_Speaker": 0.22671572864055634,
+          "Opening_officer_reference": 0.1431729793548584
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.22671572864055634,
+          "Scene_original_officer": 0.020609483122825623,
+          "Scene_key_officer": 0.09994018077850342
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": 0.1,
+        "scores": {
+          "Target_Speaker": 0.2275562733411789,
+          "Opening_officer_reference": 0.14787092804908752
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.2275562733411789,
+          "Scene_original_officer": 0.038575828075408936,
+          "Scene_key_officer": 0.13675642013549805
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": 0.2,
+        "scores": {
+          "Target_Speaker": 0.09028182178735733,
+          "Opening_officer_reference": 0.2430383265018463
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.09028182178735733,
+          "Scene_original_officer": 0.013559982180595398,
+          "Scene_key_officer": 0.15507932007312775
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      }
+    ]
+  },
+  {
+    "scene": "handcuffs",
+    "index": 11,
+    "start": 1123.1,
+    "end": 1123.961,
+    "text": "I don't got much space.",
+    "center_hypothesis": "Uncertain",
+    "stability_hypotheses": {
+      "0.1": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      "0.2": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": "Uncertain"
+      }
+    },
+    "observations": [
+      {
+        "shift_seconds": -0.2,
+        "scores": {
+          "Target_Speaker": 0.11490260064601898,
+          "Opening_officer_reference": 0.039026740938425064
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.11490260064601898,
+          "Scene_original_officer": 0.06448730826377869,
+          "Scene_key_officer": 0.1489366590976715
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": -0.1,
+        "scores": {
+          "Target_Speaker": 0.09163342416286469,
+          "Opening_officer_reference": -0.002764575183391571
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.09163342416286469,
+          "Scene_original_officer": -0.0437130481004715,
+          "Scene_key_officer": 0.09197025001049042
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": 0,
+        "scores": {
+          "Target_Speaker": 0.10697019100189209,
+          "Opening_officer_reference": 0.023391058668494225
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.10697019100189209,
+          "Scene_original_officer": -0.0645906925201416,
+          "Scene_key_officer": 0.033016495406627655
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": 0.1,
+        "scores": {
+          "Target_Speaker": 0.1087593361735344,
+          "Opening_officer_reference": 0.015833359211683273
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.1087593361735344,
+          "Scene_original_officer": -0.030298452824354172,
+          "Scene_key_officer": 0.08025407046079636
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": 0.2,
+        "scores": {
+          "Target_Speaker": 0.14380456507205963,
+          "Opening_officer_reference": 0.040891166776418686
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.14380456507205963,
+          "Scene_original_officer": -0.033235758543014526,
+          "Scene_key_officer": 0.13616931438446045
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      }
+    ]
+  },
+  {
+    "scene": "handcuffs",
+    "index": 12,
+    "start": 1124.161,
+    "end": 1126.242,
+    "text": "Well, we're not trying to tie someone.",
+    "center_hypothesis": "Uncertain",
+    "stability_hypotheses": {
+      "0.1": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      "0.2": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": "Uncertain"
+      }
+    },
+    "observations": [
+      {
+        "shift_seconds": -0.2,
+        "scores": {
+          "Target_Speaker": 0.10816968977451324,
+          "Opening_officer_reference": 0.18749728798866272
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.10816968977451324,
+          "Scene_original_officer": 0.40197890996932983,
+          "Scene_key_officer": 0.43129950761795044
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": -0.1,
+        "scores": {
+          "Target_Speaker": 0.20390143990516663,
+          "Opening_officer_reference": 0.18313562870025635
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.20390143990516663,
+          "Scene_original_officer": 0.4025023579597473,
+          "Scene_key_officer": 0.45899730920791626
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": 0,
+        "scores": {
+          "Target_Speaker": 0.18828928470611572,
+          "Opening_officer_reference": 0.20057412981987
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.18828928470611572,
+          "Scene_original_officer": 0.3927955627441406,
+          "Scene_key_officer": 0.4700208008289337
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": 0.1,
+        "scores": {
+          "Target_Speaker": 0.18735826015472412,
+          "Opening_officer_reference": 0.18456196784973145
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.18735826015472412,
+          "Scene_original_officer": 0.4444676637649536,
+          "Scene_key_officer": 0.4673597812652588
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": 0.2,
+        "scores": {
+          "Target_Speaker": 0.17014028131961823,
+          "Opening_officer_reference": 0.1833389401435852
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.17014028131961823,
+          "Scene_original_officer": 0.4131000339984894,
+          "Scene_key_officer": 0.46483784914016724
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      }
+    ]
+  },
+  {
+    "scene": "handcuffs",
+    "index": 13,
+    "start": 1126.262,
+    "end": 1129.464,
+    "text": "We're trying to get the key out of them.",
+    "center_hypothesis": "Uncertain",
+    "stability_hypotheses": {
+      "0.1": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      "0.2": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": "Uncertain"
+      }
+    },
+    "observations": [
+      {
+        "shift_seconds": -0.2,
+        "scores": {
+          "Target_Speaker": -0.04348518326878548,
+          "Opening_officer_reference": 0.12620319426059723
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": -0.04348518326878548,
+          "Scene_original_officer": 0.17651942372322083,
+          "Scene_key_officer": 0.22715896368026733
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": -0.1,
+        "scores": {
+          "Target_Speaker": -0.0412764847278595,
+          "Opening_officer_reference": 0.11572179943323135
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": -0.0412764847278595,
+          "Scene_original_officer": 0.1651732325553894,
+          "Scene_key_officer": 0.21547861397266388
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": 0,
+        "scores": {
+          "Target_Speaker": -0.04544930160045624,
+          "Opening_officer_reference": 0.03846369683742523
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": -0.04544930160045624,
+          "Scene_original_officer": 0.10219588875770569,
+          "Scene_key_officer": 0.18684077262878418
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": 0.1,
+        "scores": {
+          "Target_Speaker": -0.025392405688762665,
+          "Opening_officer_reference": 0.03461407870054245
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": -0.025392405688762665,
+          "Scene_original_officer": 0.050462957471609116,
+          "Scene_key_officer": 0.17210491001605988
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": 0.2,
+        "scores": {
+          "Target_Speaker": -0.04139561206102371,
+          "Opening_officer_reference": 0.04256106913089752
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": -0.04139561206102371,
+          "Scene_original_officer": 0.05761001259088516,
+          "Scene_key_officer": 0.1899152398109436
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      }
+    ]
+  },
+  {
+    "scene": "handcuffs",
+    "index": 14,
+    "start": 1130.916,
+    "end": 1132.196,
+    "text": " I might need to get a new key.",
+    "center_hypothesis": "Uncertain",
+    "stability_hypotheses": {
+      "0.1": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      "0.2": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": "Uncertain"
+      }
+    },
+    "observations": [
+      {
+        "shift_seconds": -0.2,
+        "scores": {
+          "Target_Speaker": 0.07076705992221832,
+          "Opening_officer_reference": 0.009857513941824436
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.07076705992221832,
+          "Scene_original_officer": 0.21788214147090912,
+          "Scene_key_officer": 0.2550552785396576
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": -0.1,
+        "scores": {
+          "Target_Speaker": 0.03741924464702606,
+          "Opening_officer_reference": -0.011937811970710754
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.03741924464702606,
+          "Scene_original_officer": 0.18561160564422607,
+          "Scene_key_officer": 0.2168908417224884
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": 0,
+        "scores": {
+          "Target_Speaker": 0.07572529464960098,
+          "Opening_officer_reference": -0.002273246645927429
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.07572529464960098,
+          "Scene_original_officer": 0.25899386405944824,
+          "Scene_key_officer": 0.2441665381193161
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": 0.1,
+        "scores": {
+          "Target_Speaker": 0.14612743258476257,
+          "Opening_officer_reference": -0.058140676468610764
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.14612743258476257,
+          "Scene_original_officer": 0.19165396690368652,
+          "Scene_key_officer": 0.3398023843765259
+        },
+        "reviewed_reference_hypothesis": "Scene_key_officer"
+      },
+      {
+        "shift_seconds": 0.2,
+        "scores": {
+          "Target_Speaker": 0.016331344842910767,
+          "Opening_officer_reference": 0.016957852989435196
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.016331344842910767,
+          "Scene_original_officer": 0.1480245590209961,
+          "Scene_key_officer": 0.26744580268859863
+        },
+        "reviewed_reference_hypothesis": "Scene_key_officer"
+      }
+    ]
+  },
+  {
+    "scene": "handcuffs",
+    "index": 15,
+    "start": 1132.216,
+    "end": 1136.017,
+    "text": "There might be something off with this one, because I just had an issue with that fella I got in.",
+    "center_hypothesis": "Uncertain",
+    "stability_hypotheses": {
+      "0.1": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": "Scene_key_officer"
+      },
+      "0.2": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": "Scene_key_officer"
+      }
+    },
+    "observations": [
+      {
+        "shift_seconds": -0.2,
+        "scores": {
+          "Target_Speaker": 0.07409024983644485,
+          "Opening_officer_reference": 0.16980493068695068
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.07409024983644485,
+          "Scene_original_officer": 0.45957282185554504,
+          "Scene_key_officer": 0.7352185845375061
+        },
+        "reviewed_reference_hypothesis": "Scene_key_officer"
+      },
+      {
+        "shift_seconds": -0.1,
+        "scores": {
+          "Target_Speaker": 0.0820993185043335,
+          "Opening_officer_reference": 0.17113623023033142
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.0820993185043335,
+          "Scene_original_officer": 0.44530022144317627,
+          "Scene_key_officer": 0.7311489582061768
+        },
+        "reviewed_reference_hypothesis": "Scene_key_officer"
+      },
+      {
+        "shift_seconds": 0,
+        "scores": {
+          "Target_Speaker": 0.06525366008281708,
+          "Opening_officer_reference": 0.1750328540802002
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.06525366008281708,
+          "Scene_original_officer": 0.46006837487220764,
+          "Scene_key_officer": 0.7199771404266357
+        },
+        "reviewed_reference_hypothesis": "Scene_key_officer"
+      },
+      {
+        "shift_seconds": 0.1,
+        "scores": {
+          "Target_Speaker": 0.07034053653478622,
+          "Opening_officer_reference": 0.1688835471868515
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.07034053653478622,
+          "Scene_original_officer": 0.49246746301651,
+          "Scene_key_officer": 0.7289603352546692
+        },
+        "reviewed_reference_hypothesis": "Scene_key_officer"
+      },
+      {
+        "shift_seconds": 0.2,
+        "scores": {
+          "Target_Speaker": 0.07168018072843552,
+          "Opening_officer_reference": 0.18815644085407257
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.07168018072843552,
+          "Scene_original_officer": 0.508315920829773,
+          "Scene_key_officer": 0.7403855323791504
+        },
+        "reviewed_reference_hypothesis": "Scene_key_officer"
+      }
+    ]
+  },
+  {
+    "scene": "handcuffs",
+    "index": 16,
+    "start": 1136.898,
+    "end": 1139.838,
+    "text": "Put this arm on the wall and probably even that could have come off.",
+    "center_hypothesis": "Uncertain",
+    "stability_hypotheses": {
+      "0.1": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": "Scene_key_officer"
+      },
+      "0.2": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": "Scene_key_officer"
+      }
+    },
+    "observations": [
+      {
+        "shift_seconds": -0.2,
+        "scores": {
+          "Target_Speaker": 0.05108005553483963,
+          "Opening_officer_reference": 0.11960382759571075
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.05108005553483963,
+          "Scene_original_officer": 0.4541137218475342,
+          "Scene_key_officer": 0.7758537530899048
+        },
+        "reviewed_reference_hypothesis": "Scene_key_officer"
+      },
+      {
+        "shift_seconds": -0.1,
+        "scores": {
+          "Target_Speaker": 0.004410859197378159,
+          "Opening_officer_reference": 0.11657784879207611
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.004410859197378159,
+          "Scene_original_officer": 0.44034531712532043,
+          "Scene_key_officer": 0.7637037634849548
+        },
+        "reviewed_reference_hypothesis": "Scene_key_officer"
+      },
+      {
+        "shift_seconds": 0,
+        "scores": {
+          "Target_Speaker": 0.0074078477919101715,
+          "Opening_officer_reference": 0.11301997303962708
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.0074078477919101715,
+          "Scene_original_officer": 0.4475770890712738,
+          "Scene_key_officer": 0.7929494380950928
+        },
+        "reviewed_reference_hypothesis": "Scene_key_officer"
+      },
+      {
+        "shift_seconds": 0.1,
+        "scores": {
+          "Target_Speaker": -0.012251943349838257,
+          "Opening_officer_reference": 0.10149312019348145
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": -0.012251943349838257,
+          "Scene_original_officer": 0.3985844850540161,
+          "Scene_key_officer": 0.7839661836624146
+        },
+        "reviewed_reference_hypothesis": "Scene_key_officer"
+      },
+      {
+        "shift_seconds": 0.2,
+        "scores": {
+          "Target_Speaker": 0.018527831882238388,
+          "Opening_officer_reference": 0.0500667467713356
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.018527831882238388,
+          "Scene_original_officer": 0.4039640426635742,
+          "Scene_key_officer": 0.7604484558105469
+        },
+        "reviewed_reference_hypothesis": "Scene_key_officer"
+      }
+    ]
+  },
+  {
+    "scene": "handcuffs",
+    "index": 17,
+    "start": 1140.679,
+    "end": 1146.64,
+    "text": "That guy I just searched in that had the shackles, it had a little bit of difficulty opening up one of the shackled eyes.",
+    "center_hypothesis": "Uncertain",
+    "stability_hypotheses": {
+      "0.1": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      "0.2": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": "Uncertain"
+      }
+    },
+    "observations": [
+      {
+        "shift_seconds": -0.2,
+        "scores": {
+          "Target_Speaker": 0.2307758331298828,
+          "Opening_officer_reference": 0.2573404908180237
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.2307758331298828,
+          "Scene_original_officer": 0.574712872505188,
+          "Scene_key_officer": 0.5823217630386353
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": -0.1,
+        "scores": {
+          "Target_Speaker": 0.23829980194568634,
+          "Opening_officer_reference": 0.25236979126930237
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.23829980194568634,
+          "Scene_original_officer": 0.5675996541976929,
+          "Scene_key_officer": 0.5840662717819214
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": 0,
+        "scores": {
+          "Target_Speaker": 0.2512151896953583,
+          "Opening_officer_reference": 0.24774256348609924
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.2512151896953583,
+          "Scene_original_officer": 0.5453960299491882,
+          "Scene_key_officer": 0.5653613805770874
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": 0.1,
+        "scores": {
+          "Target_Speaker": 0.2610037922859192,
+          "Opening_officer_reference": 0.2436210811138153
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.2610037922859192,
+          "Scene_original_officer": 0.5398870706558228,
+          "Scene_key_officer": 0.5499104261398315
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": 0.2,
+        "scores": {
+          "Target_Speaker": 0.2545924782752991,
+          "Opening_officer_reference": 0.23974819481372833
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.2545924782752991,
+          "Scene_original_officer": 0.5330547094345093,
+          "Scene_key_officer": 0.551767110824585
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      }
+    ]
+  },
+  {
+    "scene": "handcuffs",
+    "index": 18,
+    "start": 1146.76,
+    "end": 1148.501,
+    "text": "I think I got to get a new key then.",
+    "center_hypothesis": "Uncertain",
+    "stability_hypotheses": {
+      "0.1": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      "0.2": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": "Uncertain"
+      }
+    },
+    "observations": [
+      {
+        "shift_seconds": -0.2,
+        "scores": {
+          "Target_Speaker": 0.12189100682735443,
+          "Opening_officer_reference": 0.12073225528001785
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.12189100682735443,
+          "Scene_original_officer": 0.4121377170085907,
+          "Scene_key_officer": 0.42565566301345825
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": -0.1,
+        "scores": {
+          "Target_Speaker": 0.06699420511722565,
+          "Opening_officer_reference": 0.09940876066684723
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.06699420511722565,
+          "Scene_original_officer": 0.41634953022003174,
+          "Scene_key_officer": 0.4200354814529419
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": 0,
+        "scores": {
+          "Target_Speaker": 0.0880356878042221,
+          "Opening_officer_reference": 0.07026012986898422
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.0880356878042221,
+          "Scene_original_officer": 0.446027547121048,
+          "Scene_key_officer": 0.439672589302063
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": 0.1,
+        "scores": {
+          "Target_Speaker": 0.09133122861385345,
+          "Opening_officer_reference": 0.06699781119823456
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.09133122861385345,
+          "Scene_original_officer": 0.43603330850601196,
+          "Scene_key_officer": 0.4561014771461487
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": 0.2,
+        "scores": {
+          "Target_Speaker": 0.09788522124290466,
+          "Opening_officer_reference": 0.06018349155783653
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.09788522124290466,
+          "Scene_original_officer": 0.4344067871570587,
+          "Scene_key_officer": 0.45131561160087585
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      }
+    ]
+  },
+  {
+    "scene": "handcuffs",
+    "index": 19,
+    "start": 1148.521,
+    "end": 1150.641,
+    "text": "All right, you're good.",
+    "center_hypothesis": "Uncertain",
+    "stability_hypotheses": {
+      "0.1": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      "0.2": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": "Uncertain"
+      }
+    },
+    "observations": [
+      {
+        "shift_seconds": -0.2,
+        "scores": {
+          "Target_Speaker": 0.01967400498688221,
+          "Opening_officer_reference": 0.14558735489845276
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.01967400498688221,
+          "Scene_original_officer": 0.23878532648086548,
+          "Scene_key_officer": 0.18792778253555298
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": -0.1,
+        "scores": {
+          "Target_Speaker": 0.053826894611120224,
+          "Opening_officer_reference": 0.17331703007221222
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.053826894611120224,
+          "Scene_original_officer": 0.24944069981575012,
+          "Scene_key_officer": 0.23266556859016418
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": 0,
+        "scores": {
+          "Target_Speaker": 0.03212641179561615,
+          "Opening_officer_reference": 0.18281441926956177
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.03212641179561615,
+          "Scene_original_officer": 0.1358233094215393,
+          "Scene_key_officer": 0.2312823235988617
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": 0.1,
+        "scores": {
+          "Target_Speaker": 0.02678881399333477,
+          "Opening_officer_reference": 0.1485310196876526
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.02678881399333477,
+          "Scene_original_officer": 0.11987113207578659,
+          "Scene_key_officer": 0.2674553692340851
+        },
+        "reviewed_reference_hypothesis": "Scene_key_officer"
+      },
+      {
+        "shift_seconds": 0.2,
+        "scores": {
+          "Target_Speaker": 0.033057767897844315,
+          "Opening_officer_reference": 0.14434364438056946
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.033057767897844315,
+          "Scene_original_officer": 0.14407801628112793,
+          "Scene_key_officer": 0.2844700217247009
+        },
+        "reviewed_reference_hypothesis": "Scene_key_officer"
+      }
+    ]
+  },
+  {
+    "scene": "handcuffs",
+    "index": 20,
+    "start": 1150.661,
+    "end": 1151.622,
+    "text": "Go ahead and have a seat.",
+    "center_hypothesis": "Uncertain",
+    "stability_hypotheses": {
+      "0.1": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": "Scene_key_officer"
+      },
+      "0.2": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": "Uncertain"
+      }
+    },
+    "observations": [
+      {
+        "shift_seconds": -0.2,
+        "scores": {
+          "Target_Speaker": 0.030944719910621643,
+          "Opening_officer_reference": 0.12185122072696686
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.030944719910621643,
+          "Scene_original_officer": 0.2924575209617615,
+          "Scene_key_officer": 0.40819525718688965
+        },
+        "reviewed_reference_hypothesis": "Scene_key_officer"
+      },
+      {
+        "shift_seconds": -0.1,
+        "scores": {
+          "Target_Speaker": -0.023462507873773575,
+          "Opening_officer_reference": 0.12677745521068573
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": -0.023462507873773575,
+          "Scene_original_officer": 0.26514932513237,
+          "Scene_key_officer": 0.4320201277732849
+        },
+        "reviewed_reference_hypothesis": "Scene_key_officer"
+      },
+      {
+        "shift_seconds": 0,
+        "scores": {
+          "Target_Speaker": 0.005183156579732895,
+          "Opening_officer_reference": 0.14777973294258118
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.005183156579732895,
+          "Scene_original_officer": 0.3158913850784302,
+          "Scene_key_officer": 0.4574856162071228
+        },
+        "reviewed_reference_hypothesis": "Scene_key_officer"
+      },
+      {
+        "shift_seconds": 0.1,
+        "scores": {
+          "Target_Speaker": -0.01641421765089035,
+          "Opening_officer_reference": 0.1758487969636917
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": -0.01641421765089035,
+          "Scene_original_officer": 0.3156130313873291,
+          "Scene_key_officer": 0.39737510681152344
+        },
+        "reviewed_reference_hypothesis": "Scene_key_officer"
+      },
+      {
+        "shift_seconds": 0.2,
+        "scores": {
+          "Target_Speaker": -0.054555319249629974,
+          "Opening_officer_reference": 0.23094573616981506
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": -0.054555319249629974,
+          "Scene_original_officer": 0.33424246311187744,
+          "Scene_key_officer": 0.3896688222885132
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      }
+    ]
+  },
+  {
+    "scene": "handcuffs",
+    "index": 21,
+    "start": 1151.682,
+    "end": 1153.062,
+    "text": "Take off your shoes for me.",
+    "center_hypothesis": "Uncertain",
+    "stability_hypotheses": {
+      "0.1": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": "Scene_original_officer"
+      },
+      "0.2": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": "Scene_original_officer"
+      }
+    },
+    "observations": [
+      {
+        "shift_seconds": -0.2,
+        "scores": {
+          "Target_Speaker": -0.024028293788433075,
+          "Opening_officer_reference": 0.03832707926630974
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": -0.024028293788433075,
+          "Scene_original_officer": 0.2741919755935669,
+          "Scene_key_officer": 0.10452105849981308
+        },
+        "reviewed_reference_hypothesis": "Scene_original_officer"
+      },
+      {
+        "shift_seconds": -0.1,
+        "scores": {
+          "Target_Speaker": 0.0635531023144722,
+          "Opening_officer_reference": 0.029888492077589035
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.0635531023144722,
+          "Scene_original_officer": 0.3252262473106384,
+          "Scene_key_officer": 0.15006670355796814
+        },
+        "reviewed_reference_hypothesis": "Scene_original_officer"
+      },
+      {
+        "shift_seconds": 0,
+        "scores": {
+          "Target_Speaker": 0.04360909014940262,
+          "Opening_officer_reference": -0.0044323839247226715
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.04360909014940262,
+          "Scene_original_officer": 0.376589298248291,
+          "Scene_key_officer": 0.20295456051826477
+        },
+        "reviewed_reference_hypothesis": "Scene_original_officer"
+      },
+      {
+        "shift_seconds": 0.1,
+        "scores": {
+          "Target_Speaker": 0.10196416079998016,
+          "Opening_officer_reference": -0.019641920924186707
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.10196416079998016,
+          "Scene_original_officer": 0.3858874440193176,
+          "Scene_key_officer": 0.245884507894516
+        },
+        "reviewed_reference_hypothesis": "Scene_original_officer"
+      },
+      {
+        "shift_seconds": 0.2,
+        "scores": {
+          "Target_Speaker": 0.08664311468601227,
+          "Opening_officer_reference": -0.004116369411349297
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.08664311468601227,
+          "Scene_original_officer": 0.3928483724594116,
+          "Scene_key_officer": 0.2602473199367523
+        },
+        "reviewed_reference_hypothesis": "Scene_original_officer"
+      }
+    ]
+  },
+  {
+    "scene": "handcuffs",
+    "index": 22,
+    "start": 1154.122,
+    "end": 1155.343,
+    "text": "What size shoe do you wear?",
+    "center_hypothesis": "Uncertain",
+    "stability_hypotheses": {
+      "0.1": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      "0.2": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": "Uncertain"
+      }
+    },
+    "observations": [
+      {
+        "shift_seconds": -0.2,
+        "scores": {
+          "Target_Speaker": 0.06388646364212036,
+          "Opening_officer_reference": 0.11323781311511993
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.06388646364212036,
+          "Scene_original_officer": 0.3586199879646301,
+          "Scene_key_officer": 0.42218518257141113
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": -0.1,
+        "scores": {
+          "Target_Speaker": 0.07387740910053253,
+          "Opening_officer_reference": 0.18194952607154846
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.07387740910053253,
+          "Scene_original_officer": 0.3796384930610657,
+          "Scene_key_officer": 0.4570588767528534
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": 0,
+        "scores": {
+          "Target_Speaker": 0.0926227867603302,
+          "Opening_officer_reference": 0.17470523715019226
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.0926227867603302,
+          "Scene_original_officer": 0.417747437953949,
+          "Scene_key_officer": 0.4651365876197815
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": 0.1,
+        "scores": {
+          "Target_Speaker": 0.026351511478424072,
+          "Opening_officer_reference": 0.17847111821174622
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.026351511478424072,
+          "Scene_original_officer": 0.31290775537490845,
+          "Scene_key_officer": 0.39637887477874756
+        },
+        "reviewed_reference_hypothesis": "Scene_key_officer"
+      },
+      {
+        "shift_seconds": 0.2,
+        "scores": {
+          "Target_Speaker": 0.03218470513820648,
+          "Opening_officer_reference": 0.18640828132629395
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.03218470513820648,
+          "Scene_original_officer": 0.19677942991256714,
+          "Scene_key_officer": 0.40611690282821655
+        },
+        "reviewed_reference_hypothesis": "Scene_key_officer"
+      }
+    ]
+  },
+  {
+    "scene": "handcuffs",
+    "index": 23,
+    "start": 1155.363,
+    "end": 1156.8029999999999,
+    "text": "This and that.",
+    "center_hypothesis": "Uncertain",
+    "stability_hypotheses": {
+      "0.1": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      "0.2": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": "Uncertain"
+      }
+    },
+    "observations": [
+      {
+        "shift_seconds": -0.2,
+        "scores": {
+          "Target_Speaker": 0.2319866120815277,
+          "Opening_officer_reference": -0.08028054237365723
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.2319866120815277,
+          "Scene_original_officer": 0.026095710694789886,
+          "Scene_key_officer": 0.21672582626342773
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": -0.1,
+        "scores": {
+          "Target_Speaker": 0.20706041157245636,
+          "Opening_officer_reference": -0.07761654257774353
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.20706041157245636,
+          "Scene_original_officer": 0.001905679702758789,
+          "Scene_key_officer": 0.20403505861759186
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": 0,
+        "scores": {
+          "Target_Speaker": 0.08354997634887695,
+          "Opening_officer_reference": -0.021514130756258965
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.08354997634887695,
+          "Scene_original_officer": -0.04325447976589203,
+          "Scene_key_officer": 0.12562298774719238
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": 0.1,
+        "scores": {
+          "Target_Speaker": 0.088895283639431,
+          "Opening_officer_reference": 0.07479996234178543
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.088895283639431,
+          "Scene_original_officer": -0.030252495780587196,
+          "Scene_key_officer": 0.03746882081031799
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": 0.2,
+        "scores": {
+          "Target_Speaker": 0.0610417015850544,
+          "Opening_officer_reference": 0.025633998215198517
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.0610417015850544,
+          "Scene_original_officer": -0.06813900172710419,
+          "Scene_key_officer": 0.04708416759967804
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      }
+    ]
+  },
+  {
+    "scene": "handcuffs",
+    "index": 24,
+    "start": 1156.923,
+    "end": 1158.964,
+    "text": "OK. Take off your necklace.",
+    "center_hypothesis": "Opening_officer_reference",
+    "stability_hypotheses": {
+      "0.1": {
+        "hypothesis": "Opening_officer_reference",
+        "reviewed_reference_hypothesis": "Scene_key_officer"
+      },
+      "0.2": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": "Uncertain"
+      }
+    },
+    "observations": [
+      {
+        "shift_seconds": -0.2,
+        "scores": {
+          "Target_Speaker": -0.018788151443004608,
+          "Opening_officer_reference": 0.29464852809906006
+        },
+        "hypothesis": "Opening_officer_reference",
+        "reviewed_reference_scores": {
+          "Target_Speaker": -0.018788151443004608,
+          "Scene_original_officer": 0.23432782292366028,
+          "Scene_key_officer": 0.3138588070869446
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      },
+      {
+        "shift_seconds": -0.1,
+        "scores": {
+          "Target_Speaker": 0.01418563723564148,
+          "Opening_officer_reference": 0.29420408606529236
+        },
+        "hypothesis": "Opening_officer_reference",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.01418563723564148,
+          "Scene_original_officer": 0.21522220969200134,
+          "Scene_key_officer": 0.3245290517807007
+        },
+        "reviewed_reference_hypothesis": "Scene_key_officer"
+      },
+      {
+        "shift_seconds": 0,
+        "scores": {
+          "Target_Speaker": 0.08150417357683182,
+          "Opening_officer_reference": 0.26770204305648804
+        },
+        "hypothesis": "Opening_officer_reference",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.08150417357683182,
+          "Scene_original_officer": 0.2412206083536148,
+          "Scene_key_officer": 0.3664191961288452
+        },
+        "reviewed_reference_hypothesis": "Scene_key_officer"
+      },
+      {
+        "shift_seconds": 0.1,
+        "scores": {
+          "Target_Speaker": 0.06847689300775528,
+          "Opening_officer_reference": 0.25895217061042786
+        },
+        "hypothesis": "Opening_officer_reference",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.06847689300775528,
+          "Scene_original_officer": 0.23261737823486328,
+          "Scene_key_officer": 0.33044177293777466
+        },
+        "reviewed_reference_hypothesis": "Scene_key_officer"
+      },
+      {
+        "shift_seconds": 0.2,
+        "scores": {
+          "Target_Speaker": 0.09210965037345886,
+          "Opening_officer_reference": 0.2185727208852768
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.09210965037345886,
+          "Scene_original_officer": 0.31703200936317444,
+          "Scene_key_officer": 0.3767765164375305
+        },
+        "reviewed_reference_hypothesis": "Uncertain"
+      }
+    ]
+  },
+  {
+    "scene": "handcuffs",
+    "index": 25,
+    "start": 1160.489,
+    "end": 1163.478,
+    "text": " Take out your earrings and your wristband there.",
+    "center_hypothesis": "Uncertain",
+    "stability_hypotheses": {
+      "0.1": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": "Scene_original_officer"
+      },
+      "0.2": {
+        "hypothesis": "Uncertain",
+        "reviewed_reference_hypothesis": "Scene_original_officer"
+      }
+    },
+    "observations": [
+      {
+        "shift_seconds": -0.2,
+        "scores": {
+          "Target_Speaker": 0.02988365665078163,
+          "Opening_officer_reference": 0.0854419469833374
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.02988365665078163,
+          "Scene_original_officer": 0.6061185598373413,
+          "Scene_key_officer": 0.370725154876709
+        },
+        "reviewed_reference_hypothesis": "Scene_original_officer"
+      },
+      {
+        "shift_seconds": -0.1,
+        "scores": {
+          "Target_Speaker": 0.02198903262615204,
+          "Opening_officer_reference": 0.07480868697166443
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.02198903262615204,
+          "Scene_original_officer": 0.6000621318817139,
+          "Scene_key_officer": 0.35991084575653076
+        },
+        "reviewed_reference_hypothesis": "Scene_original_officer"
+      },
+      {
+        "shift_seconds": 0,
+        "scores": {
+          "Target_Speaker": 0.003301704302430153,
+          "Opening_officer_reference": 0.0627857893705368
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.003301704302430153,
+          "Scene_original_officer": 0.599247932434082,
+          "Scene_key_officer": 0.343961238861084
+        },
+        "reviewed_reference_hypothesis": "Scene_original_officer"
+      },
+      {
+        "shift_seconds": 0.1,
+        "scores": {
+          "Target_Speaker": 0.003974616527557373,
+          "Opening_officer_reference": 0.05396519973874092
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": 0.003974616527557373,
+          "Scene_original_officer": 0.6004011034965515,
+          "Scene_key_officer": 0.34988176822662354
+        },
+        "reviewed_reference_hypothesis": "Scene_original_officer"
+      },
+      {
+        "shift_seconds": 0.2,
+        "scores": {
+          "Target_Speaker": -0.006400402635335922,
+          "Opening_officer_reference": 0.06384728103876114
+        },
+        "hypothesis": "Uncertain",
+        "reviewed_reference_scores": {
+          "Target_Speaker": -0.006400402635335922,
+          "Scene_original_officer": 0.6063205003738403,
+          "Scene_key_officer": 0.3521817624568939
+        },
+        "reviewed_reference_hypothesis": "Scene_original_officer"
+      }
+    ]
+  }
+]

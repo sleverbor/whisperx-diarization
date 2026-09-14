@@ -1,0 +1,1275 @@
+{
+  "baseline_modified": false,
+  "experimental": true,
+  "segments": [
+    {
+      "index": 0,
+      "start": 665.0,
+      "end": 669.4,
+      "text": " Tower 11, no record from Mississippi or Massachusetts.",
+      "speaker_hypothesis": "Uncertain",
+      "review_required": true,
+      "near_window_boundary": true,
+      "reasons": [
+        "Near audio-window boundary; wording or timing may be incomplete",
+        "Insufficient voice similarity or separation between profiles"
+      ],
+      "evidence": [
+        {
+          "source": "timing_comparison",
+          "selected_source": "decoder",
+          "alignment_start": 665.281,
+          "alignment_end": 668.496,
+          "decoder_start": 665.0,
+          "decoder_end": 669.4
+        },
+        {
+          "source": "baseline_overlap",
+          "raw_track_overlap_seconds": {
+            "SPEAKER_07": 4.106999999999971
+          },
+          "segments": [
+            {
+              "segment_index": 249,
+              "raw_speaker_track": "SPEAKER_07",
+              "baseline_speaker": "SPEAKER_07",
+              "overlap_seconds": 4.106999999999971
+            }
+          ],
+          "identity_verified": false
+        },
+        {
+          "source": "local_voice",
+          "similarities": {
+            "Target_Speaker": 0.08585673570632935,
+            "Opening_officer": 0.12004075944423676
+          },
+          "timing_variants": [
+            {
+              "source": "decoder",
+              "start": 665.0,
+              "end": 669.4,
+              "scores": {
+                "Target_Speaker": 0.08585673570632935,
+                "Opening_officer": 0.12004075944423676
+              }
+            },
+            {
+              "source": "alignment",
+              "start": 665.281,
+              "end": 668.496,
+              "scores": {
+                "Target_Speaker": -0.06887165457010269,
+                "Opening_officer": 0.06387230008840561
+              }
+            }
+          ],
+          "variants_are_independent_votes": false,
+          "min_similarity": 0.25,
+          "min_margin": 0.08,
+          "identity_probability_calibrated": false
+        }
+      ],
+      "alignment_words": [
+        {
+          "word": "Tower",
+          "start": 665.281,
+          "end": 665.703,
+          "score": 0.62
+        },
+        {
+          "word": "11,",
+          "start": 665.723,
+          "end": 665.784,
+          "score": 0.971
+        },
+        {
+          "word": "no",
+          "start": 666.286,
+          "end": 666.447,
+          "score": 0.918
+        },
+        {
+          "word": "record",
+          "start": 666.527,
+          "end": 666.728,
+          "score": 0.386
+        },
+        {
+          "word": "from",
+          "start": 666.748,
+          "end": 666.889,
+          "score": 0.405
+        },
+        {
+          "word": "Mississippi",
+          "start": 666.969,
+          "end": 667.572,
+          "score": 0.715
+        },
+        {
+          "word": "or",
+          "start": 667.652,
+          "end": 667.773,
+          "score": 0.742
+        },
+        {
+          "word": "Massachusetts.",
+          "start": 667.793,
+          "end": 668.496,
+          "score": 0.556
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "start": 670.74,
+      "end": 671.48,
+      "text": " Number 8.",
+      "speaker_hypothesis": "Uncertain",
+      "review_required": true,
+      "near_window_boundary": false,
+      "reasons": [
+        "Insufficient voice similarity or separation between profiles"
+      ],
+      "evidence": [
+        {
+          "source": "timing_comparison",
+          "selected_source": "decoder",
+          "alignment_start": 670.802,
+          "alignment_end": 671.172,
+          "decoder_start": 670.74,
+          "decoder_end": 671.48
+        },
+        {
+          "source": "baseline_overlap",
+          "raw_track_overlap_seconds": {
+            "SPEAKER_07": 0.13800000000003365,
+            "SPEAKER_08": 0.44099999999991724
+          },
+          "segments": [
+            {
+              "segment_index": 249,
+              "raw_speaker_track": "SPEAKER_07",
+              "baseline_speaker": "SPEAKER_07",
+              "overlap_seconds": 0.13800000000003365
+            },
+            {
+              "segment_index": 250,
+              "raw_speaker_track": "SPEAKER_08",
+              "baseline_speaker": "SPEAKER_08",
+              "overlap_seconds": 0.44099999999991724
+            }
+          ],
+          "identity_verified": false
+        },
+        {
+          "source": "local_voice",
+          "similarities": {
+            "Target_Speaker": 0.043280281126499176,
+            "Opening_officer": 0.2168113887310028
+          },
+          "timing_variants": [
+            {
+              "source": "decoder",
+              "start": 670.74,
+              "end": 671.48,
+              "scores": {
+                "Target_Speaker": 0.043280281126499176,
+                "Opening_officer": 0.2168113887310028
+              }
+            }
+          ],
+          "variants_are_independent_votes": false,
+          "min_similarity": 0.25,
+          "min_margin": 0.08,
+          "identity_probability_calibrated": false
+        }
+      ],
+      "alignment_words": [
+        {
+          "word": "Number",
+          "start": 670.802,
+          "end": 671.11,
+          "score": 0.246
+        },
+        {
+          "word": "8.",
+          "start": 671.131,
+          "end": 671.172,
+          "score": 0.25
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "start": 672.36,
+      "end": 673.22,
+      "text": " So is that a fake name?",
+      "speaker_hypothesis": "Uncertain",
+      "review_required": true,
+      "near_window_boundary": false,
+      "reasons": [
+        "Insufficient voice similarity or separation between profiles"
+      ],
+      "evidence": [
+        {
+          "source": "timing_comparison",
+          "selected_source": "decoder",
+          "alignment_start": 672.442,
+          "alignment_end": 673.22,
+          "decoder_start": 672.36,
+          "decoder_end": 673.22
+        },
+        {
+          "source": "baseline_overlap",
+          "raw_track_overlap_seconds": {
+            "SPEAKER_07": 0.8000000000000682
+          },
+          "segments": [
+            {
+              "segment_index": 251,
+              "raw_speaker_track": "SPEAKER_07",
+              "baseline_speaker": "SPEAKER_07",
+              "overlap_seconds": 0.8000000000000682
+            }
+          ],
+          "identity_verified": false
+        },
+        {
+          "source": "local_voice",
+          "similarities": {
+            "Target_Speaker": -0.01483470480889082,
+            "Opening_officer": 0.19201619923114777
+          },
+          "timing_variants": [
+            {
+              "source": "decoder",
+              "start": 672.36,
+              "end": 673.22,
+              "scores": {
+                "Target_Speaker": -0.01483470480889082,
+                "Opening_officer": 0.19201619923114777
+              }
+            },
+            {
+              "source": "alignment",
+              "start": 672.442,
+              "end": 673.22,
+              "scores": {
+                "Target_Speaker": -0.01857578568160534,
+                "Opening_officer": 0.18250027298927307
+              }
+            }
+          ],
+          "variants_are_independent_votes": false,
+          "min_similarity": 0.25,
+          "min_margin": 0.08,
+          "identity_probability_calibrated": false
+        }
+      ],
+      "alignment_words": [
+        {
+          "word": "So",
+          "start": 672.442,
+          "end": 672.503,
+          "score": 0.552
+        },
+        {
+          "word": "is",
+          "start": 672.524,
+          "end": 672.565,
+          "score": 0.054
+        },
+        {
+          "word": "that",
+          "start": 672.585,
+          "end": 672.708,
+          "score": 0.798
+        },
+        {
+          "word": "a",
+          "start": 672.729,
+          "end": 672.749,
+          "score": 0.802
+        },
+        {
+          "word": "fake",
+          "start": 672.81,
+          "end": 673.015,
+          "score": 0.244
+        },
+        {
+          "word": "name?",
+          "start": 673.056,
+          "end": 673.22,
+          "score": 0.47
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "start": 674.02,
+      "end": 674.28,
+      "text": " No.",
+      "speaker_hypothesis": "Uncertain",
+      "review_required": true,
+      "near_window_boundary": false,
+      "reasons": [
+        "Voice crop shorter than 0.4 seconds",
+        "Insufficient voice similarity or separation between profiles"
+      ],
+      "evidence": [
+        {
+          "source": "timing_comparison",
+          "selected_source": "decoder",
+          "alignment_start": 674.128,
+          "alignment_end": 674.28,
+          "decoder_start": 674.02,
+          "decoder_end": 674.28
+        },
+        {
+          "source": "baseline_overlap",
+          "raw_track_overlap_seconds": {
+            "SPEAKER_07": 0.13900000000001
+          },
+          "segments": [
+            {
+              "segment_index": 252,
+              "raw_speaker_track": "SPEAKER_07",
+              "baseline_speaker": "SPEAKER_07",
+              "overlap_seconds": 0.13900000000001
+            }
+          ],
+          "identity_verified": false
+        },
+        {
+          "source": "local_voice",
+          "similarities": {},
+          "timing_variants": [
+            {
+              "source": "decoder",
+              "start": 674.02,
+              "end": 674.28,
+              "scores": {}
+            }
+          ],
+          "variants_are_independent_votes": false,
+          "min_similarity": 0.25,
+          "min_margin": 0.08,
+          "identity_probability_calibrated": false
+        }
+      ],
+      "alignment_words": [
+        {
+          "word": "No.",
+          "start": 674.128,
+          "end": 674.28,
+          "score": 0.397
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "start": 675.74,
+      "end": 676.82,
+      "text": " You just not in the system anywhere?",
+      "speaker_hypothesis": "Opening_officer",
+      "review_required": true,
+      "near_window_boundary": false,
+      "reasons": [],
+      "evidence": [
+        {
+          "source": "timing_comparison",
+          "selected_source": "decoder",
+          "alignment_start": 675.822,
+          "alignment_end": 676.82,
+          "decoder_start": 675.74,
+          "decoder_end": 676.82
+        },
+        {
+          "source": "baseline_overlap",
+          "raw_track_overlap_seconds": {
+            "SPEAKER_07": 1.0370000000000346
+          },
+          "segments": [
+            {
+              "segment_index": 253,
+              "raw_speaker_track": "SPEAKER_07",
+              "baseline_speaker": "SPEAKER_07",
+              "overlap_seconds": 1.0370000000000346
+            }
+          ],
+          "identity_verified": false
+        },
+        {
+          "source": "local_voice",
+          "similarities": {
+            "Target_Speaker": -0.01539515145123005,
+            "Opening_officer": 0.26109230518341064
+          },
+          "timing_variants": [
+            {
+              "source": "decoder",
+              "start": 675.74,
+              "end": 676.82,
+              "scores": {
+                "Target_Speaker": -0.01539515145123005,
+                "Opening_officer": 0.26109230518341064
+              }
+            },
+            {
+              "source": "alignment",
+              "start": 675.822,
+              "end": 676.82,
+              "scores": {
+                "Target_Speaker": 0.03486737981438637,
+                "Opening_officer": 0.21160784363746643
+              }
+            }
+          ],
+          "variants_are_independent_votes": false,
+          "min_similarity": 0.25,
+          "min_margin": 0.08,
+          "identity_probability_calibrated": false
+        }
+      ],
+      "alignment_words": [
+        {
+          "word": "You",
+          "start": 675.822,
+          "end": 675.883,
+          "score": 0.18
+        },
+        {
+          "word": "just",
+          "start": 675.903,
+          "end": 676.005,
+          "score": 0.32
+        },
+        {
+          "word": "not",
+          "start": 676.046,
+          "end": 676.168,
+          "score": 0.769
+        },
+        {
+          "word": "in",
+          "start": 676.209,
+          "end": 676.249,
+          "score": 0.124
+        },
+        {
+          "word": "the",
+          "start": 676.27,
+          "end": 676.372,
+          "score": 0.385
+        },
+        {
+          "word": "system",
+          "start": 676.392,
+          "end": 676.596,
+          "score": 0.214
+        },
+        {
+          "word": "anywhere?",
+          "start": 676.616,
+          "end": 676.82,
+          "score": 0.539
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "start": 677.28,
+      "end": 679.1,
+      "text": " I don't get found guilty of anything.",
+      "speaker_hypothesis": "Target_Speaker",
+      "review_required": true,
+      "near_window_boundary": false,
+      "reasons": [],
+      "evidence": [
+        {
+          "source": "timing_comparison",
+          "selected_source": "decoder",
+          "alignment_start": 677.502,
+          "alignment_end": 679.06,
+          "decoder_start": 677.28,
+          "decoder_end": 679.1
+        },
+        {
+          "source": "baseline_overlap",
+          "raw_track_overlap_seconds": {
+            "SPEAKER_05": 1.5960000000000036
+          },
+          "segments": [
+            {
+              "segment_index": 254,
+              "raw_speaker_track": "SPEAKER_05",
+              "baseline_speaker": "Target_Speaker",
+              "overlap_seconds": 1.5960000000000036
+            }
+          ],
+          "identity_verified": false
+        },
+        {
+          "source": "local_voice",
+          "similarities": {
+            "Target_Speaker": 0.2751282751560211,
+            "Opening_officer": 0.21264472603797913
+          },
+          "timing_variants": [
+            {
+              "source": "decoder",
+              "start": 677.28,
+              "end": 679.1,
+              "scores": {
+                "Target_Speaker": 0.2751282751560211,
+                "Opening_officer": 0.21264472603797913
+              }
+            },
+            {
+              "source": "alignment",
+              "start": 677.502,
+              "end": 679.06,
+              "scores": {
+                "Target_Speaker": 0.3416255712509155,
+                "Opening_officer": 0.1790875494480133
+              }
+            }
+          ],
+          "variants_are_independent_votes": false,
+          "min_similarity": 0.25,
+          "min_margin": 0.08,
+          "identity_probability_calibrated": false
+        }
+      ],
+      "alignment_words": [
+        {
+          "word": "I",
+          "start": 677.502,
+          "end": 677.644,
+          "score": 0.713
+        },
+        {
+          "word": "don't",
+          "start": 677.786,
+          "end": 677.968,
+          "score": 0.544
+        },
+        {
+          "word": "get",
+          "start": 678.008,
+          "end": 678.15,
+          "score": 0.433
+        },
+        {
+          "word": "found",
+          "start": 678.19,
+          "end": 678.352,
+          "score": 0.321
+        },
+        {
+          "word": "guilty",
+          "start": 678.392,
+          "end": 678.716,
+          "score": 0.968
+        },
+        {
+          "word": "of",
+          "start": 678.736,
+          "end": 678.797,
+          "score": 0.242
+        },
+        {
+          "word": "anything.",
+          "start": 678.857,
+          "end": 679.06,
+          "score": 0.156
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "start": 679.5,
+      "end": 680.5,
+      "text": " Do you have a driver's license?",
+      "speaker_hypothesis": "Opening_officer",
+      "review_required": true,
+      "near_window_boundary": false,
+      "reasons": [],
+      "evidence": [
+        {
+          "source": "timing_comparison",
+          "selected_source": "decoder",
+          "alignment_start": 679.561,
+          "alignment_end": 680.48,
+          "decoder_start": 679.5,
+          "decoder_end": 680.5
+        },
+        {
+          "source": "baseline_overlap",
+          "raw_track_overlap_seconds": {
+            "SPEAKER_07": 0.9539999999999509
+          },
+          "segments": [
+            {
+              "segment_index": 255,
+              "raw_speaker_track": "SPEAKER_07",
+              "baseline_speaker": "SPEAKER_07",
+              "overlap_seconds": 0.9539999999999509
+            }
+          ],
+          "identity_verified": false
+        },
+        {
+          "source": "local_voice",
+          "similarities": {
+            "Target_Speaker": 0.0593637079000473,
+            "Opening_officer": 0.3434255123138428
+          },
+          "timing_variants": [
+            {
+              "source": "decoder",
+              "start": 679.5,
+              "end": 680.5,
+              "scores": {
+                "Target_Speaker": 0.0593637079000473,
+                "Opening_officer": 0.3434255123138428
+              }
+            },
+            {
+              "source": "alignment",
+              "start": 679.561,
+              "end": 680.48,
+              "scores": {
+                "Target_Speaker": 0.064521424472332,
+                "Opening_officer": 0.24335534870624542
+              }
+            }
+          ],
+          "variants_are_independent_votes": false,
+          "min_similarity": 0.25,
+          "min_margin": 0.08,
+          "identity_probability_calibrated": false
+        }
+      ],
+      "alignment_words": [
+        {
+          "word": "Do",
+          "start": 679.561,
+          "end": 679.602,
+          "score": 0.0
+        },
+        {
+          "word": "you",
+          "start": 679.622,
+          "end": 679.684,
+          "score": 0.069
+        },
+        {
+          "word": "have",
+          "start": 679.704,
+          "end": 679.806,
+          "score": 0.283
+        },
+        {
+          "word": "a",
+          "start": 679.867,
+          "end": 679.908,
+          "score": 0.072
+        },
+        {
+          "word": "driver's",
+          "start": 679.929,
+          "end": 680.235,
+          "score": 0.533
+        },
+        {
+          "word": "license?",
+          "start": 680.255,
+          "end": 680.48,
+          "score": 0.408
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "start": 680.68,
+      "end": 681.66,
+      "text": " I do have a driver's license.",
+      "speaker_hypothesis": "Target_Speaker",
+      "review_required": true,
+      "near_window_boundary": false,
+      "reasons": [],
+      "evidence": [
+        {
+          "source": "timing_comparison",
+          "selected_source": "decoder",
+          "alignment_start": 680.721,
+          "alignment_end": 681.619,
+          "decoder_start": 680.68,
+          "decoder_end": 681.66
+        },
+        {
+          "source": "baseline_overlap",
+          "raw_track_overlap_seconds": {
+            "SPEAKER_07": 0.9130000000000109
+          },
+          "segments": [
+            {
+              "segment_index": 256,
+              "raw_speaker_track": "SPEAKER_07",
+              "baseline_speaker": "Target_Speaker",
+              "overlap_seconds": 0.9130000000000109
+            }
+          ],
+          "identity_verified": false
+        },
+        {
+          "source": "local_voice",
+          "similarities": {
+            "Target_Speaker": 0.4917372763156891,
+            "Opening_officer": 0.01684393733739853
+          },
+          "timing_variants": [
+            {
+              "source": "decoder",
+              "start": 680.68,
+              "end": 681.66,
+              "scores": {
+                "Target_Speaker": 0.4917372763156891,
+                "Opening_officer": 0.01684393733739853
+              }
+            },
+            {
+              "source": "alignment",
+              "start": 680.721,
+              "end": 681.619,
+              "scores": {
+                "Target_Speaker": 0.5188406705856323,
+                "Opening_officer": 0.06254896521568298
+              }
+            }
+          ],
+          "variants_are_independent_votes": false,
+          "min_similarity": 0.25,
+          "min_margin": 0.08,
+          "identity_probability_calibrated": false
+        }
+      ],
+      "alignment_words": [
+        {
+          "word": "I",
+          "start": 680.721,
+          "end": 680.803,
+          "score": 0.506
+        },
+        {
+          "word": "do",
+          "start": 680.823,
+          "end": 680.945,
+          "score": 0.73
+        },
+        {
+          "word": "have",
+          "start": 680.986,
+          "end": 681.068,
+          "score": 0.159
+        },
+        {
+          "word": "a",
+          "start": 681.088,
+          "end": 681.15,
+          "score": 0.316
+        },
+        {
+          "word": "driver's",
+          "start": 681.17,
+          "end": 681.395,
+          "score": 0.172
+        },
+        {
+          "word": "license.",
+          "start": 681.415,
+          "end": 681.619,
+          "score": 0.484
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "start": 681.72,
+      "end": 682.78,
+      "text": " Then you should be in the system.",
+      "speaker_hypothesis": "Uncertain",
+      "review_required": true,
+      "near_window_boundary": false,
+      "reasons": [
+        "Insufficient voice similarity or separation between profiles"
+      ],
+      "evidence": [
+        {
+          "source": "timing_comparison",
+          "selected_source": "decoder",
+          "alignment_start": 681.781,
+          "alignment_end": 682.719,
+          "decoder_start": 681.72,
+          "decoder_end": 682.78
+        },
+        {
+          "source": "baseline_overlap",
+          "raw_track_overlap_seconds": {
+            "SPEAKER_07": 1.0399999999999636
+          },
+          "segments": [
+            {
+              "segment_index": 256,
+              "raw_speaker_track": "SPEAKER_07",
+              "baseline_speaker": "Target_Speaker",
+              "overlap_seconds": 0.06799999999998363
+            },
+            {
+              "segment_index": 257,
+              "raw_speaker_track": "SPEAKER_07",
+              "baseline_speaker": "SPEAKER_07",
+              "overlap_seconds": 0.97199999999998
+            }
+          ],
+          "identity_verified": false
+        },
+        {
+          "source": "local_voice",
+          "similarities": {
+            "Target_Speaker": -0.0790882557630539,
+            "Opening_officer": 0.20177888870239258
+          },
+          "timing_variants": [
+            {
+              "source": "decoder",
+              "start": 681.72,
+              "end": 682.78,
+              "scores": {
+                "Target_Speaker": -0.0790882557630539,
+                "Opening_officer": 0.20177888870239258
+              }
+            },
+            {
+              "source": "alignment",
+              "start": 681.781,
+              "end": 682.719,
+              "scores": {
+                "Target_Speaker": -0.06728584319353104,
+                "Opening_officer": 0.21632546186447144
+              }
+            }
+          ],
+          "variants_are_independent_votes": false,
+          "min_similarity": 0.25,
+          "min_margin": 0.08,
+          "identity_probability_calibrated": false
+        }
+      ],
+      "alignment_words": [
+        {
+          "word": "Then",
+          "start": 681.781,
+          "end": 681.863,
+          "score": 0.725
+        },
+        {
+          "word": "you",
+          "start": 681.903,
+          "end": 682.026,
+          "score": 0.383
+        },
+        {
+          "word": "should",
+          "start": 682.046,
+          "end": 682.209,
+          "score": 0.209
+        },
+        {
+          "word": "be",
+          "start": 682.25,
+          "end": 682.311,
+          "score": 0.274
+        },
+        {
+          "word": "in",
+          "start": 682.332,
+          "end": 682.433,
+          "score": 0.596
+        },
+        {
+          "word": "the",
+          "start": 682.454,
+          "end": 682.535,
+          "score": 0.256
+        },
+        {
+          "word": "system.",
+          "start": 682.576,
+          "end": 682.719,
+          "score": 0.144
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "start": 683.44,
+      "end": 683.66,
+      "text": " There.",
+      "speaker_hypothesis": "Uncertain",
+      "review_required": true,
+      "near_window_boundary": false,
+      "reasons": [
+        "Voice crop shorter than 0.4 seconds",
+        "Insufficient voice similarity or separation between profiles"
+      ],
+      "evidence": [
+        {
+          "source": "timing_comparison",
+          "selected_source": "decoder",
+          "alignment_start": 683.506,
+          "alignment_end": 683.66,
+          "decoder_start": 683.44,
+          "decoder_end": 683.66
+        },
+        {
+          "source": "baseline_overlap",
+          "raw_track_overlap_seconds": {},
+          "segments": [],
+          "identity_verified": false
+        },
+        {
+          "source": "local_voice",
+          "similarities": {},
+          "timing_variants": [
+            {
+              "source": "decoder",
+              "start": 683.44,
+              "end": 683.66,
+              "scores": {}
+            }
+          ],
+          "variants_are_independent_votes": false,
+          "min_similarity": 0.25,
+          "min_margin": 0.08,
+          "identity_probability_calibrated": false
+        }
+      ],
+      "alignment_words": [
+        {
+          "word": "There.",
+          "start": 683.506,
+          "end": 683.66,
+          "score": 0.215
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "start": 684.38,
+      "end": 685.56,
+      "text": " I have a driver's license.",
+      "speaker_hypothesis": "Target_Speaker",
+      "review_required": true,
+      "near_window_boundary": false,
+      "reasons": [],
+      "evidence": [
+        {
+          "source": "timing_comparison",
+          "selected_source": "decoder",
+          "alignment_start": 684.767,
+          "alignment_end": 685.54,
+          "decoder_start": 684.38,
+          "decoder_end": 685.56
+        },
+        {
+          "source": "baseline_overlap",
+          "raw_track_overlap_seconds": {
+            "SPEAKER_05": 0.7889999999999873
+          },
+          "segments": [
+            {
+              "segment_index": 258,
+              "raw_speaker_track": "SPEAKER_05",
+              "baseline_speaker": "Target_Speaker",
+              "overlap_seconds": 0.7889999999999873
+            }
+          ],
+          "identity_verified": false
+        },
+        {
+          "source": "local_voice",
+          "similarities": {
+            "Target_Speaker": 0.2855165898799896,
+            "Opening_officer": -0.0339827835559845
+          },
+          "timing_variants": [
+            {
+              "source": "decoder",
+              "start": 684.38,
+              "end": 685.56,
+              "scores": {
+                "Target_Speaker": 0.2855165898799896,
+                "Opening_officer": -0.0339827835559845
+              }
+            },
+            {
+              "source": "alignment",
+              "start": 684.767,
+              "end": 685.54,
+              "scores": {
+                "Target_Speaker": 0.24319270253181458,
+                "Opening_officer": -0.01731855794787407
+              }
+            }
+          ],
+          "variants_are_independent_votes": false,
+          "min_similarity": 0.25,
+          "min_margin": 0.08,
+          "identity_probability_calibrated": false
+        }
+      ],
+      "alignment_words": [
+        {
+          "word": "I",
+          "start": 684.767,
+          "end": 684.828,
+          "score": 0.964
+        },
+        {
+          "word": "have",
+          "start": 684.868,
+          "end": 684.99,
+          "score": 0.83
+        },
+        {
+          "word": "a",
+          "start": 685.031,
+          "end": 685.092,
+          "score": 0.348
+        },
+        {
+          "word": "driver's",
+          "start": 685.112,
+          "end": 685.296,
+          "score": 0.1
+        },
+        {
+          "word": "license.",
+          "start": 685.316,
+          "end": 685.54,
+          "score": 0.512
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "start": 685.64,
+      "end": 687.24,
+      "text": " I didn't give you any fake information.",
+      "speaker_hypothesis": "Target_Speaker",
+      "review_required": true,
+      "near_window_boundary": false,
+      "reasons": [],
+      "evidence": [
+        {
+          "source": "timing_comparison",
+          "selected_source": "decoder",
+          "alignment_start": 685.64,
+          "alignment_end": 687.22,
+          "decoder_start": 685.64,
+          "decoder_end": 687.24
+        },
+        {
+          "source": "baseline_overlap",
+          "raw_track_overlap_seconds": {
+            "SPEAKER_05": 1.532000000000039
+          },
+          "segments": [
+            {
+              "segment_index": 258,
+              "raw_speaker_track": "SPEAKER_05",
+              "baseline_speaker": "Target_Speaker",
+              "overlap_seconds": 0.031000000000062755
+            },
+            {
+              "segment_index": 259,
+              "raw_speaker_track": "SPEAKER_05",
+              "baseline_speaker": "Target_Speaker",
+              "overlap_seconds": 1.5009999999999764
+            }
+          ],
+          "identity_verified": false
+        },
+        {
+          "source": "local_voice",
+          "similarities": {
+            "Target_Speaker": 0.4803314208984375,
+            "Opening_officer": 0.0333264097571373
+          },
+          "timing_variants": [
+            {
+              "source": "decoder",
+              "start": 685.64,
+              "end": 687.24,
+              "scores": {
+                "Target_Speaker": 0.4803314208984375,
+                "Opening_officer": 0.0333264097571373
+              }
+            },
+            {
+              "source": "alignment",
+              "start": 685.64,
+              "end": 687.22,
+              "scores": {
+                "Target_Speaker": 0.47981294989585876,
+                "Opening_officer": 0.039335157722234726
+              }
+            }
+          ],
+          "variants_are_independent_votes": false,
+          "min_similarity": 0.25,
+          "min_margin": 0.08,
+          "identity_probability_calibrated": false
+        }
+      ],
+      "alignment_words": [
+        {
+          "word": "I",
+          "start": 685.64,
+          "end": 685.66,
+          "score": 0.0
+        },
+        {
+          "word": "didn't",
+          "start": 685.701,
+          "end": 685.924,
+          "score": 0.291
+        },
+        {
+          "word": "give",
+          "start": 686.025,
+          "end": 686.227,
+          "score": 0.442
+        },
+        {
+          "word": "you",
+          "start": 686.268,
+          "end": 686.369,
+          "score": 0.312
+        },
+        {
+          "word": "any",
+          "start": 686.41,
+          "end": 686.531,
+          "score": 0.361
+        },
+        {
+          "word": "fake",
+          "start": 686.551,
+          "end": 686.693,
+          "score": 0.272
+        },
+        {
+          "word": "information.",
+          "start": 686.815,
+          "end": 687.22,
+          "score": 0.202
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "start": 689.54,
+      "end": 689.98,
+      "text": " If you have a driver's license,",
+      "speaker_hypothesis": "Opening_officer",
+      "review_required": true,
+      "near_window_boundary": true,
+      "reasons": [
+        "Near audio-window boundary; wording or timing may be incomplete"
+      ],
+      "evidence": [
+        {
+          "source": "timing_comparison",
+          "selected_source": "decoder",
+          "alignment_start": 689.54,
+          "alignment_end": 689.98,
+          "decoder_start": 689.54,
+          "decoder_end": 689.98
+        },
+        {
+          "source": "baseline_overlap",
+          "raw_track_overlap_seconds": {
+            "SPEAKER_05": 0.07299999999997908
+          },
+          "segments": [
+            {
+              "segment_index": 260,
+              "raw_speaker_track": "SPEAKER_05",
+              "baseline_speaker": "Target_Speaker",
+              "overlap_seconds": 0.07299999999997908
+            }
+          ],
+          "identity_verified": false
+        },
+        {
+          "source": "local_voice",
+          "similarities": {
+            "Target_Speaker": 0.032002538442611694,
+            "Opening_officer": 0.31723344326019287
+          },
+          "timing_variants": [
+            {
+              "source": "decoder",
+              "start": 689.54,
+              "end": 689.98,
+              "scores": {
+                "Target_Speaker": 0.032002538442611694,
+                "Opening_officer": 0.31723344326019287
+              }
+            }
+          ],
+          "variants_are_independent_votes": false,
+          "min_similarity": 0.25,
+          "min_margin": 0.08,
+          "identity_probability_calibrated": false
+        }
+      ],
+      "alignment_words": []
+    }
+  ],
+  "provenance": {
+    "video": "/home/think/projects/whisperx_diarization/video.mp4",
+    "video_sha256": "c90216467d260eab6e946e8118f4ef2d591b8b7d736ccf056e43208a25fba0d5",
+    "window_start": 665.0,
+    "decoded_duration": 25.0,
+    "models": {
+      "asr": "large-v2",
+      "voice": "speechbrain/spkrec-ecapa-voxceleb"
+    },
+    "device": "cpu",
+    "requested_timing_source": "consensus",
+    "asr_engine": "native",
+    "vad": "disabled",
+    "chunk_seconds": null,
+    "context_seconds": null,
+    "references": {
+      "Target_Speaker": {
+        "path": "/home/think/projects/whisperx_diarization/references/youtube-v1/voice_embeddings.npy",
+        "sha256": "f22feac5254c52aad0a69a950011a819e579260a4aa964a29bd37ebb06926809"
+      },
+      "Opening_officer": {
+        "path": "/home/think/Documents/Codex/2026-09-13/referenced-chatgpt-conversation-this-is-an/outputs/speaker_separation/officer_reference.npy",
+        "sha256": "8542fdd1f9335670ed003efd1449b75d3867c80012331259d3e3d90d8ff07211"
+      }
+    },
+    "baseline": "/home/think/Documents/Codex/2026-09-13/referenced-chatgpt-conversation-this-is-an/work/kaggle_latest/results/full_video_evidence.json",
+    "baseline_sha256": "a2054622325ffab780a7683ad576f2892baf81dcf4f3c77d01d417241adab85d",
+    "elapsed_seconds": 103.33049116597977
+  }
+}

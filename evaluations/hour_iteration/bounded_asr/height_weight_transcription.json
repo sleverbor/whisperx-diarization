@@ -1,0 +1,91 @@
+{
+  "segments": [
+    {
+      "text": " and",
+      "start": 0.0,
+      "end": 0.852,
+      "avg_logprob": -0.462369441986084
+    },
+    {
+      "text": " loitering around businesses, causing concern and suspicion. It's against the law.",
+      "start": 1.324,
+      "end": 6.932,
+      "avg_logprob": -0.206087374024921
+    },
+    {
+      "text": " What's your date of birth, Tom? March 17, 2002.",
+      "start": 8.268,
+      "end": 12.596,
+      "avg_logprob": -0.33590799967447915
+    },
+    {
+      "text": " Got tattoos on both arms anywhere else? Yeah on my chest.",
+      "start": 12.876,
+      "end": 17.076,
+      "avg_logprob": -0.3806330050740923
+    },
+    {
+      "text": " And we're going to pause the video.",
+      "start": 17.388,
+      "end": 18.932,
+      "avg_logprob": -1.1136192798614502
+    },
+    {
+      "text": " Nothing gang, anything.",
+      "start": 20.108,
+      "end": 22.292,
+      "avg_logprob": -0.52718386054039
+    },
+    {
+      "text": " That's all of you.",
+      "start": 26.924,
+      "end": 28.052,
+      "avg_logprob": -0.4431401661464146
+    },
+    {
+      "text": " 5-11, tell the girls 5-11, my time.",
+      "start": 28.748,
+      "end": 32.532,
+      "avg_logprob": -0.5436915159225464
+    },
+    {
+      "text": " Sorry? How much do you owe? 160.",
+      "start": 37.772,
+      "end": 40.18,
+      "avg_logprob": -0.5856791409579191
+    },
+    {
+      "text": " No pressure.",
+      "start": 45.548,
+      "end": 46.9,
+      "avg_logprob": -0.4866165965795517
+    },
+    {
+      "text": " Is that a fake name? No.",
+      "start": 46.988,
+      "end": 49.94,
+      "avg_logprob": -0.21541415320502388
+    },
+    {
+      "text": " You just found the system anywhere? I don't get found guilty of anything. Do you have a driver's license? I do have a driver's license. Then you should be on the system. I have a driver's license. I didn't give you any fake information.",
+      "start": 50.348,
+      "end": 62.484,
+      "avg_logprob": -0.21109927328009354
+    },
+    {
+      "text": " If you have any questions, feel free to contact me.",
+      "start": 64.396,
+      "end": 65.0,
+      "avg_logprob": -0.906449923148522
+    }
+  ],
+  "language": "en",
+  "source_offset_seconds": 625,
+  "settings": {
+    "vad": "bounded_silero",
+    "threshold": 0.5,
+    "context_seconds": 0.5,
+    "chunk_seconds": 20,
+    "overlap_seconds": 0
+  }
+}

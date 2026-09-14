@@ -1,0 +1,120 @@
+{
+  "evaluation_only": true,
+  "basis": "User-reviewed late target replies and existing audio-only context diagnostic",
+  "not_general_accuracy": true,
+  "cases": {
+    "runner_test_665": {
+      "known_target_rows": [
+        5,
+        7,
+        10,
+        11
+      ],
+      "known_target_matches": 3,
+      "baseline_raw_ids_retained": true,
+      "rows": [
+        {
+          "start": 677.502,
+          "end": 679.06,
+          "text": " I don't get found guilty of anything.",
+          "speaker_hypothesis": "Target_Speaker"
+        },
+        {
+          "start": 680.721,
+          "end": 681.619,
+          "text": " I do have a driver's license.",
+          "speaker_hypothesis": "Target_Speaker"
+        },
+        {
+          "start": 684.767,
+          "end": 685.54,
+          "text": " I have a driver's license.",
+          "speaker_hypothesis": "Uncertain"
+        },
+        {
+          "start": 685.64,
+          "end": 687.22,
+          "text": " I didn't give you any fake information.",
+          "speaker_hypothesis": "Target_Speaker"
+        }
+      ],
+      "baseline_sha256": "a2054622325ffab780a7683ad576f2892baf81dcf4f3c77d01d417241adab85d"
+    },
+    "runner_decoder_665": {
+      "known_target_rows": [
+        5,
+        7,
+        10,
+        11
+      ],
+      "known_target_matches": 3,
+      "baseline_raw_ids_retained": true,
+      "rows": [
+        {
+          "start": 677.28,
+          "end": 679.1,
+          "text": " I don't get found guilty of anything.",
+          "speaker_hypothesis": "Uncertain"
+        },
+        {
+          "start": 680.68,
+          "end": 681.66,
+          "text": " I do have a driver's license.",
+          "speaker_hypothesis": "Target_Speaker"
+        },
+        {
+          "start": 684.38,
+          "end": 685.56,
+          "text": " I have a driver's license.",
+          "speaker_hypothesis": "Target_Speaker"
+        },
+        {
+          "start": 685.64,
+          "end": 687.24,
+          "text": " I didn't give you any fake information.",
+          "speaker_hypothesis": "Target_Speaker"
+        }
+      ],
+      "baseline_sha256": "a2054622325ffab780a7683ad576f2892baf81dcf4f3c77d01d417241adab85d"
+    },
+    "runner_consensus_665": {
+      "known_target_rows": [
+        5,
+        7,
+        10,
+        11
+      ],
+      "known_target_matches": 4,
+      "baseline_raw_ids_retained": true,
+      "rows": [
+        {
+          "start": 677.28,
+          "end": 679.1,
+          "text": " I don't get found guilty of anything.",
+          "speaker_hypothesis": "Target_Speaker"
+        },
+        {
+          "start": 680.68,
+          "end": 681.66,
+          "text": " I do have a driver's license.",
+          "speaker_hypothesis": "Target_Speaker"
+        },
+        {
+          "start": 684.38,
+          "end": 685.56,
+          "text": " I have a driver's license.",
+          "speaker_hypothesis": "Target_Speaker"
+        },
+        {
+          "start": 685.64,
+          "end": 687.24,
+          "text": " I didn't give you any fake information.",
+          "speaker_hypothesis": "Target_Speaker"
+        }
+      ],
+      "baseline_sha256": "a2054622325ffab780a7683ad576f2892baf81dcf4f3c77d01d417241adab85d"
+    }
+  },
+  "regression_tests": 36,
+  "new_unit_tests": 22
+}
