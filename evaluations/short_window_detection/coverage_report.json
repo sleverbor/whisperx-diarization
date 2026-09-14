@@ -1,0 +1,170 @@
+{
+  "region": [
+    1090,
+    1150
+  ],
+  "speech_seconds": {
+    "prior_60s_fixed_three": 22.61250000000041,
+    "control_60s_unconstrained": 22.61250000000041,
+    "union_20s_windows": 26.668406250000317
+  },
+  "window_count": 6,
+  "window_seconds": 20,
+  "overlap_seconds": 10,
+  "window_speaker_count": "unconstrained",
+  "window_ids_not_stitched": true,
+  "coverage_is_not_accuracy": true,
+  "speech_spans": "saved recovered hypotheses; not manually timed ground truth",
+  "rows": [
+    {
+      "start": 1090.653,
+      "end": 1094.219,
+      "text": "My behavior is kind of a reflection of theirs, so I wouldn't agree more.",
+      "coverage_fraction": {
+        "prior_60s_fixed_three": 1.0,
+        "control_60s_unconstrained": 1.0,
+        "union_20s_windows": 1.0
+      }
+    },
+    {
+      "start": 1094.681,
+      "end": 1095.437,
+      "text": "I couldn't agree more.",
+      "coverage_fraction": {
+        "prior_60s_fixed_three": 0.0,
+        "control_60s_unconstrained": 0.0,
+        "union_20s_windows": 0.0
+      }
+    },
+    {
+      "start": 1098.202,
+      "end": 1099.216,
+      "text": "Couldn't agree a syllable more.",
+      "coverage_fraction": {
+        "prior_60s_fixed_three": 0.0,
+        "control_60s_unconstrained": 0.0,
+        "union_20s_windows": 0.0
+      }
+    },
+    {
+      "start": 1102.56,
+      "end": 1105.749,
+      "text": "It's fun to get them off.",
+      "coverage_fraction": {
+        "prior_60s_fixed_three": 0.0,
+        "control_60s_unconstrained": 0.0,
+        "union_20s_windows": 0.2645813734713011
+      }
+    },
+    {
+      "start": 1106.09,
+      "end": 1107.213,
+      "text": "No, that's not the problem.",
+      "coverage_fraction": {
+        "prior_60s_fixed_three": 0.0,
+        "control_60s_unconstrained": 0.0,
+        "union_20s_windows": 0.43577471059669504
+      }
+    },
+    {
+      "start": 1107.774,
+      "end": 1108.296,
+      "text": "They pee.",
+      "coverage_fraction": {
+        "prior_60s_fixed_three": 0.0,
+        "control_60s_unconstrained": 0.0,
+        "union_20s_windows": 0.0
+      }
+    },
+    {
+      "start": 1108.617,
+      "end": 1109.419,
+      "text": "It just got stuck.",
+      "coverage_fraction": {
+        "prior_60s_fixed_three": 0.8189292394016355,
+        "control_60s_unconstrained": 0.8189292394016355,
+        "union_20s_windows": 1.0
+      }
+    },
+    {
+      "start": 1112.3,
+      "end": 1118.679,
+      "text": "I don't want to mess with your cuffs or mess them up or anything, but let's have a look.",
+      "coverage_fraction": {
+        "prior_60s_fixed_three": 0.5555337827245606,
+        "control_60s_unconstrained": 0.5555337827245606,
+        "union_20s_windows": 0.556959358833656
+      }
+    },
+    {
+      "start": 1121.779,
+      "end": 1122.259,
+      "text": "Sounds like a lot of fun.",
+      "coverage_fraction": {
+        "prior_60s_fixed_three": 0.0,
+        "control_60s_unconstrained": 0.0,
+        "union_20s_windows": 0.0
+      }
+    },
+    {
+      "start": 1124.16,
+      "end": 1126.618,
+      "text": "We're not trying to tie someone, we're trying to get the key out of them.",
+      "coverage_fraction": {
+        "prior_60s_fixed_three": 0.0,
+        "control_60s_unconstrained": 0.0,
+        "union_20s_windows": 0.013285699755877681
+      }
+    },
+    {
+      "start": 1127.9,
+      "end": 1128.317,
+      "text": "Oh, sorry.",
+      "coverage_fraction": {
+        "prior_60s_fixed_three": 0.0,
+        "control_60s_unconstrained": 0.0,
+        "union_20s_windows": 0.0
+      }
+    },
+    {
+      "start": 1130.872,
+      "end": 1135.77,
+      "text": "I might need to get a new key, there might be something off with this one, because I just had an issue with that fella I got in.",
+      "coverage_fraction": {
+        "prior_60s_fixed_three": 0.41846799714169775,
+        "control_60s_unconstrained": 0.41846799714169775,
+        "union_20s_windows": 0.7617203450388234
+      }
+    },
+    {
+      "start": 1136.912,
+      "end": 1139.8310000000001,
+      "text": "Put this arm on the wall in front of you and that could have cut him off.",
+      "coverage_fraction": {
+        "prior_60s_fixed_three": 0.9776571599863024,
+        "control_60s_unconstrained": 0.9776571599863024,
+        "union_20s_windows": 1.0
+      }
+    },
+    {
+      "start": 1140.671,
+      "end": 1146.337,
+      "text": "That guy I just searched in that had the shackles, it had a little bit of difficulty opening up one of the shackles.",
+      "coverage_fraction": {
+        "prior_60s_fixed_three": 1.0,
+        "control_60s_unconstrained": 1.0,
+        "union_20s_windows": 1.0
+      }
+    },
+    {
+      "start": 1146.939,
+      "end": 1148.3980000000001,
+      "text": "I think I got to get a new key then.",
+      "coverage_fraction": {
+        "prior_60s_fixed_three": 1.0,
+        "control_60s_unconstrained": 1.0,
+        "union_20s_windows": 1.0
+      }
+    }
+  ]
+}

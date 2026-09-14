@@ -1,0 +1,123 @@
+[
+  {
+    "window_index": 0,
+    "start": 1090,
+    "end": 1110,
+    "tracks": [
+      {
+        "start": 1090.50346875,
+        "end": 1094.31721875,
+        "speaker": "SPEAKER_00"
+      }
+    ]
+  },
+  {
+    "window_index": 1,
+    "start": 1100,
+    "end": 1120,
+    "tracks": [
+      {
+        "start": 1104.80659375,
+        "end": 1105.65034375,
+        "speaker": "SPEAKER_00"
+      },
+      {
+        "start": 1106.12284375,
+        "end": 1106.61221875,
+        "speaker": "SPEAKER_00"
+      },
+      {
+        "start": 1108.56971875,
+        "end": 1109.44721875,
+        "speaker": "SPEAKER_00"
+      },
+      {
+        "start": 1112.31596875,
+        "end": 1115.84284375,
+        "speaker": "SPEAKER_00"
+      }
+    ]
+  },
+  {
+    "window_index": 2,
+    "start": 1110,
+    "end": 1130,
+    "tracks": [
+      {
+        "start": 1112.27534375,
+        "end": 1115.85284375,
+        "speaker": "SPEAKER_00"
+      },
+      {
+        "start": 1126.58534375,
+        "end": 1126.65284375,
+        "speaker": "SPEAKER_00"
+      }
+    ]
+  },
+  {
+    "window_index": 3,
+    "start": 1120,
+    "end": 1140,
+    "tracks": []
+  },
+  {
+    "window_index": 4,
+    "start": 1130,
+    "end": 1150,
+    "tracks": [
+      {
+        "start": 1132.03909375,
+        "end": 1136.37596875,
+        "speaker": "SPEAKER_00"
+      },
+      {
+        "start": 1133.74346875,
+        "end": 1134.84034375,
+        "speaker": "SPEAKER_01"
+      },
+      {
+        "start": 1135.31284375,
+        "end": 1135.83596875,
+        "speaker": "SPEAKER_01"
+      },
+      {
+        "start": 1136.83159375,
+        "end": 1139.95346875,
+        "speaker": "SPEAKER_00"
+      },
+      {
+        "start": 1140.57784375,
+        "end": 1149.97721875,
+        "speaker": "SPEAKER_00"
+      },
+      {
+        "start": 1144.79659375,
+        "end": 1145.08346875,
+        "speaker": "SPEAKER_01"
+      }
+    ]
+  },
+  {
+    "window_index": 5,
+    "start": 1140,
+    "end": 1160,
+    "tracks": [
+      {
+        "start": 1140.03096875,
+        "end": 1140.14909375,
+        "speaker": "SPEAKER_00"
+      },
+      {
+        "start": 1140.62159375,
+        "end": 1149.02534375,
+        "speaker": "SPEAKER_00"
+      },
+      {
+        "start": 1149.44721875,
+        "end": 1159.15034375,
+        "speaker": "SPEAKER_00"
+      }
+    ]
+  }
+]
