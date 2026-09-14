@@ -22,7 +22,7 @@ def screen(segment, text_threshold=.4, speaker_threshold=.6):
     speaker=segment.get('final_speaker','Uncertain')
     attribution=float(segment.get('final_confidence',0))
     speaker_known=speaker not in ('Uncertain','Unknown',None) and math.isfinite(attribution) and attribution>=speaker_threshold
-    return {'include_text':not reasons,'display_speaker':speaker if speaker_known else 'Speaker uncertain','mean_alignment':alignment,'very_weak_word_fraction':weak_fraction,'speaker_strength':attribution,'omission_reasons':reasons}
+    return {'include_text':not reasons,'display_speaker':(speaker or 'Uncertain'),'speaker_uncertain':not speaker_known,'mean_alignment':alignment,'very_weak_word_fraction':weak_fraction,'speaker_strength':attribution,'omission_reasons':reasons}
 
 
 def timestamp(seconds):
@@ -38,7 +38,7 @@ def main():
     if args.output_dir.exists():p.error('Use a new output directory')
     baseline=json.loads(args.source.read_text());snapshot=copy.deepcopy(baseline)
     lines=['Conservative transcript — provisional screening thresholds',
-           'Doubtful text is omitted. Speaker uncertain means wording was retained but identity was withheld.',
+           'Doubtful text is omitted. Existing speaker labels are preserved; a speaker uncertain note flags weak attribution.',
            'Alignment scores and speaker strengths are not calibrated accuracy probabilities. Gaps may be silence or missed speech.',
            'Speaker track IDs are model labels; separate IDs may belong to the same person.','']
     decisions=[];omitted=[];kept=[];cursor=0.;uncertain=0
@@ -47,8 +47,9 @@ def main():
         decision=screen(s,args.text_threshold,args.speaker_threshold);decisions.append({'segment_index_in_time_order':index,'start':s['start'],'end':s['end'],**decision})
         span=f'[{timestamp(s["start"])}–{timestamp(s["end"])}]'
         if decision['include_text']:
-            kept.append(copy.deepcopy(s));uncertain+=decision['display_speaker']=='Speaker uncertain'
-            lines.append(f'{span} {decision["display_speaker"]}: {s["text"].strip()}')
+            kept.append(copy.deepcopy(s));uncertain+=decision['speaker_uncertain']
+            note=' (speaker uncertain)' if decision['speaker_uncertain'] and decision['display_speaker'] not in ('Uncertain','Unknown') else ''
+            lines.append(f'{span} {decision["display_speaker"]}{note}: {s["text"].strip()}')
         else:
             omitted.append({'original_segment':copy.deepcopy(s),'screening':decision})
             lines.append(f'{span} [Doubtful material omitted]')
