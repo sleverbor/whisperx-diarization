@@ -1,0 +1,7 @@
+[761.23-763.50] Target_Speaker: There isn't a statute number for a criminal lawyer.
+[764.10-765.26] SPEAKER_07: There is a statute number.
+[766.00-766.54] Target_Speaker: So what is it?
+[766.64-767.62] SPEAKER_07: It'll be in my affidavit.
+[773.02-775.18] REVIEW (single decode; speaker unknown): There's not a place on this arrest form for it.
+[775.90-776.90] REVIEW (single decode; speaker unknown): Really? Yeah.
+[781.17-784.10] SPEAKER_07: Criminal ordering and disorderly conduct are the two things you're being charged with.

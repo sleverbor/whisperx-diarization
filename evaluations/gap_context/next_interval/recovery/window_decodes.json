@@ -1,0 +1,356 @@
+[
+  {
+    "gap_index": 0,
+    "window_index": 0,
+    "window_start": 2.619000000000028,
+    "window_end": 20.173000000000002,
+    "segments": [
+      {
+        "start": 2.619000000000028,
+        "end": 3.559000000000028,
+        "text": " So what is it?",
+        "avg_logprob": -0.5396538611614343,
+        "no_speech_prob": 0.01647641696035862,
+        "compression_ratio": 1.2733333333333334,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 2.619000000000028,
+            "end": 3.079000000000028,
+            "word": " So",
+            "probability": 0.0923163890838623,
+            "window_index": 0,
+            "low_confidence": true
+          },
+          {
+            "start": 3.079000000000028,
+            "end": 3.2590000000000283,
+            "word": " what",
+            "probability": 0.7501627802848816,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 3.2590000000000283,
+            "end": 3.3990000000000284,
+            "word": " is",
+            "probability": 0.8997159600257874,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 3.3990000000000284,
+            "end": 3.559000000000028,
+            "word": " it?",
+            "probability": 0.8550271987915039,
+            "window_index": 0,
+            "low_confidence": false
+          }
+        ]
+      },
+      {
+        "start": 3.619000000000028,
+        "end": 4.619000000000028,
+        "text": " It'll be in my affidavit.",
+        "avg_logprob": -0.5396538611614343,
+        "no_speech_prob": 0.01647641696035862,
+        "compression_ratio": 1.2733333333333334,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 3.619000000000028,
+            "end": 3.759000000000028,
+            "word": " It'll",
+            "probability": 0.626240611076355,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 3.759000000000028,
+            "end": 3.879000000000028,
+            "word": " be",
+            "probability": 0.9068089127540588,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 3.879000000000028,
+            "end": 3.959000000000028,
+            "word": " in",
+            "probability": 0.8568221926689148,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 3.959000000000028,
+            "end": 4.079000000000028,
+            "word": " my",
+            "probability": 0.7811774015426636,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 4.079000000000028,
+            "end": 4.619000000000028,
+            "word": " affidavit.",
+            "probability": 0.9831977784633636,
+            "window_index": 0,
+            "low_confidence": false
+          }
+        ]
+      },
+      {
+        "start": 10.019000000000029,
+        "end": 12.179000000000029,
+        "text": " There's not a place on this arrest form for it.",
+        "avg_logprob": -0.5396538611614343,
+        "no_speech_prob": 0.01647641696035862,
+        "compression_ratio": 1.2733333333333334,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 10.019000000000029,
+            "end": 10.379000000000028,
+            "word": " There's",
+            "probability": 0.6026790291070938,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 10.379000000000028,
+            "end": 10.499000000000027,
+            "word": " not",
+            "probability": 0.5158435702323914,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 10.499000000000027,
+            "end": 10.619000000000028,
+            "word": " a",
+            "probability": 0.9450985789299011,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 10.619000000000028,
+            "end": 10.879000000000028,
+            "word": " place",
+            "probability": 0.6533687710762024,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 10.879000000000028,
+            "end": 11.019000000000029,
+            "word": " on",
+            "probability": 0.8812611103057861,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 11.019000000000029,
+            "end": 11.159000000000027,
+            "word": " this",
+            "probability": 0.8416327238082886,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 11.159000000000027,
+            "end": 11.479000000000028,
+            "word": " arrest",
+            "probability": 0.80413818359375,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 11.479000000000028,
+            "end": 11.759000000000029,
+            "word": " form",
+            "probability": 0.7085655728975931,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 11.759000000000029,
+            "end": 11.939000000000028,
+            "word": " for",
+            "probability": 0.8771490454673767,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 11.939000000000028,
+            "end": 12.179000000000029,
+            "word": " it.",
+            "probability": 0.8887383937835693,
+            "window_index": 0,
+            "low_confidence": false
+          }
+        ]
+      },
+      {
+        "start": 12.899000000000028,
+        "end": 13.179000000000029,
+        "text": " Really?",
+        "avg_logprob": -0.5396538611614343,
+        "no_speech_prob": 0.01647641696035862,
+        "compression_ratio": 1.2733333333333334,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 12.899000000000028,
+            "end": 13.179000000000029,
+            "word": " Really?",
+            "probability": 0.7900174856185913,
+            "window_index": 0,
+            "low_confidence": false
+          }
+        ]
+      },
+      {
+        "start": 13.619000000000028,
+        "end": 13.899000000000028,
+        "text": " Yeah.",
+        "avg_logprob": -0.5396538611614343,
+        "no_speech_prob": 0.01647641696035862,
+        "compression_ratio": 1.2733333333333334,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 13.619000000000028,
+            "end": 13.899000000000028,
+            "word": " Yeah.",
+            "probability": 0.8421487808227539,
+            "window_index": 0,
+            "low_confidence": false
+          }
+        ]
+      },
+      {
+        "start": 18.05900000000003,
+        "end": 20.139000000000028,
+        "text": " Criminal Ordering and Disorderly Conduct are the two things that I've been charged with.",
+        "avg_logprob": -0.5396538611614343,
+        "no_speech_prob": 0.01647641696035862,
+        "compression_ratio": 1.2733333333333334,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 18.05900000000003,
+            "end": 18.41900000000003,
+            "word": " Criminal",
+            "probability": 0.7814380526542664,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 18.41900000000003,
+            "end": 18.77900000000003,
+            "word": " Ordering",
+            "probability": 0.41835446655750275,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 18.77900000000003,
+            "end": 18.87900000000003,
+            "word": " and",
+            "probability": 0.711807906627655,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 18.87900000000003,
+            "end": 19.319000000000027,
+            "word": " Disorderly",
+            "probability": 0.7328583002090454,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 19.319000000000027,
+            "end": 19.699000000000026,
+            "word": " Conduct",
+            "probability": 0.8450301587581635,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 19.699000000000026,
+            "end": 19.819000000000027,
+            "word": " are",
+            "probability": 0.5123867392539978,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 19.819000000000027,
+            "end": 19.89900000000003,
+            "word": " the",
+            "probability": 0.7784638404846191,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 19.89900000000003,
+            "end": 20.019000000000027,
+            "word": " two",
+            "probability": 0.7463523149490356,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 20.019000000000027,
+            "end": 20.139000000000028,
+            "word": " things",
+            "probability": 0.7056390047073364,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 20.139000000000028,
+            "end": 20.139000000000028,
+            "word": " that",
+            "probability": 0.3059259057044983,
+            "window_index": 0,
+            "low_confidence": true
+          },
+          {
+            "start": 20.139000000000028,
+            "end": 20.139000000000028,
+            "word": " I've",
+            "probability": 0.1800265535712242,
+            "window_index": 0,
+            "low_confidence": true
+          },
+          {
+            "start": 20.139000000000028,
+            "end": 20.139000000000028,
+            "word": " been",
+            "probability": 0.21925728023052216,
+            "window_index": 0,
+            "low_confidence": true
+          },
+          {
+            "start": 20.139000000000028,
+            "end": 20.139000000000028,
+            "word": " charged",
+            "probability": 0.49992889165878296,
+            "window_index": 0,
+            "low_confidence": false
+          },
+          {
+            "start": 20.139000000000028,
+            "end": 20.139000000000028,
+            "word": " with.",
+            "probability": 0.6540616154670715,
+            "window_index": 0,
+            "low_confidence": false
+          }
+        ]
+      }
+    ]
+  }
+]
