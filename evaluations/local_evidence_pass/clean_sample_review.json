@@ -1,0 +1,71 @@
+{
+  "SPEAKER_00": {
+    "samples": [
+      {
+        "start": 1112.30596875,
+        "end": 1114.70596875,
+        "speech_fraction": 0.8274869791666285,
+        "other_track_overlap_fraction": 0.0
+      }
+    ],
+    "retained_indices": [],
+    "leave_one_out_similarities": [],
+    "coherent_candidate": false,
+    "does_not_establish_person_identity": true
+  },
+  "SPEAKER_01": {
+    "samples": [
+      {
+        "start": 1133.72034375,
+        "end": 1135.91409375,
+        "speech_fraction": 1.0,
+        "other_track_overlap_fraction": 0.0
+      },
+      {
+        "start": 1136.97721875,
+        "end": 1139.37721875,
+        "speech_fraction": 1.0,
+        "other_track_overlap_fraction": 0.0
+      },
+      {
+        "start": 1140.57159375,
+        "end": 1142.97159375,
+        "speech_fraction": 0.9514973958332594,
+        "other_track_overlap_fraction": 0.0
+      },
+      {
+        "start": 1145.37159375,
+        "end": 1147.7715937500002,
+        "speech_fraction": 1.0,
+        "other_track_overlap_fraction": 0.0
+      }
+    ],
+    "retained_indices": [
+      2,
+      3
+    ],
+    "leave_one_out_similarities": [],
+    "coherent_candidate": false,
+    "does_not_establish_person_identity": true
+  },
+  "SPEAKER_02": {
+    "samples": [
+      {
+        "start": 1090.50346875,
+        "end": 1092.90346875,
+        "speech_fraction": 0.98311197916659,
+        "other_track_overlap_fraction": 0.0
+      },
+      {
+        "start": 1092.90346875,
+        "end": 1094.31721875,
+        "speech_fraction": 1.0,
+        "other_track_overlap_fraction": 0.0
+      }
+    ],
+    "retained_indices": [],
+    "leave_one_out_similarities": [],
+    "coherent_candidate": false,
+    "does_not_establish_person_identity": true
+  }
+}

@@ -1,0 +1,1118 @@
+[
+  {
+    "start": 1090.0,
+    "end": 1091.2,
+    "speech_fraction": 0.5466666666666035,
+    "voice_similarities": {
+      "Target_Speaker": -0.10369091480970383,
+      "Opening_officer_reference": 0.08653279393911362
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.19022370874881744,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1090.4,
+    "end": 1091.6000000000001,
+    "speech_fraction": 0.88,
+    "voice_similarities": {
+      "Target_Speaker": 0.08726993948221207,
+      "Opening_officer_reference": 0.1932753622531891
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.10600542277097702,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1090.8000000000002,
+    "end": 1092.0000000000002,
+    "speech_fraction": 1.0,
+    "voice_similarities": {
+      "Target_Speaker": 0.09193027019500732,
+      "Opening_officer_reference": 0.1297394186258316
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.03780914843082428,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1091.2000000000003,
+    "end": 1092.4000000000003,
+    "speech_fraction": 1.0,
+    "voice_similarities": {
+      "Target_Speaker": 0.14186815917491913,
+      "Opening_officer_reference": 0.03135906159877777
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.11050909757614136,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1091.6000000000004,
+    "end": 1092.8000000000004,
+    "speech_fraction": 1.0,
+    "voice_similarities": {
+      "Target_Speaker": 0.13048474490642548,
+      "Opening_officer_reference": 0.05636916309595108
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.0741155818104744,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1092.0000000000005,
+    "end": 1093.2000000000005,
+    "speech_fraction": 1.0,
+    "voice_similarities": {
+      "Target_Speaker": 0.16765758395195007,
+      "Opening_officer_reference": 0.07802903652191162
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.08962854743003845,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1092.4000000000005,
+    "end": 1093.6000000000006,
+    "speech_fraction": 1.0,
+    "voice_similarities": {
+      "Target_Speaker": 0.16563016176223755,
+      "Opening_officer_reference": 0.0630214661359787
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.10260869562625885,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1092.8000000000006,
+    "end": 1094.0000000000007,
+    "speech_fraction": 1.0,
+    "voice_similarities": {
+      "Target_Speaker": 0.4000476598739624,
+      "Opening_officer_reference": -0.021518416702747345
+    },
+    "hypothesis": "Target_Speaker",
+    "margin": 0.42156607657670975,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1093.2000000000007,
+    "end": 1094.4000000000008,
+    "speech_fraction": 1.0,
+    "voice_similarities": {
+      "Target_Speaker": 0.2490178495645523,
+      "Opening_officer_reference": 0.061141274869441986
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.18787657469511032,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1093.6000000000008,
+    "end": 1094.8000000000009,
+    "speech_fraction": 1.0,
+    "voice_similarities": {
+      "Target_Speaker": 0.22450664639472961,
+      "Opening_officer_reference": 0.03432939946651459
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.19017724692821503,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1094.000000000001,
+    "end": 1095.200000000001,
+    "speech_fraction": 1.0,
+    "voice_similarities": {
+      "Target_Speaker": 0.10472514480352402,
+      "Opening_officer_reference": 0.011388752609491348
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.09333639219403267,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1094.400000000001,
+    "end": 1095.600000000001,
+    "speech_fraction": 0.9733333333324491,
+    "voice_similarities": {
+      "Target_Speaker": 0.017652936279773712,
+      "Opening_officer_reference": 0.08285413682460785
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.06520120054483414,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1094.800000000001,
+    "end": 1096.0000000000011,
+    "speech_fraction": 0.6399999999990527,
+    "voice_similarities": {
+      "Target_Speaker": 0.036426350474357605,
+      "Opening_officer_reference": 0.09366275370121002
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.05723640322685242,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1098.0000000000018,
+    "end": 1099.2000000000019,
+    "speech_fraction": 0.7600000000015158,
+    "voice_similarities": {
+      "Target_Speaker": 0.20668981969356537,
+      "Opening_officer_reference": 0.053047508001327515
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.15364231169223785,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1098.400000000002,
+    "end": 1099.600000000002,
+    "speech_fraction": 0.8399999999982947,
+    "voice_similarities": {
+      "Target_Speaker": 0.11742020398378372,
+      "Opening_officer_reference": 0.016989178955554962
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.10043102502822876,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1098.800000000002,
+    "end": 1100.000000000002,
+    "speech_fraction": 0.5066666666648982,
+    "voice_similarities": {
+      "Target_Speaker": -0.027801789343357086,
+      "Opening_officer_reference": 0.0027188658714294434
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.03052065521478653,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1102.0000000000027,
+    "end": 1103.2000000000028,
+    "speech_fraction": 0.5733333333356703,
+    "voice_similarities": {
+      "Target_Speaker": -0.06716571748256683,
+      "Opening_officer_reference": 0.05968376621603966
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.1268494836986065,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1102.4000000000028,
+    "end": 1103.6000000000029,
+    "speech_fraction": 0.9066666666690667,
+    "voice_similarities": {
+      "Target_Speaker": -0.03705539554357529,
+      "Opening_officer_reference": 0.04416314885020256
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.08121854439377785,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1102.800000000003,
+    "end": 1104.000000000003,
+    "speech_fraction": 0.9866666666641403,
+    "voice_similarities": {
+      "Target_Speaker": 0.036956749856472015,
+      "Opening_officer_reference": 0.07625426352024078
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.03929751366376877,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1103.200000000003,
+    "end": 1104.400000000003,
+    "speech_fraction": 0.6533333333307438,
+    "voice_similarities": {
+      "Target_Speaker": -0.12701290845870972,
+      "Opening_officer_reference": 0.0720500499010086
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.19906295835971832,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1104.4000000000033,
+    "end": 1105.6000000000033,
+    "speech_fraction": 0.6000000000026527,
+    "voice_similarities": {
+      "Target_Speaker": 0.04192819446325302,
+      "Opening_officer_reference": 0.05856569856405258
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.01663750410079956,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1104.8000000000034,
+    "end": 1106.0000000000034,
+    "speech_fraction": 0.773333333333207,
+    "voice_similarities": {
+      "Target_Speaker": -0.04585210978984833,
+      "Opening_officer_reference": 0.053117502480745316
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.09896961227059364,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1105.2000000000035,
+    "end": 1106.4000000000035,
+    "speech_fraction": 0.7866666666666035,
+    "voice_similarities": {
+      "Target_Speaker": 0.0334646999835968,
+      "Opening_officer_reference": -0.009011741727590561
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.04247644171118736,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1105.6000000000035,
+    "end": 1106.8000000000036,
+    "speech_fraction": 0.7866666666666035,
+    "voice_similarities": {
+      "Target_Speaker": -0.09451647847890854,
+      "Opening_officer_reference": 0.10658186674118042
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.20109834522008896,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1106.0000000000036,
+    "end": 1107.2000000000037,
+    "speech_fraction": 0.9466666666696352,
+    "voice_similarities": {
+      "Target_Speaker": -0.012064473703503609,
+      "Opening_officer_reference": 0.07713034749031067
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.08919482119381428,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1106.4000000000037,
+    "end": 1107.6000000000038,
+    "speech_fraction": 0.8133333333301753,
+    "voice_similarities": {
+      "Target_Speaker": 0.0017345249652862549,
+      "Opening_officer_reference": 0.0310192983597517
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.029284773394465446,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1106.8000000000038,
+    "end": 1108.0000000000039,
+    "speech_fraction": 0.6533333333333965,
+    "voice_similarities": {
+      "Target_Speaker": -0.09943492710590363,
+      "Opening_officer_reference": -0.052235305309295654
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.04719962179660797,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1107.200000000004,
+    "end": 1108.400000000004,
+    "speech_fraction": 0.6533333333333965,
+    "voice_similarities": {
+      "Target_Speaker": 0.030991971492767334,
+      "Opening_officer_reference": 0.005140330642461777
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.025851640850305557,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1107.600000000004,
+    "end": 1108.800000000004,
+    "speech_fraction": 0.8400000000034106,
+    "voice_similarities": {
+      "Target_Speaker": 0.0275580957531929,
+      "Opening_officer_reference": 0.09187518805265427
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.06431709229946136,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1108.000000000004,
+    "end": 1109.2000000000041,
+    "speech_fraction": 1.0,
+    "voice_similarities": {
+      "Target_Speaker": 0.09245290607213974,
+      "Opening_officer_reference": 0.18672522902488708
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.09427232295274734,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1108.4000000000042,
+    "end": 1109.6000000000042,
+    "speech_fraction": 1.0,
+    "voice_similarities": {
+      "Target_Speaker": -0.042669087648391724,
+      "Opening_officer_reference": 0.20359379053115845
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.24626287817955017,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1108.8000000000043,
+    "end": 1110.0000000000043,
+    "speech_fraction": 0.7066666666630034,
+    "voice_similarities": {
+      "Target_Speaker": 0.00040060095489025116,
+      "Opening_officer_reference": 0.16213515400886536
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.1617345530539751,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1112.400000000005,
+    "end": 1113.6000000000051,
+    "speech_fraction": 0.733333333337565,
+    "voice_similarities": {
+      "Target_Speaker": -0.018888380378484726,
+      "Opening_officer_reference": 0.2483011782169342
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.26718955859541893,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1112.8000000000052,
+    "end": 1114.0000000000052,
+    "speech_fraction": 1.0,
+    "voice_similarities": {
+      "Target_Speaker": 0.010567732155323029,
+      "Opening_officer_reference": 0.19207307696342468
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.18150534480810165,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1113.2000000000053,
+    "end": 1114.4000000000053,
+    "speech_fraction": 1.0,
+    "voice_similarities": {
+      "Target_Speaker": 0.017689619213342667,
+      "Opening_officer_reference": 0.13464030623435974
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.11695068702101707,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1113.6000000000054,
+    "end": 1114.8000000000054,
+    "speech_fraction": 1.0,
+    "voice_similarities": {
+      "Target_Speaker": 0.18247951567173004,
+      "Opening_officer_reference": 0.04446154087781906
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.13801797479391098,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1114.0000000000055,
+    "end": 1115.2000000000055,
+    "speech_fraction": 1.0,
+    "voice_similarities": {
+      "Target_Speaker": 0.12585704028606415,
+      "Opening_officer_reference": 0.04251212626695633
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.08334491401910782,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1114.4000000000055,
+    "end": 1115.6000000000056,
+    "speech_fraction": 0.786666666666793,
+    "voice_similarities": {
+      "Target_Speaker": 0.09716299176216125,
+      "Opening_officer_reference": -0.0397864505648613
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.13694944232702255,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1114.8000000000056,
+    "end": 1116.0000000000057,
+    "speech_fraction": 0.666666666662056,
+    "voice_similarities": {
+      "Target_Speaker": 0.03529465198516846,
+      "Opening_officer_reference": 0.020032741129398346
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.015261910855770111,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1122.0000000000073,
+    "end": 1123.2000000000073,
+    "speech_fraction": 0.6800000000060633,
+    "voice_similarities": {
+      "Target_Speaker": 0.2664322853088379,
+      "Opening_officer_reference": 0.1469162106513977
+    },
+    "hypothesis": "Target_Speaker",
+    "margin": 0.11951607465744019,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1122.4000000000074,
+    "end": 1123.6000000000074,
+    "speech_fraction": 1.0,
+    "voice_similarities": {
+      "Target_Speaker": 0.12289248406887054,
+      "Opening_officer_reference": 0.1336229145526886
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.010730430483818054,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1122.8000000000075,
+    "end": 1124.0000000000075,
+    "speech_fraction": 1.0,
+    "voice_similarities": {
+      "Target_Speaker": 0.130538672208786,
+      "Opening_officer_reference": 0.0627458393573761
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.06779283285140991,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1123.2000000000075,
+    "end": 1124.4000000000076,
+    "speech_fraction": 1.0,
+    "voice_similarities": {
+      "Target_Speaker": 0.1399974375963211,
+      "Opening_officer_reference": 0.10519345849752426
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.034803979098796844,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1123.6000000000076,
+    "end": 1124.8000000000077,
+    "speech_fraction": 1.0,
+    "voice_similarities": {
+      "Target_Speaker": 0.09875760227441788,
+      "Opening_officer_reference": 0.14112232625484467
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.04236472398042679,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1124.0000000000077,
+    "end": 1125.2000000000078,
+    "speech_fraction": 1.0,
+    "voice_similarities": {
+      "Target_Speaker": 0.08256599307060242,
+      "Opening_officer_reference": 0.12807808816432953
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.04551209509372711,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1124.4000000000078,
+    "end": 1125.6000000000079,
+    "speech_fraction": 1.0,
+    "voice_similarities": {
+      "Target_Speaker": 0.040806230157613754,
+      "Opening_officer_reference": 0.02133353240787983
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.019472697749733925,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1124.800000000008,
+    "end": 1126.000000000008,
+    "speech_fraction": 1.0,
+    "voice_similarities": {
+      "Target_Speaker": 0.04321175068616867,
+      "Opening_officer_reference": 0.1883976012468338
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.14518585056066513,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1125.200000000008,
+    "end": 1126.400000000008,
+    "speech_fraction": 1.0,
+    "voice_similarities": {
+      "Target_Speaker": 0.077337846159935,
+      "Opening_officer_reference": 0.21891553699970245
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.14157769083976746,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1125.600000000008,
+    "end": 1126.8000000000081,
+    "speech_fraction": 0.9733333333265752,
+    "voice_similarities": {
+      "Target_Speaker": 0.040017422288656235,
+      "Opening_officer_reference": 0.17717245221138
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.13715502992272377,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1126.0000000000082,
+    "end": 1127.2000000000082,
+    "speech_fraction": 0.6399999999931788,
+    "voice_similarities": {
+      "Target_Speaker": -0.027198053896427155,
+      "Opening_officer_reference": 0.14910076558589935
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.1762988194823265,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1127.6000000000085,
+    "end": 1128.8000000000086,
+    "speech_fraction": 0.5866666666666035,
+    "voice_similarities": {
+      "Target_Speaker": 0.05637383460998535,
+      "Opening_officer_reference": 0.19908732175827026
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.1427134871482849,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1128.0000000000086,
+    "end": 1129.2000000000087,
+    "speech_fraction": 0.6133333333405967,
+    "voice_similarities": {
+      "Target_Speaker": 0.017090998589992523,
+      "Opening_officer_reference": 0.10111129283905029
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.08402029424905777,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1128.4000000000087,
+    "end": 1129.6000000000088,
+    "speech_fraction": 0.5066666666594033,
+    "voice_similarities": {
+      "Target_Speaker": 0.025960121303796768,
+      "Opening_officer_reference": 0.05465918406844139
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.028699062764644623,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1130.8000000000093,
+    "end": 1132.0000000000093,
+    "speech_fraction": 0.7866666666743721,
+    "voice_similarities": {
+      "Target_Speaker": 0.09047295898199081,
+      "Opening_officer_reference": -0.03813767433166504
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.12861063331365585,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1131.2000000000094,
+    "end": 1132.4000000000094,
+    "speech_fraction": 1.0,
+    "voice_similarities": {
+      "Target_Speaker": -0.0017681363970041275,
+      "Opening_officer_reference": 0.023086123168468475
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.024854259565472603,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1131.6000000000095,
+    "end": 1132.8000000000095,
+    "speech_fraction": 1.0,
+    "voice_similarities": {
+      "Target_Speaker": -0.10080630332231522,
+      "Opening_officer_reference": 0.008345279842615128
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.10915158316493034,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1132.0000000000095,
+    "end": 1133.2000000000096,
+    "speech_fraction": 1.0,
+    "voice_similarities": {
+      "Target_Speaker": 0.00990184023976326,
+      "Opening_officer_reference": -0.10819306969642639
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.11809490993618965,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1132.4000000000096,
+    "end": 1133.6000000000097,
+    "speech_fraction": 1.0,
+    "voice_similarities": {
+      "Target_Speaker": 0.022045649588108063,
+      "Opening_officer_reference": -0.04526606202125549
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.06731171160936356,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1132.8000000000097,
+    "end": 1134.0000000000098,
+    "speech_fraction": 1.0,
+    "voice_similarities": {
+      "Target_Speaker": -0.06707122921943665,
+      "Opening_officer_reference": -0.007142387330532074
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.05992884188890457,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1133.2000000000098,
+    "end": 1134.4000000000099,
+    "speech_fraction": 1.0,
+    "voice_similarities": {
+      "Target_Speaker": -0.07435107976198196,
+      "Opening_officer_reference": 0.1840481162071228
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.25839919596910477,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1133.60000000001,
+    "end": 1134.80000000001,
+    "speech_fraction": 1.0,
+    "voice_similarities": {
+      "Target_Speaker": -0.09240619093179703,
+      "Opening_officer_reference": 0.24633106589317322
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.33873725682497025,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1134.00000000001,
+    "end": 1135.20000000001,
+    "speech_fraction": 1.0,
+    "voice_similarities": {
+      "Target_Speaker": 0.051005370914936066,
+      "Opening_officer_reference": 0.16287142038345337
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.1118660494685173,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1134.40000000001,
+    "end": 1135.6000000000101,
+    "speech_fraction": 1.0,
+    "voice_similarities": {
+      "Target_Speaker": 0.1692211627960205,
+      "Opening_officer_reference": 0.1026277095079422
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.06659345328807831,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1134.8000000000102,
+    "end": 1136.0000000000102,
+    "speech_fraction": 1.0,
+    "voice_similarities": {
+      "Target_Speaker": 0.14711439609527588,
+      "Opening_officer_reference": 0.06416917592287064
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.08294522017240524,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1135.2000000000103,
+    "end": 1136.4000000000103,
+    "speech_fraction": 0.7599999999914735,
+    "voice_similarities": {
+      "Target_Speaker": 0.05795789510011673,
+      "Opening_officer_reference": 0.021995127201080322
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.03596276789903641,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1136.4000000000106,
+    "end": 1137.6000000000106,
+    "speech_fraction": 0.520000000008716,
+    "voice_similarities": {
+      "Target_Speaker": 0.01951490342617035,
+      "Opening_officer_reference": 0.22003264725208282
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.20051774382591248,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1136.8000000000106,
+    "end": 1138.0000000000107,
+    "speech_fraction": 0.8533333333421125,
+    "voice_similarities": {
+      "Target_Speaker": -0.01286716852337122,
+      "Opening_officer_reference": 0.19582486152648926
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.20869203004986048,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1137.2000000000107,
+    "end": 1138.4000000000108,
+    "speech_fraction": 1.0,
+    "voice_similarities": {
+      "Target_Speaker": -0.004306413233280182,
+      "Opening_officer_reference": 0.21712999045848846
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.22143640369176865,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1137.6000000000108,
+    "end": 1138.8000000000109,
+    "speech_fraction": 1.0,
+    "voice_similarities": {
+      "Target_Speaker": -0.07094323635101318,
+      "Opening_officer_reference": 0.026766421273350716
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.0977096576243639,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1138.000000000011,
+    "end": 1139.200000000011,
+    "speech_fraction": 1.0,
+    "voice_similarities": {
+      "Target_Speaker": 0.01671619713306427,
+      "Opening_officer_reference": 0.06044836714863777
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.0437321700155735,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1138.400000000011,
+    "end": 1139.600000000011,
+    "speech_fraction": 1.0,
+    "voice_similarities": {
+      "Target_Speaker": -0.15420585870742798,
+      "Opening_officer_reference": 0.25970137119293213
+    },
+    "hypothesis": "Opening_officer_reference",
+    "margin": 0.4139072299003601,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1138.800000000011,
+    "end": 1140.0000000000111,
+    "speech_fraction": 1.0,
+    "voice_similarities": {
+      "Target_Speaker": -0.018914490938186646,
+      "Opening_officer_reference": 0.2172260582447052
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.23614054918289185,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1139.2000000000112,
+    "end": 1140.4000000000112,
+    "speech_fraction": 0.7333333333239226,
+    "voice_similarities": {
+      "Target_Speaker": 0.035231612622737885,
+      "Opening_officer_reference": 0.016417698934674263
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.01881391368806362,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1140.4000000000115,
+    "end": 1141.6000000000115,
+    "speech_fraction": 0.7600000000094739,
+    "voice_similarities": {
+      "Target_Speaker": 0.15471294522285461,
+      "Opening_officer_reference": 0.17598161101341248
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.02126866579055786,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1140.8000000000116,
+    "end": 1142.0000000000116,
+    "speech_fraction": 1.0,
+    "voice_similarities": {
+      "Target_Speaker": 0.12447075545787811,
+      "Opening_officer_reference": 0.2543576955795288
+    },
+    "hypothesis": "Opening_officer_reference",
+    "margin": 0.1298869401216507,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1141.2000000000116,
+    "end": 1142.4000000000117,
+    "speech_fraction": 1.0,
+    "voice_similarities": {
+      "Target_Speaker": 0.1393822282552719,
+      "Opening_officer_reference": 0.2380027174949646
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.09862048923969269,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1141.6000000000117,
+    "end": 1142.8000000000118,
+    "speech_fraction": 1.0,
+    "voice_similarities": {
+      "Target_Speaker": 0.10527227818965912,
+      "Opening_officer_reference": 0.21178705990314484
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.10651478171348572,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1142.0000000000118,
+    "end": 1143.2000000000119,
+    "speech_fraction": 1.0,
+    "voice_similarities": {
+      "Target_Speaker": 0.19660510122776031,
+      "Opening_officer_reference": 0.16626226902008057
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.03034283220767975,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1142.400000000012,
+    "end": 1143.600000000012,
+    "speech_fraction": 1.0,
+    "voice_similarities": {
+      "Target_Speaker": 0.08826640248298645,
+      "Opening_officer_reference": 0.06945200264453888
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.01881439983844757,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1142.800000000012,
+    "end": 1144.000000000012,
+    "speech_fraction": 1.0,
+    "voice_similarities": {
+      "Target_Speaker": 0.09175334870815277,
+      "Opening_officer_reference": 0.1704338788986206
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.07868053019046783,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1143.200000000012,
+    "end": 1144.4000000000121,
+    "speech_fraction": 1.0,
+    "voice_similarities": {
+      "Target_Speaker": 0.12725937366485596,
+      "Opening_officer_reference": 0.1210474893450737
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.006211884319782257,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1143.6000000000122,
+    "end": 1144.8000000000122,
+    "speech_fraction": 1.0,
+    "voice_similarities": {
+      "Target_Speaker": 0.21782270073890686,
+      "Opening_officer_reference": 0.1847657561302185
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.033056944608688354,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1144.0000000000123,
+    "end": 1145.2000000000123,
+    "speech_fraction": 1.0,
+    "voice_similarities": {
+      "Target_Speaker": 0.12769830226898193,
+      "Opening_officer_reference": 0.14014378190040588
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.01244547963142395,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1144.4000000000124,
+    "end": 1145.6000000000124,
+    "speech_fraction": 1.0,
+    "voice_similarities": {
+      "Target_Speaker": -0.01729016751050949,
+      "Opening_officer_reference": 0.3022400438785553
+    },
+    "hypothesis": "Opening_officer_reference",
+    "margin": 0.3195302113890648,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1144.8000000000125,
+    "end": 1146.0000000000125,
+    "speech_fraction": 1.0,
+    "voice_similarities": {
+      "Target_Speaker": -0.048240527510643005,
+      "Opening_officer_reference": 0.35960936546325684
+    },
+    "hypothesis": "Opening_officer_reference",
+    "margin": 0.40784989297389984,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1145.2000000000126,
+    "end": 1146.4000000000126,
+    "speech_fraction": 1.0,
+    "voice_similarities": {
+      "Target_Speaker": -0.0003504641354084015,
+      "Opening_officer_reference": 0.2327403724193573
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.2330908365547657,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1145.6000000000126,
+    "end": 1146.8000000000127,
+    "speech_fraction": 1.0,
+    "voice_similarities": {
+      "Target_Speaker": 0.03968106210231781,
+      "Opening_officer_reference": 0.09194061905145645
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.05225955694913864,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1146.0000000000127,
+    "end": 1147.2000000000128,
+    "speech_fraction": 1.0,
+    "voice_similarities": {
+      "Target_Speaker": 0.07804964482784271,
+      "Opening_officer_reference": 0.10559020936489105
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.02754056453704834,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1146.4000000000128,
+    "end": 1147.6000000000129,
+    "speech_fraction": 1.0,
+    "voice_similarities": {
+      "Target_Speaker": 0.09914572536945343,
+      "Opening_officer_reference": 0.132816880941391
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.03367115557193756,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1146.800000000013,
+    "end": 1148.000000000013,
+    "speech_fraction": 1.0,
+    "voice_similarities": {
+      "Target_Speaker": 0.11096656322479248,
+      "Opening_officer_reference": 0.006870720535516739
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.10409584268927574,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1147.200000000013,
+    "end": 1148.400000000013,
+    "speech_fraction": 1.0,
+    "voice_similarities": {
+      "Target_Speaker": 0.10414577275514603,
+      "Opening_officer_reference": 0.09602323174476624
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.008122541010379791,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1147.600000000013,
+    "end": 1148.8000000000131,
+    "speech_fraction": 0.8799999999890102,
+    "voice_similarities": {
+      "Target_Speaker": 0.17939668893814087,
+      "Opening_officer_reference": 0.08412662893533707
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.0952700600028038,
+    "independent_profile_counts": {}
+  },
+  {
+    "start": 1148.0000000000132,
+    "end": 1149.2000000000132,
+    "speech_fraction": 0.5466666666556138,
+    "voice_similarities": {
+      "Target_Speaker": 0.045817404985427856,
+      "Opening_officer_reference": 0.1528310924768448
+    },
+    "hypothesis": "Uncertain",
+    "margin": 0.10701368749141693,
+    "independent_profile_counts": {}
+  }
+]

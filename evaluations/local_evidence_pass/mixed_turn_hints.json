@@ -1,0 +1,23 @@
+{
+  "source_span": [
+    1090.653,
+    1094.219
+  ],
+  "whole_sentence_assignment_not_safe": true,
+  "localized_target_hints": [
+    {
+      "start": 1092.8000000000006,
+      "end": 1094.0000000000007,
+      "speech_fraction": 1.0,
+      "voice_similarities": {
+        "Target_Speaker": 0.4000476598739624,
+        "Opening_officer_reference": -0.021518416702747345
+      },
+      "hypothesis": "Target_Speaker",
+      "margin": 0.42156607657670975,
+      "independent_profile_counts": {}
+    }
+  ],
+  "turn_boundary_verified": false,
+  "does_not_correct_words": true
+}

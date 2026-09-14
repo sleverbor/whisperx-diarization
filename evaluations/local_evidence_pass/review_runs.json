@@ -1,0 +1,1830 @@
+[
+  {
+    "start": 1090.653,
+    "end": 1095.437,
+    "speaker_hypothesis": "Uncertain",
+    "words": [
+      {
+        "start": 1090.653,
+        "end": 1090.7730000000001,
+        "word": "My",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 2
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1090.813,
+        "end": 1091.314,
+        "word": "behavior",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1091.334,
+        "end": 1091.414,
+        "word": "is",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1091.4740000000002,
+        "end": 1091.6750000000002,
+        "word": "kind",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1091.6950000000002,
+        "end": 1091.795,
+        "word": "of",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1091.835,
+        "end": 1091.9550000000002,
+        "word": "a",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1091.9750000000001,
+        "end": 1092.576,
+        "word": "reflection",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1092.596,
+        "end": 1092.6560000000002,
+        "word": "of",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1092.7160000000001,
+        "end": 1092.997,
+        "word": "theirs,",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 2,
+          "Target_Speaker": 1
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1093.037,
+        "end": 1093.237,
+        "word": "so",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 2,
+          "Target_Speaker": 1
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1093.257,
+        "end": 1093.277,
+        "word": "I",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 2,
+          "Target_Speaker": 1
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1093.297,
+        "end": 1093.6380000000001,
+        "word": "wouldn't",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 2,
+          "Target_Speaker": 1
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1093.718,
+        "end": 1093.979,
+        "word": "agree",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Target_Speaker": 1,
+          "Uncertain": 2
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1093.999,
+        "end": 1094.219,
+        "word": "more.",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1094.681,
+        "end": 1094.783,
+        "word": "I",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1094.804,
+        "end": 1095.09,
+        "word": "couldn't",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1095.11,
+        "end": 1095.273,
+        "word": "agree",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1095.294,
+        "end": 1095.437,
+        "word": "more.",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 2
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      }
+    ],
+    "text": "My behavior is kind of a reflection of theirs, so I wouldn't agree more. I couldn't agree more.",
+    "review_required": true
+  },
+  {
+    "start": 1098.202,
+    "end": 1099.216,
+    "speaker_hypothesis": "Uncertain",
+    "words": [
+      {
+        "start": 1098.202,
+        "end": 1098.486,
+        "word": "Couldn't",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 1
+        },
+        "speech_fraction": 0.615702479338944,
+        "review_required": true
+      },
+      {
+        "start": 1098.506,
+        "end": 1098.689,
+        "word": "agree",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 2
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1098.709,
+        "end": 1098.729,
+        "word": "a",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 2
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1098.75,
+        "end": 1099.013,
+        "word": "syllable",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1099.033,
+        "end": 1099.216,
+        "word": "more.",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      }
+    ],
+    "text": "Couldn't agree a syllable more.",
+    "review_required": true
+  },
+  {
+    "start": 1102.56,
+    "end": 1103.863,
+    "speaker_hypothesis": "Uncertain",
+    "words": [
+      {
+        "start": 1102.56,
+        "end": 1102.66,
+        "word": "It's",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 2
+        },
+        "speech_fraction": 0.8266666666669497,
+        "review_required": true
+      },
+      {
+        "start": 1102.8,
+        "end": 1103.242,
+        "word": "fun",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1103.543,
+        "end": 1103.863,
+        "word": "to",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 2
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      }
+    ],
+    "text": "It's fun to",
+    "review_required": true
+  },
+  {
+    "start": 1104.846,
+    "end": 1109.419,
+    "speaker_hypothesis": "Uncertain",
+    "words": [
+      {
+        "start": 1104.846,
+        "end": 1105.267,
+        "word": "get",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 2
+        },
+        "speech_fraction": 0.7842190016102364,
+        "review_required": true
+      },
+      {
+        "start": 1105.368,
+        "end": 1105.528,
+        "word": "them",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1105.628,
+        "end": 1105.749,
+        "word": "off.",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 0.872274143302333,
+        "review_required": true
+      },
+      {
+        "start": 1106.09,
+        "end": 1106.25,
+        "word": "No,",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 0.7944444444441953,
+        "review_required": true
+      },
+      {
+        "start": 1106.27,
+        "end": 1106.491,
+        "word": "that's",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1106.511,
+        "end": 1106.651,
+        "word": "not",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1106.671,
+        "end": 1106.731,
+        "word": "the",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1106.832,
+        "end": 1107.213,
+        "word": "problem.",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1107.774,
+        "end": 1107.955,
+        "word": "They",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 0.6902887139108081,
+        "review_required": true
+      },
+      {
+        "start": 1107.995,
+        "end": 1108.296,
+        "word": "pee.",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1108.617,
+        "end": 1108.697,
+        "word": "It",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1108.737,
+        "end": 1108.898,
+        "word": "just",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1108.938,
+        "end": 1109.138,
+        "word": "got",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1109.158,
+        "end": 1109.419,
+        "word": "stuck.",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 2
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      }
+    ],
+    "text": "get them off. No, that's not the problem. They pee. It just got stuck.",
+    "review_required": true
+  },
+  {
+    "start": 1112.3,
+    "end": 1115.79,
+    "speaker_hypothesis": "Uncertain",
+    "words": [
+      {
+        "start": 1112.3,
+        "end": 1112.34,
+        "word": "I",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {},
+        "speech_fraction": 0.0,
+        "review_required": true
+      },
+      {
+        "start": 1112.36,
+        "end": 1112.52,
+        "word": "don't",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 1
+        },
+        "speech_fraction": 0.0,
+        "review_required": true
+      },
+      {
+        "start": 1112.561,
+        "end": 1112.701,
+        "word": "want",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 1
+        },
+        "speech_fraction": 0.23823529411742086,
+        "review_required": true
+      },
+      {
+        "start": 1112.721,
+        "end": 1112.761,
+        "word": "to",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 1
+        },
+        "speech_fraction": 0.5874999999999052,
+        "review_required": true
+      },
+      {
+        "start": 1112.781,
+        "end": 1112.922,
+        "word": "mess",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 2
+        },
+        "speech_fraction": 0.8856304985337263,
+        "review_required": true
+      },
+      {
+        "start": 1112.962,
+        "end": 1113.142,
+        "word": "with",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 2
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1113.162,
+        "end": 1113.3029999999999,
+        "word": "your",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1113.323,
+        "end": 1113.604,
+        "word": "cuffs",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1113.644,
+        "end": 1113.764,
+        "word": "or",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1113.784,
+        "end": 1113.965,
+        "word": "mess",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1113.985,
+        "end": 1114.125,
+        "word": "them",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1114.185,
+        "end": 1114.346,
+        "word": "up",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1114.366,
+        "end": 1114.406,
+        "word": "or",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1114.466,
+        "end": 1114.948,
+        "word": "anything,",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1114.968,
+        "end": 1115.168,
+        "word": "but",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 0.9500000000005684,
+        "review_required": true
+      },
+      {
+        "start": 1115.489,
+        "end": 1115.79,
+        "word": "let's",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 1
+        },
+        "speech_fraction": 0.7025948103797715,
+        "review_required": true
+      }
+    ],
+    "text": "I don't want to mess with your cuffs or mess them up or anything, but let's",
+    "review_required": true
+  },
+  {
+    "start": 1118.157,
+    "end": 1118.679,
+    "speaker_hypothesis": "Uncertain",
+    "words": [
+      {
+        "start": 1118.157,
+        "end": 1118.418,
+        "word": "have",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {},
+        "speech_fraction": 0.0,
+        "review_required": true
+      },
+      {
+        "start": 1118.438,
+        "end": 1118.458,
+        "word": "a",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {},
+        "speech_fraction": 0.0,
+        "review_required": true
+      },
+      {
+        "start": 1118.498,
+        "end": 1118.679,
+        "word": "look.",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {},
+        "speech_fraction": 0.0,
+        "review_required": true
+      }
+    ],
+    "text": "have a look.",
+    "review_required": true
+  },
+  {
+    "start": 1124.16,
+    "end": 1126.618,
+    "speaker_hypothesis": "Uncertain",
+    "words": [
+      {
+        "start": 1124.16,
+        "end": 1124.341,
+        "word": "We're",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1124.422,
+        "end": 1124.583,
+        "word": "not",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1124.603,
+        "end": 1124.744,
+        "word": "trying",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1124.764,
+        "end": 1124.926,
+        "word": "to",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1124.946,
+        "end": 1125.147,
+        "word": "tie",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1125.167,
+        "end": 1125.409,
+        "word": "someone,",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1125.429,
+        "end": 1125.55,
+        "word": "we're",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1125.57,
+        "end": 1125.732,
+        "word": "trying",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1125.772,
+        "end": 1125.873,
+        "word": "to",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1125.893,
+        "end": 1125.953,
+        "word": "get",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1125.993,
+        "end": 1126.094,
+        "word": "the",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1126.114,
+        "end": 1126.175,
+        "word": "key",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1126.195,
+        "end": 1126.296,
+        "word": "out",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1126.356,
+        "end": 1126.457,
+        "word": "of",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 2
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1126.477,
+        "end": 1126.618,
+        "word": "them.",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 2
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      }
+    ],
+    "text": "We're not trying to tie someone, we're trying to get the key out of them.",
+    "review_required": true
+  },
+  {
+    "start": 1127.9,
+    "end": 1128.317,
+    "speaker_hypothesis": "Uncertain",
+    "words": [
+      {
+        "start": 1127.9,
+        "end": 1128.129,
+        "word": "Oh,",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 2
+        },
+        "speech_fraction": 0.49650349650331116,
+        "review_required": true
+      },
+      {
+        "start": 1128.15,
+        "end": 1128.317,
+        "word": "sorry.",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 2
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      }
+    ],
+    "text": "Oh, sorry.",
+    "review_required": true
+  },
+  {
+    "start": 1130.872,
+    "end": 1135.77,
+    "speaker_hypothesis": "Uncertain",
+    "words": [
+      {
+        "start": 1130.872,
+        "end": 1130.953,
+        "word": "I",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 1
+        },
+        "speech_fraction": 0.0,
+        "review_required": true
+      },
+      {
+        "start": 1130.993,
+        "end": 1131.173,
+        "word": "might",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 1
+        },
+        "speech_fraction": 0.5710526315787852,
+        "review_required": true
+      },
+      {
+        "start": 1131.214,
+        "end": 1131.414,
+        "word": "need",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 2
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1131.434,
+        "end": 1131.575,
+        "word": "to",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 2
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1131.655,
+        "end": 1131.736,
+        "word": "get",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1131.756,
+        "end": 1131.796,
+        "word": "a",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1131.836,
+        "end": 1131.9160000000002,
+        "word": "new",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1131.9560000000001,
+        "end": 1132.1770000000001,
+        "word": "key,",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1132.217,
+        "end": 1132.358,
+        "word": "there",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1132.3780000000002,
+        "end": 1132.518,
+        "word": "might",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1132.579,
+        "end": 1132.6390000000001,
+        "word": "be",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1132.679,
+        "end": 1133.121,
+        "word": "something",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1133.141,
+        "end": 1133.221,
+        "word": "off",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1133.241,
+        "end": 1133.3210000000001,
+        "word": "with",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1133.361,
+        "end": 1133.5220000000002,
+        "word": "this",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1133.5420000000001,
+        "end": 1133.703,
+        "word": "one,",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1133.723,
+        "end": 1133.964,
+        "word": "because",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1133.9840000000002,
+        "end": 1134.0040000000001,
+        "word": "I",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1134.0240000000001,
+        "end": 1134.124,
+        "word": "just",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1134.144,
+        "end": 1134.345,
+        "word": "had",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1134.385,
+        "end": 1134.4450000000002,
+        "word": "an",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1134.4660000000001,
+        "end": 1134.7060000000001,
+        "word": "issue",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1134.726,
+        "end": 1134.827,
+        "word": "with",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1134.847,
+        "end": 1134.987,
+        "word": "that",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1135.048,
+        "end": 1135.268,
+        "word": "fella",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1135.329,
+        "end": 1135.429,
+        "word": "I",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1135.449,
+        "end": 1135.65,
+        "word": "got",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1135.71,
+        "end": 1135.77,
+        "word": "in.",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 2
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      }
+    ],
+    "text": "I might need to get a new key, there might be something off with this one, because I just had an issue with that fella I got in.",
+    "review_required": true
+  },
+  {
+    "start": 1136.912,
+    "end": 1139.8310000000001,
+    "speaker_hypothesis": "Uncertain",
+    "words": [
+      {
+        "start": 1136.912,
+        "end": 1137.093,
+        "word": "Put",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 2
+        },
+        "speech_fraction": 0.5695538057741514,
+        "review_required": true
+      },
+      {
+        "start": 1137.113,
+        "end": 1137.2340000000002,
+        "word": "this",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 2
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1137.355,
+        "end": 1137.496,
+        "word": "arm",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1137.576,
+        "end": 1137.6770000000001,
+        "word": "on",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1137.757,
+        "end": 1137.858,
+        "word": "the",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1137.938,
+        "end": 1138.281,
+        "word": "wall",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1138.3010000000002,
+        "end": 1138.3410000000001,
+        "word": "in",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1138.422,
+        "end": 1138.643,
+        "word": "front",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 2,
+          "Opening_officer_reference": 1
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1138.663,
+        "end": 1138.704,
+        "word": "of",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 2,
+          "Opening_officer_reference": 1
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1138.7240000000002,
+        "end": 1138.804,
+        "word": "you",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 2,
+          "Opening_officer_reference": 1
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1138.865,
+        "end": 1138.9450000000002,
+        "word": "and",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 2,
+          "Opening_officer_reference": 1
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1138.9650000000001,
+        "end": 1139.066,
+        "word": "that",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 2,
+          "Opening_officer_reference": 1
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1139.086,
+        "end": 1139.267,
+        "word": "could",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 2,
+          "Opening_officer_reference": 1
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1139.368,
+        "end": 1139.448,
+        "word": "have",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Opening_officer_reference": 1,
+          "Uncertain": 2
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1139.469,
+        "end": 1139.529,
+        "word": "cut",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Opening_officer_reference": 1,
+          "Uncertain": 2
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1139.549,
+        "end": 1139.6100000000001,
+        "word": "him",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Opening_officer_reference": 1,
+          "Uncertain": 2
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1139.63,
+        "end": 1139.8310000000001,
+        "word": "off.",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 2
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      }
+    ],
+    "text": "Put this arm on the wall in front of you and that could have cut him off.",
+    "review_required": true
+  },
+  {
+    "start": 1140.671,
+    "end": 1144.875,
+    "speaker_hypothesis": "Uncertain",
+    "words": [
+      {
+        "start": 1140.671,
+        "end": 1140.8310000000001,
+        "word": "That",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 1
+        },
+        "speech_fraction": 0.6750000000000158,
+        "review_required": true
+      },
+      {
+        "start": 1140.851,
+        "end": 1141.0910000000001,
+        "word": "guy",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 1,
+          "Opening_officer_reference": 1
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1141.151,
+        "end": 1141.172,
+        "word": "I",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 1,
+          "Opening_officer_reference": 1
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1141.192,
+        "end": 1141.332,
+        "word": "just",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 2,
+          "Opening_officer_reference": 1
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1141.372,
+        "end": 1141.672,
+        "word": "searched",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 2,
+          "Opening_officer_reference": 1
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1141.712,
+        "end": 1141.7920000000001,
+        "word": "in",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Opening_officer_reference": 1,
+          "Uncertain": 2
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1141.832,
+        "end": 1141.912,
+        "word": "that",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Opening_officer_reference": 1,
+          "Uncertain": 2
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1141.932,
+        "end": 1142.092,
+        "word": "had",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1142.132,
+        "end": 1142.213,
+        "word": "the",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1142.2530000000002,
+        "end": 1142.7730000000001,
+        "word": "shackles,",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1142.873,
+        "end": 1142.933,
+        "word": "it",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1142.953,
+        "end": 1143.093,
+        "word": "had",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1143.113,
+        "end": 1143.133,
+        "word": "a",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1143.153,
+        "end": 1143.414,
+        "word": "little",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1143.434,
+        "end": 1143.574,
+        "word": "bit",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1143.594,
+        "end": 1143.634,
+        "word": "of",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1143.674,
+        "end": 1144.255,
+        "word": "difficulty",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1144.595,
+        "end": 1144.875,
+        "word": "opening",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 2,
+          "Opening_officer_reference": 1
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      }
+    ],
+    "text": "That guy I just searched in that had the shackles, it had a little bit of difficulty opening",
+    "review_required": true
+  },
+  {
+    "start": 1144.9550000000002,
+    "end": 1145.576,
+    "speaker_hypothesis": "Opening_officer_reference",
+    "words": [
+      {
+        "start": 1144.9550000000002,
+        "end": 1145.135,
+        "word": "up",
+        "speaker_hypothesis": "Opening_officer_reference",
+        "voice_window_votes": {
+          "Uncertain": 1,
+          "Opening_officer_reference": 2
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1145.176,
+        "end": 1145.296,
+        "word": "one",
+        "speaker_hypothesis": "Opening_officer_reference",
+        "voice_window_votes": {
+          "Opening_officer_reference": 2,
+          "Uncertain": 1
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1145.336,
+        "end": 1145.376,
+        "word": "of",
+        "speaker_hypothesis": "Opening_officer_reference",
+        "voice_window_votes": {
+          "Opening_officer_reference": 2,
+          "Uncertain": 1
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1145.4360000000001,
+        "end": 1145.576,
+        "word": "the",
+        "speaker_hypothesis": "Opening_officer_reference",
+        "voice_window_votes": {
+          "Opening_officer_reference": 2,
+          "Uncertain": 1
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      }
+    ],
+    "text": "up one of the",
+    "review_required": true
+  },
+  {
+    "start": 1145.9560000000001,
+    "end": 1148.3980000000001,
+    "speaker_hypothesis": "Uncertain",
+    "words": [
+      {
+        "start": 1145.9560000000001,
+        "end": 1146.337,
+        "word": "shackles.",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1146.939,
+        "end": 1146.959,
+        "word": "I",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1146.98,
+        "end": 1147.121,
+        "word": "think",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1147.202,
+        "end": 1147.2630000000001,
+        "word": "I",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1147.304,
+        "end": 1147.425,
+        "word": "got",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1147.4660000000001,
+        "end": 1147.567,
+        "word": "to",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1147.587,
+        "end": 1147.689,
+        "word": "get",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1147.709,
+        "end": 1147.729,
+        "word": "a",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1147.77,
+        "end": 1147.911,
+        "word": "new",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1147.952,
+        "end": 1148.175,
+        "word": "key",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      },
+      {
+        "start": 1148.1950000000002,
+        "end": 1148.3980000000001,
+        "word": "then.",
+        "speaker_hypothesis": "Uncertain",
+        "voice_window_votes": {
+          "Uncertain": 3
+        },
+        "speech_fraction": 1.0,
+        "review_required": true
+      }
+    ],
+    "text": "shackles. I think I got to get a new key then.",
+    "review_required": true
+  }
+]

@@ -1,0 +1,61 @@
+{
+  "SPEAKER_02": {
+    "samples": [
+      {
+        "start": 1090.50346875,
+        "end": 1094.31721875,
+        "speaker": "SPEAKER_02"
+      }
+    ],
+    "leave_one_out_similarities": [],
+    "known_reference_similarities": {
+      "Target_Speaker": 0.2679786682128906,
+      "Opening_officer_reference": 0.1651202142238617
+    },
+    "accepted_for_experiment": false
+  },
+  "SPEAKER_00": {
+    "samples": [
+      {
+        "start": 1112.30596875,
+        "end": 1115.84971875,
+        "speaker": "SPEAKER_00"
+      }
+    ],
+    "leave_one_out_similarities": [],
+    "known_reference_similarities": {
+      "Target_Speaker": 0.10769270360469818,
+      "Opening_officer_reference": 0.1621362417936325
+    },
+    "accepted_for_experiment": false
+  },
+  "SPEAKER_01": {
+    "samples": [
+      {
+        "start": 1133.72034375,
+        "end": 1135.91409375,
+        "speaker": "SPEAKER_01"
+      },
+      {
+        "start": 1136.97721875,
+        "end": 1139.94721875,
+        "speaker": "SPEAKER_01"
+      },
+      {
+        "start": 1140.57159375,
+        "end": 1149.97096875,
+        "speaker": "SPEAKER_01"
+      }
+    ],
+    "leave_one_out_similarities": [
+      0.3847290575504303,
+      0.457228422164917,
+      0.5652096271514893
+    ],
+    "known_reference_similarities": {
+      "Target_Speaker": 0.16422298550605774,
+      "Opening_officer_reference": 0.22332695126533508
+    },
+    "accepted_for_experiment": false
+  }
+}
