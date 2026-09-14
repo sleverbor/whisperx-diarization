@@ -1,0 +1,173 @@
+{
+  "intervals": [
+    {
+      "review_interval": "key_reflection",
+      "start": 1087.11,
+      "end": 1092.99,
+      "frames_with_confident_face": 2,
+      "estimated_sampled_frames": 24,
+      "mouth_geometry": {
+        "FACE_03": {
+          "observations": 2,
+          "median_aperture": 0.06736725196242332,
+          "aperture_range": 0.010433532297611237
+        },
+        "FACE_02": {
+          "observations": 11,
+          "median_aperture": 0.09860053658485413,
+          "aperture_range": 0.21390924975275993
+        },
+        "FACE_01": {
+          "observations": 5,
+          "median_aperture": 0.07697126269340515,
+          "aperture_range": 0.028556235134601593
+        }
+      },
+      "speaker_identity_inferred": false
+    },
+    {
+      "review_interval": "target_agreement",
+      "start": 1093.15,
+      "end": 1095.53,
+      "frames_with_confident_face": 3,
+      "estimated_sampled_frames": 10,
+      "mouth_geometry": {
+        "FACE_03": {
+          "observations": 1,
+          "median_aperture": 0.08329720795154572,
+          "aperture_range": 0.0
+        },
+        "FACE_01": {
+          "observations": 1,
+          "median_aperture": 0.06426610797643661,
+          "aperture_range": 0.0
+        },
+        "FACE_05": {
+          "observations": 1,
+          "median_aperture": 0.03911193832755089,
+          "aperture_range": 0.0
+        },
+        "FACE_04": {
+          "observations": 1,
+          "median_aperture": 0.12448318302631378,
+          "aperture_range": 0.0
+        },
+        "FACE_02": {
+          "observations": 7,
+          "median_aperture": 0.08779389411211014,
+          "aperture_range": 0.09098837897181511
+        }
+      },
+      "speaker_identity_inferred": false
+    },
+    {
+      "review_interval": "target_long_agreement",
+      "start": 1098.21,
+      "end": 1099.38,
+      "frames_with_confident_face": 2,
+      "estimated_sampled_frames": 5,
+      "mouth_geometry": {
+        "FACE_03": {
+          "observations": 2,
+          "median_aperture": 0.041463661938905716,
+          "aperture_range": 0.002536371350288391
+        },
+        "FACE_05": {
+          "observations": 3,
+          "median_aperture": 0.01290760189294815,
+          "aperture_range": 0.024305342230945826
+        }
+      },
+      "speaker_identity_inferred": false
+    },
+    {
+      "review_interval": "key_stuck_key",
+      "start": 1103.15,
+      "end": 1109.43,
+      "frames_with_confident_face": 20,
+      "estimated_sampled_frames": 25,
+      "mouth_geometry": {
+        "FACE_05": {
+          "observations": 25,
+          "median_aperture": 0.07646588981151581,
+          "aperture_range": 0.0783724132925272
+        }
+      },
+      "speaker_identity_inferred": false
+    },
+    {
+      "review_interval": "original_cuff_offer",
+      "start": 1112.305,
+      "end": 1115.85,
+      "frames_with_confident_face": 5,
+      "estimated_sampled_frames": 14,
+      "mouth_geometry": {
+        "FACE_05": {
+          "observations": 5,
+          "median_aperture": 0.12553498148918152,
+          "aperture_range": 0.07353630661964417
+        }
+      },
+      "speaker_identity_inferred": false
+    },
+    {
+      "review_interval": "target_space",
+      "start": 1121.94,
+      "end": 1123.96,
+      "frames_with_confident_face": 0,
+      "estimated_sampled_frames": 8,
+      "mouth_geometry": {
+        "FACE_01": {
+          "observations": 4,
+          "median_aperture": 0.12467516213655472,
+          "aperture_range": 0.1271655410528183
+        }
+      },
+      "speaker_identity_inferred": false
+    },
+    {
+      "review_interval": "original_reply",
+      "start": 1124.16,
+      "end": 1126.24,
+      "frames_with_confident_face": 0,
+      "estimated_sampled_frames": 8,
+      "mouth_geometry": {
+        "FACE_01": {
+          "observations": 1,
+          "median_aperture": 0.2035648673772812,
+          "aperture_range": 0.0
+        }
+      },
+      "speaker_identity_inferred": false
+    },
+    {
+      "review_interval": "key_new_key",
+      "start": 1130.92,
+      "end": 1139.84,
+      "frames_with_confident_face": 0,
+      "estimated_sampled_frames": 36,
+      "mouth_geometry": {
+        "FACE_06": {
+          "observations": 1,
+          "median_aperture": 0.31061822175979614,
+          "aperture_range": 0.0
+        },
+        "FACE_01": {
+          "observations": 2,
+          "median_aperture": 0.0760149359703064,
+          "aperture_range": 0.03990881145000458
+        }
+      },
+      "speaker_identity_inferred": false
+    }
+  ],
+  "all_face_identity_clusters": 10,
+  "max_target_face_similarity": 0.15172573924064636,
+  "limitations": [
+    "Embedding-only clustering splits the visible key officer across poses",
+    "Original officer occludes the key officer later",
+    "Face presence and estimated aperture do not verify speech",
+    "4 Hz sampling and uncorrected head pose are insufficient for lip reading"
+  ],
+  "promoted_to_resolver": false
+}

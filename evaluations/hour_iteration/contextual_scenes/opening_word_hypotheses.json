@@ -1,0 +1,1066 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.36,
+    "word": " What",
+    "probability": 0.29081496596336365,
+    "window_index": 0
+  },
+  {
+    "start": 0.36,
+    "end": 0.44,
+    "word": " you",
+    "probability": 0.6265032887458801,
+    "window_index": 0
+  },
+  {
+    "start": 0.44,
+    "end": 0.54,
+    "word": " out",
+    "probability": 0.5224125385284424,
+    "window_index": 0
+  },
+  {
+    "start": 0.54,
+    "end": 0.58,
+    "word": " of",
+    "probability": 0.4786774516105652,
+    "window_index": 0
+  },
+  {
+    "start": 0.58,
+    "end": 0.66,
+    "word": " here",
+    "probability": 0.7902734279632568,
+    "window_index": 0
+  },
+  {
+    "start": 0.66,
+    "end": 0.78,
+    "word": " doing,",
+    "probability": 0.8208515048027039,
+    "window_index": 0
+  },
+  {
+    "start": 0.86,
+    "end": 0.94,
+    "word": " man?",
+    "probability": 0.7702638506889343,
+    "window_index": 0
+  },
+  {
+    "start": 2.02,
+    "end": 2.16,
+    "word": " Come",
+    "probability": 0.750843346118927,
+    "window_index": 0
+  },
+  {
+    "start": 2.16,
+    "end": 2.3,
+    "word": " over",
+    "probability": 0.8656057715415955,
+    "window_index": 0
+  },
+  {
+    "start": 2.3,
+    "end": 2.42,
+    "word": " here",
+    "probability": 0.8114411234855652,
+    "window_index": 0
+  },
+  {
+    "start": 2.42,
+    "end": 2.52,
+    "word": " and",
+    "probability": 0.8715402483940125,
+    "window_index": 0
+  },
+  {
+    "start": 2.52,
+    "end": 2.66,
+    "word": " talk",
+    "probability": 0.8163911700248718,
+    "window_index": 0
+  },
+  {
+    "start": 2.66,
+    "end": 2.82,
+    "word": " to",
+    "probability": 0.9035665392875671,
+    "window_index": 0
+  },
+  {
+    "start": 2.82,
+    "end": 2.94,
+    "word": " me.",
+    "probability": 0.9210299253463745,
+    "window_index": 0
+  },
+  {
+    "start": 3.0,
+    "end": 3.0,
+    "word": " Whoa,",
+    "probability": 0.20054060220718384,
+    "window_index": 0
+  },
+  {
+    "start": 3.0,
+    "end": 3.24,
+    "word": " whoa,",
+    "probability": 0.7465882897377014,
+    "window_index": 0
+  },
+  {
+    "start": 3.24,
+    "end": 3.4,
+    "word": " whoa,",
+    "probability": 0.6349791288375854,
+    "window_index": 0
+  },
+  {
+    "start": 3.48,
+    "end": 3.68,
+    "word": " why",
+    "probability": 0.7058013677597046,
+    "window_index": 0
+  },
+  {
+    "start": 3.68,
+    "end": 4.1,
+    "word": " are",
+    "probability": 0.39651596546173096,
+    "window_index": 0
+  },
+  {
+    "start": 4.1,
+    "end": 4.16,
+    "word": " you",
+    "probability": 0.8972228169441223,
+    "window_index": 0
+  },
+  {
+    "start": 4.16,
+    "end": 4.32,
+    "word": " going",
+    "probability": 0.542622983455658,
+    "window_index": 0
+  },
+  {
+    "start": 4.32,
+    "end": 4.44,
+    "word": " to",
+    "probability": 0.8442379832267761,
+    "window_index": 0
+  },
+  {
+    "start": 4.44,
+    "end": 4.62,
+    "word": " touch",
+    "probability": 0.6730822920799255,
+    "window_index": 0
+  },
+  {
+    "start": 4.62,
+    "end": 4.76,
+    "word": " me?",
+    "probability": 0.8890166282653809,
+    "window_index": 0
+  },
+  {
+    "start": 5.259999999999998,
+    "end": 5.539999999999999,
+    "word": " What's",
+    "probability": 0.8103989064693451,
+    "window_index": 0
+  },
+  {
+    "start": 5.539999999999999,
+    "end": 5.82,
+    "word": " going",
+    "probability": 0.7793644070625305,
+    "window_index": 0
+  },
+  {
+    "start": 5.82,
+    "end": 5.94,
+    "word": " on?",
+    "probability": 0.8947532773017883,
+    "window_index": 0
+  },
+  {
+    "start": 5.96,
+    "end": 6.08,
+    "word": " Come",
+    "probability": 0.4956730902194977,
+    "window_index": 0
+  },
+  {
+    "start": 6.08,
+    "end": 6.26,
+    "word": " over",
+    "probability": 0.872219979763031,
+    "window_index": 0
+  },
+  {
+    "start": 6.26,
+    "end": 6.4,
+    "word": " here",
+    "probability": 0.8062250018119812,
+    "window_index": 0
+  },
+  {
+    "start": 6.4,
+    "end": 6.52,
+    "word": " and",
+    "probability": 0.8619232177734375,
+    "window_index": 0
+  },
+  {
+    "start": 6.52,
+    "end": 6.62,
+    "word": " talk",
+    "probability": 0.8044576644897461,
+    "window_index": 0
+  },
+  {
+    "start": 6.62,
+    "end": 6.62,
+    "word": " to",
+    "probability": 0.37173670530319214,
+    "window_index": 0
+  },
+  {
+    "start": 6.62,
+    "end": 6.64,
+    "word": " me.",
+    "probability": 0.8774142265319824,
+    "window_index": 0
+  },
+  {
+    "start": 6.64,
+    "end": 6.84,
+    "word": " You",
+    "probability": 0.6685260534286499,
+    "window_index": 0
+  },
+  {
+    "start": 6.84,
+    "end": 6.94,
+    "word": " are",
+    "probability": 0.5864776372909546,
+    "window_index": 0
+  },
+  {
+    "start": 6.94,
+    "end": 7.06,
+    "word": " on",
+    "probability": 0.8789874315261841,
+    "window_index": 0
+  },
+  {
+    "start": 7.06,
+    "end": 7.3,
+    "word": " private",
+    "probability": 0.7848875522613525,
+    "window_index": 0
+  },
+  {
+    "start": 7.3,
+    "end": 7.74,
+    "word": " property.",
+    "probability": 0.8249409198760986,
+    "window_index": 0
+  },
+  {
+    "start": 7.84,
+    "end": 7.96,
+    "word": " I'm",
+    "probability": 0.8116830289363861,
+    "window_index": 0
+  },
+  {
+    "start": 7.96,
+    "end": 8.08,
+    "word": " not",
+    "probability": 0.8920600414276123,
+    "window_index": 0
+  },
+  {
+    "start": 8.08,
+    "end": 8.2,
+    "word": " going",
+    "probability": 0.6577603220939636,
+    "window_index": 0
+  },
+  {
+    "start": 8.2,
+    "end": 8.24,
+    "word": " to",
+    "probability": 0.892268717288971,
+    "window_index": 0
+  },
+  {
+    "start": 8.24,
+    "end": 8.32,
+    "word": " go",
+    "probability": 0.8743069767951965,
+    "window_index": 0
+  },
+  {
+    "start": 8.32,
+    "end": 8.32,
+    "word": " in",
+    "probability": 0.12552587687969208,
+    "window_index": 0
+  },
+  {
+    "start": 8.32,
+    "end": 8.32,
+    "word": " there.",
+    "probability": 0.6345303058624268,
+    "window_index": 0
+  },
+  {
+    "start": 8.32,
+    "end": 8.4,
+    "word": " You",
+    "probability": 0.8260339498519897,
+    "window_index": 0
+  },
+  {
+    "start": 8.4,
+    "end": 8.54,
+    "word": " are",
+    "probability": 0.8123798966407776,
+    "window_index": 0
+  },
+  {
+    "start": 8.54,
+    "end": 8.68,
+    "word": " on",
+    "probability": 0.8996896147727966,
+    "window_index": 0
+  },
+  {
+    "start": 8.68,
+    "end": 8.98,
+    "word": " private",
+    "probability": 0.8103182911872864,
+    "window_index": 0
+  },
+  {
+    "start": 8.98,
+    "end": 9.34,
+    "word": " property.",
+    "probability": 0.8256005048751831,
+    "window_index": 0
+  },
+  {
+    "start": 9.54,
+    "end": 9.82,
+    "word": " Do",
+    "probability": 0.4345649480819702,
+    "window_index": 0
+  },
+  {
+    "start": 9.82,
+    "end": 10.04,
+    "word": " not",
+    "probability": 0.8964750170707703,
+    "window_index": 0
+  },
+  {
+    "start": 10.04,
+    "end": 10.22,
+    "word": " tell",
+    "probability": 0.8281721472740173,
+    "window_index": 0
+  },
+  {
+    "start": 10.22,
+    "end": 10.34,
+    "word": " me",
+    "probability": 0.8915791511535645,
+    "window_index": 0
+  },
+  {
+    "start": 10.34,
+    "end": 10.48,
+    "word": " what",
+    "probability": 0.8827115893363953,
+    "window_index": 0
+  },
+  {
+    "start": 10.48,
+    "end": 10.6,
+    "word": " you're",
+    "probability": 0.8319048285484314,
+    "window_index": 0
+  },
+  {
+    "start": 10.6,
+    "end": 10.76,
+    "word": " not",
+    "probability": 0.8774798512458801,
+    "window_index": 0
+  },
+  {
+    "start": 10.76,
+    "end": 10.86,
+    "word": " going",
+    "probability": 0.8046626448631287,
+    "window_index": 0
+  },
+  {
+    "start": 10.86,
+    "end": 10.94,
+    "word": " to",
+    "probability": 0.8952890634536743,
+    "window_index": 0
+  },
+  {
+    "start": 10.94,
+    "end": 11.04,
+    "word": " do.",
+    "probability": 0.9119976162910461,
+    "window_index": 0
+  },
+  {
+    "start": 11.06,
+    "end": 11.08,
+    "word": " All",
+    "probability": 0.11553450673818588,
+    "window_index": 0
+  },
+  {
+    "start": 11.08,
+    "end": 11.22,
+    "word": " right.",
+    "probability": 0.8691667318344116,
+    "window_index": 0
+  },
+  {
+    "start": 11.72,
+    "end": 12.0,
+    "word": " Do",
+    "probability": 0.8290747404098511,
+    "window_index": 0
+  },
+  {
+    "start": 12.0,
+    "end": 12.06,
+    "word": " you",
+    "probability": 0.8811857104301453,
+    "window_index": 0
+  },
+  {
+    "start": 12.06,
+    "end": 12.16,
+    "word": " have",
+    "probability": 0.884685754776001,
+    "window_index": 0
+  },
+  {
+    "start": 12.16,
+    "end": 12.28,
+    "word": " any",
+    "probability": 0.8028932213783264,
+    "window_index": 0
+  },
+  {
+    "start": 12.28,
+    "end": 12.52,
+    "word": " weapons",
+    "probability": 0.8763377070426941,
+    "window_index": 0
+  },
+  {
+    "start": 12.52,
+    "end": 12.7,
+    "word": " on",
+    "probability": 0.9038603901863098,
+    "window_index": 0
+  },
+  {
+    "start": 12.7,
+    "end": 12.8,
+    "word": " you?",
+    "probability": 0.8931906223297119,
+    "window_index": 0
+  },
+  {
+    "start": 12.9,
+    "end": 13.02,
+    "word": " Nope.",
+    "probability": 0.5242462158203125,
+    "window_index": 0
+  },
+  {
+    "start": 13.959999999999997,
+    "end": 14.239999999999998,
+    "word": " Do",
+    "probability": 0.4796470105648041,
+    "window_index": 0
+  },
+  {
+    "start": 14.239999999999998,
+    "end": 14.52,
+    "word": " you",
+    "probability": 0.8822010159492493,
+    "window_index": 0
+  },
+  {
+    "start": 14.52,
+    "end": 14.64,
+    "word": " mind",
+    "probability": 0.7849249243736267,
+    "window_index": 0
+  },
+  {
+    "start": 14.64,
+    "end": 14.74,
+    "word": " if",
+    "probability": 0.9059382081031799,
+    "window_index": 0
+  },
+  {
+    "start": 14.74,
+    "end": 14.86,
+    "word": " I",
+    "probability": 0.9905774593353271,
+    "window_index": 0
+  },
+  {
+    "start": 14.86,
+    "end": 15.04,
+    "word": " pat",
+    "probability": 0.49683961272239685,
+    "window_index": 0
+  },
+  {
+    "start": 15.04,
+    "end": 15.12,
+    "word": " you",
+    "probability": 0.560432493686676,
+    "window_index": 0
+  },
+  {
+    "start": 15.12,
+    "end": 15.26,
+    "word": " down",
+    "probability": 0.7328724265098572,
+    "window_index": 0
+  },
+  {
+    "start": 15.26,
+    "end": 15.36,
+    "word": " to",
+    "probability": 0.5305582284927368,
+    "window_index": 0
+  },
+  {
+    "start": 15.36,
+    "end": 15.52,
+    "word": " shake?",
+    "probability": 0.37625136971473694,
+    "window_index": 0
+  },
+  {
+    "start": 15.62,
+    "end": 15.8,
+    "word": " Yeah,",
+    "probability": 0.921062707901001,
+    "window_index": 0
+  },
+  {
+    "start": 15.84,
+    "end": 15.92,
+    "word": " I",
+    "probability": 0.9983391761779785,
+    "window_index": 0
+  },
+  {
+    "start": 15.92,
+    "end": 16.04,
+    "word": " do.",
+    "probability": 0.907194197177887,
+    "window_index": 0
+  },
+  {
+    "start": 16.46,
+    "end": 16.66,
+    "word": " OK.",
+    "probability": 0.43787625432014465,
+    "window_index": 0
+  },
+  {
+    "start": 16.82,
+    "end": 17.0,
+    "word": " Why",
+    "probability": 0.7091977000236511,
+    "window_index": 0
+  },
+  {
+    "start": 17.0,
+    "end": 17.0,
+    "word": " are",
+    "probability": 0.8911617398262024,
+    "window_index": 0
+  },
+  {
+    "start": 17.0,
+    "end": 17.0,
+    "word": " you",
+    "probability": 0.8886563777923584,
+    "window_index": 0
+  },
+  {
+    "start": 17.0,
+    "end": 17.0,
+    "word": " out",
+    "probability": 0.8086127042770386,
+    "window_index": 0
+  },
+  {
+    "start": 17.0,
+    "end": 17.0,
+    "word": " here?",
+    "probability": 0.7317205667495728,
+    "window_index": 0
+  },
+  {
+    "start": 17.0,
+    "end": 17.12,
+    "word": " This",
+    "probability": 0.5064582824707031,
+    "window_index": 0
+  },
+  {
+    "start": 17.12,
+    "end": 17.18,
+    "word": " is",
+    "probability": 0.8785662651062012,
+    "window_index": 0
+  },
+  {
+    "start": 17.18,
+    "end": 17.28,
+    "word": " an",
+    "probability": 0.8080244064331055,
+    "window_index": 0
+  },
+  {
+    "start": 17.28,
+    "end": 17.54,
+    "word": " illegal",
+    "probability": 0.7804205417633057,
+    "window_index": 0
+  },
+  {
+    "start": 17.54,
+    "end": 17.82,
+    "word": " search",
+    "probability": 0.9722256660461426,
+    "window_index": 0
+  },
+  {
+    "start": 17.82,
+    "end": 17.96,
+    "word": " and",
+    "probability": 0.8726649880409241,
+    "window_index": 0
+  },
+  {
+    "start": 17.96,
+    "end": 18.14,
+    "word": " seizure.",
+    "probability": 0.8731729388237,
+    "window_index": 0
+  },
+  {
+    "start": 18.38,
+    "end": 18.6,
+    "word": " Why",
+    "probability": 0.7972372770309448,
+    "window_index": 0
+  },
+  {
+    "start": 18.6,
+    "end": 18.7,
+    "word": " are",
+    "probability": 0.8972182869911194,
+    "window_index": 0
+  },
+  {
+    "start": 18.7,
+    "end": 18.82,
+    "word": " you",
+    "probability": 0.8873704075813293,
+    "window_index": 0
+  },
+  {
+    "start": 18.82,
+    "end": 18.98,
+    "word": " out",
+    "probability": 0.8146249651908875,
+    "window_index": 0
+  },
+  {
+    "start": 18.98,
+    "end": 19.1,
+    "word": " here?",
+    "probability": 0.8133344054222107,
+    "window_index": 0
+  },
+  {
+    "start": 19.22,
+    "end": 19.4,
+    "word": " I'm",
+    "probability": 0.98484668135643,
+    "window_index": 0
+  },
+  {
+    "start": 19.4,
+    "end": 19.62,
+    "word": " invoking",
+    "probability": 0.9426926970481873,
+    "window_index": 0
+  },
+  {
+    "start": 19.62,
+    "end": 19.8,
+    "word": " my",
+    "probability": 0.8864904046058655,
+    "window_index": 0
+  },
+  {
+    "start": 19.8,
+    "end": 19.98,
+    "word": " Fifth",
+    "probability": 0.5086935758590698,
+    "window_index": 0
+  },
+  {
+    "start": 19.98,
+    "end": 20.14,
+    "word": " Amendment",
+    "probability": 0.8244063258171082,
+    "window_index": 0
+  },
+  {
+    "start": 20.14,
+    "end": 20.46,
+    "word": " rights,",
+    "probability": 0.5957403779029846,
+    "window_index": 0
+  },
+  {
+    "start": 20.62,
+    "end": 20.62,
+    "word": " sir.",
+    "probability": 0.8906887173652649,
+    "window_index": 0
+  },
+  {
+    "start": 20.88,
+    "end": 21.0,
+    "word": " You",
+    "probability": 0.7455468773841858,
+    "window_index": 0
+  },
+  {
+    "start": 21.0,
+    "end": 21.1,
+    "word": " want",
+    "probability": 0.8170642852783203,
+    "window_index": 0
+  },
+  {
+    "start": 21.1,
+    "end": 21.18,
+    "word": " to",
+    "probability": 0.9232954382896423,
+    "window_index": 0
+  },
+  {
+    "start": 21.18,
+    "end": 21.3,
+    "word": " give",
+    "probability": 0.831103503704071,
+    "window_index": 0
+  },
+  {
+    "start": 21.3,
+    "end": 21.38,
+    "word": " me",
+    "probability": 0.9008263945579529,
+    "window_index": 0
+  },
+  {
+    "start": 21.38,
+    "end": 21.48,
+    "word": " a",
+    "probability": 0.9457310438156128,
+    "window_index": 0
+  },
+  {
+    "start": 21.48,
+    "end": 21.66,
+    "word": " reason",
+    "probability": 0.9020393490791321,
+    "window_index": 0
+  },
+  {
+    "start": 21.66,
+    "end": 21.86,
+    "word": " why",
+    "probability": 0.8026123642921448,
+    "window_index": 0
+  },
+  {
+    "start": 21.86,
+    "end": 22.0,
+    "word": " you're",
+    "probability": 0.9171382486820221,
+    "window_index": 0
+  },
+  {
+    "start": 22.0,
+    "end": 22.16,
+    "word": " here?",
+    "probability": 0.8085975646972656,
+    "window_index": 0
+  },
+  {
+    "start": 22.66,
+    "end": 22.94,
+    "word": " Where",
+    "probability": 0.666066586971283,
+    "window_index": 0
+  },
+  {
+    "start": 22.94,
+    "end": 23.12,
+    "word": " you",
+    "probability": 0.8794580101966858,
+    "window_index": 0
+  },
+  {
+    "start": 23.12,
+    "end": 23.28,
+    "word": " took",
+    "probability": 0.8598862886428833,
+    "window_index": 0
+  },
+  {
+    "start": 23.28,
+    "end": 23.42,
+    "word": " me",
+    "probability": 0.8839606642723083,
+    "window_index": 0
+  },
+  {
+    "start": 23.42,
+    "end": 23.6,
+    "word": " from",
+    "probability": 0.8205721974372864,
+    "window_index": 0
+  },
+  {
+    "start": 23.6,
+    "end": 23.76,
+    "word": " was",
+    "probability": 0.8890842795372009,
+    "window_index": 0
+  },
+  {
+    "start": 23.76,
+    "end": 24.02,
+    "word": " public",
+    "probability": 0.8838813900947571,
+    "window_index": 0
+  },
+  {
+    "start": 24.02,
+    "end": 24.38,
+    "word": " property.",
+    "probability": 0.8354208469390869,
+    "window_index": 0
+  },
+  {
+    "start": 24.48,
+    "end": 24.68,
+    "word": " I'm",
+    "probability": 0.9790649116039276,
+    "window_index": 0
+  },
+  {
+    "start": 24.68,
+    "end": 24.76,
+    "word": " going",
+    "probability": 0.8431954383850098,
+    "window_index": 0
+  },
+  {
+    "start": 24.76,
+    "end": 24.84,
+    "word": " to",
+    "probability": 0.8835937976837158,
+    "window_index": 0
+  },
+  {
+    "start": 24.84,
+    "end": 25.04,
+    "word": " invoke",
+    "probability": 0.8579768538475037,
+    "window_index": 0
+  },
+  {
+    "start": 25.04,
+    "end": 25.22,
+    "word": " my",
+    "probability": 0.8949916362762451,
+    "window_index": 0
+  },
+  {
+    "start": 25.22,
+    "end": 25.4,
+    "word": " Fifth",
+    "probability": 0.8870362639427185,
+    "window_index": 0
+  },
+  {
+    "start": 25.4,
+    "end": 25.58,
+    "word": " Amendment",
+    "probability": 0.8498628735542297,
+    "window_index": 0
+  },
+  {
+    "start": 25.58,
+    "end": 25.9,
+    "word": " rights",
+    "probability": 0.771921694278717,
+    "window_index": 0
+  },
+  {
+    "start": 25.9,
+    "end": 26.04,
+    "word": " to",
+    "probability": 0.310743123292923,
+    "window_index": 0
+  },
+  {
+    "start": 26.04,
+    "end": 26.2,
+    "word": " pass",
+    "probability": 0.6520534753799438,
+    "window_index": 0
+  },
+  {
+    "start": 26.2,
+    "end": 26.4,
+    "word": " out.",
+    "probability": 0.7754237055778503,
+    "window_index": 0
+  },
+  {
+    "start": 26.4,
+    "end": 26.88,
+    "word": " You're",
+    "probability": 0.5206895172595978,
+    "window_index": 0
+  },
+  {
+    "start": 26.88,
+    "end": 27.02,
+    "word": " being",
+    "probability": 0.8784334063529968,
+    "window_index": 0
+  },
+  {
+    "start": 27.02,
+    "end": 27.32,
+    "word": " arrested",
+    "probability": 0.5620856384436289,
+    "window_index": 0
+  },
+  {
+    "start": 27.32,
+    "end": 27.5,
+    "word": " for",
+    "probability": 0.8712190985679626,
+    "window_index": 0
+  },
+  {
+    "start": 27.5,
+    "end": 27.76,
+    "word": " criminal",
+    "probability": 0.7697601318359375,
+    "window_index": 0
+  },
+  {
+    "start": 27.76,
+    "end": 28.36,
+    "word": " loitering.",
+    "probability": 0.8957591851552328,
+    "window_index": 0
+  },
+  {
+    "start": 28.38,
+    "end": 28.84,
+    "word": " Criminal",
+    "probability": 0.3908863067626953,
+    "window_index": 0
+  },
+  {
+    "start": 28.84,
+    "end": 29.38,
+    "word": " loitering.",
+    "probability": 0.9514583945274353,
+    "window_index": 0
+  },
+  {
+    "start": 29.48,
+    "end": 29.66,
+    "word": " You",
+    "probability": 0.8852498531341553,
+    "window_index": 0
+  },
+  {
+    "start": 29.66,
+    "end": 29.9,
+    "word": " can't",
+    "probability": 0.9418400824069977,
+    "window_index": 0
+  },
+  {
+    "start": 29.9,
+    "end": 29.98,
+    "word": " get",
+    "probability": 0.3291230797767639,
+    "window_index": 0
+  },
+  {
+    "start": 29.98,
+    "end": 29.98,
+    "word": " away",
+    "probability": 0.19929061830043793,
+    "window_index": 0
+  },
+  {
+    "start": 29.98,
+    "end": 29.98,
+    "word": " with",
+    "probability": 0.5791699886322021,
+    "window_index": 0
+  },
+  {
+    "start": 29.98,
+    "end": 29.98,
+    "word": " it.",
+    "probability": 0.34298622608184814,
+    "window_index": 0
+  }
+]

@@ -1,0 +1,314 @@
+[
+  {
+    "index": 0,
+    "start": 1078.02,
+    "end": 1082.623,
+    "text": " And two, it lets them know kind of what to expect, so.",
+    "voice_similarities": {
+      "Target_Speaker": 0.29375985264778137,
+      "Opening_officer_reference": 0.20948149263858795
+    },
+    "speaker_hypothesis": "Target_Speaker",
+    "review_required": true
+  },
+  {
+    "index": 1,
+    "start": 1082.643,
+    "end": 1085.365,
+    "text": "I appreciate people.",
+    "voice_similarities": {
+      "Target_Speaker": 0.1294543743133545,
+      "Opening_officer_reference": 0.11387696117162704
+    },
+    "speaker_hypothesis": "Uncertain",
+    "review_required": true
+  },
+  {
+    "index": 2,
+    "start": 1085.465,
+    "end": 1086.026,
+    "text": "Oh yeah.",
+    "voice_similarities": {
+      "Target_Speaker": 0.04185974597930908,
+      "Opening_officer_reference": -0.03089134767651558
+    },
+    "speaker_hypothesis": "Uncertain",
+    "review_required": true
+  },
+  {
+    "index": 3,
+    "start": 1087.107,
+    "end": 1092.991,
+    "text": "Well I can tell everybody else that comes in here, my behavior is kind of a reflection of theirs.",
+    "voice_similarities": {
+      "Target_Speaker": 0.07865850627422333,
+      "Opening_officer_reference": 0.16669562458992004
+    },
+    "speaker_hypothesis": "Uncertain",
+    "review_required": true
+  },
+  {
+    "index": 4,
+    "start": 1093.151,
+    "end": 1094.352,
+    "text": "I couldn't agree more.",
+    "voice_similarities": {
+      "Target_Speaker": 0.2752193212509155,
+      "Opening_officer_reference": 0.06738400459289551
+    },
+    "speaker_hypothesis": "Target_Speaker",
+    "review_required": true
+  },
+  {
+    "index": 5,
+    "start": 1094.372,
+    "end": 1095.533,
+    "text": "I couldn't agree more.",
+    "voice_similarities": {
+      "Target_Speaker": 0.014507774263620377,
+      "Opening_officer_reference": 0.03787875175476074
+    },
+    "speaker_hypothesis": "Uncertain",
+    "review_required": true
+  },
+  {
+    "index": 6,
+    "start": 1098.215,
+    "end": 1099.376,
+    "text": "Couldn't agree a syllable more.",
+    "voice_similarities": {
+      "Target_Speaker": 0.2644451856613159,
+      "Opening_officer_reference": 0.05187266319990158
+    },
+    "speaker_hypothesis": "Target_Speaker",
+    "review_required": true
+  },
+  {
+    "index": 7,
+    "start": 1103.148,
+    "end": 1107.251,
+    "text": " No, that's not the problem.",
+    "voice_similarities": {
+      "Target_Speaker": 0.010133415460586548,
+      "Opening_officer_reference": 0.14122286438941956
+    },
+    "speaker_hypothesis": "Uncertain",
+    "review_required": true
+  },
+  {
+    "index": 8,
+    "start": 1107.771,
+    "end": 1109.432,
+    "text": "The key, it just got stuck.",
+    "voice_similarities": {
+      "Target_Speaker": -0.02856490947306156,
+      "Opening_officer_reference": 0.1537773609161377
+    },
+    "speaker_hypothesis": "Uncertain",
+    "review_required": true
+  },
+  {
+    "index": 9,
+    "start": 1110.092,
+    "end": 1118.717,
+    "text": "I don't want to mess with your cuffs or mess them up or anything, but let's...",
+    "voice_similarities": {
+      "Target_Speaker": -0.019876569509506226,
+      "Opening_officer_reference": 0.15196168422698975
+    },
+    "speaker_hypothesis": "Uncertain",
+    "review_required": true
+  },
+  {
+    "index": 10,
+    "start": 1121.939,
+    "end": 1123.06,
+    "text": "I'm taking too much, Tommy.",
+    "voice_similarities": {
+      "Target_Speaker": 0.22671571373939514,
+      "Opening_officer_reference": 0.1431729793548584
+    },
+    "speaker_hypothesis": "Uncertain",
+    "review_required": true
+  },
+  {
+    "index": 11,
+    "start": 1123.1,
+    "end": 1123.961,
+    "text": "I don't got much space.",
+    "voice_similarities": {
+      "Target_Speaker": 0.10697022825479507,
+      "Opening_officer_reference": 0.02339109219610691
+    },
+    "speaker_hypothesis": "Uncertain",
+    "review_required": true
+  },
+  {
+    "index": 12,
+    "start": 1124.161,
+    "end": 1126.242,
+    "text": "Well, we're not trying to tie someone.",
+    "voice_similarities": {
+      "Target_Speaker": 0.18828925490379333,
+      "Opening_officer_reference": 0.20057415962219238
+    },
+    "speaker_hypothesis": "Uncertain",
+    "review_required": true
+  },
+  {
+    "index": 13,
+    "start": 1126.262,
+    "end": 1129.464,
+    "text": "We're trying to get the key out of them.",
+    "voice_similarities": {
+      "Target_Speaker": -0.04544929042458534,
+      "Opening_officer_reference": 0.03846369683742523
+    },
+    "speaker_hypothesis": "Uncertain",
+    "review_required": true
+  },
+  {
+    "index": 14,
+    "start": 1130.916,
+    "end": 1132.196,
+    "text": " I might need to get a new key.",
+    "voice_similarities": {
+      "Target_Speaker": 0.07572536170482635,
+      "Opening_officer_reference": -0.0022732876241207123
+    },
+    "speaker_hypothesis": "Uncertain",
+    "review_required": true
+  },
+  {
+    "index": 15,
+    "start": 1132.216,
+    "end": 1136.017,
+    "text": "There might be something off with this one, because I just had an issue with that fella I got in.",
+    "voice_similarities": {
+      "Target_Speaker": 0.06525367498397827,
+      "Opening_officer_reference": 0.1750328242778778
+    },
+    "speaker_hypothesis": "Uncertain",
+    "review_required": true
+  },
+  {
+    "index": 16,
+    "start": 1136.898,
+    "end": 1139.838,
+    "text": "Put this arm on the wall and probably even that could have come off.",
+    "voice_similarities": {
+      "Target_Speaker": 0.007407840341329575,
+      "Opening_officer_reference": 0.11301996558904648
+    },
+    "speaker_hypothesis": "Uncertain",
+    "review_required": true
+  },
+  {
+    "index": 17,
+    "start": 1140.679,
+    "end": 1146.64,
+    "text": "That guy I just searched in that had the shackles, it had a little bit of difficulty opening up one of the shackled eyes.",
+    "voice_similarities": {
+      "Target_Speaker": 0.25121524930000305,
+      "Opening_officer_reference": 0.24774259328842163
+    },
+    "speaker_hypothesis": "Uncertain",
+    "review_required": true
+  },
+  {
+    "index": 18,
+    "start": 1146.76,
+    "end": 1148.501,
+    "text": "I think I got to get a new key then.",
+    "voice_similarities": {
+      "Target_Speaker": 0.08803562074899673,
+      "Opening_officer_reference": 0.07026012986898422
+    },
+    "speaker_hypothesis": "Uncertain",
+    "review_required": true
+  },
+  {
+    "index": 19,
+    "start": 1148.521,
+    "end": 1150.641,
+    "text": "All right, you're good.",
+    "voice_similarities": {
+      "Target_Speaker": 0.032126449048519135,
+      "Opening_officer_reference": 0.18281440436840057
+    },
+    "speaker_hypothesis": "Uncertain",
+    "review_required": true
+  },
+  {
+    "index": 20,
+    "start": 1150.661,
+    "end": 1151.622,
+    "text": "Go ahead and have a seat.",
+    "voice_similarities": {
+      "Target_Speaker": 0.00518316775560379,
+      "Opening_officer_reference": 0.14777973294258118
+    },
+    "speaker_hypothesis": "Uncertain",
+    "review_required": true
+  },
+  {
+    "index": 21,
+    "start": 1151.682,
+    "end": 1153.062,
+    "text": "Take off your shoes for me.",
+    "voice_similarities": {
+      "Target_Speaker": 0.04360911622643471,
+      "Opening_officer_reference": -0.004432402551174164
+    },
+    "speaker_hypothesis": "Uncertain",
+    "review_required": true
+  },
+  {
+    "index": 22,
+    "start": 1154.122,
+    "end": 1155.343,
+    "text": "What size shoe do you wear?",
+    "voice_similarities": {
+      "Target_Speaker": 0.092622771859169,
+      "Opening_officer_reference": 0.17470525205135345
+    },
+    "speaker_hypothesis": "Uncertain",
+    "review_required": true
+  },
+  {
+    "index": 23,
+    "start": 1155.363,
+    "end": 1156.8029999999999,
+    "text": "This and that.",
+    "voice_similarities": {
+      "Target_Speaker": 0.08354996889829636,
+      "Opening_officer_reference": -0.02151412144303322
+    },
+    "speaker_hypothesis": "Uncertain",
+    "review_required": true
+  },
+  {
+    "index": 24,
+    "start": 1156.923,
+    "end": 1158.964,
+    "text": "OK. Take off your necklace.",
+    "voice_similarities": {
+      "Target_Speaker": 0.08150413632392883,
+      "Opening_officer_reference": 0.2677019238471985
+    },
+    "speaker_hypothesis": "Opening_officer_reference",
+    "review_required": true
+  },
+  {
+    "index": 25,
+    "start": 1160.489,
+    "end": 1163.478,
+    "text": " Take out your earrings and your wristband there.",
+    "voice_similarities": {
+      "Target_Speaker": 0.003301624208688736,
+      "Opening_officer_reference": 0.06278577446937561
+    },
+    "speaker_hypothesis": "Uncertain",
+    "review_required": true
+  }
+]

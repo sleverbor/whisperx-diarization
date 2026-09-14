@@ -1,0 +1,365 @@
+[
+  {
+    "index": 0,
+    "start": 625.18,
+    "end": 629.862,
+    "text": " and loitering around businesses, causing concern and suspicion.",
+    "voice_similarities": {
+      "Target_Speaker": -0.0043043047189712524,
+      "Opening_officer_reference": 0.29692474007606506
+    },
+    "speaker_hypothesis": "Opening_officer_reference",
+    "review_required": true
+  },
+  {
+    "index": 1,
+    "start": 630.622,
+    "end": 631.323,
+    "text": "It's against the law.",
+    "voice_similarities": {
+      "Target_Speaker": -0.057120077311992645,
+      "Opening_officer_reference": 0.09033666551113129
+    },
+    "speaker_hypothesis": "Uncertain",
+    "review_required": true
+  },
+  {
+    "index": 2,
+    "start": 633.724,
+    "end": 634.564,
+    "text": "What's your date of birth, John?",
+    "voice_similarities": {
+      "Target_Speaker": 0.05625658482313156,
+      "Opening_officer_reference": 0.3140748143196106
+    },
+    "speaker_hypothesis": "Opening_officer_reference",
+    "review_required": true
+  },
+  {
+    "index": 3,
+    "start": 634.924,
+    "end": 636.825,
+    "text": "March 17th, 2002.",
+    "voice_similarities": {
+      "Target_Speaker": 0.49973928928375244,
+      "Opening_officer_reference": 0.09000605344772339
+    },
+    "speaker_hypothesis": "Target_Speaker",
+    "review_required": true
+  },
+  {
+    "index": 4,
+    "start": 636.845,
+    "end": 639.846,
+    "text": "You got tattoos on both arms?",
+    "voice_similarities": {
+      "Target_Speaker": 0.06265842169523239,
+      "Opening_officer_reference": 0.280737042427063
+    },
+    "speaker_hypothesis": "Opening_officer_reference",
+    "review_required": true
+  },
+  {
+    "index": 5,
+    "start": 639.906,
+    "end": 640.387,
+    "text": "Anywhere else?",
+    "voice_similarities": {
+      "Target_Speaker": -0.037353288382291794,
+      "Opening_officer_reference": 0.17188508808612823
+    },
+    "speaker_hypothesis": "Uncertain",
+    "review_required": true
+  },
+  {
+    "index": 6,
+    "start": 640.727,
+    "end": 641.527,
+    "text": "Yeah, on my chest.",
+    "voice_similarities": {
+      "Target_Speaker": 0.1671198308467865,
+      "Opening_officer_reference": 0.22200533747673035
+    },
+    "speaker_hypothesis": "Uncertain",
+    "review_required": true
+  },
+  {
+    "index": 7,
+    "start": 642.848,
+    "end": 645.069,
+    "text": "On my ribs.",
+    "voice_similarities": {
+      "Target_Speaker": 0.14322441816329956,
+      "Opening_officer_reference": 0.020189780741930008
+    },
+    "speaker_hypothesis": "Uncertain",
+    "review_required": true
+  },
+  {
+    "index": 8,
+    "start": 645.609,
+    "end": 646.729,
+    "text": "Nothing gang, anything?",
+    "voice_similarities": {
+      "Target_Speaker": 0.2525544762611389,
+      "Opening_officer_reference": -0.02140500769019127
+    },
+    "speaker_hypothesis": "Target_Speaker",
+    "review_required": true
+  },
+  {
+    "index": 9,
+    "start": 648.17,
+    "end": 649.33,
+    "text": "That's all of you.",
+    "voice_similarities": {
+      "Target_Speaker": -0.13998883962631226,
+      "Opening_officer_reference": 0.0492277517914772
+    },
+    "speaker_hypothesis": "Uncertain",
+    "review_required": true
+  },
+  {
+    "index": 10,
+    "start": 654.288,
+    "end": 654.729,
+    "text": " 511.",
+    "voice_similarities": {
+      "Target_Speaker": -0.011645291931927204,
+      "Opening_officer_reference": 0.002015296369791031
+    },
+    "speaker_hypothesis": "Uncertain",
+    "review_required": true
+  },
+  {
+    "index": 11,
+    "start": 655.009,
+    "end": 656.49,
+    "text": "Tell the girls 511.",
+    "voice_similarities": {
+      "Target_Speaker": 0.3877647817134857,
+      "Opening_officer_reference": -0.10462003946304321
+    },
+    "speaker_hypothesis": "Target_Speaker",
+    "review_required": true
+  },
+  {
+    "index": 12,
+    "start": 656.51,
+    "end": 658.311,
+    "text": "910.",
+    "voice_similarities": {
+      "Target_Speaker": -0.05626625940203667,
+      "Opening_officer_reference": 0.05000323802232742
+    },
+    "speaker_hypothesis": "Uncertain",
+    "review_required": true
+  },
+  {
+    "index": 13,
+    "start": 658.931,
+    "end": 659.731,
+    "text": "Number 13.",
+    "voice_similarities": {
+      "Target_Speaker": 0.03550384193658829,
+      "Opening_officer_reference": 0.21838468313217163
+    },
+    "speaker_hypothesis": "Uncertain",
+    "review_required": true
+  },
+  {
+    "index": 14,
+    "start": 661.372,
+    "end": 662.513,
+    "text": "How much do you weigh?",
+    "voice_similarities": {
+      "Target_Speaker": 0.05911533534526825,
+      "Opening_officer_reference": 0.2084493637084961
+    },
+    "speaker_hypothesis": "Uncertain",
+    "review_required": true
+  },
+  {
+    "index": 15,
+    "start": 662.933,
+    "end": 663.213,
+    "text": "Sorry?",
+    "voice_similarities": {},
+    "speaker_hypothesis": "Uncertain",
+    "review_required": true
+  },
+  {
+    "index": 16,
+    "start": 663.253,
+    "end": 664.134,
+    "text": "How much do you weigh?",
+    "voice_similarities": {
+      "Target_Speaker": -0.09992995113134384,
+      "Opening_officer_reference": 0.12286017835140228
+    },
+    "speaker_hypothesis": "Uncertain",
+    "review_required": true
+  },
+  {
+    "index": 17,
+    "start": 664.174,
+    "end": 664.314,
+    "text": "160.",
+    "voice_similarities": {},
+    "speaker_hypothesis": "Uncertain",
+    "review_required": true
+  },
+  {
+    "index": 18,
+    "start": 664.394,
+    "end": 665.815,
+    "text": "Number 11.",
+    "voice_similarities": {
+      "Target_Speaker": 0.15280257165431976,
+      "Opening_officer_reference": 0.28528404235839844
+    },
+    "speaker_hypothesis": "Opening_officer_reference",
+    "review_required": true
+  },
+  {
+    "index": 19,
+    "start": 666.275,
+    "end": 666.895,
+    "text": "No record.",
+    "voice_similarities": {
+      "Target_Speaker": 0.07270064949989319,
+      "Opening_officer_reference": 0.14423170685768127
+    },
+    "speaker_hypothesis": "Uncertain",
+    "review_required": true
+  },
+  {
+    "index": 20,
+    "start": 666.915,
+    "end": 670.898,
+    "text": "Mississippi or Massachusetts.",
+    "voice_similarities": {
+      "Target_Speaker": 0.09166547656059265,
+      "Opening_officer_reference": -0.007533784955739975
+    },
+    "speaker_hypothesis": "Uncertain",
+    "review_required": true
+  },
+  {
+    "index": 21,
+    "start": 670.998,
+    "end": 671.418,
+    "text": "Number 8.",
+    "voice_similarities": {
+      "Target_Speaker": 0.057710662484169006,
+      "Opening_officer_reference": 0.18538521230220795
+    },
+    "speaker_hypothesis": "Uncertain",
+    "review_required": true
+  },
+  {
+    "index": 22,
+    "start": 672.499,
+    "end": 673.279,
+    "text": "Is that a fake name?",
+    "voice_similarities": {
+      "Target_Speaker": -0.04855173081159592,
+      "Opening_officer_reference": 0.1993505358695984
+    },
+    "speaker_hypothesis": "Uncertain",
+    "review_required": true
+  },
+  {
+    "index": 23,
+    "start": 674.14,
+    "end": 674.34,
+    "text": "No.",
+    "voice_similarities": {},
+    "speaker_hypothesis": "Uncertain",
+    "review_required": true
+  },
+  {
+    "index": 24,
+    "start": 675.768,
+    "end": 676.909,
+    "text": " You just found the system anywhere?",
+    "voice_similarities": {
+      "Target_Speaker": 0.010552573949098587,
+      "Opening_officer_reference": 0.28178906440734863
+    },
+    "speaker_hypothesis": "Opening_officer_reference",
+    "review_required": true
+  },
+  {
+    "index": 25,
+    "start": 677.49,
+    "end": 679.171,
+    "text": "I don't get found guilty of anything.",
+    "voice_similarities": {
+      "Target_Speaker": 0.286496639251709,
+      "Opening_officer_reference": 0.19025357067584991
+    },
+    "speaker_hypothesis": "Target_Speaker",
+    "review_required": true
+  },
+  {
+    "index": 26,
+    "start": 679.191,
+    "end": 680.612,
+    "text": "Do you have a driver's license?",
+    "voice_similarities": {
+      "Target_Speaker": 0.031255170702934265,
+      "Opening_officer_reference": 0.41879802942276
+    },
+    "speaker_hypothesis": "Opening_officer_reference",
+    "review_required": true
+  },
+  {
+    "index": 27,
+    "start": 680.752,
+    "end": 681.773,
+    "text": "I do have a driver's license.",
+    "voice_similarities": {
+      "Target_Speaker": 0.5564603209495544,
+      "Opening_officer_reference": 0.049853041768074036
+    },
+    "speaker_hypothesis": "Target_Speaker",
+    "review_required": true
+  },
+  {
+    "index": 28,
+    "start": 681.793,
+    "end": 683.715,
+    "text": "Then you should be on the system.",
+    "voice_similarities": {
+      "Target_Speaker": 0.033243998885154724,
+      "Opening_officer_reference": 0.27503228187561035
+    },
+    "speaker_hypothesis": "Opening_officer_reference",
+    "review_required": true
+  },
+  {
+    "index": 29,
+    "start": 684.776,
+    "end": 685.676,
+    "text": "I have a driver's license.",
+    "voice_similarities": {
+      "Target_Speaker": 0.33688604831695557,
+      "Opening_officer_reference": -0.14234831929206848
+    },
+    "speaker_hypothesis": "Target_Speaker",
+    "review_required": true
+  },
+  {
+    "index": 30,
+    "start": 685.716,
+    "end": 687.358,
+    "text": "I didn't give you any fake information.",
+    "voice_similarities": {
+      "Target_Speaker": 0.38110268115997314,
+      "Opening_officer_reference": 0.07639241218566895
+    },
+    "speaker_hypothesis": "Target_Speaker",
+    "review_required": true
+  }
+]

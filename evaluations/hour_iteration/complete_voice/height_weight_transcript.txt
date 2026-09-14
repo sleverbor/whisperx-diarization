@@ -1,0 +1,31 @@
+[625.18–629.86] Opening_officer_reference:  and loitering around businesses, causing concern and suspicion.
+[630.62–631.32] Uncertain: It's against the law.
+[633.72–634.56] Opening_officer_reference: What's your date of birth, John?
+[634.92–636.83] Target_Speaker: March 17th, 2002.
+[636.85–639.85] Opening_officer_reference: You got tattoos on both arms?
+[639.91–640.39] Uncertain: Anywhere else?
+[640.73–641.53] Uncertain: Yeah, on my chest.
+[642.85–645.07] Uncertain: On my ribs.
+[645.61–646.73] Target_Speaker: Nothing gang, anything?
+[648.17–649.33] Uncertain: That's all of you.
+[654.29–654.73] Uncertain:  511.
+[655.01–656.49] Target_Speaker: Tell the girls 511.
+[656.51–658.31] Uncertain: 910.
+[658.93–659.73] Uncertain: Number 13.
+[661.37–662.51] Uncertain: How much do you weigh?
+[662.93–663.21] Uncertain: Sorry?
+[663.25–664.13] Uncertain: How much do you weigh?
+[664.17–664.31] Uncertain: 160.
+[664.39–665.82] Opening_officer_reference: Number 11.
+[666.27–666.89] Uncertain: No record.
+[666.91–670.90] Uncertain: Mississippi or Massachusetts.
+[671.00–671.42] Uncertain: Number 8.
+[672.50–673.28] Uncertain: Is that a fake name?
+[674.14–674.34] Uncertain: No.
+[675.77–676.91] Opening_officer_reference:  You just found the system anywhere?
+[677.49–679.17] Target_Speaker: I don't get found guilty of anything.
+[679.19–680.61] Opening_officer_reference: Do you have a driver's license?
+[680.75–681.77] Target_Speaker: I do have a driver's license.
+[681.79–683.72] Opening_officer_reference: Then you should be on the system.
+[684.78–685.68] Target_Speaker: I have a driver's license.
+[685.72–687.36] Target_Speaker: I didn't give you any fake information.

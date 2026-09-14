@@ -1,0 +1,236 @@
+[
+  {
+    "window_start": 620.0,
+    "start": 620.0,
+    "end": 628.32,
+    "text": " Well, you can't do that while disturbing the peace and loitering around businesses causing",
+    "scores": {
+      "Target_Speaker": 0.00931522250175476,
+      "Opening_officer_reference": 0.3488461971282959
+    },
+    "speaker_hypothesis": "Opening_officer_reference",
+    "review_required": true
+  },
+  {
+    "window_start": 620.0,
+    "start": 628.32,
+    "end": 629.68,
+    "text": " concern and suspicion.",
+    "scores": {
+      "Target_Speaker": 0.04651656001806259,
+      "Opening_officer_reference": 0.27259188890457153
+    },
+    "speaker_hypothesis": "Opening_officer_reference",
+    "review_required": true
+  },
+  {
+    "window_start": 620.0,
+    "start": 630.38,
+    "end": 631.3,
+    "text": " It's against the law.",
+    "scores": {
+      "Target_Speaker": -0.05779197812080383,
+      "Opening_officer_reference": 0.1000802293419838
+    },
+    "speaker_hypothesis": "Uncertain",
+    "review_required": true
+  },
+  {
+    "window_start": 620.0,
+    "start": 633.38,
+    "end": 634.54,
+    "text": " What's your date of birth, John?",
+    "scores": {
+      "Target_Speaker": 0.04130438342690468,
+      "Opening_officer_reference": 0.3373951315879822
+    },
+    "speaker_hypothesis": "Opening_officer_reference",
+    "review_required": true
+  },
+  {
+    "window_start": 620.0,
+    "start": 634.82,
+    "end": 636.94,
+    "text": " March 17th, 2002.",
+    "scores": {
+      "Target_Speaker": 0.5174193382263184,
+      "Opening_officer_reference": 0.13970714807510376
+    },
+    "speaker_hypothesis": "Target_Speaker",
+    "review_required": true
+  },
+  {
+    "window_start": 620.0,
+    "start": 638.28,
+    "end": 639.8,
+    "text": " You got tattoos on both arms?",
+    "scores": {
+      "Target_Speaker": 0.050956785678863525,
+      "Opening_officer_reference": 0.30153751373291016
+    },
+    "speaker_hypothesis": "Opening_officer_reference",
+    "review_required": true
+  },
+  {
+    "window_start": 620.0,
+    "start": 639.9,
+    "end": 640.4,
+    "text": " Anywhere else?",
+    "scores": {
+      "Target_Speaker": 0.0005476921796798706,
+      "Opening_officer_reference": 0.21400168538093567
+    },
+    "speaker_hypothesis": "Uncertain",
+    "review_required": true
+  },
+  {
+    "window_start": 620.0,
+    "start": 640.68,
+    "end": 641.48,
+    "text": " Yeah, on my chest.",
+    "scores": {
+      "Target_Speaker": 0.14644011855125427,
+      "Opening_officer_reference": 0.22193801403045654
+    },
+    "speaker_hypothesis": "Uncertain",
+    "review_required": true
+  },
+  {
+    "window_start": 620.0,
+    "start": 642.82,
+    "end": 643.14,
+    "text": " On my ribs.",
+    "scores": {},
+    "speaker_hypothesis": "Uncertain",
+    "review_required": true
+  },
+  {
+    "window_start": 620.0,
+    "start": 643.14,
+    "end": 644.94,
+    "text": " I know it's 11, do you need me to 10-9 the number?",
+    "scores": {
+      "Target_Speaker": 0.12317026406526566,
+      "Opening_officer_reference": -0.01250549778342247
+    },
+    "speaker_hypothesis": "Uncertain",
+    "review_required": true
+  },
+  {
+    "window_start": 620.0,
+    "start": 645.56,
+    "end": 646.52,
+    "text": " Nothing gang, anything.",
+    "scores": {
+      "Target_Speaker": 0.21664422750473022,
+      "Opening_officer_reference": -0.016136256977915764
+    },
+    "speaker_hypothesis": "Uncertain",
+    "review_required": true
+  },
+  {
+    "window_start": 640.0,
+    "start": 640.0,
+    "end": 643.14,
+    "text": " Yeah, on my chest and my ribs.",
+    "scores": {
+      "Target_Speaker": 0.315079927444458,
+      "Opening_officer_reference": 0.27072402834892273
+    },
+    "speaker_hypothesis": "Uncertain",
+    "review_required": true
+  },
+  {
+    "window_start": 640.0,
+    "start": 645.3,
+    "end": 646.54,
+    "text": " Nothing gang, anything.",
+    "scores": {
+      "Target_Speaker": 0.19782885909080505,
+      "Opening_officer_reference": 0.05669933557510376
+    },
+    "speaker_hypothesis": "Uncertain",
+    "review_required": true
+  },
+  {
+    "window_start": 640.0,
+    "start": 651.88,
+    "end": 652.58,
+    "text": " How tall are you?",
+    "scores": {
+      "Target_Speaker": -0.009010517969727516,
+      "Opening_officer_reference": 0.20346154272556305
+    },
+    "speaker_hypothesis": "Uncertain",
+    "review_required": true
+  },
+  {
+    "window_start": 640.0,
+    "start": 652.86,
+    "end": 654.66,
+    "text": " 5'10 and a half, 5'11.",
+    "scores": {
+      "Target_Speaker": -0.002526700496673584,
+      "Opening_officer_reference": 0.01028207316994667
+    },
+    "speaker_hypothesis": "Uncertain",
+    "review_required": true
+  },
+  {
+    "window_start": 640.0,
+    "start": 655.18,
+    "end": 657.2,
+    "text": " Tall girls, 5'11, 5'10.",
+    "scores": {
+      "Target_Speaker": 0.4258776307106018,
+      "Opening_officer_reference": -0.01801222562789917
+    },
+    "speaker_hypothesis": "Target_Speaker",
+    "review_required": true
+  },
+  {
+    "window_start": 640.0,
+    "start": 661.42,
+    "end": 662.32,
+    "text": " How much do you weigh?",
+    "scores": {
+      "Target_Speaker": 0.011664483696222305,
+      "Opening_officer_reference": 0.22691971063613892
+    },
+    "speaker_hypothesis": "Uncertain",
+    "review_required": true
+  },
+  {
+    "window_start": 640.0,
+    "start": 662.7,
+    "end": 663.1,
+    "text": " Sorry?",
+    "scores": {},
+    "speaker_hypothesis": "Uncertain",
+    "review_required": true
+  },
+  {
+    "window_start": 640.0,
+    "start": 663.24,
+    "end": 663.72,
+    "text": " How much do you weigh?",
+    "scores": {
+      "Target_Speaker": -0.1042492687702179,
+      "Opening_officer_reference": 0.25673550367355347
+    },
+    "speaker_hypothesis": "Opening_officer_reference",
+    "review_required": true
+  },
+  {
+    "window_start": 640.0,
+    "start": 663.88,
+    "end": 664.32,
+    "text": " 160.",
+    "scores": {
+      "Target_Speaker": 0.15936125814914703,
+      "Opening_officer_reference": -0.03241652995347977
+    },
+    "speaker_hypothesis": "Uncertain",
+    "review_required": true
+  }
+]

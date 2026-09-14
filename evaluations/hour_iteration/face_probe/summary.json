@@ -1,0 +1,48 @@
+{
+  "face_tracks": {
+    "FACE_00": {
+      "observations": 1
+    },
+    "FACE_01": {
+      "observations": 16
+    },
+    "FACE_02": {
+      "observations": 19
+    },
+    "FACE_03": {
+      "observations": 14
+    },
+    "FACE_04": {
+      "observations": 1
+    },
+    "FACE_05": {
+      "observations": 97
+    },
+    "FACE_06": {
+      "observations": 1
+    },
+    "FACE_07": {
+      "observations": 1
+    },
+    "FACE_08": {
+      "observations": 1
+    },
+    "FACE_09": {
+      "observations": 1
+    }
+  },
+  "sample_rate_hz": 4,
+  "source_offset": 1086,
+  "active_speaker_verified": false,
+  "model_providers": {
+    "landmark_3d_68": [
+      "CPUExecutionProvider"
+    ],
+    "detection": [
+      "CPUExecutionProvider"
+    ],
+    "recognition": [
+      "CPUExecutionProvider"
+    ]
+  }
+}

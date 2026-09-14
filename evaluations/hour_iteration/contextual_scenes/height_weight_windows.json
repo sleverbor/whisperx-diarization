@@ -1,0 +1,836 @@
+[
+  {
+    "window_index": 0,
+    "start": 620.0,
+    "end": 650.0,
+    "segments": [
+      {
+        "start": 620.0,
+        "end": 628.32,
+        "text": " Well, you can't do that while disturbing the peace and loitering around businesses causing",
+        "avg_logprob": -0.3588613576832272,
+        "no_speech_prob": 0.06345618516206741,
+        "compression_ratio": 1.3645833333333333,
+        "quality_passed": true,
+        "words": [
+          {
+            "start": 620.0,
+            "end": 620.98,
+            "word": " Well,",
+            "probability": 0.4073963463306427
+          },
+          {
+            "start": 621.08,
+            "end": 621.18,
+            "word": " you",
+            "probability": 0.8952308893203735
+          },
+          {
+            "start": 621.18,
+            "end": 621.48,
+            "word": " can't",
+            "probability": 0.9238945841789246
+          },
+          {
+            "start": 621.48,
+            "end": 621.62,
+            "word": " do",
+            "probability": 0.8455592393875122
+          },
+          {
+            "start": 621.62,
+            "end": 621.82,
+            "word": " that",
+            "probability": 0.7985348701477051
+          },
+          {
+            "start": 621.82,
+            "end": 622.0,
+            "word": " while",
+            "probability": 0.8222696781158447
+          },
+          {
+            "start": 622.0,
+            "end": 622.42,
+            "word": " disturbing",
+            "probability": 0.8561225533485413
+          },
+          {
+            "start": 622.42,
+            "end": 622.66,
+            "word": " the",
+            "probability": 0.8002694845199585
+          },
+          {
+            "start": 622.66,
+            "end": 623.0,
+            "word": " peace",
+            "probability": 0.8351033329963684
+          },
+          {
+            "start": 623.0,
+            "end": 625.42,
+            "word": " and",
+            "probability": 0.6075431704521179
+          },
+          {
+            "start": 625.42,
+            "end": 627.14,
+            "word": " loitering",
+            "probability": 0.8559008240699768
+          },
+          {
+            "start": 627.14,
+            "end": 627.4,
+            "word": " around",
+            "probability": 0.8612779974937439
+          },
+          {
+            "start": 627.4,
+            "end": 627.86,
+            "word": " businesses",
+            "probability": 0.7427348494529724
+          },
+          {
+            "start": 627.86,
+            "end": 628.32,
+            "word": " causing",
+            "probability": 0.4437362253665924
+          }
+        ]
+      },
+      {
+        "start": 628.32,
+        "end": 629.68,
+        "text": " concern and suspicion.",
+        "avg_logprob": -0.3588613576832272,
+        "no_speech_prob": 0.06345618516206741,
+        "compression_ratio": 1.3645833333333333,
+        "quality_passed": true,
+        "words": [
+          {
+            "start": 628.32,
+            "end": 628.92,
+            "word": " concern",
+            "probability": 0.8629754185676575
+          },
+          {
+            "start": 628.92,
+            "end": 629.24,
+            "word": " and",
+            "probability": 0.8751435279846191
+          },
+          {
+            "start": 629.24,
+            "end": 629.68,
+            "word": " suspicion.",
+            "probability": 0.8228281736373901
+          }
+        ]
+      },
+      {
+        "start": 630.38,
+        "end": 631.3,
+        "text": " It's against the law.",
+        "avg_logprob": -0.3588613576832272,
+        "no_speech_prob": 0.06345618516206741,
+        "compression_ratio": 1.3645833333333333,
+        "quality_passed": true,
+        "words": [
+          {
+            "start": 630.38,
+            "end": 630.78,
+            "word": " It's",
+            "probability": 0.8753571808338165
+          },
+          {
+            "start": 630.78,
+            "end": 630.98,
+            "word": " against",
+            "probability": 0.9282760620117188
+          },
+          {
+            "start": 630.98,
+            "end": 631.08,
+            "word": " the",
+            "probability": 0.8130197525024414
+          },
+          {
+            "start": 631.08,
+            "end": 631.3,
+            "word": " law.",
+            "probability": 0.8190293312072754
+          }
+        ]
+      },
+      {
+        "start": 633.38,
+        "end": 634.54,
+        "text": " What's your date of birth, John?",
+        "avg_logprob": -0.3588613576832272,
+        "no_speech_prob": 0.06345618516206741,
+        "compression_ratio": 1.3645833333333333,
+        "quality_passed": true,
+        "words": [
+          {
+            "start": 633.38,
+            "end": 633.9,
+            "word": " What's",
+            "probability": 0.8606784045696259
+          },
+          {
+            "start": 633.9,
+            "end": 634.0,
+            "word": " your",
+            "probability": 0.7882394790649414
+          },
+          {
+            "start": 634.0,
+            "end": 634.12,
+            "word": " date",
+            "probability": 0.7797969579696655
+          },
+          {
+            "start": 634.12,
+            "end": 634.2,
+            "word": " of",
+            "probability": 0.8900188207626343
+          },
+          {
+            "start": 634.2,
+            "end": 634.34,
+            "word": " birth,",
+            "probability": 0.7912042140960693
+          },
+          {
+            "start": 634.52,
+            "end": 634.54,
+            "word": " John?",
+            "probability": 0.2701374292373657
+          }
+        ]
+      },
+      {
+        "start": 634.82,
+        "end": 636.94,
+        "text": " March 17th, 2002.",
+        "avg_logprob": -0.3588613576832272,
+        "no_speech_prob": 0.06345618516206741,
+        "compression_ratio": 1.3645833333333333,
+        "quality_passed": true,
+        "words": [
+          {
+            "start": 634.82,
+            "end": 635.1,
+            "word": " March",
+            "probability": 0.64842289686203
+          },
+          {
+            "start": 635.1,
+            "end": 636.2,
+            "word": " 17th,",
+            "probability": 0.6868385374546051
+          },
+          {
+            "start": 636.34,
+            "end": 636.94,
+            "word": " 2002.",
+            "probability": 0.8765448927879333
+          }
+        ]
+      },
+      {
+        "start": 638.28,
+        "end": 639.8,
+        "text": " You got tattoos on both arms?",
+        "avg_logprob": -0.3588613576832272,
+        "no_speech_prob": 0.06345618516206741,
+        "compression_ratio": 1.3645833333333333,
+        "quality_passed": true,
+        "words": [
+          {
+            "start": 638.28,
+            "end": 638.42,
+            "word": " You",
+            "probability": 0.3923301100730896
+          },
+          {
+            "start": 638.42,
+            "end": 638.58,
+            "word": " got",
+            "probability": 0.8370810747146606
+          },
+          {
+            "start": 638.58,
+            "end": 639.08,
+            "word": " tattoos",
+            "probability": 0.7985822558403015
+          },
+          {
+            "start": 639.08,
+            "end": 639.26,
+            "word": " on",
+            "probability": 0.9002047777175903
+          },
+          {
+            "start": 639.26,
+            "end": 639.46,
+            "word": " both",
+            "probability": 0.7978711128234863
+          },
+          {
+            "start": 639.46,
+            "end": 639.8,
+            "word": " arms?",
+            "probability": 0.7953100204467773
+          }
+        ]
+      },
+      {
+        "start": 639.9,
+        "end": 640.4,
+        "text": " Anywhere else?",
+        "avg_logprob": -0.3588613576832272,
+        "no_speech_prob": 0.06345618516206741,
+        "compression_ratio": 1.3645833333333333,
+        "quality_passed": true,
+        "words": [
+          {
+            "start": 639.9,
+            "end": 640.14,
+            "word": " Anywhere",
+            "probability": 0.7817163169384003
+          },
+          {
+            "start": 640.14,
+            "end": 640.4,
+            "word": " else?",
+            "probability": 0.8516948223114014
+          }
+        ]
+      },
+      {
+        "start": 640.68,
+        "end": 641.48,
+        "text": " Yeah, on my chest.",
+        "avg_logprob": -0.3588613576832272,
+        "no_speech_prob": 0.06345618516206741,
+        "compression_ratio": 1.3645833333333333,
+        "quality_passed": true,
+        "words": [
+          {
+            "start": 640.68,
+            "end": 640.94,
+            "word": " Yeah,",
+            "probability": 0.8783544301986694
+          },
+          {
+            "start": 640.98,
+            "end": 641.06,
+            "word": " on",
+            "probability": 0.8090091943740845
+          },
+          {
+            "start": 641.06,
+            "end": 641.18,
+            "word": " my",
+            "probability": 0.9054165482521057
+          },
+          {
+            "start": 641.18,
+            "end": 641.48,
+            "word": " chest.",
+            "probability": 0.8258278965950012
+          }
+        ]
+      },
+      {
+        "start": 642.82,
+        "end": 643.14,
+        "text": " On my ribs.",
+        "avg_logprob": -0.3588613576832272,
+        "no_speech_prob": 0.06345618516206741,
+        "compression_ratio": 1.3645833333333333,
+        "quality_passed": true,
+        "words": [
+          {
+            "start": 642.82,
+            "end": 642.9,
+            "word": " On",
+            "probability": 0.21373212337493896
+          },
+          {
+            "start": 642.9,
+            "end": 643.02,
+            "word": " my",
+            "probability": 0.8942920565605164
+          },
+          {
+            "start": 643.02,
+            "end": 643.14,
+            "word": " ribs.",
+            "probability": 0.44232702255249023
+          }
+        ]
+      },
+      {
+        "start": 643.14,
+        "end": 644.94,
+        "text": " I know it's 11, do you need me to 10-9 the number?",
+        "avg_logprob": -0.7992653846740723,
+        "no_speech_prob": 0.08693528920412064,
+        "compression_ratio": 0.9487179487179487,
+        "quality_passed": true,
+        "words": [
+          {
+            "start": 643.14,
+            "end": 643.22,
+            "word": " I",
+            "probability": 0.04071223735809326
+          },
+          {
+            "start": 643.22,
+            "end": 643.28,
+            "word": " know",
+            "probability": 0.06312961876392365
+          },
+          {
+            "start": 643.28,
+            "end": 643.4,
+            "word": " it's",
+            "probability": 0.32262203097343445
+          },
+          {
+            "start": 643.4,
+            "end": 643.62,
+            "word": " 11,",
+            "probability": 0.4454386234283447
+          },
+          {
+            "start": 643.82,
+            "end": 643.82,
+            "word": " do",
+            "probability": 0.44089552760124207
+          },
+          {
+            "start": 643.82,
+            "end": 643.84,
+            "word": " you",
+            "probability": 0.8858288526535034
+          },
+          {
+            "start": 643.84,
+            "end": 643.92,
+            "word": " need",
+            "probability": 0.8391640782356262
+          },
+          {
+            "start": 643.92,
+            "end": 644.06,
+            "word": " me",
+            "probability": 0.8681188225746155
+          },
+          {
+            "start": 644.06,
+            "end": 644.16,
+            "word": " to",
+            "probability": 0.8991041779518127
+          },
+          {
+            "start": 644.16,
+            "end": 644.36,
+            "word": " 10",
+            "probability": 0.08755185455083847
+          },
+          {
+            "start": 644.36,
+            "end": 644.58,
+            "word": "-9",
+            "probability": 0.7454174160957336
+          },
+          {
+            "start": 644.58,
+            "end": 644.7,
+            "word": " the",
+            "probability": 0.6908900141716003
+          },
+          {
+            "start": 644.7,
+            "end": 644.94,
+            "word": " number?",
+            "probability": 0.8769769072532654
+          }
+        ]
+      },
+      {
+        "start": 645.56,
+        "end": 646.52,
+        "text": " Nothing gang, anything.",
+        "avg_logprob": -0.7992653846740723,
+        "no_speech_prob": 0.08693528920412064,
+        "compression_ratio": 0.9487179487179487,
+        "quality_passed": true,
+        "words": [
+          {
+            "start": 645.56,
+            "end": 645.8,
+            "word": " Nothing",
+            "probability": 0.32626664638519287
+          },
+          {
+            "start": 645.8,
+            "end": 646.18,
+            "word": " gang,",
+            "probability": 0.6243253946304321
+          },
+          {
+            "start": 646.28,
+            "end": 646.52,
+            "word": " anything.",
+            "probability": 0.808811604976654
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "window_index": 1,
+    "start": 640.0,
+    "end": 670.0,
+    "segments": [
+      {
+        "start": 640.0,
+        "end": 643.14,
+        "text": " Yeah, on my chest and my ribs.",
+        "avg_logprob": -0.36822168254538584,
+        "no_speech_prob": 0.29398566484451294,
+        "compression_ratio": 1.3937007874015748,
+        "quality_passed": true,
+        "words": [
+          {
+            "start": 640.0,
+            "end": 640.86,
+            "word": " Yeah,",
+            "probability": 0.14892743527889252
+          },
+          {
+            "start": 640.94,
+            "end": 641.06,
+            "word": " on",
+            "probability": 0.44917258620262146
+          },
+          {
+            "start": 641.06,
+            "end": 641.16,
+            "word": " my",
+            "probability": 0.8942888975143433
+          },
+          {
+            "start": 641.16,
+            "end": 641.48,
+            "word": " chest",
+            "probability": 0.8005434274673462
+          },
+          {
+            "start": 641.48,
+            "end": 642.88,
+            "word": " and",
+            "probability": 0.08193857967853546
+          },
+          {
+            "start": 642.88,
+            "end": 643.02,
+            "word": " my",
+            "probability": 0.8626289963722229
+          },
+          {
+            "start": 643.02,
+            "end": 643.14,
+            "word": " ribs.",
+            "probability": 0.7962357401847839
+          }
+        ]
+      },
+      {
+        "start": 645.3,
+        "end": 646.54,
+        "text": " Nothing gang, anything.",
+        "avg_logprob": -0.36822168254538584,
+        "no_speech_prob": 0.29398566484451294,
+        "compression_ratio": 1.3937007874015748,
+        "quality_passed": true,
+        "words": [
+          {
+            "start": 645.3,
+            "end": 645.74,
+            "word": " Nothing",
+            "probability": 0.3848961591720581
+          },
+          {
+            "start": 645.74,
+            "end": 646.16,
+            "word": " gang,",
+            "probability": 0.7808610796928406
+          },
+          {
+            "start": 646.24,
+            "end": 646.54,
+            "word": " anything.",
+            "probability": 0.7864076495170593
+          }
+        ]
+      },
+      {
+        "start": 651.88,
+        "end": 652.58,
+        "text": " How tall are you?",
+        "avg_logprob": -0.36822168254538584,
+        "no_speech_prob": 0.29398566484451294,
+        "compression_ratio": 1.3937007874015748,
+        "quality_passed": true,
+        "words": [
+          {
+            "start": 651.88,
+            "end": 652.1,
+            "word": " How",
+            "probability": 0.2377151995897293
+          },
+          {
+            "start": 652.1,
+            "end": 652.32,
+            "word": " tall",
+            "probability": 0.8008283376693726
+          },
+          {
+            "start": 652.32,
+            "end": 652.42,
+            "word": " are",
+            "probability": 0.8930712342262268
+          },
+          {
+            "start": 652.42,
+            "end": 652.58,
+            "word": " you?",
+            "probability": 0.8952181935310364
+          }
+        ]
+      },
+      {
+        "start": 652.86,
+        "end": 654.66,
+        "text": " 5'10 and a half, 5'11.",
+        "avg_logprob": -0.36822168254538584,
+        "no_speech_prob": 0.29398566484451294,
+        "compression_ratio": 1.3937007874015748,
+        "quality_passed": true,
+        "words": [
+          {
+            "start": 652.86,
+            "end": 653.18,
+            "word": " 5",
+            "probability": 0.8057916164398193
+          },
+          {
+            "start": 653.18,
+            "end": 653.38,
+            "word": "'10",
+            "probability": 0.7875285446643829
+          },
+          {
+            "start": 653.38,
+            "end": 653.5,
+            "word": " and",
+            "probability": 0.1993197351694107
+          },
+          {
+            "start": 653.5,
+            "end": 653.56,
+            "word": " a",
+            "probability": 0.8951912522315979
+          },
+          {
+            "start": 653.56,
+            "end": 653.72,
+            "word": " half,",
+            "probability": 0.8329863548278809
+          },
+          {
+            "start": 654.04,
+            "end": 654.38,
+            "word": " 5",
+            "probability": 0.9394575357437134
+          },
+          {
+            "start": 654.38,
+            "end": 654.66,
+            "word": "'11.",
+            "probability": 0.9821785688400269
+          }
+        ]
+      },
+      {
+        "start": 655.18,
+        "end": 657.2,
+        "text": " Tall girls, 5'11, 5'10.",
+        "avg_logprob": -0.36822168254538584,
+        "no_speech_prob": 0.29398566484451294,
+        "compression_ratio": 1.3937007874015748,
+        "quality_passed": true,
+        "words": [
+          {
+            "start": 655.18,
+            "end": 655.62,
+            "word": " Tall",
+            "probability": 0.34996917843818665
+          },
+          {
+            "start": 655.62,
+            "end": 655.88,
+            "word": " girls,",
+            "probability": 0.7417637705802917
+          },
+          {
+            "start": 655.96,
+            "end": 656.14,
+            "word": " 5",
+            "probability": 0.9898161888122559
+          },
+          {
+            "start": 656.14,
+            "end": 656.44,
+            "word": "'11,",
+            "probability": 0.9714358747005463
+          },
+          {
+            "start": 656.68,
+            "end": 656.98,
+            "word": " 5",
+            "probability": 0.9121377468109131
+          },
+          {
+            "start": 656.98,
+            "end": 657.2,
+            "word": "'10.",
+            "probability": 0.9927131235599518
+          }
+        ]
+      },
+      {
+        "start": 661.42,
+        "end": 662.32,
+        "text": " How much do you weigh?",
+        "avg_logprob": -0.36822168254538584,
+        "no_speech_prob": 0.29398566484451294,
+        "compression_ratio": 1.3937007874015748,
+        "quality_passed": true,
+        "words": [
+          {
+            "start": 661.42,
+            "end": 661.86,
+            "word": " How",
+            "probability": 0.6695225834846497
+          },
+          {
+            "start": 661.86,
+            "end": 662.04,
+            "word": " much",
+            "probability": 0.7961313128471375
+          },
+          {
+            "start": 662.04,
+            "end": 662.2,
+            "word": " do",
+            "probability": 0.7261322736740112
+          },
+          {
+            "start": 662.2,
+            "end": 662.3,
+            "word": " you",
+            "probability": 0.8303477168083191
+          },
+          {
+            "start": 662.3,
+            "end": 662.32,
+            "word": " weigh?",
+            "probability": 0.8936148285865784
+          }
+        ]
+      },
+      {
+        "start": 662.7,
+        "end": 663.1,
+        "text": " Sorry?",
+        "avg_logprob": -0.36822168254538584,
+        "no_speech_prob": 0.29398566484451294,
+        "compression_ratio": 1.3937007874015748,
+        "quality_passed": true,
+        "words": [
+          {
+            "start": 662.7,
+            "end": 663.1,
+            "word": " Sorry?",
+            "probability": 0.4123578369617462
+          }
+        ]
+      },
+      {
+        "start": 663.24,
+        "end": 663.72,
+        "text": " How much do you weigh?",
+        "avg_logprob": -0.36822168254538584,
+        "no_speech_prob": 0.29398566484451294,
+        "compression_ratio": 1.3937007874015748,
+        "quality_passed": true,
+        "words": [
+          {
+            "start": 663.24,
+            "end": 663.34,
+            "word": " How",
+            "probability": 0.8175961971282959
+          },
+          {
+            "start": 663.34,
+            "end": 663.48,
+            "word": " much",
+            "probability": 0.814803957939148
+          },
+          {
+            "start": 663.48,
+            "end": 663.6,
+            "word": " do",
+            "probability": 0.8878024220466614
+          },
+          {
+            "start": 663.6,
+            "end": 663.64,
+            "word": " you",
+            "probability": 0.9012079834938049
+          },
+          {
+            "start": 663.64,
+            "end": 663.72,
+            "word": " weigh?",
+            "probability": 0.8359293341636658
+          }
+        ]
+      },
+      {
+        "start": 663.88,
+        "end": 664.32,
+        "text": " 160.",
+        "avg_logprob": -0.36822168254538584,
+        "no_speech_prob": 0.29398566484451294,
+        "compression_ratio": 1.3937007874015748,
+        "quality_passed": true,
+        "words": [
+          {
+            "start": 663.88,
+            "end": 664.32,
+            "word": " 160.",
+            "probability": 0.6971312165260315
+          }
+        ]
+      }
+    ]
+  }
+]

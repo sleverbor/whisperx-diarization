@@ -1,0 +1,29 @@
+{
+  "segments": [
+    {
+      "text": " What you out of here doing man?",
+      "start": 0,
+      "end": 1.524,
+      "avg_logprob": -0.5035026338365343
+    },
+    {
+      "text": " Come over here and talk to me. Whoa, whoa, whoa. Why are you going to touch me? What's going on? Come over here and talk. You are on private property. I'm not going to go in there. You are on private property. Do not tell me what you're not going to do. Do you have any weapons on you? Nope.",
+      "start": 1.58,
+      "end": 13.652,
+      "avg_logprob": -0.31053851486800554
+    },
+    {
+      "text": " You mind if I pat you down to check? Yeah, I do. Okay, why are you out here? This is an illegal search and seizure. Why are you out here? I'm invoking my Fifth Amendment rights, sir. You want to give me a reason why you're here? Where you took me from was public property. I'm going to invoke my Fifth Amendment rights to pass out. You're being arrested for criminal loitering.",
+      "start": 13.9,
+      "end": 28.9,
+      "avg_logprob": -0.26124778870613347
+    },
+    {
+      "text": " being arrested for criminal loitering.",
+      "start": 26.9,
+      "end": 30.0,
+      "avg_logprob": -0.5195427470737033
+    }
+  ],
+  "language": "en"
+}

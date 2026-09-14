@@ -1,0 +1,478 @@
+[
+  {
+    "opening_segment_index": 0,
+    "text": "What you out of here doing, man?",
+    "opening_start": 0.257,
+    "opening_end": 2.04,
+    "source_speaker_hypothesis": "SPEAKER_01",
+    "source_strength": 1.0,
+    "replay_start": 937.518875,
+    "replay_end": 939.301875,
+    "waveform_similarity": 0.28435566842596366,
+    "negative_control_max_similarity": 0.15856709020883566,
+    "duplicate_match_accepted": false,
+    "replay_overlapping_labels": [
+      {
+        "start": 935.999,
+        "text": "OK. What you out of here doing, man?",
+        "speaker": "SPEAKER_08"
+      },
+      {
+        "start": 938.481,
+        "text": "What am I doing?",
+        "speaker": "Target_Speaker"
+      },
+      {
+        "start": 939.101,
+        "text": "Yeah, come over here and talk to me.",
+        "speaker": "SPEAKER_08"
+      }
+    ],
+    "counts_as_independent_voice_sample": false
+  },
+  {
+    "opening_segment_index": 1,
+    "text": "Come over here and talk to me.",
+    "opening_start": 2.06,
+    "opening_end": 2.961,
+    "source_speaker_hypothesis": "SPEAKER_01",
+    "source_strength": 0.839247311827957,
+    "replay_start": 941.1729375,
+    "replay_end": 942.0739374999999,
+    "waveform_similarity": 0.5050162512263944,
+    "negative_control_max_similarity": 0.16157063483561032,
+    "duplicate_match_accepted": false,
+    "replay_overlapping_labels": [
+      {
+        "start": 941.163,
+        "text": "Come over here and talk to me.",
+        "speaker": "SPEAKER_08"
+      }
+    ],
+    "counts_as_independent_voice_sample": false
+  },
+  {
+    "opening_segment_index": 2,
+    "text": "Whoa, whoa, whoa.",
+    "opening_start": 2.981,
+    "opening_end": 3.842,
+    "source_speaker_hypothesis": "Target_Speaker",
+    "source_strength": 0.5185893673173747,
+    "replay_start": 942.0955,
+    "replay_end": 942.9565,
+    "waveform_similarity": 0.47990343558231974,
+    "negative_control_max_similarity": 0.18033272669344763,
+    "duplicate_match_accepted": false,
+    "replay_overlapping_labels": [
+      {
+        "start": 942.103,
+        "text": "Whoa, whoa, whoa.",
+        "speaker": "Target_Speaker"
+      }
+    ],
+    "counts_as_independent_voice_sample": false
+  },
+  {
+    "opening_segment_index": 3,
+    "text": "Why are you going to touch me?",
+    "opening_start": 3.902,
+    "opening_end": 5.184,
+    "source_speaker_hypothesis": "Target_Speaker",
+    "source_strength": 0.609994989685301,
+    "replay_start": 943.0163125,
+    "replay_end": 944.2983125000001,
+    "waveform_similarity": 0.2593410305277173,
+    "negative_control_max_similarity": 0.14854920756515425,
+    "duplicate_match_accepted": false,
+    "replay_overlapping_labels": [
+      {
+        "start": 942.964,
+        "text": "Why are you going to touch me?",
+        "speaker": "SPEAKER_07"
+      }
+    ],
+    "counts_as_independent_voice_sample": false
+  },
+  {
+    "opening_segment_index": 4,
+    "text": "What's going on?",
+    "opening_start": 5.224,
+    "opening_end": 5.925,
+    "source_speaker_hypothesis": "Target_Speaker",
+    "source_strength": 0.4291099948375598,
+    "replay_start": 944.338125,
+    "replay_end": 945.039125,
+    "waveform_similarity": 0.37003860668168,
+    "negative_control_max_similarity": 0.2681172312844899,
+    "duplicate_match_accepted": false,
+    "replay_overlapping_labels": [
+      {
+        "start": 944.345,
+        "text": "What's going on?",
+        "speaker": "Target_Speaker"
+      },
+      {
+        "start": 944.985,
+        "text": "Come over here and talk to me.",
+        "speaker": "SPEAKER_08"
+      }
+    ],
+    "counts_as_independent_voice_sample": false
+  },
+  {
+    "opening_segment_index": 5,
+    "text": "Come over here and talk.",
+    "opening_start": 5.945,
+    "opening_end": 6.766,
+    "source_speaker_hypothesis": "SPEAKER_01",
+    "source_strength": 0.6841666666666665,
+    "replay_start": 945.0698125,
+    "replay_end": 945.8908125,
+    "waveform_similarity": 0.901700648449566,
+    "negative_control_max_similarity": 0.15612485717114047,
+    "duplicate_match_accepted": true,
+    "replay_overlapping_labels": [
+      {
+        "start": 944.985,
+        "text": "Come over here and talk to me.",
+        "speaker": "SPEAKER_08"
+      }
+    ],
+    "counts_as_independent_voice_sample": false
+  },
+  {
+    "opening_segment_index": 6,
+    "text": "You are on private property.",
+    "opening_start": 6.786,
+    "opening_end": 7.827,
+    "source_speaker_hypothesis": "SPEAKER_01",
+    "source_strength": 0.4521304424253303,
+    "replay_start": 945.9108125,
+    "replay_end": 946.9518125000001,
+    "waveform_similarity": 0.9859411734392625,
+    "negative_control_max_similarity": 0.18381972265040378,
+    "duplicate_match_accepted": true,
+    "replay_overlapping_labels": [
+      {
+        "start": 945.906,
+        "text": "You are on private property.",
+        "speaker": "SPEAKER_08"
+      }
+    ],
+    "counts_as_independent_voice_sample": false
+  },
+  {
+    "opening_segment_index": 7,
+    "text": "I'm not going to go in there.",
+    "opening_start": 7.868,
+    "opening_end": 8.528,
+    "source_speaker_hypothesis": "Target_Speaker",
+    "source_strength": 0.7096774193548387,
+    "replay_start": 946.9928125,
+    "replay_end": 947.6528125,
+    "waveform_similarity": 0.9974375231441153,
+    "negative_control_max_similarity": 0.22941328627602528,
+    "duplicate_match_accepted": true,
+    "replay_overlapping_labels": [
+      {
+        "start": 947.007,
+        "text": "I'm not going to go on there.",
+        "speaker": "SPEAKER_08"
+      }
+    ],
+    "counts_as_independent_voice_sample": false
+  },
+  {
+    "opening_segment_index": 8,
+    "text": "You are on private property.",
+    "opening_start": 8.548,
+    "opening_end": 9.43,
+    "source_speaker_hypothesis": "SPEAKER_01",
+    "source_strength": 0.7844484505476538,
+    "replay_start": 947.6728125,
+    "replay_end": 948.5548124999999,
+    "waveform_similarity": 0.996133207842272,
+    "negative_control_max_similarity": 0.1475745382890473,
+    "duplicate_match_accepted": true,
+    "replay_overlapping_labels": [
+      {
+        "start": 947.667,
+        "text": "You are on private property.",
+        "speaker": "SPEAKER_08"
+      }
+    ],
+    "counts_as_independent_voice_sample": false
+  },
+  {
+    "opening_segment_index": 9,
+    "text": "OK. Do not tell me what you're not going to do.",
+    "opening_start": 9.57,
+    "opening_end": 11.052,
+    "source_speaker_hypothesis": "SPEAKER_01",
+    "source_strength": 0.6259856349956473,
+    "replay_start": 948.6948125,
+    "replay_end": 950.1768125,
+    "waveform_similarity": 0.9968524291068238,
+    "negative_control_max_similarity": 0.13491294292835151,
+    "duplicate_match_accepted": true,
+    "replay_overlapping_labels": [
+      {
+        "start": 948.708,
+        "text": "OK. Do not tell me what you're not going to do.",
+        "speaker": "SPEAKER_08"
+      },
+      {
+        "start": 950.169,
+        "text": "All right.",
+        "speaker": "Uncertain"
+      }
+    ],
+    "counts_as_independent_voice_sample": false
+  },
+  {
+    "opening_segment_index": 11,
+    "text": "Do you have any weapons on you?",
+    "opening_start": 11.292,
+    "opening_end": 12.854,
+    "source_speaker_hypothesis": "SPEAKER_01",
+    "source_strength": 1.0,
+    "replay_start": 951.766625,
+    "replay_end": 953.328625,
+    "waveform_similarity": 0.9587193884400793,
+    "negative_control_max_similarity": 0.15209497605884315,
+    "duplicate_match_accepted": true,
+    "replay_overlapping_labels": [
+      {
+        "start": 952.271,
+        "text": "Do you have any weapons on you?",
+        "speaker": "SPEAKER_08"
+      }
+    ],
+    "counts_as_independent_voice_sample": false
+  },
+  {
+    "opening_segment_index": 13,
+    "text": "Do you mind if I pat you down to check?",
+    "opening_start": 13.355,
+    "opening_end": 15.578,
+    "source_speaker_hypothesis": "SPEAKER_01",
+    "source_strength": 0.9202305730547288,
+    "replay_start": 953.829625,
+    "replay_end": 956.0526249999999,
+    "waveform_similarity": 0.9905877934230387,
+    "negative_control_max_similarity": 0.161117308101757,
+    "duplicate_match_accepted": true,
+    "replay_overlapping_labels": [
+      {
+        "start": 954.858,
+        "text": "You mind if I pat you down to shake?",
+        "speaker": "SPEAKER_08"
+      }
+    ],
+    "counts_as_independent_voice_sample": false
+  },
+  {
+    "opening_segment_index": 15,
+    "text": "OK. Why are you out here?",
+    "opening_start": 16.039,
+    "opening_end": 17.2,
+    "source_speaker_hypothesis": "SPEAKER_01",
+    "source_strength": 0.7481723931047068,
+    "replay_start": 956.513625,
+    "replay_end": 957.674625,
+    "waveform_similarity": 0.9920055128902769,
+    "negative_control_max_similarity": 0.1822415695646975,
+    "duplicate_match_accepted": true,
+    "replay_overlapping_labels": [
+      {
+        "start": 956.138,
+        "text": "Yeah, I do.",
+        "speaker": "Target_Speaker"
+      },
+      {
+        "start": 956.558,
+        "text": "Okay, why are you out here?",
+        "speaker": "SPEAKER_08"
+      }
+    ],
+    "counts_as_independent_voice_sample": false
+  },
+  {
+    "opening_segment_index": 16,
+    "text": "This is an illegal search and seizure.",
+    "opening_start": 17.22,
+    "opening_end": 18.282,
+    "source_speaker_hypothesis": "Target_Speaker",
+    "source_strength": 0.9258064516129038,
+    "replay_start": 957.694625,
+    "replay_end": 958.756625,
+    "waveform_similarity": 0.993131989091933,
+    "negative_control_max_similarity": 0.16924628289910645,
+    "duplicate_match_accepted": true,
+    "replay_overlapping_labels": [
+      {
+        "start": 956.558,
+        "text": "Okay, why are you out here?",
+        "speaker": "SPEAKER_08"
+      },
+      {
+        "start": 957.939,
+        "text": "This is an illegal search and seizure.",
+        "speaker": "Target_Speaker"
+      }
+    ],
+    "counts_as_independent_voice_sample": false
+  },
+  {
+    "opening_segment_index": 17,
+    "text": "Why are you out here?",
+    "opening_start": 18.462,
+    "opening_end": 19.183,
+    "source_speaker_hypothesis": "SPEAKER_01",
+    "source_strength": 0.7424731182795699,
+    "replay_start": 960.522875,
+    "replay_end": 961.243875,
+    "waveform_similarity": 0.9842840782412189,
+    "negative_control_max_similarity": 0.1697017430519828,
+    "duplicate_match_accepted": true,
+    "replay_overlapping_labels": [
+      {
+        "start": 960.499,
+        "text": "Why are you out here?",
+        "speaker": "SPEAKER_08"
+      }
+    ],
+    "counts_as_independent_voice_sample": false
+  },
+  {
+    "opening_segment_index": 18,
+    "text": "I'm invoking my Fifth Amendment rights, sir.",
+    "opening_start": 19.283,
+    "opening_end": 20.585,
+    "source_speaker_hypothesis": "Target_Speaker",
+    "source_strength": 0.8320243596408727,
+    "replay_start": 961.343875,
+    "replay_end": 962.645875,
+    "waveform_similarity": 0.9916541354605414,
+    "negative_control_max_similarity": 0.15407596741923274,
+    "duplicate_match_accepted": true,
+    "replay_overlapping_labels": [
+      {
+        "start": 961.32,
+        "text": "I'm invoking my 5th Amendment rights, sir.",
+        "speaker": "Target_Speaker"
+      }
+    ],
+    "counts_as_independent_voice_sample": false
+  },
+  {
+    "opening_segment_index": 19,
+    "text": "You want to give me a reason why you're here?",
+    "opening_start": 20.925,
+    "opening_end": 22.247,
+    "source_speaker_hypothesis": "SPEAKER_01",
+    "source_strength": 0.19089770016596608,
+    "replay_start": 964.3135,
+    "replay_end": 965.6355,
+    "waveform_similarity": 0.9929534190419496,
+    "negative_control_max_similarity": 0.20329584937177184,
+    "duplicate_match_accepted": true,
+    "replay_overlapping_labels": [
+      {
+        "start": 964.26,
+        "text": "You want to give me a reason why you're here?",
+        "speaker": "SPEAKER_08"
+      }
+    ],
+    "counts_as_independent_voice_sample": false
+  },
+  {
+    "opening_segment_index": 20,
+    "text": "Where you took me from was public property.",
+    "opening_start": 22.828,
+    "opening_end": 24.45,
+    "source_speaker_hypothesis": "Target_Speaker",
+    "source_strength": 0.9591825306415558,
+    "replay_start": 966.2165,
+    "replay_end": 967.8385,
+    "waveform_similarity": 0.9983195155068629,
+    "negative_control_max_similarity": 0.15669069543943184,
+    "duplicate_match_accepted": true,
+    "replay_overlapping_labels": [
+      {
+        "start": 966.181,
+        "text": "Where you took me from was public property.",
+        "speaker": "Target_Speaker"
+      }
+    ],
+    "counts_as_independent_voice_sample": false
+  },
+  {
+    "opening_segment_index": 21,
+    "text": "I'm going to invoke my Fifth Amendment rights to pass out.",
+    "opening_start": 24.571,
+    "opening_end": 26.213,
+    "source_speaker_hypothesis": "Target_Speaker",
+    "source_strength": 0.4775111468211669,
+    "replay_start": 957.7913125,
+    "replay_end": 959.4333125,
+    "waveform_similarity": 0.15961057415386015,
+    "negative_control_max_similarity": 0.158791670189026,
+    "duplicate_match_accepted": false,
+    "replay_overlapping_labels": [
+      {
+        "start": 956.558,
+        "text": "Okay, why are you out here?",
+        "speaker": "SPEAKER_08"
+      },
+      {
+        "start": 957.939,
+        "text": "This is an illegal search and seizure.",
+        "speaker": "Target_Speaker"
+      }
+    ],
+    "counts_as_independent_voice_sample": false
+  },
+  {
+    "opening_segment_index": 22,
+    "text": "You're being arrested for criminal loitering.",
+    "opening_start": 26.814,
+    "opening_end": 28.175,
+    "source_speaker_hypothesis": "SPEAKER_01",
+    "source_strength": 1.0,
+    "replay_start": 954.7579375,
+    "replay_end": 956.1189375,
+    "waveform_similarity": 0.12512484254742356,
+    "negative_control_max_similarity": 0.14381090112145506,
+    "duplicate_match_accepted": false,
+    "replay_overlapping_labels": [
+      {
+        "start": 954.858,
+        "text": "You mind if I pat you down to shake?",
+        "speaker": "SPEAKER_08"
+      }
+    ],
+    "counts_as_independent_voice_sample": false
+  },
+  {
+    "opening_segment_index": 23,
+    "text": "Criminal loitering.",
+    "opening_start": 28.756,
+    "opening_end": 29.357,
+    "source_speaker_hypothesis": "Target_Speaker",
+    "source_strength": 0.25,
+    "replay_start": 961.4990625,
+    "replay_end": 962.1000625,
+    "waveform_similarity": 0.21654020672504581,
+    "negative_control_max_similarity": 0.22615765465147397,
+    "duplicate_match_accepted": false,
+    "replay_overlapping_labels": [
+      {
+        "start": 961.32,
+        "text": "I'm invoking my 5th Amendment rights, sir.",
+        "speaker": "Target_Speaker"
+      }
+    ],
+    "counts_as_independent_voice_sample": false
+  }
+]

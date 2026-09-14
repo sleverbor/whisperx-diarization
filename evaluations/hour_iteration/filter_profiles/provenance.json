@@ -1,0 +1,32 @@
+{
+  "target_samples": 18,
+  "matching_references_rebuilt": true,
+  "reviewed_seed_roles_not_automatic": true,
+  "reviewed_seed_times": {
+    "Scene_original_officer": [
+      [
+        1112.30596875,
+        1115.84971875
+      ]
+    ],
+    "Scene_key_officer": [
+      [
+        1133.72034375,
+        1135.91409375
+      ],
+      [
+        1136.97721875,
+        1139.94721875
+      ]
+    ]
+  },
+  "filters": [
+    "raw",
+    "highpass100",
+    "band150_4000",
+    "band300_3000",
+    "lowpass2500"
+  ],
+  "models": "ECAPA",
+  "elapsed_seconds": 321.9007541689789
+}

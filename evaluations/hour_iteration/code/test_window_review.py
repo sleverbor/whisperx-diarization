@@ -1,0 +1,21 @@
+import unittest
+from review_audio_window import baseline_evidence,resolve_voice
+class WindowTests(unittest.TestCase):
+    def test_raw_ids_preserved_and_offsets_applied(self):
+        a=[{'start':0,'end':2,'raw_speaker_track':'SPEAKER_03','final_speaker':'Target_Speaker'},{'start':2,'end':4,'raw_speaker_track':'SPEAKER_07','final_speaker':'SPEAKER_07'}]
+        result=baseline_evidence(a,101,103,offset=100)
+        self.assertEqual(result['raw_track_overlap_seconds'],{'SPEAKER_03':1,'SPEAKER_07':1})
+        self.assertEqual(a[0]['raw_speaker_track'],'SPEAKER_03')
+    def test_current_pipeline_nested_baseline_schema(self):
+        s=[{'start':0,'end':2,'baseline':{'raw_speaker_track':'SPEAKER_08','speaker':'SPEAKER_08'},'final_speaker':'SPEAKER_08'}]
+        self.assertEqual(baseline_evidence(s,0,1)['raw_track_overlap_seconds'],{'SPEAKER_08':1})
+    def test_no_observation_is_not_negative_identity_evidence(self):
+        self.assertEqual(baseline_evidence([],0,2)['segments'],[])
+        self.assertEqual(resolve_voice({}),'Uncertain')
+    def test_short_response_cannot_borrow_questioners_identity(self):
+        self.assertEqual(resolve_voice({'Target_Speaker':.22,'Officer':.21}),'Uncertain')
+    def test_close_profiles_abstain_even_if_similarity_is_high(self):
+        self.assertEqual(resolve_voice({'Target_Speaker':.6,'Other':.57}),'Uncertain')
+    def test_strong_separated_profile_produces_review_hypothesis(self):
+        self.assertEqual(resolve_voice({'Target_Speaker':.5,'Other':.1}),'Target_Speaker')
+if __name__=='__main__':unittest.main()

@@ -1,0 +1,4052 @@
+[
+  {
+    "filter": "raw",
+    "scene": "handcuffs",
+    "index": 0,
+    "start": 1078.02,
+    "end": 1082.623,
+    "text": " And two, it lets them know kind of what to expect, so.",
+    "scores": {
+      "Target_Speaker": 0.2929307520389557,
+      "Opening_officer_reference": 0.20868369936943054,
+      "Scene_original_officer": 0.498498797416687,
+      "Scene_key_officer": 0.5058227181434631
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "raw",
+    "scene": "handcuffs",
+    "index": 1,
+    "start": 1082.643,
+    "end": 1085.365,
+    "text": "I appreciate people.",
+    "scores": {
+      "Target_Speaker": 0.1294543445110321,
+      "Opening_officer_reference": 0.10712040960788727,
+      "Scene_original_officer": 0.08603742718696594,
+      "Scene_key_officer": 0.24325627088546753
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "raw",
+    "scene": "handcuffs",
+    "index": 2,
+    "start": 1085.465,
+    "end": 1086.026,
+    "text": "Oh yeah.",
+    "scores": {
+      "Target_Speaker": 0.04715564846992493,
+      "Opening_officer_reference": -0.030535422265529633,
+      "Scene_original_officer": 0.06996458768844604,
+      "Scene_key_officer": 0.03351181373000145
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "raw",
+    "scene": "handcuffs",
+    "index": 3,
+    "start": 1087.107,
+    "end": 1092.991,
+    "text": "Well I can tell everybody else that comes in here, my behavior is kind of a reflection of theirs.",
+    "scores": {
+      "Target_Speaker": 0.0809103399515152,
+      "Opening_officer_reference": 0.16591790318489075,
+      "Scene_original_officer": 0.6353713274002075,
+      "Scene_key_officer": 0.4859490692615509
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "raw",
+    "scene": "handcuffs",
+    "index": 4,
+    "start": 1093.151,
+    "end": 1094.352,
+    "text": "I couldn't agree more.",
+    "scores": {
+      "Target_Speaker": 0.2752194106578827,
+      "Opening_officer_reference": 0.07089103013277054,
+      "Scene_original_officer": 0.1708211600780487,
+      "Scene_key_officer": 0.1681016981601715
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "raw",
+    "scene": "handcuffs",
+    "index": 5,
+    "start": 1094.372,
+    "end": 1095.533,
+    "text": "I couldn't agree more.",
+    "scores": {
+      "Target_Speaker": 0.014073289930820465,
+      "Opening_officer_reference": 0.054769113659858704,
+      "Scene_original_officer": 0.15315479040145874,
+      "Scene_key_officer": 0.0758344754576683
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "raw",
+    "scene": "handcuffs",
+    "index": 6,
+    "start": 1098.215,
+    "end": 1099.376,
+    "text": "Couldn't agree a syllable more.",
+    "scores": {
+      "Target_Speaker": 0.280703067779541,
+      "Opening_officer_reference": 0.07906981557607651,
+      "Scene_original_officer": 0.17047686874866486,
+      "Scene_key_officer": 0.1261235922574997
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "raw",
+    "scene": "handcuffs",
+    "index": 7,
+    "start": 1103.148,
+    "end": 1107.251,
+    "text": " No, that's not the problem.",
+    "scores": {
+      "Target_Speaker": 0.008112396113574505,
+      "Opening_officer_reference": 0.1435774266719818,
+      "Scene_original_officer": 0.31553852558135986,
+      "Scene_key_officer": 0.3511047065258026
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "raw",
+    "scene": "handcuffs",
+    "index": 8,
+    "start": 1107.771,
+    "end": 1109.432,
+    "text": "The key, it just got stuck.",
+    "scores": {
+      "Target_Speaker": -0.02898113988339901,
+      "Opening_officer_reference": 0.15134240686893463,
+      "Scene_original_officer": 0.34531569480895996,
+      "Scene_key_officer": 0.3252527713775635
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "raw",
+    "scene": "handcuffs",
+    "index": 9,
+    "start": 1110.092,
+    "end": 1118.717,
+    "text": "I don't want to mess with your cuffs or mess them up or anything, but let's...",
+    "scores": {
+      "Target_Speaker": -0.019876573234796524,
+      "Opening_officer_reference": 0.15851423144340515,
+      "Scene_original_officer": 0.856875479221344,
+      "Scene_key_officer": 0.3354380130767822
+    },
+    "overlaps_reviewed_seed": true
+  },
+  {
+    "filter": "raw",
+    "scene": "handcuffs",
+    "index": 10,
+    "start": 1121.939,
+    "end": 1123.06,
+    "text": "I'm taking too much, Tommy.",
+    "scores": {
+      "Target_Speaker": 0.2261805385351181,
+      "Opening_officer_reference": 0.1693955510854721,
+      "Scene_original_officer": 0.02049630507826805,
+      "Scene_key_officer": 0.10144984722137451
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "raw",
+    "scene": "handcuffs",
+    "index": 11,
+    "start": 1123.1,
+    "end": 1123.961,
+    "text": "I don't got much space.",
+    "scores": {
+      "Target_Speaker": 0.10588330030441284,
+      "Opening_officer_reference": 0.035417307168245316,
+      "Scene_original_officer": -0.08650699257850647,
+      "Scene_key_officer": 0.025408916175365448
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "raw",
+    "scene": "handcuffs",
+    "index": 12,
+    "start": 1124.161,
+    "end": 1126.242,
+    "text": "Well, we're not trying to tie someone.",
+    "scores": {
+      "Target_Speaker": 0.1843612790107727,
+      "Opening_officer_reference": 0.17999202013015747,
+      "Scene_original_officer": 0.39037394523620605,
+      "Scene_key_officer": 0.472104549407959
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "raw",
+    "scene": "handcuffs",
+    "index": 13,
+    "start": 1126.262,
+    "end": 1129.464,
+    "text": "We're trying to get the key out of them.",
+    "scores": {
+      "Target_Speaker": -0.04108276590704918,
+      "Opening_officer_reference": 0.01407359354197979,
+      "Scene_original_officer": 0.10617342591285706,
+      "Scene_key_officer": 0.19420644640922546
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "raw",
+    "scene": "handcuffs",
+    "index": 14,
+    "start": 1130.916,
+    "end": 1132.196,
+    "text": " I might need to get a new key.",
+    "scores": {
+      "Target_Speaker": 0.08427990972995758,
+      "Opening_officer_reference": 0.003850804641842842,
+      "Scene_original_officer": 0.2695293426513672,
+      "Scene_key_officer": 0.25249022245407104
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "raw",
+    "scene": "handcuffs",
+    "index": 15,
+    "start": 1132.216,
+    "end": 1136.017,
+    "text": "There might be something off with this one, because I just had an issue with that fella I got in.",
+    "scores": {
+      "Target_Speaker": 0.067133329808712,
+      "Opening_officer_reference": 0.1523618847131729,
+      "Scene_original_officer": 0.4783560037612915,
+      "Scene_key_officer": 0.7307214736938477
+    },
+    "overlaps_reviewed_seed": true
+  },
+  {
+    "filter": "raw",
+    "scene": "handcuffs",
+    "index": 16,
+    "start": 1136.898,
+    "end": 1139.838,
+    "text": "Put this arm on the wall and probably even that could have come off.",
+    "scores": {
+      "Target_Speaker": -0.005622841417789459,
+      "Opening_officer_reference": 0.10598912835121155,
+      "Scene_original_officer": 0.4286164343357086,
+      "Scene_key_officer": 0.7891520261764526
+    },
+    "overlaps_reviewed_seed": true
+  },
+  {
+    "filter": "raw",
+    "scene": "handcuffs",
+    "index": 17,
+    "start": 1140.679,
+    "end": 1146.64,
+    "text": "That guy I just searched in that had the shackles, it had a little bit of difficulty opening up one of the shackled eyes.",
+    "scores": {
+      "Target_Speaker": 0.25121521949768066,
+      "Opening_officer_reference": 0.23409278690814972,
+      "Scene_original_officer": 0.5453960299491882,
+      "Scene_key_officer": 0.5611144304275513
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "raw",
+    "scene": "handcuffs",
+    "index": 18,
+    "start": 1146.76,
+    "end": 1148.501,
+    "text": "I think I got to get a new key then.",
+    "scores": {
+      "Target_Speaker": 0.08057750761508942,
+      "Opening_officer_reference": 0.06876529008150101,
+      "Scene_original_officer": 0.443271279335022,
+      "Scene_key_officer": 0.41692832112312317
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "raw",
+    "scene": "handcuffs",
+    "index": 19,
+    "start": 1148.521,
+    "end": 1150.641,
+    "text": "All right, you're good.",
+    "scores": {
+      "Target_Speaker": 0.034565798938274384,
+      "Opening_officer_reference": 0.15926414728164673,
+      "Scene_original_officer": 0.13785988092422485,
+      "Scene_key_officer": 0.2338399589061737
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "raw",
+    "scene": "handcuffs",
+    "index": 20,
+    "start": 1150.661,
+    "end": 1151.622,
+    "text": "Go ahead and have a seat.",
+    "scores": {
+      "Target_Speaker": 0.0051831528544425964,
+      "Opening_officer_reference": 0.14259493350982666,
+      "Scene_original_officer": 0.3158913850784302,
+      "Scene_key_officer": 0.4535694122314453
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "raw",
+    "scene": "handcuffs",
+    "index": 21,
+    "start": 1151.682,
+    "end": 1153.062,
+    "text": "Take off your shoes for me.",
+    "scores": {
+      "Target_Speaker": 0.03771800547838211,
+      "Opening_officer_reference": 0.0042302170768380165,
+      "Scene_original_officer": 0.373831570148468,
+      "Scene_key_officer": 0.19256675243377686
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "raw",
+    "scene": "handcuffs",
+    "index": 22,
+    "start": 1154.122,
+    "end": 1155.343,
+    "text": "What size shoe do you wear?",
+    "scores": {
+      "Target_Speaker": 0.0926228016614914,
+      "Opening_officer_reference": 0.14634758234024048,
+      "Scene_original_officer": 0.417747437953949,
+      "Scene_key_officer": 0.46425798535346985
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "raw",
+    "scene": "handcuffs",
+    "index": 23,
+    "start": 1155.363,
+    "end": 1156.8029999999999,
+    "text": "This and that.",
+    "scores": {
+      "Target_Speaker": 0.08185069262981415,
+      "Opening_officer_reference": -0.01957537978887558,
+      "Scene_original_officer": -0.042361512780189514,
+      "Scene_key_officer": 0.13555997610092163
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "raw",
+    "scene": "handcuffs",
+    "index": 24,
+    "start": 1156.923,
+    "end": 1158.964,
+    "text": "OK. Take off your necklace.",
+    "scores": {
+      "Target_Speaker": 0.08122794330120087,
+      "Opening_officer_reference": 0.25247418880462646,
+      "Scene_original_officer": 0.24063199758529663,
+      "Scene_key_officer": 0.37064826488494873
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "raw",
+    "scene": "handcuffs",
+    "index": 25,
+    "start": 1160.489,
+    "end": 1163.478,
+    "text": " Take out your earrings and your wristband there.",
+    "scores": {
+      "Target_Speaker": 0.0033017154783010483,
+      "Opening_officer_reference": 0.06430792063474655,
+      "Scene_original_officer": 0.599247932434082,
+      "Scene_key_officer": 0.3387591242790222
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "raw",
+    "scene": "height_weight",
+    "index": 0,
+    "start": 625.18,
+    "end": 629.862,
+    "text": " and loitering around businesses, causing concern and suspicion.",
+    "scores": {
+      "Target_Speaker": -0.004231024533510208,
+      "Opening_officer_reference": 0.31104713678359985,
+      "Scene_original_officer": 0.3127375841140747,
+      "Scene_key_officer": 0.13409987092018127
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "raw",
+    "scene": "height_weight",
+    "index": 1,
+    "start": 630.622,
+    "end": 631.323,
+    "text": "It's against the law.",
+    "scores": {
+      "Target_Speaker": -0.06166858971118927,
+      "Opening_officer_reference": 0.06078098341822624,
+      "Scene_original_officer": 0.1623731553554535,
+      "Scene_key_officer": 0.14467746019363403
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "raw",
+    "scene": "height_weight",
+    "index": 2,
+    "start": 633.724,
+    "end": 634.564,
+    "text": "What's your date of birth, John?",
+    "scores": {
+      "Target_Speaker": 0.05754661560058594,
+      "Opening_officer_reference": 0.2931343913078308,
+      "Scene_original_officer": 0.05684833228588104,
+      "Scene_key_officer": 0.13722392916679382
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "raw",
+    "scene": "height_weight",
+    "index": 3,
+    "start": 634.924,
+    "end": 636.825,
+    "text": "March 17th, 2002.",
+    "scores": {
+      "Target_Speaker": 0.5008549094200134,
+      "Opening_officer_reference": 0.1301977038383484,
+      "Scene_original_officer": 0.16051331162452698,
+      "Scene_key_officer": 0.1287555992603302
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "raw",
+    "scene": "height_weight",
+    "index": 4,
+    "start": 636.845,
+    "end": 639.846,
+    "text": "You got tattoos on both arms?",
+    "scores": {
+      "Target_Speaker": 0.0626584067940712,
+      "Opening_officer_reference": 0.29088401794433594,
+      "Scene_original_officer": 0.1510441154241562,
+      "Scene_key_officer": 0.13723576068878174
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "raw",
+    "scene": "height_weight",
+    "index": 5,
+    "start": 639.906,
+    "end": 640.387,
+    "text": "Anywhere else?",
+    "scores": {
+      "Target_Speaker": -0.036579787731170654,
+      "Opening_officer_reference": 0.17506290972232819,
+      "Scene_original_officer": 0.12778796255588531,
+      "Scene_key_officer": 0.2421090006828308
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "raw",
+    "scene": "height_weight",
+    "index": 6,
+    "start": 640.727,
+    "end": 641.527,
+    "text": "Yeah, on my chest.",
+    "scores": {
+      "Target_Speaker": 0.17998000979423523,
+      "Opening_officer_reference": 0.20955277979373932,
+      "Scene_original_officer": 0.08155566453933716,
+      "Scene_key_officer": 0.23301362991333008
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "raw",
+    "scene": "height_weight",
+    "index": 7,
+    "start": 642.848,
+    "end": 645.069,
+    "text": "On my ribs.",
+    "scores": {
+      "Target_Speaker": 0.14362269639968872,
+      "Opening_officer_reference": 0.009827269241213799,
+      "Scene_original_officer": 0.22833150625228882,
+      "Scene_key_officer": 0.21964600682258606
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "raw",
+    "scene": "height_weight",
+    "index": 8,
+    "start": 645.609,
+    "end": 646.729,
+    "text": "Nothing gang, anything?",
+    "scores": {
+      "Target_Speaker": 0.2525545358657837,
+      "Opening_officer_reference": -0.019618002697825432,
+      "Scene_original_officer": 0.17417970299720764,
+      "Scene_key_officer": 0.29625773429870605
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "raw",
+    "scene": "height_weight",
+    "index": 9,
+    "start": 648.17,
+    "end": 649.33,
+    "text": "That's all of you.",
+    "scores": {
+      "Target_Speaker": -0.1403883397579193,
+      "Opening_officer_reference": 0.07083156704902649,
+      "Scene_original_officer": 0.04340779408812523,
+      "Scene_key_officer": 0.16691428422927856
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "raw",
+    "scene": "height_weight",
+    "index": 10,
+    "start": 654.288,
+    "end": 654.729,
+    "text": " 511.",
+    "scores": {
+      "Target_Speaker": -0.011645229533314705,
+      "Opening_officer_reference": -0.0029299594461917877,
+      "Scene_original_officer": 0.05112781375646591,
+      "Scene_key_officer": 0.04574901610612869
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "raw",
+    "scene": "height_weight",
+    "index": 11,
+    "start": 655.009,
+    "end": 656.49,
+    "text": "Tell the girls 511.",
+    "scores": {
+      "Target_Speaker": 0.3877648711204529,
+      "Opening_officer_reference": -0.10037723928689957,
+      "Scene_original_officer": 0.024467822164297104,
+      "Scene_key_officer": 0.01906256563961506
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "raw",
+    "scene": "height_weight",
+    "index": 12,
+    "start": 656.51,
+    "end": 658.311,
+    "text": "910.",
+    "scores": {
+      "Target_Speaker": -0.05448494106531143,
+      "Opening_officer_reference": 0.06948116421699524,
+      "Scene_original_officer": 0.05455882102251053,
+      "Scene_key_officer": 0.12364310771226883
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "raw",
+    "scene": "height_weight",
+    "index": 13,
+    "start": 658.931,
+    "end": 659.731,
+    "text": "Number 13.",
+    "scores": {
+      "Target_Speaker": 0.027976524084806442,
+      "Opening_officer_reference": 0.21745683252811432,
+      "Scene_original_officer": 0.18348285555839539,
+      "Scene_key_officer": 0.23019850254058838
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "raw",
+    "scene": "height_weight",
+    "index": 14,
+    "start": 661.372,
+    "end": 662.513,
+    "text": "How much do you weigh?",
+    "scores": {
+      "Target_Speaker": 0.05162882059812546,
+      "Opening_officer_reference": 0.2055637687444687,
+      "Scene_original_officer": 0.07578689604997635,
+      "Scene_key_officer": 0.07532338798046112
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "raw",
+    "scene": "height_weight",
+    "index": 16,
+    "start": 663.253,
+    "end": 664.134,
+    "text": "How much do you weigh?",
+    "scores": {
+      "Target_Speaker": -0.0999300479888916,
+      "Opening_officer_reference": 0.11088907718658447,
+      "Scene_original_officer": 0.11928629875183105,
+      "Scene_key_officer": -0.012269692495465279
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "raw",
+    "scene": "height_weight",
+    "index": 18,
+    "start": 664.394,
+    "end": 665.815,
+    "text": "Number 11.",
+    "scores": {
+      "Target_Speaker": 0.15280255675315857,
+      "Opening_officer_reference": 0.26106658577919006,
+      "Scene_original_officer": 0.14092043042182922,
+      "Scene_key_officer": 0.29559189081192017
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "raw",
+    "scene": "height_weight",
+    "index": 19,
+    "start": 666.275,
+    "end": 666.895,
+    "text": "No record.",
+    "scores": {
+      "Target_Speaker": 0.024007044732570648,
+      "Opening_officer_reference": 0.1594720184803009,
+      "Scene_original_officer": 0.17464299499988556,
+      "Scene_key_officer": 0.11202780157327652
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "raw",
+    "scene": "height_weight",
+    "index": 20,
+    "start": 666.915,
+    "end": 670.898,
+    "text": "Mississippi or Massachusetts.",
+    "scores": {
+      "Target_Speaker": 0.09277211129665375,
+      "Opening_officer_reference": -0.009636323899030685,
+      "Scene_original_officer": 0.11169324070215225,
+      "Scene_key_officer": 0.21086499094963074
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "raw",
+    "scene": "height_weight",
+    "index": 21,
+    "start": 670.998,
+    "end": 671.418,
+    "text": "Number 8.",
+    "scores": {
+      "Target_Speaker": 0.057710692286491394,
+      "Opening_officer_reference": 0.18155013024806976,
+      "Scene_original_officer": 0.13722243905067444,
+      "Scene_key_officer": 0.00998617336153984
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "raw",
+    "scene": "height_weight",
+    "index": 22,
+    "start": 672.499,
+    "end": 673.279,
+    "text": "Is that a fake name?",
+    "scores": {
+      "Target_Speaker": -0.04855160415172577,
+      "Opening_officer_reference": 0.18679724633693695,
+      "Scene_original_officer": 0.17302480340003967,
+      "Scene_key_officer": 0.07674352824687958
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "raw",
+    "scene": "height_weight",
+    "index": 24,
+    "start": 675.768,
+    "end": 676.909,
+    "text": " You just found the system anywhere?",
+    "scores": {
+      "Target_Speaker": 0.010544959455728531,
+      "Opening_officer_reference": 0.27248895168304443,
+      "Scene_original_officer": 0.06975606828927994,
+      "Scene_key_officer": 0.2466617375612259
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "raw",
+    "scene": "height_weight",
+    "index": 25,
+    "start": 677.49,
+    "end": 679.171,
+    "text": "I don't get found guilty of anything.",
+    "scores": {
+      "Target_Speaker": 0.28649669885635376,
+      "Opening_officer_reference": 0.19548793137073517,
+      "Scene_original_officer": 0.15506626665592194,
+      "Scene_key_officer": 0.1949770748615265
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "raw",
+    "scene": "height_weight",
+    "index": 26,
+    "start": 679.191,
+    "end": 680.612,
+    "text": "Do you have a driver's license?",
+    "scores": {
+      "Target_Speaker": 0.03363210707902908,
+      "Opening_officer_reference": 0.43158477544784546,
+      "Scene_original_officer": 0.18326988816261292,
+      "Scene_key_officer": 0.05761609598994255
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "raw",
+    "scene": "height_weight",
+    "index": 27,
+    "start": 680.752,
+    "end": 681.773,
+    "text": "I do have a driver's license.",
+    "scores": {
+      "Target_Speaker": 0.5568709373474121,
+      "Opening_officer_reference": 0.06373700499534607,
+      "Scene_original_officer": 0.12773428857326508,
+      "Scene_key_officer": 0.04407761991024017
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "raw",
+    "scene": "height_weight",
+    "index": 28,
+    "start": 681.793,
+    "end": 683.715,
+    "text": "Then you should be on the system.",
+    "scores": {
+      "Target_Speaker": 0.033244065940380096,
+      "Opening_officer_reference": 0.25098368525505066,
+      "Scene_original_officer": 0.3372306227684021,
+      "Scene_key_officer": 0.3113923668861389
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "raw",
+    "scene": "height_weight",
+    "index": 29,
+    "start": 684.776,
+    "end": 685.676,
+    "text": "I have a driver's license.",
+    "scores": {
+      "Target_Speaker": 0.346256285905838,
+      "Opening_officer_reference": -0.13489291071891785,
+      "Scene_original_officer": 0.028786491602659225,
+      "Scene_key_officer": -0.003588750958442688
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "raw",
+    "scene": "height_weight",
+    "index": 30,
+    "start": 685.716,
+    "end": 687.358,
+    "text": "I didn't give you any fake information.",
+    "scores": {
+      "Target_Speaker": 0.38105565309524536,
+      "Opening_officer_reference": 0.08606994152069092,
+      "Scene_original_officer": 0.23463931679725647,
+      "Scene_key_officer": 0.21391527354717255
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "highpass100",
+    "scene": "handcuffs",
+    "index": 0,
+    "start": 1078.02,
+    "end": 1082.623,
+    "text": " And two, it lets them know kind of what to expect, so.",
+    "scores": {
+      "Target_Speaker": 0.29332849383354187,
+      "Opening_officer_reference": 0.19993874430656433,
+      "Scene_original_officer": 0.4937593340873718,
+      "Scene_key_officer": 0.5013328790664673
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "highpass100",
+    "scene": "handcuffs",
+    "index": 1,
+    "start": 1082.643,
+    "end": 1085.365,
+    "text": "I appreciate people.",
+    "scores": {
+      "Target_Speaker": 0.12388158589601517,
+      "Opening_officer_reference": 0.07190711051225662,
+      "Scene_original_officer": 0.1077151894569397,
+      "Scene_key_officer": 0.23642820119857788
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "highpass100",
+    "scene": "handcuffs",
+    "index": 2,
+    "start": 1085.465,
+    "end": 1086.026,
+    "text": "Oh yeah.",
+    "scores": {
+      "Target_Speaker": 0.032756224274635315,
+      "Opening_officer_reference": -0.053170204162597656,
+      "Scene_original_officer": 0.07619597762823105,
+      "Scene_key_officer": 0.020738614723086357
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "highpass100",
+    "scene": "handcuffs",
+    "index": 3,
+    "start": 1087.107,
+    "end": 1092.991,
+    "text": "Well I can tell everybody else that comes in here, my behavior is kind of a reflection of theirs.",
+    "scores": {
+      "Target_Speaker": 0.07515585422515869,
+      "Opening_officer_reference": 0.14664670825004578,
+      "Scene_original_officer": 0.6423926949501038,
+      "Scene_key_officer": 0.46945077180862427
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "highpass100",
+    "scene": "handcuffs",
+    "index": 4,
+    "start": 1093.151,
+    "end": 1094.352,
+    "text": "I couldn't agree more.",
+    "scores": {
+      "Target_Speaker": 0.270625501871109,
+      "Opening_officer_reference": 0.05351230502128601,
+      "Scene_original_officer": 0.16693995893001556,
+      "Scene_key_officer": 0.16132022440433502
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "highpass100",
+    "scene": "handcuffs",
+    "index": 5,
+    "start": 1094.372,
+    "end": 1095.533,
+    "text": "I couldn't agree more.",
+    "scores": {
+      "Target_Speaker": -0.004120722413063049,
+      "Opening_officer_reference": 0.05973584204912186,
+      "Scene_original_officer": 0.1458938717842102,
+      "Scene_key_officer": 0.08388747274875641
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "highpass100",
+    "scene": "handcuffs",
+    "index": 6,
+    "start": 1098.215,
+    "end": 1099.376,
+    "text": "Couldn't agree a syllable more.",
+    "scores": {
+      "Target_Speaker": 0.2512608766555786,
+      "Opening_officer_reference": 0.0667283907532692,
+      "Scene_original_officer": 0.16913682222366333,
+      "Scene_key_officer": 0.13813960552215576
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "highpass100",
+    "scene": "handcuffs",
+    "index": 7,
+    "start": 1103.148,
+    "end": 1107.251,
+    "text": " No, that's not the problem.",
+    "scores": {
+      "Target_Speaker": 0.011892708018422127,
+      "Opening_officer_reference": 0.1257581263780594,
+      "Scene_original_officer": 0.30921533703804016,
+      "Scene_key_officer": 0.3471594452857971
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "highpass100",
+    "scene": "handcuffs",
+    "index": 8,
+    "start": 1107.771,
+    "end": 1109.432,
+    "text": "The key, it just got stuck.",
+    "scores": {
+      "Target_Speaker": -0.024861369282007217,
+      "Opening_officer_reference": 0.140898659825325,
+      "Scene_original_officer": 0.33298903703689575,
+      "Scene_key_officer": 0.3260282278060913
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "highpass100",
+    "scene": "handcuffs",
+    "index": 9,
+    "start": 1110.092,
+    "end": 1118.717,
+    "text": "I don't want to mess with your cuffs or mess them up or anything, but let's...",
+    "scores": {
+      "Target_Speaker": -0.004885336384177208,
+      "Opening_officer_reference": 0.14775076508522034,
+      "Scene_original_officer": 0.8664554953575134,
+      "Scene_key_officer": 0.34339186549186707
+    },
+    "overlaps_reviewed_seed": true
+  },
+  {
+    "filter": "highpass100",
+    "scene": "handcuffs",
+    "index": 10,
+    "start": 1121.939,
+    "end": 1123.06,
+    "text": "I'm taking too much, Tommy.",
+    "scores": {
+      "Target_Speaker": 0.22428090870380402,
+      "Opening_officer_reference": 0.15813982486724854,
+      "Scene_original_officer": 0.009654657915234566,
+      "Scene_key_officer": 0.09578675776720047
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "highpass100",
+    "scene": "handcuffs",
+    "index": 11,
+    "start": 1123.1,
+    "end": 1123.961,
+    "text": "I don't got much space.",
+    "scores": {
+      "Target_Speaker": 0.10120785981416702,
+      "Opening_officer_reference": 0.03548531234264374,
+      "Scene_original_officer": -0.08650773763656616,
+      "Scene_key_officer": 0.041489072144031525
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "highpass100",
+    "scene": "handcuffs",
+    "index": 12,
+    "start": 1124.161,
+    "end": 1126.242,
+    "text": "Well, we're not trying to tie someone.",
+    "scores": {
+      "Target_Speaker": 0.1757233738899231,
+      "Opening_officer_reference": 0.1682308167219162,
+      "Scene_original_officer": 0.378070205450058,
+      "Scene_key_officer": 0.49265211820602417
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "highpass100",
+    "scene": "handcuffs",
+    "index": 13,
+    "start": 1126.262,
+    "end": 1129.464,
+    "text": "We're trying to get the key out of them.",
+    "scores": {
+      "Target_Speaker": -0.03357180207967758,
+      "Opening_officer_reference": -0.001913430169224739,
+      "Scene_original_officer": 0.11236543953418732,
+      "Scene_key_officer": 0.20317165553569794
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "highpass100",
+    "scene": "handcuffs",
+    "index": 14,
+    "start": 1130.916,
+    "end": 1132.196,
+    "text": " I might need to get a new key.",
+    "scores": {
+      "Target_Speaker": 0.08789823949337006,
+      "Opening_officer_reference": -0.020558081567287445,
+      "Scene_original_officer": 0.26674893498420715,
+      "Scene_key_officer": 0.23491984605789185
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "highpass100",
+    "scene": "handcuffs",
+    "index": 15,
+    "start": 1132.216,
+    "end": 1136.017,
+    "text": "There might be something off with this one, because I just had an issue with that fella I got in.",
+    "scores": {
+      "Target_Speaker": 0.05717499554157257,
+      "Opening_officer_reference": 0.1550232172012329,
+      "Scene_original_officer": 0.4602850377559662,
+      "Scene_key_officer": 0.7199978828430176
+    },
+    "overlaps_reviewed_seed": true
+  },
+  {
+    "filter": "highpass100",
+    "scene": "handcuffs",
+    "index": 16,
+    "start": 1136.898,
+    "end": 1139.838,
+    "text": "Put this arm on the wall and probably even that could have come off.",
+    "scores": {
+      "Target_Speaker": 0.02051714062690735,
+      "Opening_officer_reference": 0.10248784720897675,
+      "Scene_original_officer": 0.42480987310409546,
+      "Scene_key_officer": 0.7979830503463745
+    },
+    "overlaps_reviewed_seed": true
+  },
+  {
+    "filter": "highpass100",
+    "scene": "handcuffs",
+    "index": 17,
+    "start": 1140.679,
+    "end": 1146.64,
+    "text": "That guy I just searched in that had the shackles, it had a little bit of difficulty opening up one of the shackled eyes.",
+    "scores": {
+      "Target_Speaker": 0.2523917555809021,
+      "Opening_officer_reference": 0.2208060324192047,
+      "Scene_original_officer": 0.5433157682418823,
+      "Scene_key_officer": 0.5661095380783081
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "highpass100",
+    "scene": "handcuffs",
+    "index": 18,
+    "start": 1146.76,
+    "end": 1148.501,
+    "text": "I think I got to get a new key then.",
+    "scores": {
+      "Target_Speaker": 0.08051424473524094,
+      "Opening_officer_reference": 0.06895874440670013,
+      "Scene_original_officer": 0.4499724805355072,
+      "Scene_key_officer": 0.4189247786998749
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "highpass100",
+    "scene": "handcuffs",
+    "index": 19,
+    "start": 1148.521,
+    "end": 1150.641,
+    "text": "All right, you're good.",
+    "scores": {
+      "Target_Speaker": 0.03145792707800865,
+      "Opening_officer_reference": 0.14349603652954102,
+      "Scene_original_officer": 0.11364094167947769,
+      "Scene_key_officer": 0.2259303629398346
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "highpass100",
+    "scene": "handcuffs",
+    "index": 20,
+    "start": 1150.661,
+    "end": 1151.622,
+    "text": "Go ahead and have a seat.",
+    "scores": {
+      "Target_Speaker": 0.004579838365316391,
+      "Opening_officer_reference": 0.14708983898162842,
+      "Scene_original_officer": 0.31206950545310974,
+      "Scene_key_officer": 0.43798017501831055
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "highpass100",
+    "scene": "handcuffs",
+    "index": 21,
+    "start": 1151.682,
+    "end": 1153.062,
+    "text": "Take off your shoes for me.",
+    "scores": {
+      "Target_Speaker": 0.03681560233235359,
+      "Opening_officer_reference": 0.0013234717771410942,
+      "Scene_original_officer": 0.37822628021240234,
+      "Scene_key_officer": 0.18061955273151398
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "highpass100",
+    "scene": "handcuffs",
+    "index": 22,
+    "start": 1154.122,
+    "end": 1155.343,
+    "text": "What size shoe do you wear?",
+    "scores": {
+      "Target_Speaker": 0.08192513883113861,
+      "Opening_officer_reference": 0.13587889075279236,
+      "Scene_original_officer": 0.41788819432258606,
+      "Scene_key_officer": 0.44672462344169617
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "highpass100",
+    "scene": "handcuffs",
+    "index": 23,
+    "start": 1155.363,
+    "end": 1156.8029999999999,
+    "text": "This and that.",
+    "scores": {
+      "Target_Speaker": 0.08806104212999344,
+      "Opening_officer_reference": -0.03937707468867302,
+      "Scene_original_officer": -0.035391002893447876,
+      "Scene_key_officer": 0.13580933213233948
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "highpass100",
+    "scene": "handcuffs",
+    "index": 24,
+    "start": 1156.923,
+    "end": 1158.964,
+    "text": "OK. Take off your necklace.",
+    "scores": {
+      "Target_Speaker": 0.07875204086303711,
+      "Opening_officer_reference": 0.247235506772995,
+      "Scene_original_officer": 0.2456294447183609,
+      "Scene_key_officer": 0.3700527250766754
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "highpass100",
+    "scene": "handcuffs",
+    "index": 25,
+    "start": 1160.489,
+    "end": 1163.478,
+    "text": " Take out your earrings and your wristband there.",
+    "scores": {
+      "Target_Speaker": 0.004206269979476929,
+      "Opening_officer_reference": 0.04457968473434448,
+      "Scene_original_officer": 0.5923781394958496,
+      "Scene_key_officer": 0.3222194314002991
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "highpass100",
+    "scene": "height_weight",
+    "index": 0,
+    "start": 625.18,
+    "end": 629.862,
+    "text": " and loitering around businesses, causing concern and suspicion.",
+    "scores": {
+      "Target_Speaker": -0.010757789015769958,
+      "Opening_officer_reference": 0.29755309224128723,
+      "Scene_original_officer": 0.30475449562072754,
+      "Scene_key_officer": 0.15560488402843475
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "highpass100",
+    "scene": "height_weight",
+    "index": 1,
+    "start": 630.622,
+    "end": 631.323,
+    "text": "It's against the law.",
+    "scores": {
+      "Target_Speaker": -0.05181080102920532,
+      "Opening_officer_reference": 0.049672991037368774,
+      "Scene_original_officer": 0.14092230796813965,
+      "Scene_key_officer": 0.15309810638427734
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "highpass100",
+    "scene": "height_weight",
+    "index": 2,
+    "start": 633.724,
+    "end": 634.564,
+    "text": "What's your date of birth, John?",
+    "scores": {
+      "Target_Speaker": 0.06042484939098358,
+      "Opening_officer_reference": 0.28907495737075806,
+      "Scene_original_officer": 0.04617432504892349,
+      "Scene_key_officer": 0.13504405319690704
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "highpass100",
+    "scene": "height_weight",
+    "index": 3,
+    "start": 634.924,
+    "end": 636.825,
+    "text": "March 17th, 2002.",
+    "scores": {
+      "Target_Speaker": 0.5026008486747742,
+      "Opening_officer_reference": 0.11349479854106903,
+      "Scene_original_officer": 0.15958857536315918,
+      "Scene_key_officer": 0.14424817264080048
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "highpass100",
+    "scene": "height_weight",
+    "index": 4,
+    "start": 636.845,
+    "end": 639.846,
+    "text": "You got tattoos on both arms?",
+    "scores": {
+      "Target_Speaker": 0.050513893365859985,
+      "Opening_officer_reference": 0.2610514163970947,
+      "Scene_original_officer": 0.1608370840549469,
+      "Scene_key_officer": 0.15209907293319702
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "highpass100",
+    "scene": "height_weight",
+    "index": 5,
+    "start": 639.906,
+    "end": 640.387,
+    "text": "Anywhere else?",
+    "scores": {
+      "Target_Speaker": -0.04075606167316437,
+      "Opening_officer_reference": 0.1672925055027008,
+      "Scene_original_officer": 0.13356131315231323,
+      "Scene_key_officer": 0.2553693652153015
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "highpass100",
+    "scene": "height_weight",
+    "index": 6,
+    "start": 640.727,
+    "end": 641.527,
+    "text": "Yeah, on my chest.",
+    "scores": {
+      "Target_Speaker": 0.1718416064977646,
+      "Opening_officer_reference": 0.2139507532119751,
+      "Scene_original_officer": 0.09201216697692871,
+      "Scene_key_officer": 0.23591968417167664
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "highpass100",
+    "scene": "height_weight",
+    "index": 7,
+    "start": 642.848,
+    "end": 645.069,
+    "text": "On my ribs.",
+    "scores": {
+      "Target_Speaker": 0.1313604712486267,
+      "Opening_officer_reference": 0.003491239622235298,
+      "Scene_original_officer": 0.217598557472229,
+      "Scene_key_officer": 0.224545419216156
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "highpass100",
+    "scene": "height_weight",
+    "index": 8,
+    "start": 645.609,
+    "end": 646.729,
+    "text": "Nothing gang, anything?",
+    "scores": {
+      "Target_Speaker": 0.2270522266626358,
+      "Opening_officer_reference": -0.005036797374486923,
+      "Scene_original_officer": 0.17112426459789276,
+      "Scene_key_officer": 0.2974506616592407
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "highpass100",
+    "scene": "height_weight",
+    "index": 9,
+    "start": 648.17,
+    "end": 649.33,
+    "text": "That's all of you.",
+    "scores": {
+      "Target_Speaker": -0.12610484659671783,
+      "Opening_officer_reference": 0.07089822739362717,
+      "Scene_original_officer": 0.027664393186569214,
+      "Scene_key_officer": 0.1385379284620285
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "highpass100",
+    "scene": "height_weight",
+    "index": 10,
+    "start": 654.288,
+    "end": 654.729,
+    "text": " 511.",
+    "scores": {
+      "Target_Speaker": -0.012691713869571686,
+      "Opening_officer_reference": -0.014628026634454727,
+      "Scene_original_officer": 0.03889710456132889,
+      "Scene_key_officer": 0.0401814766228199
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "highpass100",
+    "scene": "height_weight",
+    "index": 11,
+    "start": 655.009,
+    "end": 656.49,
+    "text": "Tell the girls 511.",
+    "scores": {
+      "Target_Speaker": 0.3996589779853821,
+      "Opening_officer_reference": -0.10317216068506241,
+      "Scene_original_officer": 0.005237851291894913,
+      "Scene_key_officer": 0.009282968938350677
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "highpass100",
+    "scene": "height_weight",
+    "index": 12,
+    "start": 656.51,
+    "end": 658.311,
+    "text": "910.",
+    "scores": {
+      "Target_Speaker": -0.05319645628333092,
+      "Opening_officer_reference": 0.08247172832489014,
+      "Scene_original_officer": 0.05636933073401451,
+      "Scene_key_officer": 0.13052164018154144
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "highpass100",
+    "scene": "height_weight",
+    "index": 13,
+    "start": 658.931,
+    "end": 659.731,
+    "text": "Number 13.",
+    "scores": {
+      "Target_Speaker": 0.030412860214710236,
+      "Opening_officer_reference": 0.20694534480571747,
+      "Scene_original_officer": 0.1803469955921173,
+      "Scene_key_officer": 0.23281234502792358
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "highpass100",
+    "scene": "height_weight",
+    "index": 14,
+    "start": 661.372,
+    "end": 662.513,
+    "text": "How much do you weigh?",
+    "scores": {
+      "Target_Speaker": 0.0716356635093689,
+      "Opening_officer_reference": 0.1917072832584381,
+      "Scene_original_officer": 0.09184818714857101,
+      "Scene_key_officer": 0.07946169376373291
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "highpass100",
+    "scene": "height_weight",
+    "index": 16,
+    "start": 663.253,
+    "end": 664.134,
+    "text": "How much do you weigh?",
+    "scores": {
+      "Target_Speaker": -0.08899696171283722,
+      "Opening_officer_reference": 0.09659476578235626,
+      "Scene_original_officer": 0.1108504980802536,
+      "Scene_key_officer": -0.01771797612309456
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "highpass100",
+    "scene": "height_weight",
+    "index": 18,
+    "start": 664.394,
+    "end": 665.815,
+    "text": "Number 11.",
+    "scores": {
+      "Target_Speaker": 0.1562870293855667,
+      "Opening_officer_reference": 0.24588829278945923,
+      "Scene_original_officer": 0.12123041599988937,
+      "Scene_key_officer": 0.29752448201179504
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "highpass100",
+    "scene": "height_weight",
+    "index": 19,
+    "start": 666.275,
+    "end": 666.895,
+    "text": "No record.",
+    "scores": {
+      "Target_Speaker": 0.050159066915512085,
+      "Opening_officer_reference": 0.14258480072021484,
+      "Scene_original_officer": 0.17552059888839722,
+      "Scene_key_officer": 0.13342668116092682
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "highpass100",
+    "scene": "height_weight",
+    "index": 20,
+    "start": 666.915,
+    "end": 670.898,
+    "text": "Mississippi or Massachusetts.",
+    "scores": {
+      "Target_Speaker": 0.08635677397251129,
+      "Opening_officer_reference": 0.0028405282646417618,
+      "Scene_original_officer": 0.1125291958451271,
+      "Scene_key_officer": 0.20576435327529907
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "highpass100",
+    "scene": "height_weight",
+    "index": 21,
+    "start": 670.998,
+    "end": 671.418,
+    "text": "Number 8.",
+    "scores": {
+      "Target_Speaker": 0.049494773149490356,
+      "Opening_officer_reference": 0.18043823540210724,
+      "Scene_original_officer": 0.13819463551044464,
+      "Scene_key_officer": 0.029428541660308838
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "highpass100",
+    "scene": "height_weight",
+    "index": 22,
+    "start": 672.499,
+    "end": 673.279,
+    "text": "Is that a fake name?",
+    "scores": {
+      "Target_Speaker": -0.045875199139118195,
+      "Opening_officer_reference": 0.18275105953216553,
+      "Scene_original_officer": 0.1767139732837677,
+      "Scene_key_officer": 0.0727091133594513
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "highpass100",
+    "scene": "height_weight",
+    "index": 24,
+    "start": 675.768,
+    "end": 676.909,
+    "text": " You just found the system anywhere?",
+    "scores": {
+      "Target_Speaker": 0.004832785576581955,
+      "Opening_officer_reference": 0.26084914803504944,
+      "Scene_original_officer": 0.07175356894731522,
+      "Scene_key_officer": 0.2538144588470459
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "highpass100",
+    "scene": "height_weight",
+    "index": 25,
+    "start": 677.49,
+    "end": 679.171,
+    "text": "I don't get found guilty of anything.",
+    "scores": {
+      "Target_Speaker": 0.28378599882125854,
+      "Opening_officer_reference": 0.1958242654800415,
+      "Scene_original_officer": 0.14090119302272797,
+      "Scene_key_officer": 0.197396382689476
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "highpass100",
+    "scene": "height_weight",
+    "index": 26,
+    "start": 679.191,
+    "end": 680.612,
+    "text": "Do you have a driver's license?",
+    "scores": {
+      "Target_Speaker": 0.03814283758401871,
+      "Opening_officer_reference": 0.40885305404663086,
+      "Scene_original_officer": 0.1931244283914566,
+      "Scene_key_officer": 0.07560858130455017
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "highpass100",
+    "scene": "height_weight",
+    "index": 27,
+    "start": 680.752,
+    "end": 681.773,
+    "text": "I do have a driver's license.",
+    "scores": {
+      "Target_Speaker": 0.5228029489517212,
+      "Opening_officer_reference": 0.05200686305761337,
+      "Scene_original_officer": 0.12570923566818237,
+      "Scene_key_officer": 0.043707456439733505
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "highpass100",
+    "scene": "height_weight",
+    "index": 28,
+    "start": 681.793,
+    "end": 683.715,
+    "text": "Then you should be on the system.",
+    "scores": {
+      "Target_Speaker": 0.03463898226618767,
+      "Opening_officer_reference": 0.22410115599632263,
+      "Scene_original_officer": 0.34666526317596436,
+      "Scene_key_officer": 0.3114789128303528
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "highpass100",
+    "scene": "height_weight",
+    "index": 29,
+    "start": 684.776,
+    "end": 685.676,
+    "text": "I have a driver's license.",
+    "scores": {
+      "Target_Speaker": 0.3435683250427246,
+      "Opening_officer_reference": -0.15094012022018433,
+      "Scene_original_officer": 0.019173743203282356,
+      "Scene_key_officer": -0.011470850557088852
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "highpass100",
+    "scene": "height_weight",
+    "index": 30,
+    "start": 685.716,
+    "end": 687.358,
+    "text": "I didn't give you any fake information.",
+    "scores": {
+      "Target_Speaker": 0.38118061423301697,
+      "Opening_officer_reference": 0.09761294722557068,
+      "Scene_original_officer": 0.23702147603034973,
+      "Scene_key_officer": 0.22569002211093903
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band150_4000",
+    "scene": "handcuffs",
+    "index": 0,
+    "start": 1078.02,
+    "end": 1082.623,
+    "text": " And two, it lets them know kind of what to expect, so.",
+    "scores": {
+      "Target_Speaker": 0.27185478806495667,
+      "Opening_officer_reference": 0.19073417782783508,
+      "Scene_original_officer": 0.5134112238883972,
+      "Scene_key_officer": 0.5802290439605713
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band150_4000",
+    "scene": "handcuffs",
+    "index": 1,
+    "start": 1082.643,
+    "end": 1085.365,
+    "text": "I appreciate people.",
+    "scores": {
+      "Target_Speaker": 0.23461398482322693,
+      "Opening_officer_reference": 0.12537966668605804,
+      "Scene_original_officer": 0.28282690048217773,
+      "Scene_key_officer": 0.3438451886177063
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band150_4000",
+    "scene": "handcuffs",
+    "index": 2,
+    "start": 1085.465,
+    "end": 1086.026,
+    "text": "Oh yeah.",
+    "scores": {
+      "Target_Speaker": 0.11656627058982849,
+      "Opening_officer_reference": 0.06556573510169983,
+      "Scene_original_officer": 0.3002750277519226,
+      "Scene_key_officer": 0.1491997241973877
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band150_4000",
+    "scene": "handcuffs",
+    "index": 3,
+    "start": 1087.107,
+    "end": 1092.991,
+    "text": "Well I can tell everybody else that comes in here, my behavior is kind of a reflection of theirs.",
+    "scores": {
+      "Target_Speaker": 0.11396189779043198,
+      "Opening_officer_reference": 0.12016260623931885,
+      "Scene_original_officer": 0.7142904996871948,
+      "Scene_key_officer": 0.5460640788078308
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band150_4000",
+    "scene": "handcuffs",
+    "index": 4,
+    "start": 1093.151,
+    "end": 1094.352,
+    "text": "I couldn't agree more.",
+    "scores": {
+      "Target_Speaker": 0.26940780878067017,
+      "Opening_officer_reference": 0.21456292271614075,
+      "Scene_original_officer": 0.4130021035671234,
+      "Scene_key_officer": 0.31901609897613525
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band150_4000",
+    "scene": "handcuffs",
+    "index": 5,
+    "start": 1094.372,
+    "end": 1095.533,
+    "text": "I couldn't agree more.",
+    "scores": {
+      "Target_Speaker": 0.07240046560764313,
+      "Opening_officer_reference": 0.18034039437770844,
+      "Scene_original_officer": 0.3414839506149292,
+      "Scene_key_officer": 0.24325677752494812
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band150_4000",
+    "scene": "handcuffs",
+    "index": 6,
+    "start": 1098.215,
+    "end": 1099.376,
+    "text": "Couldn't agree a syllable more.",
+    "scores": {
+      "Target_Speaker": 0.2582036256790161,
+      "Opening_officer_reference": 0.12072242796421051,
+      "Scene_original_officer": 0.40855783224105835,
+      "Scene_key_officer": 0.3307502269744873
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band150_4000",
+    "scene": "handcuffs",
+    "index": 7,
+    "start": 1103.148,
+    "end": 1107.251,
+    "text": " No, that's not the problem.",
+    "scores": {
+      "Target_Speaker": 0.116181880235672,
+      "Opening_officer_reference": 0.22376157343387604,
+      "Scene_original_officer": 0.3071194887161255,
+      "Scene_key_officer": 0.48487818241119385
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band150_4000",
+    "scene": "handcuffs",
+    "index": 8,
+    "start": 1107.771,
+    "end": 1109.432,
+    "text": "The key, it just got stuck.",
+    "scores": {
+      "Target_Speaker": 0.1267823874950409,
+      "Opening_officer_reference": 0.16740527749061584,
+      "Scene_original_officer": 0.30220359563827515,
+      "Scene_key_officer": 0.34547242522239685
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band150_4000",
+    "scene": "handcuffs",
+    "index": 9,
+    "start": 1110.092,
+    "end": 1118.717,
+    "text": "I don't want to mess with your cuffs or mess them up or anything, but let's...",
+    "scores": {
+      "Target_Speaker": 0.0812675803899765,
+      "Opening_officer_reference": 0.1958099901676178,
+      "Scene_original_officer": 0.9111767411231995,
+      "Scene_key_officer": 0.5313169956207275
+    },
+    "overlaps_reviewed_seed": true
+  },
+  {
+    "filter": "band150_4000",
+    "scene": "handcuffs",
+    "index": 10,
+    "start": 1121.939,
+    "end": 1123.06,
+    "text": "I'm taking too much, Tommy.",
+    "scores": {
+      "Target_Speaker": 0.2592352628707886,
+      "Opening_officer_reference": 0.12859098613262177,
+      "Scene_original_officer": 0.0929856151342392,
+      "Scene_key_officer": 0.18501342833042145
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band150_4000",
+    "scene": "handcuffs",
+    "index": 11,
+    "start": 1123.1,
+    "end": 1123.961,
+    "text": "I don't got much space.",
+    "scores": {
+      "Target_Speaker": 0.12065842747688293,
+      "Opening_officer_reference": 0.04901433363556862,
+      "Scene_original_officer": 0.11289539188146591,
+      "Scene_key_officer": 0.2171393781900406
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band150_4000",
+    "scene": "handcuffs",
+    "index": 12,
+    "start": 1124.161,
+    "end": 1126.242,
+    "text": "Well, we're not trying to tie someone.",
+    "scores": {
+      "Target_Speaker": 0.2673530578613281,
+      "Opening_officer_reference": 0.18481013178825378,
+      "Scene_original_officer": 0.5330953598022461,
+      "Scene_key_officer": 0.5939841270446777
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band150_4000",
+    "scene": "handcuffs",
+    "index": 13,
+    "start": 1126.262,
+    "end": 1129.464,
+    "text": "We're trying to get the key out of them.",
+    "scores": {
+      "Target_Speaker": 0.1707388013601303,
+      "Opening_officer_reference": 0.14977343380451202,
+      "Scene_original_officer": 0.32190173864364624,
+      "Scene_key_officer": 0.3149177134037018
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band150_4000",
+    "scene": "handcuffs",
+    "index": 14,
+    "start": 1130.916,
+    "end": 1132.196,
+    "text": " I might need to get a new key.",
+    "scores": {
+      "Target_Speaker": 0.15447203814983368,
+      "Opening_officer_reference": 0.0806145966053009,
+      "Scene_original_officer": 0.3899686336517334,
+      "Scene_key_officer": 0.42548638582229614
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band150_4000",
+    "scene": "handcuffs",
+    "index": 15,
+    "start": 1132.216,
+    "end": 1136.017,
+    "text": "There might be something off with this one, because I just had an issue with that fella I got in.",
+    "scores": {
+      "Target_Speaker": 0.1238267794251442,
+      "Opening_officer_reference": 0.2001926451921463,
+      "Scene_original_officer": 0.5363745093345642,
+      "Scene_key_officer": 0.7767887115478516
+    },
+    "overlaps_reviewed_seed": true
+  },
+  {
+    "filter": "band150_4000",
+    "scene": "handcuffs",
+    "index": 16,
+    "start": 1136.898,
+    "end": 1139.838,
+    "text": "Put this arm on the wall and probably even that could have come off.",
+    "scores": {
+      "Target_Speaker": 0.04981072247028351,
+      "Opening_officer_reference": 0.24034887552261353,
+      "Scene_original_officer": 0.4943525195121765,
+      "Scene_key_officer": 0.7851073145866394
+    },
+    "overlaps_reviewed_seed": true
+  },
+  {
+    "filter": "band150_4000",
+    "scene": "handcuffs",
+    "index": 17,
+    "start": 1140.679,
+    "end": 1146.64,
+    "text": "That guy I just searched in that had the shackles, it had a little bit of difficulty opening up one of the shackled eyes.",
+    "scores": {
+      "Target_Speaker": 0.22562947869300842,
+      "Opening_officer_reference": 0.18463486433029175,
+      "Scene_original_officer": 0.5677405595779419,
+      "Scene_key_officer": 0.6314870119094849
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band150_4000",
+    "scene": "handcuffs",
+    "index": 18,
+    "start": 1146.76,
+    "end": 1148.501,
+    "text": "I think I got to get a new key then.",
+    "scores": {
+      "Target_Speaker": 0.07557439804077148,
+      "Opening_officer_reference": 0.050441935658454895,
+      "Scene_original_officer": 0.45522698760032654,
+      "Scene_key_officer": 0.5303232669830322
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band150_4000",
+    "scene": "handcuffs",
+    "index": 19,
+    "start": 1148.521,
+    "end": 1150.641,
+    "text": "All right, you're good.",
+    "scores": {
+      "Target_Speaker": 0.18875566124916077,
+      "Opening_officer_reference": 0.21085038781166077,
+      "Scene_original_officer": 0.2649833559989929,
+      "Scene_key_officer": 0.3002381920814514
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band150_4000",
+    "scene": "handcuffs",
+    "index": 20,
+    "start": 1150.661,
+    "end": 1151.622,
+    "text": "Go ahead and have a seat.",
+    "scores": {
+      "Target_Speaker": 0.0449775829911232,
+      "Opening_officer_reference": 0.2637007236480713,
+      "Scene_original_officer": 0.2835626006126404,
+      "Scene_key_officer": 0.39245909452438354
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band150_4000",
+    "scene": "handcuffs",
+    "index": 21,
+    "start": 1151.682,
+    "end": 1153.062,
+    "text": "Take off your shoes for me.",
+    "scores": {
+      "Target_Speaker": 0.08207830786705017,
+      "Opening_officer_reference": 0.07104112207889557,
+      "Scene_original_officer": 0.43446025252342224,
+      "Scene_key_officer": 0.26986998319625854
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band150_4000",
+    "scene": "handcuffs",
+    "index": 22,
+    "start": 1154.122,
+    "end": 1155.343,
+    "text": "What size shoe do you wear?",
+    "scores": {
+      "Target_Speaker": 0.159770667552948,
+      "Opening_officer_reference": 0.1705697774887085,
+      "Scene_original_officer": 0.39882829785346985,
+      "Scene_key_officer": 0.5070897340774536
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band150_4000",
+    "scene": "handcuffs",
+    "index": 23,
+    "start": 1155.363,
+    "end": 1156.8029999999999,
+    "text": "This and that.",
+    "scores": {
+      "Target_Speaker": 0.1465396285057068,
+      "Opening_officer_reference": 0.19187301397323608,
+      "Scene_original_officer": 0.07650308310985565,
+      "Scene_key_officer": 0.1776461899280548
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band150_4000",
+    "scene": "handcuffs",
+    "index": 24,
+    "start": 1156.923,
+    "end": 1158.964,
+    "text": "OK. Take off your necklace.",
+    "scores": {
+      "Target_Speaker": 0.1403043568134308,
+      "Opening_officer_reference": 0.217537060379982,
+      "Scene_original_officer": 0.43308430910110474,
+      "Scene_key_officer": 0.5803878307342529
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band150_4000",
+    "scene": "handcuffs",
+    "index": 25,
+    "start": 1160.489,
+    "end": 1163.478,
+    "text": " Take out your earrings and your wristband there.",
+    "scores": {
+      "Target_Speaker": 0.029378022998571396,
+      "Opening_officer_reference": 0.09924108535051346,
+      "Scene_original_officer": 0.6869966387748718,
+      "Scene_key_officer": 0.4736681580543518
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band150_4000",
+    "scene": "height_weight",
+    "index": 0,
+    "start": 625.18,
+    "end": 629.862,
+    "text": " and loitering around businesses, causing concern and suspicion.",
+    "scores": {
+      "Target_Speaker": 0.05887889862060547,
+      "Opening_officer_reference": 0.315571129322052,
+      "Scene_original_officer": 0.42893216013908386,
+      "Scene_key_officer": 0.2099781185388565
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band150_4000",
+    "scene": "height_weight",
+    "index": 1,
+    "start": 630.622,
+    "end": 631.323,
+    "text": "It's against the law.",
+    "scores": {
+      "Target_Speaker": -0.02309625782072544,
+      "Opening_officer_reference": 0.23934370279312134,
+      "Scene_original_officer": 0.1434670090675354,
+      "Scene_key_officer": 0.275751531124115
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band150_4000",
+    "scene": "height_weight",
+    "index": 2,
+    "start": 633.724,
+    "end": 634.564,
+    "text": "What's your date of birth, John?",
+    "scores": {
+      "Target_Speaker": 0.08144621551036835,
+      "Opening_officer_reference": 0.37898969650268555,
+      "Scene_original_officer": 0.165899395942688,
+      "Scene_key_officer": 0.26369810104370117
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band150_4000",
+    "scene": "height_weight",
+    "index": 3,
+    "start": 634.924,
+    "end": 636.825,
+    "text": "March 17th, 2002.",
+    "scores": {
+      "Target_Speaker": 0.4244335889816284,
+      "Opening_officer_reference": 0.23945167660713196,
+      "Scene_original_officer": 0.25295406579971313,
+      "Scene_key_officer": 0.31151464581489563
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band150_4000",
+    "scene": "height_weight",
+    "index": 4,
+    "start": 636.845,
+    "end": 639.846,
+    "text": "You got tattoos on both arms?",
+    "scores": {
+      "Target_Speaker": 0.08826617896556854,
+      "Opening_officer_reference": 0.3434711694717407,
+      "Scene_original_officer": 0.1964716613292694,
+      "Scene_key_officer": 0.22654098272323608
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band150_4000",
+    "scene": "height_weight",
+    "index": 5,
+    "start": 639.906,
+    "end": 640.387,
+    "text": "Anywhere else?",
+    "scores": {
+      "Target_Speaker": 0.06226563826203346,
+      "Opening_officer_reference": 0.19879192113876343,
+      "Scene_original_officer": 0.23375408351421356,
+      "Scene_key_officer": 0.3071197271347046
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band150_4000",
+    "scene": "height_weight",
+    "index": 6,
+    "start": 640.727,
+    "end": 641.527,
+    "text": "Yeah, on my chest.",
+    "scores": {
+      "Target_Speaker": 0.12470902502536774,
+      "Opening_officer_reference": 0.32696858048439026,
+      "Scene_original_officer": 0.0009411517530679703,
+      "Scene_key_officer": 0.1994476020336151
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band150_4000",
+    "scene": "height_weight",
+    "index": 7,
+    "start": 642.848,
+    "end": 645.069,
+    "text": "On my ribs.",
+    "scores": {
+      "Target_Speaker": 0.13844633102416992,
+      "Opening_officer_reference": 0.03747677057981491,
+      "Scene_original_officer": 0.2913915514945984,
+      "Scene_key_officer": 0.17937323451042175
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band150_4000",
+    "scene": "height_weight",
+    "index": 8,
+    "start": 645.609,
+    "end": 646.729,
+    "text": "Nothing gang, anything?",
+    "scores": {
+      "Target_Speaker": 0.16000889241695404,
+      "Opening_officer_reference": 0.11098715662956238,
+      "Scene_original_officer": 0.29507166147232056,
+      "Scene_key_officer": 0.4373341202735901
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band150_4000",
+    "scene": "height_weight",
+    "index": 9,
+    "start": 648.17,
+    "end": 649.33,
+    "text": "That's all of you.",
+    "scores": {
+      "Target_Speaker": 0.06421259045600891,
+      "Opening_officer_reference": 0.2191222608089447,
+      "Scene_original_officer": 0.2635675072669983,
+      "Scene_key_officer": 0.35626718401908875
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band150_4000",
+    "scene": "height_weight",
+    "index": 10,
+    "start": 654.288,
+    "end": 654.729,
+    "text": " 511.",
+    "scores": {
+      "Target_Speaker": 0.12403272092342377,
+      "Opening_officer_reference": 0.1408442258834839,
+      "Scene_original_officer": 0.22257199883460999,
+      "Scene_key_officer": 0.19391152262687683
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band150_4000",
+    "scene": "height_weight",
+    "index": 11,
+    "start": 655.009,
+    "end": 656.49,
+    "text": "Tell the girls 511.",
+    "scores": {
+      "Target_Speaker": 0.43915772438049316,
+      "Opening_officer_reference": 0.034799717366695404,
+      "Scene_original_officer": 0.1896737664937973,
+      "Scene_key_officer": 0.2441285401582718
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band150_4000",
+    "scene": "height_weight",
+    "index": 12,
+    "start": 656.51,
+    "end": 658.311,
+    "text": "910.",
+    "scores": {
+      "Target_Speaker": 0.005590841174125671,
+      "Opening_officer_reference": 0.14745017886161804,
+      "Scene_original_officer": 0.21833747625350952,
+      "Scene_key_officer": 0.2823474705219269
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band150_4000",
+    "scene": "height_weight",
+    "index": 13,
+    "start": 658.931,
+    "end": 659.731,
+    "text": "Number 13.",
+    "scores": {
+      "Target_Speaker": 0.17560985684394836,
+      "Opening_officer_reference": 0.29493075609207153,
+      "Scene_original_officer": 0.2602851092815399,
+      "Scene_key_officer": 0.35649439692497253
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band150_4000",
+    "scene": "height_weight",
+    "index": 14,
+    "start": 661.372,
+    "end": 662.513,
+    "text": "How much do you weigh?",
+    "scores": {
+      "Target_Speaker": 0.07412120699882507,
+      "Opening_officer_reference": 0.2911171317100525,
+      "Scene_original_officer": 0.2716659903526306,
+      "Scene_key_officer": 0.23747649788856506
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band150_4000",
+    "scene": "height_weight",
+    "index": 16,
+    "start": 663.253,
+    "end": 664.134,
+    "text": "How much do you weigh?",
+    "scores": {
+      "Target_Speaker": -0.00937039777636528,
+      "Opening_officer_reference": 0.24959005415439606,
+      "Scene_original_officer": 0.18827654421329498,
+      "Scene_key_officer": 0.13269637525081635
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band150_4000",
+    "scene": "height_weight",
+    "index": 18,
+    "start": 664.394,
+    "end": 665.815,
+    "text": "Number 11.",
+    "scores": {
+      "Target_Speaker": 0.2387121021747589,
+      "Opening_officer_reference": 0.2135465145111084,
+      "Scene_original_officer": 0.13620492815971375,
+      "Scene_key_officer": 0.28356319665908813
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band150_4000",
+    "scene": "height_weight",
+    "index": 19,
+    "start": 666.275,
+    "end": 666.895,
+    "text": "No record.",
+    "scores": {
+      "Target_Speaker": 0.18518447875976562,
+      "Opening_officer_reference": 0.1451517790555954,
+      "Scene_original_officer": 0.20486079156398773,
+      "Scene_key_officer": 0.2556041181087494
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band150_4000",
+    "scene": "height_weight",
+    "index": 20,
+    "start": 666.915,
+    "end": 670.898,
+    "text": "Mississippi or Massachusetts.",
+    "scores": {
+      "Target_Speaker": 0.11645472049713135,
+      "Opening_officer_reference": 0.0946473479270935,
+      "Scene_original_officer": 0.24082772433757782,
+      "Scene_key_officer": 0.30880284309387207
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band150_4000",
+    "scene": "height_weight",
+    "index": 21,
+    "start": 670.998,
+    "end": 671.418,
+    "text": "Number 8.",
+    "scores": {
+      "Target_Speaker": 0.10140641033649445,
+      "Opening_officer_reference": 0.278251051902771,
+      "Scene_original_officer": 0.17084616422653198,
+      "Scene_key_officer": 0.11725398898124695
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band150_4000",
+    "scene": "height_weight",
+    "index": 22,
+    "start": 672.499,
+    "end": 673.279,
+    "text": "Is that a fake name?",
+    "scores": {
+      "Target_Speaker": 0.03212612867355347,
+      "Opening_officer_reference": 0.18522566556930542,
+      "Scene_original_officer": 0.1372848004102707,
+      "Scene_key_officer": 0.15356697142124176
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band150_4000",
+    "scene": "height_weight",
+    "index": 24,
+    "start": 675.768,
+    "end": 676.909,
+    "text": " You just found the system anywhere?",
+    "scores": {
+      "Target_Speaker": 0.02374236099421978,
+      "Opening_officer_reference": 0.3519071042537689,
+      "Scene_original_officer": 0.08176028728485107,
+      "Scene_key_officer": 0.3185531795024872
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band150_4000",
+    "scene": "height_weight",
+    "index": 25,
+    "start": 677.49,
+    "end": 679.171,
+    "text": "I don't get found guilty of anything.",
+    "scores": {
+      "Target_Speaker": 0.2092886120080948,
+      "Opening_officer_reference": 0.27593955397605896,
+      "Scene_original_officer": 0.17970478534698486,
+      "Scene_key_officer": 0.3173799514770508
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band150_4000",
+    "scene": "height_weight",
+    "index": 26,
+    "start": 679.191,
+    "end": 680.612,
+    "text": "Do you have a driver's license?",
+    "scores": {
+      "Target_Speaker": 0.10860749334096909,
+      "Opening_officer_reference": 0.4203380346298218,
+      "Scene_original_officer": 0.27592283487319946,
+      "Scene_key_officer": 0.08522634208202362
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band150_4000",
+    "scene": "height_weight",
+    "index": 27,
+    "start": 680.752,
+    "end": 681.773,
+    "text": "I do have a driver's license.",
+    "scores": {
+      "Target_Speaker": 0.3886672258377075,
+      "Opening_officer_reference": 0.18983814120292664,
+      "Scene_original_officer": 0.15995746850967407,
+      "Scene_key_officer": 0.13818122446537018
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band150_4000",
+    "scene": "height_weight",
+    "index": 28,
+    "start": 681.793,
+    "end": 683.715,
+    "text": "Then you should be on the system.",
+    "scores": {
+      "Target_Speaker": 0.004280688241124153,
+      "Opening_officer_reference": 0.2205485999584198,
+      "Scene_original_officer": 0.45729923248291016,
+      "Scene_key_officer": 0.34677988290786743
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band150_4000",
+    "scene": "height_weight",
+    "index": 29,
+    "start": 684.776,
+    "end": 685.676,
+    "text": "I have a driver's license.",
+    "scores": {
+      "Target_Speaker": 0.3282860517501831,
+      "Opening_officer_reference": -0.047244906425476074,
+      "Scene_original_officer": 0.31106486916542053,
+      "Scene_key_officer": 0.2851814925670624
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band150_4000",
+    "scene": "height_weight",
+    "index": 30,
+    "start": 685.716,
+    "end": 687.358,
+    "text": "I didn't give you any fake information.",
+    "scores": {
+      "Target_Speaker": 0.35228419303894043,
+      "Opening_officer_reference": 0.18957053124904633,
+      "Scene_original_officer": 0.30497682094573975,
+      "Scene_key_officer": 0.2903671860694885
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band300_3000",
+    "scene": "handcuffs",
+    "index": 0,
+    "start": 1078.02,
+    "end": 1082.623,
+    "text": " And two, it lets them know kind of what to expect, so.",
+    "scores": {
+      "Target_Speaker": 0.32068386673927307,
+      "Opening_officer_reference": 0.1544446349143982,
+      "Scene_original_officer": 0.5363017320632935,
+      "Scene_key_officer": 0.6300334930419922
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band300_3000",
+    "scene": "handcuffs",
+    "index": 1,
+    "start": 1082.643,
+    "end": 1085.365,
+    "text": "I appreciate people.",
+    "scores": {
+      "Target_Speaker": 0.26180499792099,
+      "Opening_officer_reference": 0.15858018398284912,
+      "Scene_original_officer": 0.24060288071632385,
+      "Scene_key_officer": 0.2969099283218384
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band300_3000",
+    "scene": "handcuffs",
+    "index": 2,
+    "start": 1085.465,
+    "end": 1086.026,
+    "text": "Oh yeah.",
+    "scores": {
+      "Target_Speaker": 0.20762357115745544,
+      "Opening_officer_reference": 0.13191533088684082,
+      "Scene_original_officer": 0.20569206774234772,
+      "Scene_key_officer": 0.21130163967609406
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band300_3000",
+    "scene": "handcuffs",
+    "index": 3,
+    "start": 1087.107,
+    "end": 1092.991,
+    "text": "Well I can tell everybody else that comes in here, my behavior is kind of a reflection of theirs.",
+    "scores": {
+      "Target_Speaker": 0.21590718626976013,
+      "Opening_officer_reference": 0.12253597378730774,
+      "Scene_original_officer": 0.6597459316253662,
+      "Scene_key_officer": 0.5718791484832764
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band300_3000",
+    "scene": "handcuffs",
+    "index": 4,
+    "start": 1093.151,
+    "end": 1094.352,
+    "text": "I couldn't agree more.",
+    "scores": {
+      "Target_Speaker": 0.30218222737312317,
+      "Opening_officer_reference": 0.173184335231781,
+      "Scene_original_officer": 0.4728991985321045,
+      "Scene_key_officer": 0.40681421756744385
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band300_3000",
+    "scene": "handcuffs",
+    "index": 5,
+    "start": 1094.372,
+    "end": 1095.533,
+    "text": "I couldn't agree more.",
+    "scores": {
+      "Target_Speaker": 0.14334291219711304,
+      "Opening_officer_reference": 0.1785278618335724,
+      "Scene_original_officer": 0.31927573680877686,
+      "Scene_key_officer": 0.31397145986557007
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band300_3000",
+    "scene": "handcuffs",
+    "index": 6,
+    "start": 1098.215,
+    "end": 1099.376,
+    "text": "Couldn't agree a syllable more.",
+    "scores": {
+      "Target_Speaker": 0.28261375427246094,
+      "Opening_officer_reference": 0.14882424473762512,
+      "Scene_original_officer": 0.43193474411964417,
+      "Scene_key_officer": 0.44909757375717163
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band300_3000",
+    "scene": "handcuffs",
+    "index": 7,
+    "start": 1103.148,
+    "end": 1107.251,
+    "text": " No, that's not the problem.",
+    "scores": {
+      "Target_Speaker": 0.14084649085998535,
+      "Opening_officer_reference": 0.1669287085533142,
+      "Scene_original_officer": 0.36333638429641724,
+      "Scene_key_officer": 0.5047051906585693
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band300_3000",
+    "scene": "handcuffs",
+    "index": 8,
+    "start": 1107.771,
+    "end": 1109.432,
+    "text": "The key, it just got stuck.",
+    "scores": {
+      "Target_Speaker": 0.20715078711509705,
+      "Opening_officer_reference": 0.19472920894622803,
+      "Scene_original_officer": 0.322665274143219,
+      "Scene_key_officer": 0.3062855899333954
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band300_3000",
+    "scene": "handcuffs",
+    "index": 9,
+    "start": 1110.092,
+    "end": 1118.717,
+    "text": "I don't want to mess with your cuffs or mess them up or anything, but let's...",
+    "scores": {
+      "Target_Speaker": 0.09271203726530075,
+      "Opening_officer_reference": 0.19099748134613037,
+      "Scene_original_officer": 0.8708125352859497,
+      "Scene_key_officer": 0.4002271294593811
+    },
+    "overlaps_reviewed_seed": true
+  },
+  {
+    "filter": "band300_3000",
+    "scene": "handcuffs",
+    "index": 10,
+    "start": 1121.939,
+    "end": 1123.06,
+    "text": "I'm taking too much, Tommy.",
+    "scores": {
+      "Target_Speaker": 0.27897173166275024,
+      "Opening_officer_reference": 0.13235372304916382,
+      "Scene_original_officer": 0.14675912261009216,
+      "Scene_key_officer": 0.18132439255714417
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band300_3000",
+    "scene": "handcuffs",
+    "index": 11,
+    "start": 1123.1,
+    "end": 1123.961,
+    "text": "I don't got much space.",
+    "scores": {
+      "Target_Speaker": 0.103127621114254,
+      "Opening_officer_reference": 0.023213814944028854,
+      "Scene_original_officer": 0.0976891815662384,
+      "Scene_key_officer": 0.23660844564437866
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band300_3000",
+    "scene": "handcuffs",
+    "index": 12,
+    "start": 1124.161,
+    "end": 1126.242,
+    "text": "Well, we're not trying to tie someone.",
+    "scores": {
+      "Target_Speaker": 0.1679130494594574,
+      "Opening_officer_reference": 0.18593886494636536,
+      "Scene_original_officer": 0.4995875060558319,
+      "Scene_key_officer": 0.5343417525291443
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band300_3000",
+    "scene": "handcuffs",
+    "index": 13,
+    "start": 1126.262,
+    "end": 1129.464,
+    "text": "We're trying to get the key out of them.",
+    "scores": {
+      "Target_Speaker": 0.17792201042175293,
+      "Opening_officer_reference": 0.17732098698616028,
+      "Scene_original_officer": 0.23782622814178467,
+      "Scene_key_officer": 0.2753565311431885
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band300_3000",
+    "scene": "handcuffs",
+    "index": 14,
+    "start": 1130.916,
+    "end": 1132.196,
+    "text": " I might need to get a new key.",
+    "scores": {
+      "Target_Speaker": 0.20895016193389893,
+      "Opening_officer_reference": 0.07309503853321075,
+      "Scene_original_officer": 0.3134840130805969,
+      "Scene_key_officer": 0.416853666305542
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band300_3000",
+    "scene": "handcuffs",
+    "index": 15,
+    "start": 1132.216,
+    "end": 1136.017,
+    "text": "There might be something off with this one, because I just had an issue with that fella I got in.",
+    "scores": {
+      "Target_Speaker": 0.17013005912303925,
+      "Opening_officer_reference": 0.17571935057640076,
+      "Scene_original_officer": 0.45970889925956726,
+      "Scene_key_officer": 0.7560410499572754
+    },
+    "overlaps_reviewed_seed": true
+  },
+  {
+    "filter": "band300_3000",
+    "scene": "handcuffs",
+    "index": 16,
+    "start": 1136.898,
+    "end": 1139.838,
+    "text": "Put this arm on the wall and probably even that could have come off.",
+    "scores": {
+      "Target_Speaker": 0.04373009502887726,
+      "Opening_officer_reference": 0.20614555478096008,
+      "Scene_original_officer": 0.49130332469940186,
+      "Scene_key_officer": 0.7687698602676392
+    },
+    "overlaps_reviewed_seed": true
+  },
+  {
+    "filter": "band300_3000",
+    "scene": "handcuffs",
+    "index": 17,
+    "start": 1140.679,
+    "end": 1146.64,
+    "text": "That guy I just searched in that had the shackles, it had a little bit of difficulty opening up one of the shackled eyes.",
+    "scores": {
+      "Target_Speaker": 0.24934275448322296,
+      "Opening_officer_reference": 0.21925002336502075,
+      "Scene_original_officer": 0.5347747802734375,
+      "Scene_key_officer": 0.647836446762085
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band300_3000",
+    "scene": "handcuffs",
+    "index": 18,
+    "start": 1146.76,
+    "end": 1148.501,
+    "text": "I think I got to get a new key then.",
+    "scores": {
+      "Target_Speaker": 0.2636913061141968,
+      "Opening_officer_reference": 0.04013585299253464,
+      "Scene_original_officer": 0.3884616196155548,
+      "Scene_key_officer": 0.4718465805053711
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band300_3000",
+    "scene": "handcuffs",
+    "index": 19,
+    "start": 1148.521,
+    "end": 1150.641,
+    "text": "All right, you're good.",
+    "scores": {
+      "Target_Speaker": 0.21091872453689575,
+      "Opening_officer_reference": 0.19805404543876648,
+      "Scene_original_officer": 0.18260928988456726,
+      "Scene_key_officer": 0.16892936825752258
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band300_3000",
+    "scene": "handcuffs",
+    "index": 20,
+    "start": 1150.661,
+    "end": 1151.622,
+    "text": "Go ahead and have a seat.",
+    "scores": {
+      "Target_Speaker": 0.18986861407756805,
+      "Opening_officer_reference": 0.18260574340820312,
+      "Scene_original_officer": 0.30757588148117065,
+      "Scene_key_officer": 0.37023138999938965
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band300_3000",
+    "scene": "handcuffs",
+    "index": 21,
+    "start": 1151.682,
+    "end": 1153.062,
+    "text": "Take off your shoes for me.",
+    "scores": {
+      "Target_Speaker": 0.09106378257274628,
+      "Opening_officer_reference": 0.16447073221206665,
+      "Scene_original_officer": 0.3756452798843384,
+      "Scene_key_officer": 0.2590293288230896
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band300_3000",
+    "scene": "handcuffs",
+    "index": 22,
+    "start": 1154.122,
+    "end": 1155.343,
+    "text": "What size shoe do you wear?",
+    "scores": {
+      "Target_Speaker": 0.2121298611164093,
+      "Opening_officer_reference": 0.24913379549980164,
+      "Scene_original_officer": 0.3308146893978119,
+      "Scene_key_officer": 0.4929257333278656
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band300_3000",
+    "scene": "handcuffs",
+    "index": 23,
+    "start": 1155.363,
+    "end": 1156.8029999999999,
+    "text": "This and that.",
+    "scores": {
+      "Target_Speaker": 0.21483153104782104,
+      "Opening_officer_reference": 0.1463838815689087,
+      "Scene_original_officer": 0.02294202521443367,
+      "Scene_key_officer": 0.08505325019359589
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band300_3000",
+    "scene": "handcuffs",
+    "index": 24,
+    "start": 1156.923,
+    "end": 1158.964,
+    "text": "OK. Take off your necklace.",
+    "scores": {
+      "Target_Speaker": 0.06439565122127533,
+      "Opening_officer_reference": 0.1619720757007599,
+      "Scene_original_officer": 0.4937739968299866,
+      "Scene_key_officer": 0.5611667037010193
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band300_3000",
+    "scene": "handcuffs",
+    "index": 25,
+    "start": 1160.489,
+    "end": 1163.478,
+    "text": " Take out your earrings and your wristband there.",
+    "scores": {
+      "Target_Speaker": 0.04732752591371536,
+      "Opening_officer_reference": 0.15230152010917664,
+      "Scene_original_officer": 0.45913639664649963,
+      "Scene_key_officer": 0.3024192750453949
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band300_3000",
+    "scene": "height_weight",
+    "index": 0,
+    "start": 625.18,
+    "end": 629.862,
+    "text": " and loitering around businesses, causing concern and suspicion.",
+    "scores": {
+      "Target_Speaker": 0.05754092335700989,
+      "Opening_officer_reference": 0.3631998300552368,
+      "Scene_original_officer": 0.45182937383651733,
+      "Scene_key_officer": 0.20079779624938965
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band300_3000",
+    "scene": "height_weight",
+    "index": 1,
+    "start": 630.622,
+    "end": 631.323,
+    "text": "It's against the law.",
+    "scores": {
+      "Target_Speaker": 0.04861367493867874,
+      "Opening_officer_reference": 0.1914147287607193,
+      "Scene_original_officer": 0.2388966679573059,
+      "Scene_key_officer": 0.34384459257125854
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band300_3000",
+    "scene": "height_weight",
+    "index": 2,
+    "start": 633.724,
+    "end": 634.564,
+    "text": "What's your date of birth, John?",
+    "scores": {
+      "Target_Speaker": 0.21141688525676727,
+      "Opening_officer_reference": 0.254675030708313,
+      "Scene_original_officer": 0.20146948099136353,
+      "Scene_key_officer": 0.33122384548187256
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band300_3000",
+    "scene": "height_weight",
+    "index": 3,
+    "start": 634.924,
+    "end": 636.825,
+    "text": "March 17th, 2002.",
+    "scores": {
+      "Target_Speaker": 0.31507036089897156,
+      "Opening_officer_reference": 0.21176192164421082,
+      "Scene_original_officer": 0.21046525239944458,
+      "Scene_key_officer": 0.2024633288383484
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band300_3000",
+    "scene": "height_weight",
+    "index": 4,
+    "start": 636.845,
+    "end": 639.846,
+    "text": "You got tattoos on both arms?",
+    "scores": {
+      "Target_Speaker": 0.06834729015827179,
+      "Opening_officer_reference": 0.3526458740234375,
+      "Scene_original_officer": 0.15526819229125977,
+      "Scene_key_officer": 0.19484055042266846
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band300_3000",
+    "scene": "height_weight",
+    "index": 5,
+    "start": 639.906,
+    "end": 640.387,
+    "text": "Anywhere else?",
+    "scores": {
+      "Target_Speaker": 0.03753601759672165,
+      "Opening_officer_reference": 0.12470167875289917,
+      "Scene_original_officer": 0.17658311128616333,
+      "Scene_key_officer": 0.12067592889070511
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band300_3000",
+    "scene": "height_weight",
+    "index": 6,
+    "start": 640.727,
+    "end": 641.527,
+    "text": "Yeah, on my chest.",
+    "scores": {
+      "Target_Speaker": 0.1170351654291153,
+      "Opening_officer_reference": 0.2770078480243683,
+      "Scene_original_officer": 0.022794082760810852,
+      "Scene_key_officer": 0.1622057557106018
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band300_3000",
+    "scene": "height_weight",
+    "index": 7,
+    "start": 642.848,
+    "end": 645.069,
+    "text": "On my ribs.",
+    "scores": {
+      "Target_Speaker": 0.17294949293136597,
+      "Opening_officer_reference": 0.04676517844200134,
+      "Scene_original_officer": 0.3177681863307953,
+      "Scene_key_officer": 0.2392740100622177
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band300_3000",
+    "scene": "height_weight",
+    "index": 8,
+    "start": 645.609,
+    "end": 646.729,
+    "text": "Nothing gang, anything?",
+    "scores": {
+      "Target_Speaker": 0.25852707028388977,
+      "Opening_officer_reference": 0.13452604413032532,
+      "Scene_original_officer": 0.2791352868080139,
+      "Scene_key_officer": 0.3732745051383972
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band300_3000",
+    "scene": "height_weight",
+    "index": 9,
+    "start": 648.17,
+    "end": 649.33,
+    "text": "That's all of you.",
+    "scores": {
+      "Target_Speaker": 0.17738673090934753,
+      "Opening_officer_reference": 0.24062928557395935,
+      "Scene_original_officer": 0.23238304257392883,
+      "Scene_key_officer": 0.29965564608573914
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band300_3000",
+    "scene": "height_weight",
+    "index": 10,
+    "start": 654.288,
+    "end": 654.729,
+    "text": " 511.",
+    "scores": {
+      "Target_Speaker": 0.12031103670597076,
+      "Opening_officer_reference": 0.19812317192554474,
+      "Scene_original_officer": 0.17133870720863342,
+      "Scene_key_officer": 0.2552652955055237
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band300_3000",
+    "scene": "height_weight",
+    "index": 11,
+    "start": 655.009,
+    "end": 656.49,
+    "text": "Tell the girls 511.",
+    "scores": {
+      "Target_Speaker": 0.38547757267951965,
+      "Opening_officer_reference": 0.21122398972511292,
+      "Scene_original_officer": 0.2326931655406952,
+      "Scene_key_officer": 0.3503309488296509
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band300_3000",
+    "scene": "height_weight",
+    "index": 12,
+    "start": 656.51,
+    "end": 658.311,
+    "text": "910.",
+    "scores": {
+      "Target_Speaker": 0.08377504348754883,
+      "Opening_officer_reference": 0.19489406049251556,
+      "Scene_original_officer": 0.17126744985580444,
+      "Scene_key_officer": 0.23848885297775269
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band300_3000",
+    "scene": "height_weight",
+    "index": 13,
+    "start": 658.931,
+    "end": 659.731,
+    "text": "Number 13.",
+    "scores": {
+      "Target_Speaker": 0.11312736570835114,
+      "Opening_officer_reference": 0.2767382562160492,
+      "Scene_original_officer": 0.13212533295154572,
+      "Scene_key_officer": 0.2188592106103897
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band300_3000",
+    "scene": "height_weight",
+    "index": 14,
+    "start": 661.372,
+    "end": 662.513,
+    "text": "How much do you weigh?",
+    "scores": {
+      "Target_Speaker": 0.10299158096313477,
+      "Opening_officer_reference": 0.33071109652519226,
+      "Scene_original_officer": 0.25694626569747925,
+      "Scene_key_officer": 0.2572634816169739
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band300_3000",
+    "scene": "height_weight",
+    "index": 16,
+    "start": 663.253,
+    "end": 664.134,
+    "text": "How much do you weigh?",
+    "scores": {
+      "Target_Speaker": 0.05636592209339142,
+      "Opening_officer_reference": 0.2900910973548889,
+      "Scene_original_officer": 0.11798110604286194,
+      "Scene_key_officer": 0.09810979664325714
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band300_3000",
+    "scene": "height_weight",
+    "index": 18,
+    "start": 664.394,
+    "end": 665.815,
+    "text": "Number 11.",
+    "scores": {
+      "Target_Speaker": 0.2506347894668579,
+      "Opening_officer_reference": 0.21648624539375305,
+      "Scene_original_officer": 0.1296720802783966,
+      "Scene_key_officer": 0.30200961232185364
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band300_3000",
+    "scene": "height_weight",
+    "index": 19,
+    "start": 666.275,
+    "end": 666.895,
+    "text": "No record.",
+    "scores": {
+      "Target_Speaker": 0.24871838092803955,
+      "Opening_officer_reference": 0.15313847362995148,
+      "Scene_original_officer": 0.29000645875930786,
+      "Scene_key_officer": 0.2636984884738922
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band300_3000",
+    "scene": "height_weight",
+    "index": 20,
+    "start": 666.915,
+    "end": 670.898,
+    "text": "Mississippi or Massachusetts.",
+    "scores": {
+      "Target_Speaker": 0.14128729701042175,
+      "Opening_officer_reference": 0.14960810542106628,
+      "Scene_original_officer": 0.2764999270439148,
+      "Scene_key_officer": 0.3549075722694397
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band300_3000",
+    "scene": "height_weight",
+    "index": 21,
+    "start": 670.998,
+    "end": 671.418,
+    "text": "Number 8.",
+    "scores": {
+      "Target_Speaker": 0.06385353952646255,
+      "Opening_officer_reference": 0.3103678226470947,
+      "Scene_original_officer": 0.035980693995952606,
+      "Scene_key_officer": 0.16707780957221985
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band300_3000",
+    "scene": "height_weight",
+    "index": 22,
+    "start": 672.499,
+    "end": 673.279,
+    "text": "Is that a fake name?",
+    "scores": {
+      "Target_Speaker": 0.14891299605369568,
+      "Opening_officer_reference": 0.20685745775699615,
+      "Scene_original_officer": 0.22256438434123993,
+      "Scene_key_officer": 0.1765809953212738
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band300_3000",
+    "scene": "height_weight",
+    "index": 24,
+    "start": 675.768,
+    "end": 676.909,
+    "text": " You just found the system anywhere?",
+    "scores": {
+      "Target_Speaker": 0.0446990430355072,
+      "Opening_officer_reference": 0.28293198347091675,
+      "Scene_original_officer": 0.312774121761322,
+      "Scene_key_officer": 0.3370867371559143
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band300_3000",
+    "scene": "height_weight",
+    "index": 25,
+    "start": 677.49,
+    "end": 679.171,
+    "text": "I don't get found guilty of anything.",
+    "scores": {
+      "Target_Speaker": 0.16067363321781158,
+      "Opening_officer_reference": 0.22742626070976257,
+      "Scene_original_officer": 0.15762114524841309,
+      "Scene_key_officer": 0.19875304400920868
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band300_3000",
+    "scene": "height_weight",
+    "index": 26,
+    "start": 679.191,
+    "end": 680.612,
+    "text": "Do you have a driver's license?",
+    "scores": {
+      "Target_Speaker": 0.14519242942333221,
+      "Opening_officer_reference": 0.38649415969848633,
+      "Scene_original_officer": 0.22436338663101196,
+      "Scene_key_officer": 0.09154912829399109
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band300_3000",
+    "scene": "height_weight",
+    "index": 27,
+    "start": 680.752,
+    "end": 681.773,
+    "text": "I do have a driver's license.",
+    "scores": {
+      "Target_Speaker": 0.461779922246933,
+      "Opening_officer_reference": 0.2708260416984558,
+      "Scene_original_officer": 0.1471940577030182,
+      "Scene_key_officer": 0.24936515092849731
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band300_3000",
+    "scene": "height_weight",
+    "index": 28,
+    "start": 681.793,
+    "end": 683.715,
+    "text": "Then you should be on the system.",
+    "scores": {
+      "Target_Speaker": 0.07355203479528427,
+      "Opening_officer_reference": 0.2375473827123642,
+      "Scene_original_officer": 0.46998775005340576,
+      "Scene_key_officer": 0.3619591295719147
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band300_3000",
+    "scene": "height_weight",
+    "index": 29,
+    "start": 684.776,
+    "end": 685.676,
+    "text": "I have a driver's license.",
+    "scores": {
+      "Target_Speaker": 0.37151721119880676,
+      "Opening_officer_reference": 0.17046594619750977,
+      "Scene_original_officer": 0.32893168926239014,
+      "Scene_key_officer": 0.3478321433067322
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "band300_3000",
+    "scene": "height_weight",
+    "index": 30,
+    "start": 685.716,
+    "end": 687.358,
+    "text": "I didn't give you any fake information.",
+    "scores": {
+      "Target_Speaker": 0.34355926513671875,
+      "Opening_officer_reference": 0.2791983485221863,
+      "Scene_original_officer": 0.35575607419013977,
+      "Scene_key_officer": 0.2281656265258789
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "lowpass2500",
+    "scene": "handcuffs",
+    "index": 0,
+    "start": 1078.02,
+    "end": 1082.623,
+    "text": " And two, it lets them know kind of what to expect, so.",
+    "scores": {
+      "Target_Speaker": 0.245428204536438,
+      "Opening_officer_reference": 0.1776195615530014,
+      "Scene_original_officer": 0.5012272000312805,
+      "Scene_key_officer": 0.5930781364440918
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "lowpass2500",
+    "scene": "handcuffs",
+    "index": 1,
+    "start": 1082.643,
+    "end": 1085.365,
+    "text": "I appreciate people.",
+    "scores": {
+      "Target_Speaker": 0.1244332417845726,
+      "Opening_officer_reference": 0.237692192196846,
+      "Scene_original_officer": 0.23635192215442657,
+      "Scene_key_officer": 0.30150681734085083
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "lowpass2500",
+    "scene": "handcuffs",
+    "index": 2,
+    "start": 1085.465,
+    "end": 1086.026,
+    "text": "Oh yeah.",
+    "scores": {
+      "Target_Speaker": 0.06560640037059784,
+      "Opening_officer_reference": 0.16330648958683014,
+      "Scene_original_officer": 0.13551491498947144,
+      "Scene_key_officer": 0.14545542001724243
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "lowpass2500",
+    "scene": "handcuffs",
+    "index": 3,
+    "start": 1087.107,
+    "end": 1092.991,
+    "text": "Well I can tell everybody else that comes in here, my behavior is kind of a reflection of theirs.",
+    "scores": {
+      "Target_Speaker": 0.14876389503479004,
+      "Opening_officer_reference": 0.13189420104026794,
+      "Scene_original_officer": 0.6693242788314819,
+      "Scene_key_officer": 0.5855603218078613
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "lowpass2500",
+    "scene": "handcuffs",
+    "index": 4,
+    "start": 1093.151,
+    "end": 1094.352,
+    "text": "I couldn't agree more.",
+    "scores": {
+      "Target_Speaker": 0.2553170919418335,
+      "Opening_officer_reference": 0.1969909965991974,
+      "Scene_original_officer": 0.3900315463542938,
+      "Scene_key_officer": 0.28754448890686035
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "lowpass2500",
+    "scene": "handcuffs",
+    "index": 5,
+    "start": 1094.372,
+    "end": 1095.533,
+    "text": "I couldn't agree more.",
+    "scores": {
+      "Target_Speaker": 0.06111934408545494,
+      "Opening_officer_reference": 0.18196314573287964,
+      "Scene_original_officer": 0.2781948745250702,
+      "Scene_key_officer": 0.17523789405822754
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "lowpass2500",
+    "scene": "handcuffs",
+    "index": 6,
+    "start": 1098.215,
+    "end": 1099.376,
+    "text": "Couldn't agree a syllable more.",
+    "scores": {
+      "Target_Speaker": 0.20645266771316528,
+      "Opening_officer_reference": 0.1503582000732422,
+      "Scene_original_officer": 0.3293672800064087,
+      "Scene_key_officer": 0.3811776041984558
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "lowpass2500",
+    "scene": "handcuffs",
+    "index": 7,
+    "start": 1103.148,
+    "end": 1107.251,
+    "text": " No, that's not the problem.",
+    "scores": {
+      "Target_Speaker": 0.024510277435183525,
+      "Opening_officer_reference": 0.23987522721290588,
+      "Scene_original_officer": 0.32845473289489746,
+      "Scene_key_officer": 0.4344515800476074
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "lowpass2500",
+    "scene": "handcuffs",
+    "index": 8,
+    "start": 1107.771,
+    "end": 1109.432,
+    "text": "The key, it just got stuck.",
+    "scores": {
+      "Target_Speaker": 0.08803756535053253,
+      "Opening_officer_reference": 0.08532106876373291,
+      "Scene_original_officer": 0.19719383120536804,
+      "Scene_key_officer": 0.26250195503234863
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "lowpass2500",
+    "scene": "handcuffs",
+    "index": 9,
+    "start": 1110.092,
+    "end": 1118.717,
+    "text": "I don't want to mess with your cuffs or mess them up or anything, but let's...",
+    "scores": {
+      "Target_Speaker": 0.02644304558634758,
+      "Opening_officer_reference": 0.22661547362804413,
+      "Scene_original_officer": 0.8691741228103638,
+      "Scene_key_officer": 0.49084287881851196
+    },
+    "overlaps_reviewed_seed": true
+  },
+  {
+    "filter": "lowpass2500",
+    "scene": "handcuffs",
+    "index": 10,
+    "start": 1121.939,
+    "end": 1123.06,
+    "text": "I'm taking too much, Tommy.",
+    "scores": {
+      "Target_Speaker": 0.2779249846935272,
+      "Opening_officer_reference": 0.1104484349489212,
+      "Scene_original_officer": 0.09234640002250671,
+      "Scene_key_officer": 0.2628633379936218
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "lowpass2500",
+    "scene": "handcuffs",
+    "index": 11,
+    "start": 1123.1,
+    "end": 1123.961,
+    "text": "I don't got much space.",
+    "scores": {
+      "Target_Speaker": 0.12764132022857666,
+      "Opening_officer_reference": 0.0884065181016922,
+      "Scene_original_officer": 0.13182473182678223,
+      "Scene_key_officer": 0.2413043975830078
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "lowpass2500",
+    "scene": "handcuffs",
+    "index": 12,
+    "start": 1124.161,
+    "end": 1126.242,
+    "text": "Well, we're not trying to tie someone.",
+    "scores": {
+      "Target_Speaker": 0.10042624920606613,
+      "Opening_officer_reference": 0.2060583382844925,
+      "Scene_original_officer": 0.4607609510421753,
+      "Scene_key_officer": 0.522134006023407
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "lowpass2500",
+    "scene": "handcuffs",
+    "index": 13,
+    "start": 1126.262,
+    "end": 1129.464,
+    "text": "We're trying to get the key out of them.",
+    "scores": {
+      "Target_Speaker": -0.009767983108758926,
+      "Opening_officer_reference": 0.21475127339363098,
+      "Scene_original_officer": 0.341274619102478,
+      "Scene_key_officer": 0.32367920875549316
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "lowpass2500",
+    "scene": "handcuffs",
+    "index": 14,
+    "start": 1130.916,
+    "end": 1132.196,
+    "text": " I might need to get a new key.",
+    "scores": {
+      "Target_Speaker": 0.11326979845762253,
+      "Opening_officer_reference": 0.08640721440315247,
+      "Scene_original_officer": 0.29458320140838623,
+      "Scene_key_officer": 0.4652870297431946
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "lowpass2500",
+    "scene": "handcuffs",
+    "index": 15,
+    "start": 1132.216,
+    "end": 1136.017,
+    "text": "There might be something off with this one, because I just had an issue with that fella I got in.",
+    "scores": {
+      "Target_Speaker": 0.145768404006958,
+      "Opening_officer_reference": 0.13296550512313843,
+      "Scene_original_officer": 0.3559720516204834,
+      "Scene_key_officer": 0.6891592741012573
+    },
+    "overlaps_reviewed_seed": true
+  },
+  {
+    "filter": "lowpass2500",
+    "scene": "handcuffs",
+    "index": 16,
+    "start": 1136.898,
+    "end": 1139.838,
+    "text": "Put this arm on the wall and probably even that could have come off.",
+    "scores": {
+      "Target_Speaker": -0.006936021149158478,
+      "Opening_officer_reference": 0.16008736193180084,
+      "Scene_original_officer": 0.4484190046787262,
+      "Scene_key_officer": 0.7747864723205566
+    },
+    "overlaps_reviewed_seed": true
+  },
+  {
+    "filter": "lowpass2500",
+    "scene": "handcuffs",
+    "index": 17,
+    "start": 1140.679,
+    "end": 1146.64,
+    "text": "That guy I just searched in that had the shackles, it had a little bit of difficulty opening up one of the shackled eyes.",
+    "scores": {
+      "Target_Speaker": 0.2743755578994751,
+      "Opening_officer_reference": 0.18800029158592224,
+      "Scene_original_officer": 0.5111230611801147,
+      "Scene_key_officer": 0.5834411978721619
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "lowpass2500",
+    "scene": "handcuffs",
+    "index": 18,
+    "start": 1146.76,
+    "end": 1148.501,
+    "text": "I think I got to get a new key then.",
+    "scores": {
+      "Target_Speaker": 0.19556425511837006,
+      "Opening_officer_reference": -0.023243281990289688,
+      "Scene_original_officer": 0.3639906644821167,
+      "Scene_key_officer": 0.47608843445777893
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "lowpass2500",
+    "scene": "handcuffs",
+    "index": 19,
+    "start": 1148.521,
+    "end": 1150.641,
+    "text": "All right, you're good.",
+    "scores": {
+      "Target_Speaker": 0.2414645552635193,
+      "Opening_officer_reference": 0.25266921520233154,
+      "Scene_original_officer": 0.23057349026203156,
+      "Scene_key_officer": 0.2388353794813156
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "lowpass2500",
+    "scene": "handcuffs",
+    "index": 20,
+    "start": 1150.661,
+    "end": 1151.622,
+    "text": "Go ahead and have a seat.",
+    "scores": {
+      "Target_Speaker": 0.015746846795082092,
+      "Opening_officer_reference": 0.11434914171695709,
+      "Scene_original_officer": 0.2192075103521347,
+      "Scene_key_officer": 0.2816333770751953
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "lowpass2500",
+    "scene": "handcuffs",
+    "index": 21,
+    "start": 1151.682,
+    "end": 1153.062,
+    "text": "Take off your shoes for me.",
+    "scores": {
+      "Target_Speaker": 0.14926181733608246,
+      "Opening_officer_reference": 0.06342967599630356,
+      "Scene_original_officer": 0.384041428565979,
+      "Scene_key_officer": 0.31400930881500244
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "lowpass2500",
+    "scene": "handcuffs",
+    "index": 22,
+    "start": 1154.122,
+    "end": 1155.343,
+    "text": "What size shoe do you wear?",
+    "scores": {
+      "Target_Speaker": 0.11192483454942703,
+      "Opening_officer_reference": 0.2020433396100998,
+      "Scene_original_officer": 0.3228921890258789,
+      "Scene_key_officer": 0.4240879416465759
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "lowpass2500",
+    "scene": "handcuffs",
+    "index": 23,
+    "start": 1155.363,
+    "end": 1156.8029999999999,
+    "text": "This and that.",
+    "scores": {
+      "Target_Speaker": 0.14624759554862976,
+      "Opening_officer_reference": 0.09180738031864166,
+      "Scene_original_officer": 0.05617145076394081,
+      "Scene_key_officer": 0.11888326704502106
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "lowpass2500",
+    "scene": "handcuffs",
+    "index": 24,
+    "start": 1156.923,
+    "end": 1158.964,
+    "text": "OK. Take off your necklace.",
+    "scores": {
+      "Target_Speaker": 0.05849568918347359,
+      "Opening_officer_reference": 0.1750698685646057,
+      "Scene_original_officer": 0.37077274918556213,
+      "Scene_key_officer": 0.4482366442680359
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "lowpass2500",
+    "scene": "handcuffs",
+    "index": 25,
+    "start": 1160.489,
+    "end": 1163.478,
+    "text": " Take out your earrings and your wristband there.",
+    "scores": {
+      "Target_Speaker": -0.005944561213254929,
+      "Opening_officer_reference": 0.15527558326721191,
+      "Scene_original_officer": 0.5127802491188049,
+      "Scene_key_officer": 0.3784966766834259
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "lowpass2500",
+    "scene": "height_weight",
+    "index": 0,
+    "start": 625.18,
+    "end": 629.862,
+    "text": " and loitering around businesses, causing concern and suspicion.",
+    "scores": {
+      "Target_Speaker": -4.89652156829834e-05,
+      "Opening_officer_reference": 0.3180520832538605,
+      "Scene_original_officer": 0.45450568199157715,
+      "Scene_key_officer": 0.2180633544921875
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "lowpass2500",
+    "scene": "height_weight",
+    "index": 1,
+    "start": 630.622,
+    "end": 631.323,
+    "text": "It's against the law.",
+    "scores": {
+      "Target_Speaker": -0.012652069330215454,
+      "Opening_officer_reference": 0.1702515333890915,
+      "Scene_original_officer": 0.21337352693080902,
+      "Scene_key_officer": 0.2760400176048279
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "lowpass2500",
+    "scene": "height_weight",
+    "index": 2,
+    "start": 633.724,
+    "end": 634.564,
+    "text": "What's your date of birth, John?",
+    "scores": {
+      "Target_Speaker": 0.07306073606014252,
+      "Opening_officer_reference": 0.2943286597728729,
+      "Scene_original_officer": 0.06164843589067459,
+      "Scene_key_officer": 0.2520272135734558
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "lowpass2500",
+    "scene": "height_weight",
+    "index": 3,
+    "start": 634.924,
+    "end": 636.825,
+    "text": "March 17th, 2002.",
+    "scores": {
+      "Target_Speaker": 0.45878446102142334,
+      "Opening_officer_reference": 0.3122742474079132,
+      "Scene_original_officer": 0.1516243815422058,
+      "Scene_key_officer": 0.2281796932220459
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "lowpass2500",
+    "scene": "height_weight",
+    "index": 4,
+    "start": 636.845,
+    "end": 639.846,
+    "text": "You got tattoos on both arms?",
+    "scores": {
+      "Target_Speaker": 0.08018569648265839,
+      "Opening_officer_reference": 0.28220635652542114,
+      "Scene_original_officer": 0.18149134516716003,
+      "Scene_key_officer": 0.2609357237815857
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "lowpass2500",
+    "scene": "height_weight",
+    "index": 5,
+    "start": 639.906,
+    "end": 640.387,
+    "text": "Anywhere else?",
+    "scores": {
+      "Target_Speaker": -0.04000827297568321,
+      "Opening_officer_reference": 0.17126895487308502,
+      "Scene_original_officer": 0.2821352481842041,
+      "Scene_key_officer": 0.24599076807498932
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "lowpass2500",
+    "scene": "height_weight",
+    "index": 6,
+    "start": 640.727,
+    "end": 641.527,
+    "text": "Yeah, on my chest.",
+    "scores": {
+      "Target_Speaker": 0.13323315978050232,
+      "Opening_officer_reference": 0.2548699676990509,
+      "Scene_original_officer": 0.030505305156111717,
+      "Scene_key_officer": 0.2209436297416687
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "lowpass2500",
+    "scene": "height_weight",
+    "index": 7,
+    "start": 642.848,
+    "end": 645.069,
+    "text": "On my ribs.",
+    "scores": {
+      "Target_Speaker": 0.09712164103984833,
+      "Opening_officer_reference": 0.012624016031622887,
+      "Scene_original_officer": 0.30199337005615234,
+      "Scene_key_officer": 0.23438824713230133
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "lowpass2500",
+    "scene": "height_weight",
+    "index": 8,
+    "start": 645.609,
+    "end": 646.729,
+    "text": "Nothing gang, anything?",
+    "scores": {
+      "Target_Speaker": 0.2981841564178467,
+      "Opening_officer_reference": 0.03256605565547943,
+      "Scene_original_officer": 0.32634931802749634,
+      "Scene_key_officer": 0.2812475860118866
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "lowpass2500",
+    "scene": "height_weight",
+    "index": 9,
+    "start": 648.17,
+    "end": 649.33,
+    "text": "That's all of you.",
+    "scores": {
+      "Target_Speaker": 0.08417142927646637,
+      "Opening_officer_reference": 0.1808939129114151,
+      "Scene_original_officer": 0.2056661695241928,
+      "Scene_key_officer": 0.2671985626220703
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "lowpass2500",
+    "scene": "height_weight",
+    "index": 10,
+    "start": 654.288,
+    "end": 654.729,
+    "text": " 511.",
+    "scores": {
+      "Target_Speaker": 0.037660129368305206,
+      "Opening_officer_reference": 0.3312392234802246,
+      "Scene_original_officer": 0.3592435121536255,
+      "Scene_key_officer": 0.3409011960029602
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "lowpass2500",
+    "scene": "height_weight",
+    "index": 11,
+    "start": 655.009,
+    "end": 656.49,
+    "text": "Tell the girls 511.",
+    "scores": {
+      "Target_Speaker": 0.4030717611312866,
+      "Opening_officer_reference": 0.08502480387687683,
+      "Scene_original_officer": 0.10203087329864502,
+      "Scene_key_officer": 0.25171148777008057
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "lowpass2500",
+    "scene": "height_weight",
+    "index": 12,
+    "start": 656.51,
+    "end": 658.311,
+    "text": "910.",
+    "scores": {
+      "Target_Speaker": 0.10988655686378479,
+      "Opening_officer_reference": 0.2098982036113739,
+      "Scene_original_officer": 0.25205284357070923,
+      "Scene_key_officer": 0.26892879605293274
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "lowpass2500",
+    "scene": "height_weight",
+    "index": 13,
+    "start": 658.931,
+    "end": 659.731,
+    "text": "Number 13.",
+    "scores": {
+      "Target_Speaker": 0.04933709278702736,
+      "Opening_officer_reference": 0.28768229484558105,
+      "Scene_original_officer": 0.1367497444152832,
+      "Scene_key_officer": 0.1207805797457695
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "lowpass2500",
+    "scene": "height_weight",
+    "index": 14,
+    "start": 661.372,
+    "end": 662.513,
+    "text": "How much do you weigh?",
+    "scores": {
+      "Target_Speaker": 0.023552460595965385,
+      "Opening_officer_reference": 0.22652924060821533,
+      "Scene_original_officer": 0.27339687943458557,
+      "Scene_key_officer": 0.17339617013931274
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "lowpass2500",
+    "scene": "height_weight",
+    "index": 16,
+    "start": 663.253,
+    "end": 664.134,
+    "text": "How much do you weigh?",
+    "scores": {
+      "Target_Speaker": -0.03685678541660309,
+      "Opening_officer_reference": 0.362057089805603,
+      "Scene_original_officer": 0.22330603003501892,
+      "Scene_key_officer": 0.18537995219230652
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "lowpass2500",
+    "scene": "height_weight",
+    "index": 18,
+    "start": 664.394,
+    "end": 665.815,
+    "text": "Number 11.",
+    "scores": {
+      "Target_Speaker": 0.29448819160461426,
+      "Opening_officer_reference": 0.26659274101257324,
+      "Scene_original_officer": 0.154401957988739,
+      "Scene_key_officer": 0.17124085128307343
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "lowpass2500",
+    "scene": "height_weight",
+    "index": 19,
+    "start": 666.275,
+    "end": 666.895,
+    "text": "No record.",
+    "scores": {
+      "Target_Speaker": 0.19984357059001923,
+      "Opening_officer_reference": 0.17231717705726624,
+      "Scene_original_officer": 0.2301413118839264,
+      "Scene_key_officer": 0.1632564514875412
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "lowpass2500",
+    "scene": "height_weight",
+    "index": 20,
+    "start": 666.915,
+    "end": 670.898,
+    "text": "Mississippi or Massachusetts.",
+    "scores": {
+      "Target_Speaker": 0.0801946222782135,
+      "Opening_officer_reference": 0.0665699765086174,
+      "Scene_original_officer": 0.13672411441802979,
+      "Scene_key_officer": 0.23294436931610107
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "lowpass2500",
+    "scene": "height_weight",
+    "index": 21,
+    "start": 670.998,
+    "end": 671.418,
+    "text": "Number 8.",
+    "scores": {
+      "Target_Speaker": 0.059274621307849884,
+      "Opening_officer_reference": 0.26015159487724304,
+      "Scene_original_officer": 0.09776346385478973,
+      "Scene_key_officer": 0.1629629135131836
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "lowpass2500",
+    "scene": "height_weight",
+    "index": 22,
+    "start": 672.499,
+    "end": 673.279,
+    "text": "Is that a fake name?",
+    "scores": {
+      "Target_Speaker": 0.12510347366333008,
+      "Opening_officer_reference": 0.15849152207374573,
+      "Scene_original_officer": 0.2659311294555664,
+      "Scene_key_officer": 0.17765012383460999
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "lowpass2500",
+    "scene": "height_weight",
+    "index": 24,
+    "start": 675.768,
+    "end": 676.909,
+    "text": " You just found the system anywhere?",
+    "scores": {
+      "Target_Speaker": 0.050361618399620056,
+      "Opening_officer_reference": 0.2909749150276184,
+      "Scene_original_officer": 0.16933858394622803,
+      "Scene_key_officer": 0.19161996245384216
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "lowpass2500",
+    "scene": "height_weight",
+    "index": 25,
+    "start": 677.49,
+    "end": 679.171,
+    "text": "I don't get found guilty of anything.",
+    "scores": {
+      "Target_Speaker": 0.1822904348373413,
+      "Opening_officer_reference": 0.235239177942276,
+      "Scene_original_officer": 0.11216054856777191,
+      "Scene_key_officer": 0.20647215843200684
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "lowpass2500",
+    "scene": "height_weight",
+    "index": 26,
+    "start": 679.191,
+    "end": 680.612,
+    "text": "Do you have a driver's license?",
+    "scores": {
+      "Target_Speaker": 0.08650196343660355,
+      "Opening_officer_reference": 0.36494582891464233,
+      "Scene_original_officer": 0.1869562417268753,
+      "Scene_key_officer": 0.01341930404305458
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "lowpass2500",
+    "scene": "height_weight",
+    "index": 27,
+    "start": 680.752,
+    "end": 681.773,
+    "text": "I do have a driver's license.",
+    "scores": {
+      "Target_Speaker": 0.31667423248291016,
+      "Opening_officer_reference": 0.13415229320526123,
+      "Scene_original_officer": 0.10862255841493607,
+      "Scene_key_officer": 0.19569477438926697
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "lowpass2500",
+    "scene": "height_weight",
+    "index": 28,
+    "start": 681.793,
+    "end": 683.715,
+    "text": "Then you should be on the system.",
+    "scores": {
+      "Target_Speaker": 0.03423354774713516,
+      "Opening_officer_reference": 0.23138318955898285,
+      "Scene_original_officer": 0.37309882044792175,
+      "Scene_key_officer": 0.2985089123249054
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "lowpass2500",
+    "scene": "height_weight",
+    "index": 29,
+    "start": 684.776,
+    "end": 685.676,
+    "text": "I have a driver's license.",
+    "scores": {
+      "Target_Speaker": 0.3179469108581543,
+      "Opening_officer_reference": 0.0729532390832901,
+      "Scene_original_officer": 0.2132175862789154,
+      "Scene_key_officer": 0.2919066548347473
+    },
+    "overlaps_reviewed_seed": false
+  },
+  {
+    "filter": "lowpass2500",
+    "scene": "height_weight",
+    "index": 30,
+    "start": 685.716,
+    "end": 687.358,
+    "text": "I didn't give you any fake information.",
+    "scores": {
+      "Target_Speaker": 0.20069041848182678,
+      "Opening_officer_reference": 0.15691405534744263,
+      "Scene_original_officer": 0.33887869119644165,
+      "Scene_key_officer": 0.25730401277542114
+    },
+    "overlaps_reviewed_seed": false
+  }
+]
