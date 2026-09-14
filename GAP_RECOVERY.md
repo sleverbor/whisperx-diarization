@@ -2,7 +2,7 @@ This pass recovers review candidates inside gaps in an existing transcript, usin
 
 By default, gaps must be at least two seconds long. Each gap is decoded in eight-second windows with four seconds of overlap and half a second of surrounding context. Voice activity filtering is disabled only for these small windows. There is no topic prompt and no video-specific phrase or identity rule.
 
-Existing segments, word timings, speaker assignments, evidence, and reasons are copied unchanged. Candidate words must fall entirely inside the gap and pass decoder quality checks. Repeated words from distinct overlapping windows are marked, but repeated decoding is not proof that a word is correct. All new speech remains marked for review with an unknown speaker. Single-window candidates are retained separately in the same review view rather than silently discarded.
+Existing segments, word timings, speaker assignments, evidence, and reasons are copied unchanged. Candidate words must fall entirely inside the gap and pass decoder quality checks. Repeated words from distinct overlapping windows are marked, but repeated decoding is not proof that a word is correct. Candidate phrases keep words from a single decoder window; alternatives remain in window_decodes.json. All new speech remains marked for review with an unknown speaker. Single-window candidates are retained separately in the same review view rather than silently discarded.
 
 Run from the project directory using its virtual environment:
 
@@ -20,4 +20,4 @@ Outputs:
 
 The opening clip check preserves all 24 existing segments and produces no additions because it has no qualifying gaps. The second-clip test uses the prior independent local transcript, not the failed blanket-full-coverage transcript.
 
-Four checks cover gap unions, bounded overlapping windows without tiny tails, distinct-window repetition inside gap boundaries, and preservation of all nested baseline fields.
+Five checks cover gap unions, bounded overlapping windows without tiny tails, distinct-window repetition inside gap boundaries, and preservation of all nested baseline fields, and refusal to splice disagreeing decoder windows into a phrase.

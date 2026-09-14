@@ -10,6 +10,9 @@ class GapTests(unittest.TestCase):
  def test_repetition_needs_distinct_windows_and_stays_in_gap(self):
   words=[{'start':4,'end':4.5,'word':'Height?','probability':.9,'window_index':0},{'start':4.1,'end':4.6,'word':'height','probability':.8,'window_index':1},{'start':1,'end':2,'word':'existing','probability':1,'window_index':1}]
   candidates=collect_candidates(words,(3,6));self.assertEqual(len(candidates),1);self.assertTrue(candidates[0]['repeated_in_overlapping_windows']);self.assertTrue(candidates[0]['review_required'])
+ def test_candidate_does_not_splice_disagreeing_windows(self):
+  words=[{'start':4,'end':4.2,'word':'one','probability':.9,'window_index':0},{'start':4.3,'end':4.5,'word':'answer','probability':.6,'window_index':0},{'start':4,'end':4.2,'word':'another','probability':.6,'window_index':1},{'start':4.3,'end':4.5,'word':'answer','probability':.9,'window_index':1}]
+  candidates=collect_candidates(words,(3,6));self.assertEqual(len(candidates),1);self.assertEqual(len({w['window_index'] for w in candidates[0]['words']}),1)
  def test_keeps_baseline_nested_fields_and_identity_unchanged(self):
   original={'segments':[{'start':0,'end':1,'text':'works','final_speaker':'Target_Speaker','words':[{'word':'works'}],'reasons':['original']}]}
   result=preserve_baseline(original,[{'text':'new','speaker':'Uncertain'}]);self.assertEqual(result['segments'],original['segments']);result['segments'][0]['words'][0]['word']='mutated';self.assertEqual(original['segments'][0]['words'][0]['word'],'works')

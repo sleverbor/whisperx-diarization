@@ -50,18 +50,29 @@ def collect_candidates(observations,gap):
         if matches:
             closest=min(matches,key=lambda c:abs(c['anchor']-(word['start']+word['end'])/2));closest['observations'].append(word)
         else:clusters.append({'key':key,'anchor':(word['start']+word['end'])/2,'observations':[word]})
-    words=[]
+    # Keep words from one decoder window together; never splice hypotheses.
+    support={}
     for cluster in clusters:
-        best=max(cluster['observations'],key=lambda w:w['probability'])
-        words.append(dict(best,supporting_windows=sorted({x['window_index'] for x in cluster['observations']}),repeated_in_overlapping_windows=len(cluster['observations'])>=2))
-    # Group runs with the same support status; do not infer turn/speaker boundaries.
-    runs=[]
-    for word in sorted(words,key=lambda w:w['start']):
-        repeated=word['repeated_in_overlapping_windows']
-        if runs and repeated==runs[-1]['repeated_in_overlapping_windows'] and word['start']-runs[-1]['end']<=.65 and word['start']>=runs[-1]['end']-.15:
-            run=runs[-1];run['words'].append(word);run['end']=max(run['end'],word['end']);run['text']=' '.join(w['word'].strip() for w in run['words'])
-        else:runs.append({'start':word['start'],'end':word['end'],'text':word['word'].strip(),'words':[word],'repeated_in_overlapping_windows':repeated,'review_required':True,'speaker':'Uncertain'})
-    return runs
+        indices=sorted({w['window_index'] for w in cluster['observations']})
+        for w in cluster['observations']:
+            support[(w['window_index'],w['start'],w['end'],w['word'])]=indices
+    hypotheses=[]
+    for index in sorted({w['window_index'] for w in observations}):
+        runs=[]
+        for w in sorted((w for w in observations if w['window_index']==index and w['start']>=gap[0] and w['end']<=gap[1] and w['end']>w['start'] and word_key(w['word'])),key=lambda w:w['start']):
+            word=dict(w,supporting_windows=support.get((index,w['start'],w['end'],w['word']),[index]))
+            if runs and word['start']-runs[-1]['end']<=.65:
+                runs[-1]['words'].append(word);runs[-1]['end']=max(runs[-1]['end'],word['end'])
+            else:runs.append({'start':word['start'],'end':word['end'],'words':[word],'window_index':index})
+        for run in runs:
+            repeated=sum(len(w['supporting_windows'])>=2 for w in run['words'])
+            run.update(text=''.join(w['word'] for w in run['words']).strip(),supported_word_count=repeated,supported_word_fraction=repeated/len(run['words']),repeated_in_overlapping_windows=repeated/len(run['words'])>=.5,review_required=True,speaker='Uncertain')
+            hypotheses.append(run)
+    selected=[]
+    for run in sorted(hypotheses,key=lambda r:(r['supported_word_count'],sum(w['probability'] for w in r['words'])/len(r['words']),r['end']-r['start']),reverse=True):
+        if any(min(run['end'],chosen['end'])-max(run['start'],chosen['start'])>.15 for chosen in selected):continue
+        selected.append(run)
+    return sorted(selected,key=lambda r:r['start'])
 
 
 def preserve_baseline(baseline,candidates):
@@ -106,7 +117,8 @@ def main():
                 for word in segment.words or []:
                     item={'start':left+word.start,'end':left+word.end,'word':word.word,'probability':word.probability,'window_index':window_index}
                     row['words'].append(item)
-                    if eligible and word.probability>=.4:observations.append(item)
+                    item['low_confidence']=word.probability<.4
+                    if eligible:observations.append(item)
                 rows.append(row)
             decodes.append({'gap_index':gap_index,'window_index':window_index,'window_start':left,'window_end':right,'segments':rows})
             (args.output_dir/'window_decodes.json').write_text(json.dumps(decodes,indent=2)+'\n')
@@ -121,7 +133,7 @@ def main():
     lines=[]
     for s in baseline['segments']:lines.append((s['start'],f"[{s['start']+offset:.2f}-{s['end']+offset:.2f}] {s.get('final_speaker',s.get('speaker','Unknown'))}: {s['text']}"))
     for s in candidates:
-        support='repeated' if s['repeated_in_overlapping_windows'] else 'single decode'
+        support=f"overlap support {s['supported_word_count']}/{len(s['words'])} words" if s['supported_word_count'] else 'single decode'
         lines.append((s['start'],f"[{s['start']+offset:.2f}-{s['end']+offset:.2f}] REVIEW ({support}; speaker unknown): {s['text']}"))
     (args.output_dir/'review_transcript.txt').write_text('\n'.join(text for _,text in sorted(lines))+'\n')
     print('Completed; preserved',len(baseline['segments']),'existing segments;',len(candidates),'review candidates',flush=True)
