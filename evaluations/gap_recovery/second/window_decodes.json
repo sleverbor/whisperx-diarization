@@ -1,0 +1,738 @@
+[
+  {
+    "gap_index": 0,
+    "window_index": 0,
+    "window_start": 5.854,
+    "window_end": 9.236,
+    "segments": [
+      {
+        "start": 5.854,
+        "end": 6.334,
+        "text": " Thanks a lot.",
+        "avg_logprob": -0.6166976928710938,
+        "no_speech_prob": 0.15629200637340546,
+        "compression_ratio": 0.8666666666666667,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 5.854,
+            "end": 5.994,
+            "word": " Thanks",
+            "probability": 0.2999221682548523,
+            "window_index": 0
+          },
+          {
+            "start": 5.994,
+            "end": 6.074,
+            "word": " a",
+            "probability": 0.9606258869171143,
+            "window_index": 0
+          },
+          {
+            "start": 6.074,
+            "end": 6.334,
+            "word": " lot.",
+            "probability": 0.9255513548851013,
+            "window_index": 0
+          }
+        ]
+      },
+      {
+        "start": 8.674000000000001,
+        "end": 9.214,
+        "text": " Wish you a good birthday.",
+        "avg_logprob": -0.6166976928710938,
+        "no_speech_prob": 0.15629200637340546,
+        "compression_ratio": 0.8666666666666667,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 8.674000000000001,
+            "end": 8.914,
+            "word": " Wish",
+            "probability": 0.5936877131462097,
+            "window_index": 0
+          },
+          {
+            "start": 8.914,
+            "end": 9.014,
+            "word": " you",
+            "probability": 0.7049373388290405,
+            "window_index": 0
+          },
+          {
+            "start": 9.014,
+            "end": 9.054,
+            "word": " a",
+            "probability": 0.638302743434906,
+            "window_index": 0
+          },
+          {
+            "start": 9.054,
+            "end": 9.094000000000001,
+            "word": " good",
+            "probability": 0.5637497305870056,
+            "window_index": 0
+          },
+          {
+            "start": 9.094000000000001,
+            "end": 9.214,
+            "word": " birthday.",
+            "probability": 0.638303816318512,
+            "window_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "gap_index": 1,
+    "window_index": 0,
+    "window_start": 16.023,
+    "window_end": 24.023,
+    "segments": [
+      {
+        "start": 16.023,
+        "end": 21.523,
+        "text": " my chest, my ribs, not my gang, anything.",
+        "avg_logprob": -0.8904067834218343,
+        "no_speech_prob": 0.10142125189304352,
+        "compression_ratio": 0.8913043478260869,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 16.023,
+            "end": 16.123,
+            "word": " my",
+            "probability": 0.09057223051786423,
+            "window_index": 0
+          },
+          {
+            "start": 16.123,
+            "end": 16.483,
+            "word": " chest,",
+            "probability": 0.7086207270622253,
+            "window_index": 0
+          },
+          {
+            "start": 16.803,
+            "end": 17.942999999999998,
+            "word": " my",
+            "probability": 0.24786962568759918,
+            "window_index": 0
+          },
+          {
+            "start": 17.942999999999998,
+            "end": 18.283,
+            "word": " ribs,",
+            "probability": 0.7928372621536255,
+            "window_index": 0
+          },
+          {
+            "start": 18.703,
+            "end": 20.683,
+            "word": " not",
+            "probability": 0.40980082750320435,
+            "window_index": 0
+          },
+          {
+            "start": 20.683,
+            "end": 20.843,
+            "word": " my",
+            "probability": 0.40451666712760925,
+            "window_index": 0
+          },
+          {
+            "start": 20.843,
+            "end": 21.183,
+            "word": " gang,",
+            "probability": 0.7660819292068481,
+            "window_index": 0
+          },
+          {
+            "start": 21.262999999999998,
+            "end": 21.523,
+            "word": " anything.",
+            "probability": 0.7709615230560303,
+            "window_index": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "gap_index": 1,
+    "window_index": 1,
+    "window_start": 20.023,
+    "window_end": 28.023,
+    "segments": [
+      {
+        "start": 20.023,
+        "end": 21.703,
+        "text": " I'm not a gang or anything.",
+        "avg_logprob": -0.8205587162691004,
+        "no_speech_prob": 0.1759861707687378,
+        "compression_ratio": 0.8444444444444444,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 20.023,
+            "end": 20.683,
+            "word": " I'm",
+            "probability": 0.3384380182251334,
+            "window_index": 1
+          },
+          {
+            "start": 20.683,
+            "end": 20.683,
+            "word": " not",
+            "probability": 0.7756221294403076,
+            "window_index": 1
+          },
+          {
+            "start": 20.683,
+            "end": 20.883,
+            "word": " a",
+            "probability": 0.6399495005607605,
+            "window_index": 1
+          },
+          {
+            "start": 20.883,
+            "end": 21.163,
+            "word": " gang",
+            "probability": 0.5216181874275208,
+            "window_index": 1
+          },
+          {
+            "start": 21.163,
+            "end": 21.303,
+            "word": " or",
+            "probability": 0.3628508746623993,
+            "window_index": 1
+          },
+          {
+            "start": 21.303,
+            "end": 21.703,
+            "word": " anything.",
+            "probability": 0.8235682845115662,
+            "window_index": 1
+          }
+        ]
+      },
+      {
+        "start": 26.383000000000003,
+        "end": 27.383,
+        "text": " I'm sorry.",
+        "avg_logprob": -0.8205587162691004,
+        "no_speech_prob": 0.1759861707687378,
+        "compression_ratio": 0.8444444444444444,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 26.383000000000003,
+            "end": 27.183,
+            "word": " I'm",
+            "probability": 0.4193481504917145,
+            "window_index": 1
+          },
+          {
+            "start": 27.183,
+            "end": 27.383,
+            "word": " sorry.",
+            "probability": 0.458528995513916,
+            "window_index": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "gap_index": 1,
+    "window_index": 2,
+    "window_start": 24.023,
+    "window_end": 32.022999999999996,
+    "segments": [
+      {
+        "start": 27.583,
+        "end": 31.423000000000002,
+        "text": " 5-10-11, tell the girls 5-11.",
+        "avg_logprob": -0.8885457180440426,
+        "no_speech_prob": 0.3169530928134918,
+        "compression_ratio": 0.8055555555555556,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 27.583,
+            "end": 28.122999999999998,
+            "word": " 5",
+            "probability": 0.05067840963602066,
+            "window_index": 2
+          },
+          {
+            "start": 28.122999999999998,
+            "end": 28.383,
+            "word": "-10",
+            "probability": 0.44292422384023666,
+            "window_index": 2
+          },
+          {
+            "start": 28.383,
+            "end": 28.903,
+            "word": "-11,",
+            "probability": 0.36679691076278687,
+            "window_index": 2
+          },
+          {
+            "start": 30.423000000000002,
+            "end": 30.622999999999998,
+            "word": " tell",
+            "probability": 0.39105021953582764,
+            "window_index": 2
+          },
+          {
+            "start": 30.622999999999998,
+            "end": 30.703,
+            "word": " the",
+            "probability": 0.6711980700492859,
+            "window_index": 2
+          },
+          {
+            "start": 30.703,
+            "end": 30.883,
+            "word": " girls",
+            "probability": 0.709218442440033,
+            "window_index": 2
+          },
+          {
+            "start": 30.883,
+            "end": 31.143,
+            "word": " 5",
+            "probability": 0.6358398795127869,
+            "window_index": 2
+          },
+          {
+            "start": 31.143,
+            "end": 31.423000000000002,
+            "word": "-11.",
+            "probability": 0.9212600290775299,
+            "window_index": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "gap_index": 1,
+    "window_index": 3,
+    "window_start": 28.023,
+    "window_end": 36.022999999999996,
+    "segments": [
+      {
+        "start": 28.023,
+        "end": 32.223,
+        "text": " 5'10 and a half, 5'11, tell the girls 5'11, 5'10.",
+        "avg_logprob": -0.7476115419018653,
+        "no_speech_prob": 0.27009186148643494,
+        "compression_ratio": 0.9821428571428571,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 28.023,
+            "end": 28.163,
+            "word": " 5",
+            "probability": 0.05742046609520912,
+            "window_index": 3
+          },
+          {
+            "start": 28.163,
+            "end": 28.383,
+            "word": "'10",
+            "probability": 0.35802482441067696,
+            "window_index": 3
+          },
+          {
+            "start": 28.383,
+            "end": 28.463,
+            "word": " and",
+            "probability": 0.12180449068546295,
+            "window_index": 3
+          },
+          {
+            "start": 28.463,
+            "end": 28.583,
+            "word": " a",
+            "probability": 0.819516122341156,
+            "window_index": 3
+          },
+          {
+            "start": 28.583,
+            "end": 28.743,
+            "word": " half,",
+            "probability": 0.845797598361969,
+            "window_index": 3
+          },
+          {
+            "start": 29.163,
+            "end": 29.363,
+            "word": " 5",
+            "probability": 0.8532255291938782,
+            "window_index": 3
+          },
+          {
+            "start": 29.363,
+            "end": 29.663,
+            "word": "'11,",
+            "probability": 0.9737735092639923,
+            "window_index": 3
+          },
+          {
+            "start": 30.083,
+            "end": 30.623,
+            "word": " tell",
+            "probability": 0.31076040863990784,
+            "window_index": 3
+          },
+          {
+            "start": 30.623,
+            "end": 30.703,
+            "word": " the",
+            "probability": 0.6832659244537354,
+            "window_index": 3
+          },
+          {
+            "start": 30.703,
+            "end": 30.883,
+            "word": " girls",
+            "probability": 0.68170565366745,
+            "window_index": 3
+          },
+          {
+            "start": 30.883,
+            "end": 31.163,
+            "word": " 5",
+            "probability": 0.752838671207428,
+            "window_index": 3
+          },
+          {
+            "start": 31.163,
+            "end": 31.463,
+            "word": "'11,",
+            "probability": 0.8387157618999481,
+            "window_index": 3
+          },
+          {
+            "start": 31.723,
+            "end": 32.003,
+            "word": " 5",
+            "probability": 0.9694048166275024,
+            "window_index": 3
+          },
+          {
+            "start": 32.003,
+            "end": 32.223,
+            "word": "'10.",
+            "probability": 0.9920876026153564,
+            "window_index": 3
+          }
+        ]
+      },
+      {
+        "start": 33.522999999999996,
+        "end": 34.383,
+        "text": " 7'13.",
+        "avg_logprob": -0.7476115419018653,
+        "no_speech_prob": 0.27009186148643494,
+        "compression_ratio": 0.9821428571428571,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 33.522999999999996,
+            "end": 34.083,
+            "word": " 7",
+            "probability": 0.0039353868924081326,
+            "window_index": 3
+          },
+          {
+            "start": 34.083,
+            "end": 34.383,
+            "word": "'13.",
+            "probability": 0.5572828054428101,
+            "window_index": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "gap_index": 1,
+    "window_index": 4,
+    "window_start": 32.022999999999996,
+    "window_end": 40.022999999999996,
+    "segments": [
+      {
+        "start": 32.022999999999996,
+        "end": 37.863,
+        "text": " How much do I owe you?",
+        "avg_logprob": -0.8653776168823242,
+        "no_speech_prob": 0.4152347147464752,
+        "compression_ratio": 0.7777777777777778,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 32.022999999999996,
+            "end": 34.043,
+            "word": " How",
+            "probability": 0.08108808100223541,
+            "window_index": 4
+          },
+          {
+            "start": 34.043,
+            "end": 37.04299999999999,
+            "word": " much",
+            "probability": 0.7542442083358765,
+            "window_index": 4
+          },
+          {
+            "start": 37.04299999999999,
+            "end": 37.18299999999999,
+            "word": " do",
+            "probability": 0.7797627449035645,
+            "window_index": 4
+          },
+          {
+            "start": 37.18299999999999,
+            "end": 37.32299999999999,
+            "word": " I",
+            "probability": 0.28452351689338684,
+            "window_index": 4
+          },
+          {
+            "start": 37.32299999999999,
+            "end": 37.863,
+            "word": " owe",
+            "probability": 0.8027260303497314,
+            "window_index": 4
+          },
+          {
+            "start": 37.863,
+            "end": 37.863,
+            "word": " you?",
+            "probability": 0.4442353844642639,
+            "window_index": 4
+          }
+        ]
+      },
+      {
+        "start": 39.022999999999996,
+        "end": 39.282999999999994,
+        "text": " $160.",
+        "avg_logprob": -0.8653776168823242,
+        "no_speech_prob": 0.4152347147464752,
+        "compression_ratio": 0.7777777777777778,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 38.742999999999995,
+            "end": 39.282999999999994,
+            "word": " $160.",
+            "probability": 0.5911265015602112,
+            "window_index": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "gap_index": 1,
+    "window_index": 5,
+    "window_start": 32.693,
+    "window_end": 40.693,
+    "segments": [
+      {
+        "start": 33.713,
+        "end": 34.413,
+        "text": " Power 13.",
+        "avg_logprob": -0.40972838061196465,
+        "no_speech_prob": 0.34353727102279663,
+        "compression_ratio": 1.293103448275862,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 33.713,
+            "end": 34.073,
+            "word": " Power",
+            "probability": 0.06977774947881699,
+            "window_index": 5
+          },
+          {
+            "start": 34.073,
+            "end": 34.413,
+            "word": " 13.",
+            "probability": 0.36482876539230347,
+            "window_index": 5
+          }
+        ]
+      },
+      {
+        "start": 36.492999999999995,
+        "end": 37.333,
+        "text": " How much do you want?",
+        "avg_logprob": -0.40972838061196465,
+        "no_speech_prob": 0.34353727102279663,
+        "compression_ratio": 1.293103448275862,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 36.492999999999995,
+            "end": 36.852999999999994,
+            "word": " How",
+            "probability": 0.4110230803489685,
+            "window_index": 5
+          },
+          {
+            "start": 36.852999999999994,
+            "end": 37.033,
+            "word": " much",
+            "probability": 0.7897699475288391,
+            "window_index": 5
+          },
+          {
+            "start": 37.033,
+            "end": 37.212999999999994,
+            "word": " do",
+            "probability": 0.8033597469329834,
+            "window_index": 5
+          },
+          {
+            "start": 37.212999999999994,
+            "end": 37.312999999999995,
+            "word": " you",
+            "probability": 0.622035562992096,
+            "window_index": 5
+          },
+          {
+            "start": 37.312999999999995,
+            "end": 37.333,
+            "word": " want?",
+            "probability": 0.44863054156303406,
+            "window_index": 5
+          }
+        ]
+      },
+      {
+        "start": 37.812999999999995,
+        "end": 38.092999999999996,
+        "text": " Sorry?",
+        "avg_logprob": -0.40972838061196465,
+        "no_speech_prob": 0.34353727102279663,
+        "compression_ratio": 1.293103448275862,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 37.812999999999995,
+            "end": 38.092999999999996,
+            "word": " Sorry?",
+            "probability": 0.3492594361305237,
+            "window_index": 5
+          }
+        ]
+      },
+      {
+        "start": 38.233,
+        "end": 38.693,
+        "text": " How much do you want?",
+        "avg_logprob": -0.40972838061196465,
+        "no_speech_prob": 0.34353727102279663,
+        "compression_ratio": 1.293103448275862,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 38.233,
+            "end": 38.333,
+            "word": " How",
+            "probability": 0.7423455119132996,
+            "window_index": 5
+          },
+          {
+            "start": 38.333,
+            "end": 38.473,
+            "word": " much",
+            "probability": 0.8196516633033752,
+            "window_index": 5
+          },
+          {
+            "start": 38.473,
+            "end": 38.613,
+            "word": " do",
+            "probability": 0.8771584033966064,
+            "window_index": 5
+          },
+          {
+            "start": 38.613,
+            "end": 38.632999999999996,
+            "word": " you",
+            "probability": 0.9081346988677979,
+            "window_index": 5
+          },
+          {
+            "start": 38.632999999999996,
+            "end": 38.693,
+            "word": " want?",
+            "probability": 0.7961677312850952,
+            "window_index": 5
+          }
+        ]
+      },
+      {
+        "start": 38.933,
+        "end": 39.293,
+        "text": " 160.",
+        "avg_logprob": -0.40972838061196465,
+        "no_speech_prob": 0.34353727102279663,
+        "compression_ratio": 1.293103448275862,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 38.933,
+            "end": 39.293,
+            "word": " 160.",
+            "probability": 0.5683528184890747,
+            "window_index": 5
+          }
+        ]
+      },
+      {
+        "start": 39.973,
+        "end": 40.673,
+        "text": " Power 11.",
+        "avg_logprob": -0.40972838061196465,
+        "no_speech_prob": 0.34353727102279663,
+        "compression_ratio": 1.293103448275862,
+        "quality_filter_passed": true,
+        "words": [
+          {
+            "start": 39.973,
+            "end": 40.333,
+            "word": " Power",
+            "probability": 0.8708621859550476,
+            "window_index": 5
+          },
+          {
+            "start": 40.333,
+            "end": 40.673,
+            "word": " 11.",
+            "probability": 0.7536267042160034,
+            "window_index": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "gap_index": 2,
+    "window_index": 0,
+    "window_start": 61.737,
+    "window_end": 65.015875,
+    "segments": []
+  }
+]

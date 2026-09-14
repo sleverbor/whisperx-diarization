@@ -1,0 +1,23 @@
+[625.21-629.83] SPEAKER_00: and loitering around businesses, causing concern and suspicion.
+[630.63-631.35] SPEAKER_00: It's against the law.
+[633.74-634.56] SPEAKER_00: What's your date of birth, John?
+[634.92-636.50] Uncertain: March 17th, 2002.
+[636.52-639.86] SPEAKER_00: Got tattoos on both arms.
+[639.94-640.38] SPEAKER_00: Anywhere else?
+[640.74-641.52] SPEAKER_00: Yeah, on my chest.
+[641.78-643.14] REVIEW (single decode; speaker unknown): my ribs,
+[643.80-648.02] REVIEW (single decode; speaker unknown): not my gang, anything.
+[651.68-657.24] REVIEW (single decode; speaker unknown): How tall are you? 5'10 and a half, 5'11, tall girls 5'11, 5'10.
+[658.68-659.56] REVIEW (single decode; speaker unknown): How old are you?
+[661.40-664.26] REVIEW (single decode; speaker unknown): I'm a few way, sorry? I'm a few way. 160.
+[665.19-670.90] SPEAKER_00: Car 11, no record from Mississippi or Massachusetts.
+[671.00-671.48] SPEAKER_00: Number 8.
+[672.42-673.28] SPEAKER_00: So is that a fake name?
+[674.14-674.32] SPEAKER_00: No.
+[675.78-676.93] SPEAKER_00: You just not in the system anywhere?
+[677.51-679.17] SPEAKER_00: I don't get found guilty of anything.
+[679.19-680.63] SPEAKER_00: Do you have a driver's license?
+[680.75-681.79] Uncertain: I do have a driver's license.
+[681.81-682.89] SPEAKER_00: Then you should be in the system.
+[684.77-685.67] SPEAKER_00: I have a driver's license.
+[685.74-687.24] SPEAKER_00: I didn't give you any fake information.
