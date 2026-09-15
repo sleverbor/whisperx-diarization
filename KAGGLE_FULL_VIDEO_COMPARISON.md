@@ -1,7 +1,7 @@
 # Kaggle full-video comparison
 
 1. Import `kaggle_full_video_comparison.ipynb` into Kaggle.
-2. Attach the same private dataset that contains `video.mp4`.
+2. Attach the same private dataset containing `video.mp4`, `voice_embeddings.npy`, `face_embeddings.npy`, and `opening_officer_reference.npy`.
 3. Enable Internet and a GPU accelerator. A T4 is sufficient; the pipeline does not currently split one run across two GPUs.
 4. Add the Kaggle secret `HF_TOKEN` and grant the notebook access to it.
 5. Choose **Run All**.
