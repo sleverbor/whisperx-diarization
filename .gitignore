@@ -1,0 +1,25 @@
+# Credentials and environments
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Private inputs, biometric references, and generated output
+*.mp4
+*.mov
+*.mkv
+*.wav
+*.mp3
+*.npy
+*.npz
+*.json
+*.log
+.cloud-cache/
+pretrained_models/
+separated/
+outputs/
+stage-checkpoints*/
+diarization-results*/

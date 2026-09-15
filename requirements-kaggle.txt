@@ -1,0 +1,8 @@
+whisperx==3.8.6
+speechbrain==1.1.1
+insightface==2.0
+torch==2.8.0
+torchaudio==2.8.0
+numpy==2.5.3
+opencv-python==5.0.0.93
+onnxruntime-gpu==1.23.2
