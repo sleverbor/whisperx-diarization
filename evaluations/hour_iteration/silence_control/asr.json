@@ -1,0 +1,21 @@
+{
+  "language": "en",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 0.34,
+      "text": " You",
+      "avg_logprob": -0.7962512075901031,
+      "no_speech_prob": 0.8614029288291931,
+      "compression_ratio": 0.2727272727272727,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.34,
+          "word": " You",
+          "probability": 0.0748978853225708
+        }
+      ]
+    }
+  ]
+}

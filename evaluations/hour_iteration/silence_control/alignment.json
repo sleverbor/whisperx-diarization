@@ -1,0 +1,26 @@
+{
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 0.064,
+      "text": " You",
+      "words": [
+        {
+          "word": "You",
+          "start": 0.0,
+          "end": 0.064,
+          "score": 0.013
+        }
+      ],
+      "avg_logprob": -0.7962512075901031
+    }
+  ],
+  "word_segments": [
+    {
+      "word": "You",
+      "start": 0.0,
+      "end": 0.064,
+      "score": 0.013
+    }
+  ]
+}

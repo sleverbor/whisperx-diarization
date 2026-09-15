@@ -1,0 +1,38 @@
+{
+  "runner_test_665": {
+    "decoded_seconds": 25.0,
+    "elapsed_seconds": 116.15831110603176,
+    "speaker_hypotheses": 13,
+    "device": "cpu"
+  },
+  "runner_decoder_665": {
+    "decoded_seconds": 25.0,
+    "elapsed_seconds": 116.25541350909043,
+    "speaker_hypotheses": 13,
+    "device": "cpu"
+  },
+  "runner_consensus_665": {
+    "decoded_seconds": 25.0,
+    "elapsed_seconds": 103.33049116597977,
+    "speaker_hypotheses": 13,
+    "device": "cpu"
+  },
+  "runner_consensus_cuffs": {
+    "decoded_seconds": 65.0,
+    "elapsed_seconds": 173.4080760530196,
+    "speaker_hypotheses": 25,
+    "device": "cpu"
+  },
+  "mechanical_flagged": {
+    "decoded_seconds": 6.0,
+    "elapsed_seconds": 41.48188803100493,
+    "speaker_hypotheses": 4,
+    "device": "cpu"
+  },
+  "silence_control": {
+    "decoded_seconds": 6.0,
+    "elapsed_seconds": 37.70045029302128,
+    "speaker_hypotheses": 1,
+    "device": "cpu"
+  }
+}

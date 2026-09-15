@@ -1,0 +1,1341 @@
+{
+  "language": "en",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 0.98,
+      "text": " I appreciate people.",
+      "avg_logprob": -0.39000243176030747,
+      "no_speech_prob": 0.39729058742523193,
+      "compression_ratio": 1.5892116182572613,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.18,
+          "word": " I",
+          "probability": 0.5291199088096619
+        },
+        {
+          "start": 0.18,
+          "end": 0.42,
+          "word": " appreciate",
+          "probability": 0.31730738282203674
+        },
+        {
+          "start": 0.42,
+          "end": 0.98,
+          "word": " people.",
+          "probability": 0.19772472977638245
+        }
+      ]
+    },
+    {
+      "start": 2.12,
+      "end": 2.3,
+      "text": " Oh yeah.",
+      "avg_logprob": -0.39000243176030747,
+      "no_speech_prob": 0.39729058742523193,
+      "compression_ratio": 1.5892116182572613,
+      "words": [
+        {
+          "start": 2.12,
+          "end": 2.12,
+          "word": " Oh",
+          "probability": 0.00522732175886631
+        },
+        {
+          "start": 2.12,
+          "end": 2.3,
+          "word": " yeah.",
+          "probability": 0.5163005590438843
+        }
+      ]
+    },
+    {
+      "start": 2.74,
+      "end": 7.42,
+      "text": " Well I can tell everybody else that comes in here, my behavior is kind of a reflection",
+      "avg_logprob": -0.39000243176030747,
+      "no_speech_prob": 0.39729058742523193,
+      "compression_ratio": 1.5892116182572613,
+      "words": [
+        {
+          "start": 2.74,
+          "end": 2.9,
+          "word": " Well",
+          "probability": 0.4513135254383087
+        },
+        {
+          "start": 2.9,
+          "end": 3.0,
+          "word": " I",
+          "probability": 0.5512939691543579
+        },
+        {
+          "start": 3.0,
+          "end": 3.12,
+          "word": " can",
+          "probability": 0.4641404449939728
+        },
+        {
+          "start": 3.12,
+          "end": 3.34,
+          "word": " tell",
+          "probability": 0.8146254420280457
+        },
+        {
+          "start": 3.34,
+          "end": 3.62,
+          "word": " everybody",
+          "probability": 0.6485945582389832
+        },
+        {
+          "start": 3.62,
+          "end": 3.98,
+          "word": " else",
+          "probability": 0.8412401676177979
+        },
+        {
+          "start": 3.98,
+          "end": 4.14,
+          "word": " that",
+          "probability": 0.8647496700286865
+        },
+        {
+          "start": 4.14,
+          "end": 4.38,
+          "word": " comes",
+          "probability": 0.8119319677352905
+        },
+        {
+          "start": 4.38,
+          "end": 4.62,
+          "word": " in",
+          "probability": 0.9018727540969849
+        },
+        {
+          "start": 4.62,
+          "end": 4.92,
+          "word": " here,",
+          "probability": 0.8084629774093628
+        },
+        {
+          "start": 5.32,
+          "end": 5.74,
+          "word": " my",
+          "probability": 0.8327829837799072
+        },
+        {
+          "start": 5.74,
+          "end": 6.24,
+          "word": " behavior",
+          "probability": 0.8007129430770874
+        },
+        {
+          "start": 6.24,
+          "end": 6.46,
+          "word": " is",
+          "probability": 0.9003329277038574
+        },
+        {
+          "start": 6.46,
+          "end": 6.66,
+          "word": " kind",
+          "probability": 0.7508474588394165
+        },
+        {
+          "start": 6.66,
+          "end": 6.78,
+          "word": " of",
+          "probability": 0.9083395004272461
+        },
+        {
+          "start": 6.78,
+          "end": 6.94,
+          "word": " a",
+          "probability": 0.991638720035553
+        },
+        {
+          "start": 6.94,
+          "end": 7.42,
+          "word": " reflection",
+          "probability": 0.8324094414710999
+        }
+      ]
+    },
+    {
+      "start": 7.42,
+      "end": 7.98,
+      "text": " of theirs.",
+      "avg_logprob": -0.39000243176030747,
+      "no_speech_prob": 0.39729058742523193,
+      "compression_ratio": 1.5892116182572613,
+      "words": [
+        {
+          "start": 7.42,
+          "end": 7.72,
+          "word": " of",
+          "probability": 0.9062232971191406
+        },
+        {
+          "start": 7.72,
+          "end": 7.98,
+          "word": " theirs.",
+          "probability": 0.7313306927680969
+        }
+      ]
+    },
+    {
+      "start": 8.28,
+      "end": 9.26,
+      "text": " I couldn't agree more.",
+      "avg_logprob": -0.39000243176030747,
+      "no_speech_prob": 0.39729058742523193,
+      "compression_ratio": 1.5892116182572613,
+      "words": [
+        {
+          "start": 8.28,
+          "end": 8.42,
+          "word": " I",
+          "probability": 0.4780764579772949
+        },
+        {
+          "start": 8.42,
+          "end": 8.62,
+          "word": " couldn't",
+          "probability": 0.8614051938056946
+        },
+        {
+          "start": 8.62,
+          "end": 8.94,
+          "word": " agree",
+          "probability": 0.9126914143562317
+        },
+        {
+          "start": 8.94,
+          "end": 9.26,
+          "word": " more.",
+          "probability": 0.838892936706543
+        }
+      ]
+    },
+    {
+      "start": 9.58,
+      "end": 10.5,
+      "text": " I couldn't agree more.",
+      "avg_logprob": -0.39000243176030747,
+      "no_speech_prob": 0.39729058742523193,
+      "compression_ratio": 1.5892116182572613,
+      "words": [
+        {
+          "start": 9.58,
+          "end": 9.7,
+          "word": " I",
+          "probability": 0.7052999138832092
+        },
+        {
+          "start": 9.7,
+          "end": 9.96,
+          "word": " couldn't",
+          "probability": 0.8938152492046356
+        },
+        {
+          "start": 9.96,
+          "end": 10.18,
+          "word": " agree",
+          "probability": 0.8980001211166382
+        },
+        {
+          "start": 10.18,
+          "end": 10.5,
+          "word": " more.",
+          "probability": 0.8321645259857178
+        }
+      ]
+    },
+    {
+      "start": 12.36,
+      "end": 12.66,
+      "text": " Yeah.",
+      "avg_logprob": -0.39000243176030747,
+      "no_speech_prob": 0.39729058742523193,
+      "compression_ratio": 1.5892116182572613,
+      "words": [
+        {
+          "start": 12.36,
+          "end": 12.66,
+          "word": " Yeah.",
+          "probability": 0.14017349481582642
+        }
+      ]
+    },
+    {
+      "start": 12.98,
+      "end": 14.4,
+      "text": " Couldn't agree a syllable more.",
+      "avg_logprob": -0.39000243176030747,
+      "no_speech_prob": 0.39729058742523193,
+      "compression_ratio": 1.5892116182572613,
+      "words": [
+        {
+          "start": 12.98,
+          "end": 13.4,
+          "word": " Couldn't",
+          "probability": 0.7833509743213654
+        },
+        {
+          "start": 13.4,
+          "end": 13.66,
+          "word": " agree",
+          "probability": 0.9073588848114014
+        },
+        {
+          "start": 13.66,
+          "end": 13.86,
+          "word": " a",
+          "probability": 0.8147546648979187
+        },
+        {
+          "start": 13.86,
+          "end": 14.04,
+          "word": " syllable",
+          "probability": 0.7470402717590332
+        },
+        {
+          "start": 14.04,
+          "end": 14.4,
+          "word": " more.",
+          "probability": 0.8664206266403198
+        }
+      ]
+    },
+    {
+      "start": 17.3,
+      "end": 18.12,
+      "text": " Well that's a good one.",
+      "avg_logprob": -0.39000243176030747,
+      "no_speech_prob": 0.39729058742523193,
+      "compression_ratio": 1.5892116182572613,
+      "words": [
+        {
+          "start": 17.3,
+          "end": 17.48,
+          "word": " Well",
+          "probability": 0.36526814103126526
+        },
+        {
+          "start": 17.48,
+          "end": 17.8,
+          "word": " that's",
+          "probability": 0.640215128660202
+        },
+        {
+          "start": 17.8,
+          "end": 17.92,
+          "word": " a",
+          "probability": 0.5879614949226379
+        },
+        {
+          "start": 17.92,
+          "end": 18.1,
+          "word": " good",
+          "probability": 0.3736055791378021
+        },
+        {
+          "start": 18.1,
+          "end": 18.12,
+          "word": " one.",
+          "probability": 0.5629892349243164
+        }
+      ]
+    },
+    {
+      "start": 18.58,
+      "end": 18.72,
+      "text": " Huh?",
+      "avg_logprob": -0.39000243176030747,
+      "no_speech_prob": 0.39729058742523193,
+      "compression_ratio": 1.5892116182572613,
+      "words": [
+        {
+          "start": 18.58,
+          "end": 18.72,
+          "word": " Huh?",
+          "probability": 0.2165054827928543
+        }
+      ]
+    },
+    {
+      "start": 19.500000000000004,
+      "end": 20.98,
+      "text": " You're fun to get on my...",
+      "avg_logprob": -0.39000243176030747,
+      "no_speech_prob": 0.39729058742523193,
+      "compression_ratio": 1.5892116182572613,
+      "words": [
+        {
+          "start": 19.500000000000004,
+          "end": 19.98,
+          "word": " You're",
+          "probability": 0.6843761205673218
+        },
+        {
+          "start": 19.98,
+          "end": 20.16,
+          "word": " fun",
+          "probability": 0.5288945436477661
+        },
+        {
+          "start": 20.16,
+          "end": 20.28,
+          "word": " to",
+          "probability": 0.8822491765022278
+        },
+        {
+          "start": 20.28,
+          "end": 20.4,
+          "word": " get",
+          "probability": 0.7721481919288635
+        },
+        {
+          "start": 20.4,
+          "end": 20.52,
+          "word": " on",
+          "probability": 0.8731814622879028
+        },
+        {
+          "start": 20.52,
+          "end": 20.98,
+          "word": " my...",
+          "probability": 0.6312746554613113
+        }
+      ]
+    },
+    {
+      "start": 20.98,
+      "end": 22.2,
+      "text": " No that's not the problem.",
+      "avg_logprob": -0.39000243176030747,
+      "no_speech_prob": 0.39729058742523193,
+      "compression_ratio": 1.5892116182572613,
+      "words": [
+        {
+          "start": 20.98,
+          "end": 21.22,
+          "word": " No",
+          "probability": 0.8065483570098877
+        },
+        {
+          "start": 21.22,
+          "end": 21.48,
+          "word": " that's",
+          "probability": 0.7595432698726654
+        },
+        {
+          "start": 21.48,
+          "end": 21.62,
+          "word": " not",
+          "probability": 0.8941146731376648
+        },
+        {
+          "start": 21.62,
+          "end": 21.78,
+          "word": " the",
+          "probability": 0.7891416549682617
+        },
+        {
+          "start": 21.78,
+          "end": 22.2,
+          "word": " problem.",
+          "probability": 0.7787254452705383
+        }
+      ]
+    },
+    {
+      "start": 22.76,
+      "end": 23.28,
+      "text": " They pee.",
+      "avg_logprob": -0.39000243176030747,
+      "no_speech_prob": 0.39729058742523193,
+      "compression_ratio": 1.5892116182572613,
+      "words": [
+        {
+          "start": 22.76,
+          "end": 22.96,
+          "word": " They",
+          "probability": 0.5286703705787659
+        },
+        {
+          "start": 22.96,
+          "end": 23.28,
+          "word": " pee.",
+          "probability": 0.5946733355522156
+        }
+      ]
+    },
+    {
+      "start": 23.52,
+      "end": 24.4,
+      "text": " It just got stuck.",
+      "avg_logprob": -0.39000243176030747,
+      "no_speech_prob": 0.39729058742523193,
+      "compression_ratio": 1.5892116182572613,
+      "words": [
+        {
+          "start": 23.52,
+          "end": 23.68,
+          "word": " It",
+          "probability": 0.47989803552627563
+        },
+        {
+          "start": 23.68,
+          "end": 23.88,
+          "word": " just",
+          "probability": 0.8689080476760864
+        },
+        {
+          "start": 23.88,
+          "end": 24.08,
+          "word": " got",
+          "probability": 0.8680945634841919
+        },
+        {
+          "start": 24.08,
+          "end": 24.4,
+          "word": " stuck.",
+          "probability": 0.8002750873565674
+        }
+      ]
+    },
+    {
+      "start": 26.980000000000004,
+      "end": 28.6,
+      "text": " How do I mess with your cuffs?",
+      "avg_logprob": -0.39000243176030747,
+      "no_speech_prob": 0.39729058742523193,
+      "compression_ratio": 1.5892116182572613,
+      "words": [
+        {
+          "start": 26.980000000000004,
+          "end": 27.46,
+          "word": " How",
+          "probability": 0.23281732201576233
+        },
+        {
+          "start": 27.46,
+          "end": 27.6,
+          "word": " do",
+          "probability": 0.8384053707122803
+        },
+        {
+          "start": 27.6,
+          "end": 27.72,
+          "word": " I",
+          "probability": 0.9888802766799927
+        },
+        {
+          "start": 27.72,
+          "end": 27.94,
+          "word": " mess",
+          "probability": 0.8107513189315796
+        },
+        {
+          "start": 27.94,
+          "end": 28.08,
+          "word": " with",
+          "probability": 0.8066048622131348
+        },
+        {
+          "start": 28.08,
+          "end": 28.28,
+          "word": " your",
+          "probability": 0.7856840491294861
+        },
+        {
+          "start": 28.28,
+          "end": 28.6,
+          "word": " cuffs?",
+          "probability": 0.6301701366901398
+        }
+      ]
+    },
+    {
+      "start": 28.64,
+      "end": 29.68,
+      "text": " Or mess them up or anything?",
+      "avg_logprob": -0.39000243176030747,
+      "no_speech_prob": 0.39729058742523193,
+      "compression_ratio": 1.5892116182572613,
+      "words": [
+        {
+          "start": 28.64,
+          "end": 28.76,
+          "word": " Or",
+          "probability": 0.7598413825035095
+        },
+        {
+          "start": 28.76,
+          "end": 28.98,
+          "word": " mess",
+          "probability": 0.7193657755851746
+        },
+        {
+          "start": 28.98,
+          "end": 29.1,
+          "word": " them",
+          "probability": 0.5048894286155701
+        },
+        {
+          "start": 29.1,
+          "end": 29.3,
+          "word": " up",
+          "probability": 0.9066295623779297
+        },
+        {
+          "start": 29.3,
+          "end": 29.42,
+          "word": " or",
+          "probability": 0.6981523633003235
+        },
+        {
+          "start": 29.42,
+          "end": 29.68,
+          "word": " anything?",
+          "probability": 0.851291298866272
+        }
+      ]
+    },
+    {
+      "start": 36.68,
+      "end": 39.0,
+      "text": " I'm taking too much time, I haven't got much space.",
+      "avg_logprob": -0.4993310570716858,
+      "no_speech_prob": 0.6201092004776001,
+      "compression_ratio": 1.642156862745098,
+      "words": [
+        {
+          "start": 36.68,
+          "end": 37.04,
+          "word": " I'm",
+          "probability": 0.42164797335863113
+        },
+        {
+          "start": 37.04,
+          "end": 37.26,
+          "word": " taking",
+          "probability": 0.5190239548683167
+        },
+        {
+          "start": 37.26,
+          "end": 37.5,
+          "word": " too",
+          "probability": 0.6766501665115356
+        },
+        {
+          "start": 37.5,
+          "end": 37.76,
+          "word": " much",
+          "probability": 0.8099222183227539
+        },
+        {
+          "start": 37.76,
+          "end": 37.94,
+          "word": " time,",
+          "probability": 0.1668829470872879
+        },
+        {
+          "start": 38.0,
+          "end": 38.08,
+          "word": " I",
+          "probability": 0.8281587362289429
+        },
+        {
+          "start": 38.08,
+          "end": 38.26,
+          "word": " haven't",
+          "probability": 0.7055192440748215
+        },
+        {
+          "start": 38.26,
+          "end": 38.4,
+          "word": " got",
+          "probability": 0.8921324610710144
+        },
+        {
+          "start": 38.4,
+          "end": 38.64,
+          "word": " much",
+          "probability": 0.6146097183227539
+        },
+        {
+          "start": 38.64,
+          "end": 39.0,
+          "word": " space.",
+          "probability": 0.7957198619842529
+        }
+      ]
+    },
+    {
+      "start": 39.18,
+      "end": 41.68,
+      "text": " Well we're not trying to tie something, we're trying to get the key out of it.",
+      "avg_logprob": -0.4993310570716858,
+      "no_speech_prob": 0.6201092004776001,
+      "compression_ratio": 1.642156862745098,
+      "words": [
+        {
+          "start": 39.18,
+          "end": 39.28,
+          "word": " Well",
+          "probability": 0.05333098769187927
+        },
+        {
+          "start": 39.28,
+          "end": 39.4,
+          "word": " we're",
+          "probability": 0.6933645904064178
+        },
+        {
+          "start": 39.4,
+          "end": 39.56,
+          "word": " not",
+          "probability": 0.882569432258606
+        },
+        {
+          "start": 39.56,
+          "end": 39.8,
+          "word": " trying",
+          "probability": 0.7890453934669495
+        },
+        {
+          "start": 39.8,
+          "end": 39.9,
+          "word": " to",
+          "probability": 0.8974769711494446
+        },
+        {
+          "start": 39.9,
+          "end": 40.16,
+          "word": " tie",
+          "probability": 0.5278973579406738
+        },
+        {
+          "start": 40.16,
+          "end": 40.34,
+          "word": " something,",
+          "probability": 0.26398971676826477
+        },
+        {
+          "start": 40.5,
+          "end": 40.5,
+          "word": " we're",
+          "probability": 0.8490887880325317
+        },
+        {
+          "start": 40.5,
+          "end": 40.64,
+          "word": " trying",
+          "probability": 0.7825477123260498
+        },
+        {
+          "start": 40.64,
+          "end": 40.74,
+          "word": " to",
+          "probability": 0.9047423005104065
+        },
+        {
+          "start": 40.74,
+          "end": 40.9,
+          "word": " get",
+          "probability": 0.8910040259361267
+        },
+        {
+          "start": 40.9,
+          "end": 41.04,
+          "word": " the",
+          "probability": 0.6661306619644165
+        },
+        {
+          "start": 41.04,
+          "end": 41.18,
+          "word": " key",
+          "probability": 0.7673810720443726
+        },
+        {
+          "start": 41.18,
+          "end": 41.46,
+          "word": " out",
+          "probability": 0.8111710548400879
+        },
+        {
+          "start": 41.46,
+          "end": 41.56,
+          "word": " of",
+          "probability": 0.7558690309524536
+        },
+        {
+          "start": 41.56,
+          "end": 41.68,
+          "word": " it.",
+          "probability": 0.3432660400867462
+        }
+      ]
+    },
+    {
+      "start": 42.8,
+      "end": 43.16,
+      "text": " Okay.",
+      "avg_logprob": -0.4993310570716858,
+      "no_speech_prob": 0.6201092004776001,
+      "compression_ratio": 1.642156862745098,
+      "words": [
+        {
+          "start": 42.8,
+          "end": 43.16,
+          "word": " Okay.",
+          "probability": 0.17320044338703156
+        }
+      ]
+    },
+    {
+      "start": 45.46,
+      "end": 49.1,
+      "text": " I might need to get a new key, there might be something off with this one because I just",
+      "avg_logprob": -0.4993310570716858,
+      "no_speech_prob": 0.6201092004776001,
+      "compression_ratio": 1.642156862745098,
+      "words": [
+        {
+          "start": 45.46,
+          "end": 45.82,
+          "word": " I",
+          "probability": 0.42433521151542664
+        },
+        {
+          "start": 45.82,
+          "end": 46.18,
+          "word": " might",
+          "probability": 0.7581160068511963
+        },
+        {
+          "start": 46.18,
+          "end": 46.36,
+          "word": " need",
+          "probability": 0.7047616839408875
+        },
+        {
+          "start": 46.36,
+          "end": 46.44,
+          "word": " to",
+          "probability": 0.8827425241470337
+        },
+        {
+          "start": 46.44,
+          "end": 46.56,
+          "word": " get",
+          "probability": 0.903739333152771
+        },
+        {
+          "start": 46.56,
+          "end": 46.7,
+          "word": " a",
+          "probability": 0.9886246919631958
+        },
+        {
+          "start": 46.7,
+          "end": 46.9,
+          "word": " new",
+          "probability": 0.792129635810852
+        },
+        {
+          "start": 46.9,
+          "end": 47.12,
+          "word": " key,",
+          "probability": 0.7942823171615601
+        },
+        {
+          "start": 47.26,
+          "end": 47.32,
+          "word": " there",
+          "probability": 0.799898087978363
+        },
+        {
+          "start": 47.32,
+          "end": 47.5,
+          "word": " might",
+          "probability": 0.8049558997154236
+        },
+        {
+          "start": 47.5,
+          "end": 47.66,
+          "word": " be",
+          "probability": 0.8968762159347534
+        },
+        {
+          "start": 47.66,
+          "end": 47.86,
+          "word": " something",
+          "probability": 0.7180778384208679
+        },
+        {
+          "start": 47.86,
+          "end": 48.16,
+          "word": " off",
+          "probability": 0.5120359659194946
+        },
+        {
+          "start": 48.16,
+          "end": 48.32,
+          "word": " with",
+          "probability": 0.7726978063583374
+        },
+        {
+          "start": 48.32,
+          "end": 48.52,
+          "word": " this",
+          "probability": 0.8735451102256775
+        },
+        {
+          "start": 48.52,
+          "end": 48.68,
+          "word": " one",
+          "probability": 0.8210603594779968
+        },
+        {
+          "start": 48.68,
+          "end": 48.82,
+          "word": " because",
+          "probability": 0.2999981939792633
+        },
+        {
+          "start": 48.82,
+          "end": 48.94,
+          "word": " I",
+          "probability": 0.9867547154426575
+        },
+        {
+          "start": 48.94,
+          "end": 49.1,
+          "word": " just",
+          "probability": 0.8064988255500793
+        }
+      ]
+    },
+    {
+      "start": 49.1,
+      "end": 53.92,
+      "text": " had an issue with that fella I got in put this arm on the wall in front of you when",
+      "avg_logprob": -0.4993310570716858,
+      "no_speech_prob": 0.6201092004776001,
+      "compression_ratio": 1.642156862745098,
+      "words": [
+        {
+          "start": 49.1,
+          "end": 49.26,
+          "word": " had",
+          "probability": 0.7970348596572876
+        },
+        {
+          "start": 49.26,
+          "end": 49.38,
+          "word": " an",
+          "probability": 0.9026045203208923
+        },
+        {
+          "start": 49.38,
+          "end": 49.6,
+          "word": " issue",
+          "probability": 0.8891387581825256
+        },
+        {
+          "start": 49.6,
+          "end": 49.82,
+          "word": " with",
+          "probability": 0.7962223887443542
+        },
+        {
+          "start": 49.82,
+          "end": 50.0,
+          "word": " that",
+          "probability": 0.7768319249153137
+        },
+        {
+          "start": 50.0,
+          "end": 50.22,
+          "word": " fella",
+          "probability": 0.34967538714408875
+        },
+        {
+          "start": 50.22,
+          "end": 50.42,
+          "word": " I",
+          "probability": 0.8826985359191895
+        },
+        {
+          "start": 50.42,
+          "end": 50.6,
+          "word": " got",
+          "probability": 0.8759750723838806
+        },
+        {
+          "start": 50.6,
+          "end": 50.92,
+          "word": " in",
+          "probability": 0.8869411945343018
+        },
+        {
+          "start": 50.92,
+          "end": 52.04,
+          "word": " put",
+          "probability": 0.2669902443885803
+        },
+        {
+          "start": 52.04,
+          "end": 52.24,
+          "word": " this",
+          "probability": 0.8164936304092407
+        },
+        {
+          "start": 52.24,
+          "end": 52.48,
+          "word": " arm",
+          "probability": 0.5527511239051819
+        },
+        {
+          "start": 52.48,
+          "end": 52.68,
+          "word": " on",
+          "probability": 0.7934255003929138
+        },
+        {
+          "start": 52.68,
+          "end": 52.86,
+          "word": " the",
+          "probability": 0.7873984575271606
+        },
+        {
+          "start": 52.86,
+          "end": 53.18,
+          "word": " wall",
+          "probability": 0.619215726852417
+        },
+        {
+          "start": 53.18,
+          "end": 53.38,
+          "word": " in",
+          "probability": 0.7905170917510986
+        },
+        {
+          "start": 53.38,
+          "end": 53.54,
+          "word": " front",
+          "probability": 0.9193564057350159
+        },
+        {
+          "start": 53.54,
+          "end": 53.62,
+          "word": " of",
+          "probability": 0.9115068912506104
+        },
+        {
+          "start": 53.62,
+          "end": 53.76,
+          "word": " you",
+          "probability": 0.6932260990142822
+        },
+        {
+          "start": 53.76,
+          "end": 53.92,
+          "word": " when",
+          "probability": 0.5318302512168884
+        }
+      ]
+    },
+    {
+      "start": 53.92,
+      "end": 54.82,
+      "text": " that could have come off.",
+      "avg_logprob": -0.4993310570716858,
+      "no_speech_prob": 0.6201092004776001,
+      "compression_ratio": 1.642156862745098,
+      "words": [
+        {
+          "start": 53.92,
+          "end": 54.06,
+          "word": " that",
+          "probability": 0.6080845594406128
+        },
+        {
+          "start": 54.06,
+          "end": 54.22,
+          "word": " could",
+          "probability": 0.2704135477542877
+        },
+        {
+          "start": 54.22,
+          "end": 54.32,
+          "word": " have",
+          "probability": 0.63276207447052
+        },
+        {
+          "start": 54.32,
+          "end": 54.52,
+          "word": " come",
+          "probability": 0.5421810746192932
+        },
+        {
+          "start": 54.52,
+          "end": 54.82,
+          "word": " off.",
+          "probability": 0.7101977467536926
+        }
+      ]
+    },
+    {
+      "start": 55.48,
+      "end": 61.88,
+      "text": " That guy I just searched in that had the shackles, it had a little bit of difficulty opening up one of the shackles on his hop.",
+      "avg_logprob": -0.49562948577258054,
+      "no_speech_prob": 0.05148251727223396,
+      "compression_ratio": 1.376,
+      "words": [
+        {
+          "start": 55.48,
+          "end": 55.8,
+          "word": " That",
+          "probability": 0.292458176612854
+        },
+        {
+          "start": 55.8,
+          "end": 56.06,
+          "word": " guy",
+          "probability": 0.8377601504325867
+        },
+        {
+          "start": 56.06,
+          "end": 56.18,
+          "word": " I",
+          "probability": 0.3127117455005646
+        },
+        {
+          "start": 56.18,
+          "end": 56.34,
+          "word": " just",
+          "probability": 0.8700350522994995
+        },
+        {
+          "start": 56.34,
+          "end": 56.6,
+          "word": " searched",
+          "probability": 0.6897186636924744
+        },
+        {
+          "start": 56.6,
+          "end": 56.82,
+          "word": " in",
+          "probability": 0.8213173747062683
+        },
+        {
+          "start": 56.82,
+          "end": 56.94,
+          "word": " that",
+          "probability": 0.3458346426486969
+        },
+        {
+          "start": 56.94,
+          "end": 57.08,
+          "word": " had",
+          "probability": 0.7480698823928833
+        },
+        {
+          "start": 57.08,
+          "end": 57.24,
+          "word": " the",
+          "probability": 0.7896713614463806
+        },
+        {
+          "start": 57.24,
+          "end": 57.74,
+          "word": " shackles,",
+          "probability": 0.9307193458080292
+        },
+        {
+          "start": 57.76,
+          "end": 57.92,
+          "word": " it",
+          "probability": 0.7192495465278625
+        },
+        {
+          "start": 57.92,
+          "end": 58.06,
+          "word": " had",
+          "probability": 0.8220176696777344
+        },
+        {
+          "start": 58.06,
+          "end": 58.2,
+          "word": " a",
+          "probability": 0.9869311451911926
+        },
+        {
+          "start": 58.2,
+          "end": 58.34,
+          "word": " little",
+          "probability": 0.7666963934898376
+        },
+        {
+          "start": 58.34,
+          "end": 58.56,
+          "word": " bit",
+          "probability": 0.879831850528717
+        },
+        {
+          "start": 58.56,
+          "end": 58.68,
+          "word": " of",
+          "probability": 0.8866641521453857
+        },
+        {
+          "start": 58.68,
+          "end": 59.14,
+          "word": " difficulty",
+          "probability": 0.6646603345870972
+        },
+        {
+          "start": 59.14,
+          "end": 59.78,
+          "word": " opening",
+          "probability": 0.7207395434379578
+        },
+        {
+          "start": 59.78,
+          "end": 60.02,
+          "word": " up",
+          "probability": 0.5251893997192383
+        },
+        {
+          "start": 60.02,
+          "end": 60.26,
+          "word": " one",
+          "probability": 0.6726759672164917
+        },
+        {
+          "start": 60.26,
+          "end": 60.38,
+          "word": " of",
+          "probability": 0.8988274335861206
+        },
+        {
+          "start": 60.38,
+          "end": 60.76,
+          "word": " the",
+          "probability": 0.8114333748817444
+        },
+        {
+          "start": 60.76,
+          "end": 61.36,
+          "word": " shackles",
+          "probability": 0.909012645483017
+        },
+        {
+          "start": 61.36,
+          "end": 61.5,
+          "word": " on",
+          "probability": 0.42459797859191895
+        },
+        {
+          "start": 61.5,
+          "end": 61.64,
+          "word": " his",
+          "probability": 0.26103636622428894
+        },
+        {
+          "start": 61.64,
+          "end": 61.88,
+          "word": " hop.",
+          "probability": 0.4595450162887573
+        }
+      ]
+    },
+    {
+      "start": 62.0,
+      "end": 63.4,
+      "text": " That guy got to get a new key then.",
+      "avg_logprob": -0.49562948577258054,
+      "no_speech_prob": 0.05148251727223396,
+      "compression_ratio": 1.376,
+      "words": [
+        {
+          "start": 62.0,
+          "end": 62.12,
+          "word": " That",
+          "probability": 0.4798826575279236
+        },
+        {
+          "start": 62.12,
+          "end": 62.28,
+          "word": " guy",
+          "probability": 0.8351832628250122
+        },
+        {
+          "start": 62.28,
+          "end": 62.4,
+          "word": " got",
+          "probability": 0.5695620775222778
+        },
+        {
+          "start": 62.4,
+          "end": 62.5,
+          "word": " to",
+          "probability": 0.6071828603744507
+        },
+        {
+          "start": 62.5,
+          "end": 62.58,
+          "word": " get",
+          "probability": 0.6405759453773499
+        },
+        {
+          "start": 62.58,
+          "end": 62.72,
+          "word": " a",
+          "probability": 0.9890645742416382
+        },
+        {
+          "start": 62.72,
+          "end": 62.88,
+          "word": " new",
+          "probability": 0.8115173578262329
+        },
+        {
+          "start": 62.88,
+          "end": 63.2,
+          "word": " key",
+          "probability": 0.8148531913757324
+        },
+        {
+          "start": 63.2,
+          "end": 63.4,
+          "word": " then.",
+          "probability": 0.7290059924125671
+        }
+      ]
+    },
+    {
+      "start": 64.6,
+      "end": 64.92,
+      "text": " Alright.",
+      "avg_logprob": -0.49562948577258054,
+      "no_speech_prob": 0.05148251727223396,
+      "compression_ratio": 1.376,
+      "words": [
+        {
+          "start": 64.6,
+          "end": 64.92,
+          "word": " Alright.",
+          "probability": 0.4680100381374359
+        }
+      ]
+    }
+  ]
+}

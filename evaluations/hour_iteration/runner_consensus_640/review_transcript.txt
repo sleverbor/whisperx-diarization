@@ -1,0 +1,9 @@
+[640.00–643.14] Uncertain:  Yeah, on my chest and my ribs.
+[645.26–646.52] Target_Speaker:  Nothing gang, anything.
+[651.84–652.58] Uncertain:  How tall are you?
+[652.86–654.66] Uncertain:  5'10 and a half, 5'11.
+[655.14–657.22] Target_Speaker:  Tall girls, 5'11, 5'10.
+[661.38–662.32] Uncertain:  How much do you weigh?
+[662.70–663.10] Uncertain:  Sorry?
+[663.24–663.74] Uncertain:  How much do you weigh?
+[663.82–664.30] Uncertain:  160.

@@ -1,0 +1,122 @@
+{
+  "target_reference_samples": 18,
+  "target_leave_one_out_cosines": [
+    0.7872047424316406,
+    0.7600017786026001,
+    0.7699865102767944,
+    0.7563464045524597,
+    0.7750718593597412,
+    0.866692066192627,
+    0.789048433303833,
+    0.6924026012420654,
+    0.7587227821350098,
+    0.7985951900482178,
+    0.7744824886322021,
+    0.803485631942749,
+    0.7947521805763245,
+    0.7317579984664917,
+    0.7375460863113403,
+    0.6156716346740723,
+    0.7076324820518494,
+    0.7462468147277832
+  ],
+  "target_reference_loo_min": 0.6156716346740723,
+  "target_reference_loo_median": 0.7649941444396973,
+  "reviewed_scene_rows": [
+    {
+      "filter": "raw",
+      "scene": "handcuffs",
+      "index": 3,
+      "start": 1087.107,
+      "end": 1092.991,
+      "text": "Well I can tell everybody else that comes in here, my behavior is kind of a reflection of theirs.",
+      "scores": {
+        "Target_Speaker": 0.0809103399515152,
+        "Opening_officer_reference": 0.16591790318489075,
+        "Scene_original_officer": 0.6353713274002075,
+        "Scene_key_officer": 0.4859490692615509
+      },
+      "overlaps_reviewed_seed": false
+    },
+    {
+      "filter": "raw",
+      "scene": "handcuffs",
+      "index": 9,
+      "start": 1110.092,
+      "end": 1118.717,
+      "text": "I don't want to mess with your cuffs or mess them up or anything, but let's...",
+      "scores": {
+        "Target_Speaker": -0.019876573234796524,
+        "Opening_officer_reference": 0.15851423144340515,
+        "Scene_original_officer": 0.856875479221344,
+        "Scene_key_officer": 0.3354380130767822
+      },
+      "overlaps_reviewed_seed": true
+    },
+    {
+      "filter": "raw",
+      "scene": "handcuffs",
+      "index": 12,
+      "start": 1124.161,
+      "end": 1126.242,
+      "text": "Well, we're not trying to tie someone.",
+      "scores": {
+        "Target_Speaker": 0.1843612790107727,
+        "Opening_officer_reference": 0.17999202013015747,
+        "Scene_original_officer": 0.39037394523620605,
+        "Scene_key_officer": 0.472104549407959
+      },
+      "overlaps_reviewed_seed": false
+    },
+    {
+      "filter": "raw",
+      "scene": "handcuffs",
+      "index": 14,
+      "start": 1130.916,
+      "end": 1132.196,
+      "text": " I might need to get a new key.",
+      "scores": {
+        "Target_Speaker": 0.08427990972995758,
+        "Opening_officer_reference": 0.003850804641842842,
+        "Scene_original_officer": 0.2695293426513672,
+        "Scene_key_officer": 0.25249022245407104
+      },
+      "overlaps_reviewed_seed": false
+    },
+    {
+      "filter": "raw",
+      "scene": "handcuffs",
+      "index": 15,
+      "start": 1132.216,
+      "end": 1136.017,
+      "text": "There might be something off with this one, because I just had an issue with that fella I got in.",
+      "scores": {
+        "Target_Speaker": 0.067133329808712,
+        "Opening_officer_reference": 0.1523618847131729,
+        "Scene_original_officer": 0.4783560037612915,
+        "Scene_key_officer": 0.7307214736938477
+      },
+      "overlaps_reviewed_seed": true
+    },
+    {
+      "filter": "raw",
+      "scene": "handcuffs",
+      "index": 16,
+      "start": 1136.898,
+      "end": 1139.838,
+      "text": "Put this arm on the wall and probably even that could have come off.",
+      "scores": {
+        "Target_Speaker": -0.005622841417789459,
+        "Opening_officer_reference": 0.10598912835121155,
+        "Scene_original_officer": 0.4286164343357086,
+        "Scene_key_officer": 0.7891520261764526
+      },
+      "overlaps_reviewed_seed": true
+    }
+  ],
+  "notes": [
+    "Reference consistency is not transcription or speaker accuracy",
+    "Two officers share high scene-profile similarities despite the independent opening profile being weaker",
+    "Do not use transcript text or hand-reviewed roles to train automatic identity rules"
+  ]
+}

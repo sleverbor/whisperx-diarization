@@ -1,6 +1,13 @@
 import unittest
-from review_audio_window import baseline_evidence,resolve_voice,decoder_sentence_bounds,resolve_timing_evidence
+from review_audio_window import baseline_evidence,resolve_voice,decoder_sentence_bounds,resolve_timing_evidence,decoder_quality_flags
 class WindowTests(unittest.TestCase):
+    def test_confident_beep_words_do_not_prove_speech(self):
+        s=[{'start':0,'end':4.2,'no_speech_prob':.808,'avg_logprob':-.584,'words':[{'probability':.94}]}]
+        flags,_=decoder_quality_flags(s,1,2)
+        self.assertTrue(flags)
+    def test_unrelated_decoder_warning_not_applied(self):
+        flags,_=decoder_quality_flags([{'start':0,'end':1,'no_speech_prob':.9}],3,4)
+        self.assertEqual(flags,[])
     def test_consistent_crops_with_one_qualified_match(self):
         self.assertEqual(resolve_timing_evidence([{'Target':.34,'Other':.18},{'Target':.27,'Other':.21}]),'Target')
     def test_conflicting_crops_do_not_choose_the_stronger_match(self):

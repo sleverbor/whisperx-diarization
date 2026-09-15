@@ -1,0 +1,91 @@
+{
+  "runner_consensus_665": {
+    "flagged_rows": [],
+    "known_speaker_count": 7,
+    "original_text_kept": true
+  },
+  "runner_consensus_cuffs": {
+    "flagged_rows": [
+      {
+        "text": " I'm taking too much time, I haven't got much space.",
+        "flags": [
+          "Decoder marks this passage as possible non-speech"
+        ]
+      },
+      {
+        "text": " Well we're not trying to tie something, we're trying to get the key out of it.",
+        "flags": [
+          "Decoder marks this passage as possible non-speech"
+        ]
+      },
+      {
+        "text": " Okay.",
+        "flags": [
+          "Decoder marks this passage as possible non-speech"
+        ]
+      },
+      {
+        "text": " I might need to get a new key, there might be something off with this one because I just",
+        "flags": [
+          "Decoder marks this passage as possible non-speech"
+        ]
+      },
+      {
+        "text": " had an issue with that fella I got in put this arm on the wall in front of you when",
+        "flags": [
+          "Decoder marks this passage as possible non-speech"
+        ]
+      },
+      {
+        "text": " that could have come off.",
+        "flags": [
+          "Decoder marks this passage as possible non-speech"
+        ]
+      }
+    ],
+    "known_speaker_count": 4,
+    "original_text_kept": true
+  },
+  "mechanical_flagged": {
+    "flagged_rows": [
+      {
+        "text": " Beep.",
+        "flags": [
+          "Decoder marks this passage as possible non-speech"
+        ]
+      },
+      {
+        "text": "Beep.",
+        "flags": [
+          "Decoder marks this passage as possible non-speech"
+        ]
+      },
+      {
+        "text": "Beep.",
+        "flags": [
+          "Decoder marks this passage as possible non-speech"
+        ]
+      },
+      {
+        "text": "Beep.",
+        "flags": [
+          "Decoder marks this passage as possible non-speech"
+        ]
+      }
+    ],
+    "known_speaker_count": 0,
+    "original_text_kept": true
+  },
+  "silence_control": {
+    "flagged_rows": [
+      {
+        "text": " You",
+        "flags": [
+          "Decoder marks this passage as possible non-speech"
+        ]
+      }
+    ],
+    "known_speaker_count": 0,
+    "original_text_kept": true
+  }
+}

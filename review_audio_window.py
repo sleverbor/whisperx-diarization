@@ -83,6 +83,19 @@ def resolve_timing_evidence(variants, min_similarity=.25, min_margin=.08):
     return leader if any(resolve_voice(scores,min_similarity,min_margin)==leader for scores in usable) else 'Uncertain'
 
 
+def decoder_quality_flags(segments, start, end):
+    """Keep decoder warnings as evidence; word probability is not accuracy."""
+    observed=[s for s in segments if s['start']<end and s['end']>start]
+    flags=[]
+    if any(s.get('no_speech_prob',0)>.6 for s in observed):
+        flags.append('Decoder marks this passage as possible non-speech')
+    if any(s.get('avg_logprob',0)<-1 for s in observed):
+        flags.append('Low decoder support for wording')
+    if any(s.get('compression_ratio',0)>2.4 for s in observed):
+        flags.append('Decoder wording may be repetitive')
+    return flags, [{'start':s['start'],'end':s['end'],**{k:s[k] for k in ('avg_logprob','no_speech_prob','compression_ratio') if k in s}} for s in observed]
+
+
 def sha(path):
     h=hashlib.sha256()
     with path.open('rb') as f:
@@ -208,14 +221,16 @@ def main():
             with torch.no_grad():alternate=unit(encoder.encode_batch(crop).detach().cpu().numpy())
             variants.append({'source':'alignment','start':a.start+alignment_left,'end':a.start+alignment_right,'scores':{name:float(alternate@profile) for name,profile in profiles.items()}})
         speaker=resolve_timing_evidence([v['scores'] for v in variants],a.min_similarity,a.min_margin) if a.timing_source=='consensus' else resolve_voice(scores,a.min_similarity,a.min_margin)
+        quality_flags,quality_signals=decoder_quality_flags(result['segments'],*(bounds if bounds is not None else (left,right)))
+        reasons.extend(quality_flags)
         near_edge=left<=.25 or right>=len(audio)/16000-.25
         if near_edge:reasons.append('Near audio-window boundary; wording or timing may be incomplete')
         if speaker=='Uncertain':reasons.append('Insufficient voice similarity or separation between profiles')
         if len(profiles)==1:reasons.append('No competing voice reference; target-only match needs review')
         absolute_start,absolute_end=a.start+left,a.start+right
         rows.append({'index':index,'start':absolute_start,'end':absolute_end,'text':s['text'],
-            'speaker_hypothesis':speaker,'review_required':True,'near_window_boundary':near_edge,'reasons':reasons,
-            'evidence':[{'source':'timing_comparison','selected_source':'decoder' if use_decoder else 'alignment',
+            'speaker_hypothesis':speaker,'transcription_status':'decoder_warning' if quality_flags else 'review_hypothesis','review_required':True,'near_window_boundary':near_edge,'reasons':reasons,
+            'evidence':[{'source':'decoder_support','flags':quality_flags,'signals':quality_signals,'word_probability_is_accuracy':False},{'source':'timing_comparison','selected_source':'decoder' if use_decoder else 'alignment',
                 'alignment_start':a.start+alignment_left,'alignment_end':a.start+alignment_right,
                 'decoder_start':a.start+bounds[0] if bounds else None,'decoder_end':a.start+bounds[1] if bounds else None},baseline_evidence(baseline['segments'],absolute_start,absolute_end,a.baseline_offset),
                 {'source':'local_voice','similarities':scores,'timing_variants':variants,'variants_are_independent_votes':False,'min_similarity':a.min_similarity,
@@ -231,7 +246,7 @@ def main():
             'baseline':str(a.baseline.resolve()) if a.baseline else None,
             'baseline_sha256':sha(a.baseline) if a.baseline else None,'elapsed_seconds':time.monotonic()-started}}
     (a.output_dir/'review_hypotheses.json').write_text(json.dumps(document,indent=2)+'\n')
-    (a.output_dir/'review_transcript.txt').write_text('\n'.join(f"[{r['start']:.2f}–{r['end']:.2f}] {r['speaker_hypothesis']}: {r['text']}" for r in rows)+'\n')
+    (a.output_dir/'review_transcript.txt').write_text('\n'.join(f"[{r['start']:.2f}–{r['end']:.2f}] {r['speaker_hypothesis']}{' [decoder warning]' if r['transcription_status']=='decoder_warning' else ''}: {r['text']}" for r in rows)+'\n')
     print(f'Wrote {len(rows)} review hypotheses to {a.output_dir}; baseline preserved.')
 
 if __name__=='__main__':main()

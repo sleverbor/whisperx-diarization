@@ -1,0 +1,86 @@
+{
+  "segments": [
+    {
+      "start": 0.382,
+      "end": 0.603,
+      "text": " Beep.",
+      "words": [
+        {
+          "word": "Beep.",
+          "start": 0.382,
+          "end": 0.603,
+          "score": 0.494
+        }
+      ],
+      "avg_logprob": -0.5840776205062866
+    },
+    {
+      "start": 1.487,
+      "end": 1.588,
+      "text": "Beep.",
+      "words": [
+        {
+          "word": "Beep.",
+          "start": 1.487,
+          "end": 1.588,
+          "score": 0.04
+        }
+      ],
+      "avg_logprob": -0.5840776205062866
+    },
+    {
+      "start": 1.608,
+      "end": 1.708,
+      "text": "Beep.",
+      "words": [
+        {
+          "word": "Beep.",
+          "start": 1.608,
+          "end": 1.708,
+          "score": 0.098
+        }
+      ],
+      "avg_logprob": -0.5840776205062866
+    },
+    {
+      "start": 2.07,
+      "end": 3.939,
+      "text": "Beep.",
+      "words": [
+        {
+          "word": "Beep.",
+          "start": 2.07,
+          "end": 3.939,
+          "score": 0.355
+        }
+      ],
+      "avg_logprob": -0.5840776205062866
+    }
+  ],
+  "word_segments": [
+    {
+      "word": "Beep.",
+      "start": 0.382,
+      "end": 0.603,
+      "score": 0.494
+    },
+    {
+      "word": "Beep.",
+      "start": 1.487,
+      "end": 1.588,
+      "score": 0.04
+    },
+    {
+      "word": "Beep.",
+      "start": 1.608,
+      "end": 1.708,
+      "score": 0.098
+    },
+    {
+      "word": "Beep.",
+      "start": 2.07,
+      "end": 3.939,
+      "score": 0.355
+    }
+  ]
+}

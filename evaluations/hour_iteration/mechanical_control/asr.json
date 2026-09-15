@@ -1,0 +1,39 @@
+{
+  "language": "en",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 4.2,
+      "text": " Beep. Beep. Beep. Beep.",
+      "avg_logprob": -0.5840776205062866,
+      "no_speech_prob": 0.8081139922142029,
+      "compression_ratio": 1.4375,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.6,
+          "word": " Beep.",
+          "probability": 0.1663988158106804
+        },
+        {
+          "start": 1.34,
+          "end": 1.78,
+          "word": " Beep.",
+          "probability": 0.9238210320472717
+        },
+        {
+          "start": 2.16,
+          "end": 2.44,
+          "word": " Beep.",
+          "probability": 0.9377898573875427
+        },
+        {
+          "start": 3.78,
+          "end": 4.2,
+          "word": " Beep.",
+          "probability": 0.9280118346214294
+        }
+      ]
+    }
+  ]
+}

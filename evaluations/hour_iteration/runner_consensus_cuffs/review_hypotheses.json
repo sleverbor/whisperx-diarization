@@ -1,0 +1,2613 @@
+{
+  "baseline_modified": false,
+  "experimental": true,
+  "segments": [
+    {
+      "index": 0,
+      "start": 1085.0,
+      "end": 1085.98,
+      "text": " I appreciate people.",
+      "speaker_hypothesis": "Target_Speaker",
+      "review_required": true,
+      "near_window_boundary": true,
+      "reasons": [
+        "Near audio-window boundary; wording or timing may be incomplete"
+      ],
+      "evidence": [
+        {
+          "source": "timing_comparison",
+          "selected_source": "decoder",
+          "alignment_start": 1085.163,
+          "alignment_end": 1085.837,
+          "decoder_start": 1085.0,
+          "decoder_end": 1085.98
+        },
+        {
+          "source": "baseline_overlap",
+          "raw_track_overlap_seconds": {},
+          "segments": [],
+          "identity_verified": false
+        },
+        {
+          "source": "local_voice",
+          "similarities": {
+            "Target_Speaker": 0.2511354684829712,
+            "Opening_officer": -0.013069283217191696
+          },
+          "timing_variants": [
+            {
+              "source": "decoder",
+              "start": 1085.0,
+              "end": 1085.98,
+              "scores": {
+                "Target_Speaker": 0.2511354684829712,
+                "Opening_officer": -0.013069283217191696
+              }
+            },
+            {
+              "source": "alignment",
+              "start": 1085.163,
+              "end": 1085.837,
+              "scores": {
+                "Target_Speaker": 0.28411203622817993,
+                "Opening_officer": -0.07710126787424088
+              }
+            }
+          ],
+          "variants_are_independent_votes": false,
+          "min_similarity": 0.25,
+          "min_margin": 0.08,
+          "identity_probability_calibrated": false
+        }
+      ],
+      "alignment_words": [
+        {
+          "word": "I",
+          "start": 1085.163,
+          "end": 1085.204,
+          "score": 0.878
+        },
+        {
+          "word": "appreciate",
+          "start": 1085.225,
+          "end": 1085.592,
+          "score": 0.363
+        },
+        {
+          "word": "people.",
+          "start": 1085.633,
+          "end": 1085.837,
+          "score": 0.257
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "start": 1087.12,
+      "end": 1087.3,
+      "text": " Oh yeah.",
+      "speaker_hypothesis": "Uncertain",
+      "review_required": true,
+      "near_window_boundary": false,
+      "reasons": [
+        "Voice crop shorter than 0.4 seconds",
+        "Insufficient voice similarity or separation between profiles"
+      ],
+      "evidence": [
+        {
+          "source": "timing_comparison",
+          "selected_source": "decoder",
+          "alignment_start": 1087.12,
+          "alignment_end": 1087.3,
+          "decoder_start": 1087.12,
+          "decoder_end": 1087.3
+        },
+        {
+          "source": "baseline_overlap",
+          "raw_track_overlap_seconds": {},
+          "segments": [],
+          "identity_verified": false
+        },
+        {
+          "source": "local_voice",
+          "similarities": {},
+          "timing_variants": [
+            {
+              "source": "decoder",
+              "start": 1087.12,
+              "end": 1087.3,
+              "scores": {}
+            }
+          ],
+          "variants_are_independent_votes": false,
+          "min_similarity": 0.25,
+          "min_margin": 0.08,
+          "identity_probability_calibrated": false
+        }
+      ],
+      "alignment_words": [
+        {
+          "word": "Oh",
+          "start": 1087.12,
+          "end": 1087.165,
+          "score": 0.02
+        },
+        {
+          "word": "yeah.",
+          "start": 1087.188,
+          "end": 1087.3,
+          "score": 0.054
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "start": 1087.74,
+      "end": 1092.42,
+      "text": " Well I can tell everybody else that comes in here, my behavior is kind of a reflection",
+      "speaker_hypothesis": "Uncertain",
+      "review_required": true,
+      "near_window_boundary": false,
+      "reasons": [
+        "Insufficient voice similarity or separation between profiles"
+      ],
+      "evidence": [
+        {
+          "source": "timing_comparison",
+          "selected_source": "decoder",
+          "alignment_start": 1087.861,
+          "alignment_end": 1092.36,
+          "decoder_start": 1087.74,
+          "decoder_end": 1092.42
+        },
+        {
+          "source": "baseline_overlap",
+          "raw_track_overlap_seconds": {
+            "SPEAKER_06": 1.8269999999999982
+          },
+          "segments": [
+            {
+              "segment_index": 398,
+              "raw_speaker_track": "SPEAKER_06",
+              "baseline_speaker": "SPEAKER_06",
+              "overlap_seconds": 1.8269999999999982
+            }
+          ],
+          "identity_verified": false
+        },
+        {
+          "source": "local_voice",
+          "similarities": {
+            "Target_Speaker": 0.08179297298192978,
+            "Opening_officer": 0.1502918154001236
+          },
+          "timing_variants": [
+            {
+              "source": "decoder",
+              "start": 1087.74,
+              "end": 1092.42,
+              "scores": {
+                "Target_Speaker": 0.08179297298192978,
+                "Opening_officer": 0.1502918154001236
+              }
+            },
+            {
+              "source": "alignment",
+              "start": 1087.861,
+              "end": 1092.36,
+              "scores": {
+                "Target_Speaker": 0.06798706948757172,
+                "Opening_officer": 0.137588232755661
+              }
+            }
+          ],
+          "variants_are_independent_votes": false,
+          "min_similarity": 0.25,
+          "min_margin": 0.08,
+          "identity_probability_calibrated": false
+        }
+      ],
+      "alignment_words": [
+        {
+          "word": "Well",
+          "start": 1087.861,
+          "end": 1087.981,
+          "score": 0.168
+        },
+        {
+          "word": "I",
+          "start": 1088.001,
+          "end": 1088.041,
+          "score": 0.476
+        },
+        {
+          "word": "can",
+          "start": 1088.061,
+          "end": 1088.122,
+          "score": 0.301
+        },
+        {
+          "word": "tell",
+          "start": 1088.182,
+          "end": 1088.343,
+          "score": 0.849
+        },
+        {
+          "word": "everybody",
+          "start": 1088.383,
+          "end": 1088.744,
+          "score": 0.315
+        },
+        {
+          "word": "else",
+          "start": 1088.825,
+          "end": 1088.985,
+          "score": 0.437
+        },
+        {
+          "word": "that",
+          "start": 1089.005,
+          "end": 1089.146,
+          "score": 0.61
+        },
+        {
+          "word": "comes",
+          "start": 1089.166,
+          "end": 1089.387,
+          "score": 0.796
+        },
+        {
+          "word": "in",
+          "start": 1089.528,
+          "end": 1089.648,
+          "score": 0.714
+        },
+        {
+          "word": "here,",
+          "start": 1089.688,
+          "end": 1089.97,
+          "score": 0.667
+        },
+        {
+          "word": "my",
+          "start": 1090.552,
+          "end": 1090.813,
+          "score": 0.899
+        },
+        {
+          "word": "behavior",
+          "start": 1090.833,
+          "end": 1091.396,
+          "score": 0.514
+        },
+        {
+          "word": "is",
+          "start": 1091.416,
+          "end": 1091.456,
+          "score": 0.002
+        },
+        {
+          "word": "kind",
+          "start": 1091.516,
+          "end": 1091.757,
+          "score": 0.502
+        },
+        {
+          "word": "of",
+          "start": 1091.858,
+          "end": 1091.918,
+          "score": 0.273
+        },
+        {
+          "word": "a",
+          "start": 1091.938,
+          "end": 1091.958,
+          "score": 0.002
+        },
+        {
+          "word": "reflection",
+          "start": 1091.978,
+          "end": 1092.36,
+          "score": 0.354
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "start": 1092.42,
+      "end": 1092.98,
+      "text": " of theirs.",
+      "speaker_hypothesis": "Uncertain",
+      "review_required": true,
+      "near_window_boundary": false,
+      "reasons": [
+        "Insufficient voice similarity or separation between profiles"
+      ],
+      "evidence": [
+        {
+          "source": "timing_comparison",
+          "selected_source": "decoder",
+          "alignment_start": 1092.461,
+          "alignment_end": 1092.876,
+          "decoder_start": 1092.42,
+          "decoder_end": 1092.98
+        },
+        {
+          "source": "baseline_overlap",
+          "raw_track_overlap_seconds": {
+            "SPEAKER_06": 0.5599999999999454
+          },
+          "segments": [
+            {
+              "segment_index": 398,
+              "raw_speaker_track": "SPEAKER_06",
+              "baseline_speaker": "SPEAKER_06",
+              "overlap_seconds": 0.5599999999999454
+            }
+          ],
+          "identity_verified": false
+        },
+        {
+          "source": "local_voice",
+          "similarities": {
+            "Target_Speaker": 0.08170342445373535,
+            "Opening_officer": 0.011205027811229229
+          },
+          "timing_variants": [
+            {
+              "source": "decoder",
+              "start": 1092.42,
+              "end": 1092.98,
+              "scores": {
+                "Target_Speaker": 0.08170342445373535,
+                "Opening_officer": 0.011205027811229229
+              }
+            },
+            {
+              "source": "alignment",
+              "start": 1092.461,
+              "end": 1092.876,
+              "scores": {
+                "Target_Speaker": 0.07766187191009521,
+                "Opening_officer": 0.0665673017501831
+              }
+            }
+          ],
+          "variants_are_independent_votes": false,
+          "min_similarity": 0.25,
+          "min_margin": 0.08,
+          "identity_probability_calibrated": false
+        }
+      ],
+      "alignment_words": [
+        {
+          "word": "of",
+          "start": 1092.461,
+          "end": 1092.669,
+          "score": 0.344
+        },
+        {
+          "word": "theirs.",
+          "start": 1092.731,
+          "end": 1092.876,
+          "score": 0.041
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "start": 1093.28,
+      "end": 1094.26,
+      "text": " I couldn't agree more.",
+      "speaker_hypothesis": "Target_Speaker",
+      "review_required": true,
+      "near_window_boundary": false,
+      "reasons": [],
+      "evidence": [
+        {
+          "source": "timing_comparison",
+          "selected_source": "decoder",
+          "alignment_start": 1093.28,
+          "alignment_end": 1094.199,
+          "decoder_start": 1093.28,
+          "decoder_end": 1094.26
+        },
+        {
+          "source": "baseline_overlap",
+          "raw_track_overlap_seconds": {
+            "SPEAKER_06": 0.9800000000000182
+          },
+          "segments": [
+            {
+              "segment_index": 398,
+              "raw_speaker_track": "SPEAKER_06",
+              "baseline_speaker": "SPEAKER_06",
+              "overlap_seconds": 0.9800000000000182
+            }
+          ],
+          "identity_verified": false
+        },
+        {
+          "source": "local_voice",
+          "similarities": {
+            "Target_Speaker": 0.2735738158226013,
+            "Opening_officer": 0.005737457424402237
+          },
+          "timing_variants": [
+            {
+              "source": "decoder",
+              "start": 1093.28,
+              "end": 1094.26,
+              "scores": {
+                "Target_Speaker": 0.2735738158226013,
+                "Opening_officer": 0.005737457424402237
+              }
+            },
+            {
+              "source": "alignment",
+              "start": 1093.28,
+              "end": 1094.199,
+              "scores": {
+                "Target_Speaker": 0.2582729160785675,
+                "Opening_officer": 0.05787728354334831
+              }
+            }
+          ],
+          "variants_are_independent_votes": false,
+          "min_similarity": 0.25,
+          "min_margin": 0.08,
+          "identity_probability_calibrated": false
+        }
+      ],
+      "alignment_words": [
+        {
+          "word": "I",
+          "start": 1093.28,
+          "end": 1093.321,
+          "score": 0.488
+        },
+        {
+          "word": "couldn't",
+          "start": 1093.341,
+          "end": 1093.607,
+          "score": 0.199
+        },
+        {
+          "word": "agree",
+          "start": 1093.729,
+          "end": 1094.035,
+          "score": 0.897
+        },
+        {
+          "word": "more.",
+          "start": 1094.076,
+          "end": 1094.199,
+          "score": 0.132
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "start": 1094.58,
+      "end": 1095.5,
+      "text": " I couldn't agree more.",
+      "speaker_hypothesis": "Uncertain",
+      "review_required": true,
+      "near_window_boundary": false,
+      "reasons": [
+        "Insufficient voice similarity or separation between profiles"
+      ],
+      "evidence": [
+        {
+          "source": "timing_comparison",
+          "selected_source": "decoder",
+          "alignment_start": 1094.682,
+          "alignment_end": 1095.377,
+          "decoder_start": 1094.58,
+          "decoder_end": 1095.5
+        },
+        {
+          "source": "baseline_overlap",
+          "raw_track_overlap_seconds": {},
+          "segments": [],
+          "identity_verified": false
+        },
+        {
+          "source": "local_voice",
+          "similarities": {
+            "Target_Speaker": -0.00024515390396118164,
+            "Opening_officer": 0.0770961195230484
+          },
+          "timing_variants": [
+            {
+              "source": "decoder",
+              "start": 1094.58,
+              "end": 1095.5,
+              "scores": {
+                "Target_Speaker": -0.00024515390396118164,
+                "Opening_officer": 0.0770961195230484
+              }
+            },
+            {
+              "source": "alignment",
+              "start": 1094.682,
+              "end": 1095.377,
+              "scores": {
+                "Target_Speaker": 0.087273009121418,
+                "Opening_officer": -0.006639121100306511
+              }
+            }
+          ],
+          "variants_are_independent_votes": false,
+          "min_similarity": 0.25,
+          "min_margin": 0.08,
+          "identity_probability_calibrated": false
+        }
+      ],
+      "alignment_words": [
+        {
+          "word": "I",
+          "start": 1094.682,
+          "end": 1094.764,
+          "score": 0.728
+        },
+        {
+          "word": "couldn't",
+          "start": 1094.805,
+          "end": 1095.071,
+          "score": 0.249
+        },
+        {
+          "word": "agree",
+          "start": 1095.091,
+          "end": 1095.214,
+          "score": 0.145
+        },
+        {
+          "word": "more.",
+          "start": 1095.255,
+          "end": 1095.377,
+          "score": 0.218
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "start": 1097.36,
+      "end": 1097.66,
+      "text": " Yeah.",
+      "speaker_hypothesis": "Uncertain",
+      "review_required": true,
+      "near_window_boundary": false,
+      "reasons": [
+        "Voice crop shorter than 0.4 seconds",
+        "Insufficient voice similarity or separation between profiles"
+      ],
+      "evidence": [
+        {
+          "source": "timing_comparison",
+          "selected_source": "decoder",
+          "alignment_start": 1097.381,
+          "alignment_end": 1097.639,
+          "decoder_start": 1097.36,
+          "decoder_end": 1097.66
+        },
+        {
+          "source": "baseline_overlap",
+          "raw_track_overlap_seconds": {},
+          "segments": [],
+          "identity_verified": false
+        },
+        {
+          "source": "local_voice",
+          "similarities": {},
+          "timing_variants": [
+            {
+              "source": "decoder",
+              "start": 1097.36,
+              "end": 1097.66,
+              "scores": {}
+            }
+          ],
+          "variants_are_independent_votes": false,
+          "min_similarity": 0.25,
+          "min_margin": 0.08,
+          "identity_probability_calibrated": false
+        }
+      ],
+      "alignment_words": [
+        {
+          "word": "Yeah.",
+          "start": 1097.381,
+          "end": 1097.639,
+          "score": 0.44
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "start": 1097.98,
+      "end": 1099.4,
+      "text": " Couldn't agree a syllable more.",
+      "speaker_hypothesis": "Target_Speaker",
+      "review_required": true,
+      "near_window_boundary": false,
+      "reasons": [],
+      "evidence": [
+        {
+          "source": "timing_comparison",
+          "selected_source": "decoder",
+          "alignment_start": 1098.223,
+          "alignment_end": 1099.157,
+          "decoder_start": 1097.98,
+          "decoder_end": 1099.4
+        },
+        {
+          "source": "baseline_overlap",
+          "raw_track_overlap_seconds": {},
+          "segments": [],
+          "identity_verified": false
+        },
+        {
+          "source": "local_voice",
+          "similarities": {
+            "Target_Speaker": 0.22908073663711548,
+            "Opening_officer": 0.055091213434934616
+          },
+          "timing_variants": [
+            {
+              "source": "decoder",
+              "start": 1097.98,
+              "end": 1099.4,
+              "scores": {
+                "Target_Speaker": 0.22908073663711548,
+                "Opening_officer": 0.055091213434934616
+              }
+            },
+            {
+              "source": "alignment",
+              "start": 1098.223,
+              "end": 1099.157,
+              "scores": {
+                "Target_Speaker": 0.2935565114021301,
+                "Opening_officer": 0.047595471143722534
+              }
+            }
+          ],
+          "variants_are_independent_votes": false,
+          "min_similarity": 0.25,
+          "min_margin": 0.08,
+          "identity_probability_calibrated": false
+        }
+      ],
+      "alignment_words": [
+        {
+          "word": "Couldn't",
+          "start": 1098.223,
+          "end": 1098.467,
+          "score": 0.198
+        },
+        {
+          "word": "agree",
+          "start": 1098.487,
+          "end": 1098.629,
+          "score": 0.385
+        },
+        {
+          "word": "a",
+          "start": 1098.649,
+          "end": 1098.731,
+          "score": 0.688
+        },
+        {
+          "word": "syllable",
+          "start": 1098.751,
+          "end": 1099.015,
+          "score": 0.269
+        },
+        {
+          "word": "more.",
+          "start": 1099.035,
+          "end": 1099.157,
+          "score": 0.21
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "start": 1102.3,
+      "end": 1103.12,
+      "text": " Well that's a good one.",
+      "speaker_hypothesis": "Uncertain",
+      "review_required": true,
+      "near_window_boundary": false,
+      "reasons": [
+        "Insufficient voice similarity or separation between profiles"
+      ],
+      "evidence": [
+        {
+          "source": "timing_comparison",
+          "selected_source": "decoder",
+          "alignment_start": 1102.485,
+          "alignment_end": 1103.079,
+          "decoder_start": 1102.3,
+          "decoder_end": 1103.12
+        },
+        {
+          "source": "baseline_overlap",
+          "raw_track_overlap_seconds": {},
+          "segments": [],
+          "identity_verified": false
+        },
+        {
+          "source": "local_voice",
+          "similarities": {
+            "Target_Speaker": -6.166473031044006e-05,
+            "Opening_officer": -0.026490502059459686
+          },
+          "timing_variants": [
+            {
+              "source": "decoder",
+              "start": 1102.3,
+              "end": 1103.12,
+              "scores": {
+                "Target_Speaker": -6.166473031044006e-05,
+                "Opening_officer": -0.026490502059459686
+              }
+            },
+            {
+              "source": "alignment",
+              "start": 1102.485,
+              "end": 1103.079,
+              "scores": {
+                "Target_Speaker": -0.09592564404010773,
+                "Opening_officer": 0.011965472251176834
+              }
+            }
+          ],
+          "variants_are_independent_votes": false,
+          "min_similarity": 0.25,
+          "min_margin": 0.08,
+          "identity_probability_calibrated": false
+        }
+      ],
+      "alignment_words": [
+        {
+          "word": "Well",
+          "start": 1102.485,
+          "end": 1102.669,
+          "score": 0.328
+        },
+        {
+          "word": "that's",
+          "start": 1102.71,
+          "end": 1102.833,
+          "score": 0.256
+        },
+        {
+          "word": "a",
+          "start": 1102.854,
+          "end": 1102.874,
+          "score": 0.006
+        },
+        {
+          "word": "good",
+          "start": 1102.895,
+          "end": 1102.977,
+          "score": 0.009
+        },
+        {
+          "word": "one.",
+          "start": 1102.997,
+          "end": 1103.079,
+          "score": 0.367
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "start": 1103.58,
+      "end": 1103.72,
+      "text": " Huh?",
+      "speaker_hypothesis": "Uncertain",
+      "review_required": true,
+      "near_window_boundary": false,
+      "reasons": [
+        "Voice crop shorter than 0.4 seconds",
+        "Insufficient voice similarity or separation between profiles"
+      ],
+      "evidence": [
+        {
+          "source": "timing_comparison",
+          "selected_source": "decoder",
+          "alignment_start": 1103.58,
+          "alignment_end": 1103.673,
+          "decoder_start": 1103.58,
+          "decoder_end": 1103.72
+        },
+        {
+          "source": "baseline_overlap",
+          "raw_track_overlap_seconds": {},
+          "segments": [],
+          "identity_verified": false
+        },
+        {
+          "source": "local_voice",
+          "similarities": {},
+          "timing_variants": [
+            {
+              "source": "decoder",
+              "start": 1103.58,
+              "end": 1103.72,
+              "scores": {}
+            }
+          ],
+          "variants_are_independent_votes": false,
+          "min_similarity": 0.25,
+          "min_margin": 0.08,
+          "identity_probability_calibrated": false
+        }
+      ],
+      "alignment_words": [
+        {
+          "word": "Huh?",
+          "start": 1103.58,
+          "end": 1103.673,
+          "score": 0.021
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "start": 1104.5,
+      "end": 1105.98,
+      "text": " You're fun to get on my...",
+      "speaker_hypothesis": "Uncertain",
+      "review_required": true,
+      "near_window_boundary": false,
+      "reasons": [
+        "Insufficient voice similarity or separation between profiles"
+      ],
+      "evidence": [
+        {
+          "source": "timing_comparison",
+          "selected_source": "decoder",
+          "alignment_start": 1104.845,
+          "alignment_end": 1105.757,
+          "decoder_start": 1104.5,
+          "decoder_end": 1105.98
+        },
+        {
+          "source": "baseline_overlap",
+          "raw_track_overlap_seconds": {},
+          "segments": [],
+          "identity_verified": false
+        },
+        {
+          "source": "local_voice",
+          "similarities": {
+            "Target_Speaker": -0.005429306998848915,
+            "Opening_officer": 0.09001625329256058
+          },
+          "timing_variants": [
+            {
+              "source": "decoder",
+              "start": 1104.5,
+              "end": 1105.98,
+              "scores": {
+                "Target_Speaker": -0.005429306998848915,
+                "Opening_officer": 0.09001625329256058
+              }
+            },
+            {
+              "source": "alignment",
+              "start": 1104.845,
+              "end": 1105.757,
+              "scores": {
+                "Target_Speaker": -0.03475131839513779,
+                "Opening_officer": 0.10359860956668854
+              }
+            }
+          ],
+          "variants_are_independent_votes": false,
+          "min_similarity": 0.25,
+          "min_margin": 0.08,
+          "identity_probability_calibrated": false
+        }
+      ],
+      "alignment_words": [
+        {
+          "word": "You're",
+          "start": 1104.845,
+          "end": 1105.047,
+          "score": 0.285
+        },
+        {
+          "word": "fun",
+          "start": 1105.068,
+          "end": 1105.128,
+          "score": 0.052
+        },
+        {
+          "word": "to",
+          "start": 1105.149,
+          "end": 1105.291,
+          "score": 0.53
+        },
+        {
+          "word": "get",
+          "start": 1105.311,
+          "end": 1105.412,
+          "score": 0.31
+        },
+        {
+          "word": "on",
+          "start": 1105.433,
+          "end": 1105.493,
+          "score": 0.434
+        },
+        {
+          "word": "my...",
+          "start": 1105.514,
+          "end": 1105.757,
+          "score": 0.806
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "start": 1105.98,
+      "end": 1107.2,
+      "text": " No that's not the problem.",
+      "speaker_hypothesis": "Uncertain",
+      "review_required": true,
+      "near_window_boundary": false,
+      "reasons": [
+        "Insufficient voice similarity or separation between profiles"
+      ],
+      "evidence": [
+        {
+          "source": "timing_comparison",
+          "selected_source": "decoder",
+          "alignment_start": 1106.102,
+          "alignment_end": 1107.159,
+          "decoder_start": 1105.98,
+          "decoder_end": 1107.2
+        },
+        {
+          "source": "baseline_overlap",
+          "raw_track_overlap_seconds": {},
+          "segments": [],
+          "identity_verified": false
+        },
+        {
+          "source": "local_voice",
+          "similarities": {
+            "Target_Speaker": -0.009761910885572433,
+            "Opening_officer": 0.07161133736371994
+          },
+          "timing_variants": [
+            {
+              "source": "decoder",
+              "start": 1105.98,
+              "end": 1107.2,
+              "scores": {
+                "Target_Speaker": -0.009761910885572433,
+                "Opening_officer": 0.07161133736371994
+              }
+            },
+            {
+              "source": "alignment",
+              "start": 1106.102,
+              "end": 1107.159,
+              "scores": {
+                "Target_Speaker": 0.037676043808460236,
+                "Opening_officer": 0.08645041286945343
+              }
+            }
+          ],
+          "variants_are_independent_votes": false,
+          "min_similarity": 0.25,
+          "min_margin": 0.08,
+          "identity_probability_calibrated": false
+        }
+      ],
+      "alignment_words": [
+        {
+          "word": "No",
+          "start": 1106.102,
+          "end": 1106.224,
+          "score": 0.626
+        },
+        {
+          "word": "that's",
+          "start": 1106.285,
+          "end": 1106.509,
+          "score": 0.35
+        },
+        {
+          "word": "not",
+          "start": 1106.529,
+          "end": 1106.59,
+          "score": 0.015
+        },
+        {
+          "word": "the",
+          "start": 1106.61,
+          "end": 1106.671,
+          "score": 0.003
+        },
+        {
+          "word": "problem.",
+          "start": 1106.834,
+          "end": 1107.159,
+          "score": 0.436
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "start": 1107.76,
+      "end": 1108.28,
+      "text": " They pee.",
+      "speaker_hypothesis": "Uncertain",
+      "review_required": true,
+      "near_window_boundary": false,
+      "reasons": [
+        "Insufficient voice similarity or separation between profiles"
+      ],
+      "evidence": [
+        {
+          "source": "timing_comparison",
+          "selected_source": "decoder",
+          "alignment_start": 1107.885,
+          "alignment_end": 1108.259,
+          "decoder_start": 1107.76,
+          "decoder_end": 1108.28
+        },
+        {
+          "source": "baseline_overlap",
+          "raw_track_overlap_seconds": {},
+          "segments": [],
+          "identity_verified": false
+        },
+        {
+          "source": "local_voice",
+          "similarities": {
+            "Target_Speaker": -0.004903281107544899,
+            "Opening_officer": -0.03436564281582832
+          },
+          "timing_variants": [
+            {
+              "source": "decoder",
+              "start": 1107.76,
+              "end": 1108.28,
+              "scores": {
+                "Target_Speaker": -0.004903281107544899,
+                "Opening_officer": -0.03436564281582832
+              }
+            }
+          ],
+          "variants_are_independent_votes": false,
+          "min_similarity": 0.25,
+          "min_margin": 0.08,
+          "identity_probability_calibrated": false
+        }
+      ],
+      "alignment_words": [
+        {
+          "word": "They",
+          "start": 1107.885,
+          "end": 1108.134,
+          "score": 0.432
+        },
+        {
+          "word": "pee.",
+          "start": 1108.155,
+          "end": 1108.259,
+          "score": 0.315
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "start": 1108.52,
+      "end": 1109.4,
+      "text": " It just got stuck.",
+      "speaker_hypothesis": "Uncertain",
+      "review_required": true,
+      "near_window_boundary": false,
+      "reasons": [
+        "Insufficient voice similarity or separation between profiles"
+      ],
+      "evidence": [
+        {
+          "source": "timing_comparison",
+          "selected_source": "decoder",
+          "alignment_start": 1108.52,
+          "alignment_end": 1109.4,
+          "decoder_start": 1108.52,
+          "decoder_end": 1109.4
+        },
+        {
+          "source": "baseline_overlap",
+          "raw_track_overlap_seconds": {},
+          "segments": [],
+          "identity_verified": false
+        },
+        {
+          "source": "local_voice",
+          "similarities": {
+            "Target_Speaker": -0.01987672969698906,
+            "Opening_officer": 0.16044297814369202
+          },
+          "timing_variants": [
+            {
+              "source": "decoder",
+              "start": 1108.52,
+              "end": 1109.4,
+              "scores": {
+                "Target_Speaker": -0.01987672969698906,
+                "Opening_officer": 0.16044297814369202
+              }
+            }
+          ],
+          "variants_are_independent_votes": false,
+          "min_similarity": 0.25,
+          "min_margin": 0.08,
+          "identity_probability_calibrated": false
+        }
+      ],
+      "alignment_words": [
+        {
+          "word": "It",
+          "start": 1108.52,
+          "end": 1108.684,
+          "score": 0.62
+        },
+        {
+          "word": "just",
+          "start": 1108.704,
+          "end": 1108.888,
+          "score": 0.506
+        },
+        {
+          "word": "got",
+          "start": 1108.909,
+          "end": 1109.154,
+          "score": 0.68
+        },
+        {
+          "word": "stuck.",
+          "start": 1109.175,
+          "end": 1109.4,
+          "score": 0.359
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "start": 1111.98,
+      "end": 1113.6,
+      "text": " How do I mess with your cuffs?",
+      "speaker_hypothesis": "Uncertain",
+      "review_required": true,
+      "near_window_boundary": false,
+      "reasons": [
+        "Insufficient voice similarity or separation between profiles"
+      ],
+      "evidence": [
+        {
+          "source": "timing_comparison",
+          "selected_source": "decoder",
+          "alignment_start": 1112.365,
+          "alignment_end": 1113.559,
+          "decoder_start": 1111.98,
+          "decoder_end": 1113.6
+        },
+        {
+          "source": "baseline_overlap",
+          "raw_track_overlap_seconds": {},
+          "segments": [],
+          "identity_verified": false
+        },
+        {
+          "source": "local_voice",
+          "similarities": {
+            "Target_Speaker": 0.07403931021690369,
+            "Opening_officer": 0.2061973214149475
+          },
+          "timing_variants": [
+            {
+              "source": "decoder",
+              "start": 1111.98,
+              "end": 1113.6,
+              "scores": {
+                "Target_Speaker": 0.07403931021690369,
+                "Opening_officer": 0.2061973214149475
+              }
+            },
+            {
+              "source": "alignment",
+              "start": 1112.365,
+              "end": 1113.559,
+              "scores": {
+                "Target_Speaker": -0.0044022612273693085,
+                "Opening_officer": 0.1950714886188507
+              }
+            }
+          ],
+          "variants_are_independent_votes": false,
+          "min_similarity": 0.25,
+          "min_margin": 0.08,
+          "identity_probability_calibrated": false
+        }
+      ],
+      "alignment_words": [
+        {
+          "word": "How",
+          "start": 1112.365,
+          "end": 1112.507,
+          "score": 0.699
+        },
+        {
+          "word": "do",
+          "start": 1112.527,
+          "end": 1112.608,
+          "score": 0.252
+        },
+        {
+          "word": "I",
+          "start": 1112.648,
+          "end": 1112.709,
+          "score": 0.467
+        },
+        {
+          "word": "mess",
+          "start": 1112.77,
+          "end": 1112.952,
+          "score": 0.771
+        },
+        {
+          "word": "with",
+          "start": 1112.993,
+          "end": 1113.094,
+          "score": 0.131
+        },
+        {
+          "word": "your",
+          "start": 1113.134,
+          "end": 1113.296,
+          "score": 0.512
+        },
+        {
+          "word": "cuffs?",
+          "start": 1113.337,
+          "end": 1113.559,
+          "score": 0.43
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "start": 1113.64,
+      "end": 1114.68,
+      "text": " Or mess them up or anything?",
+      "speaker_hypothesis": "Uncertain",
+      "review_required": true,
+      "near_window_boundary": false,
+      "reasons": [
+        "Insufficient voice similarity or separation between profiles"
+      ],
+      "evidence": [
+        {
+          "source": "timing_comparison",
+          "selected_source": "decoder",
+          "alignment_start": 1113.66,
+          "alignment_end": 1114.68,
+          "decoder_start": 1113.64,
+          "decoder_end": 1114.68
+        },
+        {
+          "source": "baseline_overlap",
+          "raw_track_overlap_seconds": {},
+          "segments": [],
+          "identity_verified": false
+        },
+        {
+          "source": "local_voice",
+          "similarities": {
+            "Target_Speaker": 0.1878368854522705,
+            "Opening_officer": 0.10090421140193939
+          },
+          "timing_variants": [
+            {
+              "source": "decoder",
+              "start": 1113.64,
+              "end": 1114.68,
+              "scores": {
+                "Target_Speaker": 0.1878368854522705,
+                "Opening_officer": 0.10090421140193939
+              }
+            },
+            {
+              "source": "alignment",
+              "start": 1113.66,
+              "end": 1114.68,
+              "scores": {
+                "Target_Speaker": 0.17806634306907654,
+                "Opening_officer": 0.09606359153985977
+              }
+            }
+          ],
+          "variants_are_independent_votes": false,
+          "min_similarity": 0.25,
+          "min_margin": 0.08,
+          "identity_probability_calibrated": false
+        }
+      ],
+      "alignment_words": [
+        {
+          "word": "Or",
+          "start": 1113.66,
+          "end": 1113.742,
+          "score": 0.332
+        },
+        {
+          "word": "mess",
+          "start": 1113.783,
+          "end": 1114.007,
+          "score": 0.414
+        },
+        {
+          "word": "them",
+          "start": 1114.089,
+          "end": 1114.252,
+          "score": 0.414
+        },
+        {
+          "word": "up",
+          "start": 1114.272,
+          "end": 1114.333,
+          "score": 0.246
+        },
+        {
+          "word": "or",
+          "start": 1114.354,
+          "end": 1114.415,
+          "score": 0.698
+        },
+        {
+          "word": "anything?",
+          "start": 1114.496,
+          "end": 1114.68,
+          "score": 0.068
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "start": 1121.68,
+      "end": 1124.0,
+      "text": " I'm taking too much time, I haven't got much space.",
+      "speaker_hypothesis": "Target_Speaker",
+      "review_required": true,
+      "near_window_boundary": false,
+      "reasons": [],
+      "evidence": [
+        {
+          "source": "timing_comparison",
+          "selected_source": "decoder",
+          "alignment_start": 1121.922,
+          "alignment_end": 1123.919,
+          "decoder_start": 1121.68,
+          "decoder_end": 1124.0
+        },
+        {
+          "source": "baseline_overlap",
+          "raw_track_overlap_seconds": {},
+          "segments": [],
+          "identity_verified": false
+        },
+        {
+          "source": "local_voice",
+          "similarities": {
+            "Target_Speaker": 0.29019662737846375,
+            "Opening_officer": 0.10381042212247849
+          },
+          "timing_variants": [
+            {
+              "source": "decoder",
+              "start": 1121.68,
+              "end": 1124.0,
+              "scores": {
+                "Target_Speaker": 0.29019662737846375,
+                "Opening_officer": 0.10381042212247849
+              }
+            },
+            {
+              "source": "alignment",
+              "start": 1121.922,
+              "end": 1123.919,
+              "scores": {
+                "Target_Speaker": 0.26412612199783325,
+                "Opening_officer": 0.10863012075424194
+              }
+            }
+          ],
+          "variants_are_independent_votes": false,
+          "min_similarity": 0.25,
+          "min_margin": 0.08,
+          "identity_probability_calibrated": false
+        }
+      ],
+      "alignment_words": [
+        {
+          "word": "I'm",
+          "start": 1121.922,
+          "end": 1122.023,
+          "score": 0.208
+        },
+        {
+          "word": "taking",
+          "start": 1122.063,
+          "end": 1122.326,
+          "score": 0.399
+        },
+        {
+          "word": "too",
+          "start": 1122.406,
+          "end": 1122.568,
+          "score": 0.555
+        },
+        {
+          "word": "much",
+          "start": 1122.588,
+          "end": 1122.749,
+          "score": 0.718
+        },
+        {
+          "word": "time,",
+          "start": 1122.79,
+          "end": 1122.951,
+          "score": 0.348
+        },
+        {
+          "word": "I",
+          "start": 1122.991,
+          "end": 1123.032,
+          "score": 0.469
+        },
+        {
+          "word": "haven't",
+          "start": 1123.0720000000001,
+          "end": 1123.294,
+          "score": 0.341
+        },
+        {
+          "word": "got",
+          "start": 1123.314,
+          "end": 1123.475,
+          "score": 0.615
+        },
+        {
+          "word": "much",
+          "start": 1123.516,
+          "end": 1123.677,
+          "score": 0.418
+        },
+        {
+          "word": "space.",
+          "start": 1123.6970000000001,
+          "end": 1123.919,
+          "score": 0.457
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "start": 1124.18,
+      "end": 1126.68,
+      "text": " Well we're not trying to tie something, we're trying to get the key out of it.",
+      "speaker_hypothesis": "Uncertain",
+      "review_required": true,
+      "near_window_boundary": false,
+      "reasons": [
+        "Insufficient voice similarity or separation between profiles"
+      ],
+      "evidence": [
+        {
+          "source": "timing_comparison",
+          "selected_source": "decoder",
+          "alignment_start": 1124.18,
+          "alignment_end": 1126.499,
+          "decoder_start": 1124.18,
+          "decoder_end": 1126.68
+        },
+        {
+          "source": "baseline_overlap",
+          "raw_track_overlap_seconds": {},
+          "segments": [],
+          "identity_verified": false
+        },
+        {
+          "source": "local_voice",
+          "similarities": {
+            "Target_Speaker": 0.21830694377422333,
+            "Opening_officer": 0.174629807472229
+          },
+          "timing_variants": [
+            {
+              "source": "decoder",
+              "start": 1124.18,
+              "end": 1126.68,
+              "scores": {
+                "Target_Speaker": 0.21830694377422333,
+                "Opening_officer": 0.174629807472229
+              }
+            },
+            {
+              "source": "alignment",
+              "start": 1124.18,
+              "end": 1126.499,
+              "scores": {
+                "Target_Speaker": 0.19743919372558594,
+                "Opening_officer": 0.21474549174308777
+              }
+            }
+          ],
+          "variants_are_independent_votes": false,
+          "min_similarity": 0.25,
+          "min_margin": 0.08,
+          "identity_probability_calibrated": false
+        }
+      ],
+      "alignment_words": [
+        {
+          "word": "Well",
+          "start": 1124.18,
+          "end": 1124.341,
+          "score": 0.2
+        },
+        {
+          "word": "we're",
+          "start": 1124.361,
+          "end": 1124.462,
+          "score": 0.195
+        },
+        {
+          "word": "not",
+          "start": 1124.482,
+          "end": 1124.563,
+          "score": 0.18
+        },
+        {
+          "word": "trying",
+          "start": 1124.583,
+          "end": 1124.745,
+          "score": 0.231
+        },
+        {
+          "word": "to",
+          "start": 1124.765,
+          "end": 1124.886,
+          "score": 0.622
+        },
+        {
+          "word": "tie",
+          "start": 1124.906,
+          "end": 1125.148,
+          "score": 0.628
+        },
+        {
+          "word": "something,",
+          "start": 1125.168,
+          "end": 1125.39,
+          "score": 0.222
+        },
+        {
+          "word": "we're",
+          "start": 1125.43,
+          "end": 1125.551,
+          "score": 0.295
+        },
+        {
+          "word": "trying",
+          "start": 1125.571,
+          "end": 1125.732,
+          "score": 0.204
+        },
+        {
+          "word": "to",
+          "start": 1125.773,
+          "end": 1125.853,
+          "score": 0.966
+        },
+        {
+          "word": "get",
+          "start": 1125.874,
+          "end": 1125.995,
+          "score": 0.25
+        },
+        {
+          "word": "the",
+          "start": 1126.015,
+          "end": 1126.095,
+          "score": 0.242
+        },
+        {
+          "word": "key",
+          "start": 1126.136,
+          "end": 1126.196,
+          "score": 0.316
+        },
+        {
+          "word": "out",
+          "start": 1126.216,
+          "end": 1126.357,
+          "score": 0.42
+        },
+        {
+          "word": "of",
+          "start": 1126.378,
+          "end": 1126.418,
+          "score": 0.007
+        },
+        {
+          "word": "it.",
+          "start": 1126.438,
+          "end": 1126.499,
+          "score": 0.33
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "start": 1127.8,
+      "end": 1128.16,
+      "text": " Okay.",
+      "speaker_hypothesis": "Uncertain",
+      "review_required": true,
+      "near_window_boundary": false,
+      "reasons": [
+        "Voice crop shorter than 0.4 seconds",
+        "Insufficient voice similarity or separation between profiles"
+      ],
+      "evidence": [
+        {
+          "source": "timing_comparison",
+          "selected_source": "decoder",
+          "alignment_start": 1127.821,
+          "alignment_end": 1128.16,
+          "decoder_start": 1127.8,
+          "decoder_end": 1128.16
+        },
+        {
+          "source": "baseline_overlap",
+          "raw_track_overlap_seconds": {},
+          "segments": [],
+          "identity_verified": false
+        },
+        {
+          "source": "local_voice",
+          "similarities": {},
+          "timing_variants": [
+            {
+              "source": "decoder",
+              "start": 1127.8,
+              "end": 1128.16,
+              "scores": {}
+            }
+          ],
+          "variants_are_independent_votes": false,
+          "min_similarity": 0.25,
+          "min_margin": 0.08,
+          "identity_probability_calibrated": false
+        }
+      ],
+      "alignment_words": [
+        {
+          "word": "Okay.",
+          "start": 1127.821,
+          "end": 1128.16,
+          "score": 0.492
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "start": 1130.46,
+      "end": 1134.1,
+      "text": " I might need to get a new key, there might be something off with this one because I just",
+      "speaker_hypothesis": "Uncertain",
+      "review_required": true,
+      "near_window_boundary": false,
+      "reasons": [
+        "Insufficient voice similarity or separation between profiles"
+      ],
+      "evidence": [
+        {
+          "source": "timing_comparison",
+          "selected_source": "decoder",
+          "alignment_start": 1130.882,
+          "alignment_end": 1134.1,
+          "decoder_start": 1130.46,
+          "decoder_end": 1134.1
+        },
+        {
+          "source": "baseline_overlap",
+          "raw_track_overlap_seconds": {},
+          "segments": [],
+          "identity_verified": false
+        },
+        {
+          "source": "local_voice",
+          "similarities": {
+            "Target_Speaker": -0.009820081293582916,
+            "Opening_officer": -0.0220994483679533
+          },
+          "timing_variants": [
+            {
+              "source": "decoder",
+              "start": 1130.46,
+              "end": 1134.1,
+              "scores": {
+                "Target_Speaker": -0.009820081293582916,
+                "Opening_officer": -0.0220994483679533
+              }
+            },
+            {
+              "source": "alignment",
+              "start": 1130.882,
+              "end": 1134.1,
+              "scores": {
+                "Target_Speaker": 0.0009913071990013123,
+                "Opening_officer": -0.027910256758332253
+              }
+            }
+          ],
+          "variants_are_independent_votes": false,
+          "min_similarity": 0.25,
+          "min_margin": 0.08,
+          "identity_probability_calibrated": false
+        }
+      ],
+      "alignment_words": [
+        {
+          "word": "I",
+          "start": 1130.882,
+          "end": 1130.983,
+          "score": 0.687
+        },
+        {
+          "word": "might",
+          "start": 1131.003,
+          "end": 1131.184,
+          "score": 0.319
+        },
+        {
+          "word": "need",
+          "start": 1131.204,
+          "end": 1131.385,
+          "score": 0.35
+        },
+        {
+          "word": "to",
+          "start": 1131.425,
+          "end": 1131.606,
+          "score": 0.702
+        },
+        {
+          "word": "get",
+          "start": 1131.707,
+          "end": 1131.767,
+          "score": 0.031
+        },
+        {
+          "word": "a",
+          "start": 1131.787,
+          "end": 1131.807,
+          "score": 0.001
+        },
+        {
+          "word": "new",
+          "start": 1131.828,
+          "end": 1131.888,
+          "score": 0.059
+        },
+        {
+          "word": "key,",
+          "start": 1131.968,
+          "end": 1132.19,
+          "score": 0.566
+        },
+        {
+          "word": "there",
+          "start": 1132.21,
+          "end": 1132.35,
+          "score": 0.406
+        },
+        {
+          "word": "might",
+          "start": 1132.37,
+          "end": 1132.531,
+          "score": 0.228
+        },
+        {
+          "word": "be",
+          "start": 1132.5720000000001,
+          "end": 1132.632,
+          "score": 0.49
+        },
+        {
+          "word": "something",
+          "start": 1132.652,
+          "end": 1132.853,
+          "score": 0.057
+        },
+        {
+          "word": "off",
+          "start": 1133.014,
+          "end": 1133.155,
+          "score": 0.712
+        },
+        {
+          "word": "with",
+          "start": 1133.175,
+          "end": 1133.316,
+          "score": 0.288
+        },
+        {
+          "word": "this",
+          "start": 1133.336,
+          "end": 1133.517,
+          "score": 0.555
+        },
+        {
+          "word": "one",
+          "start": 1133.537,
+          "end": 1133.637,
+          "score": 0.79
+        },
+        {
+          "word": "because",
+          "start": 1133.698,
+          "end": 1133.859,
+          "score": 0.08
+        },
+        {
+          "word": "I",
+          "start": 1133.899,
+          "end": 1133.999,
+          "score": 0.396
+        },
+        {
+          "word": "just",
+          "start": 1134.02,
+          "end": 1134.1,
+          "score": 0.002
+        }
+      ]
+    },
+    {
+      "index": 20,
+      "start": 1134.1,
+      "end": 1138.92,
+      "text": " had an issue with that fella I got in put this arm on the wall in front of you when",
+      "speaker_hypothesis": "Uncertain",
+      "review_required": true,
+      "near_window_boundary": false,
+      "reasons": [
+        "Insufficient voice similarity or separation between profiles"
+      ],
+      "evidence": [
+        {
+          "source": "timing_comparison",
+          "selected_source": "decoder",
+          "alignment_start": 1134.12,
+          "alignment_end": 1138.9,
+          "decoder_start": 1134.1,
+          "decoder_end": 1138.92
+        },
+        {
+          "source": "baseline_overlap",
+          "raw_track_overlap_seconds": {},
+          "segments": [],
+          "identity_verified": false
+        },
+        {
+          "source": "local_voice",
+          "similarities": {
+            "Target_Speaker": 0.20137673616409302,
+            "Opening_officer": 0.1770356148481369
+          },
+          "timing_variants": [
+            {
+              "source": "decoder",
+              "start": 1134.1,
+              "end": 1138.92,
+              "scores": {
+                "Target_Speaker": 0.20137673616409302,
+                "Opening_officer": 0.1770356148481369
+              }
+            },
+            {
+              "source": "alignment",
+              "start": 1134.12,
+              "end": 1138.9,
+              "scores": {
+                "Target_Speaker": 0.21542412042617798,
+                "Opening_officer": 0.17255690693855286
+              }
+            }
+          ],
+          "variants_are_independent_votes": false,
+          "min_similarity": 0.25,
+          "min_margin": 0.08,
+          "identity_probability_calibrated": false
+        }
+      ],
+      "alignment_words": [
+        {
+          "word": "had",
+          "start": 1134.12,
+          "end": 1134.261,
+          "score": 0.728
+        },
+        {
+          "word": "an",
+          "start": 1134.281,
+          "end": 1134.321,
+          "score": 0.011
+        },
+        {
+          "word": "issue",
+          "start": 1134.441,
+          "end": 1134.703,
+          "score": 0.431
+        },
+        {
+          "word": "with",
+          "start": 1134.723,
+          "end": 1134.8029999999999,
+          "score": 0.03
+        },
+        {
+          "word": "that",
+          "start": 1134.843,
+          "end": 1134.984,
+          "score": 0.863
+        },
+        {
+          "word": "fella",
+          "start": 1135.024,
+          "end": 1135.245,
+          "score": 0.251
+        },
+        {
+          "word": "I",
+          "start": 1135.305,
+          "end": 1135.425,
+          "score": 0.477
+        },
+        {
+          "word": "got",
+          "start": 1135.446,
+          "end": 1135.666,
+          "score": 0.788
+        },
+        {
+          "word": "in",
+          "start": 1135.827,
+          "end": 1136.048,
+          "score": 0.691
+        },
+        {
+          "word": "put",
+          "start": 1136.912,
+          "end": 1137.092,
+          "score": 0.815
+        },
+        {
+          "word": "this",
+          "start": 1137.113,
+          "end": 1137.253,
+          "score": 0.758
+        },
+        {
+          "word": "arm",
+          "start": 1137.333,
+          "end": 1137.514,
+          "score": 0.888
+        },
+        {
+          "word": "on",
+          "start": 1137.595,
+          "end": 1137.695,
+          "score": 0.82
+        },
+        {
+          "word": "the",
+          "start": 1137.755,
+          "end": 1137.896,
+          "score": 0.875
+        },
+        {
+          "word": "wall",
+          "start": 1137.996,
+          "end": 1138.277,
+          "score": 0.778
+        },
+        {
+          "word": "in",
+          "start": 1138.318,
+          "end": 1138.358,
+          "score": 0.002
+        },
+        {
+          "word": "front",
+          "start": 1138.418,
+          "end": 1138.639,
+          "score": 0.452
+        },
+        {
+          "word": "of",
+          "start": 1138.659,
+          "end": 1138.719,
+          "score": 0.246
+        },
+        {
+          "word": "you",
+          "start": 1138.739,
+          "end": 1138.8,
+          "score": 0.004
+        },
+        {
+          "word": "when",
+          "start": 1138.82,
+          "end": 1138.9,
+          "score": 0.009
+        }
+      ]
+    },
+    {
+      "index": 21,
+      "start": 1138.92,
+      "end": 1139.82,
+      "text": " that could have come off.",
+      "speaker_hypothesis": "Uncertain",
+      "review_required": true,
+      "near_window_boundary": false,
+      "reasons": [
+        "Insufficient voice similarity or separation between profiles"
+      ],
+      "evidence": [
+        {
+          "source": "timing_comparison",
+          "selected_source": "decoder",
+          "alignment_start": 1139.022,
+          "alignment_end": 1139.82,
+          "decoder_start": 1138.92,
+          "decoder_end": 1139.82
+        },
+        {
+          "source": "baseline_overlap",
+          "raw_track_overlap_seconds": {},
+          "segments": [],
+          "identity_verified": false
+        },
+        {
+          "source": "local_voice",
+          "similarities": {
+            "Target_Speaker": -0.0007402561604976654,
+            "Opening_officer": 0.2115969955921173
+          },
+          "timing_variants": [
+            {
+              "source": "decoder",
+              "start": 1138.92,
+              "end": 1139.82,
+              "scores": {
+                "Target_Speaker": -0.0007402561604976654,
+                "Opening_officer": 0.2115969955921173
+              }
+            },
+            {
+              "source": "alignment",
+              "start": 1139.022,
+              "end": 1139.82,
+              "scores": {
+                "Target_Speaker": 0.06577656418085098,
+                "Opening_officer": 0.0939009040594101
+              }
+            }
+          ],
+          "variants_are_independent_votes": false,
+          "min_similarity": 0.25,
+          "min_margin": 0.08,
+          "identity_probability_calibrated": false
+        }
+      ],
+      "alignment_words": [
+        {
+          "word": "that",
+          "start": 1139.022,
+          "end": 1139.104,
+          "score": 0.011
+        },
+        {
+          "word": "could",
+          "start": 1139.125,
+          "end": 1139.288,
+          "score": 0.366
+        },
+        {
+          "word": "have",
+          "start": 1139.37,
+          "end": 1139.534,
+          "score": 0.427
+        },
+        {
+          "word": "come",
+          "start": 1139.554,
+          "end": 1139.656,
+          "score": 0.134
+        },
+        {
+          "word": "off.",
+          "start": 1139.677,
+          "end": 1139.82,
+          "score": 0.196
+        }
+      ]
+    },
+    {
+      "index": 22,
+      "start": 1140.48,
+      "end": 1146.88,
+      "text": " That guy I just searched in that had the shackles, it had a little bit of difficulty opening up one of the shackles on his hop.",
+      "speaker_hypothesis": "Uncertain",
+      "review_required": true,
+      "near_window_boundary": false,
+      "reasons": [
+        "Insufficient voice similarity or separation between profiles"
+      ],
+      "evidence": [
+        {
+          "source": "timing_comparison",
+          "selected_source": "decoder",
+          "alignment_start": 1140.661,
+          "alignment_end": 1146.86,
+          "decoder_start": 1140.48,
+          "decoder_end": 1146.88
+        },
+        {
+          "source": "baseline_overlap",
+          "raw_track_overlap_seconds": {
+            "SPEAKER_06": 6.088999999999942
+          },
+          "segments": [
+            {
+              "segment_index": 399,
+              "raw_speaker_track": "SPEAKER_06",
+              "baseline_speaker": "SPEAKER_06",
+              "overlap_seconds": 5.985999999999876
+            },
+            {
+              "segment_index": 400,
+              "raw_speaker_track": "SPEAKER_06",
+              "baseline_speaker": "SPEAKER_06",
+              "overlap_seconds": 0.10300000000006548
+            }
+          ],
+          "identity_verified": false
+        },
+        {
+          "source": "local_voice",
+          "similarities": {
+            "Target_Speaker": 0.23181946575641632,
+            "Opening_officer": 0.2350638210773468
+          },
+          "timing_variants": [
+            {
+              "source": "decoder",
+              "start": 1140.48,
+              "end": 1146.88,
+              "scores": {
+                "Target_Speaker": 0.23181946575641632,
+                "Opening_officer": 0.2350638210773468
+              }
+            },
+            {
+              "source": "alignment",
+              "start": 1140.661,
+              "end": 1146.86,
+              "scores": {
+                "Target_Speaker": 0.26334455609321594,
+                "Opening_officer": 0.2395506054162979
+              }
+            }
+          ],
+          "variants_are_independent_votes": false,
+          "min_similarity": 0.25,
+          "min_margin": 0.08,
+          "identity_probability_calibrated": false
+        }
+      ],
+      "alignment_words": [
+        {
+          "word": "That",
+          "start": 1140.661,
+          "end": 1140.841,
+          "score": 0.598
+        },
+        {
+          "word": "guy",
+          "start": 1140.861,
+          "end": 1141.082,
+          "score": 0.673
+        },
+        {
+          "word": "I",
+          "start": 1141.102,
+          "end": 1141.162,
+          "score": 0.56
+        },
+        {
+          "word": "just",
+          "start": 1141.202,
+          "end": 1141.343,
+          "score": 0.379
+        },
+        {
+          "word": "searched",
+          "start": 1141.363,
+          "end": 1141.664,
+          "score": 0.768
+        },
+        {
+          "word": "in",
+          "start": 1141.724,
+          "end": 1141.804,
+          "score": 0.883
+        },
+        {
+          "word": "that",
+          "start": 1141.824,
+          "end": 1141.904,
+          "score": 0.3
+        },
+        {
+          "word": "had",
+          "start": 1141.925,
+          "end": 1142.125,
+          "score": 0.578
+        },
+        {
+          "word": "the",
+          "start": 1142.145,
+          "end": 1142.205,
+          "score": 0.555
+        },
+        {
+          "word": "shackles,",
+          "start": 1142.246,
+          "end": 1142.787,
+          "score": 0.826
+        },
+        {
+          "word": "it",
+          "start": 1142.867,
+          "end": 1142.9279999999999,
+          "score": 0.585
+        },
+        {
+          "word": "had",
+          "start": 1142.948,
+          "end": 1143.088,
+          "score": 0.788
+        },
+        {
+          "word": "a",
+          "start": 1143.108,
+          "end": 1143.148,
+          "score": 0.427
+        },
+        {
+          "word": "little",
+          "start": 1143.168,
+          "end": 1143.409,
+          "score": 0.811
+        },
+        {
+          "word": "bit",
+          "start": 1143.449,
+          "end": 1143.59,
+          "score": 0.507
+        },
+        {
+          "word": "of",
+          "start": 1143.61,
+          "end": 1143.65,
+          "score": 0.009
+        },
+        {
+          "word": "difficulty",
+          "start": 1143.69,
+          "end": 1144.493,
+          "score": 0.802
+        },
+        {
+          "word": "opening",
+          "start": 1144.593,
+          "end": 1144.894,
+          "score": 0.777
+        },
+        {
+          "word": "up",
+          "start": 1144.954,
+          "end": 1145.155,
+          "score": 0.43
+        },
+        {
+          "word": "one",
+          "start": 1145.195,
+          "end": 1145.295,
+          "score": 0.835
+        },
+        {
+          "word": "of",
+          "start": 1145.335,
+          "end": 1145.395,
+          "score": 0.735
+        },
+        {
+          "word": "the",
+          "start": 1145.435,
+          "end": 1145.576,
+          "score": 0.776
+        },
+        {
+          "word": "shackles",
+          "start": 1145.957,
+          "end": 1146.338,
+          "score": 0.674
+        },
+        {
+          "word": "on",
+          "start": 1146.358,
+          "end": 1146.398,
+          "score": 0.005
+        },
+        {
+          "word": "his",
+          "start": 1146.459,
+          "end": 1146.639,
+          "score": 0.531
+        },
+        {
+          "word": "hop.",
+          "start": 1146.659,
+          "end": 1146.86,
+          "score": 0.656
+        }
+      ]
+    },
+    {
+      "index": 23,
+      "start": 1147.0,
+      "end": 1148.4,
+      "text": " That guy got to get a new key then.",
+      "speaker_hypothesis": "Uncertain",
+      "review_required": true,
+      "near_window_boundary": false,
+      "reasons": [
+        "Insufficient voice similarity or separation between profiles"
+      ],
+      "evidence": [
+        {
+          "source": "timing_comparison",
+          "selected_source": "decoder",
+          "alignment_start": 1147.0,
+          "alignment_end": 1148.359,
+          "decoder_start": 1147.0,
+          "decoder_end": 1148.4
+        },
+        {
+          "source": "baseline_overlap",
+          "raw_track_overlap_seconds": {
+            "SPEAKER_06": 1.400000000000091
+          },
+          "segments": [
+            {
+              "segment_index": 400,
+              "raw_speaker_track": "SPEAKER_06",
+              "baseline_speaker": "SPEAKER_06",
+              "overlap_seconds": 1.400000000000091
+            }
+          ],
+          "identity_verified": false
+        },
+        {
+          "source": "local_voice",
+          "similarities": {
+            "Target_Speaker": 0.11002589762210846,
+            "Opening_officer": 0.0901983454823494
+          },
+          "timing_variants": [
+            {
+              "source": "decoder",
+              "start": 1147.0,
+              "end": 1148.4,
+              "scores": {
+                "Target_Speaker": 0.11002589762210846,
+                "Opening_officer": 0.0901983454823494
+              }
+            },
+            {
+              "source": "alignment",
+              "start": 1147.0,
+              "end": 1148.359,
+              "scores": {
+                "Target_Speaker": 0.10047627985477448,
+                "Opening_officer": 0.094629667699337
+              }
+            }
+          ],
+          "variants_are_independent_votes": false,
+          "min_similarity": 0.25,
+          "min_margin": 0.08,
+          "identity_probability_calibrated": false
+        }
+      ],
+      "alignment_words": [
+        {
+          "word": "That",
+          "start": 1147.0,
+          "end": 1147.101,
+          "score": 0.293
+        },
+        {
+          "word": "guy",
+          "start": 1147.142,
+          "end": 1147.264,
+          "score": 0.464
+        },
+        {
+          "word": "got",
+          "start": 1147.304,
+          "end": 1147.426,
+          "score": 0.266
+        },
+        {
+          "word": "to",
+          "start": 1147.467,
+          "end": 1147.548,
+          "score": 0.333
+        },
+        {
+          "word": "get",
+          "start": 1147.568,
+          "end": 1147.69,
+          "score": 0.22
+        },
+        {
+          "word": "a",
+          "start": 1147.71,
+          "end": 1147.73,
+          "score": 0.004
+        },
+        {
+          "word": "new",
+          "start": 1147.771,
+          "end": 1147.913,
+          "score": 0.932
+        },
+        {
+          "word": "key",
+          "start": 1147.954,
+          "end": 1148.177,
+          "score": 0.768
+        },
+        {
+          "word": "then.",
+          "start": 1148.1970000000001,
+          "end": 1148.359,
+          "score": 0.431
+        }
+      ]
+    },
+    {
+      "index": 24,
+      "start": 1149.6,
+      "end": 1149.92,
+      "text": " Alright.",
+      "speaker_hypothesis": "Uncertain",
+      "review_required": true,
+      "near_window_boundary": true,
+      "reasons": [
+        "Voice crop shorter than 0.4 seconds",
+        "Near audio-window boundary; wording or timing may be incomplete",
+        "Insufficient voice similarity or separation between profiles"
+      ],
+      "evidence": [
+        {
+          "source": "timing_comparison",
+          "selected_source": "decoder",
+          "alignment_start": 1149.6,
+          "alignment_end": 1149.771,
+          "decoder_start": 1149.6,
+          "decoder_end": 1149.92
+        },
+        {
+          "source": "baseline_overlap",
+          "raw_track_overlap_seconds": {
+            "SPEAKER_06": 0.3200000000001637
+          },
+          "segments": [
+            {
+              "segment_index": 401,
+              "raw_speaker_track": "SPEAKER_06",
+              "baseline_speaker": "SPEAKER_06",
+              "overlap_seconds": 0.3200000000001637
+            }
+          ],
+          "identity_verified": false
+        },
+        {
+          "source": "local_voice",
+          "similarities": {},
+          "timing_variants": [
+            {
+              "source": "decoder",
+              "start": 1149.6,
+              "end": 1149.92,
+              "scores": {}
+            }
+          ],
+          "variants_are_independent_votes": false,
+          "min_similarity": 0.25,
+          "min_margin": 0.08,
+          "identity_probability_calibrated": false
+        }
+      ],
+      "alignment_words": [
+        {
+          "word": "Alright.",
+          "start": 1149.6,
+          "end": 1149.771,
+          "score": 0.019
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "video": "/home/think/projects/whisperx_diarization/video.mp4",
+    "video_sha256": "c90216467d260eab6e946e8118f4ef2d591b8b7d736ccf056e43208a25fba0d5",
+    "window_start": 1085.0,
+    "decoded_duration": 65.0,
+    "models": {
+      "asr": "large-v2",
+      "voice": "speechbrain/spkrec-ecapa-voxceleb"
+    },
+    "device": "cpu",
+    "requested_timing_source": "consensus",
+    "asr_engine": "native",
+    "vad": "disabled",
+    "chunk_seconds": null,
+    "context_seconds": null,
+    "references": {
+      "Target_Speaker": {
+        "path": "/home/think/projects/whisperx_diarization/references/youtube-v1/voice_embeddings.npy",
+        "sha256": "f22feac5254c52aad0a69a950011a819e579260a4aa964a29bd37ebb06926809"
+      },
+      "Opening_officer": {
+        "path": "/home/think/Documents/Codex/2026-09-13/referenced-chatgpt-conversation-this-is-an/outputs/speaker_separation/officer_reference.npy",
+        "sha256": "8542fdd1f9335670ed003efd1449b75d3867c80012331259d3e3d90d8ff07211"
+      }
+    },
+    "baseline": "/home/think/Documents/Codex/2026-09-13/referenced-chatgpt-conversation-this-is-an/work/kaggle_latest/results/full_video_evidence.json",
+    "baseline_sha256": "a2054622325ffab780a7683ad576f2892baf81dcf4f3c77d01d417241adab85d",
+    "elapsed_seconds": 173.4080760530196
+  }
+}

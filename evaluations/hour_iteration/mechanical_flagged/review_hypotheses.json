@@ -1,0 +1,340 @@
+{
+  "baseline_modified": false,
+  "experimental": true,
+  "segments": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 0.6,
+      "text": " Beep.",
+      "speaker_hypothesis": "Uncertain",
+      "review_required": true,
+      "near_window_boundary": true,
+      "reasons": [
+        "Decoder marks this passage as possible non-speech",
+        "Near audio-window boundary; wording or timing may be incomplete",
+        "Insufficient voice similarity or separation between profiles"
+      ],
+      "evidence": [
+        {
+          "source": "decoder_support",
+          "flags": [
+            "Decoder marks this passage as possible non-speech"
+          ],
+          "signals": [
+            {
+              "start": 0.0,
+              "end": 4.2,
+              "avg_logprob": -0.5840776205062866,
+              "no_speech_prob": 0.8081139922142029,
+              "compression_ratio": 1.4375
+            }
+          ],
+          "word_probability_is_accuracy": false
+        },
+        {
+          "source": "timing_comparison",
+          "selected_source": "decoder",
+          "alignment_start": 0.382,
+          "alignment_end": 0.603,
+          "decoder_start": 0.0,
+          "decoder_end": 0.6
+        },
+        {
+          "source": "baseline_overlap",
+          "raw_track_overlap_seconds": {},
+          "segments": [],
+          "identity_verified": false
+        },
+        {
+          "source": "local_voice",
+          "similarities": {
+            "Target_Speaker": -0.055261462926864624,
+            "Opening_officer": 0.021563339978456497
+          },
+          "timing_variants": [
+            {
+              "source": "decoder",
+              "start": 0.0,
+              "end": 0.6,
+              "scores": {
+                "Target_Speaker": -0.055261462926864624,
+                "Opening_officer": 0.021563339978456497
+              }
+            }
+          ],
+          "variants_are_independent_votes": false,
+          "min_similarity": 0.25,
+          "min_margin": 0.08,
+          "identity_probability_calibrated": false
+        }
+      ],
+      "alignment_words": [
+        {
+          "word": "Beep.",
+          "start": 0.382,
+          "end": 0.603,
+          "score": 0.494
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "start": 1.34,
+      "end": 1.78,
+      "text": "Beep.",
+      "speaker_hypothesis": "Uncertain",
+      "review_required": true,
+      "near_window_boundary": false,
+      "reasons": [
+        "Decoder marks this passage as possible non-speech",
+        "Insufficient voice similarity or separation between profiles"
+      ],
+      "evidence": [
+        {
+          "source": "decoder_support",
+          "flags": [
+            "Decoder marks this passage as possible non-speech"
+          ],
+          "signals": [
+            {
+              "start": 0.0,
+              "end": 4.2,
+              "avg_logprob": -0.5840776205062866,
+              "no_speech_prob": 0.8081139922142029,
+              "compression_ratio": 1.4375
+            }
+          ],
+          "word_probability_is_accuracy": false
+        },
+        {
+          "source": "timing_comparison",
+          "selected_source": "decoder",
+          "alignment_start": 1.487,
+          "alignment_end": 1.588,
+          "decoder_start": 1.34,
+          "decoder_end": 1.78
+        },
+        {
+          "source": "baseline_overlap",
+          "raw_track_overlap_seconds": {},
+          "segments": [],
+          "identity_verified": false
+        },
+        {
+          "source": "local_voice",
+          "similarities": {
+            "Target_Speaker": -0.0303508173674345,
+            "Opening_officer": -0.030316665768623352
+          },
+          "timing_variants": [
+            {
+              "source": "decoder",
+              "start": 1.34,
+              "end": 1.78,
+              "scores": {
+                "Target_Speaker": -0.0303508173674345,
+                "Opening_officer": -0.030316665768623352
+              }
+            }
+          ],
+          "variants_are_independent_votes": false,
+          "min_similarity": 0.25,
+          "min_margin": 0.08,
+          "identity_probability_calibrated": false
+        }
+      ],
+      "alignment_words": [
+        {
+          "word": "Beep.",
+          "start": 1.487,
+          "end": 1.588,
+          "score": 0.04
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "start": 2.16,
+      "end": 2.44,
+      "text": "Beep.",
+      "speaker_hypothesis": "Uncertain",
+      "review_required": true,
+      "near_window_boundary": false,
+      "reasons": [
+        "Voice crop shorter than 0.4 seconds",
+        "Decoder marks this passage as possible non-speech",
+        "Insufficient voice similarity or separation between profiles"
+      ],
+      "evidence": [
+        {
+          "source": "decoder_support",
+          "flags": [
+            "Decoder marks this passage as possible non-speech"
+          ],
+          "signals": [
+            {
+              "start": 0.0,
+              "end": 4.2,
+              "avg_logprob": -0.5840776205062866,
+              "no_speech_prob": 0.8081139922142029,
+              "compression_ratio": 1.4375
+            }
+          ],
+          "word_probability_is_accuracy": false
+        },
+        {
+          "source": "timing_comparison",
+          "selected_source": "decoder",
+          "alignment_start": 1.608,
+          "alignment_end": 1.708,
+          "decoder_start": 2.16,
+          "decoder_end": 2.44
+        },
+        {
+          "source": "baseline_overlap",
+          "raw_track_overlap_seconds": {},
+          "segments": [],
+          "identity_verified": false
+        },
+        {
+          "source": "local_voice",
+          "similarities": {},
+          "timing_variants": [
+            {
+              "source": "decoder",
+              "start": 2.16,
+              "end": 2.44,
+              "scores": {}
+            }
+          ],
+          "variants_are_independent_votes": false,
+          "min_similarity": 0.25,
+          "min_margin": 0.08,
+          "identity_probability_calibrated": false
+        }
+      ],
+      "alignment_words": [
+        {
+          "word": "Beep.",
+          "start": 1.608,
+          "end": 1.708,
+          "score": 0.098
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "start": 3.78,
+      "end": 4.2,
+      "text": "Beep.",
+      "speaker_hypothesis": "Uncertain",
+      "review_required": true,
+      "near_window_boundary": false,
+      "reasons": [
+        "Decoder marks this passage as possible non-speech",
+        "Insufficient voice similarity or separation between profiles"
+      ],
+      "evidence": [
+        {
+          "source": "decoder_support",
+          "flags": [
+            "Decoder marks this passage as possible non-speech"
+          ],
+          "signals": [
+            {
+              "start": 0.0,
+              "end": 4.2,
+              "avg_logprob": -0.5840776205062866,
+              "no_speech_prob": 0.8081139922142029,
+              "compression_ratio": 1.4375
+            }
+          ],
+          "word_probability_is_accuracy": false
+        },
+        {
+          "source": "timing_comparison",
+          "selected_source": "decoder",
+          "alignment_start": 2.07,
+          "alignment_end": 3.939,
+          "decoder_start": 3.78,
+          "decoder_end": 4.2
+        },
+        {
+          "source": "baseline_overlap",
+          "raw_track_overlap_seconds": {},
+          "segments": [],
+          "identity_verified": false
+        },
+        {
+          "source": "local_voice",
+          "similarities": {
+            "Target_Speaker": -0.017655134201049805,
+            "Opening_officer": -0.01863650232553482
+          },
+          "timing_variants": [
+            {
+              "source": "decoder",
+              "start": 3.78,
+              "end": 4.2,
+              "scores": {
+                "Target_Speaker": -0.017655134201049805,
+                "Opening_officer": -0.01863650232553482
+              }
+            },
+            {
+              "source": "alignment",
+              "start": 2.07,
+              "end": 3.939,
+              "scores": {
+                "Target_Speaker": -0.09202410280704498,
+                "Opening_officer": 0.010830961167812347
+              }
+            }
+          ],
+          "variants_are_independent_votes": false,
+          "min_similarity": 0.25,
+          "min_margin": 0.08,
+          "identity_probability_calibrated": false
+        }
+      ],
+      "alignment_words": [
+        {
+          "word": "Beep.",
+          "start": 2.07,
+          "end": 3.939,
+          "score": 0.355
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "video": "/home/think/Documents/Codex/2026-09-13/referenced-chatgpt-conversation-this-is-an/work/hour_iteration/negative_controls/mechanical.wav",
+    "video_sha256": "cdbcd39e253c08992d4423cda0aef37de2af596a06228d77544ed5bde03ea574",
+    "window_start": 0.0,
+    "decoded_duration": 6.0,
+    "models": {
+      "asr": "large-v2",
+      "voice": "speechbrain/spkrec-ecapa-voxceleb"
+    },
+    "device": "cpu",
+    "requested_timing_source": "consensus",
+    "asr_engine": "native",
+    "vad": "disabled",
+    "chunk_seconds": null,
+    "context_seconds": null,
+    "references": {
+      "Target_Speaker": {
+        "path": "/home/think/projects/whisperx_diarization/references/youtube-v1/voice_embeddings.npy",
+        "sha256": "f22feac5254c52aad0a69a950011a819e579260a4aa964a29bd37ebb06926809"
+      },
+      "Opening_officer": {
+        "path": "/home/think/Documents/Codex/2026-09-13/referenced-chatgpt-conversation-this-is-an/outputs/speaker_separation/officer_reference.npy",
+        "sha256": "8542fdd1f9335670ed003efd1449b75d3867c80012331259d3e3d90d8ff07211"
+      }
+    },
+    "baseline": null,
+    "baseline_sha256": null,
+    "elapsed_seconds": 41.48188803100493
+  }
+}

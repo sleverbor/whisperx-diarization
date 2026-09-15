@@ -116,5 +116,116 @@
     }
   },
   "regression_tests": 36,
-  "new_unit_tests": 22
+  "new_unit_tests": 24,
+  "baseline_input_file_sha256_unchanged": true,
+  "baseline_total_segments": 445,
+  "handcuff_control": {
+    "evaluation_only_user_listening_roles": true,
+    "known_target_utterances": 4,
+    "known_target_matches": 3,
+    "false_target_on_reflection": false,
+    "wrong_known_identity_on_other": 0,
+    "officers_separated": false,
+    "known_transcription_errors_remain": true,
+    "rows": [
+      {
+        "index": 2,
+        "expected": "Other",
+        "hypothesis": "Uncertain",
+        "text": " Well I can tell everybody else that comes in here, my behavior is kind of a reflection"
+      },
+      {
+        "index": 3,
+        "expected": "Other",
+        "hypothesis": "Uncertain",
+        "text": " of theirs."
+      },
+      {
+        "index": 4,
+        "expected": "Target_Speaker",
+        "hypothesis": "Target_Speaker",
+        "text": " I couldn't agree more."
+      },
+      {
+        "index": 5,
+        "expected": "Target_Speaker",
+        "hypothesis": "Uncertain",
+        "text": " I couldn't agree more."
+      },
+      {
+        "index": 7,
+        "expected": "Target_Speaker",
+        "hypothesis": "Target_Speaker",
+        "text": " Couldn't agree a syllable more."
+      },
+      {
+        "index": 11,
+        "expected": "Other",
+        "hypothesis": "Uncertain",
+        "text": " No that's not the problem."
+      },
+      {
+        "index": 12,
+        "expected": "Other",
+        "hypothesis": "Uncertain",
+        "text": " They pee."
+      },
+      {
+        "index": 13,
+        "expected": "Other",
+        "hypothesis": "Uncertain",
+        "text": " It just got stuck."
+      },
+      {
+        "index": 14,
+        "expected": "Opening_officer",
+        "hypothesis": "Uncertain",
+        "text": " How do I mess with your cuffs?"
+      },
+      {
+        "index": 15,
+        "expected": "Opening_officer",
+        "hypothesis": "Uncertain",
+        "text": " Or mess them up or anything?"
+      },
+      {
+        "index": 16,
+        "expected": "Target_Speaker",
+        "hypothesis": "Target_Speaker",
+        "text": " I'm taking too much time, I haven't got much space."
+      },
+      {
+        "index": 17,
+        "expected": "Opening_officer",
+        "hypothesis": "Uncertain",
+        "text": " Well we're not trying to tie something, we're trying to get the key out of it."
+      },
+      {
+        "index": 19,
+        "expected": "Other",
+        "hypothesis": "Uncertain",
+        "text": " I might need to get a new key, there might be something off with this one because I just"
+      },
+      {
+        "index": 20,
+        "expected": "Other",
+        "hypothesis": "Uncertain",
+        "text": " had an issue with that fella I got in put this arm on the wall in front of you when"
+      },
+      {
+        "index": 21,
+        "expected": "Other",
+        "hypothesis": "Uncertain",
+        "text": " that could have come off."
+      }
+    ]
+  },
+  "total_unit_tests": 60,
+  "height_answer_control": {
+    "height_question_and_full_answer_retained": true,
+    "short_answer_identity": "Uncertain",
+    "unreviewed_target_hypothesis": "Nothing gang, anything.",
+    "requires_listening_review": true,
+    "decoder_flagged_rows": 0
+  }
 }
