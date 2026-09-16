@@ -25,6 +25,7 @@ from whisperx.diarize import DiarizationPipeline
 from speechbrain.inference.speaker import SpeakerRecognition
 from insightface.app import FaceAnalysis
 from collections import defaultdict
+from repeat_evidence import find_repeat_groups, build_repeat_proposals
 
 
 @dataclass(frozen=True)
@@ -677,6 +678,13 @@ def main():
             add_echo_question_evidence(segment, previous, all_tracks, target_track, mapping_confidence)
             resolve_segment(segment, target_track, mapping_confidence)
             print(f"Resolved segment {index + 1}/{len(timeline)} at {segment.end:.1f}s", flush=True)
+        repeat_groups = find_repeat_groups(timeline)
+        repeat_proposals = build_repeat_proposals(timeline, repeat_groups)
+        for index, proposals in repeat_proposals.items():
+            for details in proposals:
+                timeline[index].evidence.append(Evidence(
+                    "repeated_presentation", 0.0, 0.0, details
+                ))
         print("\n--- Evidence-Based Speaker Resolution ---")
         for segment in timeline:
             print(f"[{segment.start:.2f}s - {segment.end:.2f}s] {segment.final_speaker} "
@@ -690,6 +698,7 @@ def main():
                        "runtime": {"device": device, "face_providers": face_providers,
                                    "transcription_coverage": args.transcription_coverage},
                        "confidence_is_calibrated": False,
+                       "repeated_presentations": repeat_groups,
                        "segments": [asdict(segment) for segment in timeline]}, output, indent=2, ensure_ascii=False)
     finally:
         cap.release()
