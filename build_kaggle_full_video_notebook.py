@@ -91,6 +91,7 @@ for name, source in EMBEDDED_FILES.items():
 ENV = os.environ.copy()
 ENV['PYTHONUNBUFFERED'] = '1'
 ENV['MPLCONFIGDIR'] = str(BASE/'matplotlib-cache')
+ENV['NUMBA_CACHE_DIR'] = str(BASE/'numba-cache')
 def checked(command, **kwargs):
     return subprocess.run(command, env=ENV, check=True, **kwargs)
 
@@ -117,8 +118,17 @@ requirements = [
 checked([PYTHON, '-m', 'pip', 'install', '--upgrade', 'pip'])
 checked([PYTHON, '-m', 'pip', 'install', *requirements])
 checked([PYTHON, '-m', 'pip', 'install',
-         'git+https://github.com/wenet-e2e/wesep.git',
          'git+https://github.com/wenet-e2e/wespeaker.git'])
+# WeSep's current package metadata omits its namespace-style wesep/utils
+# directory. Keep the checkout and put it first on PYTHONPATH so the complete
+# source tree is used, while pip still installs all declared dependencies.
+WESEP_SOURCE = WORK/'vendor'/'wesep'
+if not (WESEP_SOURCE/'wesep'/'utils'/'utils.py').is_file():
+    WESEP_SOURCE.parent.mkdir(parents=True, exist_ok=True)
+    checked(['git', 'clone', '--depth', '1',
+             'https://github.com/wenet-e2e/wesep.git', str(WESEP_SOURCE)])
+checked([PYTHON, '-m', 'pip', 'install', str(WESEP_SOURCE)])
+ENV['PYTHONPATH'] = str(WESEP_SOURCE) + os.pathsep + str(WORK) + os.pathsep + ENV.get('PYTHONPATH', '')
 
 print('3/4: Selecting the CUDA ONNX runtime', flush=True)
 checked([PYTHON, '-m', 'pip', 'uninstall', '-y', 'onnxruntime', 'onnxruntime-gpu'])
@@ -133,9 +143,11 @@ ENV['LD_LIBRARY_PATH'] = library_dirs + ':' + ENV.get('LD_LIBRARY_PATH', '')
 print('4/4: Verifying GPU imports and focused behavior tests', flush=True)
 verification = """import torch,onnxruntime as ort,wrapt,wesep
 import chainofrules,repeat_evidence
+assert '/vendor/wesep/' in wesep.__file__.replace('\\\\', '/'), wesep.__file__
 print('Torch:', torch.__version__, 'CUDA build:', torch.version.cuda)
 print('GPU:', torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'NONE (local CPU)')
 print('ONNX providers:', ort.get_available_providers())
+print('WeSep source:', wesep.__file__)
 """
 if ON_KAGGLE:
     verification += "assert torch.cuda.is_available(), 'Kaggle GPU is unavailable'\\nassert 'CUDAExecutionProvider' in ort.get_available_providers(), 'GPU ONNX runtime is unavailable'\\n"
