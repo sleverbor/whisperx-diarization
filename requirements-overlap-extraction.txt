@@ -1,0 +1,3 @@
+# Optional target-speaker extraction evaluator.
+wesep @ git+https://github.com/wenet-e2e/wesep.git
+wespeaker @ git+https://github.com/wenet-e2e/wespeaker.git
