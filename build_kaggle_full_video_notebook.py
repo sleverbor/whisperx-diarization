@@ -55,7 +55,7 @@ def main():
 import subprocess, sys, os, json, shutil, time, zipfile
 
 VIDEO_URL = 'https://www.youtube.com/watch?v=uAtiEviUzGA'
-NOTEBOOK_REVISION = 'wesep-source-overlay-v2'
+NOTEBOOK_REVISION = 'wesep-package-repair-v3'
 RUN_FULL_VIDEO = True
 RUN_TARGETED_REVIEW = True
 RUN_OVERLAP_EXTRACTION = True
@@ -141,6 +141,11 @@ shutil.copytree(WESEP_SOURCE/'wesep', installed_wesep, dirs_exist_ok=True)
 missing_utility = installed_wesep/'utils'/'utils.py'
 if not missing_utility.is_file():
     raise RuntimeError(f'WeSep repair failed; missing {{missing_utility}}')
+# These upstream source directories contain Python modules but omit package
+# markers, which is also why they disappear from the built wheel.
+for directory in [installed_wesep/'utils', installed_wesep/'dataset', installed_wesep/'bin']:
+    if directory.is_dir():
+        (directory/'__init__.py').touch()
 ENV['PYTHONPATH'] = str(WORK) + os.pathsep + ENV.get('PYTHONPATH', '')
 
 print('3/4: Selecting the CUDA ONNX runtime', flush=True)
