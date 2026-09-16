@@ -55,7 +55,7 @@ def main():
 import subprocess, sys, os, json, shutil, time, zipfile
 
 VIDEO_URL = 'https://www.youtube.com/watch?v=uAtiEviUzGA'
-NOTEBOOK_REVISION = 'wesep-package-repair-v3'
+NOTEBOOK_REVISION = 'kaggle-matplotlib-backend-v4'
 RUN_FULL_VIDEO = True
 RUN_TARGETED_REVIEW = True
 RUN_OVERLAP_EXTRACTION = True
@@ -93,6 +93,7 @@ for name, source in EMBEDDED_FILES.items():
 ENV = os.environ.copy()
 ENV['PYTHONUNBUFFERED'] = '1'
 ENV['MPLCONFIGDIR'] = str(BASE/'matplotlib-cache')
+ENV['MPLBACKEND'] = 'Agg'
 ENV['NUMBA_CACHE_DIR'] = str(BASE/'numba-cache')
 def checked(command, **kwargs):
     return subprocess.run(command, env=ENV, check=True, **kwargs)
