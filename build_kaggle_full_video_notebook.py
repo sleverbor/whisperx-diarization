@@ -55,7 +55,7 @@ def main():
 import subprocess, sys, os, json, shutil, time, zipfile
 
 VIDEO_URL = 'https://www.youtube.com/watch?v=uAtiEviUzGA'
-NOTEBOOK_REVISION = 'kaggle-matplotlib-backend-v4'
+NOTEBOOK_REVISION = 'attached-current-video-v5'
 RUN_FULL_VIDEO = True
 RUN_TARGETED_REVIEW = True
 RUN_OVERLAP_EXTRACTION = True
@@ -202,8 +202,18 @@ if ON_KAGGLE:
                     raise RuntimeError('Unexpected checkpoint archive path')
             zipped.extractall(BASE)
 if not VIDEO.exists():
-    checked([PYTHON, '-m', 'yt_dlp', '-f', 'bv*[height<=720]+ba/b[height<=720]',
-             '--merge-output-format', 'mp4', '-o', str(VIDEO), VIDEO_URL])
+    if ON_KAGGLE:
+        matches = list(Path('/kaggle/input').rglob('uAtiEviUzGA.mp4'))
+        if len(matches) != 1:
+            raise RuntimeError(
+                'Attach a Kaggle dataset containing exactly one file named '
+                'uAtiEviUzGA.mp4. YouTube blocks downloads from Kaggle.')
+        shutil.copy2(matches[0], VIDEO)
+    else:
+        local_video = Path.cwd()/'uAtiEviUzGA.mp4'
+        if not local_video.is_file():
+            raise RuntimeError(f'Missing local video: {{local_video}}')
+        shutil.copy2(local_video, VIDEO)
 print('Credentials configured; token not displayed.')
 print('Video ready:', VIDEO, VIDEO.stat().st_size, 'bytes')
 '''
@@ -321,11 +331,11 @@ print('Saved in:', BASE)
 
     notebook = {
         "cells": [
-            cell("markdown", "# Current-video full diarization test\n\nThis notebook downloads `uAtiEviUzGA`, runs the unchanged evidence-based baseline, finds repeated presentations, and evaluates uncertain overlap intervals with target-conditioned extraction. Supplemental stages never overwrite the baseline.\n"),
+            cell("markdown", "# Current-video full diarization test\n\nAttach a Kaggle dataset containing `uAtiEviUzGA.mp4`. This notebook runs the unchanged evidence-based baseline, finds repeated presentations, and evaluates uncertain overlap intervals with target-conditioned extraction. Supplemental stages never overwrite the baseline.\n"),
             cell("code", config),
             cell("markdown", "## Install and verify\n\nEnable Internet and a GPU before running. The setup uses an isolated environment and verifies CUDA before the full video starts.\n"),
             cell("code", "import base64\n" + setup),
-            cell("markdown", "## Credentials, checkpoint restore, and video download\n\nCreate a private Kaggle secret named `HF_TOKEN`. The token is read from the environment and is never embedded or printed.\n"),
+            cell("markdown", "## Credentials, checkpoint restore, and attached video\n\nCreate a private Kaggle secret named `HF_TOKEN`. The token is read from the environment and is never embedded or printed. The current video is copied from the attached dataset because YouTube blocks Kaggle's shared addresses.\n"),
             cell("code", credentials),
             cell("code", functions),
             cell("markdown", "## Run the opening check and whole video\n\nThe opening check confirms that face analysis is actually using CUDA. Then the full baseline, targeted review, repeat evidence, and overlap extraction run.\n"),
