@@ -40,6 +40,10 @@ def transcribe(model, wave):
     return " ".join(segment.text.strip() for segment in segments if segment.text.strip())
 
 
+def rms(wave):
+    return float(torch.sqrt(torch.mean(wave.float() ** 2)).item())
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--crop", type=Path, action="append", required=True)
@@ -49,6 +53,11 @@ def main():
     parser.add_argument("--wesep-model-dir", type=Path)
     parser.add_argument("--device", default="cuda" if torch.cuda.is_available() else "cpu")
     parser.add_argument("--whisper-model", default="small")
+    parser.add_argument(
+        "--normalize-output",
+        action="store_true",
+        help="Normalize extracted audio. Leave disabled when testing rejection/suppression.",
+    )
     args = parser.parse_args()
     args.output_dir.mkdir(parents=True, exist_ok=True)
 
@@ -65,7 +74,7 @@ def main():
         extractor = wesep.load_model("english")
     extractor.set_device(args.device)
     extractor.set_vad(True)
-    extractor.set_output_norm(True)
+    extractor.set_output_norm(args.normalize_output)
 
     priors = np.load(args.voice_priors)
     target = unit(np.mean(np.stack([unit(row) for row in priors]), axis=0))
@@ -82,15 +91,19 @@ def main():
     report = []
     for crop in args.crop:
         extracted_path = args.output_dir / f"{crop.stem}-target.wav"
+        original = load_audio(crop)
         extracted = extractor.extract_speech(str(crop), str(args.enrollment))
         if extracted is None:
             report.append({"crop": str(crop), "error": "extractor returned no speech"})
             continue
         extracted = extracted[0].detach().cpu().unsqueeze(0)
         sf.write(extracted_path, extracted.squeeze(0).numpy(), 16000)
+        original_rms = rms(original)
+        extracted_rms = rms(extracted)
+        energy_retention = extracted_rms / max(original_rms, 1e-9)
 
         for kind, path, wave in (
-            ("original", crop, load_audio(crop)),
+            ("original", crop, original),
             ("conditioned", extracted_path, extracted),
         ):
             embedding = unit(
@@ -101,6 +114,8 @@ def main():
                     "crop": str(crop),
                     "kind": kind,
                     "target_similarity": float(np.dot(target, embedding)),
+                    "rms": rms(wave),
+                    "extracted_energy_retention": energy_retention,
                     "transcript": transcribe(whisper, wave),
                     "audio": str(path),
                 }
