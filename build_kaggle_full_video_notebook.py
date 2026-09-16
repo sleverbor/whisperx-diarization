@@ -55,6 +55,7 @@ def main():
 import subprocess, sys, os, json, shutil, time, zipfile
 
 VIDEO_URL = 'https://www.youtube.com/watch?v=uAtiEviUzGA'
+NOTEBOOK_REVISION = 'wesep-source-overlay-v2'
 RUN_FULL_VIDEO = True
 RUN_TARGETED_REVIEW = True
 RUN_OVERLAP_EXTRACTION = True
@@ -80,6 +81,7 @@ PYTHON = str(VENV/('Scripts/python.exe' if os.name == 'nt' else 'bin/python'))
 VIDEO = WORK/'video.mp4'
 REFERENCE = WORK/'target-reference'; REFERENCE.mkdir(exist_ok=True)
 print('Video URL:', VIDEO_URL)
+print('Notebook revision:', NOTEBOOK_REVISION)
 print('Results folder:', RESULTS)
 print('Setup will use:', PYTHON)
 '''
@@ -128,7 +130,18 @@ if not (WESEP_SOURCE/'wesep'/'utils'/'utils.py').is_file():
     checked(['git', 'clone', '--depth', '1',
              'https://github.com/wenet-e2e/wesep.git', str(WESEP_SOURCE)])
 checked([PYTHON, '-m', 'pip', 'install', str(WESEP_SOURCE)])
-ENV['PYTHONPATH'] = str(WESEP_SOURCE) + os.pathsep + str(WORK) + os.pathsep + ENV.get('PYTHONPATH', '')
+# The upstream wheel omits wesep/utils because that directory has no
+# __init__.py. Overlay the complete checkout onto site-packages so imports do
+# not depend on PYTHONPATH or notebook process state.
+site_packages = Path(subprocess.check_output(
+    [PYTHON, '-c', 'import site; print(site.getsitepackages()[0])'],
+    env=ENV, text=True).strip())
+installed_wesep = site_packages/'wesep'
+shutil.copytree(WESEP_SOURCE/'wesep', installed_wesep, dirs_exist_ok=True)
+missing_utility = installed_wesep/'utils'/'utils.py'
+if not missing_utility.is_file():
+    raise RuntimeError(f'WeSep repair failed; missing {{missing_utility}}')
+ENV['PYTHONPATH'] = str(WORK) + os.pathsep + ENV.get('PYTHONPATH', '')
 
 print('3/4: Selecting the CUDA ONNX runtime', flush=True)
 checked([PYTHON, '-m', 'pip', 'uninstall', '-y', 'onnxruntime', 'onnxruntime-gpu'])
@@ -143,11 +156,10 @@ ENV['LD_LIBRARY_PATH'] = library_dirs + ':' + ENV.get('LD_LIBRARY_PATH', '')
 print('4/4: Verifying GPU imports and focused behavior tests', flush=True)
 verification = """import torch,onnxruntime as ort,wrapt,wesep
 import chainofrules,repeat_evidence
-assert '/vendor/wesep/' in wesep.__file__.replace('\\\\', '/'), wesep.__file__
 print('Torch:', torch.__version__, 'CUDA build:', torch.version.cuda)
 print('GPU:', torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'NONE (local CPU)')
 print('ONNX providers:', ort.get_available_providers())
-print('WeSep source:', wesep.__file__)
+print('WeSep repaired package:', wesep.__file__)
 """
 if ON_KAGGLE:
     verification += "assert torch.cuda.is_available(), 'Kaggle GPU is unavailable'\\nassert 'CUDAExecutionProvider' in ort.get_available_providers(), 'GPU ONNX runtime is unavailable'\\n"
