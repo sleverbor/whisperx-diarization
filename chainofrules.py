@@ -268,6 +268,7 @@ def resolve_segment(segment, target_track, mapping_confidence):
     mouth_motion = None
     echo = None
     visible = None
+    overlap = None
     for item in segment.evidence:
         # Presence/context describes the scene, not the active speaker.
         if item.source in ("target_face_visible", "visual_context"):
@@ -279,6 +280,9 @@ def resolve_segment(segment, target_track, mapping_confidence):
             continue
         if item.source == "target_mouth_motion":
             mouth_motion = item
+            continue
+        if item.source == "overlapping_speakers":
+            overlap = item
             continue
         if item.source == "question_response":
             response = item
@@ -324,7 +328,10 @@ def resolve_segment(segment, target_track, mapping_confidence):
                       and visible is not None and visible.details.get("target_visible_hint", False)
                       and len(profiles) >= 2 and max(profiles.values()) < 0.30
                       and matched_track == target_track and voice.confidence < 0.5)
-    if echo_inference:
+    if overlap is not None and overlap.details.get("target_and_non_target", False):
+        final = "Overlapping_Speakers"
+        reasons.append("target and non-target diarization tracks overlap; text speaker is unresolved")
+    elif echo_inference:
         final = "Target_Speaker"
         reasons.append("weak repeated-question inference with face continuity and weak supporting voice profile; not voice-verified")
     elif visual_inference:
@@ -346,7 +353,9 @@ def resolve_segment(segment, target_track, mapping_confidence):
     segment.final_speaker = final
     # Avoid baseline-only certainty and account for weak global separation.
     segment.final_confidence = float(min(abs(normalized), weight / 1.55))
-    if verified_correction:
+    if overlap is not None and overlap.details.get("target_and_non_target", False):
+        segment.final_confidence = 0.0
+    elif verified_correction:
         segment.final_confidence = float(min(voice.confidence, abs(voice.target_score),
                                              details["track_margin"] / 0.20))
     if echo_inference:
@@ -379,6 +388,45 @@ def voice_mapping_confidence(ranked, means, sample_counts):
         return min(1.0, max(0.0, (means[track] - 0.18) / 0.15))
     separation = means[ranked[0]] - means[ranked[1]]
     return min(1.0, max(0.0, separation / 0.15))
+
+
+def add_overlap_evidence(segment, diarization_rows, target_track, minimum_seconds=0.15):
+    """Mark simultaneous target/non-target activity without assigning the words."""
+    rows = []
+    for row in diarization_rows:
+        start = max(segment.start, float(row["start"]))
+        end = min(segment.end, float(row["end"]))
+        if end > start:
+            rows.append((start, end, str(row["speaker"])))
+    intervals, pairs = [], set()
+    for index, first in enumerate(rows):
+        for second in rows[index + 1:]:
+            if first[2] == second[2]:
+                continue
+            start, end = max(first[0], second[0]), min(first[1], second[1])
+            if end > start:
+                intervals.append((start, end))
+                pairs.add(tuple(sorted((first[2], second[2]))))
+    if not intervals:
+        return
+    merged = []
+    for start, end in sorted(intervals):
+        if merged and start <= merged[-1][1]:
+            merged[-1] = (merged[-1][0], max(merged[-1][1], end))
+        else:
+            merged.append((start, end))
+    duration = sum(end - start for start, end in merged)
+    if duration < minimum_seconds:
+        return
+    tracks = sorted({track for _, _, track in rows})
+    segment.evidence.append(Evidence("overlapping_speakers", 0.0, 0.0, {
+        "overlap_seconds": duration,
+        "overlap_fraction": duration / max(segment.end - segment.start, 1e-9),
+        "tracks": tracks,
+        "track_pairs": [list(pair) for pair in sorted(pairs)],
+        "target_and_non_target": target_track in tracks and any(t != target_track for t in tracks),
+        "note": "Simultaneous diarization tracks do not identify which speaker produced the ASR text.",
+    }))
 
 
 def main():
@@ -616,12 +664,14 @@ def main():
 
     try:
         all_tracks = {str(track) for track in diarize_segments["speaker"].dropna().unique()}
+        diarization_rows = diarize_segments.to_dict("records")
         for index, segment in enumerate(timeline):
             previous = timeline[index - 1] if index else None
             following = timeline[index + 1] if index + 1 < len(timeline) else None
             collect_voice(segment, previous, following)
             collect_visual(segment)
             collect_semantic(segment)
+            add_overlap_evidence(segment, diarization_rows, target_track)
             add_question_response_evidence(segment, previous, all_tracks, target_track, mapping_confidence)
             add_brief_exchange_evidence(segment, previous, all_tracks, target_track, mapping_confidence)
             add_echo_question_evidence(segment, previous, all_tracks, target_track, mapping_confidence)
