@@ -363,6 +363,24 @@ def resolve_segment(segment, target_track, mapping_confidence):
     segment.reasons = reasons
 
 
+def voice_mapping_confidence(ranked, means, sample_counts):
+    """Return mapping strength without inventing a competing speaker.
+
+    A well-sampled lone track can be mapped by absolute reference affinity.
+    The 0.18 floor leaves weak or borderline single-track clips uncertain;
+    0.33 reaches full strength. Multi-track clips continue to use separation.
+    """
+    if not ranked:
+        return 0.0
+    if len(ranked) == 1:
+        track = ranked[0]
+        if sample_counts.get(track, 0) < 3:
+            return 0.0
+        return min(1.0, max(0.0, (means[track] - 0.18) / 0.15))
+    separation = means[ranked[0]] - means[ranked[1]]
+    return min(1.0, max(0.0, separation / 0.15))
+
+
 def main():
     parser = argparse.ArgumentParser(description="Resolve a supplied target voice in any video.")
     parser.add_argument("video", nargs="?", default="short.mp4")
@@ -530,7 +548,8 @@ def main():
     # No invented competitor when only one cluster has usable speech.
     other_mean = means[ranked[1]] if len(ranked) > 1 else None
     separation = target_mean - other_mean if other_mean is not None else 0.0
-    mapping_confidence = min(1.0, max(0.0, separation / 0.15))
+    mapping_confidence = voice_mapping_confidence(
+        ranked, means, {track: len(scores) for track, scores in cluster_scores.items()})
     print("\n--- Baseline voice affinity ---")
     for track in ranked:
         print(f"{track}: {means[track]:.3f} ({len(cluster_scores[track])} samples)")
