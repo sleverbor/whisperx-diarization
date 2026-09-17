@@ -99,6 +99,49 @@ class ShortAnswerTests(unittest.TestCase):
             if margin < 0.05:
                 self.assertLessEqual(reply.final_confidence, 0.25)
 
+    def test_strong_voice_and_target_mouth_recover_secondary_cluster(self):
+        for similarity in (0.374, 0.474, 0.504, 0.528, 0.567):
+            with self.subTest(similarity=similarity):
+                reply = self.reply(start=215.0, end=217.7, raw="SPEAKER_03",
+                                   text="Known target passage")
+                reply.evidence = [
+                    Evidence("local_voice", 0.2, 1.0,
+                        {"similarity": similarity, "best_track": "SPEAKER_03",
+                         "track_margin": 0.1,
+                         "track_similarities": {"SPEAKER_03": 0.5, "SPEAKER_04": 0.4}}),
+                    Evidence("target_face_visible", 0, 0,
+                             {"target_visible_hint": True}),
+                    Evidence("target_mouth_motion", 1.0, 0.2),
+                ]
+                resolve_segment(reply, "SPEAKER_04", 1.0)
+                self.assertEqual(reply.final_speaker, "Target_Speaker")
+                self.assertAlmostEqual(reply.final_confidence, similarity, places=3)
+                self.assertTrue(any("local target voice" in reason for reason in reply.reasons))
+
+    def test_secondary_cluster_recovery_requires_all_three_signals(self):
+        def evidence(similarity=0.5, visible=True, motion=True, voice_strength=1.0):
+            values = [
+                Evidence("local_voice", 0.2, voice_strength,
+                         {"similarity": similarity, "track_similarities": {"SPEAKER_03": 0.5}}),
+                Evidence("target_face_visible", 0, 0,
+                         {"target_visible_hint": visible}),
+            ]
+            if motion:
+                values.append(Evidence("target_mouth_motion", 1.0, 0.2))
+            return values
+        cases = [
+            evidence(similarity=0.349),
+            evidence(visible=False),
+            evidence(motion=False),
+            evidence(voice_strength=0.49),
+        ]
+        for values in cases:
+            with self.subTest(values=values):
+                reply = self.reply(start=215.0, end=217.7, raw="SPEAKER_03")
+                reply.evidence = values
+                resolve_segment(reply, "SPEAKER_04", 1.0)
+                self.assertNotEqual(reply.final_speaker, "Target_Speaker")
+
     def test_face_identity_continues_through_head_turn_but_not_bbox_jump(self):
         class Capture:
             index = 0

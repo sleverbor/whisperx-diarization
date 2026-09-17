@@ -325,6 +325,19 @@ def resolve_segment(segment, target_track, mapping_confidence):
                         and len(details.get("track_similarities", {})) >= 2
                         and details.get("track_margin", 1.0) < 0.05
                         and max(details["track_similarities"].values()) < 0.35)
+    # Pyannote may split one person across tracks over a long recording. Recover
+    # only a segment with three agreeing signals: a strong direct reference
+    # match, a recognized target face, and motion of that target's mouth.
+    local_similarity = details.get("similarity")
+    audiovisual_target_recovery = (
+        raw != target_track
+        and mapping_confidence >= 0.75
+        and voice is not None and voice.confidence >= 0.5
+        and local_similarity is not None and local_similarity >= 0.35
+        and visible is not None and visible.details.get("target_visible_hint", False)
+        and mouth_motion is not None and mouth_motion.confidence > 0
+        and mouth_motion.target_score > 0
+    )
     echo_inference = (echo is not None and echo.details["candidate_track"] == target_track
                       and visible is not None and visible.details.get("target_visible_hint", False)
                       and len(profiles) >= 2 and max(profiles.values()) < 0.30
@@ -332,6 +345,9 @@ def resolve_segment(segment, target_track, mapping_confidence):
     if overlap is not None and overlap.details.get("target_and_non_target", False):
         final = "Overlapping_Speakers"
         reasons.append("target and non-target diarization tracks overlap; text speaker is unresolved")
+    elif audiovisual_target_recovery:
+        final = "Target_Speaker"
+        reasons.append("strong local target voice agrees with recognized target mouth motion")
     elif echo_inference:
         final = "Target_Speaker"
         reasons.append("weak repeated-question inference with face continuity and weak supporting voice profile; not voice-verified")
@@ -356,6 +372,8 @@ def resolve_segment(segment, target_track, mapping_confidence):
     segment.final_confidence = float(min(abs(normalized), weight / 1.55))
     if overlap is not None and overlap.details.get("target_and_non_target", False):
         segment.final_confidence = 0.0
+    elif audiovisual_target_recovery:
+        segment.final_confidence = float(min(0.65, local_similarity, voice.confidence))
     elif verified_correction:
         segment.final_confidence = float(min(voice.confidence, abs(voice.target_score),
                                              details["track_margin"] / 0.20))
