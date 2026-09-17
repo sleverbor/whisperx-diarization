@@ -56,7 +56,7 @@ def main():
 import subprocess, sys, os, json, shutil, time, zipfile
 
 VIDEO_URL = 'https://www.youtube.com/watch?v=uAtiEviUzGA'
-NOTEBOOK_REVISION = 'confidence-filtered-transcript-v10'
+NOTEBOOK_REVISION = 'stereo-overlap-review-v11'
 RUN_FULL_VIDEO = True
 RUN_TARGETED_REVIEW = True
 RUN_OVERLAP_EXTRACTION = True
@@ -359,7 +359,7 @@ print('Saved in:', BASE)
 
     notebook = {
         "cells": [
-            cell("markdown", "# Current-video full diarization test\n\nAttach a Kaggle dataset containing `uAtiEviUzGA.mp4`. This notebook runs the unchanged evidence-based baseline, finds repeated presentations, and evaluates uncertain overlap intervals with target-conditioned extraction. Supplemental stages never overwrite the baseline.\n"),
+            cell("markdown", "# Current-video full diarization test\n\nAttach a Kaggle dataset containing `uAtiEviUzGA.mp4`. This notebook runs the evidence-based baseline, finds repeated presentations, and evaluates uncertain overlap intervals with target-conditioned extraction plus conditional stereo-channel review. Supplemental stages never overwrite the baseline.\n"),
             cell("code", config),
             cell("markdown", "## Install and verify\n\nEnable Internet and a GPU before running. The setup uses an isolated environment and verifies CUDA before the full video starts.\n"),
             cell("code", "import base64\n" + setup),

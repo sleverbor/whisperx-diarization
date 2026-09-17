@@ -5,8 +5,10 @@ baseline text, timing, evidence, confidence, or speaker identity.
 """
 
 import argparse
+from collections import Counter
 import json
 from pathlib import Path
+import re
 import subprocess
 
 import numpy as np
@@ -47,6 +49,60 @@ def unit(vector):
 
 def rms(wave):
     return float(np.sqrt(np.mean(np.asarray(wave, dtype=np.float32) ** 2)))
+
+
+def stereo_metrics(wave):
+    """Measure whether stereo contains information beyond duplicated mono."""
+    wave = np.asarray(wave, dtype=np.float32)
+    if wave.ndim != 2 or wave.shape[1] != 2 or len(wave) < 2:
+        return {"available": False, "distinct": False}
+    left, right = wave[:, 0], wave[:, 1]
+    middle, side = (left + right) / 2, (left - right) / 2
+    correlation = float(np.corrcoef(left, right)[0, 1])
+    side_to_middle_db = float(20 * np.log10(
+        (rms(side) + 1e-12) / (rms(middle) + 1e-12)
+    ))
+    # Lossy encoders can make duplicated channels differ by tiny amounts. Analyze
+    # channels only when the difference is large enough to carry real content.
+    distinct = bool(np.isfinite(correlation) and correlation < 0.98
+                    and side_to_middle_db >= -25.0)
+    return {
+        "available": True,
+        "distinct": distinct,
+        "correlation": correlation,
+        "side_to_middle_db": side_to_middle_db,
+        "left_to_right_level_db": float(20 * np.log10(
+            (rms(left) + 1e-12) / (rms(right) + 1e-12)
+        )),
+    }
+
+
+def stereo_signals(wave):
+    wave = np.asarray(wave, dtype=np.float32)
+    left, right = wave[:, 0], wave[:, 1]
+    return {
+        "left": left,
+        "right": right,
+        "middle": (left + right) / 2,
+        "difference": (left - right) / 2,
+    }
+
+
+def corroborated_novel_words(transcriptions, baseline_text, minimum_views=2):
+    """Return words absent from baseline and decoded in independent views."""
+    tokens = lambda text: re.findall(r"[a-z0-9']+", str(text).casefold())
+    baseline_words = set(tokens(baseline_text))
+    support = Counter()
+    views = {}
+    for name, text in transcriptions.items():
+        for word in set(tokens(text)) - baseline_words:
+            support[word] += 1
+            views.setdefault(word, []).append(name)
+    return [
+        {"word": word, "support": support[word], "views": sorted(views[word])}
+        for word in sorted(support)
+        if support[word] >= minimum_views
+    ]
 
 
 def transcribe(model, wave):
@@ -95,18 +151,23 @@ def main():
     if args.maximum_segments is not None:
         selected = selected[:args.maximum_segments]
 
-    source_audio = args.output_dir / "source-16khz.wav"
+    source_stereo = args.output_dir / "source-stereo-16khz.wav"
     subprocess.run(
         [
             "ffmpeg", "-nostdin", "-hide_banner", "-loglevel", "error", "-y",
-            "-i", str(args.video), "-vn", "-ac", "1", "-ar", "16000",
-            str(source_audio),
+            "-i", str(args.video), "-vn", "-ac", "2", "-ar", "16000",
+            str(source_stereo),
         ],
         check=True,
     )
-    full_wave, sample_rate = sf.read(source_audio, dtype="float32")
+    full_stereo, sample_rate = sf.read(
+        source_stereo, dtype="float32", always_2d=True
+    )
     if sample_rate != 16000:
         raise RuntimeError(f"Unexpected extracted sample rate: {sample_rate}")
+    full_wave = full_stereo.mean(axis=1)
+    source_audio = args.output_dir / "source-16khz.wav"
+    sf.write(source_audio, full_wave, sample_rate)
 
     extractor = (
         wesep.load_model_local(str(args.wesep_model_dir))
@@ -142,6 +203,7 @@ def main():
             len(full_wave), round(end * sample_rate)
         )
         original = full_wave[left:right]
+        original_stereo = full_stereo[left:right]
         if len(original) < 1:
             continue
         original_path = args.output_dir / f"current-{baseline_index:04d}.wav"
@@ -181,6 +243,43 @@ def main():
             retention,
             extracted_asr["text"],
         )
+        channel_metrics = stereo_metrics(original_stereo)
+        stereo_review = {
+            "analyzed": False,
+            "metrics": channel_metrics,
+            "status": "channels_not_distinct",
+            "review_required": True,
+        }
+        if channel_metrics.get("distinct", False):
+            channel_audio = stereo_signals(original_stereo)
+            channel_results = {}
+            for name, wave in channel_audio.items():
+                channel_results[name] = {
+                    "target_similarity": similarity(wave),
+                    "rms": rms(wave),
+                    "transcription": transcribe(whisper, wave),
+                }
+            transcriptions = {
+                name: value["transcription"]["text"]
+                for name, value in channel_results.items()
+            }
+            novel = corroborated_novel_words(
+                transcriptions, segment.get("text", "")
+            )
+            stereo_review = {
+                "analyzed": True,
+                "metrics": channel_metrics,
+                "signals": channel_results,
+                "corroborated_novel_words": novel,
+                "status": ("corroborated_words_for_review" if novel
+                           else "distinct_channels_no_corroborated_new_words"),
+                "speaker": "Uncertain",
+                "review_required": True,
+                "note": (
+                    "Channel decoding is supplemental evidence. Words require "
+                    "speaker review and are never inserted into the baseline."
+                ),
+            }
         results.append({
             "baseline_index": baseline_index,
             "start": start,
@@ -202,6 +301,7 @@ def main():
                 "transcription": extracted_asr,
                 "audio": str(extracted_path.relative_to(args.output_dir)),
             },
+            "stereo": stereo_review,
             "status": status,
             "review_required": True,
             "baseline_modified": False,
@@ -214,8 +314,11 @@ def main():
         )
 
     counts = {}
+    stereo_counts = {}
     for row in results:
         counts[row["status"]] = counts.get(row["status"], 0) + 1
+        stereo_status = row.get("stereo", {}).get("status", "not_available")
+        stereo_counts[stereo_status] = stereo_counts.get(stereo_status, 0) + 1
     report = {
         "review_required": True,
         "baseline_modified": False,
@@ -225,14 +328,20 @@ def main():
             "suppressed_below_energy_retention": 0.10,
             "candidate_minimum_energy_retention": 0.10,
             "candidate_minimum_similarity_gain": 0.10,
+            "stereo_maximum_channel_correlation": 0.98,
+            "stereo_minimum_side_to_middle_db": -25.0,
+            "stereo_novel_word_minimum_views": 2,
         },
-        "summary": {"selected": len(selected), "completed": len(results), "status": counts},
+        "summary": {"selected": len(selected), "completed": len(results),
+                    "status": counts, "stereo_status": stereo_counts},
         "segments": results,
     }
     (args.output_dir / "report.json").write_text(json.dumps(report, indent=2) + "\n")
     lines = [
         f"[{row['start']:.2f}-{row['end']:.2f}] {row['status']}: "
-        f"{row.get('extracted', {}).get('transcription', {}).get('text', '')}"
+        f"{row.get('extracted', {}).get('transcription', {}).get('text', '')}; "
+        f"stereo={row.get('stereo', {}).get('status', 'not_available')}; "
+        f"novel={','.join(item['word'] for item in row.get('stereo', {}).get('corroborated_novel_words', []))}"
         for row in results
     ]
     (args.output_dir / "review.txt").write_text("\n".join(lines) + "\n")
