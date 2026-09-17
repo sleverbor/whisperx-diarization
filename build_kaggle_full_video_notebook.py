@@ -32,11 +32,12 @@ def main():
         "chainofrules.py", "cloud_runtime.py", "repeat_evidence.py",
         "recover_transcript_gaps.py", "review_audio_window.py",
         "review_transcript_regions.py", "review_overlap_extraction.py",
+        "export_confident_transcript.py",
         "test_cloud_runtime.py", "test_short_answers.py",
         "test_transcript_gaps.py", "test_window_review.py",
         "test_review_regions.py", "test_repeat_evidence.py",
         "test_overlap_resolution.py", "test_overlap_extraction_review.py",
-        "test_single_speaker_mapping.py",
+        "test_single_speaker_mapping.py", "test_confident_transcript.py",
     ]
     embedded = {name: (ROOT / name).read_text() for name in source_names}
     binary_paths = {
@@ -55,7 +56,7 @@ def main():
 import subprocess, sys, os, json, shutil, time, zipfile
 
 VIDEO_URL = 'https://www.youtube.com/watch?v=uAtiEviUzGA'
-NOTEBOOK_REVISION = 'strict-repeat-corroboration-v9'
+NOTEBOOK_REVISION = 'confidence-filtered-transcript-v10'
 RUN_FULL_VIDEO = True
 RUN_TARGETED_REVIEW = True
 RUN_OVERLAP_EXTRACTION = True
@@ -172,7 +173,7 @@ if ON_KAGGLE:
 checked([PYTHON, '-c', verification], cwd=WORK)
 checked([PYTHON, '-m', 'unittest', 'test_cloud_runtime', 'test_short_answers',
          'test_repeat_evidence', 'test_overlap_resolution',
-         'test_overlap_extraction_review'], cwd=WORK)
+         'test_overlap_extraction_review', 'test_confident_transcript'], cwd=WORK)
 
 import hashlib
 REFERENCE_FILES = {pprint.pformat(encoded, width=100)}
@@ -330,6 +331,12 @@ if RUN_FULL_VIDEO:
     if decoded_visual_segments == 0:
         raise RuntimeError('No full-video frames were decoded; supplemental reviews were not started.')
     print('Full-video segments with decoded visual frames:', decoded_visual_segments)
+    confident_dir = RESULTS/'confidence-filtered-transcript'
+    checked([PYTHON, str(WORK/'export_confident_transcript.py'),
+             str(RESULTS/'full_video_evidence.json'),
+             '--output-dir', str(confident_dir),
+             '--target-minimum', '0.35', '--other-minimum', '0.65'], cwd=WORK)
+    print('Confidence-filtered transcript:', confident_dir/'confident_transcript.txt')
     if RUN_TARGETED_REVIEW:
         targeted_review = run_targeted_review()
         print('Targeted review:', json.dumps(targeted_review, indent=2))
