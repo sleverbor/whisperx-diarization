@@ -55,7 +55,7 @@ def main():
 import subprocess, sys, os, json, shutil, time, zipfile
 
 VIDEO_URL = 'https://www.youtube.com/watch?v=uAtiEviUzGA'
-NOTEBOOK_REVISION = 'h264-full-video-v6'
+NOTEBOOK_REVISION = 'validated-h264-full-video-v7'
 RUN_FULL_VIDEO = True
 RUN_TARGETED_REVIEW = True
 RUN_OVERLAP_EXTRACTION = True
@@ -78,7 +78,7 @@ RESULTS = BASE/'results'; RESULTS.mkdir(exist_ok=True)
 CACHE = BASE/'stage-cache'
 VENV = BASE/'diarization-venv'
 PYTHON = str(VENV/('Scripts/python.exe' if os.name == 'nt' else 'bin/python'))
-VIDEO = WORK/'video.mp4'
+VIDEO = WORK/'video-h264-v7.mp4'
 REFERENCE = WORK/'target-reference'; REFERENCE.mkdir(exist_ok=True)
 print('Video URL:', VIDEO_URL)
 print('Notebook revision:', NOTEBOOK_REVISION)
@@ -220,6 +220,13 @@ if not VIDEO.exists():
              '-i', str(source_video), '-map', '0:v:0', '-map', '0:a:0',
              '-c:v', 'libx264', '-preset', 'fast', '-crf', '22',
              '-pix_fmt', 'yuv420p', '-c:a', 'aac', '-b:a', '160k', str(VIDEO)])
+video_codec = subprocess.check_output(
+    ['ffprobe', '-v', 'error', '-select_streams', 'v:0',
+     '-show_entries', 'stream=codec_name', '-of', 'default=nw=1:nk=1', str(VIDEO)],
+    env=ENV, text=True).strip()
+if video_codec != 'h264':
+    raise RuntimeError(f'Expected normalized H.264 video, found {{video_codec!r}}')
+print('Normalized video codec:', video_codec)
 print('Credentials configured; token not displayed.')
 print('Video ready:', VIDEO, VIDEO.stat().st_size, 'bytes')
 '''
