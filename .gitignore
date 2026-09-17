@@ -33,5 +33,7 @@ separated/
 # Cloud runner sources and local stage checkpoints
 !cloud_runtime.py
 !test_cloud_runtime.py
+!reference_promotion.py
+!test_reference_promotion.py
 .cloud-cache/
 !prepare_kaggle_bundle.py

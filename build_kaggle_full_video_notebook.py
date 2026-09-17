@@ -32,12 +32,13 @@ def main():
         "chainofrules.py", "cloud_runtime.py", "repeat_evidence.py",
         "recover_transcript_gaps.py", "review_audio_window.py",
         "review_transcript_regions.py", "review_overlap_extraction.py",
-        "export_confident_transcript.py",
+        "export_confident_transcript.py", "reference_promotion.py",
         "test_cloud_runtime.py", "test_short_answers.py",
         "test_transcript_gaps.py", "test_window_review.py",
         "test_review_regions.py", "test_repeat_evidence.py",
         "test_overlap_resolution.py", "test_overlap_extraction_review.py",
         "test_single_speaker_mapping.py", "test_confident_transcript.py",
+        "test_reference_promotion.py",
     ]
     embedded = {name: (ROOT / name).read_text() for name in source_names}
     binary_paths = {
@@ -56,7 +57,7 @@ def main():
 import subprocess, sys, os, json, shutil, time, zipfile
 
 VIDEO_URL = 'https://www.youtube.com/watch?v=uAtiEviUzGA'
-NOTEBOOK_REVISION = 'stereo-insertions-only-v12'
+NOTEBOOK_REVISION = 'reference-promotion-review-v13'
 RUN_FULL_VIDEO = True
 RUN_TARGETED_REVIEW = True
 RUN_OVERLAP_EXTRACTION = True
@@ -173,7 +174,8 @@ if ON_KAGGLE:
 checked([PYTHON, '-c', verification], cwd=WORK)
 checked([PYTHON, '-m', 'unittest', 'test_cloud_runtime', 'test_short_answers',
          'test_repeat_evidence', 'test_overlap_resolution',
-         'test_overlap_extraction_review', 'test_confident_transcript'], cwd=WORK)
+         'test_overlap_extraction_review', 'test_confident_transcript',
+         'test_reference_promotion'], cwd=WORK)
 
 import hashlib
 REFERENCE_FILES = {pprint.pformat(encoded, width=100)}
@@ -312,6 +314,14 @@ def run_overlap_extraction():
         export_checkpoints()
     assert (RESULTS/'full_video_evidence.json').read_bytes() == before
     return json.loads((output_dir/'report.json').read_text())
+
+def export_reference_promotion_review():
+    output_dir = RESULTS/'reference-promotion-review'
+    command = [PYTHON, str(WORK/'reference_promotion.py'), 'export',
+        '--video', str(VIDEO), '--evidence', str(RESULTS/'full_video_evidence.json'),
+        '--output-dir', str(output_dir), '--source-url', VIDEO_URL]
+    checked(command, cwd=WORK)
+    return json.loads((output_dir/'manifest.json').read_text())
 '''
 
     run = '''opening_clip = extract_clip(0, 30, 'opening_30s.mp4')
@@ -343,6 +353,8 @@ if RUN_FULL_VIDEO:
     if RUN_OVERLAP_EXTRACTION:
         overlap_review = run_overlap_extraction()
         print('Overlap extraction:', json.dumps(overlap_review['summary'], indent=2))
+    promotion_review = export_reference_promotion_review()
+    print('Reference promotion candidates:', len(promotion_review['candidates']))
 else:
     print('Full video disabled. Review the opening result, then set RUN_FULL_VIDEO=True.')
 '''
