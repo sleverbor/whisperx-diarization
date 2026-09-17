@@ -65,6 +65,19 @@ class OverlapExtractionReviewTests(unittest.TestCase):
             "views": ["difference", "left"],
         }])
 
+    def test_repeated_substitution_is_not_recovered_speech(self):
+        transcripts = {
+            "left": "I am going to see you.",
+            "right": "I am going to see you.",
+            "middle": "I am going to see you.",
+        }
+        self.assertEqual(
+            corroborated_novel_words(
+                transcripts, "I am going to sue you."
+            ),
+            [],
+        )
+
 
 if __name__ == "__main__":
     unittest.main()

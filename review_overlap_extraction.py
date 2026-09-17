@@ -6,6 +6,7 @@ baseline text, timing, evidence, confidence, or speaker identity.
 
 import argparse
 from collections import Counter
+from difflib import SequenceMatcher
 import json
 from pathlib import Path
 import re
@@ -89,13 +90,24 @@ def stereo_signals(wave):
 
 
 def corroborated_novel_words(transcriptions, baseline_text, minimum_views=2):
-    """Return words absent from baseline and decoded in independent views."""
+    """Return inserted words decoded in independent views.
+
+    Replacement hypotheses such as sue/see or city/scene are transcription
+    disagreements, not recovered concurrent speech, and are intentionally
+    excluded here.
+    """
     tokens = lambda text: re.findall(r"[a-z0-9']+", str(text).casefold())
-    baseline_words = set(tokens(baseline_text))
+    baseline_words = tokens(baseline_text)
     support = Counter()
     views = {}
     for name, text in transcriptions.items():
-        for word in set(tokens(text)) - baseline_words:
+        candidate_words = tokens(text)
+        inserted = set()
+        for tag, _, _, candidate_start, candidate_end in SequenceMatcher(
+                None, baseline_words, candidate_words).get_opcodes():
+            if tag == "insert":
+                inserted.update(candidate_words[candidate_start:candidate_end])
+        for word in inserted:
             support[word] += 1
             views.setdefault(word, []).append(name)
     return [
