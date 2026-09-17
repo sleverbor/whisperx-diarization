@@ -14,12 +14,15 @@ import zipfile
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--project',type=Path,required=True)
+    parser.add_argument('--original',type=Path,
+                        help='Reference directory used as the control (defaults to project root)')
     parser.add_argument('--candidate',type=Path,required=True)
     parser.add_argument('--output-dir',type=Path,required=True)
     parser.add_argument('--opening-checkpoints',type=Path,required=True)
     parser.add_argument('--second-checkpoints',type=Path,required=True)
     parser.add_argument('--second-video',type=Path,required=True)
     args=parser.parse_args()
+    args.original = args.original or args.project
     sys.path.insert(0,str(args.project));os.environ['MPLBACKEND']='Agg'
     from dotenv import load_dotenv
     load_dotenv(args.project/'.env')
@@ -42,7 +45,7 @@ def main():
         if clip=='second':
             from cloud_runtime import file_digest
             assert file_digest(video)==frozen['manifest']['inputs']['video'],'Second clip does not match checkpoint'
-        for reference,prior_dir in [('original',args.project),('candidate',args.candidate)]:
+        for reference,prior_dir in [('original',args.original),('candidate',args.candidate)]:
             if (args.output_dir/f'{clip}_{reference}.json').exists(): continue
             class FrozenUpstream(StageCache):
                 def __init__(self,*unused):

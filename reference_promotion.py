@@ -256,7 +256,7 @@ def promote(args):
         "schema_version": 1,
         "method": "reviewed post-run promotion; versioned and reversible",
         "parent_reference": {
-            "path": str(args.parent_reference.resolve()),
+            "path": str(args.parent_reference),
             "voice_embeddings_sha256": file_hash(parent_voice_path),
             "reference_json_sha256": (file_hash(parent_metadata_path)
                                       if parent_metadata_path.exists() else None),

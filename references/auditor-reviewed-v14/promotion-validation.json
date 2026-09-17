@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "checks": {
+    "all_candidates_match_parent": true,
+    "centroid_shift_is_bounded": true,
+    "existing_reference_affinity_is_preserved": true
+  },
+  "thresholds": {
+    "minimum_parent_similarity": 0.5,
+    "minimum_centroid_similarity": 0.995,
+    "maximum_existing_median_drop": 0.01
+  },
+  "candidate_similarity_to_parent_centroid": [
+    0.5811610221862793,
+    0.5318299531936646
+  ],
+  "old_to_new_centroid_similarity": 0.9957049489021301,
+  "existing_reference_median_affinity_drop": -0.0021377205848693848
+}

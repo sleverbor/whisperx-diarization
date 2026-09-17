@@ -1,0 +1,223 @@
+{
+  "schema_version": 1,
+  "method": "reviewed post-run promotion; versioned and reversible",
+  "parent_reference": {
+    "path": "references/auditor-kaggle-v13-parent",
+    "voice_embeddings_sha256": "db57011880060a7d86f4b59fe825dc39e1ce17b6f7cd5bf2b5d734b881aba6e0",
+    "reference_json_sha256": "5a2663e26a6125c0110063e97c684adcd223d30785f453d4aa440bc0c668feaa",
+    "metadata": {
+      "method": "manual identity approval followed by consistency screening",
+      "screening": {
+        "voice": {
+          "anchor_row": 4,
+          "accepted_rows": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "excluded_rows": [
+            8,
+            16
+          ],
+          "similarity_to_anchor": {
+            "0": 0.6532727479934692,
+            "1": 0.6680824160575867,
+            "2": 0.6306090354919434,
+            "3": 0.646734356880188,
+            "4": 1.000000238418579,
+            "5": 0.6965258121490479,
+            "6": 0.6666703224182129,
+            "7": 0.6944043636322021,
+            "8": 0.38756507635116577,
+            "9": 0.5364924073219299,
+            "10": 0.5564968585968018,
+            "11": 0.5654509663581848,
+            "12": 0.512606680393219,
+            "13": 0.5957561135292053,
+            "14": 0.47715938091278076,
+            "15": 0.5691323280334473,
+            "16": 0.4271957278251648
+          },
+          "minimum_similarity": 0.45
+        },
+        "face": {
+          "anchor_row": 19,
+          "accepted_rows": [
+            2,
+            3,
+            4,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "excluded_rows": [
+            0,
+            1,
+            5,
+            6,
+            7,
+            8
+          ],
+          "similarity_to_anchor": {
+            "0": 0.4175480604171753,
+            "1": 0.3561747074127197,
+            "2": 0.6646588444709778,
+            "3": 0.6110363602638245,
+            "4": 0.60605788230896,
+            "5": 0.4171046018600464,
+            "6": 0.4194202721118927,
+            "7": 0.39640265703201294,
+            "8": 0.4354481101036072,
+            "9": 0.49333035945892334,
+            "10": 0.5171469449996948,
+            "11": 0.46112269163131714,
+            "12": 0.5093881487846375,
+            "13": 0.7362096309661865,
+            "14": 0.6755529046058655,
+            "15": 0.6307493448257446,
+            "16": 0.6951901912689209,
+            "17": 0.599500298500061,
+            "18": 0.8330079317092896,
+            "19": 1.0,
+            "20": 0.9299063086509705
+          },
+          "minimum_similarity": 0.45
+        }
+      },
+      "voice_sources": [
+        "d95db55791ea4bb69d9a4cb617865d4d",
+        "5cc80649c40f4f1aaa587e75442e7f43",
+        "980bb916ef8b49f0aea7de58ff85c81d",
+        "02746163b3d247e390cddd1c1faf623d",
+        "d2d16d5f719248cfa8dad118972791df",
+        "56d9040082984ade98387be468b09591",
+        "b1b206be98d74fbd96aeccceaec0ac08",
+        "44e6e805beec429482f5c5d5d389be93",
+        "11aeca784d8244fe8d89354d136335d8",
+        "aeb5be891d954b6586faf4ef274155bf",
+        "ff93477735b44fc1b70c076163f9c592",
+        "68a4b6e803b54d13ac4b6a1b0ba9f892",
+        "9afedaed531145b095d18fb186e6fe98",
+        "7242a5e131e54423ad84ab3141ff9ed2",
+        "e7b72ee9174d4ff9a9981c2aacdf149d",
+        "321485c5b6ca4ef485521fa3023e980c",
+        "3b78c23f71bd444f97715e38001cd485"
+      ],
+      "face_sources": [
+        "d9826fe76f4342c187b69cd24b34442c",
+        "e628cba37ec64324a1db6842d331d40f",
+        "5672d85c66864a638a4554de5b0ee48b",
+        "8351a7cc45cf43399fba99af22ae79be",
+        "19dd1dffce64448fab729b0aae5bf42a",
+        "a9f726578d9b41dcbf54321cb586f545",
+        "fc09badd40f044bbb46d81e5f6cce5f0",
+        "138c038b3b914426b9beea50e794dd8b",
+        "927726f3bae3457998d1f51576f43dbf",
+        "65d5332a90454c6d9f5338cb99e559cf",
+        "50cabd97747b4e1b9f76af1ea9a88b5a",
+        "7035e42e02a94b5f97bfc83c04ec8f9d",
+        "aeb5be891d954b6586faf4ef274155bf",
+        "ff93477735b44fc1b70c076163f9c592",
+        "68a4b6e803b54d13ac4b6a1b0ba9f892",
+        "9afedaed531145b095d18fb186e6fe98",
+        "7242a5e131e54423ad84ab3141ff9ed2",
+        "e7b72ee9174d4ff9a9981c2aacdf149d",
+        "321485c5b6ca4ef485521fa3023e980c",
+        "9009729f93f846f3b0063acff2d307d9",
+        "3b78c23f71bd444f97715e38001cd485"
+      ],
+      "short_library_ids": [],
+      "note": "No inference is an approval. Short samples excluded from the main voice centroid. Hold evaluation videos out of enrollment."
+    }
+  },
+  "promotion_review": {
+    "manifest_sha256": "b40391b18eaaabd6831f2f5270d6c31e8afd0b115c2d798c6b46915280f1101f",
+    "approvals_sha256": "11486e830e23c61092e02dc516365ae5e552b45a02b1795b72ddd7bd9503d7da",
+    "promoted_candidates": [
+      {
+        "baseline_index": 17,
+        "start": 48.608,
+        "end": 50.17,
+        "duration": 1.5620000000000047,
+        "text": "I'm standing here saying God bless homeless veterans.",
+        "raw_speaker_track": "SPEAKER_04",
+        "final_confidence": 1.0,
+        "reference_similarity": 0.5839942693710327,
+        "local_voice_strength": 1.0,
+        "review_required": true,
+        "audio": "audio/candidate-0017-48.608-50.170.wav",
+        "audio_sha256": "efba7a729328a1b37fffa6b75fd28be312fe169a98ddc555f718f3f53518d721",
+        "source": {
+          "video": "https://www.youtube.com/watch?v=uAtiEviUzGA",
+          "start": 48.608,
+          "end": 50.17
+        }
+      },
+      {
+        "baseline_index": 192,
+        "start": 545.429,
+        "end": 547.431,
+        "duration": 2.0020000000000664,
+        "text": "Your qualified immunity is not going to survive this.",
+        "raw_speaker_track": "SPEAKER_04",
+        "final_confidence": 1.0,
+        "reference_similarity": 0.5336983799934387,
+        "local_voice_strength": 1.0,
+        "review_required": true,
+        "audio": "audio/candidate-0192-545.429-547.431.wav",
+        "audio_sha256": "11fc0046341dc71b7908d5e385671e9b49c007113d14b17bf3b589694321c424",
+        "source": {
+          "video": "https://www.youtube.com/watch?v=uAtiEviUzGA",
+          "start": 545.429,
+          "end": 547.431
+        }
+      }
+    ]
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "all_candidates_match_parent": true,
+      "centroid_shift_is_bounded": true,
+      "existing_reference_affinity_is_preserved": true
+    },
+    "thresholds": {
+      "minimum_parent_similarity": 0.5,
+      "minimum_centroid_similarity": 0.995,
+      "maximum_existing_median_drop": 0.01
+    },
+    "candidate_similarity_to_parent_centroid": [
+      0.5811610221862793,
+      0.5318299531936646
+    ],
+    "old_to_new_centroid_similarity": 0.9957049489021301,
+    "existing_reference_median_affinity_drop": -0.0021377205848693848
+  },
+  "voice": {
+    "parent_rows": 15,
+    "promoted_rows": 2,
+    "total_rows": 17,
+    "enrollment_sha256": "466e862dc15915a31ef9932cefc3ee66ea650f6ca6ba08a3d90be78d121c19d7"
+  }
+}

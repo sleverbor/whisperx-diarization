@@ -18,6 +18,12 @@ separated/
 !short.mp4
 *.wav
 
+# Versioned references intentionally retain their metadata and enrollment audio.
+!references/auditor-kaggle-v13-parent/*.json
+!references/auditor-kaggle-v13-parent/*.wav
+!references/auditor-reviewed-v14/*.json
+!references/auditor-reviewed-v14/*.wav
+
 # Older experimental scripts are not part of this checkpoint
 *.py
 !chainofrules.py
