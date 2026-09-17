@@ -75,6 +75,21 @@ class ConfidentTranscriptTests(unittest.TestCase):
     def test_timestamp_supports_long_videos(self):
         self.assertEqual(timestamp(3661.25), "01:01:01.250")
 
+    def test_included_dominant_speaker_retains_overlap_warning(self):
+        value = row("Target_Speaker", .7, "Dominant target words")
+        value["evidence"] = [{
+            "source": "overlapping_speakers",
+            "target_score": 0.0,
+            "confidence": 0.0,
+            "details": {"overlap_seconds": .2, "overlap_fraction": .2,
+                        "intervals": [{"start": 1.4, "end": 1.6}]},
+        }]
+        with tempfile.TemporaryDirectory() as directory:
+            export_transcript({"segments": [value]}, directory)
+            confident = Path(directory, "confident_transcript.txt").read_text()
+        self.assertIn("unresolved overlap: 0.20s, 20% of segment", confident)
+        self.assertIn("Dominant target words", confident)
+
 
 if __name__ == "__main__":
     unittest.main()

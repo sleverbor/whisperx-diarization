@@ -355,13 +355,40 @@ def resolve_segment(segment, target_track, mapping_confidence,
         and local_similarity is not None and local_similarity >= 0.35
         and voice.target_score >= 0.15
     )
+    # A brief interruption should not erase a well-supported dominant speaker
+    # from the whole ASR segment. Keep the target attribution only when direct
+    # target-voice evidence is strong and simultaneous activity occupies a
+    # minority of the segment. The overlap intervals remain in the evidence so
+    # downstream output can show that the secondary speech is unresolved.
+    overlap_fraction = (overlap.details.get("overlap_fraction", 1.0)
+                        if overlap is not None else 0.0)
+    localized_target_overlap = (
+        overlap is not None
+        and overlap.details.get("target_and_non_target", False)
+        and overlap_fraction <= 0.35
+        and mapping_confidence >= 0.75
+        and segment.end - segment.start >= 0.6
+        and voice is not None and voice.confidence >= 0.5
+        and local_similarity is not None and local_similarity >= 0.35
+        and voice.target_score >= 0.15
+        and (raw == target_track
+             or audiovisual_target_recovery
+             or direct_secondary_target_recovery)
+    )
     echo_inference = (echo is not None and echo.details["candidate_track"] == target_track
                       and visible is not None and visible.details.get("target_visible_hint", False)
                       and len(profiles) >= 2 and max(profiles.values()) < 0.30
                       and matched_track == target_track and voice.confidence < 0.5)
-    if overlap is not None and overlap.details.get("target_and_non_target", False):
+    if overlap is not None and overlap.details.get("target_and_non_target", False) \
+            and not localized_target_overlap:
         final = "Overlapping_Speakers"
         reasons.append("target and non-target diarization tracks overlap; text speaker is unresolved")
+    elif localized_target_overlap:
+        final = "Target_Speaker"
+        reasons.append(
+            "strong target voice dominates the segment; concurrent speech is "
+            "localized in overlapping_speakers evidence and remains unresolved"
+        )
     elif audiovisual_target_recovery:
         final = "Target_Speaker"
         reasons.append("strong local target voice agrees with recognized target mouth motion")
@@ -390,8 +417,14 @@ def resolve_segment(segment, target_track, mapping_confidence,
     segment.final_speaker = final
     # Avoid baseline-only certainty and account for weak global separation.
     segment.final_confidence = float(min(abs(normalized), weight / 1.55))
-    if overlap is not None and overlap.details.get("target_and_non_target", False):
+    if overlap is not None and overlap.details.get("target_and_non_target", False) \
+            and not localized_target_overlap:
         segment.final_confidence = 0.0
+    elif localized_target_overlap:
+        segment.final_confidence = float(
+            min(0.65, local_similarity, voice.confidence) *
+            (1.0 - 0.5 * overlap_fraction)
+        )
     elif audiovisual_target_recovery:
         segment.final_confidence = float(min(0.65, local_similarity, voice.confidence))
     elif direct_secondary_target_recovery:
@@ -463,6 +496,7 @@ def add_overlap_evidence(segment, diarization_rows, target_track, minimum_second
     segment.evidence.append(Evidence("overlapping_speakers", 0.0, 0.0, {
         "overlap_seconds": duration,
         "overlap_fraction": duration / max(segment.end - segment.start, 1e-9),
+        "intervals": [{"start": start, "end": end} for start, end in merged],
         "tracks": tracks,
         "track_pairs": [list(pair) for pair in sorted(pairs)],
         "target_and_non_target": target_track in tracks and any(t != target_track for t in tracks),

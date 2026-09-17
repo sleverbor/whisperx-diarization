@@ -50,6 +50,9 @@ def export_transcript(payload, output_dir, target_minimum=0.35,
         keep, reason = classify(
             segment, target_minimum, other_minimum, ambiguous_target_tracks
         )
+        overlap = next((item for item in segment.get("evidence", [])
+                        if item.get("source") == "overlapping_speakers"), None)
+        overlap_details = overlap.get("details", {}) if overlap else {}
         row = {
             "baseline_index": index,
             "start": segment["start"],
@@ -58,6 +61,12 @@ def export_transcript(payload, output_dir, target_minimum=0.35,
             "confidence": float(segment.get("final_confidence", 0.0)),
             "text": segment.get("text", "").strip(),
             "disposition": reason,
+            "unresolved_overlap": ({
+                "seconds": float(overlap_details.get("overlap_seconds", 0.0)),
+                "fraction": float(overlap_details.get("overlap_fraction", 0.0)),
+                "intervals": overlap_details.get("intervals", []),
+            } if overlap and segment.get("final_speaker") != "Overlapping_Speakers"
+              else None),
         }
         (included if keep else review).append(row)
 
@@ -65,6 +74,10 @@ def export_transcript(payload, output_dir, target_minimum=0.35,
         values = []
         for row in rows:
             suffix = f" [{row['disposition']}]" if show_reason else ""
+            if row.get("unresolved_overlap"):
+                overlap = row["unresolved_overlap"]
+                suffix += (f" [unresolved overlap: {overlap['seconds']:.2f}s, "
+                           f"{overlap['fraction']:.0%} of segment]")
             values.append(
                 f"[{timestamp(row['start'])}–{timestamp(row['end'])}] "
                 f"{row['speaker']} ({row['confidence']:.2f}){suffix}: "
