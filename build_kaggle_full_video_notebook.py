@@ -55,7 +55,7 @@ def main():
 import subprocess, sys, os, json, shutil, time, zipfile
 
 VIDEO_URL = 'https://www.youtube.com/watch?v=uAtiEviUzGA'
-NOTEBOOK_REVISION = 'attached-current-video-v5'
+NOTEBOOK_REVISION = 'h264-full-video-v6'
 RUN_FULL_VIDEO = True
 RUN_TARGETED_REVIEW = True
 RUN_OVERLAP_EXTRACTION = True
@@ -208,12 +208,18 @@ if not VIDEO.exists():
             raise RuntimeError(
                 'Attach a Kaggle dataset containing exactly one file named '
                 'uAtiEviUzGA.mp4. YouTube blocks downloads from Kaggle.')
-        shutil.copy2(matches[0], VIDEO)
+        source_video = matches[0]
     else:
         local_video = Path.cwd()/'uAtiEviUzGA.mp4'
         if not local_video.is_file():
             raise RuntimeError(f'Missing local video: {{local_video}}')
-        shutil.copy2(local_video, VIDEO)
+        source_video = local_video
+    # The supplied YouTube video uses AV1, which Kaggle's OpenCV build cannot
+    # decode. Normalize it once so the full visual pass actually reads frames.
+    checked(['ffmpeg', '-nostdin', '-hide_banner', '-loglevel', 'error', '-y',
+             '-i', str(source_video), '-map', '0:v:0', '-map', '0:a:0',
+             '-c:v', 'libx264', '-preset', 'fast', '-crf', '22',
+             '-pix_fmt', 'yuv420p', '-c:a', 'aac', '-b:a', '160k', str(VIDEO)])
 print('Credentials configured; token not displayed.')
 print('Video ready:', VIDEO, VIDEO.stat().st_size, 'bytes')
 '''
@@ -252,7 +258,7 @@ def run_test(video, stem, batch_size=4):
         for evidence in segment.get('evidence', []):
             if evidence.get('source') == 'repeated_presentation':
                 d = evidence.get('details', {})
-                repeat_rows.append(f"[{segment['start']:.2f}] {segment['text']}  <=>  [{d.get('matched_start', 0):.2f}] {d.get('matched_text', '')}")
+                repeat_rows.append(f"[{segment['start']:.2f}] {segment['text']}  <=>  [{d.get('donor_start', 0):.2f}] {d.get('donor_text', '')}")
     (RESULTS/(stem+'_repeat_candidates.txt')).write_text('\\n'.join(repeat_rows)+'\\n')
     print(f'Elapsed: {(time.monotonic()-started)/60:.1f} minutes')
     print('Repeated-presentation groups:', len(result.get('repeated_presentations', [])))
@@ -309,6 +315,14 @@ print((RESULTS/'opening_transcript.txt').read_text())
 
 if RUN_FULL_VIDEO:
     full_video = run_test(VIDEO, 'full_video', BATCH_SIZE)
+    decoded_visual_segments = sum(
+        1 for segment in full_video['segments']
+        for evidence in segment.get('evidence', [])
+        if evidence.get('source') == 'visual_context'
+        and evidence.get('details', {}).get('frames_read', 0) > 0)
+    if decoded_visual_segments == 0:
+        raise RuntimeError('No full-video frames were decoded; supplemental reviews were not started.')
+    print('Full-video segments with decoded visual frames:', decoded_visual_segments)
     if RUN_TARGETED_REVIEW:
         targeted_review = run_targeted_review()
         print('Targeted review:', json.dumps(targeted_review, indent=2))
