@@ -332,6 +332,18 @@ def resolve_segment(segment, target_track, mapping_confidence,
     # only a segment with three agreeing signals: a strong direct reference
     # match, a recognized target face, and motion of that target's mouth.
     local_similarity = details.get("similarity")
+    competitor_mean = details.get("competitor_mean")
+    reference_margin = details.get("reference_margin")
+    if reference_margin is None and local_similarity is not None \
+            and competitor_mean is not None:
+        reference_margin = local_similarity - competitor_mean
+    # Reference promotion can raise both the target and competitor means. Use
+    # their local margin for recovery gates so adding valid reference samples
+    # does not silently make an already-matching secondary-track segment fail.
+    stable_reference_support = (
+        reference_margin >= 0.08 if reference_margin is not None
+        else voice is not None and voice.target_score >= 0.15
+    )
     audiovisual_target_recovery = (
         raw != target_track
         and mapping_confidence >= 0.75
@@ -353,7 +365,7 @@ def resolve_segment(segment, target_track, mapping_confidence,
         and segment.end - segment.start >= 0.6
         and voice is not None and voice.confidence >= 0.5
         and local_similarity is not None and local_similarity >= 0.35
-        and voice.target_score >= 0.15
+        and stable_reference_support
     )
     # A brief interruption should not erase a well-supported dominant speaker
     # from the whole ASR segment. Keep the target attribution only when direct
@@ -370,7 +382,7 @@ def resolve_segment(segment, target_track, mapping_confidence,
         and segment.end - segment.start >= 0.6
         and voice is not None and voice.confidence >= 0.5
         and local_similarity is not None and local_similarity >= 0.35
-        and voice.target_score >= 0.15
+        and stable_reference_support
         and (raw == target_track
              or audiovisual_target_recovery
              or direct_secondary_target_recovery)
@@ -723,6 +735,9 @@ def main():
         segment.evidence.append(Evidence("local_voice", target_score, strength,
             {"similarity": similarity, "crop_start": crop_start, "crop_end": crop_end,
              "target_mean": target_mean, "competitor_mean": other_mean,
+             "reference_margin": (similarity - other_mean
+                                  if similarity is not None and other_mean is not None
+                                  else None),
              "track_similarities": track_similarities, "independent_profile_counts": profile_counts,
              "best_track": best_track, "track_margin": margin}))
 

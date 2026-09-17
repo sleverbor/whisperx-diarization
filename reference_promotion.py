@@ -36,7 +36,27 @@ def file_hash(path):
     return hashlib.sha256(Path(path).read_bytes()).hexdigest()
 
 
-def select_candidates(payload, criteria=None):
+def source_key(video, start, end):
+    return str(video), round(float(start), 3), round(float(end), 3)
+
+
+def promoted_source_keys(metadata):
+    """Collect promoted source intervals through the recorded ancestry chain."""
+    keys = set()
+    if not isinstance(metadata, dict):
+        return keys
+    review = metadata.get("promotion_review", {})
+    for row in review.get("promoted_candidates", []):
+        source = row.get("source", {})
+        if all(name in source for name in ("video", "start", "end")):
+            keys.add(source_key(source["video"], source["start"], source["end"]))
+    parent = metadata.get("parent_reference", {}).get("metadata")
+    keys.update(promoted_source_keys(parent))
+    return keys
+
+
+def select_candidates(payload, criteria=None, *, source_video=None,
+                      excluded_sources=()):
     criteria = dict(DEFAULT_CRITERIA if criteria is None else criteria)
     target_track = payload.get("target_candidate")
     selected = []
@@ -61,6 +81,9 @@ def select_candidates(payload, criteria=None):
         if voice is None or float(voice.get("confidence", 0)) < criteria["minimum_local_voice_strength"]:
             continue
         if similarity is None or float(similarity) < criteria["minimum_reference_similarity"]:
+            continue
+        if source_video is not None and source_key(
+                source_video, segment["start"], segment["end"]) in excluded_sources:
             continue
         selected.append({
             "baseline_index": index,
@@ -113,7 +136,16 @@ def export_review(args):
     if args.output_dir.exists():
         raise ValueError("Output directory already exists")
     payload = json.loads(args.evidence.read_text())
-    candidates = select_candidates(payload)
+    source_video = args.source_url or str(args.video.resolve())
+    excluded_sources = set()
+    if args.reference_metadata is not None:
+        excluded_sources = promoted_source_keys(
+            json.loads(args.reference_metadata.read_text())
+        )
+    candidates = select_candidates(
+        payload, source_video=source_video,
+        excluded_sources=excluded_sources,
+    )
     args.output_dir.mkdir(parents=True)
     audio_dir = args.output_dir / "audio"
     audio_dir.mkdir()
@@ -130,7 +162,7 @@ def export_review(args):
         row["audio"] = f"audio/{name}"
         row["audio_sha256"] = file_hash(destination)
         row["source"] = {
-            "video": args.source_url or str(args.video.resolve()),
+            "video": source_video,
             "start": row["start"], "end": row["end"],
         }
     if candidates:
@@ -153,6 +185,7 @@ def export_review(args):
         "permanent_reference_modified": False,
         "source_evidence_sha256": file_hash(args.evidence),
         "criteria": DEFAULT_CRITERIA,
+        "previously_promoted_sources_excluded": len(excluded_sources),
         "candidates": candidates,
     }
     (args.output_dir / "manifest.json").write_text(
@@ -294,6 +327,7 @@ def main():
     export.add_argument("--evidence", type=Path, required=True)
     export.add_argument("--output-dir", type=Path, required=True)
     export.add_argument("--source-url")
+    export.add_argument("--reference-metadata", type=Path)
     export.set_defaults(function=export_review)
     accept = commands.add_parser("promote")
     accept.add_argument("--review-dir", type=Path, required=True)

@@ -2,7 +2,9 @@ import unittest
 
 import numpy as np
 
-from reference_promotion import evaluate_reference_update, select_candidates
+from reference_promotion import (evaluate_reference_update,
+                                 promoted_source_keys, select_candidates,
+                                 source_key)
 
 
 def segment(index=0, *, target=True, confidence=1.0, duration=2.0,
@@ -42,6 +44,21 @@ class ReferencePromotionTests(unittest.TestCase):
         result = evaluate_reference_update(parent, candidates)
         self.assertFalse(result["passed"])
         self.assertFalse(result["checks"]["all_candidates_match_parent"])
+
+    def test_excludes_already_promoted_source_interval(self):
+        metadata = {"promotion_review": {"promoted_candidates": [{
+            "source": {"video": "https://example/video", "start": 0, "end": 2}
+        }]}}
+        excluded = promoted_source_keys(metadata)
+        payload = {"target_candidate": "SPEAKER_04", "segments": [
+            segment(0), segment(1),
+        ]}
+        selected = select_candidates(
+            payload, source_video="https://example/video",
+            excluded_sources=excluded,
+        )
+        self.assertEqual([row["baseline_index"] for row in selected], [1])
+        self.assertIn(source_key("https://example/video", 0, 2), excluded)
 
 
 if __name__ == "__main__":

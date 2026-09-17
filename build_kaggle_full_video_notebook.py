@@ -57,7 +57,7 @@ def main():
 import subprocess, sys, os, json, shutil, time, zipfile
 
 VIDEO_URL = 'https://www.youtube.com/watch?v=uAtiEviUzGA'
-NOTEBOOK_REVISION = 'reviewed-auditor-reference-v14'
+NOTEBOOK_REVISION = 'stable-promotion-calibration-v15'
 RUN_FULL_VIDEO = True
 RUN_TARGETED_REVIEW = True
 RUN_OVERLAP_EXTRACTION = True
@@ -319,7 +319,8 @@ def export_reference_promotion_review():
     output_dir = RESULTS/'reference-promotion-review'
     command = [PYTHON, str(WORK/'reference_promotion.py'), 'export',
         '--video', str(VIDEO), '--evidence', str(RESULTS/'full_video_evidence.json'),
-        '--output-dir', str(output_dir), '--source-url', VIDEO_URL]
+        '--output-dir', str(output_dir), '--source-url', VIDEO_URL,
+        '--reference-metadata', str(REFERENCE/'reference.json')]
     checked(command, cwd=WORK)
     return json.loads((output_dir/'manifest.json').read_text())
 '''

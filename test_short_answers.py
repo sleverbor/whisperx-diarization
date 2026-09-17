@@ -163,6 +163,23 @@ class ShortAnswerTests(unittest.TestCase):
         self.assertTrue(any("target-like secondary track" in reason
                             for reason in recovered.reasons))
 
+        # Promotion raised the run-level target mean in a real full-video run,
+        # lowering the normalized target_score even though direct similarity
+        # improved. The target-to-competitor margin remains stable and should
+        # preserve this conservative secondary-track recovery.
+        stable = self.reply(start=20.0, end=23.0, raw="SPEAKER_03",
+                            text="Repeated target passage")
+        stable.evidence = [Evidence(
+            "local_voice", 0.12, 1.0,
+            {"similarity": 0.379, "competitor_mean": 0.276,
+             "reference_margin": 0.103, "best_track": "SPEAKER_03",
+             "track_margin": 0.09,
+             "track_similarities": {"SPEAKER_03": 0.51,
+                                      "SPEAKER_04": 0.42}},
+        )]
+        resolve_segment(stable, "SPEAKER_04", 1.0, ("SPEAKER_03",))
+        self.assertEqual(stable.final_speaker, "Target_Speaker")
+
         for kwargs in (
             {"similarity": 0.349}, {"score": 0.149}, {"strength": 0.49},
             {"duration": 0.59}, {"target_like": ()},
