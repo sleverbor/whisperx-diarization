@@ -25,7 +25,9 @@ from whisperx.diarize import DiarizationPipeline
 from speechbrain.inference.speaker import SpeakerRecognition
 from insightface.app import FaceAnalysis
 from collections import defaultdict
-from repeat_evidence import find_repeat_groups, build_repeat_proposals
+from repeat_evidence import (find_repeat_groups, build_repeat_proposals,
+                             repeat_target_corroboration,
+                             resolve_repeat_target_corroboration)
 
 
 @dataclass(frozen=True)
@@ -703,6 +705,16 @@ def main():
                 timeline[index].evidence.append(Evidence(
                     "repeated_presentation", 0.0, 0.0, details
                 ))
+            corroboration = repeat_target_corroboration(timeline[index], proposals)
+            if corroboration is not None:
+                timeline[index].evidence.append(Evidence(
+                    "repeat_target_corroboration", 1.0,
+                    min(0.55, corroboration["alignment_confidence"]),
+                    corroboration,
+                ))
+                resolve_repeat_target_corroboration(
+                    timeline[index], corroboration
+                )
         print("\n--- Evidence-Based Speaker Resolution ---")
         for segment in timeline:
             print(f"[{segment.start:.2f}s - {segment.end:.2f}s] {segment.final_speaker} "

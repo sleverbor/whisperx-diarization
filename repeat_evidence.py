@@ -181,3 +181,62 @@ def build_repeat_proposals(segments, groups, maximum_timing_error=3.0):
                     "note": "Corroboration candidate from an aligned repeated presentation; original text is preserved.",
                 })
     return {index: rows for index, rows in proposals.items() if rows}
+
+
+def repeat_target_corroboration(segment, proposals, minimum_donor_confidence=0.75,
+                                minimum_alignment=0.72,
+                                minimum_text_similarity=0.85,
+                                minimum_local_similarity=0.05):
+    """Return one strict target corroboration candidate, without changing text.
+
+    This intentionally handles only nearly identical repeated speech. Partial
+    wording, overlap, weak donors, and local acoustic contradictions remain
+    review-only.
+    """
+    if segment.final_speaker in ("Target_Speaker", "Overlapping_Speakers"):
+        return None
+    voice = next(
+        (item for item in segment.evidence if item.source == "local_voice"), None
+    )
+    local_similarity = (
+        voice.details.get("similarity") if voice is not None else None
+    )
+    if local_similarity is None or local_similarity < minimum_local_similarity:
+        return None
+    candidates = []
+    for proposal in proposals:
+        similarity = phrase_similarity(segment.text, proposal["donor_text"])
+        if (proposal["donor_final_speaker"] == "Target_Speaker"
+                and proposal["donor_final_confidence"] >= minimum_donor_confidence
+                and proposal["alignment_confidence"] >= minimum_alignment
+                and similarity >= minimum_text_similarity):
+            candidates.append({
+                **proposal,
+                "recipient_text_similarity": similarity,
+                "recipient_local_target_similarity": local_similarity,
+                "note": "Strict target corroboration from a nearly identical aligned repeated presentation; text is unchanged.",
+            })
+    if not candidates:
+        return None
+    return max(candidates, key=lambda item: (
+        item["recipient_text_similarity"],
+        item["alignment_confidence"],
+        item["donor_final_confidence"],
+    ))
+
+
+def resolve_repeat_target_corroboration(segment, details):
+    """Second-pass resolver for a candidate produced by the strict gate."""
+    if details is None:
+        return False
+    segment.final_speaker = "Target_Speaker"
+    segment.final_confidence = float(min(
+        0.55,
+        details["donor_final_confidence"],
+        details["alignment_confidence"],
+        details["recipient_text_similarity"],
+    ))
+    segment.reasons.append(
+        "nearly identical repeated presentation corroborates target identity"
+    )
+    return True

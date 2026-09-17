@@ -1,7 +1,9 @@
 import unittest
 
-from chainofrules import Baseline, TimelineSegment
-from repeat_evidence import find_repeat_groups, build_repeat_proposals
+from chainofrules import Baseline, Evidence, TimelineSegment
+from repeat_evidence import (find_repeat_groups, build_repeat_proposals,
+                             repeat_target_corroboration,
+                             resolve_repeat_target_corroboration)
 
 
 def segment(start, text, speaker="Uncertain", confidence=0.0):
@@ -59,6 +61,71 @@ class RepeatEvidenceTests(unittest.TestCase):
             segment(120, "Something unrelated happened here."),
         ]
         self.assertEqual(find_repeat_groups(timeline), [])
+
+    def test_exact_repeat_can_corroborate_strong_target_donor(self):
+        recipient = segment(10, "I mean, I understand.", "SPEAKER_03", 0.77)
+        recipient.evidence.append(Evidence(
+            "local_voice", -1.0, 0.65, {"similarity": 0.095}
+        ))
+        proposal = {
+            "group_id": "repeat_01", "donor_start": 110, "donor_end": 111,
+            "donor_text": "I mean, I understand.",
+            "donor_final_speaker": "Target_Speaker",
+            "donor_final_confidence": 0.90,
+            "alignment_confidence": 0.75,
+            "timing_error_seconds": 0.1,
+        }
+        corroboration = repeat_target_corroboration(recipient, [proposal])
+        self.assertIsNotNone(corroboration)
+        self.assertTrue(resolve_repeat_target_corroboration(recipient, corroboration))
+        self.assertEqual(recipient.final_speaker, "Target_Speaker")
+        self.assertEqual(recipient.final_confidence, 0.55)
+        self.assertEqual(recipient.text, "I mean, I understand.")
+
+    def test_repeat_corroboration_rejects_weak_or_partial_evidence(self):
+        base = {
+            "group_id": "repeat_01", "donor_start": 110, "donor_end": 111,
+            "donor_text": "I mean, I understand.",
+            "donor_final_speaker": "Target_Speaker",
+            "donor_final_confidence": 0.90,
+            "alignment_confidence": 0.75,
+            "timing_error_seconds": 0.1,
+        }
+        cases = [
+            ({**base, "donor_final_confidence": 0.74}, 0.10,
+             "I mean, I understand."),
+            ({**base, "alignment_confidence": 0.71}, 0.10,
+             "I mean, I understand."),
+            (base, 0.049, "I mean, I understand."),
+            (base, 0.10, "I understand a different request entirely."),
+            ({**base, "donor_final_speaker": "SPEAKER_02"}, 0.10,
+             "I mean, I understand."),
+        ]
+        for proposal, local_similarity, text in cases:
+            with self.subTest(proposal=proposal, local_similarity=local_similarity,
+                              text=text):
+                recipient = segment(10, text, "SPEAKER_03", 0.8)
+                recipient.evidence.append(Evidence(
+                    "local_voice", -1.0, 0.8,
+                    {"similarity": local_similarity}
+                ))
+                self.assertIsNone(
+                    repeat_target_corroboration(recipient, [proposal])
+                )
+
+    def test_overlap_is_never_reassigned_by_repeat(self):
+        recipient = segment(10, "I mean, I understand.",
+                            "Overlapping_Speakers", 0.0)
+        recipient.evidence.append(Evidence(
+            "local_voice", 1.0, 1.0, {"similarity": 0.8}
+        ))
+        proposal = {
+            "donor_text": recipient.text,
+            "donor_final_speaker": "Target_Speaker",
+            "donor_final_confidence": 1.0,
+            "alignment_confidence": 1.0,
+        }
+        self.assertIsNone(repeat_target_corroboration(recipient, [proposal]))
 
 
 if __name__ == "__main__":
