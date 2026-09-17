@@ -258,7 +258,8 @@ def collect_visual_evidence(segment, cap, fps, face_analyzer, target_face_centro
          "note": "Weak landmark motion hint; no lipreading or audio-visual synchronization model."}))
 
 
-def resolve_segment(segment, target_track, mapping_confidence):
+def resolve_segment(segment, target_track, mapping_confidence,
+                    target_like_tracks=()):
     """Only the resolver assigns final identity; visibility alone cannot flip it."""
     raw = segment.baseline.raw_speaker_track
     known = raw != "Unknown_Speaker"
@@ -340,6 +341,20 @@ def resolve_segment(segment, target_track, mapping_confidence):
         and mouth_motion is not None and mouth_motion.confidence > 0
         and mouth_motion.target_score > 0
     )
+    # Long recordings can split the supplied target across multiple diarization
+    # tracks. A globally target-like secondary track is only a candidate; promote
+    # an individual, non-overlapping segment when its direct reference match is
+    # independently strong. This is deliberately stricter than ordinary target
+    # assignment and leaves marginal segments on their original track for review.
+    direct_secondary_target_recovery = (
+        raw != target_track
+        and raw in set(target_like_tracks)
+        and mapping_confidence >= 0.75
+        and segment.end - segment.start >= 0.6
+        and voice is not None and voice.confidence >= 0.5
+        and local_similarity is not None and local_similarity >= 0.35
+        and voice.target_score >= 0.15
+    )
     echo_inference = (echo is not None and echo.details["candidate_track"] == target_track
                       and visible is not None and visible.details.get("target_visible_hint", False)
                       and len(profiles) >= 2 and max(profiles.values()) < 0.30
@@ -350,6 +365,9 @@ def resolve_segment(segment, target_track, mapping_confidence):
     elif audiovisual_target_recovery:
         final = "Target_Speaker"
         reasons.append("strong local target voice agrees with recognized target mouth motion")
+    elif direct_secondary_target_recovery:
+        final = "Target_Speaker"
+        reasons.append("strong direct target voice recovers a segment from a globally target-like secondary track")
     elif echo_inference:
         final = "Target_Speaker"
         reasons.append("weak repeated-question inference with face continuity and weak supporting voice profile; not voice-verified")
@@ -376,6 +394,8 @@ def resolve_segment(segment, target_track, mapping_confidence):
         segment.final_confidence = 0.0
     elif audiovisual_target_recovery:
         segment.final_confidence = float(min(0.65, local_similarity, voice.confidence))
+    elif direct_secondary_target_recovery:
+        segment.final_confidence = float(min(local_similarity, voice.confidence))
     elif verified_correction:
         segment.final_confidence = float(min(voice.confidence, abs(voice.target_score),
                                              details["track_margin"] / 0.20))
@@ -619,10 +639,16 @@ def main():
     separation = target_mean - other_mean if other_mean is not None else 0.0
     mapping_confidence = voice_mapping_confidence(
         ranked, means, {track: len(scores) for track, scores in cluster_scores.items()})
+    target_like_tracks = {
+        track for track, mean in means.items()
+        if track != target_track and mean >= 0.18 and target_mean - mean <= 0.20
+    }
     print("\n--- Baseline voice affinity ---")
     for track in ranked:
         print(f"{track}: {means[track]:.3f} ({len(cluster_scores[track])} samples)")
     print(f"Target candidate: {target_track}; mapping strength={mapping_confidence:.3f}")
+    if target_like_tracks:
+        print(f"Target-like secondary tracks (segment review only): {sorted(target_like_tracks)}")
 
     assigned = whisperx.assign_word_speakers(diarize_segments, aligned_result)
     timeline = []
@@ -696,7 +722,8 @@ def main():
             add_question_response_evidence(segment, previous, all_tracks, target_track, mapping_confidence)
             add_brief_exchange_evidence(segment, previous, all_tracks, target_track, mapping_confidence)
             add_echo_question_evidence(segment, previous, all_tracks, target_track, mapping_confidence)
-            resolve_segment(segment, target_track, mapping_confidence)
+            resolve_segment(segment, target_track, mapping_confidence,
+                            target_like_tracks)
             print(f"Resolved segment {index + 1}/{len(timeline)} at {segment.end:.1f}s", flush=True)
         repeat_groups = find_repeat_groups(timeline)
         repeat_proposals = build_repeat_proposals(timeline, repeat_groups)

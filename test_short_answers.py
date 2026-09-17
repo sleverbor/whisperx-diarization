@@ -142,6 +142,35 @@ class ShortAnswerTests(unittest.TestCase):
                 resolve_segment(reply, "SPEAKER_04", 1.0)
                 self.assertNotEqual(reply.final_speaker, "Target_Speaker")
 
+    def test_direct_voice_recovers_only_flagged_target_like_secondary_segment(self):
+        def resolve(similarity=0.375, score=0.24, strength=1.0,
+                    duration=3.0, target_like=("SPEAKER_03",)):
+            reply = self.reply(start=10.0, end=10.0 + duration,
+                               raw="SPEAKER_03", text="Known target passage")
+            reply.evidence = [Evidence(
+                "local_voice", score, strength,
+                {"similarity": similarity, "best_track": "SPEAKER_03",
+                 "track_margin": 0.11,
+                 "track_similarities": {"SPEAKER_03": 0.5,
+                                        "SPEAKER_04": 0.39}},
+            )]
+            resolve_segment(reply, "SPEAKER_04", 1.0, target_like)
+            return reply
+
+        recovered = resolve()
+        self.assertEqual(recovered.final_speaker, "Target_Speaker")
+        self.assertAlmostEqual(recovered.final_confidence, 0.375)
+        self.assertTrue(any("target-like secondary track" in reason
+                            for reason in recovered.reasons))
+
+        for kwargs in (
+            {"similarity": 0.349}, {"score": 0.149}, {"strength": 0.49},
+            {"duration": 0.59}, {"target_like": ()},
+        ):
+            with self.subTest(kwargs=kwargs):
+                self.assertNotEqual(resolve(**kwargs).final_speaker,
+                                    "Target_Speaker")
+
     def test_face_identity_continues_through_head_turn_but_not_bbox_jump(self):
         class Capture:
             index = 0
