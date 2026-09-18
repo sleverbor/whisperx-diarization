@@ -55,15 +55,22 @@ def main():
 
     config = '''from pathlib import Path
 import subprocess, sys, os, json, shutil, time, zipfile
+from urllib.parse import urlparse, parse_qs
 
 VIDEO_URL = 'https://www.youtube.com/watch?v=lVfKfbFd0SM'
-NOTEBOOK_REVISION = 'unseen-video-lVfKfbFd0SM-v16'
+NOTEBOOK_REVISION = 'video-keyed-input-lVfKfbFd0SM-v17'
 RUN_FULL_VIDEO = True
 RUN_TARGETED_REVIEW = True
 RUN_OVERLAP_EXTRACTION = True
 REVIEW_WEAK_CONFIDENCE = 0.35
 REVIEW_SHORT_SECONDS = 1.0
 BATCH_SIZE = 4
+
+parsed_video_url = urlparse(VIDEO_URL)
+VIDEO_ID = (parsed_video_url.path.strip('/') if parsed_video_url.netloc == 'youtu.be'
+            else parse_qs(parsed_video_url.query).get('v', [''])[0])
+if not VIDEO_ID or any(character not in 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_-' for character in VIDEO_ID):
+    raise ValueError(f'Could not derive a safe YouTube video ID from {VIDEO_URL!r}')
 
 ON_KAGGLE = Path('/kaggle/input').exists()
 if ON_KAGGLE:
@@ -76,13 +83,14 @@ else:
     BASE = Path.cwd()/'diarization-run'
 BASE.mkdir(parents=True, exist_ok=True)
 WORK = BASE/'diarization'; WORK.mkdir(exist_ok=True)
-RESULTS = BASE/'results'; RESULTS.mkdir(exist_ok=True)
-CACHE = BASE/'stage-cache'
+RESULTS = BASE/('results-'+VIDEO_ID); RESULTS.mkdir(exist_ok=True)
+CACHE = BASE/'stage-cache'/VIDEO_ID
 VENV = BASE/'diarization-venv'
 PYTHON = str(VENV/('Scripts/python.exe' if os.name == 'nt' else 'bin/python'))
-VIDEO = WORK/'video-h264-v7.mp4'
+VIDEO = WORK/('video-'+VIDEO_ID+'-h264.mp4')
 REFERENCE = WORK/'target-reference'; REFERENCE.mkdir(exist_ok=True)
 print('Video URL:', VIDEO_URL)
+print('Video ID:', VIDEO_ID)
 print('Notebook revision:', NOTEBOOK_REVISION)
 print('Results folder:', RESULTS)
 print('Setup will use:', PYTHON)
@@ -206,14 +214,14 @@ if ON_KAGGLE:
             zipped.extractall(BASE)
 if not VIDEO.exists():
     if ON_KAGGLE:
-        matches = list(Path('/kaggle/input').rglob('uAtiEviUzGA.mp4'))
+        matches = list(Path('/kaggle/input').rglob(VIDEO_ID+'.mp4'))
         if len(matches) != 1:
             raise RuntimeError(
                 'Attach a Kaggle dataset containing exactly one file named '
-                'uAtiEviUzGA.mp4. YouTube blocks downloads from Kaggle.')
+                f'{VIDEO_ID}.mp4. YouTube blocks downloads from Kaggle.')
         source_video = matches[0]
     else:
-        local_video = Path.cwd()/'uAtiEviUzGA.mp4'
+        local_video = Path.cwd()/(VIDEO_ID+'.mp4')
         if not local_video.is_file():
             raise RuntimeError(f'Missing local video: {{local_video}}')
         source_video = local_video
@@ -232,11 +240,18 @@ if video_codec != 'h264':
 print('Normalized video codec:', video_codec)
 print('Credentials configured; token not displayed.')
 print('Video ready:', VIDEO, VIDEO.stat().st_size, 'bytes')
+(RESULTS/'run-input.json').write_text(json.dumps({
+    'video_url': VIDEO_URL,
+    'video_id': VIDEO_ID,
+    'normalized_video_sha256': hashlib.sha256(VIDEO.read_bytes()).hexdigest(),
+    'notebook_revision': NOTEBOOK_REVISION,
+}, indent=2))
 '''
 
     functions = '''def export_checkpoints():
     if CACHE.exists():
-        shutil.make_archive(str(BASE/'stage-checkpoints'), 'zip', CACHE.parent, CACHE.name)
+        shutil.make_archive(str(BASE/'stage-checkpoints'), 'zip', BASE,
+                            str(CACHE.relative_to(BASE)))
 
 def stream(command, log_name, failure):
     with (RESULTS/log_name).open('w') as log:
@@ -372,7 +387,7 @@ print('Saved in:', BASE)
 
     notebook = {
         "cells": [
-            cell("markdown", "# Current-video full diarization test\n\nAttach a Kaggle dataset containing `uAtiEviUzGA.mp4`. This notebook runs the evidence-based baseline, finds repeated presentations, and evaluates uncertain overlap intervals with target-conditioned extraction plus conditional stereo-channel review. Supplemental stages never overwrite the baseline.\n"),
+            cell("markdown", "# Current-video full diarization test\n\nAttach a Kaggle dataset containing `lVfKfbFd0SM.mp4`. This notebook runs the evidence-based baseline, finds repeated presentations, and evaluates uncertain overlap intervals with target-conditioned extraction plus conditional stereo-channel review. Supplemental stages never overwrite the baseline.\n"),
             cell("code", config),
             cell("markdown", "## Install and verify\n\nEnable Internet and a GPU before running. The setup uses an isolated environment and verifies CUDA before the full video starts.\n"),
             cell("code", "import base64\n" + setup),
