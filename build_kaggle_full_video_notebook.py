@@ -56,8 +56,8 @@ def main():
     config = '''from pathlib import Path
 import subprocess, sys, os, json, shutil, time, zipfile
 
-VIDEO_URL = 'https://www.youtube.com/watch?v=uAtiEviUzGA'
-NOTEBOOK_REVISION = 'stable-promotion-calibration-v15'
+VIDEO_URL = 'https://www.youtube.com/watch?v=lVfKfbFd0SM'
+NOTEBOOK_REVISION = 'unseen-video-lVfKfbFd0SM-v16'
 RUN_FULL_VIDEO = True
 RUN_TARGETED_REVIEW = True
 RUN_OVERLAP_EXTRACTION = True
