@@ -60,7 +60,7 @@ import subprocess, sys, os, json, shutil, time, zipfile
 from urllib.parse import urlparse, parse_qs
 
 VIDEO_URL = 'https://www.youtube.com/watch?v=lVfKfbFd0SM'
-NOTEBOOK_REVISION = 'diaper-tokenizers-compatibility-v20'
+NOTEBOOK_REVISION = 'diaper-tokenizers-runtime-skip-v21'
 RUN_FULL_VIDEO = True
 RUN_TARGETED_REVIEW = True
 RUN_OVERLAP_EXTRACTION = True
@@ -370,9 +370,13 @@ def run_diaper_overlap():
     # irrelevant upper-bound check inside DiaPer's private overlay.
     dependency_check = transformer_overlay/'transformers'/'dependency_versions_check.py'
     dependency_text = dependency_check.read_text()
-    dependency_text = dependency_text.replace(
-        '    "tokenizers",\\n',
-        '    # tokenizers unused by DiaPer; retain host version\\n')
+    runtime_loop = 'for pkg in pkgs_to_check_at_runtime:\\n'
+    skip_marker = '    if pkg == "tokenizers":  # unused by DiaPer\\n        continue\\n'
+    if skip_marker not in dependency_text:
+        if runtime_loop not in dependency_text:
+            raise RuntimeError('Could not patch DiaPer Transformers dependency checks')
+        dependency_text = dependency_text.replace(
+            runtime_loop, runtime_loop + skip_marker, 1)
     dependency_check.write_text(dependency_text)
     # The official 2023 script's GPU check treats GPU index 0 as CPU and asks
     # safe_gpu to allocate devices. Kaggle already assigned CUDA_VISIBLE_DEVICES,
