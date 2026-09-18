@@ -60,7 +60,7 @@ import subprocess, sys, os, json, shutil, time, zipfile
 from urllib.parse import urlparse, parse_qs
 
 VIDEO_URL = 'https://www.youtube.com/watch?v=lVfKfbFd0SM'
-NOTEBOOK_REVISION = 'diaper-tokenizers-runtime-skip-v21'
+NOTEBOOK_REVISION = 'diaper-tensorboard-dependency-v22'
 RUN_FULL_VIDEO = True
 RUN_TARGETED_REVIEW = True
 RUN_OVERLAP_EXTRACTION = True
@@ -130,7 +130,7 @@ requirements = [
     'torch==2.8.0', 'torchaudio==2.8.0', 'numpy==2.5.3',
     'opencv-python==5.0.0.93', 'onnxruntime-gpu==1.23.2', 'wrapt',
     'yt-dlp', 'soundfile', 'safe-gpu', 'yamlargparse==1.31.1',
-    'decorator', 'h5py', 'matplotlib', 'librosa', 'scikit-learn',
+    'decorator', 'h5py', 'matplotlib', 'librosa', 'scikit-learn', 'tensorboard',
 ]
 checked([PYTHON, '-m', 'pip', 'install', '--upgrade', 'pip'])
 checked([PYTHON, '-m', 'pip', 'install', *requirements])
