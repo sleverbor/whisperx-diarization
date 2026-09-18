@@ -90,7 +90,7 @@ function render(){{
  card.querySelectorAll('input').forEach(input=>input.onchange=()=>saveCard(card,id)); card.querySelector('textarea').oninput=()=>saveCard(card,id); root.appendChild(card);
  }}); updateProgress();
 }}
-function saveCard(card,id){{const o=card.querySelector(`input[name="o-${{id}}"]:checked`);const t=card.querySelector(`input[name="t-${{id}}"]:checked`);saved[id]={{overlap_label:o?.value||'',target_in_overlap:t?.value||'',notes:card.querySelector('textarea').value}};localStorage.setItem('overlap-labels-v1',JSON.stringify(saved));render()}}
+function saveCard(card,id){{const o=card.querySelector(`input[name="o-${{id}}"]:checked`);const t=card.querySelector(`input[name="t-${{id}}"]:checked`);saved[id]={{overlap_label:o?.value||'',target_in_overlap:t?.value||'',notes:card.querySelector('textarea').value}};localStorage.setItem('overlap-labels-v1',JSON.stringify(saved));card.classList.toggle('done',Boolean(saved[id].overlap_label));updateProgress()}}
 function updateProgress(){{const n=items.filter(x=>saved[x.review_id]?.overlap_label).length;document.getElementById('progress').textContent=`Labeled ${{n}} of ${{items.length}}`}}
 function exportLabels(){{const result={{schema_version:1,labels:items.map(item=>({{...item,...(saved[item.review_id]||{{}})}}))}};const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(result,null,2)],{{type:'application/json'}}));a.download='overlap-labels.json';a.click();URL.revokeObjectURL(a.href)}}
 function clearLabels(){{if(confirm('Clear all saved labels?')){{localStorage.removeItem('overlap-labels-v1');location.reload()}}}}

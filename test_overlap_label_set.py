@@ -1,6 +1,6 @@
 import unittest
 
-from build_overlap_label_set import categorize
+from build_overlap_label_set import build_html, categorize
 
 
 class LabelSetSelectionTest(unittest.TestCase):
@@ -23,6 +23,12 @@ class LabelSetSelectionTest(unittest.TestCase):
         selected = categorize(sortformer, diaper)
         self.assertEqual({row["selection_category"] for row in selected},
                          {item[3] for item in pairs})
+
+    def test_saving_a_card_does_not_rerender_the_page(self):
+        html = build_html([])
+        save_card = html.split("function saveCard", 1)[1].split("function updateProgress", 1)[0]
+        self.assertNotIn("render()", save_card)
+        self.assertIn("updateProgress()", save_card)
 
 
 if __name__ == "__main__":
