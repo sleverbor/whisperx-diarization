@@ -28,7 +28,7 @@ def main():
     config = f'''from pathlib import Path
 import json, os, shutil, subprocess, sys, zipfile
 
-REVISION = "sortformer-diaPer-head-to-head-v1"
+REVISION = "sortformer-direct-nemo-reference-v2"
 VIDEO_ID = "lVfKfbFd0SM"
 NEMO_COMMIT = "{NEMO_COMMIT}"
 BASE = Path("/kaggle/working") if Path("/kaggle/input").exists() else Path.cwd()/"sortformer-run"
@@ -63,7 +63,7 @@ if not Path(PYTHON).is_file():
 checked([PYTHON, "-m", "pip", "install", "--upgrade", "pip", "setuptools", "wheel"])
 checked([PYTHON, "-m", "pip", "install", "Cython", "packaging", "soundfile"])
 checked([PYTHON, "-m", "pip", "install",
-         "git+https://github.com/NVIDIA-NeMo/NeMo.git@"+NEMO_COMMIT+"#egg=nemo_toolkit[asr]"])
+         "nemo_toolkit[asr] @ git+https://github.com/NVIDIA-NeMo/NeMo.git@"+NEMO_COMMIT])
 checked([PYTHON, "-c", "import torch; from nemo.collections.asr.models import SortformerEncLabelModel; print('Torch',torch.__version__,'GPU',torch.cuda.get_device_name(0) if torch.cuda.is_available() else None); assert torch.cuda.is_available()"])
 checked([PYTHON, "-m", "unittest", "test_overlap_activity", "test_sortformer_overlap"], cwd=WORK)
 '''
