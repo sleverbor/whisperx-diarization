@@ -58,7 +58,7 @@ import subprocess, sys, os, json, shutil, time, zipfile
 from urllib.parse import urlparse, parse_qs
 
 VIDEO_URL = 'https://www.youtube.com/watch?v=lVfKfbFd0SM'
-NOTEBOOK_REVISION = 'video-keyed-input-lVfKfbFd0SM-v17'
+NOTEBOOK_REVISION = 'video-keyed-input-lVfKfbFd0SM-v18'
 RUN_FULL_VIDEO = True
 RUN_TARGETED_REVIEW = True
 RUN_OVERLAP_EXTRACTION = True
@@ -214,11 +214,13 @@ if ON_KAGGLE:
             zipped.extractall(BASE)
 if not VIDEO.exists():
     if ON_KAGGLE:
-        matches = list(Path('/kaggle/input').rglob(VIDEO_ID+'.mp4'))
+        accepted_names = {VIDEO_ID+'.mp4', VIDEO_ID+'_full480.mp4'}
+        matches = [path for path in Path('/kaggle/input').rglob('*.mp4')
+                   if path.name in accepted_names]
         if len(matches) != 1:
             raise RuntimeError(
-                'Attach a Kaggle dataset containing exactly one file named '
-                f'{VIDEO_ID}.mp4. YouTube blocks downloads from Kaggle.')
+                'Attach a Kaggle dataset containing exactly one of '
+                f'{sorted(accepted_names)}. YouTube blocks downloads from Kaggle.')
         source_video = matches[0]
     else:
         local_video = Path.cwd()/(VIDEO_ID+'.mp4')
@@ -387,7 +389,7 @@ print('Saved in:', BASE)
 
     notebook = {
         "cells": [
-            cell("markdown", "# Current-video full diarization test\n\nAttach a Kaggle dataset containing `lVfKfbFd0SM.mp4`. This notebook runs the evidence-based baseline, finds repeated presentations, and evaluates uncertain overlap intervals with target-conditioned extraction plus conditional stereo-channel review. Supplemental stages never overwrite the baseline.\n"),
+            cell("markdown", "# Current-video full diarization test\n\nAttach a Kaggle dataset containing `lVfKfbFd0SM_full480.mp4` (the existing local filename) or `lVfKfbFd0SM.mp4`. This notebook runs the evidence-based baseline, finds repeated presentations, and evaluates uncertain overlap intervals with target-conditioned extraction plus conditional stereo-channel review. Supplemental stages never overwrite the baseline.\n"),
             cell("code", config),
             cell("markdown", "## Install and verify\n\nEnable Internet and a GPU before running. The setup uses an isolated environment and verifies CUDA before the full video starts.\n"),
             cell("code", "import base64\n" + setup),
