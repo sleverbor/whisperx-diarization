@@ -32,6 +32,7 @@ def main():
         "chainofrules.py", "cloud_runtime.py", "repeat_evidence.py",
         "recover_transcript_gaps.py", "review_audio_window.py",
         "review_transcript_regions.py", "review_overlap_extraction.py",
+        "evaluate_diaper_overlap.py",
         "export_confident_transcript.py", "reference_promotion.py",
         "test_cloud_runtime.py", "test_short_answers.py",
         "test_transcript_gaps.py", "test_window_review.py",
@@ -39,6 +40,7 @@ def main():
         "test_overlap_resolution.py", "test_overlap_extraction_review.py",
         "test_single_speaker_mapping.py", "test_confident_transcript.py",
         "test_reference_promotion.py",
+        "test_diaper_overlap.py",
     ]
     embedded = {name: (ROOT / name).read_text() for name in source_names}
     binary_paths = {
@@ -58,10 +60,11 @@ import subprocess, sys, os, json, shutil, time, zipfile
 from urllib.parse import urlparse, parse_qs
 
 VIDEO_URL = 'https://www.youtube.com/watch?v=lVfKfbFd0SM'
-NOTEBOOK_REVISION = 'video-keyed-input-lVfKfbFd0SM-v18'
+NOTEBOOK_REVISION = 'diaper-overlap-comparison-v19'
 RUN_FULL_VIDEO = True
 RUN_TARGETED_REVIEW = True
 RUN_OVERLAP_EXTRACTION = True
+RUN_DIAPER_OVERLAP = True
 REVIEW_WEAK_CONFIDENCE = 0.35
 REVIEW_SHORT_SECONDS = 1.0
 BATCH_SIZE = 4
@@ -126,7 +129,8 @@ requirements = [
     'whisperx==3.8.6', 'speechbrain==1.1.1', 'insightface==2.0',
     'torch==2.8.0', 'torchaudio==2.8.0', 'numpy==2.5.3',
     'opencv-python==5.0.0.93', 'onnxruntime-gpu==1.23.2', 'wrapt',
-    'yt-dlp', 'soundfile',
+    'yt-dlp', 'soundfile', 'safe-gpu', 'yamlargparse==1.31.1',
+    'decorator', 'h5py', 'matplotlib', 'librosa', 'scikit-learn',
 ]
 checked([PYTHON, '-m', 'pip', 'install', '--upgrade', 'pip'])
 checked([PYTHON, '-m', 'pip', 'install', *requirements])
@@ -183,7 +187,7 @@ checked([PYTHON, '-c', verification], cwd=WORK)
 checked([PYTHON, '-m', 'unittest', 'test_cloud_runtime', 'test_short_answers',
          'test_repeat_evidence', 'test_overlap_resolution',
          'test_overlap_extraction_review', 'test_confident_transcript',
-         'test_reference_promotion'], cwd=WORK)
+         'test_reference_promotion', 'test_diaper_overlap'], cwd=WORK)
 
 import hashlib
 REFERENCE_FILES = {pprint.pformat(encoded, width=100)}
@@ -332,6 +336,74 @@ def run_overlap_extraction():
     assert (RESULTS/'full_video_evidence.json').read_bytes() == before
     return json.loads((output_dir/'report.json').read_text())
 
+def run_diaper_overlap():
+    """Run official DiaPer on full audio, then compare without changing baseline."""
+    source = WORK/'vendor'/'DiaPer'
+    checkpoint = source/'models'/'10attractors'/'SC_LibriSpeech_2spk_adapted1-10'/'models'/'checkpoint_100.tar'
+    infer_config = source/'examples'/'infer_16k_10attractors.yaml'
+    if not checkpoint.is_file():
+        if source.exists():
+            shutil.rmtree(source)
+        source.parent.mkdir(parents=True, exist_ok=True)
+        checked(['git', 'clone', '--depth', '1', '--filter=blob:none', '--no-checkout',
+                 'https://github.com/BUTSpeechFIT/DiaPer.git', str(source)])
+        checked(['git', '-C', str(source), 'sparse-checkout', 'init', '--no-cone'])
+        checked(['git', '-C', str(source), 'sparse-checkout', 'set',
+                 '/diaper/', '/examples/infer_16k_10attractors.yaml',
+                 '/models/10attractors/SC_LibriSpeech_2spk_adapted1-10/models/checkpoint_100.tar'])
+        checked(['git', '-C', str(source), 'checkout'])
+    # DiaPer relies on a small Perceiver change from the authors' Transformers
+    # fork. Install it into a private overlay so the established pipeline keeps
+    # its own dependency set.
+    transformer_overlay = source/'python-overlay'
+    if not (transformer_overlay/'transformers').is_dir():
+        checked([PYTHON, '-m', 'pip', 'install', '--no-deps', '--target',
+                 str(transformer_overlay),
+                 'git+https://github.com/fnlandini/transformers.git@b830ec2245139b157576153cfd8999e1da24a82c'])
+    # The official 2023 script's GPU check treats GPU index 0 as CPU and asks
+    # safe_gpu to allocate devices. Kaggle already assigned CUDA_VISIBLE_DEVICES,
+    # so use that allocation directly.
+    infer_script = source/'diaper'/'infer_single_file.py'
+    infer_text = infer_script.read_text()
+    infer_text = infer_text.replace(
+        "if args.gpu >= 1:\n        safe_gpu.claim_gpus(nb_gpus=args.gpu)\n        args.device = torch.device(\"cuda\")\n    else:\n        args.device = torch.device(\"cpu\")",
+        "if args.gpu >= 0 and torch.cuda.is_available():\n        args.device = torch.device('cuda')\n    else:\n        args.device = torch.device('cpu')")
+    infer_text = infer_text.replace(
+        "librosa.get_duration(filename=filepath)", "sf.info(filepath).duration")
+    infer_script.write_text(infer_text)
+    models_script = source/'diaper'/'backend'/'models.py'
+    models_text = models_script.read_text().replace(
+        "map_location=args.device)", "map_location=args.device, weights_only=False)").replace(
+        "map_location=device)", "map_location=device, weights_only=False)")
+    models_script.write_text(models_text)
+
+    audio_dir = RESULTS/'diaper-overlap'/'input'
+    audio_dir.mkdir(parents=True, exist_ok=True)
+    audio = audio_dir/'full-video.wav'
+    if not audio.is_file():
+        checked(['ffmpeg', '-nostdin', '-hide_banner', '-loglevel', 'error', '-y',
+                 '-i', str(VIDEO), '-vn', '-ac', '1', '-ar', '16000', str(audio)])
+    output_dir = RESULTS/'diaper-overlap'/'inference'
+    command = [PYTHON, str(infer_script), '-c', str(infer_config),
+        '--wav-dir', str(audio_dir), '--wav-name', 'full-video',
+        '--models-path', str(checkpoint.parent), '--epochs', '100',
+        '--rttms-dir', str(output_dir), '--gpu', '0']
+    prior_pythonpath = ENV.get('PYTHONPATH', '')
+    ENV['PYTHONPATH'] = str(transformer_overlay) + os.pathsep + prior_pythonpath
+    try:
+        stream(command, 'diaper-overlap.log',
+               'DiaPer inference failed; baseline and existing overlap results remain valid.')
+    finally:
+        ENV['PYTHONPATH'] = prior_pythonpath
+    rttms = list(output_dir.rglob('full-video.rttm'))
+    if len(rttms) != 1:
+        raise RuntimeError(f'Expected one DiaPer RTTM, found {{len(rttms)}}')
+    report_path = RESULTS/'diaper-overlap'/'comparison.json'
+    checked([PYTHON, str(WORK/'evaluate_diaper_overlap.py'),
+             '--baseline', str(RESULTS/'full_video_evidence.json'),
+             '--rttm', str(rttms[0]), '--output', str(report_path)], cwd=WORK)
+    return json.loads(report_path.read_text())
+
 def export_reference_promotion_review():
     output_dir = RESULTS/'reference-promotion-review'
     command = [PYTHON, str(WORK/'reference_promotion.py'), 'export',
@@ -371,6 +443,9 @@ if RUN_FULL_VIDEO:
     if RUN_OVERLAP_EXTRACTION:
         overlap_review = run_overlap_extraction()
         print('Overlap extraction:', json.dumps(overlap_review['summary'], indent=2))
+    if RUN_DIAPER_OVERLAP:
+        diaper_review = run_diaper_overlap()
+        print('DiaPer overlap comparison:', json.dumps(diaper_review['summary'], indent=2))
     promotion_review = export_reference_promotion_review()
     print('Reference promotion candidates:', len(promotion_review['candidates']))
 else:
@@ -389,16 +464,16 @@ print('Saved in:', BASE)
 
     notebook = {
         "cells": [
-            cell("markdown", "# Current-video full diarization test\n\nAttach a Kaggle dataset containing `lVfKfbFd0SM_full480.mp4` (the existing local filename) or `lVfKfbFd0SM.mp4`. This notebook runs the evidence-based baseline, finds repeated presentations, and evaluates uncertain overlap intervals with target-conditioned extraction plus conditional stereo-channel review. Supplemental stages never overwrite the baseline.\n"),
+            cell("markdown", "# Current-video full diarization and DiaPer overlap test\n\nAttach a Kaggle dataset containing `lVfKfbFd0SM_full480.mp4` (the existing local filename) or `lVfKfbFd0SM.mp4`. This notebook preserves the evidence-based baseline, then runs DiaPer as an independent full-audio diarizer and compares its overlap output with the saved problem intervals. Supplemental stages never overwrite the baseline.\n"),
             cell("code", config),
             cell("markdown", "## Install and verify\n\nEnable Internet and a GPU before running. The setup uses an isolated environment and verifies CUDA before the full video starts.\n"),
             cell("code", "import base64\n" + setup),
             cell("markdown", "## Credentials, checkpoint restore, and attached video\n\nCreate a private Kaggle secret named `HF_TOKEN`. The token is read from the environment and is never embedded or printed. The current video is copied from the attached dataset because YouTube blocks Kaggle's shared addresses.\n"),
             cell("code", credentials),
             cell("code", functions),
-            cell("markdown", "## Run the opening check and whole video\n\nThe opening check confirms that face analysis is actually using CUDA. Then the full baseline, targeted review, repeat evidence, and overlap extraction run.\n"),
+            cell("markdown", "## Run the opening check, whole video, and DiaPer comparison\n\nThe opening check confirms that face analysis is actually using CUDA. The established stages run first. DiaPer then analyzes the full audio so it has enough context to form speaker attractors, and its anonymous speakers are aligned to the baseline only for a read-only comparison.\n"),
             cell("code", run),
-            cell("markdown", "## Download results\n\n`diarization-results.zip` contains the baseline transcript and evidence, repeat candidates, targeted review, overlap extraction audio and report, logs, and package versions. `stage-checkpoints.zip` can restart expensive baseline stages.\n"),
+            cell("markdown", "## Download results\n\n`diarization-results.zip` contains the preserved baseline, existing supplemental reviews, DiaPer RTTM and comparison report, logs, and package versions. `stage-checkpoints.zip` can restart expensive baseline stages.\n"),
             cell("code", save),
         ],
         "metadata": {"kernelspec": {"display_name": "Python 3", "language": "python", "name": "python3"},
