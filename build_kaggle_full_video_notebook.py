@@ -60,7 +60,7 @@ import subprocess, sys, os, json, shutil, time, zipfile
 from urllib.parse import urlparse, parse_qs
 
 VIDEO_URL = 'https://www.youtube.com/watch?v=lVfKfbFd0SM'
-NOTEBOOK_REVISION = 'diaper-overlap-comparison-v19'
+NOTEBOOK_REVISION = 'diaper-tokenizers-compatibility-v20'
 RUN_FULL_VIDEO = True
 RUN_TARGETED_REVIEW = True
 RUN_OVERLAP_EXTRACTION = True
@@ -260,15 +260,20 @@ print('Video ready:', VIDEO, VIDEO.stat().st_size, 'bytes')
                             str(CACHE.relative_to(BASE)))
 
 def stream(command, log_name, failure):
-    with (RESULTS/log_name).open('w') as log:
+    log_path = RESULTS/log_name
+    recent_lines = []
+    with log_path.open('w') as log:
         process = subprocess.Popen(command, cwd=WORK, env=ENV, stdout=subprocess.PIPE,
             stderr=subprocess.STDOUT, text=True, bufsize=1)
         for line in process.stdout:
             line = line.replace(ENV['HF_TOKEN'], '[REDACTED]')
             log.write(line); log.flush()
+            recent_lines.append(line.rstrip())
+            recent_lines = recent_lines[-20:]
             print(line if len(line) < 1000 else line[:1000]+' ... [full line saved]\\n', end='')
         if process.wait() != 0:
-            raise RuntimeError(failure)
+            tail = '\\n'.join(recent_lines)
+            raise RuntimeError(f"{failure}\\nLog: {log_path}\\nLast output:\\n{tail}")
 
 def run_test(video, stem, batch_size=4):
     output = RESULTS/(stem+'_evidence.json')
@@ -360,6 +365,15 @@ def run_diaper_overlap():
         checked([PYTHON, '-m', 'pip', 'install', '--no-deps', '--target',
                  str(transformer_overlay),
                  'git+https://github.com/fnlandini/transformers.git@b830ec2245139b157576153cfd8999e1da24a82c'])
+    # DiaPer imports only the Perceiver model and does not use tokenization.
+    # Keep the host pipeline's current tokenizers build and disable only this
+    # irrelevant upper-bound check inside DiaPer's private overlay.
+    dependency_check = transformer_overlay/'transformers'/'dependency_versions_check.py'
+    dependency_text = dependency_check.read_text()
+    dependency_text = dependency_text.replace(
+        '    "tokenizers",\\n',
+        '    # tokenizers unused by DiaPer; retain host version\\n')
+    dependency_check.write_text(dependency_text)
     # The official 2023 script's GPU check treats GPU index 0 as CPU and asks
     # safe_gpu to allocate devices. Kaggle already assigned CUDA_VISIBLE_DEVICES,
     # so use that allocation directly.
