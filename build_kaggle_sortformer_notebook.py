@@ -28,7 +28,7 @@ def main():
     config = f'''from pathlib import Path
 import json, os, shutil, subprocess, sys, zipfile
 
-REVISION = "sortformer-direct-nemo-reference-v2"
+REVISION = "sortformer-extracted-dataset-v3"
 VIDEO_ID = "lVfKfbFd0SM"
 NEMO_COMMIT = "{NEMO_COMMIT}"
 BASE = Path("/kaggle/working") if Path("/kaggle/input").exists() else Path.cwd()/"sortformer-run"
@@ -67,40 +67,52 @@ checked([PYTHON, "-m", "pip", "install",
 checked([PYTHON, "-c", "import torch; from nemo.collections.asr.models import SortformerEncLabelModel; print('Torch',torch.__version__,'GPU',torch.cuda.get_device_name(0) if torch.cuda.is_available() else None); assert torch.cuda.is_available()"])
 checked([PYTHON, "-m", "unittest", "test_overlap_activity", "test_sortformer_overlap"], cwd=WORK)
 '''
-    restore = '''archives = sorted(Path("/kaggle/input").rglob("diarization-results*.zip")) if Path("/kaggle/input").exists() else []
-if not archives:
-    local = Path.cwd()/"diarization-results(15).zip"
-    if local.is_file(): archives = [local]
-if not archives:
-    raise RuntimeError("Attach the completed diarization-results(15).zip as a Kaggle dataset.")
+    restore = '''input_root = Path("/kaggle/input") if Path("/kaggle/input").exists() else Path.cwd()
+result_root = None
+for run_file in sorted(input_root.rglob("run-input.json")):
+    try:
+        run_input = json.loads(run_file.read_text())
+    except Exception:
+        continue
+    candidate = run_file.parent
+    required = [candidate/"full_video_evidence.json",
+                candidate/"diaper-overlap"/"input"/"full-video.wav",
+                candidate/"diaper-overlap"/"comparison.json"]
+    if (run_input.get("video_id") == VIDEO_ID
+            and run_input.get("notebook_revision") == "diaper-librosa-keywords-v23"
+            and all(path.is_file() for path in required)):
+        result_root = candidate
+        break
 
-selected = None
-for archive in archives:
-    with zipfile.ZipFile(archive) as zipped:
-        names = set(zipped.namelist())
-        run_names = [name for name in names if name.endswith("run-input.json")]
-        comparison_names = [name for name in names if name.endswith("diaper-overlap/comparison.json")]
-        if len(run_names) != 1 or len(comparison_names) != 1:
-            continue
-        run_input = json.loads(zipped.read(run_names[0]))
-        if run_input.get("video_id") == VIDEO_ID and run_input.get("notebook_revision") == "diaper-librosa-keywords-v23":
-            selected = archive
+# Local/manual ZIP fallback. Kaggle normally expands dataset archives, so the
+# direct-file path above is the expected route.
+if result_root is None:
+    archives = sorted(input_root.rglob("diarization-results*.zip"))
+    for archive in archives:
+        with zipfile.ZipFile(archive) as zipped:
+            run_names = [name for name in zipped.namelist() if name.endswith("run-input.json")]
+            if len(run_names) != 1:
+                continue
+            run_input = json.loads(zipped.read(run_names[0]))
+            if (run_input.get("video_id") != VIDEO_ID
+                    or run_input.get("notebook_revision") != "diaper-librosa-keywords-v23"):
+                continue
+            if PRIOR.exists(): shutil.rmtree(PRIOR)
+            PRIOR.mkdir()
+            for member in zipped.infolist():
+                target = (PRIOR/member.filename).resolve()
+                if not target.is_relative_to(PRIOR.resolve()):
+                    raise RuntimeError("Unsafe path in result ZIP")
+            zipped.extractall(PRIOR)
+            result_root = PRIOR
             break
-if selected is None:
-    raise RuntimeError("No attached result ZIP contains the completed v23 DiaPer run.")
-if PRIOR.exists(): shutil.rmtree(PRIOR)
-PRIOR.mkdir()
-with zipfile.ZipFile(selected) as zipped:
-    for member in zipped.infolist():
-        target = (PRIOR/member.filename).resolve()
-        if not target.is_relative_to(PRIOR.resolve()):
-            raise RuntimeError("Unsafe path in result ZIP")
-    zipped.extractall(PRIOR)
 
-BASELINE = next(PRIOR.rglob("full_video_evidence.json"))
-AUDIO = next(PRIOR.rglob("diaper-overlap/input/full-video.wav"))
-DIAPER = next(PRIOR.rglob("diaper-overlap/comparison.json"))
-print("Using:", selected)
+if result_root is None:
+    raise RuntimeError("Attach the Kaggle dataset created from completed diarization-results(15).zip.")
+BASELINE = next(result_root.rglob("full_video_evidence.json"))
+AUDIO = next(result_root.rglob("full-video.wav"))
+DIAPER = next(result_root.rglob("diaper-overlap/comparison.json"))
+print("Using extracted results:", result_root)
 print("Baseline:", BASELINE)
 print("Audio:", AUDIO)
 '''
