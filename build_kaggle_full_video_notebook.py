@@ -366,8 +366,10 @@ def run_diaper_overlap():
     infer_script = source/'diaper'/'infer_single_file.py'
     infer_text = infer_script.read_text()
     infer_text = infer_text.replace(
-        "if args.gpu >= 1:\n        safe_gpu.claim_gpus(nb_gpus=args.gpu)\n        args.device = torch.device(\"cuda\")\n    else:\n        args.device = torch.device(\"cpu\")",
-        "if args.gpu >= 0 and torch.cuda.is_available():\n        args.device = torch.device('cuda')\n    else:\n        args.device = torch.device('cpu')")
+        "if args.gpu >= 1:",
+        "if args.gpu >= 0 and torch.cuda.is_available():")
+    infer_text = infer_text.replace(
+        "        safe_gpu.claim_gpus(nb_gpus=args.gpu)\\n", "")
     infer_text = infer_text.replace(
         "librosa.get_duration(filename=filepath)", "sf.info(filepath).duration")
     infer_script.write_text(infer_text)
@@ -480,6 +482,9 @@ print('Saved in:', BASE)
                      "language_info": {"name": "python", "version": "3.12"}},
         "nbformat": 4, "nbformat_minor": 5,
     }
+    for index, notebook_cell in enumerate(notebook["cells"]):
+        if notebook_cell["cell_type"] == "code":
+            compile("".join(notebook_cell["source"]), f"notebook-cell-{index}", "exec")
     args.output.write_text(json.dumps(notebook, indent=1) + "\n")
     print(args.output)
 
