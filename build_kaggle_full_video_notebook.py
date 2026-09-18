@@ -60,7 +60,7 @@ import subprocess, sys, os, json, shutil, time, zipfile
 from urllib.parse import urlparse, parse_qs
 
 VIDEO_URL = 'https://www.youtube.com/watch?v=lVfKfbFd0SM'
-NOTEBOOK_REVISION = 'diaper-tensorboard-dependency-v22'
+NOTEBOOK_REVISION = 'diaper-librosa-keywords-v23'
 RUN_FULL_VIDEO = True
 RUN_TARGETED_REVIEW = True
 RUN_OVERLAP_EXTRACTION = True
@@ -396,6 +396,17 @@ def run_diaper_overlap():
         "map_location=args.device)", "map_location=args.device, weights_only=False)").replace(
         "map_location=device)", "map_location=device, weights_only=False)")
     models_script.write_text(models_text)
+    # Librosa 0.10+ made mel-filter arguments keyword-only. Retain DiaPer's
+    # published feature settings while adapting the call syntax.
+    features_script = source/'diaper'/'common_utils'/'features.py'
+    features_text = features_script.read_text()
+    legacy_mel_call = 'librosa.filters.mel(sampling_rate, n_fft, feature_dim)'
+    current_mel_call = 'librosa.filters.mel(sr=sampling_rate, n_fft=n_fft, n_mels=feature_dim)'
+    if legacy_mel_call in features_text:
+        features_text = features_text.replace(legacy_mel_call, current_mel_call)
+    if current_mel_call not in features_text:
+        raise RuntimeError('Could not patch DiaPer for the current Librosa API')
+    features_script.write_text(features_text)
 
     audio_dir = RESULTS/'diaper-overlap'/'input'
     audio_dir.mkdir(parents=True, exist_ok=True)
