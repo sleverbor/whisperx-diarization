@@ -54,6 +54,17 @@ ENV["PYTHONUNBUFFERED"] = "1"
 ENV["NUMBA_CACHE_DIR"] = str(BASE/"numba-clearvoice")
 ENV["HF_HOME"] = str(BASE/"huggingface-cache")
 ENV["SPEECHBRAIN_CACHE"] = str(BASE/"speechbrain-cache"/"spkrec-ecapa-voxceleb")
+try:
+    from kaggle_secrets import UserSecretsClient
+    hf_token = UserSecretsClient().get_secret("HF_TOKEN")
+except Exception:
+    hf_token = None
+if hf_token:
+    ENV["HF_TOKEN"] = hf_token
+    ENV["HUGGING_FACE_HUB_TOKEN"] = hf_token
+    print("Hugging Face credentials configured from Kaggle secret HF_TOKEN.")
+else:
+    print("HF_TOKEN secret was not found; only public Hugging Face models will work.")
 def checked(command, **kwargs):
     return subprocess.run(command, env=ENV, check=True, **kwargs)
 
