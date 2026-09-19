@@ -18,6 +18,35 @@ class OverlapExtractionReviewTests(unittest.TestCase):
         selected = select_overlap_segments(baseline)
         self.assertEqual([row[0] for row in selected], [0])
 
+    def test_policy_adds_strong_rows_without_dropping_baseline_rows(self):
+        baseline = {"segments": [
+            {"start": 0.0, "end": 1.0, "evidence": [{
+                "source": "overlapping_speakers",
+                "details": {"target_and_non_target": True},
+            }]},
+            {"start": 1.0, "end": 2.0, "evidence": []},
+            {"start": 2.0, "end": 3.0, "evidence": []},
+        ]}
+        policy = {"segments": [
+            {"baseline_index": 0, "start": 0.0, "end": 1.0,
+             "tier": "separation_review"},
+            {"baseline_index": 1, "start": 1.0, "end": 2.0,
+             "tier": "separation_review", "reasons": ["strong_sortformer_overlap"]},
+            {"baseline_index": 2, "start": 2.0, "end": 3.0,
+             "tier": "uncertainty_evidence"},
+        ]}
+        selected = select_overlap_segments(baseline, policy)
+        self.assertEqual([row[0] for row in selected], [0, 1])
+        self.assertEqual(selected[0][2]["source"], "overlapping_speakers")
+        self.assertEqual(selected[1][2]["source"], "supplemental_overlap_policy")
+
+    def test_policy_must_match_baseline_timing(self):
+        baseline = {"segments": [{"start": 0.0, "end": 1.0, "evidence": []}]}
+        policy = {"segments": [{"baseline_index": 0, "start": 9.0, "end": 10.0,
+                                "tier": "separation_review"}]}
+        with self.assertRaises(ValueError):
+            select_overlap_segments(baseline, policy)
+
     def test_low_energy_is_suppressed_even_if_asr_hallucinates(self):
         self.assertEqual(
             classify_extraction(0.01, 0.40, 0.075, "My name is Jack."),

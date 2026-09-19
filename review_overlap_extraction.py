@@ -15,8 +15,9 @@ import subprocess
 import numpy as np
 
 
-def select_overlap_segments(baseline):
-    selected = []
+def select_overlap_segments(baseline, policy=None):
+    """Select the additive union of baseline and strong supplemental review rows."""
+    selected_by_index = {}
     for index, segment in enumerate(baseline.get("segments", [])):
         overlap = next(
             (
@@ -28,8 +29,32 @@ def select_overlap_segments(baseline):
             None,
         )
         if overlap is not None:
-            selected.append((index, segment, overlap))
-    return selected
+            selected_by_index[index] = (index, segment, overlap)
+    if policy is not None:
+        segments = baseline.get("segments", [])
+        for row in policy.get("segments", []):
+            if row.get("tier") != "separation_review":
+                continue
+            index = int(row["baseline_index"])
+            if not 0 <= index < len(segments):
+                raise ValueError(f"Policy baseline index is out of range: {index}")
+            segment = segments[index]
+            if (abs(float(row["start"]) - float(segment["start"])) > 0.02
+                    or abs(float(row["end"]) - float(segment["end"])) > 0.02):
+                raise ValueError(f"Policy timing does not match baseline index {index}")
+            if index not in selected_by_index:
+                selected_by_index[index] = (index, segment, {
+                    "source": "supplemental_overlap_policy",
+                    "details": {
+                        "tier": row["tier"],
+                        "reasons": row.get("reasons", []),
+                        "sortformer_overlap_fraction": row.get(
+                            "sortformer_overlap_fraction", 0.0),
+                        "diaper_overlap_fraction": row.get(
+                            "diaper_overlap_fraction", 0.0),
+                    },
+                })
+    return [selected_by_index[index] for index in sorted(selected_by_index)]
 
 
 def classify_extraction(original_similarity, extracted_similarity, energy_retention,
@@ -147,6 +172,7 @@ def main():
     parser.add_argument("--whisper-model", default="large-v2")
     parser.add_argument("--wesep-model-dir", type=Path)
     parser.add_argument("--maximum-segments", type=int)
+    parser.add_argument("--selection-policy", type=Path)
     args = parser.parse_args()
 
     import soundfile as sf
@@ -159,7 +185,9 @@ def main():
     args.output_dir.mkdir(parents=True, exist_ok=True)
     baseline_bytes = args.baseline.read_bytes()
     baseline = json.loads(baseline_bytes)
-    selected = select_overlap_segments(baseline)
+    policy = (json.loads(args.selection_policy.read_text())
+              if args.selection_policy else None)
+    selected = select_overlap_segments(baseline, policy)
     if args.maximum_segments is not None:
         selected = selected[:args.maximum_segments]
 
@@ -334,7 +362,12 @@ def main():
     report = {
         "review_required": True,
         "baseline_modified": False,
-        "selection": "target/non-target diarization overlap evidence",
+        "selection": (
+            "additive baseline overlap plus strong supplemental policy"
+            if policy is not None
+            else "target/non-target diarization overlap evidence"
+        ),
+        "selection_policy": str(args.selection_policy) if args.selection_policy else None,
         "thresholds_are_provisional": True,
         "triage_thresholds": {
             "suppressed_below_energy_retention": 0.10,

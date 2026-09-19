@@ -60,7 +60,7 @@ import subprocess, sys, os, json, shutil, time, zipfile
 from urllib.parse import urlparse, parse_qs
 
 VIDEO_URL = 'https://www.youtube.com/watch?v=lVfKfbFd0SM'
-NOTEBOOK_REVISION = 'diaper-librosa-keywords-v23'
+NOTEBOOK_REVISION = 'additive-sortformer-extraction-v24'
 RUN_FULL_VIDEO = True
 RUN_TARGETED_REVIEW = True
 RUN_OVERLAP_EXTRACTION = True
@@ -333,6 +333,25 @@ def run_overlap_extraction():
         '--voice-priors', str(REFERENCE/'voice_embeddings.npy'),
         '--output-dir', str(output_dir), '--device', 'cuda' if ON_KAGGLE else 'cpu',
         '--whisper-model', 'large-v2']
+    selection_policy = None
+    search_root = Path('/kaggle/input') if ON_KAGGLE else Path.cwd()
+    for head_path in search_root.rglob('head-to-head.json'):
+        try:
+            head = json.loads(head_path.read_text())
+        except Exception:
+            continue
+        candidate = head_path.parent/'overlap-review-policy.json'
+        if (head.get('video_id') == VIDEO_ID
+                and head.get('revision') == 'sortformer-additive-two-tier-policy-v5'
+                and candidate.is_file()):
+            if selection_policy is not None:
+                raise RuntimeError('Found more than one matching v5 overlap policy dataset')
+            selection_policy = candidate
+    if selection_policy is not None:
+        command += ['--selection-policy', str(selection_policy)]
+        print('Using additive Sortformer policy:', selection_policy)
+    else:
+        print('No matching v5 Sortformer policy attached; using baseline overlap only.')
     before = (RESULTS/'full_video_evidence.json').read_bytes()
     try:
         stream(command, 'overlap-extraction.log', 'Overlap extraction failed; baseline results remain valid.')
@@ -495,14 +514,14 @@ print('Saved in:', BASE)
 
     notebook = {
         "cells": [
-            cell("markdown", "# Current-video full diarization and DiaPer overlap test\n\nAttach a Kaggle dataset containing `lVfKfbFd0SM_full480.mp4` (the existing local filename) or `lVfKfbFd0SM.mp4`. This notebook preserves the evidence-based baseline, then runs DiaPer as an independent full-audio diarizer and compares its overlap output with the saved problem intervals. Supplemental stages never overwrite the baseline.\n"),
+            cell("markdown", "# Current-video full diarization and additive overlap extraction\n\nAttach a Kaggle dataset containing `lVfKfbFd0SM_full480.mp4` (the existing local filename) or `lVfKfbFd0SM.mp4`. To process the additional Sortformer candidates, also attach a dataset made from the v5 `sortformer-comparison-results.zip`. The notebook preserves the evidence-based baseline and uses the additive policy only to select supplemental speaker-conditioned extraction. Supplemental stages never overwrite the baseline.\n"),
             cell("code", config),
             cell("markdown", "## Install and verify\n\nEnable Internet and a GPU before running. The setup uses an isolated environment and verifies CUDA before the full video starts.\n"),
             cell("code", "import base64\n" + setup),
             cell("markdown", "## Credentials, checkpoint restore, and attached video\n\nCreate a private Kaggle secret named `HF_TOKEN`. The token is read from the environment and is never embedded or printed. The current video is copied from the attached dataset because YouTube blocks Kaggle's shared addresses.\n"),
             cell("code", credentials),
             cell("code", functions),
-            cell("markdown", "## Run the opening check, whole video, and DiaPer comparison\n\nThe opening check confirms that face analysis is actually using CUDA. The established stages run first. DiaPer then analyzes the full audio so it has enough context to form speaker attractors, and its anonymous speakers are aligned to the baseline only for a read-only comparison.\n"),
+            cell("markdown", "## Run the opening check, whole video, and additive overlap review\n\nThe opening check confirms that face analysis is actually using CUDA. The established stages run first. When the matching v5 Sortformer result dataset is attached, speaker-conditioned extraction processes the union of existing baseline overlap intervals and strong Sortformer additions. DiaPer remains a read-only comparison.\n"),
             cell("code", run),
             cell("markdown", "## Download results\n\n`diarization-results.zip` contains the preserved baseline, existing supplemental reviews, DiaPer RTTM and comparison report, logs, and package versions. `stage-checkpoints.zip` can restart expensive baseline stages.\n"),
             cell("code", save),
