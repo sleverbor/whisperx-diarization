@@ -1,0 +1,295 @@
+{
+  "schema_version": 1,
+  "labels": [
+    {
+      "exchange_id": "01-0033",
+      "start": 76.417,
+      "end": 77.778,
+      "video": "media/01-0033-source.mp4",
+      "current_extraction": "media/01-0033-current.wav",
+      "target_words": "im hard of hearing now come",
+      "other_words": "ok sir",
+      "variants": [
+        {
+          "exchange_id": "01-0033",
+          "baseline_index": 33,
+          "start": 76.417,
+          "end": 77.778,
+          "context_seconds": 3,
+          "status": "completed",
+          "output_length_samples": 117776,
+          "input_length_samples": 117776,
+          "alignment_preserved": true,
+          "audio": "media/01-0033-context-3s-target.wav",
+          "target_similarity": 0.40126127004623413,
+          "energy_retention": 0.19001692032526254,
+          "transcription": {
+            "text": "soon. I'm proud of hearing this.",
+            "average_log_probability": -0.6946946779886881,
+            "maximum_no_speech_probability": 0.5248715877532959
+          },
+          "target_word_f1": 0.3333333333333333,
+          "other_word_f1": 0,
+          "transcript": "soon. I'm proud of hearing this."
+        },
+        {
+          "exchange_id": "01-0033",
+          "baseline_index": 33,
+          "start": 76.417,
+          "end": 77.778,
+          "context_seconds": 5,
+          "status": "completed",
+          "output_length_samples": 181776,
+          "input_length_samples": 181776,
+          "alignment_preserved": true,
+          "audio": "media/01-0033-context-5s-target.wav",
+          "target_similarity": 0.39782294631004333,
+          "energy_retention": 0.1898259784666055,
+          "transcription": {
+            "text": "soon. I'm proud of hearing this.",
+            "average_log_probability": -0.6192690815244403,
+            "maximum_no_speech_probability": 0.5189986824989319
+          },
+          "target_word_f1": 0.3333333333333333,
+          "other_word_f1": 0,
+          "transcript": "soon. I'm proud of hearing this."
+        }
+      ],
+      "notes": "",
+      "context_3": "mixed_speakers",
+      "context_5": "mixed_speakers"
+    },
+    {
+      "exchange_id": "02-0064",
+      "start": 130.548,
+      "end": 131.208,
+      "video": "media/02-0064-source.mp4",
+      "current_extraction": "media/02-0064-current.wav",
+      "target_words": "",
+      "other_words": "what protects you",
+      "variants": [
+        {
+          "exchange_id": "02-0064",
+          "baseline_index": 64,
+          "start": 130.548,
+          "end": 131.208,
+          "context_seconds": 3,
+          "status": "completed",
+          "output_length_samples": 106560,
+          "input_length_samples": 106560,
+          "alignment_preserved": true,
+          "audio": "media/02-0064-context-3s-target.wav",
+          "target_similarity": -0.09726923704147339,
+          "energy_retention": 0.1449569484602836,
+          "transcription": {
+            "text": "",
+            "average_log_probability": null,
+            "maximum_no_speech_probability": null
+          },
+          "target_word_f1": 0,
+          "other_word_f1": 0,
+          "transcript": ""
+        },
+        {
+          "exchange_id": "02-0064",
+          "baseline_index": 64,
+          "start": 130.548,
+          "end": 131.208,
+          "context_seconds": 5,
+          "status": "completed",
+          "output_length_samples": 170560,
+          "input_length_samples": 170560,
+          "alignment_preserved": true,
+          "audio": "media/02-0064-context-5s-target.wav",
+          "target_similarity": -0.11610887944698334,
+          "energy_retention": 0.10366307014107215,
+          "transcription": {
+            "text": "",
+            "average_log_probability": null,
+            "maximum_no_speech_probability": null
+          },
+          "target_word_f1": 0,
+          "other_word_f1": 0,
+          "transcript": ""
+        }
+      ],
+      "notes": "",
+      "context_3": "no_intelligible_speech",
+      "context_5": "unclear"
+    },
+    {
+      "exchange_id": "03-0118",
+      "start": 206.596,
+      "end": 207.777,
+      "video": "media/03-0118-source.mp4",
+      "current_extraction": "media/03-0118-current.wav",
+      "target_words": "listen",
+      "other_words": "nothing you could tell me",
+      "variants": [
+        {
+          "exchange_id": "03-0118",
+          "baseline_index": 118,
+          "start": 206.596,
+          "end": 207.777,
+          "context_seconds": 3,
+          "status": "completed",
+          "output_length_samples": 114896,
+          "input_length_samples": 114896,
+          "alignment_preserved": true,
+          "audio": "media/03-0118-context-3s-target.wav",
+          "target_similarity": 0.30275940895080566,
+          "energy_retention": 0.17516006335651185,
+          "transcription": {
+            "text": "Listen to me. People can tell me.",
+            "average_log_probability": -0.8641777081148965,
+            "maximum_no_speech_probability": 0.7091518640518188
+          },
+          "target_word_f1": 0.25,
+          "other_word_f1": 0.3333333333333333,
+          "transcript": "Listen to me. People can tell me."
+        },
+        {
+          "exchange_id": "03-0118",
+          "baseline_index": 118,
+          "start": 206.596,
+          "end": 207.777,
+          "context_seconds": 5,
+          "status": "completed",
+          "output_length_samples": 178896,
+          "input_length_samples": 178896,
+          "alignment_preserved": true,
+          "audio": "media/03-0118-context-5s-target.wav",
+          "target_similarity": 0.26660218834877014,
+          "energy_retention": 0.16175023504080246,
+          "transcription": {
+            "text": "",
+            "average_log_probability": null,
+            "maximum_no_speech_probability": null
+          },
+          "target_word_f1": 0,
+          "other_word_f1": 0,
+          "transcript": ""
+        }
+      ],
+      "notes": "",
+      "context_3": "mixed_speakers",
+      "context_5": "mixed_speakers"
+    },
+    {
+      "exchange_id": "04-0157",
+      "start": 285.463,
+      "end": 286.264,
+      "video": "media/04-0157-source.mp4",
+      "current_extraction": "media/04-0157-current.wav",
+      "target_words": "i already know",
+      "other_words": "",
+      "variants": [
+        {
+          "exchange_id": "04-0157",
+          "baseline_index": 157,
+          "start": 285.463,
+          "end": 286.264,
+          "context_seconds": 3,
+          "status": "completed",
+          "output_length_samples": 108816,
+          "input_length_samples": 108816,
+          "alignment_preserved": true,
+          "audio": "media/04-0157-context-3s-target.wav",
+          "target_similarity": 0.24699415266513824,
+          "energy_retention": 0.18861574150687135,
+          "transcription": {
+            "text": "I already know.",
+            "average_log_probability": -0.6286840949739728,
+            "maximum_no_speech_probability": 0.022916072979569435
+          },
+          "target_word_f1": 1,
+          "other_word_f1": 0,
+          "transcript": "I already know."
+        },
+        {
+          "exchange_id": "04-0157",
+          "baseline_index": 157,
+          "start": 285.463,
+          "end": 286.264,
+          "context_seconds": 5,
+          "status": "completed",
+          "output_length_samples": 172816,
+          "input_length_samples": 172816,
+          "alignment_preserved": true,
+          "audio": "media/04-0157-context-5s-target.wav",
+          "target_similarity": 0.26246920228004456,
+          "energy_retention": 0.18870349714511458,
+          "transcription": {
+            "text": "I already know.",
+            "average_log_probability": -0.5932604925973075,
+            "maximum_no_speech_probability": 0.022824518382549286
+          },
+          "target_word_f1": 1,
+          "other_word_f1": 0,
+          "transcript": "I already know."
+        }
+      ],
+      "notes": "",
+      "context_3": "target_only",
+      "context_5": "target_only"
+    },
+    {
+      "exchange_id": "05-0215",
+      "start": 402.094,
+      "end": 403.314,
+      "video": "media/05-0215-source.mp4",
+      "current_extraction": "media/05-0215-current.wav",
+      "target_words": "there's no",
+      "other_words": "pardon me",
+      "variants": [
+        {
+          "exchange_id": "05-0215",
+          "baseline_index": 215,
+          "start": 402.094,
+          "end": 403.314,
+          "context_seconds": 3,
+          "status": "completed",
+          "output_length_samples": 115520,
+          "input_length_samples": 115520,
+          "alignment_preserved": true,
+          "audio": "media/05-0215-context-3s-target.wav",
+          "target_similarity": 0.12490880489349365,
+          "energy_retention": 0.1466125564474856,
+          "transcription": {
+            "text": "There's no question.",
+            "average_log_probability": -1.0164201259613037,
+            "maximum_no_speech_probability": 0.4422062337398529
+          },
+          "target_word_f1": 0.8,
+          "other_word_f1": 0,
+          "transcript": "There's no question."
+        },
+        {
+          "exchange_id": "05-0215",
+          "baseline_index": 215,
+          "start": 402.094,
+          "end": 403.314,
+          "context_seconds": 5,
+          "status": "completed",
+          "output_length_samples": 179520,
+          "input_length_samples": 179520,
+          "alignment_preserved": true,
+          "audio": "media/05-0215-context-5s-target.wav",
+          "target_similarity": 0.14254185557365417,
+          "energy_retention": 0.14551102519157547,
+          "transcription": {
+            "text": "I'm so sorry. Thank you. There's no. Thank you.",
+            "average_log_probability": -0.9762779325246811,
+            "maximum_no_speech_probability": 0.42146578431129456
+          },
+          "target_word_f1": 0.3636363636363636,
+          "other_word_f1": 0,
+          "transcript": "I'm so sorry. Thank you. There's no. Thank you."
+        }
+      ],
+      "notes": "",
+      "context_3": "mostly_target",
+      "context_5": "mostly_target"
+    }
+  ]
+}
