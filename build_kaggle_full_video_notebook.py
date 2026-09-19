@@ -210,13 +210,20 @@ else:
 if not ENV['HF_TOKEN']:
     raise RuntimeError('A Hugging Face token with diarization-model access is required.')
 if ON_KAGGLE:
-    for archive in Path('/kaggle/input').rglob('stage-checkpoints.zip'):
+    for archive in Path('/kaggle/input').rglob('stage-checkpoints*.zip'):
         with zipfile.ZipFile(archive) as zipped:
             for member in zipped.infolist():
                 target = (BASE/member.filename).resolve()
                 if not target.is_relative_to(CACHE.resolve()):
                     raise RuntimeError('Unexpected checkpoint archive path')
             zipped.extractall(BASE)
+    expanded_checkpoints = [path for path in Path('/kaggle/input').rglob(VIDEO_ID)
+                            if path.is_dir() and path.parent.name == 'stage-cache']
+    if len(expanded_checkpoints) > 1:
+        raise RuntimeError('Found more than one expanded checkpoint dataset for this video')
+    if expanded_checkpoints:
+        shutil.copytree(expanded_checkpoints[0], CACHE, dirs_exist_ok=True)
+        print('Restored expanded stage checkpoints:', expanded_checkpoints[0])
 OVERLAP_POLICY = None
 policy_matches = []
 search_root = Path('/kaggle/input') if ON_KAGGLE else Path.cwd()
