@@ -490,12 +490,19 @@ def run_diaper_overlap():
 
 def export_reference_promotion_review():
     output_dir = RESULTS/'reference-promotion-review'
+    manifest_path = output_dir/'manifest.json'
+    if manifest_path.is_file():
+        print('Reusing completed reference-promotion review:', manifest_path)
+        return json.loads(manifest_path.read_text())
+    if output_dir.exists():
+        print('Removing incomplete reference-promotion review:', output_dir)
+        shutil.rmtree(output_dir)
     command = [PYTHON, str(WORK/'reference_promotion.py'), 'export',
         '--video', str(VIDEO), '--evidence', str(RESULTS/'full_video_evidence.json'),
         '--output-dir', str(output_dir), '--source-url', VIDEO_URL,
         '--reference-metadata', str(REFERENCE/'reference.json')]
     checked(command, cwd=WORK)
-    return json.loads((output_dir/'manifest.json').read_text())
+    return json.loads(manifest_path.read_text())
 '''
 
     run = '''opening_clip = extract_clip(0, 30, 'opening_30s.mp4')
