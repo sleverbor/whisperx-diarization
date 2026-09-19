@@ -46,6 +46,12 @@ def rows_from_source(source):
             "context_start": max(0.0, start - 4.0), "context_end": end + 4.0,
             "text": row.get("text", row.get("baseline_text", "")),
             "speaker": row.get("baseline_speaker", row.get("final_speaker")),
+            "review_prompt": (
+                "Identify who speaks during the overlap. You do not need to repeat "
+                "correct lines. Correct words only if the "
+                "shown transcript is wrong or incomplete. Say what cue you used, or "
+                "say that the exchange is too uncertain to label."
+            ),
             "source": str(source),
         })
     return result
@@ -120,15 +126,15 @@ def add_annotation(session, args):
 
 HTML = r'''<!doctype html><html><head><meta charset="utf-8"><title>Agent Review Player</title>
 <style>body{font:16px system-ui;max-width:980px;margin:24px auto;background:#101318;color:#eef2f6}video,audio{width:100%;max-height:62vh;background:#000}.bar{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}button,label{background:#283241;color:white;border:0;border-radius:8px;padding:9px 12px}.card{background:#1a202a;padding:16px;border-radius:12px;margin:12px 0}.muted{color:#aeb8c5}input[type=file]{max-width:300px}</style></head><body>
-<h1>Conversational diarization review</h1><div class="card"><label>Choose the matching local video or audio <input id="file" type="file" accept="video/*,audio/*"></label></div>
+<h1>Conversational diarization review</h1><div class="card"><label>Choose the matching local video (preferred; audio is accepted) <input id="file" type="file" accept="video/*,audio/*"></label><p class="muted">You do not need to repeat correct lines. Comment only on uncertain speakers, overlap, missing or incorrect words, and the cue you used. “Nothing to add” and “too uncertain” are useful answers.</p></div>
 <div id="media"></div><div class="bar"><button onclick="back()">−2 sec</button><button onclick="toggle()">Play/Pause</button><button onclick="loopClip()">Loop clip</button><button onclick="speed(.5)">0.5×</button><button onclick="speed(.75)">0.75×</button><button onclick="speed(1)">1×</button></div>
-<div class="card"><b id="where">Waiting for queue…</b><p id="text"></p><span class="muted" id="state"></span></div>
+<div class="card"><b id="where">Waiting for queue…</b><p id="prompt"></p><p>Current transcript: <span id="text"></span></p><span class="muted" id="state"></span></div>
 <script>let m=null,item=null,lastRevision=-1,loop=false;
 file.onchange=()=>{if(m)m.remove();let f=file.files[0];m=document.createElement(f.type.startsWith('audio')?'audio':'video');m.controls=true;m.src=URL.createObjectURL(f);media.replaceChildren(m)};
 function back(){if(m)m.currentTime=Math.max(0,m.currentTime-2)}function toggle(){if(m)(m.paused?m.play():m.pause())}function speed(x){if(m)m.playbackRate=x}function loopClip(){loop=!loop;state.textContent=loop?'Loop enabled':''}
 setInterval(()=>{if(m&&item&&loop&&m.currentTime>=item.context_end){m.currentTime=item.context_start;m.play()}},100);
 setInterval(async()=>{if(m)await fetch('/api/player-state',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({media_time:m.currentTime,playing:!m.paused,rate:m.playbackRate})})},200);
-setInterval(async()=>{let c=await(await fetch('/api/control')).json();if(c.revision===lastRevision)return;lastRevision=c.revision;if(c.item){item=c.item;where.textContent=`${item.start.toFixed(2)}–${item.end.toFixed(2)} sec · review ${item.review_id}`;text.textContent=item.text;if(m){m.currentTime=item.context_start;m.playbackRate=c.rate||1;if(c.autoplay)m.play()}}if(c.action==='play'&&m){if(c.time!=null)m.currentTime=c.time;m.play()}if(c.action==='pause'&&m)m.pause()},500);
+setInterval(async()=>{let c=await(await fetch('/api/control')).json();if(c.revision===lastRevision)return;lastRevision=c.revision;if(c.item){item=c.item;where.textContent=`${item.start.toFixed(2)}–${item.end.toFixed(2)} sec · review ${item.review_id}`;prompt.textContent=item.review_prompt;text.textContent=item.text;if(m){m.currentTime=item.context_start;m.playbackRate=c.rate||1;if(c.autoplay)m.play()}}if(c.action==='play'&&m){if(c.time!=null)m.currentTime=c.time;m.play()}if(c.action==='pause'&&m)m.pause()},500);
 </script></body></html>'''
 
 
