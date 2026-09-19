@@ -4,9 +4,10 @@ from overlap_review_policy import apply_policy
 
 
 class OverlapReviewPolicyTest(unittest.TestCase):
-    def evaluate(self, sf, dp):
+    def evaluate(self, sf, dp, baseline_overlap=False):
         base = {"baseline_index": 7, "start": 1.0, "end": 2.0,
-                "text": "words", "baseline_speaker": "Target_Speaker"}
+                "text": "words", "baseline_speaker": "Target_Speaker",
+                "baseline_target_non_target_overlap": baseline_overlap}
         return apply_policy(
             {"segments": [{**base, "overlap_fraction": sf}]},
             {"segments": [{**base, "overlap_fraction": dp}]},
@@ -22,6 +23,11 @@ class OverlapReviewPolicyTest(unittest.TestCase):
         row = self.evaluate(0, .20)
         self.assertEqual(row["tier"], "uncertainty_evidence")
         self.assertEqual(row["reasons"], ["strong_diaper_rescue"])
+
+    def test_preserves_existing_baseline_overlap_review(self):
+        row = self.evaluate(0, 0, baseline_overlap=True)
+        self.assertEqual(row["tier"], "separation_review")
+        self.assertEqual(row["reasons"], ["baseline_overlap_evidence"])
 
     def test_below_threshold_signals_do_nothing(self):
         self.assertEqual(self.evaluate(.029, .199)["tier"], "none")

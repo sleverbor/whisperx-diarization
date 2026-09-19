@@ -21,9 +21,14 @@ def apply_policy(sortformer, diaper):
         dp = diaper_by_index.get(sf["baseline_index"], {})
         sf_fraction = float(sf.get("overlap_fraction", 0.0))
         dp_fraction = float(dp.get("overlap_fraction", 0.0))
-        if sf_fraction >= STRONG_SORTFORMER_FRACTION:
+        baseline_overlap = bool(sf.get("baseline_target_non_target_overlap", False))
+        if baseline_overlap or sf_fraction >= STRONG_SORTFORMER_FRACTION:
             tier = "separation_review"
-            reasons = ["strong_sortformer_overlap"]
+            reasons = []
+            if baseline_overlap:
+                reasons.append("baseline_overlap_evidence")
+            if sf_fraction >= STRONG_SORTFORMER_FRACTION:
+                reasons.append("strong_sortformer_overlap")
         elif (sf_fraction >= WEAK_SORTFORMER_FRACTION
               or dp_fraction >= DIAPER_RESCUE_FRACTION):
             tier = "uncertainty_evidence"
@@ -40,6 +45,7 @@ def apply_policy(sortformer, diaper):
             "start": sf["start"], "end": sf["end"],
             "text": sf.get("text", ""),
             "baseline_speaker": sf.get("baseline_speaker"),
+            "baseline_overlap_evidence": baseline_overlap,
             "tier": tier, "reasons": reasons,
             "sortformer_overlap_fraction": sf_fraction,
             "diaper_overlap_fraction": dp_fraction,

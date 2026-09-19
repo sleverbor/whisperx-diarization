@@ -29,7 +29,7 @@ def main():
     config = f'''from pathlib import Path
 import json, os, shutil, subprocess, sys, zipfile
 
-REVISION = "sortformer-two-tier-policy-v4"
+REVISION = "sortformer-additive-two-tier-policy-v5"
 VIDEO_ID = "lVfKfbFd0SM"
 NEMO_COMMIT = "{NEMO_COMMIT}"
 BASE = Path("/kaggle/working") if Path("/kaggle/input").exists() else Path.cwd()/"sortformer-run"
@@ -162,7 +162,7 @@ display(FileLink(str(BASE/"sortformer-comparison-results.zip")))
 '''
     notebook = {
         "cells": [
-            cell("markdown", "# Sortformer versus DiaPer overlap test\n\nAttach the completed `diarization-results(15).zip`. This notebook reuses its preserved baseline and full-video audio, runs NVIDIA's offline four-speaker Sortformer in bounded contextual windows, and applies the same overlap/control comparison used for DiaPer. It also exports a two-tier review policy: strong Sortformer activity selects separation review, while weaker Sortformer and strong DiaPer-only activity remain uncertainty evidence. It does not modify the transcription or speaker identities. The public model is licensed CC-BY-NC-4.0.\n"),
+            cell("markdown", "# Sortformer versus DiaPer overlap test\n\nAttach the completed `diarization-results(15).zip`. This notebook reuses its preserved baseline and full-video audio, runs NVIDIA's offline four-speaker Sortformer in bounded contextual windows, and applies the same overlap/control comparison used for DiaPer. It also exports an additive two-tier review policy: existing baseline overlap remains selected, strong Sortformer activity adds separation-review candidates, and weaker Sortformer or strong DiaPer-only activity remains uncertainty evidence. It does not modify the transcription or speaker identities. The public model is licensed CC-BY-NC-4.0.\n"),
             cell("code", config),
             cell("markdown", "## Install the isolated Sortformer runtime\n\nEnable Internet and a GPU. NeMo is pinned to the recorded commit for reproducibility.\n"),
             cell("code", setup),
