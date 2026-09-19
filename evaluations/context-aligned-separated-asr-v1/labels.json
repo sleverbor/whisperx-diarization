@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "labels": [
+    {
+      "exchange_id": "01-0033",
+      "start": 76.417,
+      "end": 77.778,
+      "target_words": "im hard of hearing now come",
+      "video": "media/01-0033-source.mp4",
+      "variants": [
+        {
+          "offset": -1,
+          "stream": 1,
+          "selection_basis": "prior_human_target",
+          "audio": "media/01-0033-offset--1-stream-1-full.wav",
+          "aligned_text": "Good. I'm proud of you. I don't think there's",
+          "full_text": "How are you doing, Mark? How are you? Good. I'm proud of you. I don't think there's anybody else I'm proud of. I'm proud of you."
+        },
+        {
+          "offset": 0,
+          "stream": 1,
+          "selection_basis": "prior_human_target",
+          "audio": "media/01-0033-offset-+0-stream-1-full.wav",
+          "aligned_text": "I'm glad to hear it. If it was",
+          "full_text": "All right, dear, how are you? I'm glad to hear it. If it was somebody else, I'm heartbroken. But I'd still like to know if she's."
+        },
+        {
+          "offset": 1,
+          "stream": 1,
+          "selection_basis": "prior_human_target",
+          "audio": "media/01-0033-offset-+1-stream-1-full.wav",
+          "aligned_text": "very",
+          "full_text": "Thank you very much."
+        }
+      ],
+      "notes": "it sounds mostly aligned, especially the last one.  but the text is wrong so i marked unclear.",
+      "offset_minus_1": "unclear",
+      "offset_0": "unclear",
+      "offset_1": "unclear"
+    },
+    {
+      "exchange_id": "04-0157",
+      "start": 285.463,
+      "end": 286.264,
+      "target_words": "i already know",
+      "video": "media/04-0157-source.mp4",
+      "variants": [
+        {
+          "offset": -1,
+          "stream": 1,
+          "selection_basis": "prior_human_target",
+          "audio": "media/04-0157-offset--1-stream-1-full.wav",
+          "aligned_text": "I already know.",
+          "full_text": "City Attorney, call the Mayor, I'm asking you to do it. I already know. Like I said, I'm an educated person."
+        },
+        {
+          "offset": 0,
+          "stream": 1,
+          "selection_basis": "prior_human_target",
+          "audio": "media/04-0157-offset-+0-stream-1-full.wav",
+          "aligned_text": "it. I already know.",
+          "full_text": "I'm asking you to do it. I already know. Like I said, I'm an educated boss."
+        },
+        {
+          "offset": 1,
+          "stream": 1,
+          "selection_basis": "prior_human_target",
+          "audio": "media/04-0157-offset-+1-stream-1-full.wav",
+          "aligned_text": "it. I already know.",
+          "full_text": "I'm asking you to do it. I already know. Like I said, I'm an educated boss."
+        }
+      ],
+      "notes": "last two were a second or two early",
+      "offset_minus_1": "correct",
+      "offset_0": "incorrect",
+      "offset_1": "incorrect"
+    },
+    {
+      "exchange_id": "05-0215",
+      "start": 402.094,
+      "end": 403.314,
+      "target_words": "there's no",
+      "video": "media/05-0215-source.mp4",
+      "variants": [
+        {
+          "offset": -1,
+          "stream": 1,
+          "selection_basis": "prior_human_target",
+          "audio": "media/05-0215-offset--1-stream-1-full.wav",
+          "aligned_text": "me, there is no",
+          "full_text": "I am not, I am not required to provide any information, so trust me, there is no point in looking at crime figures right now."
+        },
+        {
+          "offset": 0,
+          "stream": 1,
+          "selection_basis": "highest_target_word_match_for_review",
+          "audio": "media/05-0215-offset-+0-stream-1-full.wav",
+          "aligned_text": "me, there is no",
+          "full_text": "I am not required to provide any information, so trust me, there is no point in looking at crime papers right now."
+        },
+        {
+          "offset": 1,
+          "stream": 1,
+          "selection_basis": "prior_human_target",
+          "audio": "media/05-0215-offset-+1-stream-1-full.wav",
+          "aligned_text": "like, there's no",
+          "full_text": "So, just like, there's no point in looking at the pictures, right? There's no point in looking at the photos."
+        }
+      ],
+      "notes": "the phrase you are asking for or part of it repeats.  i chose the first instance.",
+      "offset_minus_1": "incorrect",
+      "offset_0": "correct",
+      "offset_1": "incorrect"
+    }
+  ]
+}
