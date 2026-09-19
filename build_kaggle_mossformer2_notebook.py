@@ -53,6 +53,7 @@ ENV = os.environ.copy()
 ENV["PYTHONUNBUFFERED"] = "1"
 ENV["NUMBA_CACHE_DIR"] = str(BASE/"numba-clearvoice")
 ENV["HF_HOME"] = str(BASE/"huggingface-cache")
+ENV["SPEECHBRAIN_CACHE"] = str(BASE/"speechbrain-cache"/"spkrec-ecapa-voxceleb")
 def checked(command, **kwargs):
     return subprocess.run(command, env=ENV, check=True, **kwargs)
 

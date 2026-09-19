@@ -69,9 +69,11 @@ def main():
         task="speech_separation", model_names=["MossFormer2_SS_16K"]
     )
 
-    speaker_dir = Path("pretrained_models/spkrec-ecapa-voxceleb")
+    speaker_dir = Path(os.environ.get(
+        "SPEECHBRAIN_CACHE", "pretrained_models/spkrec-ecapa-voxceleb"
+    ))
     speaker = SpeakerRecognition.from_hparams(
-        source=str(speaker_dir), savedir=str(speaker_dir),
+        source="speechbrain/spkrec-ecapa-voxceleb", savedir=str(speaker_dir),
         run_opts={"device": args.device},
     )
     whisper = WhisperModel(
