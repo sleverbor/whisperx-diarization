@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "purpose": "fixed_ground_truth_for_separation_experiments",
+  "labels": [
+    {
+      "exchange_id": "01-0033",
+      "baseline_index": 33,
+      "start": 76.417,
+      "end": 77.778,
+      "clip_start": 72.417,
+      "clip_end": 81.778,
+      "video": "media/01-0033-source.mp4",
+      "current_extraction": "media/01-0033-current.wav",
+      "baseline_text": "Hey, so right now- I'm hard of hearing.",
+      "prior_notes": "other person says \"OK so right now\" and the target says \"I'm hard of hearing..\" at the same time while someone is talking in the distance.  The target continues \"can you come and stand here because I'm hard of hearing?\" and the other person says \"OK\"",
+      "extraction_identity": "mostly_target",
+      "target_words": "im hard of hearing now come",
+      "other_words": "ok sir",
+      "speaker_confidence": 100,
+      "notes": "",
+      "basis": [
+        "voice"
+      ]
+    },
+    {
+      "exchange_id": "02-0064",
+      "baseline_index": 64,
+      "start": 130.548,
+      "end": 131.208,
+      "clip_start": 126.548,
+      "clip_end": 135.208,
+      "video": "media/02-0064-source.mp4",
+      "current_extraction": "media/02-0064-current.wav",
+      "baseline_text": "What protects you?",
+      "prior_notes": "the target says \"I'm not a vendor\" twice and then \"The first amendment\". The other voice says \"What protects you?\" twice. background music",
+      "extraction_identity": "other_only",
+      "target_words": "",
+      "other_words": "what protects you",
+      "speaker_confidence": 100,
+      "notes": "",
+      "basis": [
+        "voice"
+      ]
+    },
+    {
+      "exchange_id": "03-0118",
+      "baseline_index": 118,
+      "start": 206.596,
+      "end": 207.777,
+      "clip_start": 202.596,
+      "clip_end": 211.777,
+      "video": "media/03-0118-source.mp4",
+      "current_extraction": "media/03-0118-current.wav",
+      "baseline_text": "Because I had three people come tell me.",
+      "prior_notes": "Target says \"You dont even know what I'm doing\".  The other says something at the same time.  Other says \"because I've had three different people tell me\". Target answers \"That's hearsay\".  background music.",
+      "extraction_identity": "mixed_speakers",
+      "target_words": "listen",
+      "other_words": "nothing you could tell me",
+      "speaker_confidence": 100,
+      "notes": "",
+      "basis": [
+        "voice"
+      ]
+    },
+    {
+      "exchange_id": "04-0157",
+      "baseline_index": 157,
+      "start": 285.463,
+      "end": 286.264,
+      "clip_start": 281.463,
+      "clip_end": 290.264,
+      "video": "media/04-0157-source.mp4",
+      "current_extraction": "media/04-0157-current.wav",
+      "baseline_text": "I already know.",
+      "prior_notes": "other says \"that's soliciting\" target says \"Now Im asking you I already know... like I said\" other person is talking at the same time.  I hear \"that's not my job\".  background music.",
+      "extraction_identity": "mostly_target",
+      "target_words": "i already know",
+      "other_words": "",
+      "speaker_confidence": 100,
+      "notes": "",
+      "basis": [
+        "voice"
+      ]
+    },
+    {
+      "exchange_id": "05-0215",
+      "baseline_index": 215,
+      "start": 402.094,
+      "end": 403.314,
+      "clip_start": 398.094,
+      "clip_end": 407.314,
+      "video": "media/05-0215-source.mp4",
+      "current_extraction": "media/05-0215-current.wav",
+      "baseline_text": "For a formal trespass, you are.",
+      "prior_notes": "other says \"For a formal tresspass you are...\"  auditor says over \"you are\" \"there's no ther's no crime taking...\" radio in background",
+      "extraction_identity": "mostly_other",
+      "target_words": "there's no",
+      "other_words": "pardon me",
+      "speaker_confidence": 97,
+      "notes": "",
+      "basis": [
+        "voice"
+      ]
+    }
+  ]
+}
