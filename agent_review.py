@@ -5,6 +5,7 @@ import argparse
 from datetime import datetime, timezone
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 import json
+import mimetypes
 from pathlib import Path
 import threading
 import webbrowser
@@ -57,12 +58,13 @@ def rows_from_source(source):
     return result
 
 
-def init_session(session, source, video_id=None):
+def init_session(session, source, video_id=None, media=None):
     session = Path(session); session.mkdir(parents=True, exist_ok=True)
     queue = rows_from_source(source)
     save(session / "session.json", {
         "schema_version": 1, "video_id": video_id, "created_at": now(),
         "source": str(Path(source).resolve()), "current_index": 0,
+        "media": str(Path(media).resolve()) if media else None,
     })
     save(session / "queue.json", queue)
     save(session / "observations.json", [])
@@ -125,17 +127,18 @@ def add_annotation(session, args):
     rows.append(row); save(session_file(session, "annotations.json"), rows); return row
 
 
-HTML = r'''<!doctype html><html><head><meta charset="utf-8"><title>Agent Review Player</title>
-<style>body{font:16px system-ui;max-width:980px;margin:24px auto;background:#101318;color:#eef2f6}video,audio{width:100%;max-height:62vh;background:#000}.bar{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}button,label{background:#283241;color:white;border:0;border-radius:8px;padding:9px 12px}.card{background:#1a202a;padding:16px;border-radius:12px;margin:12px 0}.muted{color:#aeb8c5}input[type=file]{max-width:300px}</style></head><body>
-<h1>Conversational diarization review</h1><div class="card"><label>Choose the matching local video (preferred; audio is accepted) <input id="file" type="file" accept="video/*,audio/*"></label><p class="muted">Continue in either text or audio chat. You do not need to repeat correct lines. Comment only on uncertain speakers, overlap, missing or incorrect words, and the cue you used. “Nothing to add” and “too uncertain” are useful answers.</p></div>
-<div id="media"></div><div class="bar"><button onclick="back()">−2 sec</button><button onclick="toggle()">Play/Pause</button><button onclick="loopClip()">Loop clip</button><button onclick="speed(.5)">0.5×</button><button onclick="speed(.75)">0.75×</button><button onclick="speed(1)">1×</button></div>
-<div class="card"><b id="where">Waiting for queue…</b><p id="prompt"></p><p>Current transcript: <span id="text"></span></p><span class="muted" id="state"></span></div>
-<script>let m=null,item=null,lastRevision=-1,loop=false;
-file.onchange=()=>{if(m)m.remove();let f=file.files[0];m=document.createElement(f.type.startsWith('audio')?'audio':'video');m.controls=true;m.src=URL.createObjectURL(f);media.replaceChildren(m)};
+HTML = r'''<!doctype html><html><head><meta charset="utf-8"><title>Clip review</title>
+<style>body{font:17px system-ui;max-width:980px;margin:24px auto;background:#101318;color:#eef2f6}video,audio{width:100%;max-height:72vh;background:#000;border-radius:12px}.bar{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}button{background:#283241;color:white;border:0;border-radius:8px;padding:9px 12px}.card{background:#1a202a;padding:16px;border-radius:12px;margin:12px 0}.muted{color:#aeb8c5}</style></head><body>
+<h1>Clip review</h1><div id="media"></div>
+<div class="bar"><button onclick="back()">−2 sec</button><button onclick="toggle()">Play/Pause</button><button onclick="replay()">Replay clip</button><button onclick="speed(.5)">0.5×</button><button onclick="speed(.75)">0.75×</button><button onclick="speed(1)">1×</button></div>
+<div class="card"><b id="where">I’m choosing the first clip…</b><p id="prompt">When it plays, describe what is happening in the chat.</p><span class="muted" id="state"></span></div>
+<script>let m=null,item=null,lastRevision=-1;
+async function setup(){let s=await(await fetch('/api/status')).json();if(s.session.media){m=document.createElement('video');m.controls=true;m.preload='auto';m.src='/media';media.replaceChildren(m)}else{where.textContent='The session has no video attached.'}}
 function back(){if(m)m.currentTime=Math.max(0,m.currentTime-2)}function toggle(){if(m)(m.paused?m.play():m.pause())}function speed(x){if(m)m.playbackRate=x}function loopClip(){loop=!loop;state.textContent=loop?'Loop enabled':''}
-setInterval(()=>{if(m&&item&&loop&&m.currentTime>=item.context_end){m.currentTime=item.context_start;m.play()}},100);
+function replay(){if(m&&item){m.currentTime=item.context_start;m.play()}}
 setInterval(async()=>{if(m)await fetch('/api/player-state',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({media_time:m.currentTime,playing:!m.paused,rate:m.playbackRate})})},200);
-setInterval(async()=>{let c=await(await fetch('/api/control')).json();if(c.revision===lastRevision)return;lastRevision=c.revision;if(c.item){item=c.item;where.textContent=`${item.start.toFixed(2)}–${item.end.toFixed(2)} sec · review ${item.review_id}`;prompt.textContent=item.review_prompt;text.textContent=item.text;if(m){m.currentTime=item.context_start;m.playbackRate=c.rate||1;if(c.autoplay)m.play()}}if(c.action==='play'&&m){if(c.time!=null)m.currentTime=c.time;m.play()}if(c.action==='pause'&&m)m.pause()},500);
+setInterval(async()=>{let c=await(await fetch('/api/control')).json();if(c.revision===lastRevision)return;lastRevision=c.revision;if(c.item){item=c.item;where.textContent=`Clip ${item.start.toFixed(2)}–${item.end.toFixed(2)} seconds`;prompt.textContent='What is going on here? Tell me who is speaking, whether voices overlap, and any words the transcript missed.';if(m){m.currentTime=item.context_start;m.playbackRate=c.rate||1;if(c.autoplay)m.play()}}if(c.action==='play'&&m){if(c.time!=null)m.currentTime=c.time;m.play()}if(c.action==='pause'&&m)m.pause()},500);
+setup();
 </script></body></html>'''
 
 
@@ -147,11 +150,35 @@ def serve(session, host, port, open_browser):
             self.send_response(status); self.send_header("Content-Type", content_type); self.send_header("Content-Length", str(len(body))); self.end_headers(); self.wfile.write(body)
         def do_GET(self):
             if self.path == "/": return self.reply(HTML, content_type="text/html; charset=utf-8")
+            if self.path == "/media": return self.send_media()
             if self.path == "/api/control": return self.reply(load(session / "control.json", {}))
             if self.path == "/api/status":
                 meta, queue, item = current(session)
                 return self.reply({"session": meta, "item": item, "queue_size": len(queue), "player": load(session / "player-state.json", {})})
             return self.reply({"error": "not found"}, 404)
+        def send_media(self):
+            meta = load(session / "session.json", {})
+            path = Path(meta.get("media") or "")
+            if not path.is_file(): return self.reply({"error": "media unavailable"}, 404)
+            size = path.stat().st_size; start, end = 0, size - 1
+            requested = self.headers.get("Range")
+            if requested and requested.startswith("bytes="):
+                first, _, last = requested[6:].partition("-")
+                start = int(first or 0); end = min(int(last) if last else size - 1, size - 1)
+            length = max(0, end - start + 1)
+            self.send_response(206 if requested else 200)
+            self.send_header("Content-Type", mimetypes.guess_type(path.name)[0] or "application/octet-stream")
+            self.send_header("Accept-Ranges", "bytes")
+            self.send_header("Content-Length", str(length))
+            if requested: self.send_header("Content-Range", f"bytes {start}-{end}/{size}")
+            self.end_headers()
+            with path.open("rb") as handle:
+                handle.seek(start)
+                remaining = length
+                while remaining:
+                    chunk = handle.read(min(1024 * 1024, remaining))
+                    if not chunk: break
+                    self.wfile.write(chunk); remaining -= len(chunk)
         def do_POST(self):
             if self.path != "/api/player-state": return self.reply({"error": "not found"}, 404)
             length = int(self.headers.get("Content-Length", 0)); data = json.loads(self.rfile.read(length) or b"{}")
@@ -167,7 +194,7 @@ def serve(session, host, port, open_browser):
 
 def main():
     parser = argparse.ArgumentParser(); sub = parser.add_subparsers(dest="command", required=True)
-    p=sub.add_parser("init"); p.add_argument("--session",required=True);p.add_argument("--source",required=True);p.add_argument("--video-id")
+    p=sub.add_parser("init"); p.add_argument("--session",required=True);p.add_argument("--source",required=True);p.add_argument("--video-id");p.add_argument("--media")
     p=sub.add_parser("serve"); p.add_argument("--session",required=True);p.add_argument("--host",default="127.0.0.1");p.add_argument("--port",type=int,default=8765);p.add_argument("--open",action="store_true")
     p=sub.add_parser("status");p.add_argument("--session",required=True)
     p=sub.add_parser("select");p.add_argument("--session",required=True);p.add_argument("index",type=int)
@@ -178,14 +205,16 @@ def main():
     p=sub.add_parser("annotate");p.add_argument("--session",required=True);p.add_argument("--observation-id",type=int);p.add_argument("--speaker",required=True);p.add_argument("--text",default="");p.add_argument("--overlap",choices=["yes","no","unclear"],required=True);p.add_argument("--basis",default="");p.add_argument("--speaker-confidence",type=float);p.add_argument("--word-confidence",type=float)
     p=sub.add_parser("export");p.add_argument("--session",required=True);p.add_argument("--output",required=True)
     args=parser.parse_args()
-    if args.command=="init": print(json.dumps({"queue_size":init_session(args.session,args.source,args.video_id)}))
+    if args.command=="init": print(json.dumps({"queue_size":init_session(args.session,args.source,args.video_id,args.media)}))
     elif args.command=="serve": serve(args.session,args.host,args.port,args.open)
     elif args.command=="status":
         meta,queue,item=current(args.session);print(json.dumps({"session":meta,"item":item,"queue_size":len(queue),"player":load(session_file(args.session,"player-state.json"),{})},indent=2))
     elif args.command=="select": print(json.dumps(select_item(args.session,args.index),indent=2))
     elif args.command=="next":
         meta,queue,_=current(args.session);print(json.dumps(select_item(args.session,min(meta["current_index"]+1,len(queue)-1)),indent=2))
-    elif args.command=="play": print(json.dumps(control(args.session,"play",time=args.time,rate=args.rate,autoplay=True),indent=2))
+    elif args.command=="play":
+        _,_,item=current(args.session)
+        print(json.dumps(control(args.session,"play",item=item,time=args.time,rate=args.rate,autoplay=True),indent=2))
     elif args.command=="comment": print(json.dumps(add_comment(args.session,args.text,args.modality),indent=2))
     elif args.command=="anchor": print(json.dumps(add_anchor(args.session,args.observation_id,args.kind),indent=2))
     elif args.command=="annotate": print(json.dumps(add_annotation(args.session,args),indent=2))
