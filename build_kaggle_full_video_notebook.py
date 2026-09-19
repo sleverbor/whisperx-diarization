@@ -60,7 +60,8 @@ import subprocess, sys, os, json, shutil, time, zipfile
 from urllib.parse import urlparse, parse_qs
 
 VIDEO_URL = 'https://www.youtube.com/watch?v=lVfKfbFd0SM'
-NOTEBOOK_REVISION = 'additive-sortformer-extraction-v24'
+NOTEBOOK_REVISION = 'required-additive-sortformer-extraction-v25'
+REQUIRE_OVERLAP_POLICY = True
 RUN_FULL_VIDEO = True
 RUN_TARGETED_REVIEW = True
 RUN_OVERLAP_EXTRACTION = True
@@ -216,6 +217,48 @@ if ON_KAGGLE:
                 if not target.is_relative_to(CACHE.resolve()):
                     raise RuntimeError('Unexpected checkpoint archive path')
             zipped.extractall(BASE)
+OVERLAP_POLICY = None
+policy_matches = []
+search_root = Path('/kaggle/input') if ON_KAGGLE else Path.cwd()
+for head_path in search_root.rglob('head-to-head.json'):
+    try:
+        head = json.loads(head_path.read_text())
+    except Exception:
+        continue
+    candidate = head_path.parent/'overlap-review-policy.json'
+    if (head.get('video_id') == VIDEO_ID
+            and head.get('revision') == 'sortformer-additive-two-tier-policy-v5'
+            and candidate.is_file()):
+        policy_matches.append(candidate)
+# Kaggle normally expands dataset archives, but accept a retained ZIP too.
+for archive in search_root.rglob('*.zip'):
+    try:
+        with zipfile.ZipFile(archive) as zipped:
+            names = set(zipped.namelist())
+            for head_name in [name for name in names if name.endswith('head-to-head.json')]:
+                head = json.loads(zipped.read(head_name))
+                policy_name = str(Path(head_name).parent/'overlap-review-policy.json')
+                if (head.get('video_id') == VIDEO_ID
+                        and head.get('revision') == 'sortformer-additive-two-tier-policy-v5'
+                        and policy_name in names):
+                    extracted = WORK/'attached-overlap-review-policy.json'
+                    extracted.write_bytes(zipped.read(policy_name))
+                    policy_matches.append(extracted)
+    except (zipfile.BadZipFile, KeyError, json.JSONDecodeError):
+        continue
+unique_policies = []
+for candidate in policy_matches:
+    if not any(candidate.read_bytes() == existing.read_bytes() for existing in unique_policies):
+        unique_policies.append(candidate)
+if len(unique_policies) == 1:
+    OVERLAP_POLICY = unique_policies[0]
+    print('Found required additive Sortformer policy:', OVERLAP_POLICY)
+elif len(unique_policies) > 1:
+    raise RuntimeError('Found multiple different matching v5 overlap policies')
+elif REQUIRE_OVERLAP_POLICY:
+    raise RuntimeError(
+        'Attach the Kaggle dataset created from sortformer-comparison-results(4).zip. '
+        'No matching v5 overlap policy was found; stopping before the full run.')
 if not VIDEO.exists():
     if ON_KAGGLE:
         accepted_names = {VIDEO_ID+'.mp4', VIDEO_ID+'_full480.mp4'}
@@ -333,25 +376,9 @@ def run_overlap_extraction():
         '--voice-priors', str(REFERENCE/'voice_embeddings.npy'),
         '--output-dir', str(output_dir), '--device', 'cuda' if ON_KAGGLE else 'cpu',
         '--whisper-model', 'large-v2']
-    selection_policy = None
-    search_root = Path('/kaggle/input') if ON_KAGGLE else Path.cwd()
-    for head_path in search_root.rglob('head-to-head.json'):
-        try:
-            head = json.loads(head_path.read_text())
-        except Exception:
-            continue
-        candidate = head_path.parent/'overlap-review-policy.json'
-        if (head.get('video_id') == VIDEO_ID
-                and head.get('revision') == 'sortformer-additive-two-tier-policy-v5'
-                and candidate.is_file()):
-            if selection_policy is not None:
-                raise RuntimeError('Found more than one matching v5 overlap policy dataset')
-            selection_policy = candidate
-    if selection_policy is not None:
-        command += ['--selection-policy', str(selection_policy)]
-        print('Using additive Sortformer policy:', selection_policy)
-    else:
-        print('No matching v5 Sortformer policy attached; using baseline overlap only.')
+    if OVERLAP_POLICY is not None:
+        command += ['--selection-policy', str(OVERLAP_POLICY)]
+        print('Using additive Sortformer policy:', OVERLAP_POLICY)
     before = (RESULTS/'full_video_evidence.json').read_bytes()
     try:
         stream(command, 'overlap-extraction.log', 'Overlap extraction failed; baseline results remain valid.')
