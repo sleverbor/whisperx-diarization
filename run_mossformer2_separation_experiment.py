@@ -2,6 +2,7 @@
 """Compare MossFormer2's two blind outputs on the fixed overlap benchmark."""
 
 import argparse
+import gc
 import json
 import os
 import subprocess
@@ -65,33 +66,11 @@ def main():
         wave = full[round(window_start * sample_rate):round(window_end * sample_rate)]
         windows.append((label, window_start, window_end, wave))
 
+    gpu_device = "cuda:0" if args.device == "cuda" else args.device
+    results = []
     separator = ClearVoice(
         task="speech_separation", model_names=["MossFormer2_SS_16K"]
     )
-
-    speaker_dir = Path(os.environ.get(
-        "SPEECHBRAIN_CACHE", "pretrained_models/spkrec-ecapa-voxceleb"
-    ))
-    speaker = SpeakerRecognition.from_hparams(
-        source="speechbrain/spkrec-ecapa-voxceleb", savedir=str(speaker_dir),
-        run_opts={"device": args.device},
-    )
-    whisper = WhisperModel(
-        args.whisper_model,
-        device="cuda" if args.device.startswith("cuda") else "cpu",
-        compute_type="float16" if args.device.startswith("cuda") else "int8",
-    )
-    priors = np.load(args.voice_priors)
-    target = unit(np.mean(np.stack([unit(row) for row in priors]), axis=0))
-
-    def similarity(wave):
-        tensor = torch.from_numpy(np.asarray(wave, dtype=np.float32)).unsqueeze(0)
-        embedding = unit(
-            speaker.encode_batch(tensor).flatten().detach().cpu().numpy()
-        )
-        return float(np.dot(target, embedding))
-
-    results = []
     for item_index, (label, window_start, window_end, original) in enumerate(windows):
         # Decode one short window at a time. MossFormer2 has a large activation
         # footprint; batching all benchmark windows can exhaust a 16 GB laptop.
@@ -109,16 +88,10 @@ def main():
             cropped = np.asarray(whole[left:right], dtype=np.float32)
             path = audio_dir / f"{label['exchange_id']}-stream-{stream_index + 1}.wav"
             sf.write(path, cropped, sample_rate)
-            asr = transcribe(whisper, cropped)
             streams.append({
                 "stream": stream_index + 1,
                 "audio": str(path.relative_to(args.output_dir)),
-                "target_similarity": similarity(cropped),
-                "transcription": asr,
-                "target_word_f1": token_f1(label.get("target_words", ""), asr["text"]),
-                "other_word_f1": token_f1(label.get("other_words", ""), asr["text"]),
             })
-        ranked = sorted(streams, key=lambda row: row["target_similarity"], reverse=True)
         results.append({
             "exchange_id": label["exchange_id"],
             "baseline_index": label["baseline_index"],
@@ -130,14 +103,69 @@ def main():
             "target_words": label.get("target_words", ""),
             "other_words": label.get("other_words", ""),
             "streams": streams,
-            "similarity_selected_stream": ranked[0]["stream"],
-            "similarity_margin": ranked[0]["target_similarity"] - ranked[1]["target_similarity"],
         })
+        print(f"Separated {item_index + 1}/{len(windows)}: {label['exchange_id']}", flush=True)
+        del decoded
+
+    # Only one large model occupies the GPU at a time. Keeping MossFormer2,
+    # ECAPA, and Whisper resident together exceeds a 16 GB T4.
+    del separator
+    gc.collect()
+    if torch.cuda.is_available():
+        torch.cuda.empty_cache()
+
+    speaker_dir = Path(os.environ.get(
+        "SPEECHBRAIN_CACHE", "pretrained_models/spkrec-ecapa-voxceleb"
+    ))
+    speaker = SpeakerRecognition.from_hparams(
+        source="speechbrain/spkrec-ecapa-voxceleb", savedir=str(speaker_dir),
+        run_opts={"device": gpu_device},
+    )
+    priors = np.load(args.voice_priors)
+    target = unit(np.mean(np.stack([unit(row) for row in priors]), axis=0))
+    for result in results:
+        for stream in result["streams"]:
+            wave, _ = sf.read(args.output_dir / stream["audio"], dtype="float32")
+            tensor = torch.from_numpy(np.asarray(wave, dtype=np.float32)).unsqueeze(0)
+            embedding = unit(
+                speaker.encode_batch(tensor).flatten().detach().cpu().numpy()
+            )
+            stream["target_similarity"] = float(np.dot(target, embedding))
+        ranked = sorted(
+            result["streams"], key=lambda row: row["target_similarity"], reverse=True
+        )
+        result["similarity_selected_stream"] = ranked[0]["stream"]
+        result["similarity_margin"] = (
+            ranked[0]["target_similarity"] - ranked[1]["target_similarity"]
+        )
+        print(f"Voice-scored: {result['exchange_id']}", flush=True)
+
+    del speaker
+    gc.collect()
+    if torch.cuda.is_available():
+        torch.cuda.empty_cache()
+
+    whisper = WhisperModel(
+        args.whisper_model,
+        device="cuda" if args.device.startswith("cuda") else "cpu",
+        compute_type="float16" if args.device.startswith("cuda") else "int8",
+    )
+    for result in results:
+        for stream in result["streams"]:
+            wave, _ = sf.read(args.output_dir / stream["audio"], dtype="float32")
+            asr = transcribe(whisper, wave)
+            stream["transcription"] = asr
+            stream["target_word_f1"] = token_f1(
+                result.get("target_words", ""), asr["text"]
+            )
+            stream["other_word_f1"] = token_f1(
+                result.get("other_words", ""), asr["text"]
+            )
         print(
-            label["exchange_id"],
+            result["exchange_id"],
             "; ".join(
                 f"s{row['stream']} sim={row['target_similarity']:.3f}: "
-                f"{row['transcription']['text']}" for row in streams
+                f"{row['transcription']['text']}" for row in result["streams"]
             ),
             flush=True,
         )
