@@ -17,8 +17,17 @@ def shifted_window(start,end,duration,context,offset):
   raise ValueError('Offset moves the context window outside the labeled interval')
  return ws,we
 
+def aligned_words(segments, interval_start, interval_end):
+ words=[]
+ for segment in segments:
+  for word in segment.words or []:
+   midpoint=(float(word.start)+float(word.end))/2
+   if interval_start<=midpoint<=interval_end:
+    words.append(word.word.strip())
+ return ' '.join(word for word in words if word)
+
 def main():
- p=argparse.ArgumentParser();p.add_argument('--video',type=Path,required=True);p.add_argument('--labels',type=Path,required=True);p.add_argument('--voice-priors',type=Path,required=True);p.add_argument('--output-dir',type=Path,required=True);p.add_argument('--context',type=float,default=3.0);p.add_argument('--offset',type=float,action='append');p.add_argument('--exchange-id',action='append');p.add_argument('--device',default='cpu');p.add_argument('--whisper-model',default='large-v2');a=p.parse_args();a.output_dir.mkdir(parents=True,exist_ok=True)
+ p=argparse.ArgumentParser();p.add_argument('--video',type=Path,required=True);p.add_argument('--labels',type=Path,required=True);p.add_argument('--voice-priors',type=Path,required=True);p.add_argument('--output-dir',type=Path,required=True);p.add_argument('--context',type=float,default=3.0);p.add_argument('--offset',type=float,action='append');p.add_argument('--exchange-id',action='append');p.add_argument('--full-context-asr',action='store_true');p.add_argument('--device',default='cpu');p.add_argument('--whisper-model',default='large-v2');a=p.parse_args();a.output_dir.mkdir(parents=True,exist_ok=True)
  import soundfile as sf
  import torch,torchaudio
  from speechbrain.inference.separation import SepformerSeparation
@@ -41,9 +50,16 @@ def main():
     stream8=separated[:,index].numpy();cropped8=crop_stream(stream8,8000,ws,start,end);cropped16=torchaudio.functional.resample(torch.from_numpy(cropped8),8000,16000).numpy();expected=round((end-start)*16000)
     if len(cropped16)<expected:cropped16=np.pad(cropped16,(0,expected-len(cropped16)))
     cropped16=cropped16[:expected];tag=f"offset-{offset:+g}";path=audio/f"{label['exchange_id']}-{tag}-stream-{index+1}.wav";sf.write(path,cropped16,16000)
-    asr=transcribe(whisper,cropped16);row={'stream':index+1,'audio':str(path.relative_to(a.output_dir)),'target_similarity':similarity(cropped16),'transcription':asr,'target_word_f1':token_f1(label.get('target_words',''),asr['text']),'other_word_f1':token_f1(label.get('other_words',''),asr['text'])};exchange.append(row)
+    row={'stream':index+1,'audio':str(path.relative_to(a.output_dir)),'target_similarity':similarity(cropped16)}
+    if a.full_context_asr:
+     full16=torchaudio.functional.resample(torch.from_numpy(stream8),8000,16000).numpy();full_path=audio/f"{label['exchange_id']}-{tag}-stream-{index+1}-full.wav";sf.write(full_path,full16,16000)
+     segments,_=whisper.transcribe(full16,vad_filter=False,condition_on_previous_text=False,beam_size=5,word_timestamps=True);segments=list(segments);full_text=' '.join(s.text.strip() for s in segments if s.text.strip());aligned=aligned_words(segments,start-ws,end-ws)
+     row.update(full_audio=str(full_path.relative_to(a.output_dir)),full_context_transcription=full_text,aligned_transcription=aligned,transcription={'text':aligned},target_word_f1=token_f1(label.get('target_words',''),aligned),other_word_f1=token_f1(label.get('other_words',''),aligned))
+    else:
+     asr=transcribe(whisper,cropped16);row.update(transcription=asr,target_word_f1=token_f1(label.get('target_words',''),asr['text']),other_word_f1=token_f1(label.get('other_words',''),asr['text']))
+    exchange.append(row)
    ranked=sorted(exchange,key=lambda r:r['target_similarity'],reverse=True);margin=ranked[0]['target_similarity']-ranked[1]['target_similarity']
    rows.append({'exchange_id':label['exchange_id'],'baseline_index':label['baseline_index'],'start':start,'end':end,'context_seconds':a.context,'window_offset_seconds':offset,'window_start':ws,'window_end':we,'target_words':label.get('target_words',''),'other_words':label.get('other_words',''),'streams':exchange,'similarity_selected_stream':ranked[0]['stream'],'similarity_margin':margin})
    print(label['exchange_id'],f"offset={offset:+g} selected={ranked[0]['stream']} margin={margin:.3f}",'; '.join(f"s{x['stream']} sim={x['target_similarity']:.3f} target_f1={x['target_word_f1']:.2f} other_f1={x['other_word_f1']:.2f}: {x['transcription']['text']}" for x in exchange),flush=True)
- report={'schema_version':2,'method':'blind_sepformer_whamr_then_ecapa','labels_used_for_separation':False,'context_seconds':a.context,'offsets':offsets,'results':rows};(a.output_dir/'report.json').write_text(json.dumps(report,indent=2)+'\n')
+ report={'schema_version':3 if a.full_context_asr else 2,'method':'blind_sepformer_whamr_then_ecapa','labels_used_for_separation':False,'context_seconds':a.context,'offsets':offsets,'full_context_asr':a.full_context_asr,'results':rows};(a.output_dir/'report.json').write_text(json.dumps(report,indent=2)+'\n')
 if __name__=='__main__':main()
