@@ -92,11 +92,12 @@ def select_item(session, index):
     return control(session, "load", item=queue[index])
 
 
-def add_comment(session, text):
+def add_comment(session, text, modality="text"):
     _, _, item = current(session); state = load(session_file(session, "player-state.json"), {})
     rows = load(session_file(session, "observations.json"), [])
     row = {"observation_id": len(rows) + 1, "review_id": item["review_id"],
-           "comment": text, "approximate_media_time": state.get("media_time"),
+           "comment": text, "input_modality": modality,
+           "approximate_media_time": state.get("media_time"),
            "created_at": now(), "anchors": [], "status": "needs_grounding"}
     rows.append(row); save(session_file(session, "observations.json"), rows); return row
 
@@ -126,7 +127,7 @@ def add_annotation(session, args):
 
 HTML = r'''<!doctype html><html><head><meta charset="utf-8"><title>Agent Review Player</title>
 <style>body{font:16px system-ui;max-width:980px;margin:24px auto;background:#101318;color:#eef2f6}video,audio{width:100%;max-height:62vh;background:#000}.bar{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}button,label{background:#283241;color:white;border:0;border-radius:8px;padding:9px 12px}.card{background:#1a202a;padding:16px;border-radius:12px;margin:12px 0}.muted{color:#aeb8c5}input[type=file]{max-width:300px}</style></head><body>
-<h1>Conversational diarization review</h1><div class="card"><label>Choose the matching local video (preferred; audio is accepted) <input id="file" type="file" accept="video/*,audio/*"></label><p class="muted">You do not need to repeat correct lines. Comment only on uncertain speakers, overlap, missing or incorrect words, and the cue you used. “Nothing to add” and “too uncertain” are useful answers.</p></div>
+<h1>Conversational diarization review</h1><div class="card"><label>Choose the matching local video (preferred; audio is accepted) <input id="file" type="file" accept="video/*,audio/*"></label><p class="muted">Continue in either text or audio chat. You do not need to repeat correct lines. Comment only on uncertain speakers, overlap, missing or incorrect words, and the cue you used. “Nothing to add” and “too uncertain” are useful answers.</p></div>
 <div id="media"></div><div class="bar"><button onclick="back()">−2 sec</button><button onclick="toggle()">Play/Pause</button><button onclick="loopClip()">Loop clip</button><button onclick="speed(.5)">0.5×</button><button onclick="speed(.75)">0.75×</button><button onclick="speed(1)">1×</button></div>
 <div class="card"><b id="where">Waiting for queue…</b><p id="prompt"></p><p>Current transcript: <span id="text"></span></p><span class="muted" id="state"></span></div>
 <script>let m=null,item=null,lastRevision=-1,loop=false;
@@ -172,7 +173,7 @@ def main():
     p=sub.add_parser("select");p.add_argument("--session",required=True);p.add_argument("index",type=int)
     p=sub.add_parser("next");p.add_argument("--session",required=True)
     p=sub.add_parser("play");p.add_argument("--session",required=True);p.add_argument("--time",type=float);p.add_argument("--rate",type=float,default=1.0)
-    p=sub.add_parser("comment");p.add_argument("--session",required=True);p.add_argument("text")
+    p=sub.add_parser("comment");p.add_argument("--session",required=True);p.add_argument("--modality",choices=["text","voice"],default="text");p.add_argument("text")
     p=sub.add_parser("anchor");p.add_argument("--session",required=True);p.add_argument("observation_id",type=int);p.add_argument("kind",choices=["here","start","end"])
     p=sub.add_parser("annotate");p.add_argument("--session",required=True);p.add_argument("--observation-id",type=int);p.add_argument("--speaker",required=True);p.add_argument("--text",default="");p.add_argument("--overlap",choices=["yes","no","unclear"],required=True);p.add_argument("--basis",default="");p.add_argument("--speaker-confidence",type=float);p.add_argument("--word-confidence",type=float)
     p=sub.add_parser("export");p.add_argument("--session",required=True);p.add_argument("--output",required=True)
@@ -185,7 +186,7 @@ def main():
     elif args.command=="next":
         meta,queue,_=current(args.session);print(json.dumps(select_item(args.session,min(meta["current_index"]+1,len(queue)-1)),indent=2))
     elif args.command=="play": print(json.dumps(control(args.session,"play",time=args.time,rate=args.rate,autoplay=True),indent=2))
-    elif args.command=="comment": print(json.dumps(add_comment(args.session,args.text),indent=2))
+    elif args.command=="comment": print(json.dumps(add_comment(args.session,args.text,args.modality),indent=2))
     elif args.command=="anchor": print(json.dumps(add_anchor(args.session,args.observation_id,args.kind),indent=2))
     elif args.command=="annotate": print(json.dumps(add_annotation(args.session,args),indent=2))
     elif args.command=="export":

@@ -16,7 +16,8 @@ class AgentReviewTest(unittest.TestCase):
     def tearDown(self): self.temp.cleanup()
     def test_comment_anchor_annotation_and_navigation(self):
         save(self.session/'player-state.json',{"media_time":10.4,"playing":True})
-        observation=add_comment(self.session,"target says hello")
+        observation=add_comment(self.session,"target says hello", "voice")
+        self.assertEqual(observation["input_modality"], "voice")
         grounded=add_anchor(self.session,observation["observation_id"],"here")
         self.assertEqual(grounded["status"],"grounded")
         args=SimpleNamespace(observation_id=1,speaker="target",text="hello",overlap="yes",basis="voice,context",speaker_confidence=.9,word_confidence=.8)
