@@ -66,7 +66,15 @@ def main():
         wave = full[round(window_start * sample_rate):round(window_end * sample_rate)]
         windows.append((label, window_start, window_end, wave))
 
-    gpu_device = "cuda:0" if args.device == "cuda" else args.device
+    use_cuda = args.device.startswith("cuda") and torch.cuda.is_available()
+    post_gpu_index = 1 if use_cuda and torch.cuda.device_count() > 1 else 0
+    gpu_device = f"cuda:{post_gpu_index}" if use_cuda else args.device
+    if use_cuda:
+        print(
+            "GPU allocation: MossFormer2=cuda:0; "
+            f"ECAPA/Whisper=cuda:{post_gpu_index}",
+            flush=True,
+        )
     results = []
     separator = ClearVoice(
         task="speech_separation", model_names=["MossFormer2_SS_16K"]
@@ -147,8 +155,9 @@ def main():
 
     whisper = WhisperModel(
         args.whisper_model,
-        device="cuda" if args.device.startswith("cuda") else "cpu",
-        compute_type="float16" if args.device.startswith("cuda") else "int8",
+        device="cuda" if use_cuda else "cpu",
+        device_index=post_gpu_index if use_cuda else 0,
+        compute_type="float16" if use_cuda else "int8",
     )
     for result in results:
         for stream in result["streams"]:

@@ -133,7 +133,7 @@ display(FileLink(str(BASE/"mossformer2-comparison-results.zip")))
 '''
     notebook = {
         "cells": [
-            cell("markdown", "# MossFormer2 speech-separation comparison\n\nThis runs the same five hand-labeled overlapping exchanges used for the SepFormer tests. It processes one short window at a time to bound memory use, preserves both blind separator outputs, and applies ECAPA only after separation. Enable Internet and a GPU, and attach the stage-checkpoints dataset containing `full-video.wav`.\n"),
+            cell("markdown", "# MossFormer2 speech-separation comparison\n\nThis runs the same five hand-labeled overlapping exchanges used for the SepFormer tests. It processes one short window at a time to bound memory use, preserves both blind separator outputs, and applies ECAPA only after separation. With T4×2, MossFormer2 uses GPU 0 and ECAPA/Whisper use GPU 1; a single-GPU session falls back to GPU 0. Enable Internet and a GPU, and attach the dataset containing `full-video.wav`.\n"),
             cell("code", config),
             cell("markdown", "## Install the isolated runtime\n"),
             cell("code", setup),
