@@ -21,6 +21,7 @@ def main():
         name: (ROOT / name).read_text()
         for name in (
             "evaluate_diaper_overlap.py", "evaluate_overlap_activity.py",
+            "overlap_review_policy.py", "test_overlap_review_policy.py",
             "run_sortformer_overlap.py", "test_overlap_activity.py",
             "test_sortformer_overlap.py",
         )
@@ -28,7 +29,7 @@ def main():
     config = f'''from pathlib import Path
 import json, os, shutil, subprocess, sys, zipfile
 
-REVISION = "sortformer-extracted-dataset-v3"
+REVISION = "sortformer-two-tier-policy-v4"
 VIDEO_ID = "lVfKfbFd0SM"
 NEMO_COMMIT = "{NEMO_COMMIT}"
 BASE = Path("/kaggle/working") if Path("/kaggle/input").exists() else Path.cwd()/"sortformer-run"
@@ -65,7 +66,8 @@ checked([PYTHON, "-m", "pip", "install", "Cython", "packaging", "soundfile"])
 checked([PYTHON, "-m", "pip", "install",
          "nemo_toolkit[asr] @ git+https://github.com/NVIDIA-NeMo/NeMo.git@"+NEMO_COMMIT])
 checked([PYTHON, "-c", "import torch; from nemo.collections.asr.models import SortformerEncLabelModel; print('Torch',torch.__version__,'GPU',torch.cuda.get_device_name(0) if torch.cuda.is_available() else None); assert torch.cuda.is_available()"])
-checked([PYTHON, "-m", "unittest", "test_overlap_activity", "test_sortformer_overlap"], cwd=WORK)
+checked([PYTHON, "-m", "unittest", "test_overlap_activity", "test_sortformer_overlap",
+         "test_overlap_review_policy"], cwd=WORK)
 '''
     restore = '''input_root = Path("/kaggle/input") if Path("/kaggle/input").exists() else Path.cwd()
 result_root = None
@@ -136,11 +138,17 @@ checked([PYTHON, str(WORK/"evaluate_overlap_activity.py"),
          "--output", str(comparison_path)], cwd=WORK)
 sortformer = json.loads(comparison_path.read_text())
 diaper = json.loads(DIAPER.read_text())
+policy_path = OUTPUT/"overlap-review-policy.json"
+checked([PYTHON, str(WORK/"overlap_review_policy.py"),
+         "--sortformer", str(comparison_path), "--diaper", str(DIAPER),
+         "--output", str(policy_path)], cwd=WORK)
+policy = json.loads(policy_path.read_text())
 head_to_head = {
     "revision": REVISION,
     "video_id": VIDEO_ID,
     "sortformer": sortformer["summary"],
     "diaper": diaper["summary"],
+    "two_tier_policy": policy["summary"],
     "note": "Agreement with baseline overlap evidence is not ground-truth accuracy."
 }
 (OUTPUT/"head-to-head.json").write_text(json.dumps(head_to_head, indent=2)+"\\n")
@@ -154,7 +162,7 @@ display(FileLink(str(BASE/"sortformer-comparison-results.zip")))
 '''
     notebook = {
         "cells": [
-            cell("markdown", "# Sortformer versus DiaPer overlap test\n\nAttach the completed `diarization-results(15).zip`. This notebook reuses its preserved baseline and full-video audio, runs NVIDIA's offline four-speaker Sortformer in bounded contextual windows, and applies the same overlap/control comparison used for DiaPer. It does not rerun or modify the transcription pipeline. The public model is licensed CC-BY-NC-4.0.\n"),
+            cell("markdown", "# Sortformer versus DiaPer overlap test\n\nAttach the completed `diarization-results(15).zip`. This notebook reuses its preserved baseline and full-video audio, runs NVIDIA's offline four-speaker Sortformer in bounded contextual windows, and applies the same overlap/control comparison used for DiaPer. It also exports a two-tier review policy: strong Sortformer activity selects separation review, while weaker Sortformer and strong DiaPer-only activity remain uncertainty evidence. It does not modify the transcription or speaker identities. The public model is licensed CC-BY-NC-4.0.\n"),
             cell("code", config),
             cell("markdown", "## Install the isolated Sortformer runtime\n\nEnable Internet and a GPU. NeMo is pinned to the recorded commit for reproducibility.\n"),
             cell("code", setup),
