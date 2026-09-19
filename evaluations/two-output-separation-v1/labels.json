@@ -1,0 +1,215 @@
+{
+  "schema_version": 1,
+  "labels": [
+    {
+      "exchange_id": "01-0033",
+      "start": 76.417,
+      "end": 77.778,
+      "target_words": "im hard of hearing now come",
+      "other_words": "ok sir",
+      "video": "media/01-0033-source.mp4",
+      "streams": [
+        {
+          "stream": 1,
+          "audio": "media/01-0033-stream-1.wav",
+          "target_similarity": 0.17694061994552612,
+          "transcription": {
+            "text": "Antalya'da, evet, tabii.",
+            "average_log_probability": -0.9390504543597882,
+            "maximum_no_speech_probability": 0.44127771258354187
+          },
+          "target_word_f1": 0,
+          "other_word_f1": 0,
+          "transcript": "Antalya'da, evet, tabii."
+        },
+        {
+          "stream": 2,
+          "audio": "media/01-0033-stream-2.wav",
+          "target_similarity": 0.17770931124687195,
+          "transcription": {
+            "text": "see you soon. Bye now. Bye everyone.",
+            "average_log_probability": -0.6538890389835134,
+            "maximum_no_speech_probability": 0.286820650100708
+          },
+          "target_word_f1": 0.15384615384615383,
+          "other_word_f1": 0,
+          "transcript": "see you soon. Bye now. Bye everyone."
+        }
+      ],
+      "similarity_selected_stream": 2,
+      "similarity_margin": 0.0007686913013458252,
+      "notes": "",
+      "stream_1": "mostly_target",
+      "stream_2": "other_only",
+      "target_stream": "stream_1"
+    },
+    {
+      "exchange_id": "02-0064",
+      "start": 130.548,
+      "end": 131.208,
+      "target_words": "",
+      "other_words": "what protects you",
+      "video": "media/02-0064-source.mp4",
+      "streams": [
+        {
+          "stream": 1,
+          "audio": "media/02-0064-stream-1.wav",
+          "target_similarity": -0.08209322392940521,
+          "transcription": {
+            "text": "Thank you. Thank you.",
+            "average_log_probability": -0.817513032393022,
+            "maximum_no_speech_probability": 0.6220864057540894
+          },
+          "target_word_f1": 0,
+          "other_word_f1": 0.28571428571428575,
+          "transcript": "Thank you. Thank you."
+        },
+        {
+          "stream": 2,
+          "audio": "media/02-0064-stream-2.wav",
+          "target_similarity": 0.07060292363166809,
+          "transcription": {
+            "text": "Web protects you.",
+            "average_log_probability": -0.8871671888563368,
+            "maximum_no_speech_probability": 0.1382550746202469
+          },
+          "target_word_f1": 0,
+          "other_word_f1": 0.6666666666666666,
+          "transcript": "Web protects you."
+        }
+      ],
+      "similarity_selected_stream": 2,
+      "similarity_margin": 0.1526961475610733,
+      "notes": "",
+      "stream_1": "unclear",
+      "stream_2": "other_only",
+      "target_stream": "neither"
+    },
+    {
+      "exchange_id": "03-0118",
+      "start": 206.596,
+      "end": 207.777,
+      "target_words": "listen",
+      "other_words": "nothing you could tell me",
+      "video": "media/03-0118-source.mp4",
+      "streams": [
+        {
+          "stream": 1,
+          "audio": "media/03-0118-stream-1.wav",
+          "target_similarity": 0.07048581540584564,
+          "transcription": {
+            "text": "I worked for this. You get to tell me.",
+            "average_log_probability": -0.9397158399224281,
+            "maximum_no_speech_probability": 0.31182774901390076
+          },
+          "target_word_f1": 0,
+          "other_word_f1": 0.42857142857142855,
+          "transcript": "I worked for this. You get to tell me."
+        },
+        {
+          "stream": 2,
+          "audio": "media/03-0118-stream-2.wav",
+          "target_similarity": 0.0120243513956666,
+          "transcription": {
+            "text": "have learned, you can come help me.",
+            "average_log_probability": -1.1822183628877003,
+            "maximum_no_speech_probability": 0.3366107940673828
+          },
+          "target_word_f1": 0,
+          "other_word_f1": 0.3333333333333333,
+          "transcript": "have learned, you can come help me."
+        }
+      ],
+      "similarity_selected_stream": 1,
+      "similarity_margin": 0.05846146401017904,
+      "notes": "i only recognized the other voice and specifically not target after hearing the same sounds (it was hard to recognize the speech in the clip) as part of the exchange",
+      "stream_1": "other_only",
+      "stream_2": "other_only",
+      "target_stream": "neither"
+    },
+    {
+      "exchange_id": "04-0157",
+      "start": 285.463,
+      "end": 286.264,
+      "target_words": "i already know",
+      "other_words": "",
+      "video": "media/04-0157-source.mp4",
+      "streams": [
+        {
+          "stream": 1,
+          "audio": "media/04-0157-stream-1.wav",
+          "target_similarity": 0.005693107843399048,
+          "transcription": {
+            "text": "I already know.",
+            "average_log_probability": -0.8956989220210484,
+            "maximum_no_speech_probability": 0.2775246798992157
+          },
+          "target_word_f1": 1,
+          "other_word_f1": 0,
+          "transcript": "I already know."
+        },
+        {
+          "stream": 2,
+          "audio": "media/04-0157-stream-2.wav",
+          "target_similarity": 0.051393866539001465,
+          "transcription": {
+            "text": "You've learned enough.",
+            "average_log_probability": -0.9941463768482208,
+            "maximum_no_speech_probability": 0.36725932359695435
+          },
+          "target_word_f1": 0,
+          "other_word_f1": 0,
+          "transcript": "You've learned enough."
+        }
+      ],
+      "similarity_selected_stream": 2,
+      "similarity_margin": 0.04570075869560242,
+      "notes": "",
+      "stream_1": "target_only",
+      "stream_2": "unclear",
+      "target_stream": "stream_1"
+    },
+    {
+      "exchange_id": "05-0215",
+      "start": 402.094,
+      "end": 403.314,
+      "target_words": "there's no",
+      "other_words": "pardon me",
+      "video": "media/05-0215-source.mp4",
+      "streams": [
+        {
+          "stream": 1,
+          "audio": "media/05-0215-stream-1.wav",
+          "target_similarity": 0.033758554607629776,
+          "transcription": {
+            "text": "There's no",
+            "average_log_probability": -0.9456940491994222,
+            "maximum_no_speech_probability": 0.8292668461799622
+          },
+          "target_word_f1": 1,
+          "other_word_f1": 0,
+          "transcript": "There's no"
+        },
+        {
+          "stream": 2,
+          "audio": "media/05-0215-stream-2.wav",
+          "target_similarity": 0.0559389591217041,
+          "transcription": {
+            "text": "I'm going to fuck you up!",
+            "average_log_probability": -0.8629008073073167,
+            "maximum_no_speech_probability": 0.6106699109077454
+          },
+          "target_word_f1": 0,
+          "other_word_f1": 0,
+          "transcript": "I'm going to fuck you up!"
+        }
+      ],
+      "similarity_selected_stream": 2,
+      "similarity_margin": 0.022180404514074326,
+      "notes": "",
+      "stream_1": "unclear",
+      "stream_2": "mixed_speakers",
+      "target_stream": "neither"
+    }
+  ]
+}
