@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "method": "MossFormer2_SS_16K blind two-output separation followed by ECAPA scoring",
+  "benchmark_exchanges": 5,
+  "target_present_exchanges": 4,
+  "target_absent_exchanges": 1,
+  "human_results": {
+    "target_containing_output_when_target_present": 4,
+    "target_only_output_when_target_present": 2,
+    "ecapa_selected_output_contains_target": 4,
+    "ecapa_selected_cleanest_target_output": 3,
+    "target_absent_outputs_correctly_labeled_other_only": 1
+  },
+  "comparison": {
+    "sepformer_target_containing_output_when_target_present": 2,
+    "mossformer2_target_containing_output_when_target_present": 4
+  },
+  "per_exchange": [
+    {
+      "exchange_id": "01-0033",
+      "human_target_stream": "stream_1",
+      "selected": "stream_1",
+      "selected_identity": "mixed_speakers"
+    },
+    {
+      "exchange_id": "02-0064",
+      "human_target_stream": "neither",
+      "selected": "stream_1",
+      "selected_identity": "other_only",
+      "low_score_reject": true
+    },
+    {
+      "exchange_id": "03-0118",
+      "human_target_stream": "stream_2",
+      "selected": "stream_1",
+      "selected_identity": "mixed_speakers",
+      "clean_target_identity": "target_only"
+    },
+    {
+      "exchange_id": "04-0157",
+      "human_target_stream": "stream_1",
+      "selected": "stream_1",
+      "selected_identity": "target_only"
+    },
+    {
+      "exchange_id": "05-0215",
+      "human_target_stream": "stream_2",
+      "selected": "stream_2",
+      "selected_identity": "mixed_speakers"
+    }
+  ],
+  "recommended_use": "Use MossFormer2 output as supplemental recovery evidence. Reject low absolute/low-margin target scores. Do not replace baseline text wholesale when the selected stream may contain mixed speakers.",
+  "automatic_insertion_approved": false
+}

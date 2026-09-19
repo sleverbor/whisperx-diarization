@@ -1,0 +1,215 @@
+{
+  "schema_version": 1,
+  "labels": [
+    {
+      "exchange_id": "01-0033",
+      "start": 76.417,
+      "end": 77.778,
+      "target_words": "im hard of hearing now come",
+      "other_words": "ok sir",
+      "video": "media/01-0033-source.mp4",
+      "streams": [
+        {
+          "stream": 1,
+          "audio": "media/01-0033-stream-1.wav",
+          "target_similarity": 0.33561182022094727,
+          "transcription": {
+            "text": "I'm hard of hearing, that's what was saying.",
+            "average_log_probability": -0.6364583253860474,
+            "maximum_no_speech_probability": 0.35888671875
+          },
+          "target_word_f1": 0.42857142857142855,
+          "other_word_f1": 0,
+          "transcript": "I'm hard of hearing, that's what was saying."
+        },
+        {
+          "stream": 2,
+          "audio": "media/01-0033-stream-2.wav",
+          "target_similarity": 0.009342052042484283,
+          "transcription": {
+            "text": "Oh, wait, now?",
+            "average_log_probability": -0.8606770833333334,
+            "maximum_no_speech_probability": 0.277099609375
+          },
+          "target_word_f1": 0.2222222222222222,
+          "other_word_f1": 0,
+          "transcript": "Oh, wait, now?"
+        }
+      ],
+      "similarity_selected_stream": 1,
+      "similarity_margin": 0.326269768178463,
+      "notes": "",
+      "stream_1": "mixed_speakers",
+      "stream_2": "other_only",
+      "target_stream": "stream_1"
+    },
+    {
+      "exchange_id": "02-0064",
+      "start": 130.548,
+      "end": 131.208,
+      "target_words": "",
+      "other_words": "what protects you",
+      "video": "media/02-0064-source.mp4",
+      "streams": [
+        {
+          "stream": 1,
+          "audio": "media/02-0064-stream-1.wav",
+          "target_similarity": 0.04270690307021141,
+          "transcription": {
+            "text": "Web for...",
+            "average_log_probability": -1.064453125,
+            "maximum_no_speech_probability": 0.46826171875
+          },
+          "target_word_f1": 0,
+          "other_word_f1": 0,
+          "transcript": "Web for..."
+        },
+        {
+          "stream": 2,
+          "audio": "media/02-0064-stream-2.wav",
+          "target_similarity": 0.02383548393845558,
+          "transcription": {
+            "text": "Tag shipped!",
+            "average_log_probability": -0.8398437276482582,
+            "maximum_no_speech_probability": 0.2354736328125
+          },
+          "target_word_f1": 0,
+          "other_word_f1": 0,
+          "transcript": "Tag shipped!"
+        }
+      ],
+      "similarity_selected_stream": 1,
+      "similarity_margin": 0.01887141913175583,
+      "notes": "",
+      "stream_1": "other_only",
+      "stream_2": "other_only",
+      "target_stream": "neither"
+    },
+    {
+      "exchange_id": "03-0118",
+      "start": 206.596,
+      "end": 207.777,
+      "target_words": "listen",
+      "other_words": "nothing you could tell me",
+      "video": "media/03-0118-source.mp4",
+      "streams": [
+        {
+          "stream": 1,
+          "audio": "media/03-0118-stream-1.wav",
+          "target_similarity": 0.25607889890670776,
+          "transcription": {
+            "text": "Listen. Three people come tell me.",
+            "average_log_probability": -0.5757211721860446,
+            "maximum_no_speech_probability": 0.08465576171875
+          },
+          "target_word_f1": 0.2857142857142857,
+          "other_word_f1": 0.3636363636363636,
+          "transcript": "Listen. Three people come tell me."
+        },
+        {
+          "stream": 2,
+          "audio": "media/03-0118-stream-2.wav",
+          "target_similarity": 0.11357209086418152,
+          "transcription": {
+            "text": "I had one.",
+            "average_log_probability": -0.7237723384584699,
+            "maximum_no_speech_probability": 0.402099609375
+          },
+          "target_word_f1": 0,
+          "other_word_f1": 0,
+          "transcript": "I had one."
+        }
+      ],
+      "similarity_selected_stream": 1,
+      "similarity_margin": 0.14250680804252625,
+      "notes": "",
+      "stream_1": "mixed_speakers",
+      "stream_2": "target_only",
+      "target_stream": "stream_2"
+    },
+    {
+      "exchange_id": "04-0157",
+      "start": 285.463,
+      "end": 286.264,
+      "target_words": "i already know",
+      "other_words": "",
+      "video": "media/04-0157-source.mp4",
+      "streams": [
+        {
+          "stream": 1,
+          "audio": "media/04-0157-stream-1.wav",
+          "target_similarity": 0.3537558913230896,
+          "transcription": {
+            "text": "but I already know.",
+            "average_log_probability": -0.5209961012005806,
+            "maximum_no_speech_probability": 0.009246826171875
+          },
+          "target_word_f1": 0.8571428571428571,
+          "other_word_f1": 0,
+          "transcript": "but I already know."
+        },
+        {
+          "stream": 2,
+          "audio": "media/04-0157-stream-2.wav",
+          "target_similarity": -0.015199549496173859,
+          "transcription": {
+            "text": "I don't need that.",
+            "average_log_probability": -0.5017361111111112,
+            "maximum_no_speech_probability": 0.27783203125
+          },
+          "target_word_f1": 0.28571428571428575,
+          "other_word_f1": 0,
+          "transcript": "I don't need that."
+        }
+      ],
+      "similarity_selected_stream": 1,
+      "similarity_margin": 0.36895544081926346,
+      "notes": "",
+      "stream_1": "target_only",
+      "stream_2": "other_only",
+      "target_stream": "stream_1"
+    },
+    {
+      "exchange_id": "05-0215",
+      "start": 402.094,
+      "end": 403.314,
+      "target_words": "there's no",
+      "other_words": "pardon me",
+      "video": "media/05-0215-source.mp4",
+      "streams": [
+        {
+          "stream": 1,
+          "audio": "media/05-0215-stream-1.wav",
+          "target_similarity": -0.06084214895963669,
+          "transcription": {
+            "text": "Trespass? Yeah.",
+            "average_log_probability": -0.6651278517462991,
+            "maximum_no_speech_probability": 0.291748046875
+          },
+          "target_word_f1": 0,
+          "other_word_f1": 0,
+          "transcript": "Trespass? Yeah."
+        },
+        {
+          "stream": 2,
+          "audio": "media/05-0215-stream-2.wav",
+          "target_similarity": 0.2125232219696045,
+          "transcription": {
+            "text": "There's no",
+            "average_log_probability": -0.5605468650658926,
+            "maximum_no_speech_probability": 0.444580078125
+          },
+          "target_word_f1": 1,
+          "other_word_f1": 0,
+          "transcript": "There's no"
+        }
+      ],
+      "similarity_selected_stream": 2,
+      "similarity_margin": 0.2733653709292412,
+      "notes": "",
+      "stream_1": "mostly_other",
+      "stream_2": "mixed_speakers",
+      "target_stream": "stream_2"
+    }
+  ]
+}
