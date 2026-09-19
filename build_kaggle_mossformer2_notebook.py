@@ -70,6 +70,8 @@ checked([PYTHON, "-m", "pip", "install", "--no-deps", "clearvoice==0.1.2"])
 checked([PYTHON, "-m", "pip", "install", "gdown", "librosa==0.10.2.post1",
          "rotary-embedding-torch==0.8.3", "scenedetect==0.6.6",
          "python-speech-features==0.6", "yamlargparse", "torchinfo", "pydub"])
+checked([PYTHON, "-m", "pip", "install",
+         "speechbrain==1.1.1", "faster-whisper==1.2.1"])
 checked([PYTHON, "-c", "import torch,soundfile,speechbrain,faster_whisper; "
          "from clearvoice import ClearVoice; "
          "print('GPU:',torch.cuda.get_device_name(0) if torch.cuda.is_available() else None); "
