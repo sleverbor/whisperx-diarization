@@ -1,0 +1,233 @@
+{
+  "schema_version": 1,
+  "labels": [
+    {
+      "exchange_id": "01-0033",
+      "start": 76.417,
+      "end": 77.778,
+      "target_words": "im hard of hearing now come",
+      "other_words": "ok sir",
+      "center_target_stream": "stream_1",
+      "video": "media/01-0033-source.mp4",
+      "offsets": [
+        {
+          "offset": -1,
+          "streams": [
+            {
+              "stream": 1,
+              "audio": "media/01-0033-offset--1-stream-1.wav",
+              "target_similarity": 0.171299546957016,
+              "transcription": {
+                "text": "I'm proud of you. I thought it was great.",
+                "average_log_probability": -0.5786002664005055,
+                "maximum_no_speech_probability": 0.621411144733429
+              },
+              "target_word_f1": 0.13333333333333333,
+              "other_word_f1": 0,
+              "transcript": "I'm proud of you. I thought it was great."
+            },
+            {
+              "stream": 2,
+              "audio": "media/01-0033-offset--1-stream-2.wav",
+              "target_similarity": 0.11759570986032486,
+              "transcription": {
+                "text": "see you soon. Bye now. Bye everyone.",
+                "average_log_probability": -0.6324695699355182,
+                "maximum_no_speech_probability": 0.23780903220176697
+              },
+              "target_word_f1": 0.15384615384615383,
+              "other_word_f1": 0,
+              "transcript": "see you soon. Bye now. Bye everyone."
+            }
+          ]
+        },
+        {
+          "offset": 1,
+          "streams": [
+            {
+              "stream": 1,
+              "audio": "media/01-0033-offset-+1-stream-1.wav",
+              "target_similarity": 0.25313425064086914,
+              "transcription": {
+                "text": "I'm happy to hear it. Thanks. 1",
+                "average_log_probability": -0.7003025728113511,
+                "maximum_no_speech_probability": 0.4299626350402832
+              },
+              "target_word_f1": 0,
+              "other_word_f1": 0,
+              "transcript": "I'm happy to hear it. Thanks. 1"
+            },
+            {
+              "stream": 2,
+              "audio": "media/01-0033-offset-+1-stream-2.wav",
+              "target_similarity": 0.15008914470672607,
+              "transcription": {
+                "text": "see you soon. Bye now. Cheers.",
+                "average_log_probability": -0.5816777414745755,
+                "maximum_no_speech_probability": 0.26346561312675476
+              },
+              "target_word_f1": 0.16666666666666666,
+              "other_word_f1": 0,
+              "transcript": "see you soon. Bye now. Cheers."
+            }
+          ]
+        }
+      ],
+      "notes": "",
+      "offset_minus_1": "stream_1",
+      "offset_plus_1": "stream_1"
+    },
+    {
+      "exchange_id": "04-0157",
+      "start": 285.463,
+      "end": 286.264,
+      "target_words": "i already know",
+      "other_words": "",
+      "center_target_stream": "stream_1",
+      "video": "media/04-0157-source.mp4",
+      "offsets": [
+        {
+          "offset": -1,
+          "streams": [
+            {
+              "stream": 1,
+              "audio": "media/04-0157-offset--1-stream-1.wav",
+              "target_similarity": 0.003994813188910484,
+              "transcription": {
+                "text": "That's pretty nice.",
+                "average_log_probability": -0.9325085133314133,
+                "maximum_no_speech_probability": 0.1402905136346817
+              },
+              "target_word_f1": 0,
+              "other_word_f1": 0,
+              "transcript": "That's pretty nice."
+            },
+            {
+              "stream": 2,
+              "audio": "media/04-0157-offset--1-stream-2.wav",
+              "target_similarity": 0.09037607908248901,
+              "transcription": {
+                "text": "to go. That's enough.",
+                "average_log_probability": -0.9216304918130239,
+                "maximum_no_speech_probability": 0.4660705327987671
+              },
+              "target_word_f1": 0,
+              "other_word_f1": 0,
+              "transcript": "to go. That's enough."
+            }
+          ]
+        },
+        {
+          "offset": 1,
+          "streams": [
+            {
+              "stream": 1,
+              "audio": "media/04-0157-offset-+1-stream-1.wav",
+              "target_similarity": -0.09299546480178833,
+              "transcription": {
+                "text": "Already nice",
+                "average_log_probability": -0.8234709739685059,
+                "maximum_no_speech_probability": 0.18820010125637054
+              },
+              "target_word_f1": 0.4,
+              "other_word_f1": 0,
+              "transcript": "Already nice"
+            },
+            {
+              "stream": 2,
+              "audio": "media/04-0157-offset-+1-stream-2.wav",
+              "target_similarity": 0.12060637772083282,
+              "transcription": {
+                "text": "You've earned it. Enough.",
+                "average_log_probability": -0.8373920023441315,
+                "maximum_no_speech_probability": 0.32440659403800964
+              },
+              "target_word_f1": 0,
+              "other_word_f1": 0,
+              "transcript": "You've earned it. Enough."
+            }
+          ]
+        }
+      ],
+      "notes": "",
+      "offset_minus_1": "stream_1",
+      "offset_plus_1": "stream_1"
+    },
+    {
+      "exchange_id": "05-0215",
+      "start": 402.094,
+      "end": 403.314,
+      "target_words": "there's no",
+      "other_words": "pardon me",
+      "center_target_stream": "neither",
+      "video": "media/05-0215-source.mp4",
+      "offsets": [
+        {
+          "offset": -1,
+          "streams": [
+            {
+              "stream": 1,
+              "audio": "media/05-0215-offset--1-stream-1.wav",
+              "target_similarity": 0.07565919309854507,
+              "transcription": {
+                "text": "says it. There's no...",
+                "average_log_probability": -0.8970244526863098,
+                "maximum_no_speech_probability": 0.823219895362854
+              },
+              "target_word_f1": 0.6666666666666666,
+              "other_word_f1": 0,
+              "transcript": "says it. There's no..."
+            },
+            {
+              "stream": 2,
+              "audio": "media/05-0215-offset--1-stream-2.wav",
+              "target_similarity": 0.018906977027654648,
+              "transcription": {
+                "text": "",
+                "average_log_probability": null,
+                "maximum_no_speech_probability": null
+              },
+              "target_word_f1": 0,
+              "other_word_f1": 0,
+              "transcript": ""
+            }
+          ]
+        },
+        {
+          "offset": 1,
+          "streams": [
+            {
+              "stream": 1,
+              "audio": "media/05-0215-offset-+1-stream-1.wav",
+              "target_similarity": 0.04967499524354935,
+              "transcription": {
+                "text": "There's no",
+                "average_log_probability": -0.6346599260965983,
+                "maximum_no_speech_probability": 0.8651083707809448
+              },
+              "target_word_f1": 1,
+              "other_word_f1": 0,
+              "transcript": "There's no"
+            },
+            {
+              "stream": 2,
+              "audio": "media/05-0215-offset-+1-stream-2.wav",
+              "target_similarity": 0.002456990070641041,
+              "transcription": {
+                "text": "媽媽頭髮起霧",
+                "average_log_probability": -0.6977231936021284,
+                "maximum_no_speech_probability": 0.5642753839492798
+              },
+              "target_word_f1": 0,
+              "other_word_f1": 0,
+              "transcript": "媽媽頭髮起霧"
+            }
+          ]
+        }
+      ],
+      "notes": "",
+      "offset_minus_1": "stream_1",
+      "offset_plus_1": "stream_1"
+    }
+  ]
+}
