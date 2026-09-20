@@ -1,0 +1,470 @@
+{
+  "schema_version": 1,
+  "labels": [
+    {
+      "review_id": "01-0045",
+      "baseline_index": 45,
+      "start": 105.95,
+      "end": 107.472,
+      "video": "media/01-0045.mp4",
+      "baseline_text": "Well, they gotta warn me of trespassing first, though.",
+      "baseline_speaker": "Overlapping_Speakers",
+      "selected_stream": 1,
+      "candidate_text": "well they got a warm address passports",
+      "target_similarity": 0.4633983373641968,
+      "target_margin": 0.4356729742139578,
+      "streams": [
+        {
+          "stream": 1,
+          "audio": "media/01-0045-stream-1.wav",
+          "similarity": 0.4633983373641968,
+          "transcript": "well they got a warm address passports"
+        },
+        {
+          "stream": 2,
+          "audio": "media/01-0045-stream-2.wav",
+          "similarity": 0.02772536315023899,
+          "transcript": "Yep, yep."
+        }
+      ],
+      "utility_rank_score": 0.15141759891394696,
+      "text_match": 0.25,
+      "outcome": "cleaner_same_target_line",
+      "notes": ""
+    },
+    {
+      "review_id": "02-0131",
+      "baseline_index": 131,
+      "start": 226.801,
+      "end": 227.702,
+      "video": "media/02-0131.mp4",
+      "baseline_text": "That's what I recommend you do.",
+      "baseline_speaker": "Overlapping_Speakers",
+      "selected_stream": 1,
+      "candidate_text": "You know, you ought to know better.",
+      "target_similarity": 0.40001407265663147,
+      "target_margin": 0.37747511081397533,
+      "streams": [
+        {
+          "stream": 1,
+          "audio": "media/02-0131-stream-1.wav",
+          "similarity": 0.40001407265663147,
+          "transcript": "You know, you ought to know better."
+        },
+        {
+          "stream": 2,
+          "audio": "media/02-0131-stream-2.wav",
+          "similarity": 0.022538961842656136,
+          "transcript": "Well, that's what I."
+        }
+      ],
+      "utility_rank_score": 0.12776530157194824,
+      "text_match": 0.15384615384615385,
+      "outcome": "wrong_or_garbled",
+      "notes": ""
+    },
+    {
+      "review_id": "03-0213",
+      "baseline_index": 213,
+      "start": 398.892,
+      "end": 400.393,
+      "video": "media/03-0213.mp4",
+      "baseline_text": "You have to give me your identification card.",
+      "baseline_speaker": "Overlapping_Speakers",
+      "selected_stream": 1,
+      "candidate_text": "I am not, I am not responding.",
+      "target_similarity": 0.3516318202018738,
+      "target_margin": 0.29593729600310326,
+      "streams": [
+        {
+          "stream": 1,
+          "audio": "media/03-0213-stream-1.wav",
+          "similarity": 0.3516318202018738,
+          "transcript": "I am not, I am not responding."
+        },
+        {
+          "stream": 2,
+          "audio": "media/03-0213-stream-2.wav",
+          "similarity": 0.05569452419877052,
+          "transcript": "You have to give me your identification."
+        }
+      ],
+      "utility_rank_score": 0.1040609700591919,
+      "text_match": 0,
+      "outcome": "wrong_or_garbled",
+      "notes": ""
+    },
+    {
+      "review_id": "04-0133",
+      "baseline_index": 133,
+      "start": 228.902,
+      "end": 230.323,
+      "video": "media/04-0133.mp4",
+      "baseline_text": "I just thought you were a security guard.",
+      "baseline_speaker": "Overlapping_Speakers",
+      "selected_stream": 2,
+      "candidate_text": "What I recommend you do is",
+      "target_similarity": 0.368133008480072,
+      "target_margin": 0.3118002526462078,
+      "streams": [
+        {
+          "stream": 1,
+          "audio": "media/04-0133-stream-1.wav",
+          "similarity": 0.05633275583386421,
+          "transcript": "That's what I was"
+        },
+        {
+          "stream": 2,
+          "audio": "media/04-0133-stream-2.wav",
+          "similarity": 0.368133008480072,
+          "transcript": "What I recommend you do is"
+        }
+      ],
+      "utility_rank_score": 0.08198854646535358,
+      "text_match": 0.2857142857142857,
+      "outcome": "not_target",
+      "notes": ""
+    },
+    {
+      "review_id": "05-0214",
+      "baseline_index": 214,
+      "start": 400.413,
+      "end": 402.074,
+      "video": "media/05-0214.mp4",
+      "baseline_text": "I'm not required to give ID for a trespass.",
+      "baseline_speaker": "Overlapping_Speakers",
+      "selected_stream": 1,
+      "candidate_text": "to give ID for a trustee.",
+      "target_similarity": 0.47770488262176514,
+      "target_margin": 0.4846479892730713,
+      "streams": [
+        {
+          "stream": 1,
+          "audio": "media/05-0214-stream-1.wav",
+          "similarity": 0.47770488262176514,
+          "transcript": "to give ID for a trustee."
+        },
+        {
+          "stream": 2,
+          "audio": "media/05-0214-stream-2.wav",
+          "similarity": -0.006943106651306152,
+          "transcript": "Thank you for your question."
+        }
+      ],
+      "utility_rank_score": 0.07717290360952235,
+      "text_match": 0.6666666666666666,
+      "outcome": "adds_missing_target_speech",
+      "notes": ""
+    },
+    {
+      "review_id": "06-0099",
+      "baseline_index": 99,
+      "start": 179.168,
+      "end": 180.169,
+      "video": "media/06-0099.mp4",
+      "baseline_text": "Yeah, we sure can.",
+      "baseline_speaker": "Overlapping_Speakers",
+      "selected_stream": 1,
+      "candidate_text": "Let's do this straight.",
+      "target_similarity": 0.29703450202941895,
+      "target_margin": 0.25962284952402115,
+      "streams": [
+        {
+          "stream": 1,
+          "audio": "media/06-0099-stream-1.wav",
+          "similarity": 0.29703450202941895,
+          "transcript": "Let's do this straight."
+        },
+        {
+          "stream": 2,
+          "audio": "media/06-0099-stream-2.wav",
+          "similarity": 0.0374116525053978,
+          "transcript": "You sure can. Thanks."
+        }
+      ],
+      "utility_rank_score": 0.07711694382382639,
+      "text_match": 0,
+      "outcome": "wrong_or_garbled",
+      "notes": ""
+    },
+    {
+      "review_id": "07-0114",
+      "baseline_index": 114,
+      "start": 200.151,
+      "end": 204.095,
+      "video": "media/07-0114.mp4",
+      "baseline_text": "If you were standing here and just speaking about religion or anything like that, that is covered.",
+      "baseline_speaker": "Overlapping_Speakers",
+      "selected_stream": 2,
+      "candidate_text": "There is nothing, there is absolutely nothing.",
+      "target_similarity": 0.3798649311065674,
+      "target_margin": 0.20868057012557983,
+      "streams": [
+        {
+          "stream": 1,
+          "audio": "media/07-0114-stream-1.wav",
+          "similarity": 0.17118436098098755,
+          "transcript": "We're standing here and just speaking about religion or anything like that, that is cowardly."
+        },
+        {
+          "stream": 2,
+          "audio": "media/07-0114-stream-2.wav",
+          "similarity": 0.3798649311065674,
+          "transcript": "There is nothing, there is absolutely nothing."
+        }
+      ],
+      "utility_rank_score": 0.07266456119452987,
+      "text_match": 0.08333333333333333,
+      "outcome": "not_target",
+      "notes": ""
+    },
+    {
+      "review_id": "08-0116",
+      "baseline_index": 116,
+      "start": 205.376,
+      "end": 206.136,
+      "video": "media/08-0116.mp4",
+      "baseline_text": "You're soliciting money.",
+      "baseline_speaker": "Overlapping_Speakers",
+      "selected_stream": 1,
+      "candidate_text": "and that's what I'm doing.",
+      "target_similarity": 0.2881791591644287,
+      "target_margin": 0.22995029017329216,
+      "streams": [
+        {
+          "stream": 1,
+          "audio": "media/08-0116-stream-1.wav",
+          "similarity": 0.2881791591644287,
+          "transcript": "and that's what I'm doing."
+        },
+        {
+          "stream": 2,
+          "audio": "media/08-0116-stream-2.wav",
+          "similarity": 0.05822886899113655,
+          "transcript": "So let's save you money."
+        }
+      ],
+      "utility_rank_score": 0.06626688127175573,
+      "text_match": 0,
+      "outcome": "wrong_or_garbled",
+      "notes": ""
+    },
+    {
+      "review_id": "09-0098",
+      "baseline_index": 98,
+      "start": 178.027,
+      "end": 179.148,
+      "video": "media/09-0098.mp4",
+      "baseline_text": "We can disagree to disagree.",
+      "baseline_speaker": "Overlapping_Speakers",
+      "selected_stream": 1,
+      "candidate_text": "We can disagree to agree to.",
+      "target_similarity": 0.41751399636268616,
+      "target_margin": 0.5416178703308105,
+      "streams": [
+        {
+          "stream": 1,
+          "audio": "media/09-0098-stream-1.wav",
+          "similarity": 0.41751399636268616,
+          "transcript": "We can disagree to agree to."
+        },
+        {
+          "stream": 2,
+          "audio": "media/09-0098-stream-2.wav",
+          "similarity": -0.12410387396812439,
+          "transcript": "Boop. Yeah. Boop."
+        }
+      ],
+      "utility_rank_score": 0.06167264769361741,
+      "text_match": 0.7272727272727273,
+      "outcome": "cleaner_same_target_line",
+      "notes": ""
+    },
+    {
+      "review_id": "10-0096",
+      "baseline_index": 96,
+      "start": 176.005,
+      "end": 177.046,
+      "video": "media/10-0096.mp4",
+      "baseline_text": "That's not being hostile.",
+      "baseline_speaker": "Overlapping_Speakers",
+      "selected_stream": 1,
+      "candidate_text": "Okay, I'll be a hostile",
+      "target_similarity": 0.3454976975917816,
+      "target_margin": 0.21248117089271545,
+      "streams": [
+        {
+          "stream": 1,
+          "audio": "media/10-0096-stream-1.wav",
+          "similarity": 0.3454976975917816,
+          "transcript": "Okay, I'll be a hostile"
+        },
+        {
+          "stream": 2,
+          "audio": "media/10-0096-stream-2.wav",
+          "similarity": 0.13301652669906616,
+          "transcript": "That's not. Hey, that's."
+        }
+      ],
+      "utility_rank_score": 0.05709803191947484,
+      "text_match": 0.2222222222222222,
+      "outcome": "mixed_but_useful",
+      "notes": ""
+    },
+    {
+      "review_id": "11-0123",
+      "baseline_index": 123,
+      "start": 214.018,
+      "end": 216.139,
+      "video": "media/11-0123.mp4",
+      "baseline_text": "I have people willing to sign an affidavit.",
+      "baseline_speaker": "Overlapping_Speakers",
+      "selected_stream": 2,
+      "candidate_text": "Please pray for the homicides.",
+      "target_similarity": 0.32193082571029663,
+      "target_margin": 0.17128148674964905,
+      "streams": [
+        {
+          "stream": 1,
+          "audio": "media/11-0123-stream-1.wav",
+          "similarity": 0.15064933896064758,
+          "transcript": "I have people willing to sign an affidavit."
+        },
+        {
+          "stream": 2,
+          "audio": "media/11-0123-stream-2.wav",
+          "similarity": 0.32193082571029663,
+          "transcript": "Please pray for the homicides."
+        }
+      ],
+      "utility_rank_score": 0.05514079045820175,
+      "text_match": 0,
+      "outcome": "not_target",
+      "notes": ""
+    },
+    {
+      "review_id": "12-0211",
+      "baseline_index": 211,
+      "start": 396.511,
+      "end": 397.791,
+      "video": "media/12-0211.mp4",
+      "baseline_text": "Excuse me, I don't have to give you ID.",
+      "baseline_speaker": "Overlapping_Speakers",
+      "selected_stream": 2,
+      "candidate_text": "I don't have to",
+      "target_similarity": 0.3373684585094452,
+      "target_margin": 0.35089326463639736,
+      "streams": [
+        {
+          "stream": 1,
+          "audio": "media/12-0211-stream-1.wav",
+          "similarity": -0.013524806126952171,
+          "transcript": "Excuse me. That is a form of."
+        },
+        {
+          "stream": 2,
+          "audio": "media/12-0211-stream-2.wav",
+          "similarity": 0.3373684585094452,
+          "transcript": "I don't have to"
+        }
+      ],
+      "utility_rank_score": 0.045530892227587764,
+      "text_match": 0.6153846153846154,
+      "outcome": "mixed_but_useful",
+      "notes": ""
+    },
+    {
+      "review_id": "13-0097",
+      "baseline_index": 97,
+      "start": 177.066,
+      "end": 178.007,
+      "video": "media/13-0097.mp4",
+      "baseline_text": "Hey, that's fine.",
+      "baseline_speaker": "Overlapping_Speakers",
+      "selected_stream": 1,
+      "candidate_text": "I have a...",
+      "target_similarity": 0.2810364365577698,
+      "target_margin": 0.1443975269794464,
+      "streams": [
+        {
+          "stream": 1,
+          "audio": "media/13-0097-stream-1.wav",
+          "similarity": 0.2810364365577698,
+          "transcript": "I have a..."
+        },
+        {
+          "stream": 2,
+          "audio": "media/13-0097-stream-2.wav",
+          "similarity": 0.13663890957832336,
+          "transcript": "Fine."
+        }
+      ],
+      "utility_rank_score": 0.04058096643005804,
+      "text_match": 0,
+      "outcome": "wrong_or_garbled",
+      "notes": ""
+    },
+    {
+      "review_id": "14-0132",
+      "baseline_index": 132,
+      "start": 227.742,
+      "end": 228.862,
+      "video": "media/14-0132.mp4",
+      "baseline_text": "I know you're a police officer.",
+      "baseline_speaker": "Overlapping_Speakers",
+      "selected_stream": 2,
+      "candidate_text": "I just told you what I would-",
+      "target_similarity": 0.20007073879241943,
+      "target_margin": 0.16956794075667858,
+      "streams": [
+        {
+          "stream": 1,
+          "audio": "media/14-0132-stream-1.wav",
+          "similarity": 0.030502798035740852,
+          "transcript": "I told you that from the get-go."
+        },
+        {
+          "stream": 2,
+          "audio": "media/14-0132-stream-2.wav",
+          "similarity": 0.20007073879241943,
+          "transcript": "I just told you what I would-"
+        }
+      ],
+      "utility_rank_score": 0.028706262693052063,
+      "text_match": 0.15384615384615385,
+      "outcome": "wrong_or_garbled",
+      "notes": ""
+    },
+    {
+      "review_id": "15-0141",
+      "baseline_index": 141,
+      "start": 246.875,
+      "end": 247.696,
+      "video": "media/15-0141.mp4",
+      "baseline_text": "This is free speech.",
+      "baseline_speaker": "Overlapping_Speakers",
+      "selected_stream": 1,
+      "candidate_text": "This is pretty steep.",
+      "target_similarity": 0.23527440428733826,
+      "target_margin": 0.19332104176282883,
+      "streams": [
+        {
+          "stream": 1,
+          "audio": "media/15-0141-stream-1.wav",
+          "similarity": 0.23527440428733826,
+          "transcript": "This is pretty steep."
+        },
+        {
+          "stream": 2,
+          "audio": "media/15-0141-stream-2.wav",
+          "similarity": 0.04195336252450943,
+          "transcript": "Have a good day. Helmet."
+        }
+      ],
+      "utility_rank_score": 0.022741746468478596,
+      "text_match": 0.5,
+      "outcome": "cleaner_same_target_line",
+      "notes": ""
+    }
+  ]
+}

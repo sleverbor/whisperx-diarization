@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "evaluation": "mossformer2_full_video_priority_review",
+  "reviewed": 15,
+  "outcomes": {
+    "adds_missing_target_speech": 1,
+    "cleaner_same_target_line": 3,
+    "mixed_but_useful": 2,
+    "not_target": 3,
+    "wrong_or_garbled": 6
+  },
+  "useful_target_audio": 6,
+  "useful_target_audio_rate": 0.4,
+  "new_missing_target_speech": 1,
+  "safe_automatic_transcript_insertions": 0,
+  "finding": "Voice similarity identifies some useful target-bearing separated audio, but does not validate the fresh ASR text. Keep MossFormer2 output review-only and treat candidate words as unverified hints.",
+  "policy_change": "Preserve the existing identity gates for audio triage; classify candidate text as baseline corroboration or novel/conflicting, and prohibit automatic use of either class.",
+  "by_outcome": {
+    "adds_missing_target_speech": {
+      "count": 1,
+      "mean_target_similarity": 0.478,
+      "mean_target_margin": 0.485
+    },
+    "cleaner_same_target_line": {
+      "count": 3,
+      "mean_target_similarity": 0.372,
+      "mean_target_margin": 0.39
+    },
+    "mixed_but_useful": {
+      "count": 2,
+      "mean_target_similarity": 0.341,
+      "mean_target_margin": 0.282
+    },
+    "not_target": {
+      "count": 3,
+      "mean_target_similarity": 0.357,
+      "mean_target_margin": 0.231
+    },
+    "wrong_or_garbled": {
+      "count": 6,
+      "mean_target_similarity": 0.303,
+      "mean_target_margin": 0.246
+    }
+  }
+}

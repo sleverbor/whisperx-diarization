@@ -125,6 +125,7 @@ def main():
             "context_seconds": args.context,
             "window_start": window_start,
             "window_end": window_end,
+            "baseline_text": label.get("baseline_text", ""),
             "target_words": label.get("target_words", ""),
             "other_words": label.get("other_words", ""),
             "streams": streams,

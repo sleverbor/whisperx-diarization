@@ -62,7 +62,7 @@ import subprocess, sys, os, json, shutil, time, zipfile
 from urllib.parse import urlparse, parse_qs
 
 VIDEO_URL = 'https://www.youtube.com/watch?v=lVfKfbFd0SM'
-NOTEBOOK_REVISION = 'mossformer2-review-only-evidence-v26'
+NOTEBOOK_REVISION = 'mossformer2-human-calibrated-review-v27'
 REQUIRE_OVERLAP_POLICY = True
 RUN_FULL_VIDEO = True
 RUN_TARGETED_REVIEW = True

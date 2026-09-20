@@ -2,6 +2,8 @@
 
 import argparse
 import json
+import re
+from collections import Counter
 from pathlib import Path
 
 from review_overlap_extraction import select_overlap_segments
@@ -9,6 +11,20 @@ from review_overlap_extraction import select_overlap_segments
 
 MINIMUM_TARGET_SIMILARITY = 0.15
 MINIMUM_TARGET_MARGIN = 0.08
+
+
+def token_f1(reference, hypothesis):
+    """Measure word overlap without treating word order as ground truth."""
+    reference_tokens = re.findall(r"[a-z0-9']+", reference.lower())
+    hypothesis_tokens = re.findall(r"[a-z0-9']+", hypothesis.lower())
+    if not reference_tokens or not hypothesis_tokens:
+        return 0.0
+    reference_counts = Counter(reference_tokens)
+    hypothesis_counts = Counter(hypothesis_tokens)
+    common = sum((reference_counts & hypothesis_counts).values())
+    precision = common / len(hypothesis_tokens)
+    recall = common / len(reference_tokens)
+    return 2 * precision * recall / (precision + recall) if common else 0.0
 
 
 def prepare_labels(baseline, selection_policy=None):
@@ -47,6 +63,9 @@ def apply_review_policy(report):
         best, second = ranked
         similarity = float(best.get("target_similarity", -1.0))
         margin = similarity - float(second.get("target_similarity", -1.0))
+        baseline_text = result.get("baseline_text", "")
+        candidate_text = best.get("transcription", {}).get("text", "")
+        baseline_overlap = token_f1(baseline_text, candidate_text)
         accepted = (
             similarity >= MINIMUM_TARGET_SIMILARITY
             and margin >= MINIMUM_TARGET_MARGIN
@@ -63,13 +82,28 @@ def apply_review_policy(report):
             "selected_stream": best["stream"] if accepted else None,
             "selected_audio": best.get("audio") if accepted else None,
             "candidate_transcription": (
-                best.get("transcription", {}).get("text", "") if accepted else ""
+                candidate_text if accepted else ""
+            ),
+            # Human evaluation showed that a separated stream can contain
+            # useful target audio while fresh ASR on that stream invents or
+            # damages words. Similarity and margin validate voice identity;
+            # they do not validate the candidate transcription.
+            "candidate_transcription_status": (
+                "unverified_review_hint" if accepted else "not_selected"
+            ),
+            "baseline_token_f1": baseline_overlap if accepted else None,
+            "transcript_review_class": (
+                "baseline_corroboration"
+                if accepted and baseline_overlap >= 0.5
+                else "novel_or_conflicting_words"
+                if accepted else "not_selected"
             ),
             "target_similarity": similarity,
             "target_margin": margin,
             "review_required": accepted,
             "mixed_speaker_risk": accepted,
             "automatic_text_insertion": False,
+            "automatic_candidate_transcription_use": False,
             "speaker_identity_changed": False,
             "baseline_text_changed": False,
             "all_streams": streams,
@@ -81,6 +115,7 @@ def apply_review_policy(report):
             "minimum_target_margin": MINIMUM_TARGET_MARGIN,
             "review_only": True,
             "mixed_streams_never_replace_baseline": True,
+            "voice_scores_do_not_validate_candidate_words": True,
         },
         "summary": {
             "segments": len(decisions),
@@ -93,6 +128,7 @@ def apply_review_policy(report):
                 for row in decisions
             ),
             "automatic_insertions": 0,
+            "candidate_transcriptions_approved": 0,
         },
         "segments": decisions,
     }

@@ -14,6 +14,7 @@ class MossFormer2ReviewPolicyTest(unittest.TestCase):
         return {"results": [{
             "exchange_id": "example", "baseline_index": 3,
             "start": 1.0, "end": 2.0,
+            "baseline_text": "candidate words",
             "streams": [
                 {"stream": 1, "target_similarity": first,
                  "audio": "one.wav", "transcription": {"text": "candidate"}},
@@ -29,6 +30,22 @@ class MossFormer2ReviewPolicyTest(unittest.TestCase):
         self.assertTrue(row["mixed_speaker_risk"])
         self.assertFalse(row["automatic_text_insertion"])
         self.assertFalse(row["speaker_identity_changed"])
+        self.assertEqual(row["candidate_transcription_status"],
+                         "unverified_review_hint")
+        self.assertFalse(row["automatic_candidate_transcription_use"])
+        self.assertEqual(row["transcript_review_class"],
+                         "baseline_corroboration")
+
+    def test_novel_words_are_flagged_even_with_strong_voice_identity(self):
+        report = self.report(.50, .01)
+        report["results"][0]["baseline_text"] = "known baseline"
+        report["results"][0]["streams"][0]["transcription"]["text"] = (
+            "entirely different phrase"
+        )
+        row = apply_review_policy(report)["segments"][0]
+        self.assertEqual(row["transcript_review_class"],
+                         "novel_or_conflicting_words")
+        self.assertFalse(row["automatic_candidate_transcription_use"])
 
     def test_low_absolute_and_margin_are_rejected(self):
         row = apply_review_policy(self.report(.043, .024))["segments"][0]
