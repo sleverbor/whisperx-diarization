@@ -60,5 +60,34 @@
     "control_segments": 215
   },
   "reference_promotion_candidates": 1,
-  "conclusion": "The unseen run validates selective voice mapping in clean audio but exposes cross-bodycam target-track fragmentation, failure of face recognition on the available views, and failure of waveform-only repeated-scene matching. Supplemental target and MossFormer2 candidates require focused human review before any resolver change."
+  "conclusion": "The unseen run validates selective voice mapping in clean audio but exposes cross-bodycam target-track fragmentation, failure of face recognition on the available views, and failure of waveform-only repeated-scene matching. Supplemental target and MossFormer2 candidates require focused human review before any resolver change.",
+  "human_review": {
+    "cards": 15,
+    "later_target_hypotheses": {
+      "reviewed": 5,
+      "target_only": 0,
+      "non_target": 2,
+      "mixed_or_overlapping": 3,
+      "target_visible": 3,
+      "face_usable_for_target_identity": 1
+    },
+    "caption_gaps": {
+      "reviewed": 4,
+      "explicit_missing_speech": 1,
+      "timing_or_duplicate": 2,
+      "outcome_unset_but_missing_wording_identified": 1
+    },
+    "mossformer2_separate_cards": {
+      "reviewed": 3,
+      "cleaner_same_target_line": 1,
+      "not_target": 2
+    },
+    "repeated_scene_pairs": {
+      "reviewed": 3,
+      "confirmed_same_event": 3,
+      "same_wording": 2,
+      "different_clip_boundaries_with_shared_dialogue": 1
+    },
+    "decision": "Do not loosen target or face thresholds. Keep separation review-only. Implement text-assisted repeated-scene candidate generation and alignment."
+  }
 }

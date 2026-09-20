@@ -167,6 +167,25 @@ Milestones:
 
 The first untouched run on the selected 7:56 outdoor video produced 227 segments across six diarization tracks. Voice affinity clearly selected `SPEAKER_01` as the target (0.339 versus 0.126 for the next track), but only nine final target lines were emitted, mostly in the opening. Supplemental review found later target-like speech on other tracks, exposing cross-bodycam fragmentation. Face evidence recognized no target-visible segment at the configured threshold. The waveform repeat detector found zero groups despite multiple near-exact dialogue repeats from different bodycam perspectives. Four caption-gap and six MossFormer2 candidates were exported for review. See [the unseen-video result](evaluations/unseen-video-uxOLBG1OcI0/RESULTS.md).
 
+### Focused review of the unseen run
+
+Human review rejected all five later whole-segment target hypotheses: two were
+non-target and three were mixed/overlapping. Only one of the three target-visible
+mixed intervals offered a face usable for identification. This means the review
+stage detects target presence in a conversation but cannot safely relabel the
+whole interval. Three additional MossFormer2 streams yielded one cleaner
+existing target line and two non-target streams.
+
+Caption review confirmed one missing non-target interval and identified the
+wording of a second overlapping question whose outcome field was left unset.
+Two caption candidates were timing/duplication errors.
+
+All three text-proposed repeated-bodycam pairs were confirmed as the same event,
+and the clearer recording varied by pair. Text-assisted repeat discovery is the
+next supported experiment; target-threshold loosening is not.
+
+Source: [focused unseen-video review](evaluations/unseen-video-uxOLBG1OcI0/RESULTS.md).
+
 ## Methods rejected as automatic rules
 
 The following were tested and should not be reintroduced without new evidence:
