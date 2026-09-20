@@ -1,0 +1,45 @@
+{
+  "cases": [
+    {
+      "case_id": "segment-197-target-suffix",
+      "purpose": "Choose between two machine wordings on the target-like suffix after the mixed boundary.",
+      "audio": [
+        {"name": "original_suffix", "family": "original_recording", "start": 420.103, "end": 421.124, "speaker_evidence": "target-like"},
+        {"name": "filtered_suffix", "family": "original_recording", "start": 420.103, "end": 421.124, "filtered": true, "speaker_evidence": "target-like"}
+      ],
+      "candidates": [
+        {"candidate_id": "197-a", "text": "test that if you'd like", "origin": "baseline and filtered Whisper"},
+        {"candidate_id": "197-b", "text": "test that if you buy it", "origin": "original and targeted-review Whisper"}
+      ]
+    },
+    {
+      "case_id": "segment-200-target-interior",
+      "purpose": "Choose the disputed prefix while preserving the cross-family stable interior.",
+      "audio": [
+        {"name": "original_mixture", "family": "original_recording", "start": 424.684, "end": 428.869, "include_in_aggregate": false, "speaker_evidence": "mixed or unresolved"},
+        {"name": "filtered_mixture", "family": "original_recording", "start": 424.684, "end": 428.869, "filtered": true, "include_in_aggregate": false, "speaker_evidence": "mixed or unresolved"},
+        {"name": "target_separated", "family": "mossformer2", "path": "/home/think/Documents/Codex/2026-09-13/referenced-chatgpt-conversation-this-is-an/diarization-results-20/mossformer2-review/inference/audio/segment-0200-stream-2.wav", "speaker_evidence": "target-like"}
+      ],
+      "candidates": [
+        {"candidate_id": "200-a", "text": "doing it right here because this is obviously public property", "origin": "cross-family stable interior"},
+        {"candidate_id": "200-b", "text": "you're doing it right here because this is obviously public property", "origin": "filtered Whisper"},
+        {"candidate_id": "200-c", "text": "now I'm doing it right here because this is obviously public property", "origin": "target-separated Whisper"},
+        {"candidate_id": "200-d", "text": "not doing it right here because this is obviously public property", "origin": "baseline Whisper"}
+      ]
+    },
+    {
+      "case_id": "segment-221-short-reply",
+      "purpose": "Test whether an independent acoustic model ranks the human-heard wording above conflicting Whisper hypotheses.",
+      "audio": [
+        {"name": "original", "family": "original_recording", "start": 463.786, "end": 464.506, "speaker_evidence": "target-like"},
+        {"name": "filtered", "family": "original_recording", "start": 463.786, "end": 464.506, "filtered": true, "speaker_evidence": "target-like but below gate"}
+      ],
+      "candidates": [
+        {"candidate_id": "221-a", "text": "So I'm not paying him", "origin": "baseline and targeted-review Whisper"},
+        {"candidate_id": "221-b", "text": "I love that video", "origin": "original-crop Whisper"},
+        {"candidate_id": "221-c", "text": "I'm not thinking at all", "origin": "filtered-crop Whisper"},
+        {"candidate_id": "221-holdout", "text": "I'm not panhandling", "origin": "human evaluation holdout"}
+      ]
+    }
+  ]
+}

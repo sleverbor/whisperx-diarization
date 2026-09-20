@@ -1,0 +1,458 @@
+{
+  "experimental": true,
+  "model": "torchaudio/WAV2VEC2_ASR_BASE_960H",
+  "model_family_independent_from_whisper": true,
+  "scores_are_calibrated_probabilities": false,
+  "baseline_modified": false,
+  "video_sha256": "b836b40a8fd43f021a19a89ee1d6bd50b0e151579b60a8dfa3bcb96ac2c118df",
+  "manifest_sha256": "5399077470f85ac2e0e0dfcc1ffa4a0010d749d96e6548ecf354e4ab25be52a5",
+  "cases": [
+    {
+      "case_id": "segment-197-target-suffix",
+      "purpose": "Choose between two machine wordings on the target-like suffix after the mixed boundary.",
+      "audio_results": [
+        {
+          "name": "original_suffix",
+          "family": "original_recording",
+          "include_in_aggregate": true,
+          "speaker_evidence": "target-like",
+          "provenance": {
+            "video_start": 420.103,
+            "video_end": 421.124,
+            "filtered": false
+          },
+          "greedy_ctc_transcript": "AS THE",
+          "ranking": [
+            {
+              "candidate_id": "197-a",
+              "text": "test that if you'd like",
+              "normalized_text": "TEST THAT IF YOU'D LIKE",
+              "raw_ctc_loss": 112.57219696044922,
+              "normalized_ctc_loss": 4.894443346106487,
+              "rank": 1,
+              "loss_from_best": 0.0,
+              "origin": "baseline and filtered Whisper"
+            },
+            {
+              "candidate_id": "197-b",
+              "text": "test that if you buy it",
+              "normalized_text": "TEST THAT IF YOU BUY IT",
+              "raw_ctc_loss": 112.60790252685547,
+              "normalized_ctc_loss": 4.895995762037194,
+              "rank": 2,
+              "loss_from_best": 0.0015524159307069851,
+              "origin": "original and targeted-review Whisper"
+            }
+          ]
+        },
+        {
+          "name": "filtered_suffix",
+          "family": "original_recording",
+          "include_in_aggregate": true,
+          "speaker_evidence": "target-like",
+          "provenance": {
+            "video_start": 420.103,
+            "video_end": 421.124,
+            "filtered": true
+          },
+          "greedy_ctc_transcript": "AYS THEMBY",
+          "ranking": [
+            {
+              "candidate_id": "197-b",
+              "text": "test that if you buy it",
+              "normalized_text": "TEST THAT IF YOU BUY IT",
+              "raw_ctc_loss": 72.25767517089844,
+              "normalized_ctc_loss": 3.141638050908628,
+              "rank": 1,
+              "loss_from_best": 0.0,
+              "origin": "original and targeted-review Whisper"
+            },
+            {
+              "candidate_id": "197-a",
+              "text": "test that if you'd like",
+              "normalized_text": "TEST THAT IF YOU'D LIKE",
+              "raw_ctc_loss": 85.58650970458984,
+              "normalized_ctc_loss": 3.7211525958517324,
+              "rank": 2,
+              "loss_from_best": 0.5795145449431045,
+              "origin": "baseline and filtered Whisper"
+            }
+          ]
+        }
+      ],
+      "aggregate_ranking": [
+        {
+          "candidate_id": "197-b",
+          "text": "test that if you buy it",
+          "origin": "original and targeted-review Whisper",
+          "mean_normalized_ctc_loss": 4.018816906472911,
+          "median_normalized_ctc_loss": 4.018816906472911,
+          "rank": 1
+        },
+        {
+          "candidate_id": "197-a",
+          "text": "test that if you'd like",
+          "origin": "baseline and filtered Whisper",
+          "mean_normalized_ctc_loss": 4.307797970979109,
+          "median_normalized_ctc_loss": 4.307797970979109,
+          "rank": 2
+        }
+      ],
+      "human_answer_used_as_model_input": false,
+      "review_required": true
+    },
+    {
+      "case_id": "segment-200-target-interior",
+      "purpose": "Choose the disputed prefix while preserving the cross-family stable interior.",
+      "audio_results": [
+        {
+          "name": "original_mixture",
+          "family": "original_recording",
+          "include_in_aggregate": false,
+          "speaker_evidence": "mixed or unresolved",
+          "provenance": {
+            "video_start": 424.684,
+            "video_end": 428.869,
+            "filtered": false
+          },
+          "greedy_ctc_transcript": "O DID ER I HEARERYTHOD BY HIS A EAGEST LOS OF O POPERY I",
+          "ranking": [
+            {
+              "candidate_id": "200-d",
+              "text": "not doing it right here because this is obviously public property",
+              "normalized_text": "NOT DOING IT RIGHT HERE BECAUSE THIS IS OBVIOUSLY PUBLIC PROPERTY",
+              "raw_ctc_loss": 214.03033447265625,
+              "normalized_ctc_loss": 3.292774376502404,
+              "rank": 1,
+              "loss_from_best": 0.0,
+              "origin": "baseline Whisper"
+            },
+            {
+              "candidate_id": "200-a",
+              "text": "doing it right here because this is obviously public property",
+              "normalized_text": "DOING IT RIGHT HERE BECAUSE THIS IS OBVIOUSLY PUBLIC PROPERTY",
+              "raw_ctc_loss": 206.9248046875,
+              "normalized_ctc_loss": 3.392209912909836,
+              "rank": 2,
+              "loss_from_best": 0.09943553640743197,
+              "origin": "cross-family stable interior"
+            },
+            {
+              "candidate_id": "200-b",
+              "text": "you're doing it right here because this is obviously public property",
+              "normalized_text": "YOU'RE DOING IT RIGHT HERE BECAUSE THIS IS OBVIOUSLY PUBLIC PROPERTY",
+              "raw_ctc_loss": 253.3245849609375,
+              "normalized_ctc_loss": 3.7253615435431984,
+              "rank": 3,
+              "loss_from_best": 0.43258716704079436,
+              "origin": "filtered Whisper"
+            },
+            {
+              "candidate_id": "200-c",
+              "text": "now I'm doing it right here because this is obviously public property",
+              "normalized_text": "NOW I'M DOING IT RIGHT HERE BECAUSE THIS IS OBVIOUSLY PUBLIC PROPERTY",
+              "raw_ctc_loss": 270.3426818847656,
+              "normalized_ctc_loss": 3.9180098823879077,
+              "rank": 4,
+              "loss_from_best": 0.6252355058855037,
+              "origin": "target-separated Whisper"
+            }
+          ]
+        },
+        {
+          "name": "filtered_mixture",
+          "family": "original_recording",
+          "include_in_aggregate": false,
+          "speaker_evidence": "mixed or unresolved",
+          "provenance": {
+            "video_start": 424.684,
+            "video_end": 428.869,
+            "filtered": true
+          },
+          "greedy_ctc_transcript": "O DON'T IT RIHT HEREVERYTID WHILE HE IS LU EAGER WIT CLAMS O PROPERTAON",
+          "ranking": [
+            {
+              "candidate_id": "200-d",
+              "text": "not doing it right here because this is obviously public property",
+              "normalized_text": "NOT DOING IT RIGHT HERE BECAUSE THIS IS OBVIOUSLY PUBLIC PROPERTY",
+              "raw_ctc_loss": 181.61351013183594,
+              "normalized_ctc_loss": 2.794054002028245,
+              "rank": 1,
+              "loss_from_best": 0.0,
+              "origin": "baseline Whisper"
+            },
+            {
+              "candidate_id": "200-a",
+              "text": "doing it right here because this is obviously public property",
+              "normalized_text": "DOING IT RIGHT HERE BECAUSE THIS IS OBVIOUSLY PUBLIC PROPERTY",
+              "raw_ctc_loss": 175.3330535888672,
+              "normalized_ctc_loss": 2.8743123539158555,
+              "rank": 2,
+              "loss_from_best": 0.08025835188761032,
+              "origin": "cross-family stable interior"
+            },
+            {
+              "candidate_id": "200-b",
+              "text": "you're doing it right here because this is obviously public property",
+              "normalized_text": "YOU'RE DOING IT RIGHT HERE BECAUSE THIS IS OBVIOUSLY PUBLIC PROPERTY",
+              "raw_ctc_loss": 197.38616943359375,
+              "normalized_ctc_loss": 2.9027377857881436,
+              "rank": 3,
+              "loss_from_best": 0.1086837837598984,
+              "origin": "filtered Whisper"
+            },
+            {
+              "candidate_id": "200-c",
+              "text": "now I'm doing it right here because this is obviously public property",
+              "normalized_text": "NOW I'M DOING IT RIGHT HERE BECAUSE THIS IS OBVIOUSLY PUBLIC PROPERTY",
+              "raw_ctc_loss": 231.54974365234375,
+              "normalized_ctc_loss": 3.3557933862658516,
+              "rank": 4,
+              "loss_from_best": 0.5617393842376064,
+              "origin": "target-separated Whisper"
+            }
+          ]
+        },
+        {
+          "name": "target_separated",
+          "family": "mossformer2",
+          "include_in_aggregate": true,
+          "speaker_evidence": "target-like",
+          "provenance": {
+            "path": "/home/think/Documents/Codex/2026-09-13/referenced-chatgpt-conversation-this-is-an/diarization-results-20/mossformer2-review/inference/audio/segment-0200-stream-2.wav",
+            "sha256": "f9b2dfd3d53d7852c4215349f570cc1ecb0e1b4897d7fa2a611feb34e3571b32"
+          },
+          "greedy_ctc_transcript": "NO DOING WIT HER BECAUSE THIS IS OBVIOUSLY CLUB PROCADATE",
+          "ranking": [
+            {
+              "candidate_id": "200-d",
+              "text": "not doing it right here because this is obviously public property",
+              "normalized_text": "NOT DOING IT RIGHT HERE BECAUSE THIS IS OBVIOUSLY PUBLIC PROPERTY",
+              "raw_ctc_loss": 74.65126037597656,
+              "normalized_ctc_loss": 1.148480928861178,
+              "rank": 1,
+              "loss_from_best": 0.0,
+              "origin": "baseline Whisper"
+            },
+            {
+              "candidate_id": "200-c",
+              "text": "now I'm doing it right here because this is obviously public property",
+              "normalized_text": "NOW I'M DOING IT RIGHT HERE BECAUSE THIS IS OBVIOUSLY PUBLIC PROPERTY",
+              "raw_ctc_loss": 87.93457794189453,
+              "normalized_ctc_loss": 1.2744141730709353,
+              "rank": 2,
+              "loss_from_best": 0.12593324420975738,
+              "origin": "target-separated Whisper"
+            },
+            {
+              "candidate_id": "200-a",
+              "text": "doing it right here because this is obviously public property",
+              "normalized_text": "DOING IT RIGHT HERE BECAUSE THIS IS OBVIOUSLY PUBLIC PROPERTY",
+              "raw_ctc_loss": 84.00574493408203,
+              "normalized_ctc_loss": 1.3771433595751152,
+              "rank": 3,
+              "loss_from_best": 0.22866243071393733,
+              "origin": "cross-family stable interior"
+            },
+            {
+              "candidate_id": "200-b",
+              "text": "you're doing it right here because this is obviously public property",
+              "normalized_text": "YOU'RE DOING IT RIGHT HERE BECAUSE THIS IS OBVIOUSLY PUBLIC PROPERTY",
+              "raw_ctc_loss": 97.05199432373047,
+              "normalized_ctc_loss": 1.4272352106430952,
+              "rank": 4,
+              "loss_from_best": 0.2787542817819173,
+              "origin": "filtered Whisper"
+            }
+          ]
+        }
+      ],
+      "aggregate_ranking": [
+        {
+          "candidate_id": "200-d",
+          "text": "not doing it right here because this is obviously public property",
+          "origin": "baseline Whisper",
+          "mean_normalized_ctc_loss": 1.148480928861178,
+          "median_normalized_ctc_loss": 1.148480928861178,
+          "rank": 1
+        },
+        {
+          "candidate_id": "200-c",
+          "text": "now I'm doing it right here because this is obviously public property",
+          "origin": "target-separated Whisper",
+          "mean_normalized_ctc_loss": 1.2744141730709353,
+          "median_normalized_ctc_loss": 1.2744141730709353,
+          "rank": 2
+        },
+        {
+          "candidate_id": "200-a",
+          "text": "doing it right here because this is obviously public property",
+          "origin": "cross-family stable interior",
+          "mean_normalized_ctc_loss": 1.3771433595751152,
+          "median_normalized_ctc_loss": 1.3771433595751152,
+          "rank": 3
+        },
+        {
+          "candidate_id": "200-b",
+          "text": "you're doing it right here because this is obviously public property",
+          "origin": "filtered Whisper",
+          "mean_normalized_ctc_loss": 1.4272352106430952,
+          "median_normalized_ctc_loss": 1.4272352106430952,
+          "rank": 4
+        }
+      ],
+      "human_answer_used_as_model_input": false,
+      "review_required": true
+    },
+    {
+      "case_id": "segment-221-short-reply",
+      "purpose": "Test whether an independent acoustic model ranks the human-heard wording above conflicting Whisper hypotheses.",
+      "audio_results": [
+        {
+          "name": "original",
+          "family": "original_recording",
+          "include_in_aggregate": true,
+          "speaker_evidence": "target-like",
+          "provenance": {
+            "video_start": 463.786,
+            "video_end": 464.506,
+            "filtered": false
+          },
+          "greedy_ctc_transcript": "AA",
+          "ranking": [
+            {
+              "candidate_id": "221-b",
+              "text": "I love that video",
+              "normalized_text": "I LOVE THAT VIDEO",
+              "raw_ctc_loss": 66.26081085205078,
+              "normalized_ctc_loss": 3.8976947560029873,
+              "rank": 1,
+              "loss_from_best": 0.0,
+              "origin": "original-crop Whisper"
+            },
+            {
+              "candidate_id": "221-a",
+              "text": "So I'm not paying him",
+              "normalized_text": "SO I'M NOT PAYING HIM",
+              "raw_ctc_loss": 99.5209732055664,
+              "normalized_ctc_loss": 4.739093962169829,
+              "rank": 2,
+              "loss_from_best": 0.8413992061668414,
+              "origin": "baseline and targeted-review Whisper"
+            },
+            {
+              "candidate_id": "221-holdout",
+              "text": "I'm not panhandling",
+              "normalized_text": "I'M NOT PANHANDLING",
+              "raw_ctc_loss": 94.78418731689453,
+              "normalized_ctc_loss": 4.9886414377312915,
+              "rank": 3,
+              "loss_from_best": 1.0909466817283042,
+              "origin": "human evaluation holdout"
+            },
+            {
+              "candidate_id": "221-c",
+              "text": "I'm not thinking at all",
+              "normalized_text": "I'M NOT THINKING AT ALL",
+              "raw_ctc_loss": 131.3533172607422,
+              "normalized_ctc_loss": 5.7110137939453125,
+              "rank": 4,
+              "loss_from_best": 1.8133190379423252,
+              "origin": "filtered-crop Whisper"
+            }
+          ]
+        },
+        {
+          "name": "filtered",
+          "family": "original_recording",
+          "include_in_aggregate": true,
+          "speaker_evidence": "target-like but below gate",
+          "provenance": {
+            "video_start": 463.786,
+            "video_end": 464.506,
+            "filtered": true
+          },
+          "greedy_ctc_transcript": "A NOT BE",
+          "ranking": [
+            {
+              "candidate_id": "221-b",
+              "text": "I love that video",
+              "normalized_text": "I LOVE THAT VIDEO",
+              "raw_ctc_loss": 56.78873062133789,
+              "normalized_ctc_loss": 3.3405135659610523,
+              "rank": 1,
+              "loss_from_best": 0.0,
+              "origin": "original-crop Whisper"
+            },
+            {
+              "candidate_id": "221-a",
+              "text": "So I'm not paying him",
+              "normalized_text": "SO I'M NOT PAYING HIM",
+              "raw_ctc_loss": 72.97496795654297,
+              "normalized_ctc_loss": 3.4749984741210938,
+              "rank": 2,
+              "loss_from_best": 0.13448490816004144,
+              "origin": "baseline and targeted-review Whisper"
+            },
+            {
+              "candidate_id": "221-holdout",
+              "text": "I'm not panhandling",
+              "normalized_text": "I'M NOT PANHANDLING",
+              "raw_ctc_loss": 66.73281860351562,
+              "normalized_ctc_loss": 3.512253610711349,
+              "rank": 3,
+              "loss_from_best": 0.17174004475029658,
+              "origin": "human evaluation holdout"
+            },
+            {
+              "candidate_id": "221-c",
+              "text": "I'm not thinking at all",
+              "normalized_text": "I'M NOT THINKING AT ALL",
+              "raw_ctc_loss": 94.5608139038086,
+              "normalized_ctc_loss": 4.1113397349482,
+              "rank": 4,
+              "loss_from_best": 0.7708261689871478,
+              "origin": "filtered-crop Whisper"
+            }
+          ]
+        }
+      ],
+      "aggregate_ranking": [
+        {
+          "candidate_id": "221-b",
+          "text": "I love that video",
+          "origin": "original-crop Whisper",
+          "mean_normalized_ctc_loss": 3.61910416098202,
+          "median_normalized_ctc_loss": 3.61910416098202,
+          "rank": 1
+        },
+        {
+          "candidate_id": "221-a",
+          "text": "So I'm not paying him",
+          "origin": "baseline and targeted-review Whisper",
+          "mean_normalized_ctc_loss": 4.107046218145461,
+          "median_normalized_ctc_loss": 4.107046218145461,
+          "rank": 2
+        },
+        {
+          "candidate_id": "221-holdout",
+          "text": "I'm not panhandling",
+          "origin": "human evaluation holdout",
+          "mean_normalized_ctc_loss": 4.25044752422132,
+          "median_normalized_ctc_loss": 4.25044752422132,
+          "rank": 3
+        },
+        {
+          "candidate_id": "221-c",
+          "text": "I'm not thinking at all",
+          "origin": "filtered-crop Whisper",
+          "mean_normalized_ctc_loss": 4.911176764446756,
+          "median_normalized_ctc_loss": 4.911176764446756,
+          "rank": 4
+        }
+      ],
+      "human_answer_used_as_model_input": false,
+      "review_required": true
+    }
+  ]
+}
