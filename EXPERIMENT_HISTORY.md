@@ -202,6 +202,15 @@ matches remain review-only. The pipeline now records `sequence_supported` and
 
 Source: [repeat generalization review](evaluations/repeat-generalization-v1/RESULTS.md).
 
+A planned second review of the same replay pairs was stopped as redundant. The
+existing labels already included clearer-recording judgments, allowing the
+proposed mean alignment-score heuristic to be evaluated without more review.
+It agreed on only 8/19 non-identical pairs and missed both cases where the
+reviewer preferred the second recording. Mean alignment score is rejected as a
+donor-selection rule.
+
+Source: [repeat quality heuristic](evaluations/repeat-quality-heuristic-v1/RESULTS.md).
+
 Source: [focused unseen-video review](evaluations/unseen-video-uxOLBG1OcI0/RESULTS.md).
 
 ## Methods rejected as automatic rules

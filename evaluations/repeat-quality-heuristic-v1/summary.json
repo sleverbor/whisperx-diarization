@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "evaluated_pairs": 19,
+  "human_clearer_recording": {
+    "same": 17,
+    "second": 2
+  },
+  "heuristic_prediction": {
+    "same": 9,
+    "first": 5,
+    "second": 5
+  },
+  "exact_agreement": 8,
+  "exact_agreement_rate": 0.42105263157894735,
+  "human_second_cases_correctly_selected": 0,
+  "decision": "Reject mean alignment-word score as an automatic clearer-recording selector."
+}
