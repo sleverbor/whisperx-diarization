@@ -33,6 +33,7 @@ def main():
         "recover_transcript_gaps.py", "review_audio_window.py",
         "review_transcript_regions.py", "review_overlap_extraction.py",
         "run_mossformer2_separation_experiment.py", "mossformer2_review_policy.py",
+        "evaluate_youtube_captions_on_priority.py", "build_caption_gap_review.py",
         "evaluate_diaper_overlap.py",
         "export_confident_transcript.py", "reference_promotion.py",
         "test_cloud_runtime.py", "test_short_answers.py",
@@ -62,12 +63,13 @@ import subprocess, sys, os, json, shutil, time, zipfile
 from urllib.parse import urlparse, parse_qs
 
 VIDEO_URL = 'https://www.youtube.com/watch?v=lVfKfbFd0SM'
-NOTEBOOK_REVISION = 'mossformer2-human-calibrated-review-v27'
+NOTEBOOK_REVISION = 'caption-gap-review-v28'
 REQUIRE_OVERLAP_POLICY = True
 RUN_FULL_VIDEO = True
 RUN_TARGETED_REVIEW = True
 RUN_OVERLAP_EXTRACTION = True
 RUN_MOSSFORMER2_REVIEW = True
+RUN_CAPTION_GAP_REVIEW = True
 RUN_DIAPER_OVERLAP = True
 REVIEW_WEAK_CONFIDENCE = 0.35
 REVIEW_SHORT_SECONDS = 1.0
@@ -448,6 +450,58 @@ def run_mossformer2_review():
     assert (RESULTS/'full_video_evidence.json').read_bytes() == before
     return json.loads(report.read_text())
 
+def run_caption_gap_review():
+    """Use optional YouTube timing evidence to find review-only transcript gaps."""
+    output_dir = RESULTS/'caption-gap-review'
+    status_path = RESULTS/'caption-gap-status.json'
+    caption_dir = WORK/'youtube-captions'; caption_dir.mkdir(exist_ok=True)
+    attached_roots = [Path('/kaggle/input')] if ON_KAGGLE else []
+    captions = []
+    for root in attached_roots:
+        captions.extend(root.rglob(VIDEO_ID+'.en-orig.json3'))
+        captions.extend(root.rglob(VIDEO_ID+'.en.json3'))
+    output_template = caption_dir/(VIDEO_ID+'.%(ext)s')
+    if not captions:
+        command = [PYTHON, '-m', 'yt_dlp', '--skip-download', '--write-auto-subs',
+            '--sub-langs', 'en-orig,en', '--sub-format', 'json3',
+            '-o', str(output_template), VIDEO_URL]
+        download = subprocess.run(command, cwd=WORK, env=ENV, text=True,
+                                  stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+        (RESULTS/'caption-download.log').write_text(download.stdout)
+        captions = sorted(caption_dir.glob(VIDEO_ID+'.en-orig.json3'))
+        if not captions:
+            captions = sorted(caption_dir.glob(VIDEO_ID+'.en.json3'))
+    if not captions:
+        status = {
+            'status': 'captions_unavailable',
+            'review_candidates': 0,
+            'automatic_text_insertion': False,
+            'speaker_identity_changed': False,
+        }
+        status_path.write_text(json.dumps(status, indent=2)+'\\n')
+        print('Caption gap review skipped: automatic English captions unavailable.')
+        return status
+    if output_dir.exists():
+        shutil.rmtree(output_dir)
+    before = (RESULTS/'full_video_evidence.json').read_bytes()
+    checked([PYTHON, str(WORK/'build_caption_gap_review.py'),
+             '--captions', str(captions[0]),
+             '--baseline', str(RESULTS/'full_video_evidence.json'),
+             '--video', str(VIDEO), '--output-dir', str(output_dir)], cwd=WORK)
+    manifest = json.loads((output_dir/'manifest.json').read_text())
+    status = {
+        'status': 'review_ready',
+        'caption_type': 'youtube_automatic',
+        'review_candidates': len(manifest),
+        'nearby_transcript_duplicates_suppressed': True,
+        'captions_do_not_identify_speakers': True,
+        'automatic_text_insertion': False,
+        'speaker_identity_changed': False,
+    }
+    status_path.write_text(json.dumps(status, indent=2)+'\\n')
+    assert (RESULTS/'full_video_evidence.json').read_bytes() == before
+    return status
+
 def run_diaper_overlap():
     """Run official DiaPer on full audio, then compare without changing baseline."""
     source = WORK/'vendor'/'DiaPer'
@@ -582,6 +636,9 @@ if RUN_FULL_VIDEO:
              '--output-dir', str(confident_dir),
              '--target-minimum', '0.35', '--other-minimum', '0.65'], cwd=WORK)
     print('Confidence-filtered transcript:', confident_dir/'confident_transcript.txt')
+    if RUN_CAPTION_GAP_REVIEW:
+        caption_gap_review = run_caption_gap_review()
+        print('Caption gap review:', json.dumps(caption_gap_review, indent=2))
     if RUN_TARGETED_REVIEW:
         targeted_review = run_targeted_review()
         print('Targeted review:', json.dumps(targeted_review, indent=2))
@@ -628,9 +685,9 @@ print('If Kaggle blocks a link, download the same ZIP from the Output panel.')
             cell("markdown", "## Credentials, checkpoint restore, and attached video\n\nCreate a private Kaggle secret named `HF_TOKEN`. The token is read from the environment and is never embedded or printed. The current video is copied from the attached dataset because YouTube blocks Kaggle's shared addresses.\n"),
             cell("code", credentials),
             cell("code", functions),
-            cell("markdown", "## Run the opening check, whole video, and additive overlap review\n\nThe opening check confirms that face analysis is actually using CUDA. The established stages run first. When the matching v5 Sortformer result dataset is attached, speaker-conditioned extraction processes the union of existing baseline overlap intervals and strong Sortformer additions. MossFormer2 then separates those same review candidates, rejects weak target matches, and exports review-only evidence; it never inserts text or changes speaker identity. DiaPer remains a read-only comparison.\n"),
+            cell("markdown", "## Run the opening check, whole video, and additive reviews\n\nThe opening check confirms that face analysis is actually using CUDA. The established stages run first. Automatic captions, when available, identify possible transcript gaps and produce short review clips after nearby wording duplicates are suppressed. Captions never identify speakers or insert text. When the matching v5 Sortformer result dataset is attached, speaker-conditioned extraction processes the union of existing baseline overlap intervals and strong Sortformer additions. MossFormer2 then separates those same review candidates, rejects weak target matches, and exports review-only evidence; it never inserts text or changes speaker identity. DiaPer remains a read-only comparison.\n"),
             cell("code", run),
-            cell("markdown", "## Download results\n\n`diarization-results.zip` contains the preserved baseline, existing supplemental reviews, MossFormer2 review-only evidence, DiaPer RTTM and comparison report, logs, and package versions. `stage-checkpoints.zip` can restart expensive baseline stages.\n"),
+            cell("markdown", "## Download results\n\n`diarization-results.zip` contains the preserved baseline, caption-gap review clips when captions are available, existing supplemental reviews, MossFormer2 review-only evidence, DiaPer RTTM and comparison report, logs, and package versions. `stage-checkpoints.zip` can restart expensive baseline stages.\n"),
             cell("code", save),
         ],
         "metadata": {"kernelspec": {"display_name": "Python 3", "language": "python", "name": "python3"},
