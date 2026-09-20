@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "reviewed_candidates": 27,
+  "same_event": 21,
+  "similar_words_different_event": 6,
+  "overall_same_event_precision": 0.7777777777777778,
+  "by_video": {
+    "lVfKfbFd0SM": {
+      "candidates": 6,
+      "same_event": 0,
+      "similar_words_different_event": 6
+    },
+    "original-full": {
+      "candidates": 21,
+      "same_event": 21,
+      "complete_alignment": 19,
+      "partial_alignment": 2
+    }
+  },
+  "sequence_supported": {
+    "candidates": 21,
+    "same_event": 21,
+    "precision": 1.0
+  },
+  "isolated_generalization_candidates": {
+    "candidates": 6,
+    "same_event": 0
+  },
+  "calibration_isolated_candidates": {
+    "candidates": 3,
+    "same_event": 3
+  },
+  "decision": "Retain all candidates for review. Mark sequence-supported pairs as the high-confidence tier and isolated text matches as ambiguous. Do not make automatic transcript or identity changes."
+}

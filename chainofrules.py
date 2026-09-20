@@ -775,7 +775,9 @@ def main():
                             target_like_tracks)
             print(f"Resolved segment {index + 1}/{len(timeline)} at {segment.end:.1f}s", flush=True)
         repeat_groups = find_repeat_groups(timeline)
-        text_repeat_candidates = find_text_repeat_candidates(timeline)
+        text_repeat_candidates = find_text_repeat_candidates(
+            timeline, presentation_groups=repeat_groups
+        )
         repeat_proposals = build_repeat_proposals(timeline, repeat_groups)
         for index, proposals in repeat_proposals.items():
             for details in proposals:

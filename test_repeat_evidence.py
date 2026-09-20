@@ -35,6 +35,23 @@ class RepeatEvidenceTests(unittest.TestCase):
         timeline = [segment(0, "All right."), segment(20, "All right.")]
         self.assertEqual(find_text_repeat_candidates(timeline), [])
 
+    def test_presentation_group_marks_sequence_support_without_auto_action(self):
+        timeline = [
+            segment(0, "I cannot force him to leave the property."),
+            segment(2, "I can talk to him and ask him to move down."),
+            segment(30, "I can't force him to leave the property."),
+            segment(32, "I can talk to him and ask him to move down."),
+        ]
+        groups = [{"id": "repeat_01", "left_start": 0, "left_end": 3,
+                   "right_start": 30, "right_end": 33}]
+        match = find_text_repeat_candidates(
+            timeline, presentation_groups=groups
+        )[0]
+        self.assertEqual(match["evidence_tier"], "sequence_supported")
+        self.assertEqual(match["presentation_group_support"], ["repeat_01"])
+        self.assertFalse(match["automatic_text_replacement"])
+        self.assertFalse(match["automatic_speaker_change"])
+
     def test_detects_ordered_repeated_presentation(self):
         first = [
             segment(0, "They can ask you to get off their property."),

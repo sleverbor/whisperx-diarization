@@ -114,7 +114,8 @@ def find_text_repeat_candidates(segments, minimum_separation=4.0,
                                 minimum_score=0.60, minimum_tokens=8,
                                 minimum_segments=2, maximum_segments=8,
                                 maximum_window_seconds=15.0,
-                                overlap_suppression_seconds=6.0):
+                                overlap_suppression_seconds=6.0,
+                                presentation_groups=None):
     """Find short repeated dialogue for human review.
 
     Unlike ``find_repeat_groups``, this does not require a long presentation
@@ -207,6 +208,20 @@ def find_text_repeat_candidates(segments, minimum_separation=4.0,
     selected.sort(key=lambda x: (x["left_start"], x["right_start"]))
     for index, candidate in enumerate(selected, 1):
         candidate["id"] = f"text_repeat_{index:02d}"
+        supported_groups = []
+        for group in presentation_groups or ():
+            direct = (
+                candidate["left_start"] >= group["left_start"] - 5.0
+                and candidate["left_end"] <= group["left_end"] + 5.0
+                and candidate["right_start"] >= group["right_start"] - 5.0
+                and candidate["right_end"] <= group["right_end"] + 5.0
+            )
+            if direct:
+                supported_groups.append(group["id"])
+        candidate["presentation_group_support"] = supported_groups
+        candidate["evidence_tier"] = (
+            "sequence_supported" if supported_groups else "isolated_text_match"
+        )
     return selected
 
 

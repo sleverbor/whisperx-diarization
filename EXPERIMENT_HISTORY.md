@@ -192,6 +192,16 @@ A Kaggle rerun confirmed the same three candidates with no opening-control
 candidate and no baseline changes. This is a calibration-video implementation
 check; a later untouched video is still needed to estimate general precision.
 
+The two-video generalization review labeled 27 candidates. All 21 candidates
+backed by a longer repeated-presentation sequence were genuine same-event
+replays. All six isolated candidates in `lVfKfbFd0SM` were recurring wording
+from different events, including one exact transcript match. Because the
+calibration video also contained three genuine isolated short repeats, isolated
+matches remain review-only. The pipeline now records `sequence_supported` and
+`isolated_text_match` tiers without changing text or identity.
+
+Source: [repeat generalization review](evaluations/repeat-generalization-v1/RESULTS.md).
+
 Source: [focused unseen-video review](evaluations/unseen-video-uxOLBG1OcI0/RESULTS.md).
 
 ## Methods rejected as automatic rules
