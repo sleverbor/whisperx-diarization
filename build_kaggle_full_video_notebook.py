@@ -24,6 +24,9 @@ def main():
     parser.add_argument("--reference-dir", type=Path, required=True)
     parser.add_argument("--enrollment", type=Path, required=True)
     parser.add_argument("--opening-reference", type=Path, required=True)
+    parser.add_argument("--video-url",
+                        default="https://www.youtube.com/watch?v=uxOLBG1OcI0")
+    parser.add_argument("--require-overlap-policy", action="store_true")
     parser.add_argument("--output", type=Path,
                         default=ROOT / "kaggle_full_video_comparison.ipynb")
     args = parser.parse_args()
@@ -63,7 +66,7 @@ import subprocess, sys, os, json, shutil, time, zipfile
 from urllib.parse import urlparse, parse_qs
 
 VIDEO_URL = 'https://www.youtube.com/watch?v=lVfKfbFd0SM'
-NOTEBOOK_REVISION = 'caption-gap-review-v28'
+NOTEBOOK_REVISION = 'unseen-video-caption-gap-v29'
 REQUIRE_OVERLAP_POLICY = True
 RUN_FULL_VIDEO = True
 RUN_TARGETED_REVIEW = True
@@ -110,6 +113,13 @@ print('Notebook revision:', NOTEBOOK_REVISION)
 print('Results folder:', RESULTS)
 print('Setup will use:', PYTHON)
 '''
+    config = config.replace(
+        "VIDEO_URL = 'https://www.youtube.com/watch?v=lVfKfbFd0SM'",
+        f"VIDEO_URL = {args.video_url!r}",
+    ).replace(
+        "REQUIRE_OVERLAP_POLICY = True",
+        f"REQUIRE_OVERLAP_POLICY = {args.require_overlap_policy!r}",
+    )
 
     setup = f'''EMBEDDED_FILES = {pprint.pformat(embedded, width=100)}
 for name, source in EMBEDDED_FILES.items():
@@ -678,7 +688,7 @@ print('If Kaggle blocks a link, download the same ZIP from the Output panel.')
 
     notebook = {
         "cells": [
-            cell("markdown", "# Current-video full diarization and additive overlap extraction\n\nAttach a Kaggle dataset containing `lVfKfbFd0SM_full480.mp4` (the existing local filename) or `lVfKfbFd0SM.mp4`. To process the additional Sortformer candidates, also attach a dataset made from the v5 `sortformer-comparison-results.zip`. The notebook preserves the evidence-based baseline and uses the additive policy only to select supplemental speaker-conditioned extraction. Supplemental stages never overwrite the baseline.\n"),
+            cell("markdown", "# Current-video full diarization and additive overlap extraction\n\nAttach a Kaggle dataset containing the selected YouTube video named `<video-id>_full480.mp4` or `<video-id>.mp4`. An additive Sortformer policy is optional for a new-video baseline run. The notebook preserves the evidence-based baseline; supplemental stages never overwrite it.\n"),
             cell("code", config),
             cell("markdown", "## Install and verify\n\nEnable Internet and a GPU before running. The setup uses an isolated environment and verifies CUDA before the full video starts.\n"),
             cell("code", "import base64\n" + setup),

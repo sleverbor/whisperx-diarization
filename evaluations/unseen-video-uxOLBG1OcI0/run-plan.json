@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "video_id": "uxOLBG1OcI0",
+  "url": "https://www.youtube.com/watch?v=uxOLBG1OcI0",
+  "title": "Be Careful, He Entraps Cops.",
+  "channel": "HonorYourOath Civil Rights Investigations",
+  "duration_seconds_reported": 476,
+  "previously_used_in_project": false,
+  "automatic_english_captions_available": true,
+  "manual_english_captions_available": false,
+  "test_policy": "Run the current pipeline unchanged before tuning. Preserve baseline and export all supplemental stages as review-only evidence.",
+  "notebook_revision": "unseen-video-caption-gap-v29",
+  "require_prior_video_sortformer_policy": false,
+  "input_video_sha256": "b836b40a8fd43f021a19a89ee1d6bd50b0e151579b60a8dfa3bcb96ac2c118df",
+  "input_caption_sha256": "c68057d8754064f2787b5e8ee87fd3d99e5ac77b0601ad7bdd009913a8dfa324"
+}

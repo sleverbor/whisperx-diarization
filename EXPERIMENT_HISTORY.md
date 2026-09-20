@@ -25,7 +25,7 @@ The working pipeline now provides:
 - GPU use for speech and face models when the runtime supports it.
 - Checkpointed Kaggle execution and downloadable result bundles.
 
-The current notebook revision is `caption-gap-review-v28`. Caption text, separated-stream ASR, face presence, semantics, and question/answer context are never sufficient by themselves to assign a speaker or insert words automatically.
+The current notebook revision is `unseen-video-caption-gap-v29`. Caption text, separated-stream ASR, face presence, semantics, and question/answer context are never sufficient by themselves to assign a speaker or insert words automatically.
 
 ## Experiment summary
 
@@ -183,7 +183,7 @@ The following were tested and should not be reintroduced without new evidence:
 
 ## Recommended next validation
 
-Run the current full pipeline on another video by the same target with automatic captions available. Evaluate separately:
+Run the current full pipeline unchanged on the selected unseen video `uxOLBG1OcI0` by the same target. Automatic English captions are available. Evaluate separately:
 
 1. Baseline target attribution on ordinary single-speaker turns.
 2. Caption-gap precision after duplicate suppression.
