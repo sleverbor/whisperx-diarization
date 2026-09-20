@@ -385,6 +385,13 @@ def run_targeted_review():
 
 def run_overlap_extraction():
     output_dir = RESULTS/'overlap-extraction'
+    completed_report = output_dir/'report.json'
+    if completed_report.is_file():
+        saved = json.loads(completed_report.read_text())
+        summary = saved.get('summary', {})
+        if summary.get('selected') == summary.get('completed'):
+            print('Reusing completed overlap extraction:', completed_report)
+            return saved
     command = [PYTHON, str(WORK/'review_overlap_extraction.py'), '--video', str(VIDEO),
         '--baseline', str(RESULTS/'full_video_evidence.json'),
         '--enrollment', str(REFERENCE/'auditor_enrollment.wav'),
