@@ -17,6 +17,7 @@ class FocusedReviewTests(unittest.TestCase):
                                   "mossformer2": 3, "repeat_pair": 3})
         target = next(x for x in items if abs(x.get("start", 0) - 425.95) < .1)
         self.assertIn("mossformer2", target)
+        self.assertTrue(all("baseline_text" in x for x in items if x["type"] == "target_candidate"))
         self.assertFalse(any(x.get("baseline_index") == 200 for x in items))
         self.assertTrue(all(x.get("baseline_text") for x in items if x["type"] == "mossformer2"))
 

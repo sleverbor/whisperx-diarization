@@ -33,6 +33,12 @@ def nearest(rows, start, tolerance=0.15):
     return row
 
 
+def baseline_context(rows, start, end):
+    overlapping = [x["text"].strip() for x in rows
+                   if float(x["end"]) >= start - 0.25 and float(x["start"]) <= end + 0.25]
+    return " ".join(x for x in overlapping if x)
+
+
 def assemble_items(results_dir: Path) -> list[dict]:
     targeted = read_json(results_dir / "targeted-review/review_hypotheses.json")["segments"]
     moss = read_json(results_dir / "mossformer2-review/review-evidence.json")["segments"]
@@ -46,6 +52,7 @@ def assemble_items(results_dir: Path) -> list[dict]:
             "review_id": f"target-{number:02d}", "type": "target_candidate",
             "start": row["start"], "end": row["end"], "text": row["text"].strip(),
             "machine_hypothesis": row.get("review_speaker_hypothesis", "Target_Speaker"),
+            "baseline_text": baseline_context(baseline, row["start"], row["end"]),
         }
         if start == 425.95:
             m = next(x for x in moss if x["baseline_index"] == 200)
@@ -132,7 +139,7 @@ body{{font:16px system-ui,sans-serif;max-width:1040px;margin:auto;padding:24px;b
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}}[c]));
 const radios=(id,name,values)=>`<fieldset><legend>${{name}}</legend>${{values.map(v=>`<label><input type="radio" name="${{id}}-${{name}}" value="${{v}}"> ${{v.replaceAll('_',' ')}}</label>`).join('')}}</fieldset>`;
 function body(x){{let m=`<h2>${{esc(x.review_id)}}</h2>`;
-if(x.type==='target_candidate'){{m+=`<p>Could this later line be the target speaker? Check identity, wording, and whether the video offers usable visual evidence.</p><video controls preload="metadata" src="${{x.video}}"></video><div class="machine"><b>Machine text:</b> ${{esc(x.text)}} <small>(${{x.start.toFixed(2)}}–${{x.end.toFixed(2)}})</small></div>`+radios(x.review_id,'Speaker identity',['target','non_target','mixed_or_overlapping','unclear'])+radios(x.review_id,'Machine wording',['correct','partly_correct','wrong','unclear'])+radios(x.review_id,'Target visible',['yes','no','unclear'])+radios(x.review_id,'Face usable',['yes','no','unclear']);if(x.mossformer2)m+=`<div class="machine"><b>Separated target candidate:</b> ${{esc(x.mossformer2.candidate_transcription)}}</div><audio controls src="${{x.mossformer2.selected_audio}}"></audio>`;}}
+if(x.type==='target_candidate'){{m+=`<p>Could this later line be the target speaker? Check identity, wording, and whether the video offers usable visual evidence.</p><video controls preload="metadata" src="${{x.video}}"></video><div class="machine"><b>Baseline transcript:</b> ${{esc(x.baseline_text||'(no overlapping baseline line)')}}<br><b>Target-review text:</b> ${{esc(x.text)}} <small>(${{x.start.toFixed(2)}}–${{x.end.toFixed(2)}})</small></div>`+radios(x.review_id,'Speaker identity',['target','non_target','mixed_or_overlapping','unclear'])+radios(x.review_id,'Machine wording',['correct','partly_correct','wrong','unclear'])+radios(x.review_id,'Target visible',['yes','no','unclear'])+radios(x.review_id,'Face usable',['yes','no','unclear']);if(x.mossformer2)m+=`<div class="machine"><b>Separated target candidate:</b> ${{esc(x.mossformer2.candidate_transcription)}}</div><audio controls src="${{x.mossformer2.selected_audio}}"></audio>`;}}
 if(x.type==='caption_gap'){{m+=`<p>Does the caption reveal speech missing from the baseline transcript?</p><video controls preload="metadata" src="${{x.video}}"></video><div class="machine"><b>Caption:</b> ${{esc(x.caption_text)}}<br><small>Before: ${{esc(x.before_text)}} — After: ${{esc(x.after_text)}}</small></div>`+radios(x.review_id,'Gap outcome',['missing_speech','caption_duplicate_or_timing_error','noise_or_not_speech','already_covered','unclear'])+radios(x.review_id,'Speaker',['target','non_target','multiple_or_overlapping','unknown']);}}
 if(x.type==='mossformer2'){{m+=`<p>Compare the original video and its baseline transcript with the separated audio. Does the separated stream recover useful target speech?</p><video controls preload="metadata" src="${{x.video}}"></video><div class="machine"><b>Baseline transcript:</b> ${{esc(x.baseline_text)}}<br><b>Separated text hint:</b> ${{esc(x.candidate_transcription)}}</div><audio controls src="${{x.selected_audio}}"></audio>`+radios(x.review_id,'Separated result',['adds_missing_target_speech','cleaner_same_target_line','mixed_but_useful','wrong_or_garbled','not_target','unclear']);}}
 if(x.type==='repeat_pair'){{m+=`<p>Are these two clips presentations of the same event? If so, can the clearer version corroborate the other?</p><div class="machine">${{esc(x.text)}}</div><div class="pair"><div><b>First</b><video controls preload="metadata" src="${{x.first_video}}"></video></div><div><b>Second</b><video controls preload="metadata" src="${{x.second_video}}"></video></div></div>`+radios(x.review_id,'Same event',['same_event','not_same_event','unclear'])+radios(x.review_id,'Clearer version',['first','second','same','unclear'])+radios(x.review_id,'Speech wording',['same','different','unclear']);}}
