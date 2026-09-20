@@ -1,0 +1,14 @@
+{
+  "cases": [
+    {"case_id":"clear-target-01","start":17.817,"end":21.421,"label":"target","text":"I appreciate that, but this is a public sidewalk and I'm going to stay right here.","basis":"high-confidence baseline target"},
+    {"case_id":"clear-target-02","start":37.065,"end":40.986,"label":"target","text":"I'd rather you not call the cops, but this is a public sidewalk. It's very clear.","basis":"high-confidence baseline target"},
+    {"case_id":"clear-target-03","start":41.506,"end":42.846,"label":"target","text":"There's a public parking meter right there.","basis":"high-confidence baseline target"},
+    {"case_id":"clear-nontarget-01","start":3.062,"end":6.326,"label":"non_target","text":"I wanted to make you aware that this is in fact our private property.","basis":"baseline and scene context"},
+    {"case_id":"clear-nontarget-02","start":55.045,"end":64.910,"label":"non_target","text":"Hi, this is a non-emergency call...","basis":"baseline telephone caller"},
+    {"case_id":"clear-nontarget-03","start":456.783,"end":463.686,"label":"non_target","text":"You can't be within 20 feet...","basis":"human review: target visible briefly but not speaking"},
+    {"case_id":"short-target-reply","start":463.786,"end":464.506,"label":"target","text":"I'm not panhandling.","basis":"human review"},
+    {"case_id":"following-nontarget-reply","start":464.926,"end":465.946,"label":"non_target","text":"If you're not panhandling, you're good.","basis":"conversation and baseline track"},
+    {"case_id":"mixed-test-sentence","start":417.880,"end":421.124,"label":"mixed","text":"We can ... test that if you'd like.","basis":"human review plus sentence-boundary probe"},
+    {"case_id":"mixed-public-property","start":424.684,"end":428.869,"label":"mixed","text":"Not doing it right here because this is obviously public property.","basis":"human review"}
+  ]
+}

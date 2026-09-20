@@ -9,6 +9,7 @@ __pycache__/
 
 # Downloaded models and generated results
 pretrained_models/
+vendor/
 separated/
 *.json
 *.log
