@@ -54,6 +54,7 @@ The current notebook revision is `unseen-video-caption-gap-v29`. Caption text, s
 | Separation | MossFormer2 full priority review | 6/15 outputs were useful, 6 were wrong/garbled, 3 were not the target; only one added missing speech. | Voice scores triage audio but do not validate words. |
 | ASR corroboration | Mixture versus separated-stream decoding | Strong agreement was useful in only 2/5 unprompted cases; context prompting increased false agreement. | Reject same-model cross-audio agreement as an automatic rule. |
 | Captions | Captions versus 15 overlap clips | On all six useful MossFormer2 clips, captions favored the baseline or were inconclusive; none favored the separated candidate. | Captions help wording/timing, not speaker identity. |
+| Sentence ownership | Word-run and boundary-shift voice probe | Correctly rejected a grammatically complete cross-speaker splice, retained a short target-like line, and left a disputed two-run sentence unresolved. | Sentence coherence selects a test span but has zero identity weight; propagate ownership only when acoustic evidence remains stable across the uncertain words. |
 | Captions | Full-timeline missing-speech detection | Two of four candidates were genuine omissions. Both false candidates duplicated nearby transcript wording. | Integrated duplicate suppression; export remaining gaps for review. |
 
 ## Detailed findings

@@ -1,0 +1,418 @@
+{
+  "experimental": true,
+  "baseline_modified": false,
+  "identity_probability_calibrated": false,
+  "method": "text defines the candidate span but contributes zero identity weight; contiguous word runs and boundary variants are scored acoustically",
+  "provenance": {
+    "video": "/home/think/Documents/Codex/2026-09-13/referenced-chatgpt-conversation-this-is-an/kaggle-input-uxOLBG1OcI0/uxOLBG1OcI0_full480.mp4",
+    "video_sha256": "b836b40a8fd43f021a19a89ee1d6bd50b0e151579b60a8dfa3bcb96ac2c118df",
+    "baseline": "/home/think/Documents/Codex/2026-09-13/referenced-chatgpt-conversation-this-is-an/diarization-results-20/full_video_evidence.json",
+    "baseline_sha256": "6905a3aec87278df97d0b8d419cd6ea7af972548e3a65e94bc8e76a3c58ffce6",
+    "references": {
+      "Target_Speaker": {
+        "path": "/home/think/projects/whisperx_diarization/references/auditor-reviewed-v14/voice_embeddings.npy",
+        "sha256": "f16d354da2d7e13c968983d2ff2f7a0cd319f94d8a2f4efd71a5d47f140c4aa2"
+      },
+      "Opening_officer": {
+        "path": "/home/think/projects/whisperx_diarization/references/auditor-reviewed-v14/opening_officer_reference.npy",
+        "sha256": "8542fdd1f9335670ed003efd1449b75d3867c80012331259d3e3d90d8ff07211"
+      }
+    },
+    "device": "cpu"
+  },
+  "segments": [
+    {
+      "segment_index": 197,
+      "start": 417.88,
+      "end": 421.044,
+      "text": "We can test that if you'd like.",
+      "text_coherence_identity_weight": 0,
+      "target_track": "SPEAKER_01",
+      "word_runs": [
+        {
+          "track": "SPEAKER_04",
+          "start": 417.88,
+          "end": 418.121,
+          "word_start": 0,
+          "word_end": 2,
+          "text": "We can",
+          "variants": [
+            {
+              "start": 417.8,
+              "end": 418.20099999999996,
+              "scores": {
+                "Target_Speaker": -0.010386147536337376,
+                "Opening_officer": 0.13849008083343506
+              }
+            }
+          ],
+          "resolution": "unresolved",
+          "too_short_for_voice": false
+        },
+        {
+          "track": "SPEAKER_01",
+          "start": 420.103,
+          "end": 421.044,
+          "word_start": 2,
+          "word_end": 7,
+          "text": "test that if you'd like.",
+          "variants": [
+            {
+              "start": 420.103,
+              "end": 421.044,
+              "scores": {
+                "Target_Speaker": 0.19203323125839233,
+                "Opening_officer": -0.025431174784898758
+              }
+            },
+            {
+              "start": 420.183,
+              "end": 420.964,
+              "scores": {
+                "Target_Speaker": 0.20023776590824127,
+                "Opening_officer": 0.028135141357779503
+              }
+            },
+            {
+              "start": 420.023,
+              "end": 421.12399999999997,
+              "scores": {
+                "Target_Speaker": 0.270610511302948,
+                "Opening_officer": -0.011260595172643661
+              }
+            }
+          ],
+          "resolution": "target",
+          "too_short_for_voice": false
+        }
+      ],
+      "gaps": [
+        {
+          "after_word": 0,
+          "before_word": 1,
+          "seconds": 0.01999999999998181
+        },
+        {
+          "after_word": 1,
+          "before_word": 2,
+          "seconds": 1.9820000000000277
+        },
+        {
+          "after_word": 2,
+          "before_word": 3,
+          "seconds": 0.01999999999998181
+        },
+        {
+          "after_word": 3,
+          "before_word": 4,
+          "seconds": 0.01999999999998181
+        },
+        {
+          "after_word": 4,
+          "before_word": 5,
+          "seconds": 0.01999999999998181
+        },
+        {
+          "after_word": 5,
+          "before_word": 6,
+          "seconds": 0.24099999999998545
+        }
+      ],
+      "maximum_word_gap": 1.9820000000000277,
+      "full_span_variants": [
+        {
+          "start": 417.88,
+          "end": 421.044,
+          "scores": {
+            "Target_Speaker": 0.2676788568496704,
+            "Opening_officer": -0.015004713088274002
+          }
+        },
+        {
+          "start": 417.96,
+          "end": 420.964,
+          "scores": {
+            "Target_Speaker": 0.2801952362060547,
+            "Opening_officer": 0.017793333157896996
+          }
+        },
+        {
+          "start": 417.8,
+          "end": 421.12399999999997,
+          "scores": {
+            "Target_Speaker": 0.28935691714286804,
+            "Opening_officer": -0.040059562772512436
+          }
+        }
+      ],
+      "full_span_resolution": "target",
+      "sentence_ownership": "mixed",
+      "baseline_modified": false,
+      "review_required": true
+    },
+    {
+      "segment_index": 200,
+      "start": 424.684,
+      "end": 428.869,
+      "text": "Not doing it right here because this is obviously public property.",
+      "text_coherence_identity_weight": 0,
+      "target_track": "SPEAKER_01",
+      "word_runs": [
+        {
+          "track": "SPEAKER_04",
+          "start": 424.684,
+          "end": 425.665,
+          "word_start": 0,
+          "word_end": 6,
+          "text": "Not doing it right here because",
+          "variants": [
+            {
+              "start": 424.684,
+              "end": 425.665,
+              "scores": {
+                "Target_Speaker": 0.02927645854651928,
+                "Opening_officer": 0.09835679829120636
+              }
+            },
+            {
+              "start": 424.764,
+              "end": 425.58500000000004,
+              "scores": {
+                "Target_Speaker": -0.014150919392704964,
+                "Opening_officer": 0.10244141519069672
+              }
+            },
+            {
+              "start": 424.60400000000004,
+              "end": 425.745,
+              "scores": {
+                "Target_Speaker": 0.02142554521560669,
+                "Opening_officer": 0.0939180850982666
+              }
+            }
+          ],
+          "resolution": "unresolved",
+          "too_short_for_voice": false
+        },
+        {
+          "track": "SPEAKER_05",
+          "start": 426.106,
+          "end": 428.869,
+          "word_start": 6,
+          "word_end": 11,
+          "text": "this is obviously public property.",
+          "variants": [
+            {
+              "start": 426.106,
+              "end": 428.869,
+              "scores": {
+                "Target_Speaker": 0.3714933693408966,
+                "Opening_officer": 0.036200378090143204
+              }
+            },
+            {
+              "start": 426.186,
+              "end": 428.78900000000004,
+              "scores": {
+                "Target_Speaker": 0.35157570242881775,
+                "Opening_officer": 0.07094506919384003
+              }
+            },
+            {
+              "start": 426.026,
+              "end": 428.949,
+              "scores": {
+                "Target_Speaker": 0.3540570139884949,
+                "Opening_officer": 0.045882780104875565
+              }
+            }
+          ],
+          "resolution": "target",
+          "too_short_for_voice": false
+        }
+      ],
+      "gaps": [
+        {
+          "after_word": 0,
+          "before_word": 1,
+          "seconds": 0.01999999999998181
+        },
+        {
+          "after_word": 1,
+          "before_word": 2,
+          "seconds": 0.01999999999998181
+        },
+        {
+          "after_word": 2,
+          "before_word": 3,
+          "seconds": 0.01999999999998181
+        },
+        {
+          "after_word": 3,
+          "before_word": 4,
+          "seconds": 0.01999999999998181
+        },
+        {
+          "after_word": 4,
+          "before_word": 5,
+          "seconds": 0.03999999999996362
+        },
+        {
+          "after_word": 5,
+          "before_word": 6,
+          "seconds": 0.4409999999999741
+        },
+        {
+          "after_word": 6,
+          "before_word": 7,
+          "seconds": 0.08000000000004093
+        },
+        {
+          "after_word": 7,
+          "before_word": 8,
+          "seconds": 0.10000000000002274
+        },
+        {
+          "after_word": 8,
+          "before_word": 9,
+          "seconds": 0.10000000000002274
+        },
+        {
+          "after_word": 9,
+          "before_word": 10,
+          "seconds": 0.10000000000002274
+        }
+      ],
+      "maximum_word_gap": 0.4409999999999741,
+      "full_span_variants": [
+        {
+          "start": 424.684,
+          "end": 428.869,
+          "scores": {
+            "Target_Speaker": -0.0019968822598457336,
+            "Opening_officer": 0.1627693921327591
+          }
+        },
+        {
+          "start": 424.764,
+          "end": 428.78900000000004,
+          "scores": {
+            "Target_Speaker": 0.07605595886707306,
+            "Opening_officer": 0.10993805527687073
+          }
+        },
+        {
+          "start": 424.60400000000004,
+          "end": 428.949,
+          "scores": {
+            "Target_Speaker": -0.0031638462096452713,
+            "Opening_officer": 0.16159574687480927
+          }
+        }
+      ],
+      "full_span_resolution": "unresolved",
+      "sentence_ownership": "unresolved",
+      "baseline_modified": false,
+      "review_required": true
+    },
+    {
+      "segment_index": 221,
+      "start": 463.786,
+      "end": 464.506,
+      "text": "So I'm not paying him.",
+      "text_coherence_identity_weight": 0,
+      "target_track": "SPEAKER_01",
+      "word_runs": [
+        {
+          "track": "SPEAKER_05",
+          "start": 463.786,
+          "end": 464.506,
+          "word_start": 0,
+          "word_end": 5,
+          "text": "So I'm not paying him.",
+          "variants": [
+            {
+              "start": 463.786,
+              "end": 464.506,
+              "scores": {
+                "Target_Speaker": 0.2546520233154297,
+                "Opening_officer": 0.126811221241951
+              }
+            },
+            {
+              "start": 463.866,
+              "end": 464.426,
+              "scores": {
+                "Target_Speaker": 0.32939574122428894,
+                "Opening_officer": 0.12268514186143875
+              }
+            },
+            {
+              "start": 463.706,
+              "end": 464.58599999999996,
+              "scores": {
+                "Target_Speaker": 0.2479061633348465,
+                "Opening_officer": 0.12264928221702576
+              }
+            }
+          ],
+          "resolution": "target",
+          "too_short_for_voice": false
+        }
+      ],
+      "gaps": [
+        {
+          "after_word": 0,
+          "before_word": 1,
+          "seconds": 0.01999999999998181
+        },
+        {
+          "after_word": 1,
+          "before_word": 2,
+          "seconds": 0.03999999999996362
+        },
+        {
+          "after_word": 2,
+          "before_word": 3,
+          "seconds": 0.01999999999998181
+        },
+        {
+          "after_word": 3,
+          "before_word": 4,
+          "seconds": 0.040000000000020464
+        }
+      ],
+      "maximum_word_gap": 0.040000000000020464,
+      "full_span_variants": [
+        {
+          "start": 463.786,
+          "end": 464.506,
+          "scores": {
+            "Target_Speaker": 0.2546520233154297,
+            "Opening_officer": 0.126811221241951
+          }
+        },
+        {
+          "start": 463.866,
+          "end": 464.426,
+          "scores": {
+            "Target_Speaker": 0.32939574122428894,
+            "Opening_officer": 0.12268514186143875
+          }
+        },
+        {
+          "start": 463.706,
+          "end": 464.58599999999996,
+          "scores": {
+            "Target_Speaker": 0.2479061633348465,
+            "Opening_officer": 0.12264928221702576
+          }
+        }
+      ],
+      "full_span_resolution": "target",
+      "sentence_ownership": "target",
+      "baseline_modified": false,
+      "review_required": true
+    }
+  ]
+}
