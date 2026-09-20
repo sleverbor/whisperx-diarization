@@ -85,8 +85,14 @@ if ON_KAGGLE:
     if probe is None or probe.returncode or 'GPU ' not in probe.stdout:
         raise RuntimeError('Enable a GPU accelerator in Kaggle Settings, then rerun this cell.')
     print(probe.stdout)
+    from kaggle_secrets import UserSecretsClient
+    HF_TOKEN_VALUE = UserSecretsClient().get_secret('HF_TOKEN')
+    if not HF_TOKEN_VALUE:
+        raise RuntimeError('Add and enable the private Kaggle secret HF_TOKEN, then rerun.')
+    print('Hugging Face credentials configured; token not displayed.')
     BASE = Path('/kaggle/working')
 else:
+    HF_TOKEN_VALUE = None
     BASE = Path.cwd()/'diarization-run'
 BASE.mkdir(parents=True, exist_ok=True)
 WORK = BASE/'diarization'; WORK.mkdir(exist_ok=True)
@@ -112,6 +118,9 @@ ENV['PYTHONUNBUFFERED'] = '1'
 ENV['MPLCONFIGDIR'] = str(BASE/'matplotlib-cache')
 ENV['MPLBACKEND'] = 'Agg'
 ENV['NUMBA_CACHE_DIR'] = str(BASE/'numba-cache')
+if HF_TOKEN_VALUE:
+    ENV['HF_TOKEN'] = HF_TOKEN_VALUE
+    ENV['HUGGING_FACE_HUB_TOKEN'] = HF_TOKEN_VALUE
 def checked(command, **kwargs):
     return subprocess.run(command, env=ENV, check=True, **kwargs)
 
@@ -209,14 +218,12 @@ for name, value in REFERENCE_FILES.items():
 print('Reference bundle ready:', reference_hashes)
 '''
 
-    credentials = '''if ON_KAGGLE:
-    from kaggle_secrets import UserSecretsClient
-    ENV['HF_TOKEN'] = UserSecretsClient().get_secret('HF_TOKEN')
-else:
+    credentials = '''if not ON_KAGGLE:
     import getpass
     ENV['HF_TOKEN'] = os.environ.get('HF_TOKEN') or os.environ.get('HUGGINGFACE_TOKEN') or getpass.getpass('Hugging Face token: ')
 if not ENV['HF_TOKEN']:
     raise RuntimeError('A Hugging Face token with diarization-model access is required.')
+ENV['HUGGING_FACE_HUB_TOKEN'] = ENV['HF_TOKEN']
 if ON_KAGGLE:
     for archive in Path('/kaggle/input').rglob('stage-checkpoints*.zip'):
         with zipfile.ZipFile(archive) as zipped:
@@ -598,10 +605,18 @@ else:
 export_checkpoints()
 with (RESULTS/'runtime-packages.txt').open('w') as packages:
     checked([PYTHON, '-m', 'pip', 'freeze'], stdout=packages)
-shutil.make_archive(str(BASE/'diarization-results'), 'zip', RESULTS)
-display(FileLink(str(BASE/'diarization-results.zip')))
-display(FileLink(str(BASE/'stage-checkpoints.zip')))
+result_zip = Path(shutil.make_archive(str(BASE/'diarization-results'), 'zip', RESULTS))
+checkpoint_zip = BASE/'stage-checkpoints.zip'
+prior_cwd = Path.cwd()
+try:
+    os.chdir(BASE)
+    display(FileLink(result_zip.name))
+    if checkpoint_zip.is_file():
+        display(FileLink(checkpoint_zip.name))
+finally:
+    os.chdir(prior_cwd)
 print('Saved in:', BASE)
+print('If Kaggle blocks a link, download the same ZIP from the Output panel.')
 '''
 
     notebook = {
