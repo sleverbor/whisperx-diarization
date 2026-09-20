@@ -1,0 +1,170 @@
+{
+  "experimental": true,
+  "baseline_modified": false,
+  "identity_probability_calibrated": false,
+  "wording_verified_automatically": false,
+  "note": "Related transforms share one evidence family; agreement can repeat the same ASR error.",
+  "provenance": {
+    "video_sha256": "b836b40a8fd43f021a19a89ee1d6bd50b0e151579b60a8dfa3bcb96ac2c118df",
+    "baseline_sha256": "6905a3aec87278df97d0b8d419cd6ea7af972548e3a65e94bc8e76a3c58ffce6",
+    "model": "large-v2",
+    "references": {
+      "Target_Speaker": "f16d354da2d7e13c968983d2ff2f7a0cd319f94d8a2f4efd71a5d47f140c4aa2",
+      "Opening_officer": "8542fdd1f9335670ed003efd1449b75d3867c80012331259d3e3d90d8ff07211"
+    },
+    "sentence_ownership_sha256": "9b2c1062e791bdf332cf2a9dbec9c45fbb0dc4ea676dde6a30cfa9bb6e51d330"
+  },
+  "segments": [
+    {
+      "segment_index": 197,
+      "start": 417.88,
+      "end": 421.044,
+      "baseline_text": "We can test that if you'd like.",
+      "variants": [
+        {
+          "name": "original",
+          "family": "original_recording",
+          "text": "We can test that if you buy it.",
+          "voice_scores": {
+            "Target_Speaker": 0.26559972763061523,
+            "Opening_officer": 0.00243932381272316
+          },
+          "speaker_resolution": "Target_Speaker"
+        },
+        {
+          "name": "speech_filtered",
+          "family": "original_recording",
+          "text": "Man, we could test that if you'd like.",
+          "voice_scores": {
+            "Target_Speaker": 0.37080302834510803,
+            "Opening_officer": -0.044712938368320465
+          },
+          "speaker_resolution": "Target_Speaker"
+        }
+      ],
+      "cross_family_stable_spans": [],
+      "joint_decision": "mixed_boundary",
+      "wording_verified": false,
+      "review_required": true,
+      "baseline_modified": false,
+      "sentence_boundary_resolution": "mixed"
+    },
+    {
+      "segment_index": 200,
+      "start": 424.684,
+      "end": 428.869,
+      "baseline_text": "Not doing it right here because this is obviously public property.",
+      "variants": [
+        {
+          "name": "original",
+          "family": "original_recording",
+          "text": "So you're doing it right here because this is obviously public property?",
+          "voice_scores": {
+            "Target_Speaker": 0.0013944990932941437,
+            "Opening_officer": 0.16344821453094482
+          },
+          "speaker_resolution": "Uncertain"
+        },
+        {
+          "name": "speech_filtered",
+          "family": "original_recording",
+          "text": "You're doing it right here because this is obviously public property.",
+          "voice_scores": {
+            "Target_Speaker": 0.07137392461299896,
+            "Opening_officer": 0.11666490137577057
+          },
+          "speaker_resolution": "Uncertain"
+        },
+        {
+          "name": "mossformer_stream_1",
+          "family": "mossformer2",
+          "text": "You're doing it right here, but are you just...",
+          "voice_scores": {
+            "Target_Speaker": 0.008854545652866364,
+            "Opening_officer": 0.10864382982254028
+          },
+          "speaker_resolution": "Uncertain",
+          "audio": "/home/think/Documents/Codex/2026-09-13/referenced-chatgpt-conversation-this-is-an/diarization-results-20/mossformer2-review/inference/audio/segment-0200-stream-1.wav"
+        },
+        {
+          "name": "mossformer_stream_2",
+          "family": "mossformer2",
+          "text": "Now I'm doing it right here because this is obviously public property.",
+          "voice_scores": {
+            "Target_Speaker": 0.39168453216552734,
+            "Opening_officer": 0.043264444917440414
+          },
+          "speaker_resolution": "Target_Speaker",
+          "audio": "/home/think/Documents/Codex/2026-09-13/referenced-chatgpt-conversation-this-is-an/diarization-results-20/mossformer2-review/inference/audio/segment-0200-stream-2.wav"
+        }
+      ],
+      "cross_family_stable_spans": [
+        {
+          "text": "doing it right here because this is obviously public property",
+          "word_count": 10,
+          "families": [
+            "mossformer2",
+            "original_recording"
+          ],
+          "variants": [
+            "mossformer_stream_2",
+            "original",
+            "speech_filtered"
+          ]
+        },
+        {
+          "text": "you're doing it right here",
+          "word_count": 5,
+          "families": [
+            "mossformer2",
+            "original_recording"
+          ],
+          "variants": [
+            "mossformer_stream_1",
+            "original",
+            "speech_filtered"
+          ]
+        }
+      ],
+      "joint_decision": "target_wording_candidate",
+      "wording_verified": false,
+      "review_required": true,
+      "baseline_modified": false,
+      "sentence_boundary_resolution": "unresolved"
+    },
+    {
+      "segment_index": 221,
+      "start": 463.786,
+      "end": 464.506,
+      "baseline_text": "So I'm not paying him.",
+      "variants": [
+        {
+          "name": "original",
+          "family": "original_recording",
+          "text": "I love that video.",
+          "voice_scores": {
+            "Target_Speaker": 0.2610422968864441,
+            "Opening_officer": 0.11634110659360886
+          },
+          "speaker_resolution": "Target_Speaker"
+        },
+        {
+          "name": "speech_filtered",
+          "family": "original_recording",
+          "text": "I'm not thinking at all.",
+          "voice_scores": {
+            "Target_Speaker": 0.17240487039089203,
+            "Opening_officer": 0.06388408690690994
+          },
+          "speaker_resolution": "Uncertain"
+        }
+      ],
+      "cross_family_stable_spans": [],
+      "joint_decision": "target_identity_only",
+      "wording_verified": false,
+      "review_required": true,
+      "baseline_modified": false,
+      "sentence_boundary_resolution": "target"
+    }
+  ]
+}
