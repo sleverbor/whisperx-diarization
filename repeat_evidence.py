@@ -4,6 +4,7 @@ from bisect import bisect_left
 from difflib import SequenceMatcher
 import re
 from statistics import median
+from collections import Counter
 
 
 STOP_WORDS = {
@@ -142,12 +143,20 @@ def find_text_repeat_candidates(segments, minimum_separation=4.0,
             })
 
     candidates = []
+    token_frequency = Counter(
+        token for window in windows for token in window["content_tokens"]
+    )
+    maximum_index_frequency = (len(windows) if len(windows) < 100
+                               else max(2, int(len(windows) * 0.20)))
     token_index = {}
     for right_index, right in enumerate(windows):
-        possible_left = set()
+        shared_counts = Counter()
         for token in right["content_tokens"]:
-            possible_left.update(token_index.get(token, ()))
-        for left_index in possible_left:
+            if token_frequency[token] <= maximum_index_frequency:
+                shared_counts.update(token_index.get(token, ()))
+        for left_index, indexed_shared_count in shared_counts.items():
+            if indexed_shared_count < 2:
+                continue
             left = windows[left_index]
             # Windows from the same continuous passage can share most of their
             # words. They are not repeated presentations.
@@ -171,7 +180,8 @@ def find_text_repeat_candidates(segments, minimum_separation=4.0,
                 "automatic_speaker_change": False,
             })
         for token in right["content_tokens"]:
-            token_index.setdefault(token, []).append(right_index)
+            if token_frequency[token] <= maximum_index_frequency:
+                token_index.setdefault(token, []).append(right_index)
 
     # Many overlapping windows describe the same repeated exchange. Retain the
     # strongest local representative while allowing adjacent distinct dialogue.
