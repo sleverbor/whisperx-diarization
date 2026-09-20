@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "video_id": "lVfKfbFd0SM",
+  "caption_type": "youtube_automatic",
+  "reviewed_segments": 15,
+  "human_useful_segments": 6,
+  "relations": {
+    "supports_baseline_more": 7,
+    "supports_separated_candidate_more": 4,
+    "similar_support": 3,
+    "conflicts_with_both": 1
+  },
+  "useful_clip_relations": {
+    "supports_baseline_more": 4,
+    "supports_separated_candidate_more": 0,
+    "similar_support": 2,
+    "conflicts_with_both": 0
+  },
+  "non_useful_clip_relations": {
+    "supports_baseline_more": 3,
+    "supports_separated_candidate_more": 4,
+    "similar_support": 1,
+    "conflicts_with_both": 1
+  },
+  "finding": "For every human-useful clip, captions supported the baseline more or gave similar support; captions never favored the separated candidate. Caption support for separated wording occurred only in non-useful clips, where the words may be real but belong to another speaker or remain unusable.",
+  "decision": "Use captions as independent timing and wording evidence in review. Never use them for speaker identity or automatic target-line insertion.",
+  "full_caption_retained": false,
+  "caption_sha256": "0e6c8ead3f5ac3c2b9c5ab574b0b6d3a30b2ffdf316bcdac2f82176a4ef864c5"
+}
