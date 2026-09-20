@@ -1,5 +1,7 @@
 import unittest
-from build_caption_gap_review import uncovered_groups, neighboring_segments
+from build_caption_gap_review import (
+    duplicates_nearby_transcript, neighboring_segments, uncovered_groups,
+)
 
 
 class CaptionGapReviewTest(unittest.TestCase):
@@ -14,6 +16,15 @@ class CaptionGapReviewTest(unittest.TestCase):
         before, after = neighboring_segments(segments, 3, 4)
         self.assertEqual(before["text"], "before")
         self.assertEqual(after["text"], "after")
+
+    def test_caption_timing_duplicate_is_suppressed(self):
+        before = {"text": "All right, thanks."}
+        self.assertTrue(duplicates_nearby_transcript(
+            ">> All right, thanks.", before, None
+        ))
+        self.assertFalse(duplicates_nearby_transcript(
+            "I don't know how much clearer it gets", before, None
+        ))
 
 
 if __name__ == "__main__":

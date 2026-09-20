@@ -6,7 +6,7 @@ import json
 from pathlib import Path
 import subprocess
 
-from evaluate_youtube_captions_on_priority import timed_caption_words
+from evaluate_youtube_captions_on_priority import timed_caption_words, token_f1
 
 
 def uncovered_groups(timed_words, segments, coverage_padding=.35, group_gap=1.25,
@@ -38,6 +38,12 @@ def neighboring_segments(segments, start, end):
     return (before[-1] if before else None, after[0] if after else None)
 
 
+def duplicates_nearby_transcript(caption_text, before, after, threshold=.8):
+    """Suppress caption timing drift when the same words are already present."""
+    neighbors = [row.get("text", "") for row in (before, after) if row]
+    return any(token_f1(caption_text, text) >= threshold for text in neighbors)
+
+
 def review_html(items):
     data = json.dumps(items, ensure_ascii=False).replace("</", "<\\/")
     return f'''<!doctype html><html><head><meta charset="utf-8"><title>Caption missing-speech review</title><style>
@@ -61,11 +67,18 @@ def main():
     args.output_dir.mkdir(parents=True, exist_ok=True)
     media = args.output_dir / "media"; media.mkdir(exist_ok=True)
     items = []
+    suppressed_duplicates = 0
     for index, group in enumerate(groups, 1):
         candidate_start = max(0.0, group[0]["time"] - .6)
         candidate_end = group[-1]["time"] + .8
         clip_start, clip_end = max(0, candidate_start - 2), candidate_end + 2
         before, after = neighboring_segments(segments, candidate_start, candidate_end)
+        caption_text = caption_excerpt(
+            timed, candidate_start - .4, candidate_end + .4
+        )
+        if duplicates_nearby_transcript(caption_text, before, after):
+            suppressed_duplicates += 1
+            continue
         filename = f"gap-{index:02d}.mp4"
         subprocess.run([
             "ffmpeg", "-nostdin", "-hide_banner", "-loglevel", "error", "-y",
@@ -78,7 +91,7 @@ def main():
             "candidate_start": candidate_start, "candidate_end": candidate_end,
             "clip_start": clip_start, "clip_end": clip_end,
             "video": f"media/{filename}",
-            "caption_text": caption_excerpt(timed, candidate_start - .4, candidate_end + .4),
+            "caption_text": caption_text,
             "before_text": before.get("text", "") if before else "",
             "after_text": after.get("text", "") if after else "",
             "caption_does_not_identify_speaker": True,
@@ -86,7 +99,10 @@ def main():
         })
     (args.output_dir / "manifest.json").write_text(json.dumps(items, indent=2) + "\n")
     (args.output_dir / "index.html").write_text(review_html(items))
-    print(f"Built {len(items)} caption-gap reviews: {args.output_dir / 'index.html'}")
+    print(
+        f"Built {len(items)} caption-gap reviews; suppressed "
+        f"{suppressed_duplicates} nearby duplicates: {args.output_dir / 'index.html'}"
+    )
 
 
 if __name__ == "__main__":

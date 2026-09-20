@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "video_id": "lVfKfbFd0SM",
+  "reviewed_candidates": 4,
+  "outcomes": {
+    "missing_speech": 2,
+    "noise_or_not_speech": 1,
+    "caption_duplicate_or_timing_error": 1
+  },
+  "genuine_missing_speech": 2,
+  "genuine_missing_speech_rate": 0.5,
+  "missing_speech_speakers": {
+    "non_target": 1,
+    "multiple_or_overlapping": 1
+  },
+  "calibration": {
+    "nearby_wording_duplicates_in_false_candidates": 2,
+    "candidates_after_duplicate_suppression": 2,
+    "remaining_candidates_genuine_in_this_set": 2
+  },
+  "finding": "Timed captions found two real omissions: one non-target interval and one overlapping multi-speaker interval. The other two candidates repeated nearby baseline wording because caption timing drifted. Nearby-transcript duplicate suppression removes both false candidates on this set.",
+  "limitation": "The reviewer also heard distant non-target speech under music that captions omitted. Caption gaps cannot detect speech missing from both ASR sources.",
+  "automatic_text_insertion": false
+}

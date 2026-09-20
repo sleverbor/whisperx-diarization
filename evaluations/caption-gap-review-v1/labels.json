@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "labels": [
+    {
+      "review_id": "gap-01",
+      "candidate_start": 47.12,
+      "candidate_end": 49.4,
+      "clip_start": 45.12,
+      "clip_end": 51.4,
+      "video": "media/gap-01.mp4",
+      "caption_text": "me. >> Um I Well, but we pay and so",
+      "before_text": "Yeah, I didn't pay, so it doesn't apply to me.",
+      "after_text": "I disagree with you.",
+      "caption_does_not_identify_speaker": true,
+      "automatic_text_insertion": false,
+      "outcome": "missing_speech",
+      "speaker": "non_target",
+      "notes": "transcript after is target saying \"Again I'm hard of hearing\""
+    },
+    {
+      "review_id": "gap-02",
+      "candidate_start": 156.32,
+      "candidate_end": 157.96,
+      "clip_start": 154.32,
+      "clip_end": 159.96,
+      "video": "media/gap-02.mp4",
+      "caption_text": ">> All right, thanks.",
+      "before_text": "All right, thanks.",
+      "after_text": "What's your name?",
+      "caption_does_not_identify_speaker": true,
+      "automatic_text_insertion": false,
+      "outcome": "noise_or_not_speech",
+      "speaker": "",
+      "notes": "the gap is music playing in background"
+    },
+    {
+      "review_id": "gap-03",
+      "candidate_start": 235.08,
+      "candidate_end": 243.96,
+      "clip_start": 233.08,
+      "clip_end": 245.96,
+      "video": "media/gap-03.mp4",
+      "caption_text": "okay? I apologize for that. All right. Well, I I just >> I don't know how much clearer it gets. >> Yeah, I I know now, okay? I apologize for that, but I understand you're a police officer. But um",
+      "before_text": "I apologize for that.",
+      "after_text": "This is public property.",
+      "caption_does_not_identify_speaker": true,
+      "automatic_text_insertion": false,
+      "outcome": "missing_speech",
+      "speaker": "multiple_or_overlapping",
+      "notes": "\"I dont know how much clearer it gets\" is the other speaker.  Everything else is the target from the caption."
+    },
+    {
+      "review_id": "gap-04",
+      "candidate_start": 388.91999999999996,
+      "candidate_end": 390.56,
+      "clip_start": 386.91999999999996,
+      "clip_end": 392.56,
+      "video": "media/gap-04.mp4",
+      "caption_text": ">> No, I don't.",
+      "before_text": "No, I don't.",
+      "after_text": "Yeah, and there's no crime being committed, so I don't have to give you ID.",
+      "caption_does_not_identify_speaker": true,
+      "automatic_text_insertion": false,
+      "outcome": "caption_duplicate_or_timing_error",
+      "speaker": "non_target",
+      "notes": "all of the other speaker's speech is missing.  They are far from the microphone and there is music playing closer."
+    }
+  ]
+}
