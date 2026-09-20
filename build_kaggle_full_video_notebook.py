@@ -32,12 +32,14 @@ def main():
         "chainofrules.py", "cloud_runtime.py", "repeat_evidence.py",
         "recover_transcript_gaps.py", "review_audio_window.py",
         "review_transcript_regions.py", "review_overlap_extraction.py",
+        "run_mossformer2_separation_experiment.py", "mossformer2_review_policy.py",
         "evaluate_diaper_overlap.py",
         "export_confident_transcript.py", "reference_promotion.py",
         "test_cloud_runtime.py", "test_short_answers.py",
         "test_transcript_gaps.py", "test_window_review.py",
         "test_review_regions.py", "test_repeat_evidence.py",
         "test_overlap_resolution.py", "test_overlap_extraction_review.py",
+        "test_mossformer2_review_policy.py",
         "test_single_speaker_mapping.py", "test_confident_transcript.py",
         "test_reference_promotion.py",
         "test_diaper_overlap.py",
@@ -60,11 +62,12 @@ import subprocess, sys, os, json, shutil, time, zipfile
 from urllib.parse import urlparse, parse_qs
 
 VIDEO_URL = 'https://www.youtube.com/watch?v=lVfKfbFd0SM'
-NOTEBOOK_REVISION = 'required-additive-sortformer-extraction-v25'
+NOTEBOOK_REVISION = 'mossformer2-review-only-evidence-v26'
 REQUIRE_OVERLAP_POLICY = True
 RUN_FULL_VIDEO = True
 RUN_TARGETED_REVIEW = True
 RUN_OVERLAP_EXTRACTION = True
+RUN_MOSSFORMER2_REVIEW = True
 RUN_DIAPER_OVERLAP = True
 REVIEW_WEAK_CONFIDENCE = 0.35
 REVIEW_SHORT_SECONDS = 1.0
@@ -135,6 +138,10 @@ requirements = [
 ]
 checked([PYTHON, '-m', 'pip', 'install', '--upgrade', 'pip'])
 checked([PYTHON, '-m', 'pip', 'install', *requirements])
+checked([PYTHON, '-m', 'pip', 'install', '--no-deps', 'clearvoice==0.1.2'])
+checked([PYTHON, '-m', 'pip', 'install', 'gdown', 'librosa==0.10.2.post1',
+         'rotary-embedding-torch==0.8.3', 'scenedetect==0.6.6',
+         'python-speech-features==0.6', 'torchinfo', 'pydub'])
 checked([PYTHON, '-m', 'pip', 'install',
          'git+https://github.com/wenet-e2e/wespeaker.git'])
 # WeSep's current package metadata omits its namespace-style wesep/utils
@@ -188,6 +195,7 @@ checked([PYTHON, '-c', verification], cwd=WORK)
 checked([PYTHON, '-m', 'unittest', 'test_cloud_runtime', 'test_short_answers',
          'test_repeat_evidence', 'test_overlap_resolution',
          'test_overlap_extraction_review', 'test_confident_transcript',
+         'test_mossformer2_review_policy',
          'test_reference_promotion', 'test_diaper_overlap'], cwd=WORK)
 
 import hashlib
@@ -394,6 +402,38 @@ def run_overlap_extraction():
     assert (RESULTS/'full_video_evidence.json').read_bytes() == before
     return json.loads((output_dir/'report.json').read_text())
 
+def run_mossformer2_review():
+    """Separate overlap candidates without modifying baseline text or identity."""
+    output_dir = RESULTS/'mossformer2-review'
+    inference_dir = output_dir/'inference'
+    labels = output_dir/'selected-overlaps.json'
+    output_dir.mkdir(parents=True, exist_ok=True)
+    prepare = [PYTHON, str(WORK/'mossformer2_review_policy.py'), 'prepare',
+        '--baseline', str(RESULTS/'full_video_evidence.json'), '--output', str(labels)]
+    if OVERLAP_POLICY is not None:
+        prepare += ['--selection-policy', str(OVERLAP_POLICY)]
+    checked(prepare, cwd=WORK)
+    command = [PYTHON, '-B', str(WORK/'run_mossformer2_separation_experiment.py'),
+        '--video', str(VIDEO), '--labels', str(labels),
+        '--voice-priors', str(REFERENCE/'voice_embeddings.npy'),
+        '--output-dir', str(inference_dir), '--context', '3',
+        '--device', 'cuda' if ON_KAGGLE else 'cpu',
+        '--hf-home', str(BASE/'huggingface-cache')]
+    ENV['SPEECHBRAIN_CACHE'] = str(
+        BASE/'speechbrain-cache'/'spkrec-ecapa-voxceleb')
+    before = (RESULTS/'full_video_evidence.json').read_bytes()
+    try:
+        stream(command, 'mossformer2-review.log',
+               'MossFormer2 review failed; baseline results remain valid.')
+    finally:
+        export_checkpoints()
+    report = output_dir/'review-evidence.json'
+    checked([PYTHON, str(WORK/'mossformer2_review_policy.py'), 'evaluate',
+             '--report', str(inference_dir/'report.json'), '--output', str(report)],
+            cwd=WORK)
+    assert (RESULTS/'full_video_evidence.json').read_bytes() == before
+    return json.loads(report.read_text())
+
 def run_diaper_overlap():
     """Run official DiaPer on full audio, then compare without changing baseline."""
     source = WORK/'vendor'/'DiaPer'
@@ -534,6 +574,10 @@ if RUN_FULL_VIDEO:
     if RUN_OVERLAP_EXTRACTION:
         overlap_review = run_overlap_extraction()
         print('Overlap extraction:', json.dumps(overlap_review['summary'], indent=2))
+    if RUN_MOSSFORMER2_REVIEW:
+        mossformer2_review = run_mossformer2_review()
+        print('MossFormer2 review evidence:',
+              json.dumps(mossformer2_review['summary'], indent=2))
     if RUN_DIAPER_OVERLAP:
         diaper_review = run_diaper_overlap()
         print('DiaPer overlap comparison:', json.dumps(diaper_review['summary'], indent=2))
@@ -562,9 +606,9 @@ print('Saved in:', BASE)
             cell("markdown", "## Credentials, checkpoint restore, and attached video\n\nCreate a private Kaggle secret named `HF_TOKEN`. The token is read from the environment and is never embedded or printed. The current video is copied from the attached dataset because YouTube blocks Kaggle's shared addresses.\n"),
             cell("code", credentials),
             cell("code", functions),
-            cell("markdown", "## Run the opening check, whole video, and additive overlap review\n\nThe opening check confirms that face analysis is actually using CUDA. The established stages run first. When the matching v5 Sortformer result dataset is attached, speaker-conditioned extraction processes the union of existing baseline overlap intervals and strong Sortformer additions. DiaPer remains a read-only comparison.\n"),
+            cell("markdown", "## Run the opening check, whole video, and additive overlap review\n\nThe opening check confirms that face analysis is actually using CUDA. The established stages run first. When the matching v5 Sortformer result dataset is attached, speaker-conditioned extraction processes the union of existing baseline overlap intervals and strong Sortformer additions. MossFormer2 then separates those same review candidates, rejects weak target matches, and exports review-only evidence; it never inserts text or changes speaker identity. DiaPer remains a read-only comparison.\n"),
             cell("code", run),
-            cell("markdown", "## Download results\n\n`diarization-results.zip` contains the preserved baseline, existing supplemental reviews, DiaPer RTTM and comparison report, logs, and package versions. `stage-checkpoints.zip` can restart expensive baseline stages.\n"),
+            cell("markdown", "## Download results\n\n`diarization-results.zip` contains the preserved baseline, existing supplemental reviews, MossFormer2 review-only evidence, DiaPer RTTM and comparison report, logs, and package versions. `stage-checkpoints.zip` can restart expensive baseline stages.\n"),
             cell("code", save),
         ],
         "metadata": {"kernelspec": {"display_name": "Python 3", "language": "python", "name": "python3"},
