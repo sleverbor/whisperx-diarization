@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "video_id": "uxOLBG1OcI0",
+  "notebook_revision": "unseen-video-caption-gap-v29",
+  "baseline_segments": 227,
+  "raw_diarization_tracks": 6,
+  "target_track": "SPEAKER_01",
+  "target_track_mean_affinity": 0.3386,
+  "next_highest_track_mean_affinity": 0.1262,
+  "mapping_strength": 1.0,
+  "final_speaker_counts": {
+    "Target_Speaker": 9,
+    "Overlapping_Speakers": 10,
+    "Uncertain": 9,
+    "SPEAKER_00": 5,
+    "SPEAKER_02": 16,
+    "SPEAKER_03": 71,
+    "SPEAKER_04": 99,
+    "SPEAKER_05": 8
+  },
+  "targeted_review": {
+    "windows": 21,
+    "hypotheses": 224,
+    "target_hypotheses": 16,
+    "unique_later_target_candidates_observed": 5,
+    "baseline_modified": false
+  },
+  "confidence_export": {
+    "included": 145,
+    "review": 82,
+    "review_duration_seconds": 120.65
+  },
+  "visual_evidence": {
+    "segments_with_target_face_visible_evidence": 0,
+    "maximum_observed_late_face_similarity": 0.274,
+    "finding": "The face reference did not recognize the intermittently visible target at the configured threshold."
+  },
+  "repetition": {
+    "waveform_groups": 0,
+    "near_exact_transcript_pairs_observed": 6,
+    "finding": "The waveform matcher missed repeated dialogue recorded from different bodycam perspectives."
+  },
+  "caption_gap_review_candidates": 4,
+  "overlap_extraction": {
+    "selected": 12,
+    "unresolved": 5,
+    "likely_suppressed_residual": 7,
+    "stereo_corroborated_words_for_review": 4
+  },
+  "mossformer2": {
+    "segments": 12,
+    "review_candidates": 6,
+    "rejected_low_target_evidence": 6,
+    "automatic_insertions": 0
+  },
+  "diaper": {
+    "baseline_overlap_segments": 12,
+    "corroborated_overlap_segments": 1,
+    "control_segments_flagged_overlap": 34,
+    "control_segments": 215
+  },
+  "reference_promotion_candidates": 1,
+  "conclusion": "The unseen run validates selective voice mapping in clean audio but exposes cross-bodycam target-track fragmentation, failure of face recognition on the available views, and failure of waveform-only repeated-scene matching. Supplemental target and MossFormer2 candidates require focused human review before any resolver change."
+}

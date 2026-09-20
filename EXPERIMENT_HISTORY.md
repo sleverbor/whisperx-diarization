@@ -163,6 +163,10 @@ Milestones:
 - `milestone-full-video-audiovisual-v8`: first stable full-video audiovisual run with target speech recovered across fragmented tracks.
 - Current branch head includes MossFormer2 review policy, caption gap detection, and `caption-gap-review-v28` notebook integration.
 
+## Unseen-video generalization result (`uxOLBG1OcI0`)
+
+The first untouched run on the selected 7:56 outdoor video produced 227 segments across six diarization tracks. Voice affinity clearly selected `SPEAKER_01` as the target (0.339 versus 0.126 for the next track), but only nine final target lines were emitted, mostly in the opening. Supplemental review found later target-like speech on other tracks, exposing cross-bodycam fragmentation. Face evidence recognized no target-visible segment at the configured threshold. The waveform repeat detector found zero groups despite multiple near-exact dialogue repeats from different bodycam perspectives. Four caption-gap and six MossFormer2 candidates were exported for review. See [the unseen-video result](evaluations/unseen-video-uxOLBG1OcI0/RESULTS.md).
+
 ## Methods rejected as automatic rules
 
 The following were tested and should not be reintroduced without new evidence:
