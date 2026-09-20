@@ -108,6 +108,12 @@ generator is justified. It should align the shared dialogue within each pair,
 retain both source timestamps, and use the clearer rendition as corroborating
 evidence without replacing either baseline segment automatically.
 
+The implemented short-window text matcher recovers exactly the three confirmed
+pairs on this run, at approximately 212.94↔239.46, 226.84↔255.79, and
+357.05↔369.35 seconds. Similarities are 0.978, 0.749, and 0.850. It marks all
+three as review-only and explicitly disables automatic text replacement and
+speaker changes.
+
 ## Revised decision
 
 Do not loosen target-voice or face thresholds from this run. The apparent later

@@ -109,6 +109,97 @@ def find_repeat_groups(segments, minimum_separation=45.0, minimum_score=0.55,
     return groups
 
 
+def find_text_repeat_candidates(segments, minimum_separation=4.0,
+                                minimum_score=0.60, minimum_tokens=8,
+                                minimum_segments=2, maximum_segments=8,
+                                maximum_window_seconds=15.0,
+                                overlap_suppression_seconds=6.0):
+    """Find short repeated dialogue for human review.
+
+    Unlike ``find_repeat_groups``, this does not require a long presentation
+    with four anchors.  It compares bounded transcript windows so that a short
+    exchange repeated by another bodycam can be proposed.  Results are review
+    candidates only: they never modify text or speaker identity.
+    """
+    windows = []
+    for first in range(len(segments)):
+        for last in range(first + minimum_segments - 1,
+                          min(len(segments), first + maximum_segments)):
+            duration = float(segments[last].end - segments[first].start)
+            if duration > maximum_window_seconds:
+                break
+            text = " ".join(segments[i].text.strip()
+                            for i in range(first, last + 1)).strip()
+            word_tokens = tokens(text)
+            content = set(word_tokens) - STOP_WORDS
+            if len(word_tokens) < minimum_tokens or len(content) < 3:
+                continue
+            windows.append({
+                "first_index": first, "last_index": last,
+                "start": float(segments[first].start),
+                "end": float(segments[last].end), "text": text,
+                "content_tokens": content,
+            })
+
+    candidates = []
+    token_index = {}
+    for right_index, right in enumerate(windows):
+        possible_left = set()
+        for token in right["content_tokens"]:
+            possible_left.update(token_index.get(token, ()))
+        for left_index in possible_left:
+            left = windows[left_index]
+            # Windows from the same continuous passage can share most of their
+            # words. They are not repeated presentations.
+            if right["start"] - left["end"] < minimum_separation:
+                continue
+            if len(left["content_tokens"] & right["content_tokens"]) < 2:
+                continue
+            score = phrase_similarity(left["text"], right["text"])
+            if score < minimum_score:
+                continue
+            candidates.append({
+                "left_start": left["start"], "left_end": left["end"],
+                "right_start": right["start"], "right_end": right["end"],
+                "left_text": left["text"], "right_text": right["text"],
+                "text_similarity": score,
+                "matched_token_count": min(len(tokens(left["text"])),
+                                             len(tokens(right["text"]))),
+                "time_separation_seconds": right["start"] - left["start"],
+                "review_required": True,
+                "automatic_text_replacement": False,
+                "automatic_speaker_change": False,
+            })
+        for token in right["content_tokens"]:
+            token_index.setdefault(token, []).append(right_index)
+
+    # Many overlapping windows describe the same repeated exchange. Retain the
+    # strongest local representative while allowing adjacent distinct dialogue.
+    selected = []
+    def overlap_fraction(a0, a1, b0, b1):
+        intersection = max(0.0, min(a1, b1) - max(a0, b0))
+        return intersection / max(min(a1 - a0, b1 - b0), 1e-9)
+
+    for candidate in sorted(candidates, key=lambda x: (
+            x["text_similarity"] * (x["matched_token_count"] ** 0.5),
+            x["text_similarity"]), reverse=True):
+        duplicate = any(
+            (abs(candidate["left_start"] - kept["left_start"]) <= overlap_suppression_seconds
+             and abs(candidate["right_start"] - kept["right_start"]) <= overlap_suppression_seconds)
+            or (overlap_fraction(candidate["left_start"], candidate["left_end"],
+                                 kept["left_start"], kept["left_end"]) >= 0.5
+                and overlap_fraction(candidate["right_start"], candidate["right_end"],
+                                     kept["right_start"], kept["right_end"]) >= 0.5)
+            for kept in selected
+        )
+        if not duplicate:
+            selected.append(candidate)
+    selected.sort(key=lambda x: (x["left_start"], x["right_start"]))
+    for index, candidate in enumerate(selected, 1):
+        candidate["id"] = f"text_repeat_{index:02d}"
+    return selected
+
+
 def _interpolate(value, source, destination):
     if value <= source[0]:
         return destination[0] + value - source[0]

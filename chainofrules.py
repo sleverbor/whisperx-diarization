@@ -25,7 +25,7 @@ from whisperx.diarize import DiarizationPipeline
 from speechbrain.inference.speaker import SpeakerRecognition
 from insightface.app import FaceAnalysis
 from collections import defaultdict
-from repeat_evidence import (find_repeat_groups, build_repeat_proposals,
+from repeat_evidence import (find_repeat_groups, find_text_repeat_candidates, build_repeat_proposals,
                              repeat_target_corroboration,
                              resolve_repeat_target_corroboration)
 
@@ -775,6 +775,7 @@ def main():
                             target_like_tracks)
             print(f"Resolved segment {index + 1}/{len(timeline)} at {segment.end:.1f}s", flush=True)
         repeat_groups = find_repeat_groups(timeline)
+        text_repeat_candidates = find_text_repeat_candidates(timeline)
         repeat_proposals = build_repeat_proposals(timeline, repeat_groups)
         for index, proposals in repeat_proposals.items():
             for details in proposals:
@@ -805,6 +806,7 @@ def main():
                                    "transcription_coverage": args.transcription_coverage},
                        "confidence_is_calibrated": False,
                        "repeated_presentations": repeat_groups,
+                       "text_repeat_candidates": text_repeat_candidates,
                        "segments": [asdict(segment) for segment in timeline]}, output, indent=2, ensure_ascii=False)
     finally:
         cap.release()

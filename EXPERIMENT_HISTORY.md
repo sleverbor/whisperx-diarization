@@ -184,6 +184,10 @@ All three text-proposed repeated-bodycam pairs were confirmed as the same event,
 and the clearer recording varied by pair. Text-assisted repeat discovery is the
 next supported experiment; target-threshold loosening is not.
 
+The resulting bounded-window matcher recovers exactly those three confirmed
+pairs on the unseen run. It is an evidence exporter only: it preserves both
+recordings and cannot change transcript text or speaker identity.
+
 Source: [focused unseen-video review](evaluations/unseen-video-uxOLBG1OcI0/RESULTS.md).
 
 ## Methods rejected as automatic rules

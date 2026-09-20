@@ -1,7 +1,7 @@
 import unittest
 
 from chainofrules import Baseline, Evidence, TimelineSegment
-from repeat_evidence import (find_repeat_groups, build_repeat_proposals,
+from repeat_evidence import (find_repeat_groups, find_text_repeat_candidates, build_repeat_proposals,
                              repeat_target_corroboration,
                              resolve_repeat_target_corroboration)
 
@@ -14,6 +14,27 @@ def segment(start, text, speaker="Uncertain", confidence=0.0):
 
 
 class RepeatEvidenceTests(unittest.TestCase):
+    def test_short_repeated_dialogue_is_review_candidate(self):
+        timeline = [
+            segment(0, "Unrelated opening words are spoken here."),
+            segment(10, "I cannot force him to leave the property."),
+            segment(12, "I can talk to him and ask him to move down."),
+            segment(40, "Different intervening conversation happens now."),
+            segment(70, "I can't force him to leave the property."),
+            segment(72, "I can talk to him and ask him to move down."),
+        ]
+        candidates = find_text_repeat_candidates(timeline)
+        match = max(candidates, key=lambda x: x["text_similarity"])
+        self.assertAlmostEqual(match["left_start"], 10.0)
+        self.assertAlmostEqual(match["right_start"], 70.0)
+        self.assertTrue(match["review_required"])
+        self.assertFalse(match["automatic_text_replacement"])
+        self.assertFalse(match["automatic_speaker_change"])
+
+    def test_short_repeat_requires_meaningful_window(self):
+        timeline = [segment(0, "All right."), segment(20, "All right.")]
+        self.assertEqual(find_text_repeat_candidates(timeline), [])
+
     def test_detects_ordered_repeated_presentation(self):
         first = [
             segment(0, "They can ask you to get off their property."),
