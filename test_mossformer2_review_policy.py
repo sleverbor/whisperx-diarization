@@ -2,9 +2,14 @@ import copy
 import unittest
 
 from mossformer2_review_policy import apply_review_policy, prepare_labels
+from run_mossformer2_separation_experiment import token_f1
 
 
 class MossFormer2ReviewPolicyTest(unittest.TestCase):
+    def test_runner_has_self_contained_token_metric(self):
+        self.assertEqual(token_f1("there's no", "there's no"), 1.0)
+        self.assertEqual(token_f1("", "words"), 0.0)
+
     def report(self, first, second):
         return {"results": [{
             "exchange_id": "example", "baseline_index": 3,

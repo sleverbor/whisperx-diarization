@@ -5,13 +5,30 @@ import argparse
 import gc
 import json
 import os
+import re
 import subprocess
 from pathlib import Path
 
 import numpy as np
 
 from review_overlap_extraction import transcribe, unit
-from run_contextual_wesep_experiment import token_f1
+
+
+def token_f1(reference, hypothesis):
+    """Small self-contained word-overlap diagnostic used only in reports."""
+    words = lambda value: re.findall(r"[a-z0-9']+", str(value).casefold())
+    reference_words, hypothesis_words = words(reference), words(hypothesis)
+    if not reference_words or not hypothesis_words:
+        return 0.0
+    remaining = list(reference_words)
+    hits = 0
+    for word in hypothesis_words:
+        if word in remaining:
+            hits += 1
+            remaining.remove(word)
+    precision = hits / len(hypothesis_words)
+    recall = hits / len(reference_words)
+    return 2 * precision * recall / max(precision + recall, 1e-9)
 
 
 def main():
