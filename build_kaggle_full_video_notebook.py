@@ -364,6 +364,17 @@ def run_test(video, stem, batch_size=4):
     finally:
         export_checkpoints()
     result = json.loads(output.read_text())
+    text_repeat_candidates = result.get('text_repeat_candidates', [])
+    (RESULTS/(stem+'_text_repeat_candidates.json')).write_text(
+        json.dumps(text_repeat_candidates, indent=2)+'\\n')
+    text_repeat_rows = [
+        f"[{row['left_start']:.2f}-{row['left_end']:.2f}] {row['left_text']}  <=>  "
+        f"[{row['right_start']:.2f}-{row['right_end']:.2f}] {row['right_text']}  "
+        f"(similarity={row['text_similarity']:.3f})"
+        for row in text_repeat_candidates
+    ]
+    (RESULTS/(stem+'_text_repeat_candidates.txt')).write_text(
+        '\\n'.join(text_repeat_rows)+'\\n')
     transcript = '\\n'.join(f"[{s['start']:.2f}-{s['end']:.2f}] {s['final_speaker']} (strength={s['final_confidence']:.2f}): {s['text']}" for s in result['segments'])
     (RESULTS/(stem+'_transcript.txt')).write_text(transcript+'\\n')
     repeat_rows = []
@@ -375,6 +386,7 @@ def run_test(video, stem, batch_size=4):
     (RESULTS/(stem+'_repeat_candidates.txt')).write_text('\\n'.join(repeat_rows)+'\\n')
     print(f'Elapsed: {(time.monotonic()-started)/60:.1f} minutes')
     print('Repeated-presentation groups:', len(result.get('repeated_presentations', [])))
+    print('Short text-repeat review candidates:', len(text_repeat_candidates))
     return result
 
 def extract_clip(start, duration, name):
