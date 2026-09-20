@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "model": "faster-whisper-small (local method screen)",
+  "reviewed_segments": 15,
+  "human_useful_segments": 6,
+  "unprompted": {
+    "strong_total": 5,
+    "strong_useful": 2,
+    "strong_not_useful": 3,
+    "strong_positive_predictive_value": 0.4
+  },
+  "context_prompted": {
+    "strong_total": 6,
+    "strong_useful": 2,
+    "strong_not_useful": 4,
+    "strong_positive_predictive_value": 0.333
+  },
+  "decision": "do_not_promote_cross_audio_asr_agreement_to_an_automatic_rule",
+  "reason": "The mixture and separated stream often preserve the same interference, so the same ASR model can agree confidently on the same wrong words. Surrounding context increased false agreement. MossFormer2 remains useful only as review audio with unverified ASR hints.",
+  "next_implication": "A larger-model Kaggle rerun is not justified by this screen. Meaningful automatic overlap recovery needs a more independent signal or hand-ground-truth evaluation, not repeated decoding by the same ASR model."
+}

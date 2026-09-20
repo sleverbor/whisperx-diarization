@@ -1,0 +1,1008 @@
+{
+  "schema_version": 1,
+  "method": "mixture_and_separated_stream_contextual_asr_corroboration",
+  "model": "small",
+  "policy": {
+    "context_excludes_current_segment": true,
+    "cross_audio_agreement_required": true,
+    "candidate_words_remain_review_only": true,
+    "automatic_text_insertion": false
+  },
+  "summary": {
+    "segments": 15,
+    "unprompted_levels": {
+      "strong_cross_audio_corroboration": 5,
+      "not_corroborated": 7,
+      "partial_cross_audio_corroboration": 3
+    },
+    "useful_human_labels": 6
+  },
+  "results": [
+    {
+      "review_id": "01-0045",
+      "baseline_index": 45,
+      "start": 105.95,
+      "end": 107.472,
+      "human_outcome": "cleaner_same_target_line",
+      "baseline_text": "Well, they gotta warn me of trespassing first, though.",
+      "selected_stream": 1,
+      "surrounding_prompt": "Nearby dialogue for names and vocabulary only: Alright, I'm soliciting, and I'm gonna stay right here. Then you're gonna be trespassed on, and you're gonna go to jail for trespassing. Yep, she's on her way. Alright.",
+      "readings": {
+        "mixture": {
+          "unprompted": {
+            "text": "Well, they got it warm at Christmas first.",
+            "average_log_probability": -0.5981739300947922,
+            "language_probability": 1
+          },
+          "context_prompted": {
+            "text": "Well, they got it warm at Christmas first.",
+            "average_log_probability": -0.5769711090968206,
+            "language_probability": 1
+          }
+        },
+        "stream_1": {
+          "unprompted": {
+            "text": "Well, they got to warm it just fast first.",
+            "average_log_probability": -0.5355931265013558,
+            "language_probability": 1
+          },
+          "context_prompted": {
+            "text": "Well, they gotta warm it just fast first.",
+            "average_log_probability": -0.5892473184145414,
+            "language_probability": 1
+          }
+        },
+        "stream_2": {
+          "unprompted": {
+            "text": "Yeah",
+            "average_log_probability": -0.7172832638025284,
+            "language_probability": 1
+          },
+          "context_prompted": {
+            "text": "No, no, no. Yep.",
+            "average_log_probability": -0.8873588121854342,
+            "language_probability": 1
+          }
+        }
+      },
+      "unprompted_cross_audio": {
+        "level": "strong_cross_audio_corroboration",
+        "token_f1": 0.7058823529411765,
+        "ordered_common_words": [
+          "well",
+          "they",
+          "got",
+          "it",
+          "first"
+        ]
+      },
+      "context_prompted_cross_audio": {
+        "level": "partial_cross_audio_corroboration",
+        "token_f1": 0.625,
+        "ordered_common_words": [
+          "well",
+          "they",
+          "it",
+          "first"
+        ]
+      },
+      "automatic_text_insertion": false
+    },
+    {
+      "review_id": "02-0131",
+      "baseline_index": 131,
+      "start": 226.801,
+      "end": 227.702,
+      "human_outcome": "wrong_or_garbled",
+      "baseline_text": "That's what I recommend you do.",
+      "selected_stream": 1,
+      "surrounding_prompt": "Nearby dialogue for names and vocabulary only: I don't want to get arrested because I'm just trying to enjoy my free speech rights. Okay. I know you're a police officer. I just thought you were a security guard.",
+      "readings": {
+        "mixture": {
+          "unprompted": {
+            "text": "You know, you ought to know that.",
+            "average_log_probability": -0.6576444904009501,
+            "language_probability": 1
+          },
+          "context_prompted": {
+            "text": "You know, you want to know about...",
+            "average_log_probability": -0.6389770110448202,
+            "language_probability": 1
+          }
+        },
+        "stream_1": {
+          "unprompted": {
+            "text": "You know, you ought to know that",
+            "average_log_probability": -0.44511066241697833,
+            "language_probability": 1
+          },
+          "context_prompted": {
+            "text": "You know, you ought to know better.",
+            "average_log_probability": -0.49604720373948413,
+            "language_probability": 1
+          }
+        },
+        "stream_2": {
+          "unprompted": {
+            "text": "Well, that's what I-",
+            "average_log_probability": -0.5246396005153656,
+            "language_probability": 1
+          },
+          "context_prompted": {
+            "text": "Well, that's what I...",
+            "average_log_probability": -0.47252304553985597,
+            "language_probability": 1
+          }
+        }
+      },
+      "unprompted_cross_audio": {
+        "level": "strong_cross_audio_corroboration",
+        "token_f1": 1.0,
+        "ordered_common_words": [
+          "you",
+          "know",
+          "you",
+          "ought",
+          "to",
+          "know",
+          "that"
+        ]
+      },
+      "context_prompted_cross_audio": {
+        "level": "strong_cross_audio_corroboration",
+        "token_f1": 0.7142857142857143,
+        "ordered_common_words": [
+          "you",
+          "know",
+          "you",
+          "to",
+          "know"
+        ]
+      },
+      "automatic_text_insertion": false
+    },
+    {
+      "review_id": "03-0213",
+      "baseline_index": 213,
+      "start": 398.892,
+      "end": 400.393,
+      "human_outcome": "wrong_or_garbled",
+      "baseline_text": "You have to give me your identification card.",
+      "selected_stream": 1,
+      "surrounding_prompt": "Nearby dialogue for names and vocabulary only: Excuse me, I don't have to give you ID. That is a formal trespass. I'm not required to give ID for a trespass. For a formal trespass, you are.",
+      "readings": {
+        "mixture": {
+          "unprompted": {
+            "text": "You have to give me your identification.",
+            "average_log_probability": -0.6622417406602339,
+            "language_probability": 1
+          },
+          "context_prompted": {
+            "text": "You have to give me your ID.",
+            "average_log_probability": -0.4307431253519925,
+            "language_probability": 1
+          }
+        },
+        "stream_1": {
+          "unprompted": {
+            "text": "I am not, I am not responsible.",
+            "average_log_probability": -0.5891719510157903,
+            "language_probability": 1
+          },
+          "context_prompted": {
+            "text": "I am not. I am not responsible for a formal trespass.",
+            "average_log_probability": -0.5559723502711246,
+            "language_probability": 1
+          }
+        },
+        "stream_2": {
+          "unprompted": {
+            "text": "You have to give me your identification.",
+            "average_log_probability": -0.6100224364887584,
+            "language_probability": 1
+          },
+          "context_prompted": {
+            "text": "You have to give me your ID.",
+            "average_log_probability": -0.3920316696166992,
+            "language_probability": 1
+          }
+        }
+      },
+      "unprompted_cross_audio": {
+        "level": "not_corroborated",
+        "token_f1": 0.0,
+        "ordered_common_words": []
+      },
+      "context_prompted_cross_audio": {
+        "level": "not_corroborated",
+        "token_f1": 0.0,
+        "ordered_common_words": []
+      },
+      "automatic_text_insertion": false
+    },
+    {
+      "review_id": "04-0133",
+      "baseline_index": 133,
+      "start": 228.902,
+      "end": 230.323,
+      "human_outcome": "not_target",
+      "baseline_text": "I just thought you were a security guard.",
+      "selected_stream": 2,
+      "surrounding_prompt": "Nearby dialogue for names and vocabulary only: That's what I recommend you do. I know you're a police officer. I apologize for that. I don't know how much clearer it gets.",
+      "readings": {
+        "mixture": {
+          "unprompted": {
+            "text": "There you go. That's what I would recommend.",
+            "average_log_probability": -0.5956785125391824,
+            "language_probability": 1
+          },
+          "context_prompted": {
+            "text": "There you go. That's what I recommend you do.",
+            "average_log_probability": -0.4118571956952413,
+            "language_probability": 1
+          }
+        },
+        "stream_1": {
+          "unprompted": {
+            "text": "That's what I was like",
+            "average_log_probability": -0.4706629117329915,
+            "language_probability": 1
+          },
+          "context_prompted": {
+            "text": "There you go. That's what I was.",
+            "average_log_probability": -0.4725814049060528,
+            "language_probability": 1
+          }
+        },
+        "stream_2": {
+          "unprompted": {
+            "text": "What I recommend you",
+            "average_log_probability": -0.7168047768729073,
+            "language_probability": 1
+          },
+          "context_prompted": {
+            "text": "What I recommend you do.",
+            "average_log_probability": -0.4874747594197591,
+            "language_probability": 1
+          }
+        }
+      },
+      "unprompted_cross_audio": {
+        "level": "strong_cross_audio_corroboration",
+        "token_f1": 0.6666666666666666,
+        "ordered_common_words": [
+          "what",
+          "i",
+          "recommend"
+        ]
+      },
+      "context_prompted_cross_audio": {
+        "level": "strong_cross_audio_corroboration",
+        "token_f1": 0.7142857142857143,
+        "ordered_common_words": [
+          "what",
+          "i",
+          "recommend",
+          "you",
+          "do"
+        ]
+      },
+      "automatic_text_insertion": false
+    },
+    {
+      "review_id": "05-0214",
+      "baseline_index": 214,
+      "start": 400.413,
+      "end": 402.074,
+      "human_outcome": "adds_missing_target_speech",
+      "baseline_text": "I'm not required to give ID for a trespass.",
+      "selected_stream": 1,
+      "surrounding_prompt": "Nearby dialogue for names and vocabulary only: That is a formal trespass. You have to give me your identification card. For a formal trespass, you are. There's no crime taking place.",
+      "readings": {
+        "mixture": {
+          "unprompted": {
+            "text": "I had a good idea for a trip.",
+            "average_log_probability": -0.8678884655237198,
+            "language_probability": 1
+          },
+          "context_prompted": {
+            "text": "You have to give ID for a trespass.",
+            "average_log_probability": -0.6051520903905233,
+            "language_probability": 1
+          }
+        },
+        "stream_1": {
+          "unprompted": {
+            "text": "to give out to you for a test.",
+            "average_log_probability": -0.8106237898270289,
+            "language_probability": 1
+          },
+          "context_prompted": {
+            "text": "You have to give ive to you for a test.",
+            "average_log_probability": -0.8663623968760172,
+            "language_probability": 1
+          }
+        },
+        "stream_2": {
+          "unprompted": {
+            "text": "",
+            "average_log_probability": null,
+            "language_probability": 1
+          },
+          "context_prompted": {
+            "text": "For a formal trespass, you are.",
+            "average_log_probability": -0.6742263308593205,
+            "language_probability": 1
+          }
+        }
+      },
+      "unprompted_cross_audio": {
+        "level": "not_corroborated",
+        "token_f1": 0.25,
+        "ordered_common_words": [
+          "for",
+          "a"
+        ]
+      },
+      "context_prompted_cross_audio": {
+        "level": "strong_cross_audio_corroboration",
+        "token_f1": 0.6666666666666665,
+        "ordered_common_words": [
+          "you",
+          "have",
+          "to",
+          "give",
+          "for",
+          "a"
+        ]
+      },
+      "automatic_text_insertion": false
+    },
+    {
+      "review_id": "06-0099",
+      "baseline_index": 99,
+      "start": 179.168,
+      "end": 180.169,
+      "human_outcome": "wrong_or_garbled",
+      "baseline_text": "Yeah, we sure can.",
+      "selected_stream": 1,
+      "surrounding_prompt": "Nearby dialogue for names and vocabulary only: Hey, that's fine. We can disagree to disagree. She'll come trespass on you and then if you don't leave, you'll just go to jail for trespassing. Well, who would arrest me?",
+      "readings": {
+        "mixture": {
+          "unprompted": {
+            "text": "I can't.",
+            "average_log_probability": -0.98843366759164,
+            "language_probability": 1
+          },
+          "context_prompted": {
+            "text": "I can't.",
+            "average_log_probability": -0.7916753462382725,
+            "language_probability": 1
+          }
+        },
+        "stream_1": {
+          "unprompted": {
+            "text": "Do this great.",
+            "average_log_probability": -0.8468103238514492,
+            "language_probability": 1
+          },
+          "context_prompted": {
+            "text": "We can do this great.",
+            "average_log_probability": -0.7511273490058051,
+            "language_probability": 1
+          }
+        },
+        "stream_2": {
+          "unprompted": {
+            "text": "Sure can.",
+            "average_log_probability": -0.7548446456591288,
+            "language_probability": 1
+          },
+          "context_prompted": {
+            "text": "She sure can.",
+            "average_log_probability": -0.6951304844447544,
+            "language_probability": 1
+          }
+        }
+      },
+      "unprompted_cross_audio": {
+        "level": "not_corroborated",
+        "token_f1": 0.0,
+        "ordered_common_words": []
+      },
+      "context_prompted_cross_audio": {
+        "level": "not_corroborated",
+        "token_f1": 0.0,
+        "ordered_common_words": []
+      },
+      "automatic_text_insertion": false
+    },
+    {
+      "review_id": "07-0114",
+      "baseline_index": 114,
+      "start": 200.151,
+      "end": 204.095,
+      "human_outcome": "not_target",
+      "baseline_text": "If you were standing here and just speaking about religion or anything like that, that is covered.",
+      "selected_stream": 2,
+      "surrounding_prompt": "Nearby dialogue for names and vocabulary only: That has a private event permit, yes. This is not a private event. But you're not. You're soliciting money.",
+      "readings": {
+        "mixture": {
+          "unprompted": {
+            "text": "If you were standing here and just speaking about religion or anything like that, that is covered.",
+            "average_log_probability": -0.398774962533604,
+            "language_probability": 1
+          },
+          "context_prompted": {
+            "text": "If you were standing here and just speaking about religion or anything like that, that is covered.",
+            "average_log_probability": -0.3935246034102006,
+            "language_probability": 1
+          }
+        },
+        "stream_1": {
+          "unprompted": {
+            "text": "We're standing here and just speaking about religion or anything like that, that is color.",
+            "average_log_probability": -0.40413007849738714,
+            "language_probability": 1
+          },
+          "context_prompted": {
+            "text": "We're standing here and just speaking about religion or anything like that. That is color.",
+            "average_log_probability": -0.31579085758754183,
+            "language_probability": 1
+          }
+        },
+        "stream_2": {
+          "unprompted": {
+            "text": "you. There is nothing. There is absolutely nothing to cover.",
+            "average_log_probability": -0.6658437475562096,
+            "language_probability": 1
+          },
+          "context_prompted": {
+            "text": "Thank you. There is nothing. There is absolutely nothing to be discovered.",
+            "average_log_probability": -0.3682083094661886,
+            "language_probability": 1
+          }
+        }
+      },
+      "unprompted_cross_audio": {
+        "level": "not_corroborated",
+        "token_f1": 0.14814814814814817,
+        "ordered_common_words": [
+          "you",
+          "is"
+        ]
+      },
+      "context_prompted_cross_audio": {
+        "level": "not_corroborated",
+        "token_f1": 0.13793103448275862,
+        "ordered_common_words": [
+          "you",
+          "is"
+        ]
+      },
+      "automatic_text_insertion": false
+    },
+    {
+      "review_id": "08-0116",
+      "baseline_index": 116,
+      "start": 205.376,
+      "end": 206.136,
+      "human_outcome": "wrong_or_garbled",
+      "baseline_text": "You're soliciting money.",
+      "selected_stream": 1,
+      "surrounding_prompt": "Nearby dialogue for names and vocabulary only: If you were standing here and just speaking about religion or anything like that, that is covered. But you're not. I'm soliciting. Because I had three people come tell me.",
+      "readings": {
+        "mixture": {
+          "unprompted": {
+            "text": "You know what I'm doing.",
+            "average_log_probability": -0.5244226634502411,
+            "language_probability": 1
+          },
+          "context_prompted": {
+            "text": "You know what I'm doing.",
+            "average_log_probability": -0.48813897371292114,
+            "language_probability": 1
+          }
+        },
+        "stream_1": {
+          "unprompted": {
+            "text": "you know what I'm doing.",
+            "average_log_probability": -0.5065198302268982,
+            "language_probability": 1
+          },
+          "context_prompted": {
+            "text": "You know what I'm doing.",
+            "average_log_probability": -0.501903748512268,
+            "language_probability": 1
+          }
+        },
+        "stream_2": {
+          "unprompted": {
+            "text": "soliciting money.",
+            "average_log_probability": -0.5950907298496791,
+            "language_probability": 1
+          },
+          "context_prompted": {
+            "text": "I'm soliciting money.",
+            "average_log_probability": -0.48946062723795575,
+            "language_probability": 1
+          }
+        }
+      },
+      "unprompted_cross_audio": {
+        "level": "strong_cross_audio_corroboration",
+        "token_f1": 1.0,
+        "ordered_common_words": [
+          "you",
+          "know",
+          "what",
+          "i'm",
+          "doing"
+        ]
+      },
+      "context_prompted_cross_audio": {
+        "level": "strong_cross_audio_corroboration",
+        "token_f1": 1.0,
+        "ordered_common_words": [
+          "you",
+          "know",
+          "what",
+          "i'm",
+          "doing"
+        ]
+      },
+      "automatic_text_insertion": false
+    },
+    {
+      "review_id": "09-0098",
+      "baseline_index": 98,
+      "start": 178.027,
+      "end": 179.148,
+      "human_outcome": "cleaner_same_target_line",
+      "baseline_text": "We can disagree to disagree.",
+      "selected_stream": 1,
+      "surrounding_prompt": "Nearby dialogue for names and vocabulary only: That's not being hostile. Hey, that's fine. Yeah, we sure can. She'll come trespass on you and then if you don't leave, you'll just go to jail for trespassing.",
+      "readings": {
+        "mixture": {
+          "unprompted": {
+            "text": "We can disagree to agree.",
+            "average_log_probability": -0.6944311459859213,
+            "language_probability": 1
+          },
+          "context_prompted": {
+            "text": "We can disagree to agree.",
+            "average_log_probability": -0.6000967025756836,
+            "language_probability": 1
+          }
+        },
+        "stream_1": {
+          "unprompted": {
+            "text": "We can disagree to agree.",
+            "average_log_probability": -0.5846808751424154,
+            "language_probability": 1
+          },
+          "context_prompted": {
+            "text": "We can disagree to agree.",
+            "average_log_probability": -0.5083225038316515,
+            "language_probability": 1
+          }
+        },
+        "stream_2": {
+          "unprompted": {
+            "text": "Yeah",
+            "average_log_probability": -0.8913596570491791,
+            "language_probability": 1
+          },
+          "context_prompted": {
+            "text": "Yeah.",
+            "average_log_probability": -0.7342259883880615,
+            "language_probability": 1
+          }
+        }
+      },
+      "unprompted_cross_audio": {
+        "level": "strong_cross_audio_corroboration",
+        "token_f1": 1.0,
+        "ordered_common_words": [
+          "we",
+          "can",
+          "disagree",
+          "to",
+          "agree"
+        ]
+      },
+      "context_prompted_cross_audio": {
+        "level": "strong_cross_audio_corroboration",
+        "token_f1": 1.0,
+        "ordered_common_words": [
+          "we",
+          "can",
+          "disagree",
+          "to",
+          "agree"
+        ]
+      },
+      "automatic_text_insertion": false
+    },
+    {
+      "review_id": "10-0096",
+      "baseline_index": 96,
+      "start": 176.005,
+      "end": 177.046,
+      "human_outcome": "mixed_but_useful",
+      "baseline_text": "That's not being hostile.",
+      "selected_stream": 1,
+      "surrounding_prompt": "Nearby dialogue for names and vocabulary only: All I'm asking is you stand on the gray and you won't do that. I'm disagreeing with you. Hey, that's fine. We can disagree to disagree.",
+      "readings": {
+        "mixture": {
+          "unprompted": {
+            "text": "That's not being possible.",
+            "average_log_probability": -0.628136846754286,
+            "language_probability": 1
+          },
+          "context_prompted": {
+            "text": "That's not being possible.",
+            "average_log_probability": -0.5358289082845052,
+            "language_probability": 1
+          }
+        },
+        "stream_1": {
+          "unprompted": {
+            "text": "Okay. Not being hostile.",
+            "average_log_probability": -0.6142176823182539,
+            "language_probability": 1
+          },
+          "context_prompted": {
+            "text": "Okay.",
+            "average_log_probability": -0.7615270614624023,
+            "language_probability": 1
+          }
+        },
+        "stream_2": {
+          "unprompted": {
+            "text": "That's not... Hey, that's...",
+            "average_log_probability": -0.5938170750935873,
+            "language_probability": 1
+          },
+          "context_prompted": {
+            "text": "That's not... Hey, that's...",
+            "average_log_probability": -0.47958582639694214,
+            "language_probability": 1
+          }
+        }
+      },
+      "unprompted_cross_audio": {
+        "level": "partial_cross_audio_corroboration",
+        "token_f1": 0.5,
+        "ordered_common_words": [
+          "not",
+          "being"
+        ]
+      },
+      "context_prompted_cross_audio": {
+        "level": "not_corroborated",
+        "token_f1": 0.0,
+        "ordered_common_words": []
+      },
+      "automatic_text_insertion": false
+    },
+    {
+      "review_id": "11-0123",
+      "baseline_index": 123,
+      "start": 214.018,
+      "end": 216.139,
+      "human_outcome": "not_target",
+      "baseline_text": "I have people willing to sign an affidavit.",
+      "selected_stream": 2,
+      "surrounding_prompt": "Nearby dialogue for names and vocabulary only: No. Good morning, God bless homeless veterans. That's all I need. That's all you need?",
+      "readings": {
+        "mixture": {
+          "unprompted": {
+            "text": "I have people signed, we're really excited to have a David.",
+            "average_log_probability": -0.6942193648394417,
+            "language_probability": 1
+          },
+          "context_prompted": {
+            "text": "I have people signed, really decided to have a David.",
+            "average_log_probability": -0.5430741786956788,
+            "language_probability": 1
+          }
+        },
+        "stream_1": {
+          "unprompted": {
+            "text": "I have people willing to sign an affidavit.",
+            "average_log_probability": -0.42758936484654747,
+            "language_probability": 1
+          },
+          "context_prompted": {
+            "text": "I have people willing to sign in affidavit.",
+            "average_log_probability": -0.36391061544418335,
+            "language_probability": 1
+          }
+        },
+        "stream_2": {
+          "unprompted": {
+            "text": "Please pray for your humblest rest.",
+            "average_log_probability": -0.8734249472618103,
+            "language_probability": 1
+          },
+          "context_prompted": {
+            "text": "Please pray for your homeless veterans.",
+            "average_log_probability": -0.5877398550510406,
+            "language_probability": 1
+          }
+        }
+      },
+      "unprompted_cross_audio": {
+        "level": "not_corroborated",
+        "token_f1": 0.0,
+        "ordered_common_words": []
+      },
+      "context_prompted_cross_audio": {
+        "level": "not_corroborated",
+        "token_f1": 0.0,
+        "ordered_common_words": []
+      },
+      "automatic_text_insertion": false
+    },
+    {
+      "review_id": "12-0211",
+      "baseline_index": 211,
+      "start": 396.511,
+      "end": 397.791,
+      "human_outcome": "mixed_but_useful",
+      "baseline_text": "Excuse me, I don't have to give you ID.",
+      "selected_stream": 2,
+      "surrounding_prompt": "Nearby dialogue for names and vocabulary only: Yeah, and there's no crime being committed, so I don't have to give you ID. Stop. That is a formal trespass. You have to give me your identification card.",
+      "readings": {
+        "mixture": {
+          "unprompted": {
+            "text": "Excuse me. I don't want to. That is a form.",
+            "average_log_probability": -0.5305165336245582,
+            "language_probability": 1
+          },
+          "context_prompted": {
+            "text": "Excuse me. I don't have to. That is a formal trespass.",
+            "average_log_probability": -0.47118306159973145,
+            "language_probability": 1
+          }
+        },
+        "stream_1": {
+          "unprompted": {
+            "text": "Excuse me. That is a point.",
+            "average_log_probability": -0.7578179102677566,
+            "language_probability": 1
+          },
+          "context_prompted": {
+            "text": "Excuse me. That is a formal trespass.",
+            "average_log_probability": -0.40238368113835654,
+            "language_probability": 1
+          }
+        },
+        "stream_2": {
+          "unprompted": {
+            "text": "I don't have to",
+            "average_log_probability": -0.6079800054430962,
+            "language_probability": 1
+          },
+          "context_prompted": {
+            "text": "I don't have your ID.",
+            "average_log_probability": -0.6228273332118988,
+            "language_probability": 1
+          }
+        }
+      },
+      "unprompted_cross_audio": {
+        "level": "partial_cross_audio_corroboration",
+        "token_f1": 0.4285714285714285,
+        "ordered_common_words": [
+          "i",
+          "don't",
+          "to"
+        ]
+      },
+      "context_prompted_cross_audio": {
+        "level": "not_corroborated",
+        "token_f1": 0.37499999999999994,
+        "ordered_common_words": [
+          "i",
+          "don't",
+          "have"
+        ]
+      },
+      "automatic_text_insertion": false
+    },
+    {
+      "review_id": "13-0097",
+      "baseline_index": 97,
+      "start": 177.066,
+      "end": 178.007,
+      "human_outcome": "wrong_or_garbled",
+      "baseline_text": "Hey, that's fine.",
+      "selected_stream": 1,
+      "surrounding_prompt": "Nearby dialogue for names and vocabulary only: I'm disagreeing with you. That's not being hostile. We can disagree to disagree. Yeah, we sure can.",
+      "readings": {
+        "mixture": {
+          "unprompted": {
+            "text": "I haven't uh",
+            "average_log_probability": -0.77726263659341,
+            "language_probability": 1
+          },
+          "context_prompted": {
+            "text": "I haven't, uh...",
+            "average_log_probability": -0.9342969258626302,
+            "language_probability": 1
+          }
+        },
+        "stream_1": {
+          "unprompted": {
+            "text": "I have it, yeah.",
+            "average_log_probability": -0.7048477596706815,
+            "language_probability": 1
+          },
+          "context_prompted": {
+            "text": "I haven't, yeah.",
+            "average_log_probability": -0.6534243159823947,
+            "language_probability": 1
+          }
+        },
+        "stream_2": {
+          "unprompted": {
+            "text": "Fine.",
+            "average_log_probability": -1.0241937637329102,
+            "language_probability": 1
+          },
+          "context_prompted": {
+            "text": "It's fine.",
+            "average_log_probability": -0.8232011113848005,
+            "language_probability": 1
+          }
+        }
+      },
+      "unprompted_cross_audio": {
+        "level": "not_corroborated",
+        "token_f1": 0.28571428571428575,
+        "ordered_common_words": [
+          "i"
+        ]
+      },
+      "context_prompted_cross_audio": {
+        "level": "strong_cross_audio_corroboration",
+        "token_f1": 0.6666666666666666,
+        "ordered_common_words": [
+          "i",
+          "haven't"
+        ]
+      },
+      "automatic_text_insertion": false
+    },
+    {
+      "review_id": "14-0132",
+      "baseline_index": 132,
+      "start": 227.742,
+      "end": 228.862,
+      "human_outcome": "wrong_or_garbled",
+      "baseline_text": "I know you're a police officer.",
+      "selected_stream": 2,
+      "surrounding_prompt": "Nearby dialogue for names and vocabulary only: Okay. That's what I recommend you do. I just thought you were a security guard. I apologize for that.",
+      "readings": {
+        "mixture": {
+          "unprompted": {
+            "text": "I told you that from the",
+            "average_log_probability": -0.7250435087415907,
+            "language_probability": 1
+          },
+          "context_prompted": {
+            "text": "I told you that from the beginning.",
+            "average_log_probability": -0.773702697320418,
+            "language_probability": 1
+          }
+        },
+        "stream_1": {
+          "unprompted": {
+            "text": "I told you that from the-",
+            "average_log_probability": -0.5196762800216674,
+            "language_probability": 1
+          },
+          "context_prompted": {
+            "text": "I told you that from the...",
+            "average_log_probability": -0.5475975394248962,
+            "language_probability": 1
+          }
+        },
+        "stream_2": {
+          "unprompted": {
+            "text": "what I",
+            "average_log_probability": -0.9406584739685059,
+            "language_probability": 1
+          },
+          "context_prompted": {
+            "text": "What I",
+            "average_log_probability": -0.8597321510314941,
+            "language_probability": 1
+          }
+        }
+      },
+      "unprompted_cross_audio": {
+        "level": "not_corroborated",
+        "token_f1": 0.25,
+        "ordered_common_words": [
+          "i"
+        ]
+      },
+      "context_prompted_cross_audio": {
+        "level": "not_corroborated",
+        "token_f1": 0.22222222222222224,
+        "ordered_common_words": [
+          "i"
+        ]
+      },
+      "automatic_text_insertion": false
+    },
+    {
+      "review_id": "15-0141",
+      "baseline_index": 141,
+      "start": 246.875,
+      "end": 247.696,
+      "human_outcome": "cleaner_same_target_line",
+      "baseline_text": "This is free speech.",
+      "selected_stream": 1,
+      "surrounding_prompt": "Nearby dialogue for names and vocabulary only: This is public property. I have a right to be here. So it's based on the content of my speech. If I'm just saying, hi, God bless homeless veterans, then I'm okay.",
+      "readings": {
+        "mixture": {
+          "unprompted": {
+            "text": "This is free speech permit.",
+            "average_log_probability": -0.782811164855957,
+            "language_probability": 1
+          },
+          "context_prompted": {
+            "text": "This is free speech permit.",
+            "average_log_probability": -0.5636781056722006,
+            "language_probability": 1
+          }
+        },
+        "stream_1": {
+          "unprompted": {
+            "text": "This is pretty speed.",
+            "average_log_probability": -0.7190273255109787,
+            "language_probability": 1
+          },
+          "context_prompted": {
+            "text": "This is pre-speak.",
+            "average_log_probability": -0.6839564859867096,
+            "language_probability": 1
+          }
+        },
+        "stream_2": {
+          "unprompted": {
+            "text": "Have a good day. Hermit.",
+            "average_log_probability": -0.6709015186016376,
+            "language_probability": 1
+          },
+          "context_prompted": {
+            "text": "Have a good day. Bye.",
+            "average_log_probability": -0.6849899490674337,
+            "language_probability": 1
+          }
+        }
+      },
+      "unprompted_cross_audio": {
+        "level": "partial_cross_audio_corroboration",
+        "token_f1": 0.4444444444444445,
+        "ordered_common_words": [
+          "this",
+          "is"
+        ]
+      },
+      "context_prompted_cross_audio": {
+        "level": "partial_cross_audio_corroboration",
+        "token_f1": 0.4444444444444445,
+        "ordered_common_words": [
+          "this",
+          "is"
+        ]
+      },
+      "automatic_text_insertion": false
+    }
+  ]
+}
