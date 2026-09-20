@@ -5,6 +5,7 @@ import base64
 import json
 from pathlib import Path
 import pprint
+import zlib
 
 
 ROOT = Path(__file__).resolve().parent
@@ -49,12 +50,14 @@ def main():
         "test_diaper_overlap.py",
     ]
     embedded = {name: (ROOT / name).read_text() for name in source_names}
+    source_archive = base64.b64encode(zlib.compress(
+        json.dumps(embedded).encode("utf-8"), level=9
+    )).decode("ascii")
     binary_paths = {
         "face_embeddings.npy": args.reference_dir / "face_embeddings.npy",
         "voice_embeddings.npy": args.reference_dir / "voice_embeddings.npy",
         "reference.json": args.reference_dir / "reference.json",
         "opening_officer_reference.npy": args.opening_reference,
-        "auditor_enrollment.wav": args.enrollment,
     }
     encoded = {
         name: base64.b64encode(path.read_bytes()).decode("ascii")
@@ -121,7 +124,9 @@ print('Setup will use:', PYTHON)
         f"REQUIRE_OVERLAP_POLICY = {args.require_overlap_policy!r}",
     )
 
-    setup = f'''EMBEDDED_FILES = {pprint.pformat(embedded, width=100)}
+    setup = f'''import zlib
+SOURCE_ARCHIVE = {source_archive!r}
+EMBEDDED_FILES = json.loads(zlib.decompress(base64.b64decode(SOURCE_ARCHIVE)))
 for name, source in EMBEDDED_FILES.items():
     (WORK/name).write_text(source)
 
@@ -226,6 +231,18 @@ for name, value in REFERENCE_FILES.items():
     content = base64.b64decode(value)
     (REFERENCE/name).write_bytes(content)
     reference_hashes[name] = hashlib.sha256(content).hexdigest()
+enrollment_candidates = (list(Path('/kaggle/input').rglob('auditor_enrollment.wav'))
+                         if ON_KAGGLE else [{str(args.enrollment)!r}])
+enrollment_candidates = [Path(path) for path in enrollment_candidates if Path(path).is_file()]
+if not enrollment_candidates:
+    raise RuntimeError('The attached Kaggle dataset must contain auditor_enrollment.wav')
+enrollment_hashes = {{hashlib.sha256(path.read_bytes()).hexdigest(): path
+                     for path in enrollment_candidates}}
+if len(enrollment_hashes) > 1:
+    raise RuntimeError('Found multiple different auditor_enrollment.wav files in attached datasets')
+enrollment_source = next(iter(enrollment_hashes.values()))
+shutil.copy2(enrollment_source, REFERENCE/'auditor_enrollment.wav')
+reference_hashes['auditor_enrollment.wav'] = next(iter(enrollment_hashes))
 (RESULTS/'reference-hashes.json').write_text(json.dumps(reference_hashes, indent=2))
 print('Reference bundle ready:', reference_hashes)
 '''

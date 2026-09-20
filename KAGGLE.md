@@ -7,6 +7,12 @@ providers printed. CPU remains supported. GPU execution still requires a cloud s
 
 ## Setup
 
+The compact current notebook uses two attached private datasets: the video and
+caption dataset, plus a reusable reference dataset containing
+`auditor_enrollment.wav`. The source code is compressed inside the notebook;
+the larger enrollment WAV stays in the attached dataset so Kaggle can save and
+version the notebook normally.
+
 1. Build the private dataset upload archive with `python prepare_kaggle_bundle.py --output /path/to/kaggle_diarization_bundle.zip`.
 2. Create a **private** Kaggle Dataset from that archive and let Kaggle extract it.
 3. Import `kaggle_full_video.ipynb` into a **private** Kaggle Notebook. Attach the dataset,
