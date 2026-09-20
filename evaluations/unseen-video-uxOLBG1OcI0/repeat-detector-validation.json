@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "source_archive": "diarization-results(20).zip",
+  "video_id": "uxOLBG1OcI0",
+  "reported_notebook_revision": "unseen-video-caption-gap-v29",
+  "revision_note": "The notebook contained the new detector but retained the old revision label; the builder now reports compact-text-repeat-v30.",
+  "baseline_segments": 227,
+  "baseline_segments_identical_to_initial_run": true,
+  "opening_control_candidates": 0,
+  "full_video_candidates": [
+    {
+      "left_start": 212.935,
+      "right_start": 239.457,
+      "text_similarity": 0.9775862068965517,
+      "previously_human_confirmed": true
+    },
+    {
+      "left_start": 226.839,
+      "right_start": 255.79,
+      "text_similarity": 0.7492525252525253,
+      "previously_human_confirmed": true
+    },
+    {
+      "left_start": 357.048,
+      "right_start": 369.354,
+      "text_similarity": 0.8499999999999999,
+      "previously_human_confirmed": true
+    }
+  ],
+  "automatic_text_replacements": 0,
+  "automatic_speaker_changes": 0,
+  "conclusion": "The implementation reproduces all three confirmed calibration-video repeats without changing the baseline. Precision on an untouched second video remains unmeasured."
+}

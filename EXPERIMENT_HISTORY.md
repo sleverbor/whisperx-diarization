@@ -188,6 +188,10 @@ The resulting bounded-window matcher recovers exactly those three confirmed
 pairs on the unseen run. It is an evidence exporter only: it preserves both
 recordings and cannot change transcript text or speaker identity.
 
+A Kaggle rerun confirmed the same three candidates with no opening-control
+candidate and no baseline changes. This is a calibration-video implementation
+check; a later untouched video is still needed to estimate general precision.
+
 Source: [focused unseen-video review](evaluations/unseen-video-uxOLBG1OcI0/RESULTS.md).
 
 ## Methods rejected as automatic rules

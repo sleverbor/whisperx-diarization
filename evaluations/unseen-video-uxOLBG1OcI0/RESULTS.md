@@ -114,6 +114,24 @@ pairs on this run, at approximately 212.94↔239.46, 226.84↔255.79, and
 three as review-only and explicitly disables automatic text replacement and
 speaker changes.
 
+### Kaggle validation run
+
+The subsequent Kaggle run exported the same three candidates and no candidates
+from the opening 30-second control clip. Its 227 baseline segments, final
+speaker assignments, target track, affinity values, and confidence-filtered
+summary are identical to the preserved initial run. MossFormer2, caption gaps,
+DiaPer, and the overlap-extraction summary are also unchanged. The targeted
+review decoder emitted 212 rather than 224 hypotheses, but retained the same 16
+target hypotheses; this supplemental decoder variation did not affect the
+baseline.
+
+The reference-promotion candidate and its audio hash are unchanged. Its source
+evidence hash differs only because the new `text_repeat_candidates` top-level
+field is now part of the evidence file.
+
+This validates the implementation against the reviewed calibration video. It
+does not yet measure precision on a second video with unknown repeats.
+
 ## Revised decision
 
 Do not loosen target-voice or face thresholds from this run. The apparent later
