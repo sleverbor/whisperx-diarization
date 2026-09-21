@@ -43,6 +43,21 @@ class MossFormer2ReviewPolicyTest(unittest.TestCase):
         self.assertFalse(row["automatic_candidate_transcription_use"])
         self.assertEqual(row["transcript_review_class"],
                          "baseline_corroboration")
+        self.assertTrue(row["baseline_ownership_corroborated"])
+
+    def test_corroboration_requires_similarity_margin_and_word_agreement(self):
+        weak_similarity = apply_review_policy(self.report(.20, .01))["segments"][0]
+        self.assertFalse(weak_similarity["baseline_ownership_corroborated"])
+
+        weak_margin = apply_review_policy(self.report(.30, .11))["segments"][0]
+        self.assertFalse(weak_margin["baseline_ownership_corroborated"])
+
+        weak_words = self.report(.40, .01)
+        weak_words["results"][0]["streams"][0]["transcription"]["text"] = "unrelated"
+        row = apply_review_policy(weak_words)["segments"][0]
+        self.assertFalse(row["baseline_ownership_corroborated"])
+        self.assertFalse(row["speaker_identity_changed"])
+        self.assertFalse(row["baseline_text_changed"])
 
     def test_novel_words_are_flagged_even_with_strong_voice_identity(self):
         report = self.report(.50, .01)

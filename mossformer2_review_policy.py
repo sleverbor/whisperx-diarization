@@ -11,6 +11,9 @@ from review_overlap_extraction import select_overlap_segments
 
 MINIMUM_TARGET_SIMILARITY = 0.15
 MINIMUM_TARGET_MARGIN = 0.08
+CORROBORATION_MINIMUM_TARGET_SIMILARITY = 0.25
+CORROBORATION_MINIMUM_TARGET_MARGIN = 0.20
+CORROBORATION_MINIMUM_BASELINE_TOKEN_F1 = 0.60
 
 
 def token_f1(reference, hypothesis):
@@ -70,6 +73,12 @@ def apply_review_policy(report):
             similarity >= MINIMUM_TARGET_SIMILARITY
             and margin >= MINIMUM_TARGET_MARGIN
         )
+        ownership_corroborated = (
+            accepted
+            and similarity >= CORROBORATION_MINIMUM_TARGET_SIMILARITY
+            and margin >= CORROBORATION_MINIMUM_TARGET_MARGIN
+            and baseline_overlap >= CORROBORATION_MINIMUM_BASELINE_TOKEN_F1
+        )
         decisions.append({
             "exchange_id": result.get("exchange_id"),
             "baseline_index": result["baseline_index"],
@@ -100,6 +109,7 @@ def apply_review_policy(report):
             ),
             "target_similarity": similarity,
             "target_margin": margin,
+            "baseline_ownership_corroborated": ownership_corroborated,
             "review_required": accepted,
             "mixed_speaker_risk": accepted,
             "automatic_text_insertion": False,
@@ -113,6 +123,13 @@ def apply_review_policy(report):
         "policy": {
             "minimum_target_similarity": MINIMUM_TARGET_SIMILARITY,
             "minimum_target_margin": MINIMUM_TARGET_MARGIN,
+            "ownership_corroboration": {
+                "minimum_target_similarity": CORROBORATION_MINIMUM_TARGET_SIMILARITY,
+                "minimum_target_margin": CORROBORATION_MINIMUM_TARGET_MARGIN,
+                "minimum_baseline_token_f1": CORROBORATION_MINIMUM_BASELINE_TOKEN_F1,
+                "changes_speaker_identity": False,
+                "changes_baseline_text": False,
+            },
             "review_only": True,
             "mixed_streams_never_replace_baseline": True,
             "voice_scores_do_not_validate_candidate_words": True,
@@ -129,6 +146,9 @@ def apply_review_policy(report):
             ),
             "automatic_insertions": 0,
             "candidate_transcriptions_approved": 0,
+            "baseline_ownership_corroborated": sum(
+                row["baseline_ownership_corroborated"] for row in decisions
+            ),
         },
         "segments": decisions,
     }
