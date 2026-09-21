@@ -751,6 +751,20 @@ try:
         display(FileLink(overlap_zip.name))
 finally:
     os.chdir(prior_cwd)
+if ON_KAGGLE:
+    # Kaggle publishes everything under /kaggle/working. Keep only the four
+    # downloadable archives instead of uploading the virtual environment,
+    # model caches, source video, and unpacked duplicate results.
+    cleanup_paths = [
+        RESULTS, CACHE.parent, WORK, VENV, BASE/'bootstrap-tools',
+        BASE/'huggingface-cache', BASE/'speechbrain-cache',
+        BASE/'matplotlib-cache', BASE/'numba-cache', BASE/'insightface',
+    ]
+    for cleanup_path in cleanup_paths:
+        if cleanup_path.is_dir():
+            shutil.rmtree(cleanup_path, ignore_errors=True)
+        elif cleanup_path.exists():
+            cleanup_path.unlink()
 print('Saved in:', BASE)
 print('If Kaggle blocks a link, download the same ZIP from the Output panel.')
 '''
