@@ -115,6 +115,18 @@ The transcript wording still needs audio verification, and general accuracy rema
 
 See [KAGGLE.md](KAGGLE.md) and `kaggle_full_video.ipynb` for the private GPU runner.
 
+## Build a reference for another auditor
+
+The local [auditor reference collector](tools/auditor_reference_collector/README.md)
+accepts confirmed face images and operator-selected YouTube windows, keeps voice
+and face approvals separate, supports trimming mixed clips, and exports the
+SpeechBrain and InsightFace arrays used by this pipeline. Its media library and
+biometric data remain local and are ignored by Git.
+
+```bash
+tools/auditor_reference_collector/run_auditor_collector.sh
+```
+
 ## Experimental transcription coverage
 
 See [COVERAGE_TEST.md](COVERAGE_TEST.md) and `diarization_coverage_compare.ipynb` for paired short-clip tests.

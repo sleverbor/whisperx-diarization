@@ -44,3 +44,16 @@ separated/
 !test_reference_promotion.py
 .cloud-cache/
 !prepare_kaggle_bundle.py
+
+# Interactive auditor reference collector source; private libraries stay local.
+!tools/
+!tools/auditor_reference_collector/
+!tools/auditor_reference_collector/*.py
+!tools/auditor_reference_collector/*.md
+!tools/auditor_reference_collector/*.txt
+!tools/auditor_reference_collector/*.sh
+!tools/auditor_reference_collector/collector/
+!tools/auditor_reference_collector/collector/index.html
+tools/auditor_reference_collector/auditor-library/
+tools/auditor_reference_collector/.collector-deps/
+tools/auditor_reference_collector/.venv/
