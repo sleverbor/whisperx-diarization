@@ -174,10 +174,18 @@ checked([PYTHON, '-m', 'pip', 'install',
 # directory. Keep the checkout and put it first on PYTHONPATH so the complete
 # source tree is used, while pip still installs all declared dependencies.
 WESEP_SOURCE = WORK/'vendor'/'wesep'
-if not (WESEP_SOURCE/'wesep'/'utils'/'utils.py').is_file():
+WESEP_REVISION = '99eca54b60300d39b9353d93cf285a14bba37854'
+wesep_revision_file = WESEP_SOURCE/'.codex-compatible-revision'
+if (not (WESEP_SOURCE/'wesep'/'utils'/'utils.py').is_file()
+        or not wesep_revision_file.is_file()
+        or wesep_revision_file.read_text().strip() != WESEP_REVISION):
+    if WESEP_SOURCE.exists():
+        shutil.rmtree(WESEP_SOURCE)
     WESEP_SOURCE.parent.mkdir(parents=True, exist_ok=True)
-    checked(['git', 'clone', '--depth', '1',
+    checked(['git', 'clone', '--no-checkout',
              'https://github.com/wenet-e2e/wesep.git', str(WESEP_SOURCE)])
+    checked(['git', '-C', str(WESEP_SOURCE), 'checkout', WESEP_REVISION])
+    wesep_revision_file.write_text(WESEP_REVISION + '\\n')
 checked([PYTHON, '-m', 'pip', 'install', str(WESEP_SOURCE)])
 # The upstream wheel omits wesep/utils because that directory has no
 # __init__.py. Overlay the complete checkout onto site-packages so imports do
@@ -210,10 +218,12 @@ ENV['LD_LIBRARY_PATH'] = library_dirs + ':' + ENV.get('LD_LIBRARY_PATH', '')
 print('4/4: Verifying GPU imports and focused behavior tests', flush=True)
 verification = """import torch,onnxruntime as ort,wrapt,wesep
 import chainofrules,repeat_evidence
+from wesep.models import get_model
 print('Torch:', torch.__version__, 'CUDA build:', torch.version.cuda)
 print('GPU:', torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'NONE (local CPU)')
 print('ONNX providers:', ort.get_available_providers())
 print('WeSep repaired package:', wesep.__file__)
+assert get_model('BSRNN').__name__ == 'BSRNN', 'WeSep English checkpoint is incompatible'
 """
 if ON_KAGGLE:
     verification += "assert torch.cuda.is_available(), 'Kaggle GPU is unavailable'\\nassert 'CUDAExecutionProvider' in ort.get_available_providers(), 'GPU ONNX runtime is unavailable'\\n"
