@@ -24,7 +24,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--reference-dir", type=Path, required=True)
     parser.add_argument("--enrollment", type=Path, required=True)
-    parser.add_argument("--opening-reference", type=Path, required=True)
+    parser.add_argument("--opening-reference", type=Path)
     parser.add_argument("--video-url",
                         default="https://www.youtube.com/watch?v=uxOLBG1OcI0")
     parser.add_argument("--require-overlap-policy", action="store_true")
@@ -57,8 +57,9 @@ def main():
         "face_embeddings.npy": args.reference_dir / "face_embeddings.npy",
         "voice_embeddings.npy": args.reference_dir / "voice_embeddings.npy",
         "reference.json": args.reference_dir / "reference.json",
-        "opening_officer_reference.npy": args.opening_reference,
     }
+    if args.opening_reference is not None:
+        binary_paths["opening_officer_reference.npy"] = args.opening_reference
     encoded = {
         name: base64.b64encode(path.read_bytes()).decode("ascii")
         for name, path in binary_paths.items()
@@ -77,6 +78,7 @@ RUN_OVERLAP_EXTRACTION = True
 RUN_MOSSFORMER2_REVIEW = True
 RUN_CAPTION_GAP_REVIEW = True
 RUN_DIAPER_OVERLAP = True
+HAS_OPENING_REFERENCE = True
 REVIEW_WEAK_CONFIDENCE = 0.35
 REVIEW_SHORT_SECONDS = 1.0
 BATCH_SIZE = 4
@@ -122,6 +124,9 @@ print('Setup will use:', PYTHON)
     ).replace(
         "REQUIRE_OVERLAP_POLICY = True",
         f"REQUIRE_OVERLAP_POLICY = {args.require_overlap_policy!r}",
+    ).replace(
+        "HAS_OPENING_REFERENCE = True",
+        f"HAS_OPENING_REFERENCE = {args.opening_reference is not None!r}",
     )
 
     setup = f'''import zlib
@@ -446,11 +451,13 @@ def run_targeted_review():
     command = [PYTHON, str(WORK/'review_transcript_regions.py'), '--video', str(VIDEO),
         '--baseline', str(RESULTS/'full_video_evidence.json'),
         '--target-reference', str(REFERENCE/'voice_embeddings.npy'),
-        '--other-reference', 'Opening_officer='+str(REFERENCE/'opening_officer_reference.npy'),
         '--output-dir', str(output_dir), '--cache-dir', str(CACHE/'targeted-review'),
         '--weak-confidence', str(REVIEW_WEAK_CONFIDENCE), '--short-seconds', str(REVIEW_SHORT_SECONDS),
         '--minimum-gap', '5', '--context-seconds', '3', '--maximum-window-seconds', '30',
         '--window-overlap-seconds', '4', '--device', 'cuda' if ON_KAGGLE else 'auto']
+    if HAS_OPENING_REFERENCE:
+        command += ['--other-reference',
+                    'Opening_officer='+str(REFERENCE/'opening_officer_reference.npy')]
     before = (RESULTS/'full_video_evidence.json').read_bytes()
     try:
         stream(command, 'targeted-review.log', 'Targeted review failed; see the saved log.')
