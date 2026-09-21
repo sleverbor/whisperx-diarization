@@ -1,10 +1,48 @@
 import tempfile
 import unittest
 from types import SimpleNamespace
-from cloud_runtime import StageCache, create_face_analyzer, full_audio_chunks, create_full_audio_vad
+from cloud_runtime import (ResumableWorkSet, StageCache, create_face_analyzer,
+    full_audio_chunks, create_full_audio_vad)
 
 
 class CloudRuntimeTests(unittest.TestCase):
+    def test_resumable_work_set_keeps_only_complete_valid_items(self):
+        from pathlib import Path
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            artifact = root/"audio.wav"; artifact.write_bytes(b"one")
+            work = ResumableWorkSet(root/"cache", {"video":"a", "model":"one"})
+            work.complete("segment/1", {"score": .8}, [artifact])
+            self.assertEqual(work.read("segment/1"), {"score": .8})
+            self.assertEqual(work.progress(["segment/1","segment/2"])["pending"], ["segment/2"])
+            artifact.write_bytes(b"changed")
+            self.assertIsNone(work.read("segment/1"))
+
+    def test_resumable_work_set_ignores_partial_and_changed_configuration(self):
+        from pathlib import Path
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            first = ResumableWorkSet(root, {"model":"one"})
+            partial = first._path("x").with_suffix(".json.tmp")
+            partial.parent.mkdir(parents=True, exist_ok=True); partial.write_text('{')
+            self.assertIsNone(first.read("x"))
+            first.complete("x", {"ok": True})
+            second = ResumableWorkSet(root, {"model":"two"})
+            self.assertIsNone(second.read("x"))
+
+    def test_resumable_work_set_snapshot_is_atomic_and_portable(self):
+        from pathlib import Path
+        import zipfile
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory); work = ResumableWorkSet(root/"cache", {"model":"one"})
+            work.complete("x", {"ok": True})
+            archive = work.snapshot(root/"progress.zip")
+            self.assertTrue(archive.is_file())
+            self.assertFalse((root/"progress.zip.building.zip").exists())
+            with zipfile.ZipFile(archive) as saved:
+                self.assertTrue(any(name.endswith("manifest.json") for name in saved.namelist()))
+                self.assertTrue(any("items/x-" in name for name in saved.namelist()))
+
     def test_cache_reuses_completed_stage_and_isolates_changed_inputs(self):
         with tempfile.TemporaryDirectory() as directory:
             cache = StageCache(directory, {"video": "one", "code": "one"})

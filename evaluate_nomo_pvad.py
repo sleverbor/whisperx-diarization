@@ -12,6 +12,7 @@ import sys
 import numpy as np
 
 from sentence_ownership_probe import sha256
+from cloud_runtime import ResumableWorkSet, atomic_json
 
 
 def decode_audio(path, start=None, end=None):
@@ -90,22 +91,40 @@ def main():
     parser.add_argument("--nomo-dir", type=Path, required=True)
     parser.add_argument("--eres2netv2-dir", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument("--cache-dir", type=Path)
+    parser.add_argument("--snapshot-archive", type=Path,
+                        help="Atomically refresh a portable checkpoint zip")
+    parser.add_argument("--snapshot-every", type=int, default=5)
     parser.add_argument("--device", default="cpu")
     parser.add_argument("--context", type=float, default=2.4)
     args = parser.parse_args()
+    if args.snapshot_every < 1: parser.error("Snapshot interval must be positive")
     for path in (args.video, args.enrollment, args.manifest, args.nomo_dir,
                  args.eres2netv2_dir):
         if not path.exists(): parser.error(f"Missing input: {path}")
-    sys.path.insert(0, str(args.nomo_dir.resolve()))
-    from nomo_pvad import NomoPVAD, NomoPVADSession
-    model = NomoPVAD(str(args.nomo_dir/"weights/nomo_pvad.pt"),
-                    str(args.eres2netv2_dir), device=args.device)
-    session = NomoPVADSession(model)
-    enrollment = decode_audio(args.enrollment)
-    session.set_enrollment(enrollment)
     manifest = json.loads(args.manifest.read_text())
+    fingerprint = {"experiment": "nomo-pvad-evaluation-v1",
+        "video": sha256(args.video), "enrollment": sha256(args.enrollment),
+        "manifest": sha256(args.manifest), "context": args.context,
+        "pvad_weights": sha256(args.nomo_dir/"weights/nomo_pvad.pt"),
+        "enrollment_model": sha256(args.eres2netv2_dir/"pretrained_eres2netv2.ckpt")}
+    work = ResumableWorkSet(args.cache_dir, fingerprint)
     results = []
+    session = None
+    newly_completed = 0
     for case in manifest["cases"]:
+        saved = work.read(case["case_id"])
+        if saved is not None:
+            print("Reusing completed case:", case["case_id"], flush=True)
+            results.append(saved)
+            continue
+        if session is None:
+            sys.path.insert(0, str(args.nomo_dir.resolve()))
+            from nomo_pvad import NomoPVAD, NomoPVADSession
+            model = NomoPVAD(str(args.nomo_dir/"weights/nomo_pvad.pt"),
+                            str(args.eres2netv2_dir), device=args.device)
+            session = NomoPVADSession(model)
+            session.set_enrollment(decode_audio(args.enrollment))
         start, end = float(case["start"]), float(case["end"])
         left, right = max(0.0, start-args.context), end+args.context
         wave = decode_audio(args.video, left, right)
@@ -120,19 +139,25 @@ def main():
             "timeline": [{**time, "probability": float(probability)}
                          for time, probability in zip(times, probabilities)]}
         results.append(result)
+        work.complete(case["case_id"], result)
+        newly_completed += 1
+        if args.snapshot_archive and newly_completed % args.snapshot_every == 0:
+            work.snapshot(args.snapshot_archive)
         print(case["case_id"], case["label"],
               f"mean={result['summary']['mean']:.3f}",
               f"max={result['summary']['maximum']:.3f}", flush=True)
+    if args.snapshot_archive and newly_completed % args.snapshot_every:
+        work.snapshot(args.snapshot_archive)
     thresholds = {str(value): confusion(results, value) for value in (.5, .6, .7)}
     report = {"experimental": True, "model": "nomo-pVAD release-1.1",
         "probability_calibration_assumed": False, "baseline_modified": False,
         "chunk_seconds": .16, "thresholds_fixed_before_evaluation": [.5, .6, .7],
         "provenance": {"video_sha256": sha256(args.video),
             "enrollment_sha256": sha256(args.enrollment),
-            "manifest_sha256": sha256(args.manifest)},
+        "manifest_sha256": sha256(args.manifest)},
+        "resume": work.progress([case["case_id"] for case in manifest["cases"]]),
         "threshold_summary": thresholds, "cases": results}
-    args.output.parent.mkdir(parents=True, exist_ok=True)
-    args.output.write_text(json.dumps(report, indent=2)+"\n")
+    atomic_json(args.output, report)
     print(json.dumps(thresholds, indent=2))
 
 

@@ -3,6 +3,20 @@ import hashlib
 import json
 import os
 from pathlib import Path
+import re
+import shutil
+
+
+def atomic_json(path, value):
+    """Write valid JSON as one atomic replacement, including process flush."""
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temporary = path.with_suffix(path.suffix + ".tmp")
+    with temporary.open("w") as stream:
+        json.dump(value, stream, ensure_ascii=False)
+        stream.flush()
+        os.fsync(stream.fileno())
+    os.replace(temporary, path)
 
 
 def file_digest(path):
@@ -35,9 +49,7 @@ class StageCache:
         if self.root is None:
             return
         path = self.root / (name + ".json")
-        temporary = path.with_suffix(".tmp")
-        temporary.write_text(json.dumps(value, ensure_ascii=False))
-        os.replace(temporary, path)
+        atomic_json(path, value)
 
     def get(self, name, compute):
         value = self.read(name)
@@ -47,6 +59,94 @@ class StageCache:
         value = compute()
         self.write(name, value)
         return value
+
+
+class ResumableWorkSet:
+    """Per-item atomic checkpoints with configuration and artifact validation.
+
+    Only a completed JSON envelope is reusable. Temporary writes, exceptions,
+    absent artifacts, and changed artifact bytes all cause that item to rerun.
+    Different input/model/configuration fingerprints use different directories.
+    """
+    schema_version = 1
+
+    def __init__(self, directory, fingerprint):
+        self.enabled = bool(directory)
+        self.fingerprint = fingerprint
+        self.key = hashlib.sha256(
+            json.dumps(fingerprint, sort_keys=True).encode()).hexdigest()
+        self.root = Path(directory) / self.key if directory else None
+        if self.root is not None:
+            self.root.mkdir(parents=True, exist_ok=True)
+            manifest = self.root / "manifest.json"
+            if manifest.exists():
+                saved = json.loads(manifest.read_text())
+                if saved.get("fingerprint") != fingerprint:
+                    raise ValueError("Checkpoint manifest fingerprint mismatch")
+            else:
+                atomic_json(manifest, {"schema_version": self.schema_version,
+                                       "fingerprint": fingerprint})
+
+    @staticmethod
+    def _filename(item_id):
+        readable = re.sub(r"[^A-Za-z0-9_.-]+", "-", str(item_id)).strip("-")[:80] or "item"
+        suffix = hashlib.sha256(str(item_id).encode()).hexdigest()[:12]
+        return f"{readable}-{suffix}.json"
+
+    def _path(self, item_id):
+        return self.root / "items" / self._filename(item_id)
+
+    def read(self, item_id):
+        if self.root is None:
+            return None
+        path = self._path(item_id)
+        if not path.is_file():
+            return None
+        envelope = json.loads(path.read_text())
+        if (envelope.get("schema_version") != self.schema_version
+                or envelope.get("item_id") != str(item_id)
+                or envelope.get("status") != "complete"):
+            return None
+        for artifact in envelope.get("artifacts", []):
+            artifact_path = Path(artifact["path"])
+            if not artifact_path.is_file() or file_digest(artifact_path) != artifact["sha256"]:
+                return None
+        return envelope.get("result")
+
+    def complete(self, item_id, result, artifacts=()):
+        if self.root is None:
+            return result
+        records = []
+        for artifact in artifacts:
+            path = Path(artifact).resolve()
+            if not path.is_file():
+                raise FileNotFoundError(f"Cannot checkpoint missing artifact: {path}")
+            records.append({"path": str(path), "sha256": file_digest(path),
+                            "bytes": path.stat().st_size})
+        atomic_json(self._path(item_id), {"schema_version": self.schema_version,
+            "item_id": str(item_id), "status": "complete", "artifacts": records,
+            "result": result})
+        return result
+
+    def progress(self, item_ids):
+        completed = [str(item_id) for item_id in item_ids if self.read(item_id) is not None]
+        pending = [str(item_id) for item_id in item_ids if self.read(item_id) is None]
+        return {"fingerprint": self.key, "completed": completed, "pending": pending,
+                "completed_count": len(completed), "pending_count": len(pending)}
+
+    def snapshot(self, archive):
+        """Atomically replace a portable zip containing this fingerprint tree."""
+        if self.root is None:
+            return None
+        archive = Path(archive)
+        archive.parent.mkdir(parents=True, exist_ok=True)
+        temporary_base = archive.parent / (archive.name + ".building")
+        temporary_zip = Path(str(temporary_base) + ".zip")
+        if temporary_zip.exists():
+            temporary_zip.unlink()
+        shutil.make_archive(str(temporary_base), "zip", self.root.parent, self.root.name)
+        os.replace(temporary_zip, archive)
+        return archive
 
 
 def create_face_analyzer(device, ort, factory):
