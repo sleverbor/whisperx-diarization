@@ -69,7 +69,7 @@ import subprocess, sys, os, json, shutil, time, zipfile
 from urllib.parse import urlparse, parse_qs
 
 VIDEO_URL = 'https://www.youtube.com/watch?v=lVfKfbFd0SM'
-NOTEBOOK_REVISION = 'repeat-evidence-tiers-v31'
+NOTEBOOK_REVISION = 'resumable-window-checkpoints-v32'
 REQUIRE_OVERLAP_POLICY = True
 RUN_FULL_VIDEO = True
 RUN_TARGETED_REVIEW = True
@@ -261,6 +261,24 @@ if ON_KAGGLE:
                 if not target.is_relative_to(CACHE.resolve()):
                     raise RuntimeError('Unexpected checkpoint archive path')
             zipped.extractall(BASE)
+    mossformer_cache = CACHE/'mossformer2-items'
+    for archive in Path('/kaggle/input').rglob('mossformer2-checkpoints*.zip'):
+        with zipfile.ZipFile(archive) as zipped:
+            for member in zipped.infolist():
+                target = (mossformer_cache/member.filename).resolve()
+                if not target.is_relative_to(mossformer_cache.resolve()):
+                    raise RuntimeError('Unexpected MossFormer2 checkpoint archive path')
+            zipped.extractall(mossformer_cache)
+        print('Restored per-window MossFormer2 checkpoints:', archive)
+    overlap_cache = CACHE/'overlap-extraction-items'
+    for archive in Path('/kaggle/input').rglob('overlap-extraction-checkpoints*.zip'):
+        with zipfile.ZipFile(archive) as zipped:
+            for member in zipped.infolist():
+                target = (overlap_cache/member.filename).resolve()
+                if not target.is_relative_to(overlap_cache.resolve()):
+                    raise RuntimeError('Unexpected overlap checkpoint archive path')
+            zipped.extractall(overlap_cache)
+        print('Restored per-window overlap checkpoints:', archive)
     expanded_checkpoints = [path for path in Path('/kaggle/input').rglob(VIDEO_ID)
                             if path.is_dir() and path.parent.name == 'stage-cache']
     if len(expanded_checkpoints) > 1:
@@ -445,7 +463,10 @@ def run_overlap_extraction():
         '--enrollment', str(REFERENCE/'auditor_enrollment.wav'),
         '--voice-priors', str(REFERENCE/'voice_embeddings.npy'),
         '--output-dir', str(output_dir), '--device', 'cuda' if ON_KAGGLE else 'cpu',
-        '--whisper-model', 'large-v2']
+        '--whisper-model', 'large-v2',
+        '--cache-dir', str(CACHE/'overlap-extraction-items'),
+        '--snapshot-archive', str(BASE/'overlap-extraction-checkpoints.zip'),
+        '--snapshot-every', '5']
     if OVERLAP_POLICY is not None:
         command += ['--selection-policy', str(OVERLAP_POLICY)]
         print('Using additive Sortformer policy:', OVERLAP_POLICY)
@@ -473,7 +494,10 @@ def run_mossformer2_review():
         '--voice-priors', str(REFERENCE/'voice_embeddings.npy'),
         '--output-dir', str(inference_dir), '--context', '3',
         '--device', 'cuda' if ON_KAGGLE else 'cpu',
-        '--hf-home', str(BASE/'huggingface-cache')]
+        '--hf-home', str(BASE/'huggingface-cache'),
+        '--cache-dir', str(CACHE/'mossformer2-items'),
+        '--snapshot-archive', str(BASE/'mossformer2-checkpoints.zip'),
+        '--snapshot-every', '5']
     ENV['SPEECHBRAIN_CACHE'] = str(
         BASE/'speechbrain-cache'/'spkrec-ecapa-voxceleb')
     before = (RESULTS/'full_video_evidence.json').read_bytes()
@@ -703,12 +727,18 @@ with (RESULTS/'runtime-packages.txt').open('w') as packages:
     checked([PYTHON, '-m', 'pip', 'freeze'], stdout=packages)
 result_zip = Path(shutil.make_archive(str(BASE/'diarization-results'), 'zip', RESULTS))
 checkpoint_zip = BASE/'stage-checkpoints.zip'
+mossformer2_zip = BASE/'mossformer2-checkpoints.zip'
+overlap_zip = BASE/'overlap-extraction-checkpoints.zip'
 prior_cwd = Path.cwd()
 try:
     os.chdir(BASE)
     display(FileLink(result_zip.name))
     if checkpoint_zip.is_file():
         display(FileLink(checkpoint_zip.name))
+    if mossformer2_zip.is_file():
+        display(FileLink(mossformer2_zip.name))
+    if overlap_zip.is_file():
+        display(FileLink(overlap_zip.name))
 finally:
     os.chdir(prior_cwd)
 print('Saved in:', BASE)
@@ -726,7 +756,7 @@ print('If Kaggle blocks a link, download the same ZIP from the Output panel.')
             cell("code", functions),
             cell("markdown", "## Run the opening check, whole video, and additive reviews\n\nThe opening check confirms that face analysis is actually using CUDA. The established stages run first. Automatic captions, when available, identify possible transcript gaps and produce short review clips after nearby wording duplicates are suppressed. Captions never identify speakers or insert text. When the matching v5 Sortformer result dataset is attached, speaker-conditioned extraction processes the union of existing baseline overlap intervals and strong Sortformer additions. MossFormer2 then separates those same review candidates, rejects weak target matches, and exports review-only evidence; it never inserts text or changes speaker identity. DiaPer remains a read-only comparison.\n"),
             cell("code", run),
-            cell("markdown", "## Download results\n\n`diarization-results.zip` contains the preserved baseline, caption-gap review clips when captions are available, existing supplemental reviews, MossFormer2 review-only evidence, DiaPer RTTM and comparison report, logs, and package versions. `stage-checkpoints.zip` can restart expensive baseline stages.\n"),
+            cell("markdown", "## Download results\n\n`diarization-results.zip` contains the preserved baseline, caption-gap review clips when captions are available, existing supplemental reviews, MossFormer2 review-only evidence, DiaPer RTTM and comparison report, logs, and package versions. `stage-checkpoints.zip` restarts the complete workflow. `overlap-extraction-checkpoints.zip` and `mossformer2-checkpoints.zip` are refreshed every five windows and can be attached directly if Kaggle stops during either long stage.\n"),
             cell("code", save),
         ],
         "metadata": {"kernelspec": {"display_name": "Python 3", "language": "python", "name": "python3"},

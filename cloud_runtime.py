@@ -109,7 +109,15 @@ class ResumableWorkSet:
             return None
         for artifact in envelope.get("artifacts", []):
             artifact_path = Path(artifact["path"])
-            if not artifact_path.is_file() or file_digest(artifact_path) != artifact["sha256"]:
+            valid = artifact_path.is_file() and file_digest(artifact_path) == artifact["sha256"]
+            cached = self.root / artifact.get("cached_path", "")
+            if not valid and cached.is_file() and file_digest(cached) == artifact["sha256"]:
+                artifact_path.parent.mkdir(parents=True, exist_ok=True)
+                temporary = artifact_path.with_suffix(artifact_path.suffix + ".tmp")
+                shutil.copy2(cached, temporary)
+                os.replace(temporary, artifact_path)
+                valid = True
+            if not valid:
                 return None
         return envelope.get("result")
 
@@ -121,7 +129,15 @@ class ResumableWorkSet:
             path = Path(artifact).resolve()
             if not path.is_file():
                 raise FileNotFoundError(f"Cannot checkpoint missing artifact: {path}")
-            records.append({"path": str(path), "sha256": file_digest(path),
+            digest = file_digest(path)
+            cached = self.root / "artifacts" / digest if self.root is not None else None
+            if cached is not None and not cached.is_file():
+                cached.parent.mkdir(parents=True, exist_ok=True)
+                temporary = cached.with_suffix(".tmp")
+                shutil.copy2(path, temporary)
+                os.replace(temporary, cached)
+            records.append({"path": str(path), "sha256": digest,
+                            "cached_path": str(cached.relative_to(self.root)) if cached else None,
                             "bytes": path.stat().st_size})
         atomic_json(self._path(item_id), {"schema_version": self.schema_version,
             "item_id": str(item_id), "status": "complete", "artifacts": records,

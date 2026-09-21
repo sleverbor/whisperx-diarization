@@ -1,5 +1,6 @@
 import copy
 import unittest
+from pathlib import Path
 
 from mossformer2_review_policy import apply_review_policy, prepare_labels
 from run_mossformer2_separation_experiment import token_f1
@@ -9,6 +10,13 @@ class MossFormer2ReviewPolicyTest(unittest.TestCase):
     def test_runner_has_self_contained_token_metric(self):
         self.assertEqual(token_f1("there's no", "there's no"), 1.0)
         self.assertEqual(token_f1("", "words"), 0.0)
+
+    def test_runner_checkpoints_each_expensive_stage(self):
+        source = Path("run_mossformer2_separation_experiment.py").read_text()
+        for stage in ("separation", "voice", "asr"):
+            self.assertIn(f'save_item("{stage}"', source)
+            self.assertIn(f'work.read(f"{stage}/', source)
+        self.assertIn("--snapshot-archive", source)
 
     def report(self, first, second):
         return {"results": [{

@@ -14,6 +14,8 @@ import subprocess
 
 import numpy as np
 
+from cloud_runtime import ResumableWorkSet, atomic_json, file_digest
+
 
 def select_overlap_segments(baseline, policy=None):
     """Select the additive union of baseline and strong supplemental review rows."""
@@ -173,7 +175,12 @@ def main():
     parser.add_argument("--wesep-model-dir", type=Path)
     parser.add_argument("--maximum-segments", type=int)
     parser.add_argument("--selection-policy", type=Path)
+    parser.add_argument("--cache-dir", type=Path)
+    parser.add_argument("--snapshot-archive", type=Path)
+    parser.add_argument("--snapshot-every", type=int, default=5)
     args = parser.parse_args()
+    if args.snapshot_every < 1:
+        parser.error("Snapshot interval must be positive")
 
     import soundfile as sf
     import torch
@@ -190,6 +197,19 @@ def main():
     selected = select_overlap_segments(baseline, policy)
     if args.maximum_segments is not None:
         selected = selected[:args.maximum_segments]
+    fingerprint = {
+        "experiment": "overlap-extraction-review-v2",
+        "video": file_digest(args.video),
+        "baseline": file_digest(args.baseline),
+        "enrollment": file_digest(args.enrollment),
+        "voice_priors": file_digest(args.voice_priors),
+        "selection_policy": (file_digest(args.selection_policy)
+                             if args.selection_policy else None),
+        "whisper_model": args.whisper_model,
+        "wesep_model": str(args.wesep_model_dir or "english"),
+    }
+    work = ResumableWorkSet(args.cache_dir, fingerprint)
+    newly_completed = 0
 
     source_stereo = args.output_dir / "source-stereo-16khz.wav"
     subprocess.run(
@@ -238,6 +258,12 @@ def main():
     extracted_dir.mkdir(exist_ok=True)
     results = []
     for number, (baseline_index, segment, overlap) in enumerate(selected, 1):
+        item_id = f"segment-{baseline_index:04d}"
+        saved = work.read(item_id)
+        if saved is not None:
+            results.append(saved)
+            print(f"Reusing overlap {number}/{len(selected)} at {float(segment['start']):.2f}s", flush=True)
+            continue
         start, end = float(segment["start"]), float(segment["end"])
         left, right = max(0, round(start * sample_rate)), min(
             len(full_wave), round(end * sample_rate)
@@ -252,14 +278,19 @@ def main():
             str(original_path), str(args.enrollment)
         )
         if extracted_tensor is None:
-            results.append({
+            result = {
                 "baseline_index": baseline_index,
                 "start": start,
                 "end": end,
                 "baseline_text": segment.get("text", ""),
                 "status": "extractor_returned_no_speech",
                 "review_required": True,
-            })
+            }
+            results.append(result)
+            work.complete(item_id, result, [original_path])
+            newly_completed += 1
+            if args.snapshot_archive and newly_completed % args.snapshot_every == 0:
+                work.snapshot(args.snapshot_archive)
             continue
         extracted = extracted_tensor[0].detach().cpu().numpy()
         extracted_path = extracted_dir / f"overlap-{baseline_index:04d}-target.wav"
@@ -320,7 +351,7 @@ def main():
                     "speaker review and are never inserted into the baseline."
                 ),
             }
-        results.append({
+        result = {
             "baseline_index": baseline_index,
             "start": start,
             "end": end,
@@ -345,7 +376,12 @@ def main():
             "status": status,
             "review_required": True,
             "baseline_modified": False,
-        })
+        }
+        results.append(result)
+        work.complete(item_id, result, [original_path, extracted_path])
+        newly_completed += 1
+        if args.snapshot_archive and newly_completed % args.snapshot_every == 0:
+            work.snapshot(args.snapshot_archive)
         print(
             f"Overlap {number}/{len(selected)} at {start:.2f}s: {status}; "
             f"retention={retention:.3f}; similarity={original_similarity:.3f}"
@@ -381,7 +417,7 @@ def main():
                     "status": counts, "stereo_status": stereo_counts},
         "segments": results,
     }
-    (args.output_dir / "report.json").write_text(json.dumps(report, indent=2) + "\n")
+    atomic_json(args.output_dir / "report.json", report)
     lines = [
         f"[{row['start']:.2f}-{row['end']:.2f}] {row['status']}: "
         f"{row.get('extracted', {}).get('transcription', {}).get('text', '')}; "
@@ -390,6 +426,8 @@ def main():
         for row in results
     ]
     (args.output_dir / "review.txt").write_text("\n".join(lines) + "\n")
+    if args.snapshot_archive:
+        work.snapshot(args.snapshot_archive)
     if args.baseline.read_bytes() != baseline_bytes:
         raise RuntimeError("Baseline changed during supplemental extraction review")
 

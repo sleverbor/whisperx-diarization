@@ -1,4 +1,5 @@
 import unittest
+from pathlib import Path
 
 import numpy as np
 
@@ -9,6 +10,13 @@ from review_overlap_extraction import (
 
 
 class OverlapExtractionReviewTests(unittest.TestCase):
+    def test_runner_supports_per_segment_resume(self):
+        source = Path("review_overlap_extraction.py").read_text()
+        self.assertIn('item_id = f"segment-', source)
+        self.assertIn("work.read(item_id)", source)
+        self.assertIn("work.complete(item_id", source)
+        self.assertIn("--snapshot-archive", source)
+
     def test_selects_only_target_non_target_overlap(self):
         baseline = {"segments": [
             {"text": "yes", "evidence": [{"source": "overlapping_speakers", "details": {"target_and_non_target": True}}]},

@@ -16,6 +16,10 @@ class CloudRuntimeTests(unittest.TestCase):
             self.assertEqual(work.read("segment/1"), {"score": .8})
             self.assertEqual(work.progress(["segment/1","segment/2"])["pending"], ["segment/2"])
             artifact.write_bytes(b"changed")
+            self.assertEqual(work.read("segment/1"), {"score": .8})
+            self.assertEqual(artifact.read_bytes(), b"one")
+            next((work.root/"artifacts").iterdir()).write_bytes(b"corrupt")
+            artifact.write_bytes(b"changed again")
             self.assertIsNone(work.read("segment/1"))
 
     def test_resumable_work_set_ignores_partial_and_changed_configuration(self):
@@ -42,6 +46,24 @@ class CloudRuntimeTests(unittest.TestCase):
             with zipfile.ZipFile(archive) as saved:
                 self.assertTrue(any(name.endswith("manifest.json") for name in saved.namelist()))
                 self.assertTrue(any("items/x-" in name for name in saved.namelist()))
+
+    def test_resumable_work_set_restores_portable_artifact(self):
+        from pathlib import Path
+        import zipfile
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            artifact = root/"result"/"audio.wav"
+            artifact.parent.mkdir(); artifact.write_bytes(b"portable audio")
+            work = ResumableWorkSet(root/"cache", {"model":"one"})
+            work.complete("x", {"audio":"audio.wav"}, [artifact])
+            archive = work.snapshot(root/"progress.zip")
+            artifact.unlink()
+            restored_cache = root/"restored"
+            with zipfile.ZipFile(archive) as saved:
+                saved.extractall(restored_cache)
+            resumed = ResumableWorkSet(restored_cache, {"model":"one"})
+            self.assertEqual(resumed.read("x"), {"audio":"audio.wav"})
+            self.assertEqual(artifact.read_bytes(), b"portable audio")
 
     def test_cache_reuses_completed_stage_and_isolates_changed_inputs(self):
         with tempfile.TemporaryDirectory() as directory:

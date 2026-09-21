@@ -12,6 +12,7 @@ from pathlib import Path
 import numpy as np
 
 from review_overlap_extraction import transcribe, unit
+from cloud_runtime import ResumableWorkSet, atomic_json, file_digest
 
 
 def token_f1(reference, hypothesis):
@@ -43,7 +44,12 @@ def main():
     parser.add_argument("--device", default="cpu")
     parser.add_argument("--whisper-model", default="large-v2")
     parser.add_argument("--hf-home", type=Path)
+    parser.add_argument("--cache-dir", type=Path)
+    parser.add_argument("--snapshot-archive", type=Path)
+    parser.add_argument("--snapshot-every", type=int, default=5)
     args = parser.parse_args()
+    if args.snapshot_every < 1:
+        parser.error("Snapshot interval must be positive")
 
     # ClearVoice's librosa import uses Numba caching. An explicit writable cache
     # avoids failures when site-packages is read-only or lacks a source locator.
@@ -75,6 +81,24 @@ def main():
         raise RuntimeError(f"Unexpected sample rate: {sample_rate}")
 
     labels = json.loads(args.labels.read_text())["labels"]
+    fingerprint = {
+        "experiment": "mossformer2-full-review-v2",
+        "input": file_digest(input_path),
+        "labels": file_digest(args.labels),
+        "voice_priors": file_digest(args.voice_priors),
+        "context": args.context,
+        "method": "MossFormer2_SS_16K+ECAPA+faster-whisper",
+        "whisper_model": args.whisper_model,
+    }
+    work = ResumableWorkSet(args.cache_dir, fingerprint)
+    newly_completed = 0
+
+    def save_item(stage, exchange_id, value, artifacts=()):
+        nonlocal newly_completed
+        work.complete(f"{stage}/{exchange_id}", value, artifacts)
+        newly_completed += 1
+        if args.snapshot_archive and newly_completed % args.snapshot_every == 0:
+            work.snapshot(args.snapshot_archive)
     windows = []
     for label in labels:
         start, end = float(label["start"]), float(label["end"])
@@ -93,12 +117,20 @@ def main():
             flush=True,
         )
     results = []
-    separator = ClearVoice(
-        task="speech_separation", model_names=["MossFormer2_SS_16K"]
-    )
+    separator = None
     for item_index, (label, window_start, window_end, original) in enumerate(windows):
+        exchange_id = label["exchange_id"]
+        saved = work.read(f"separation/{exchange_id}")
+        if saved is not None:
+            results.append(saved)
+            print(f"Reusing separation {item_index + 1}/{len(windows)}: {exchange_id}", flush=True)
+            continue
         # Decode one short window at a time. MossFormer2 has a large activation
         # footprint; batching all benchmark windows can exhaust a 16 GB laptop.
+        if separator is None:
+            separator = ClearVoice(
+                task="speech_separation", model_names=["MossFormer2_SS_16K"]
+            )
         decoded = np.asarray(separator(original[None, :]))
         if decoded.shape[:2] == (2, 1):
             decoded = np.transpose(decoded, (1, 0, 2))
@@ -117,8 +149,8 @@ def main():
                 "stream": stream_index + 1,
                 "audio": str(path.relative_to(args.output_dir)),
             })
-        results.append({
-            "exchange_id": label["exchange_id"],
+        result = {
+            "exchange_id": exchange_id,
             "baseline_index": label["baseline_index"],
             "start": start,
             "end": end,
@@ -129,27 +161,41 @@ def main():
             "target_words": label.get("target_words", ""),
             "other_words": label.get("other_words", ""),
             "streams": streams,
-        })
-        print(f"Separated {item_index + 1}/{len(windows)}: {label['exchange_id']}", flush=True)
+        }
+        results.append(result)
+        save_item("separation", exchange_id, result,
+                  [args.output_dir / row["audio"] for row in streams])
+        print(f"Separated {item_index + 1}/{len(windows)}: {exchange_id}", flush=True)
         del decoded
 
     # Only one large model occupies the GPU at a time. Keeping MossFormer2,
     # ECAPA, and Whisper resident together exceeds a 16 GB T4.
-    del separator
+    if separator is not None:
+        del separator
     gc.collect()
     if torch.cuda.is_available():
         torch.cuda.empty_cache()
 
-    speaker_dir = Path(os.environ.get(
-        "SPEECHBRAIN_CACHE", "pretrained_models/spkrec-ecapa-voxceleb"
-    ))
-    speaker = SpeakerRecognition.from_hparams(
-        source="speechbrain/spkrec-ecapa-voxceleb", savedir=str(speaker_dir),
-        run_opts={"device": gpu_device},
-    )
-    priors = np.load(args.voice_priors)
-    target = unit(np.mean(np.stack([unit(row) for row in priors]), axis=0))
-    for result in results:
+    speaker = None
+    target = None
+    scored_results = []
+    for item_index, result in enumerate(results):
+        exchange_id = result["exchange_id"]
+        saved = work.read(f"voice/{exchange_id}")
+        if saved is not None:
+            scored_results.append(saved)
+            print(f"Reusing voice score {item_index + 1}/{len(results)}: {exchange_id}", flush=True)
+            continue
+        if speaker is None:
+            speaker_dir = Path(os.environ.get(
+                "SPEECHBRAIN_CACHE", "pretrained_models/spkrec-ecapa-voxceleb"
+            ))
+            speaker = SpeakerRecognition.from_hparams(
+                source="speechbrain/spkrec-ecapa-voxceleb", savedir=str(speaker_dir),
+                run_opts={"device": gpu_device},
+            )
+            priors = np.load(args.voice_priors)
+            target = unit(np.mean(np.stack([unit(row) for row in priors]), axis=0))
         for stream in result["streams"]:
             wave, _ = sf.read(args.output_dir / stream["audio"], dtype="float32")
             tensor = torch.from_numpy(np.asarray(wave, dtype=np.float32)).unsqueeze(0)
@@ -164,20 +210,34 @@ def main():
         result["similarity_margin"] = (
             ranked[0]["target_similarity"] - ranked[1]["target_similarity"]
         )
-        print(f"Voice-scored: {result['exchange_id']}", flush=True)
+        scored_results.append(result)
+        save_item("voice", exchange_id, result,
+                  [args.output_dir / row["audio"] for row in result["streams"]])
+        print(f"Voice-scored: {exchange_id}", flush=True)
+    results = scored_results
 
-    del speaker
+    if speaker is not None:
+        del speaker
     gc.collect()
     if torch.cuda.is_available():
         torch.cuda.empty_cache()
 
-    whisper = WhisperModel(
-        args.whisper_model,
-        device="cuda" if use_cuda else "cpu",
-        device_index=post_gpu_index if use_cuda else 0,
-        compute_type="float16" if use_cuda else "int8",
-    )
-    for result in results:
+    whisper = None
+    final_results = []
+    for item_index, result in enumerate(results):
+        exchange_id = result["exchange_id"]
+        saved = work.read(f"asr/{exchange_id}")
+        if saved is not None:
+            final_results.append(saved)
+            print(f"Reusing ASR {item_index + 1}/{len(results)}: {exchange_id}", flush=True)
+            continue
+        if whisper is None:
+            whisper = WhisperModel(
+                args.whisper_model,
+                device="cuda" if use_cuda else "cpu",
+                device_index=post_gpu_index if use_cuda else 0,
+                compute_type="float16" if use_cuda else "int8",
+            )
         for stream in result["streams"]:
             wave, _ = sf.read(args.output_dir / stream["audio"], dtype="float32")
             asr = transcribe(whisper, wave)
@@ -188,14 +248,18 @@ def main():
             stream["other_word_f1"] = token_f1(
                 result.get("other_words", ""), asr["text"]
             )
+        final_results.append(result)
+        save_item("asr", exchange_id, result,
+                  [args.output_dir / row["audio"] for row in result["streams"]])
         print(
-            result["exchange_id"],
+            exchange_id,
             "; ".join(
                 f"s{row['stream']} sim={row['target_similarity']:.3f}: "
                 f"{row['transcription']['text']}" for row in result["streams"]
             ),
             flush=True,
         )
+    results = final_results
 
     report = {
         "schema_version": 1,
@@ -204,7 +268,9 @@ def main():
         "context_seconds": args.context,
         "results": results,
     }
-    (args.output_dir / "report.json").write_text(json.dumps(report, indent=2) + "\n")
+    atomic_json(args.output_dir / "report.json", report)
+    if args.snapshot_archive:
+        work.snapshot(args.snapshot_archive)
 
 
 if __name__ == "__main__":
