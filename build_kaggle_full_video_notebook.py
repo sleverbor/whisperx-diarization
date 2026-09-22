@@ -748,9 +748,15 @@ else:
 
     save = '''from IPython.display import FileLink, display
 export_checkpoints()
-with (RESULTS/'runtime-packages.txt').open('w') as packages:
-    checked([PYTHON, '-m', 'pip', 'freeze'], stdout=packages)
-result_zip = Path(shutil.make_archive(str(BASE/'diarization-results'), 'zip', RESULTS))
+result_zip = BASE/'diarization-results.zip'
+if RESULTS.is_dir():
+    with (RESULTS/'runtime-packages.txt').open('w') as packages:
+        checked([PYTHON, '-m', 'pip', 'freeze'], stdout=packages)
+    result_zip = Path(shutil.make_archive(str(result_zip.with_suffix('')), 'zip', RESULTS))
+elif not result_zip.is_file():
+    raise RuntimeError(
+        'Neither the results directory nor diarization-results.zip exists. '
+        'Run the processing cell before exporting.')
 checkpoint_zip = BASE/'stage-checkpoints.zip'
 mossformer2_zip = BASE/'mossformer2-checkpoints.zip'
 overlap_zip = BASE/'overlap-extraction-checkpoints.zip'
