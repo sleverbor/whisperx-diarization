@@ -348,10 +348,18 @@ if not VIDEO.exists():
         accepted_names = {VIDEO_ID+'.mp4', VIDEO_ID+'_full480.mp4'}
         matches = [path for path in Path('/kaggle/input').rglob('*.mp4')
                    if path.name in accepted_names]
+        if not matches:
+            # Private datasets created for a single holdout commonly use the
+            # generic name video.mp4. Accept it only when it is the sole MP4
+            # across all attached inputs, so selection remains unambiguous.
+            all_mp4 = list(Path('/kaggle/input').rglob('*.mp4'))
+            if len(all_mp4) == 1:
+                matches = all_mp4
         if len(matches) != 1:
             raise RuntimeError(
-                'Attach a Kaggle dataset containing exactly one of '
-                f'{sorted(accepted_names)}. YouTube blocks downloads from Kaggle.')
+                'Attach exactly one video: an ID-named file from '
+                f'{sorted(accepted_names)}, or a sole video.mp4 across all inputs. '
+                'YouTube blocks downloads from Kaggle.')
         source_video = matches[0]
     else:
         local_video = Path.cwd()/(VIDEO_ID+'.mp4')
