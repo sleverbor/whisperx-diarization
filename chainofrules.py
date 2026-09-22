@@ -30,6 +30,11 @@ from repeat_evidence import (find_repeat_groups, find_text_repeat_candidates, bu
                              resolve_repeat_target_corroboration)
 
 
+def diarization_frame(records):
+    """Return WhisperX's required schema even when diarization finds no speech."""
+    return pd.DataFrame(records).reindex(columns=["start", "end", "speaker"])
+
+
 @dataclass(frozen=True)
 class Baseline:
     raw_speaker_track: str
@@ -626,7 +631,7 @@ def main():
             del model
             release_gpu()
 
-    diarize_segments = pd.DataFrame(cache.get("diarization", diarize))
+    diarize_segments = diarization_frame(cache.get("diarization", diarize))
     embedding_model = SpeakerRecognition.from_hparams(
         source="speechbrain/spkrec-ecapa-voxceleb", savedir="pretrained_models/spkrec-ecapa-voxceleb",
         run_opts={"device": device})

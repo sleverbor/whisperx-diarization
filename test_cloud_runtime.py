@@ -6,6 +6,12 @@ from cloud_runtime import (ResumableWorkSet, StageCache, create_face_analyzer,
 
 
 class CloudRuntimeTests(unittest.TestCase):
+    def test_empty_diarization_keeps_whisperx_schema(self):
+        import chainofrules as pipeline
+        frame = pipeline.diarization_frame([])
+        self.assertTrue(frame.empty)
+        self.assertEqual(list(frame.columns), ["start", "end", "speaker"])
+
     def test_resumable_work_set_keeps_only_complete_valid_items(self):
         from pathlib import Path
         with tempfile.TemporaryDirectory() as directory:
